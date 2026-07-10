@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每日技术热点速递 · 归档</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0d1117;
+            --card: #161b22;
+            --border: #30363d;
+            --text: #e6edf3;
+            --muted: #8b949e;
+            --accent: #58a6ff;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Inter', 'Noto Sans SC', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 48px 20px;
+        }
+        .wrap { max-width: 760px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 40px; }
+        .kicker {
+            font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase;
+            color: var(--accent); font-weight: 600; margin-bottom: 12px;
+        }
+        h1 {
+            font-size: 34px; font-weight: 700; letter-spacing: -0.02em;
+            background: linear-gradient(135deg, #58a6ff, #a371f7);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .sub { color: var(--muted); margin-top: 10px; font-size: 14px; }
+        .list { display: flex; flex-direction: column; gap: 14px; }
+        a.item {
+            display: flex; align-items: center; justify-content: space-between;
+            background: var(--card); border: 1px solid var(--border);
+            border-radius: 14px; padding: 18px 22px; text-decoration: none;
+            color: var(--text); transition: all .18s ease;
+        }
+        a.item:hover {
+            border-color: var(--accent);
+            box-shadow: 0 0 24px rgba(88,166,255,.12);
+            transform: translateY(-2px);
+        }
+        .item .left { display: flex; align-items: center; gap: 16px; }
+        .item .dot {
+            width: 38px; height: 38px; border-radius: 10px; flex: none;
+            background: rgba(88,166,255,.12); border: 1px solid rgba(88,166,255,.3);
+            display: flex; align-items: center; justify-content: center; font-size: 18px;
+        }
+        .item .title { font-weight: 600; font-size: 16px; }
+        .item .date { color: var(--muted); font-size: 13px; margin-top: 3px; }
+        .item .arrow { color: var(--muted); font-size: 20px; transition: transform .18s ease; }
+        a.item:hover .arrow { color: var(--accent); transform: translateX(4px); }
+        footer { text-align: center; color: var(--muted); font-size: 12px; margin-top: 40px; line-height: 1.7; }
+        .empty { color: var(--muted); text-align: center; padding: 40px; border: 1px dashed var(--border); border-radius: 14px; }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="kicker">Daily Tech Briefing</div>
+            <h1>每日技术热点速递</h1>
+            <p class="sub">Hacker News × GitHub Trending 每日精选归档</p>
+        </header>
+
+        <div class="list">
+            <!-- 新增一期时，复制下面整个 <a class="item"> 块并改日期/链接即可 -->
+            <a class="item" href="今日技术热点速览_2026-07-10.html">
+                <div class="left">
+                    <div class="dot">📡</div>
+                    <div>
+                        <div class="title">今日技术热点速览</div>
+                        <div class="date">2026-07-10 · 星期五</div>
+                    </div>
+                </div>
+                <div class="arrow">→</div>
+            </a>
+            <a class="item" href="今日技术热点速览_2026-07-09.html">
+                <div class="left">
+                    <div class="dot">📡</div>
+                    <div>
+                        <div class="title">今日技术热点速览</div>
+                        <div class="date">2026-07-09 · 星期四</div>
+                    </div>
+                </div>
+                <div class="arrow">→</div>
+            </a>
+        </div>
+
+        <footer>
+            由每日自动化任务自动生成 · 经 GitHub Pages 部署<br>
+            数据来源：Hacker News · GitHub Trending
+        </footer>
+    </div>
+</body>
+</html>
