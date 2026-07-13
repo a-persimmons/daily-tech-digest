@@ -106,6 +106,17 @@
         .gh-stars { color: var(--orange); font-weight: 600; }
         .gh-total { color: var(--muted); }
 
+        /* Product Hunt */
+        .ph-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px; transition: all .18s ease; }
+        .ph-card:hover { border-color: var(--accent); box-shadow: 0 0 20px rgba(88,166,255,.08); transform: translateY(-2px); }
+        .ph-name { font-weight: 600; font-size: 14px; margin-bottom: 4px; }
+        .ph-name a { color: var(--text); text-decoration: none; }
+        .ph-name a:hover { color: var(--accent); }
+        .ph-desc { color: var(--muted); font-size: 12px; line-height: 1.5; margin-bottom: 8px; }
+        .ph-meta { display: flex; gap: 14px; font-size: 12px; align-items: center; }
+        .ph-up { color: var(--orange); font-weight: 600; }
+        .ph-topics { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+
         /* 中文翻译行 */
         .zh { color: #7d8590; font-size: 12.5px; font-weight: 400; line-height: 1.45; margin-top: 3px; }
         .hn-title .zh { font-weight: 400; }
@@ -136,7 +147,7 @@
     <div class="header">
         <div class="kicker">Daily Tech Briefing</div>
         <h1>今日技术热点速览</h1>
-        <div class="meta">2026-07-13 · 星期一 &nbsp;|&nbsp; Hacker News × GitHub Trending</div>
+        <div class="meta">2026-07-13 · 星期一 &nbsp;|&nbsp; Hacker News × GitHub Trending × Product Hunt × HF Papers</div>
     </div>
 
     <!-- Hero / 今日头条 -->
@@ -422,6 +433,100 @@
         </div>
     </div>
 
+    <!-- Product Hunt -->
+    <div class="section">
+        <div class="section-title"><span class="icon">🚀</span> Product Hunt 今日精选 <span class="badge">TODAY</span></div>
+        <div class="gh-grid">
+            <div class="ph-card">
+                <div class="ph-name"><a href="https://www.producthunt.com/posts/miora">Miora</a></div>
+                <div class="ph-desc">Scale your creativity on editable canvas with agent memory<div class="zh">在可编辑画布上借助智能体记忆拓展创造力</div></div>
+                <div class="ph-meta"><span class="ph-up">▲ 111</span></div>
+                <div class="ph-topics"><span class="tag tag-ai">AI</span><span class="tag tag-coding">设计工具</span></div>
+            </div>
+            <div class="ph-card">
+                <div class="ph-name"><a href="https://www.producthunt.com/posts/second-brain-for-ai-v2">Second Brain for AI v2</a></div>
+                <div class="ph-desc">AI memory that connects the dots across every tool<div class="zh">跨工具串联信息的 AI 记忆</div></div>
+                <div class="ph-meta"><span class="ph-up">▲ 76</span></div>
+                <div class="ph-topics"><span class="tag tag-ai">AI</span><span class="tag tag-community">生产力</span></div>
+            </div>
+            <div class="ph-card">
+                <div class="ph-name"><a href="https://www.producthunt.com/posts/justvibe">JustVibe</a></div>
+                <div class="ph-desc">The search engine for doing, with apps built for you<div class="zh">为你定制应用的"行动"搜索引擎</div></div>
+                <div class="ph-meta"><span class="ph-up">▲ 72</span></div>
+                <div class="ph-topics"><span class="tag tag-ai">AI</span><span class="tag tag-internet">搜索</span></div>
+            </div>
+            <div class="ph-card">
+                <div class="ph-name"><a href="https://www.producthunt.com/posts/fetchsandbox">FetchSandbox</a></div>
+                <div class="ph-desc">API integration testing that remembers what breaks<div class="zh">能记住哪些环节出错的 API 集成测试工具</div></div>
+                <div class="ph-meta"><span class="ph-up">▲ 70</span></div>
+                <div class="ph-topics"><span class="tag tag-ai">AI</span><span class="tag tag-coding">开发工具</span></div>
+            </div>
+            <div class="ph-card">
+                <div class="ph-name"><a href="https://www.producthunt.com/posts/servicebeard">ServiceBeard</a></div>
+                <div class="ph-desc">Sync your mailbox with your issue tracker<div class="zh">将邮箱与问题追踪器同步</div></div>
+                <div class="ph-meta"><span class="ph-up">▲ 24</span></div>
+                <div class="ph-topics"><span class="tag tag-community">生产力</span><span class="tag tag-coding">开发工具</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Daily Papers (Hugging Face) -->
+    <div class="section">
+        <div class="section-title"><span class="icon">📄</span> Daily Papers · Hugging Face <span class="badge">RESEARCH</span></div>
+        <table class="hn-table">
+            <thead>
+                <tr><th>#</th><th>论文标题</th><th>热度</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="hn-title"><a href="https://huggingface.co/papers/2607.09657">Scalable Visual Pretraining for Language Intelligence</a><div class="zh">面向语言智能的可扩展视觉预训练</div></td>
+                    <td class="hn-score">▲ 8</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="hn-title"><a href="https://huggingface.co/papers/2607.09024">Video Generation Models are General-Purpose Vision Learners</a><div class="zh">视频生成模型即通用视觉学习器</div></td>
+                    <td class="hn-score">▲ 5</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="hn-title"><a href="https://huggingface.co/papers/2607.06553">From RGB Generation to Dense Field Readout: Pixel-Space Dense Prediction with Text-to-Image Models</a><div class="zh">从 RGB 生成到密集场读出：用文生图模型做像素空间密集预测</div></td>
+                    <td class="hn-score">▲ 4</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="hn-title"><a href="https://huggingface.co/papers/2607.09661">PanoWorld: Real-World Panoramic Generation</a><div class="zh">PanoWorld：真实世界全景生成</div></td>
+                    <td class="hn-score">▲ 3</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="hn-title"><a href="https://huggingface.co/papers/2607.04751">Trust Region Policy Distillation</a><div class="zh">信任域策略蒸馏</div></td>
+                    <td class="hn-score">▲ 3</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td class="hn-title"><a href="https://huggingface.co/papers/2607.09020">Phone Segmentation and Recognition through Phonological Activation Mapping</a><div class="zh">基于音韵激活映射的音素切分与识别</div></td>
+                    <td class="hn-score">▲ 1</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td class="hn-title"><a href="https://huggingface.co/papers/2607.08393">Towards Mechanistically Understanding Why Memorized Knowledge Fails to Generalize in Large Language Model Finetuning</a><div class="zh">从机制角度理解：为何大模型微调中记忆到的知识无法泛化</div></td>
+                    <td class="hn-score">▲ 1</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td class="hn-title"><a href="https://huggingface.co/papers/2607.09415">Self-Guided Test-Time Training for Long-Context LLMs</a><div class="zh">面向长上下文大语言模型的自引导测试时训练</div></td>
+                    <td class="hn-score">NEW</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td class="hn-title"><a href="https://huggingface.co/papers/2607.09424">A Sovereign, Open-Source Foundation Model for German and English</a><div class="zh">一个面向德语与英语的主权级开源基础模型</div></td>
+                    <td class="hn-score">NEW</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
     <!-- Trend Insights -->
     <div class="section">
         <div class="section-title"><span class="icon">💡</span> 趋势洞察 <span class="badge">INSIGHTS</span></div>
@@ -448,7 +553,7 @@
     <!-- Footer -->
     <footer>
         由每日自动化任务自动生成 · 经 GitHub Pages 部署<br>
-        数据来源：Hacker News · GitHub Trending · 生成时间 2026-07-13 09:50 CST<br>
+        数据来源：Hacker News · GitHub Trending · Product Hunt · Hugging Face Papers · 生成时间 2026-07-13 09:50 CST<br>
         归档站：<a href="http://blog.codingforjoy.com/daily-tech-digest/">blog.codingforjoy.com/daily-tech-digest</a>
     </footer>
 
