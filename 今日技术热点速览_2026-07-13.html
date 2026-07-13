@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>今日技术热点速览 · 2026-07-13</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0d1117;
+            --card: #161b22;
+            --border: #30363d;
+            --text: #e6edf3;
+            --muted: #8b949e;
+            --accent: #58a6ff;
+            --accent2: #a371f7;
+            --green: #3fb950;
+            --red: #f85149;
+            --orange: #d29922;
+            --teal: #39d353;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Inter', 'Noto Sans SC', sans-serif;
+            background: var(--bg); color: var(--text);
+            min-height: 100vh; padding: 0;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 24px 60px; }
+
+        /* Header */
+        .header { text-align: center; margin-bottom: 36px; }
+        .kicker { font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin-bottom: 8px; }
+        .header h1 {
+            font-size: 28px; font-weight: 700; letter-spacing: -.02em;
+            background: linear-gradient(135deg, #58a6ff, #a371f7);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .header .meta { color: var(--muted); font-size: 13px; margin-top: 6px; }
+
+        /* Section */
+        .section { margin-bottom: 32px; }
+        .section-title {
+            font-size: 18px; font-weight: 700; margin-bottom: 14px;
+            display: flex; align-items: center; gap: 8px;
+        }
+        .section-title .icon { font-size: 20px; }
+        .section-title .badge {
+            font-size: 11px; background: rgba(88,166,255,.15); color: var(--accent);
+            padding: 2px 8px; border-radius: 6px; font-weight: 600; letter-spacing: .05em;
+        }
+
+        /* Hero / Featured */
+        .hero {
+            background: linear-gradient(135deg, rgba(88,166,255,.08), rgba(163,113,247,.08));
+            border: 1px solid rgba(88,166,255,.25); border-radius: 16px;
+            padding: 24px; margin-bottom: 32px;
+        }
+        .hero .headline { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+        .hero .desc { color: var(--muted); font-size: 14px; line-height: 1.6; }
+        .hero .stats { display: flex; gap: 20px; margin-top: 12px; }
+        .hero .stat { font-size: 13px; }
+        .hero .stat .val { color: var(--accent); font-weight: 600; }
+
+        /* HN Table */
+        .hn-table { width: 100%; border-collapse: collapse; }
+        .hn-table th {
+            text-align: left; font-size: 11px; letter-spacing: .06em;
+            color: var(--muted); padding: 8px 10px; border-bottom: 1px solid var(--border);
+            text-transform: uppercase; font-weight: 600;
+        }
+        .hn-table td { padding: 10px; border-bottom: 1px solid rgba(48,54,61,.5); font-size: 14px; vertical-align: top; }
+        .hn-table tr:hover { background: rgba(88,166,255,.04); }
+        .hn-title { font-weight: 500; line-height: 1.4; }
+        .hn-title a { color: var(--text); text-decoration: none; }
+        .hn-title a:hover { color: var(--accent); }
+        .hn-score { color: var(--orange); font-weight: 600; font-size: 13px; }
+        .hn-comments { color: var(--muted); font-size: 13px; }
+        .tag {
+            display: inline-block; font-size: 11px; padding: 1px 6px; border-radius: 4px;
+            font-weight: 500; margin-top: 4px;
+        }
+        .tag-ai { background: rgba(163,113,247,.15); color: #a371f7; }
+        .tag-security { background: rgba(248,81,73,.12); color: #f85149; }
+        .tag-coding { background: rgba(88,166,255,.12); color: #58a6ff; }
+        .tag-hardware { background: rgba(63,185,80,.12); color: #3fb950; }
+        .tag-internet { background: rgba(210,153,34,.12); color: #d29922; }
+        .tag-science { background: rgba(57,211,83,.12); color: #39d353; }
+        .tag-community { background: rgba(139,148,158,.15); color: #8b949e; }
+
+        /* GitHub Cards */
+        .gh-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+        @media(max-width:640px) { .gh-grid { grid-template-columns: 1fr; } }
+        .gh-card {
+            background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+            padding: 16px; transition: all .18s ease;
+        }
+        .gh-card:hover { border-color: var(--accent); box-shadow: 0 0 20px rgba(88,166,255,.08); transform: translateY(-2px); }
+        .gh-name { font-weight: 600; font-size: 14px; margin-bottom: 4px; }
+        .gh-name a { color: var(--text); text-decoration: none; }
+        .gh-name a:hover { color: var(--accent); }
+        .gh-desc { color: var(--muted); font-size: 12px; line-height: 1.5; margin-bottom: 8px; }
+        .gh-meta { display: flex; gap: 14px; font-size: 12px; }
+        .gh-lang { color: var(--accent2); font-weight: 500; }
+        .gh-stars { color: var(--orange); font-weight: 600; }
+        .gh-total { color: var(--muted); }
+
+        /* Insights */
+        .insight-card {
+            background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+            padding: 20px; margin-bottom: 12px;
+        }
+        .insight-num {
+            display: inline-block; width: 28px; height: 28px; border-radius: 8px;
+            background: rgba(88,166,255,.12); color: var(--accent); font-weight: 700;
+            font-size: 14px; text-align: center; line-height: 28px; margin-right: 10px;
+        }
+        .insight-title { font-weight: 700; font-size: 16px; margin-bottom: 6px; }
+        .insight-body { color: var(--muted); font-size: 14px; line-height: 1.6; }
+
+        /* Footer */
+        footer { text-align: center; color: var(--muted); font-size: 11px; margin-top: 40px; line-height: 1.8; }
+        footer a { color: var(--accent); text-decoration: none; }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- Header -->
+    <div class="header">
+        <div class="kicker">Daily Tech Briefing</div>
+        <h1>今日技术热点速览</h1>
+        <div class="meta">2026-07-13 · 星期一 &nbsp;|&nbsp; Hacker News × GitHub Trending</div>
+    </div>
+
+    <!-- Hero / 今日头条 -->
+    <div class="section">
+        <div class="section-title"><span class="icon">🔥</span> 今日头条 <span class="badge">TOP STORY</span></div>
+        <div class="hero">
+            <div class="headline">Claude Code 发送 33k token 才开始读 prompt？OpenCode 仅需 7k</div>
+            <div class="desc">
+                systima.ai 的对比测试揭示：Claude Code 在真正处理用户指令之前就预发了约 33k token 的系统提示和上下文，而开源替代 OpenCode 仅 7k。这篇分析在 HN 上拿下 467 分、262 条评论，引发 AI 编码工具"隐含开销"的广泛讨论——效率不只在模型推理速度，还在于代理框架本身的透明度。
+            </div>
+            <div class="stats">
+                <div class="stat">分数 <span class="val">467</span></div>
+                <div class="stat">评论 <span class="val">262</span></div>
+                <div class="stat">来源 <span class="val">systima.ai</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HN Hot List -->
+    <div class="section">
+        <div class="section-title"><span class="icon">📰</span> Hacker News 热门排行 <span class="badge">TOP 20</span></div>
+        <table class="hn-table">
+            <thead>
+                <tr><th>#</th><th>标题</th><th>分数</th><th>评论</th><th>标签</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="hn-title"><a href="https://systima.ai/blog/claude-code-vs-opencode-token-overhead">Claude Code sends 33k tokens before reading the prompt; OpenCode sends 7k</a><br><span class="tag tag-ai">AI</span><span class="tag tag-coding">编码工具</span></td>
+                    <td class="hn-score">467</td>
+                    <td class="hn-comments">262</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="hn-title"><a href="https://terrytao.wordpress.com/2026/07/11/old-and-new-apps-via-modern-coding-agents/">Old and new apps, via modern coding agents</a><br><span class="tag tag-ai">AI</span><span class="tag tag-coding">编码代理</span></td>
+                    <td class="hn-score">413</td>
+                    <td class="hn-comments">120</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="hn-title"><a href="https://geohot.github.io//blog/jekyll/update/2026/07/12/i-love-llms.html">I love LLMs, I hate hype</a><br><span class="tag tag-ai">AI</span></td>
+                    <td class="hn-score">322</td>
+                    <td class="hn-comments">192</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="hn-title"><a href="https://scrapfly.dev/posts/browser-math-os-fingerprint/">Since Chromium 148, Math.tanh is now fingerprintable to link underlying OS</a><br><span class="tag tag-security">安全</span><span class="tag tag-internet">浏览器</span></td>
+                    <td class="hn-score">301</td>
+                    <td class="hn-comments">151</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="hn-title"><a href="https://techcrunch.com/2026/06/30/the-father-of-the-internet-is-finally-retiring/">Vint Cerf, "father of the Internet", is retiring</a><br><span class="tag tag-internet">互联网</span></td>
+                    <td class="hn-score">280</td>
+                    <td class="hn-comments">162</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td class="hn-title"><a href="https://www.larp.website/">LARP – Revenue infrastructure for serious founders</a><br><span class="tag tag-community">创业</span></td>
+                    <td class="hn-score">160</td>
+                    <td class="hn-comments">36</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td class="hn-title"><a href="https://floooh.github.io/tiny8bit-preview/index.html">Tiny Emulators — 8-bit computer emulators in the browser</a><br><span class="tag tag-hardware">硬件/仿真</span></td>
+                    <td class="hn-score">143</td>
+                    <td class="hn-comments">7</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td class="hn-title"><a href="https://ploy.ai/blog/migrating-a-production-ai-agent-to-gpt-5-6">Migrating a production AI agent to GPT-5.6: 2.2x faster, 27% cheaper</a><br><span class="tag tag-ai">AI</span></td>
+                    <td class="hn-score">140</td>
+                    <td class="hn-comments">46</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td class="hn-title"><a href="https://softwaredoug.com/blog/2026/07/09/write-code">Why write code in 2026</a><br><span class="tag tag-coding">编码</span><span class="tag tag-ai">AI</span></td>
+                    <td class="hn-score">108</td>
+                    <td class="hn-comments">148</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="hn-title"><a href="https://arxiv.org/abs/2607.06377">Automation Without Understanding</a><br><span class="tag tag-ai">AI</span><span class="tag tag-science">论文</span></td>
+                    <td class="hn-score">95</td>
+                    <td class="hn-comments">40</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td class="hn-title"><a href="https://cacm.acm.org/news/can-we-understand-how-large-language-models-reason/">Mechanistic interpretability researchers applying causality theory to LLMs</a><br><span class="tag tag-ai">AI</span></td>
+                    <td class="hn-score">83</td>
+                    <td class="hn-comments">63</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td class="hn-title"><a href="https://research.google/blog/the-power-of-collaboration-how-we-can-reduce-traffic-congestion/">How we can reduce traffic congestion (Google Research)</a><br><span class="tag tag-ai">AI</span><span class="tag tag-science">数据</span></td>
+                    <td class="hn-score">78</td>
+                    <td class="hn-comments">88</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td class="hn-title"><a href="https://news.ycombinator.com/item?id=48884984">Ask HN: What Are You Working On? (July 2026)</a><br><span class="tag tag-community">社区</span></td>
+                    <td class="hn-score">74</td>
+                    <td class="hn-comments">185</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td class="hn-title"><a href="https://shellzine.net/cyberpunk-comics/">Cyberpunk Comics, Manga and Graphic Novels</a><br><span class="tag tag-community">文化</span></td>
+                    <td class="hn-score">72</td>
+                    <td class="hn-comments">15</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td class="hn-title"><a href="https://www.susanrigetti.com/physics">So you want to learn physics (second edition, 2021)</a><br><span class="tag tag-science">科学</span></td>
+                    <td class="hn-score">94</td>
+                    <td class="hn-comments">7</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td class="hn-title"><a href="https://substack.magazinenongrata.com/p/how-i-learned-to-read-again">I Learned to Read Again</a><br><span class="tag tag-community">文化</span></td>
+                    <td class="hn-score">99</td>
+                    <td class="hn-comments">41</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td class="hn-title"><a href="https://vilkeliskis.com/b/2026/0711.html">Designing and assembling my first PCB</a><br><span class="tag tag-hardware">硬件</span></td>
+                    <td class="hn-score">43</td>
+                    <td class="hn-comments">4</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td class="hn-title"><a href="https://kode.diy">Kode Dot — Programmable pocket device for makers, pentesters and geeks</a><br><span class="tag tag-hardware">硬件</span></td>
+                    <td class="hn-score">41</td>
+                    <td class="hn-comments">9</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td class="hn-title"><a href="https://nanduruganesh.github.io/flash-msa/">Flash-MSA: Accelerating Million-Token Training with Sparse Attention Kernels</a><br><span class="tag tag-ai">AI</span></td>
+                    <td class="hn-score">21</td>
+                    <td class="hn-comments">—</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td class="hn-title"><a href="http://incompleteideas.net/IncIdeas/OneStepTrap.html">The One-Step Trap (In AI Research)</a><br><span class="tag tag-ai">AI</span></td>
+                    <td class="hn-score">45</td>
+                    <td class="hn-comments">8</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- GitHub Trending -->
+    <div class="section">
+        <div class="section-title"><span class="icon">⭐</span> GitHub Trending 仓库 <span class="badge">TODAY</span></div>
+        <div class="gh-grid">
+            <div class="gh-card">
+                <div class="gh-name"><a href="https://github.com/HKUDS/Vibe-Trading">HKUDS/Vibe-Trading</a></div>
+                <div class="gh-desc">"Vibe-Trading: Your Personal Trading Agent" — 个人交易代理</div>
+                <div class="gh-meta">
+                    <span class="gh-lang">Python</span>
+                    <span class="gh-stars">+768 ⭐</span>
+                    <span class="gh-total">20,552 total</span>
+                </div>
+            </div>
+            <div class="gh-card">
+                <div class="gh-name"><a href="https://github.com/k1tbyte/Wand-Enhancer">k1tbyte/Wand-Enhancer</a></div>
+                <div class="gh-desc">Advanced UX and interoperability extension for Wand (WeMod) app</div>
+                <div class="gh-meta">
+                    <span class="gh-lang">C#</span>
+                    <span class="gh-stars">+609 ⭐</span>
+                    <span class="gh-total">6,950 total</span>
+                </div>
+            </div>
+            <div class="gh-card">
+                <div class="gh-name"><a href="https://github.com/malisper/pgrust">malisper/pgrust</a></div>
+                <div class="gh-desc">Postgres rewritten in Rust, now passing 100% of the Postgres regression tests</div>
+                <div class="gh-meta">
+                    <span class="gh-lang">Rust</span>
+                    <span class="gh-stars">+518 ⭐</span>
+                    <span class="gh-total">2,465 total</span>
+                </div>
+            </div>
+            <div class="gh-card">
+                <div class="gh-name"><a href="https://github.com/anthropics/claude-cookbooks">anthropics/claude-cookbooks</a></div>
+                <div class="gh-desc">A collection of notebooks/recipes showcasing fun and effective ways of using Claude</div>
+                <div class="gh-meta">
+                    <span class="gh-lang">Jupyter</span>
+                    <span class="gh-stars">+459 ⭐</span>
+                    <span class="gh-total">48,405 total</span>
+                </div>
+            </div>
+            <div class="gh-card">
+                <div class="gh-name"><a href="https://github.com/Dicklesworthstone/destructive_command_guard">Dicklesworthstone/destructive_command_guard</a></div>
+                <div class="gh-desc">Blocking dangerous git and shell commands from being executed by AI agents</div>
+                <div class="gh-meta">
+                    <span class="gh-lang">Rust</span>
+                    <span class="gh-stars">+444 ⭐</span>
+                    <span class="gh-total">2,896 total</span>
+                </div>
+            </div>
+            <div class="gh-card">
+                <div class="gh-name"><a href="https://github.com/Shubhamsaboo/awesome-llm-apps">Shubhamsaboo/awesome-llm-apps</a></div>
+                <div class="gh-desc">100+ AI Agent & RAG apps you can actually run — clone, customize, ship</div>
+                <div class="gh-meta">
+                    <span class="gh-lang">Python</span>
+                    <span class="gh-stars">+408 ⭐</span>
+                    <span class="gh-total">118,529 total</span>
+                </div>
+            </div>
+            <div class="gh-card">
+                <div class="gh-name"><a href="https://github.com/home-assistant/core">home-assistant/core</a></div>
+                <div class="gh-desc">🏡 Open source home automation that puts local control and privacy first</div>
+                <div class="gh-meta">
+                    <span class="gh-lang">Python</span>
+                    <span class="gh-stars">+400 ⭐</span>
+                    <span class="gh-total">89,063 total</span>
+                </div>
+            </div>
+            <div class="gh-card">
+                <div class="gh-name"><a href="https://github.com/par274/sharpemu">par274/sharpemu</a></div>
+                <div class="gh-desc">An experimental PlayStation 5 emulator project</div>
+                <div class="gh-meta">
+                    <span class="gh-lang">C#</span>
+                    <span class="gh-stars">+314 ⭐</span>
+                    <span class="gh-total">1,259 total</span>
+                </div>
+            </div>
+            <div class="gh-card">
+                <div class="gh-name"><a href="https://github.com/davila7/claude-code-templates">davila7/claude-code-templates</a></div>
+                <div class="gh-desc">CLI tool for configuring and monitoring Claude Code</div>
+                <div class="gh-meta">
+                    <span class="gh-lang">Python</span>
+                    <span class="gh-stars">+274 ⭐</span>
+                    <span class="gh-total">29,235 total</span>
+                </div>
+            </div>
+            <div class="gh-card">
+                <div class="gh-name"><a href="https://github.com/wonderwhy-er/DesktopCommanderMCP">wonderwhy-er/DesktopCommanderMCP</a></div>
+                <div class="gh-desc">MCP server for Claude: terminal control, file system search, diff editing</div>
+                <div class="gh-meta">
+                    <span class="gh-lang">TypeScript</span>
+                    <span class="gh-stars">+210 ⭐</span>
+                    <span class="gh-total">7,988 total</span>
+                </div>
+            </div>
+            <div class="gh-card">
+                <div class="gh-name"><a href="https://github.com/Nutlope/hallmark">Nutlope/hallmark</a></div>
+                <div class="gh-desc">Anti-AI-slop design skill for Claude Code, Cursor, and Codex</div>
+                <div class="gh-meta">
+                    <span class="gh-lang">CSS</span>
+                    <span class="gh-stars">+155 ⭐</span>
+                    <span class="gh-total">4,272 total</span>
+                </div>
+            </div>
+            <div class="gh-card">
+                <div class="gh-name"><a href="https://github.com/chen08209/FlClash">chen08209/FlClash</a></div>
+                <div class="gh-desc">A multi-platform proxy client based on ClashMeta, simple, open-source and ad-free</div>
+                <div class="gh-meta">
+                    <span class="gh-lang">Dart</span>
+                    <span class="gh-stars">+154 ⭐</span>
+                    <span class="gh-total">45,218 total</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trend Insights -->
+    <div class="section">
+        <div class="section-title"><span class="icon">💡</span> 趋势洞察 <span class="badge">INSIGHTS</span></div>
+        <div class="insight-card">
+            <div class="insight-title"><span class="insight-num">1</span> AI 编码代理的安全与效率之争</div>
+            <div class="insight-body">
+                Claude Code 的 33k token 系统开销引发热议（467分/262评论），destructive_command_guard 专门防止 AI 代理执行危险 shell/git 命令（444星），hallmark 则以"Anti-AI-slop"定位走红（155星）。AI 编码工具正从"能用"迈向"可控、高效、高质量"，开发者开始关注代理框架的透明度和安全边界。
+            </div>
+        </div>
+        <div class="insight-card">
+            <div class="insight-title"><span class="insight-num">2</span> Rust 重写经典基础设施持续突破</div>
+            <div class="insight-body">
+                pgrust（Postgres Rust 重写，518今日星）和 destructive_command_guard（444今日星）双双登上 Trending 前五。继此前连续多日 Trending 后，pgrust 已通过 100% Postgres 回归测试，标志着 Rust 在关键基础设施领域从"实验"走向"可信赖生产替代"。Rust 在数据库和安全工具的渗透持续加速。
+            </div>
+        </div>
+        <div class="insight-card">
+            <div class="insight-title"><span class="insight-num">3</span> AI 代理从开发工具向垂直领域延伸</div>
+            <div class="insight-body">
+                Vibe-Trading（768今日星，总量20,552）成为当日增速最快项目，ai-hedge-fund 也持续增长（115星）。AI 代理不再局限于代码辅助——量化交易、家居自动化（home-assistant +400星）等垂直场景开始深度拥抱 agent 架构。"Vibe-Trading"的名字本身就暗示了从精密策略到"直觉式"交互的范式转变。
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        由每日自动化任务自动生成 · 经 GitHub Pages 部署<br>
+        数据来源：Hacker News · GitHub Trending · 生成时间 2026-07-13 09:50 CST<br>
+        归档站：<a href="http://blog.codingforjoy.com/daily-tech-digest/">blog.codingforjoy.com/daily-tech-digest</a>
+    </footer>
+
+</div>
+</body>
+</html>
