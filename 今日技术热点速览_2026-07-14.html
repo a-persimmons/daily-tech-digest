@@ -4,11 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>今日技术热点速览 · 2026-07-14</title>
+<meta name="description" content="每日技术热点速览 · 数据来源 Hacker News · GitHub Trending · Product Hunt · Hugging Face Papers">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>
-  :root {
+:root {
     --bg: #0d1117;
     --bg2: #0a0d12;
     --card: #161b22;
@@ -226,13 +227,13 @@
   <!-- ===== 今日头条 ===== -->
   <section class="hero" id="top-story">
     <div class="label">今日头条 · Top Story</div>
-    <h3>本地优先的 AI 时代正在加速：从端侧 Agent 到隐私觉醒</h3>
-    <p>当天的多平台信号高度一致——开发者与用户都在把 AI 从云端往"本地 + 隐私"方向推。GitHub Trending 被 AI Agent / Claude Code 技能库霸榜，Product Hunt 上 <b>Osaurus</b>（100% 在你的 Mac 本地运行的 AI Agent）领跑当日新品，而 Hacker News 上 <b>Samsung Health 因 AI 训练威胁删数据</b>引发众怒（281 赞 / 70 评论）。"自己的数据、自己的算力、自己的 Agent"正在成为新的产品共识。</p>
+    <h3>本地优先的 AI 时代加速到来：端侧 Agent 领跑，数据主权觉醒</h3>
+    <p>当天多平台信号高度一致——开发者与用户都在把 AI 从云端推向「本地 + 隐私」。GitHub Trending 被 AI 技能库与本地 Agent 霸榜（<b>OpenCut</b> 单日 +1,229、<b>graphify</b> +1,095），Product Hunt 上 <b>Osaurus</b>（100% 在你的 Mac 本地运行的开源 Agent）领跑当日新品，Hugging Face 论文榜则由阿里高德「终身记忆机器人 Agent OS」领衔。「自己的数据、自己的算力、自己的 Agent」正成为新的产品共识。</p>
     <div class="stats">
-      <div class="stat"><b class="up">+1,229</b>OpenCut 今日新增 Star<br><span style="font-size:11px">开源版 CapCut</span></div>
+      <div class="stat"><b class="up">+1,229</b>OpenCut 今日新增 Star<br><span style="font-size:11px">开源版剪映 / CapCut</span></div>
       <div class="stat"><b class="up">+1,153</b>Vibe-Trading 今日新增 Star<br><span style="font-size:11px">个人交易 Agent</span></div>
-      <div class="stat"><b>281</b>Samsung Health AI 隐私争议<br><span style="font-size:11px">HN 最高赞之一</span></div>
-      <div class="stat"><b>86→100</b>Osaurus / AgentKey<br><span style="font-size:11px">PH 本地 Agent 新品</span></div>
+      <div class="stat"><b class="up">+1,095</b>graphify 今日新增 Star<br><span style="font-size:11px">代码→知识图谱</span></div>
+      <div class="stat"><b>PH #1</b>Osaurus<br><span style="font-size:11px">本地 Mac Agent 新品</span></div>
     </div>
   </section>
 
@@ -245,36 +246,36 @@
     <div class="hn-row">
       <div class="hn-rank">1</div>
       <div>
-        <a class="hn-title" href="https://news.ycombinator.com/item?id=48894752" target="_blank" rel="noopener">Apple's new SpeechAnalyzer API, benchmarked against Whisper and its predecessor</a>
-        <div class="zh">苹果新 SpeechAnalyzer API 对比 Whisper 及其前代的基准测试</div>
-        <div class="hn-meta"><span class="score">▲ 461</span><span class="comments">💬 185</span><span class="tag ai">AI · 语音</span></div>
+        <a class="hn-title" href="https://news.ycombinator.com/item?id=48894752" target="_blank" rel="noopener">Apple&#x27;s new SpeechAnalyzer API, benchmarked against Whisper and its predecessor</a>
+        <div class="zh">苹果全新 SpeechAnalyzer API 对比 Whisper 及其前代的基准测试</div>
+        <div class="hn-meta"><span class="score">▲ 480</span><span class="comments">💬 191</span><span class="tag ai">AI · 语音</span></div>
       </div>
       <div></div>
     </div>
     <div class="hn-row">
       <div class="hn-rank">2</div>
       <div>
-        <a class="hn-title" href="https://news.ycombinator.com/item?id=48897991" target="_blank" rel="noopener">Samsung Health app threatens data deletion if users opt out AI training</a>
-        <div class="zh">Samsung Health 应用威胁：用户若退出 AI 训练就删除数据</div>
-        <div class="hn-meta"><span class="score">▲ 281</span><span class="comments">💬 70</span><span class="tag ai">AI · 隐私</span></div>
+        <a class="hn-title" href="https://news.ycombinator.com/item?id=48890959" target="_blank" rel="noopener">A voxel Tokyo in real Japan time – ride the Yamanote line and study Japanese</a>
+        <div class="zh">像素东京：按日本实时时间乘坐山手线并学习日语</div>
+        <div class="hn-meta"><span class="score">▲ 351</span><span class="comments">💬 70</span><span class="tag dev">项目 · 学习</span></div>
       </div>
       <div></div>
     </div>
     <div class="hn-row">
       <div class="hn-rank">3</div>
       <div>
-        <a class="hn-title" href="https://news.ycombinator.com/item?id=48897878" target="_blank" rel="noopener">Telegram's t.me domain has been suspended</a>
-        <div class="zh">Telegram 的 t.me 域名已被暂停</div>
-        <div class="hn-meta"><span class="score">▲ 260</span><span class="comments">💬 187</span><span class="tag policy">平台 · 治理</span></div>
+        <a class="hn-title" href="https://news.ycombinator.com/item?id=48896665" target="_blank" rel="noopener">Building and shipping Mac and iOS apps without opening Xcode</a>
+        <div class="zh">不打开 Xcode 也能构建并发布 Mac / iOS 应用</div>
+        <div class="hn-meta"><span class="score">▲ 344</span><span class="comments">💬 150</span><span class="tag dev">开发者工具</span></div>
       </div>
       <div></div>
     </div>
     <div class="hn-row">
       <div class="hn-rank">4</div>
       <div>
-        <a class="hn-title" href="https://news.ycombinator.com/item?id=48896665" target="_blank" rel="noopener">Building and shipping Mac and iOS apps without opening Xcode</a>
-        <div class="zh">不打开 Xcode 也能构建并发布 Mac / iOS 应用</div>
-        <div class="hn-meta"><span class="score">▲ 324</span><span class="comments">💬 141</span><span class="tag dev">开发者工具</span></div>
+        <a class="hn-title" href="https://news.ycombinator.com/item?id=48897878" target="_blank" rel="noopener">Telegram&#x27;s t.me domain has been suspended</a>
+        <div class="zh">Telegram 的 t.me 域名已被暂停</div>
+        <div class="hn-meta"><span class="score">▲ 275</span><span class="comments">💬 197</span><span class="tag policy">平台 · 治理</span></div>
       </div>
       <div></div>
     </div>
@@ -282,8 +283,8 @@
       <div class="hn-rank">5</div>
       <div>
         <a class="hn-title" href="https://news.ycombinator.com/item?id=48893639" target="_blank" rel="noopener">The art and engineering of Sega CD Silpheed</a>
-        <div class="zh">Sega CD《Silpheed》的艺术与工程</div>
-        <div class="hn-meta"><span class="score">▲ 231</span><span class="comments">💬 48</span><span class="tag dev">游戏工程</span></div>
+        <div class="zh">世嘉 CD 游戏《Silpheed》背后的美术与工程</div>
+        <div class="hn-meta"><span class="score">▲ 235</span><span class="comments">💬 50</span><span class="tag dev">复古 · 工程</span></div>
       </div>
       <div></div>
     </div>
@@ -291,8 +292,8 @@
       <div class="hn-rank">6</div>
       <div>
         <a class="hn-title" href="https://news.ycombinator.com/item?id=48896600" target="_blank" rel="noopener">Linux on the Sega 32X. Who needs hardware synchronization primitives anyway?</a>
-        <div class="zh">在 Sega 32X 上跑 Linux，谁还需要硬件同步原语？</div>
-        <div class="hn-meta"><span class="score">▲ 103</span><span class="comments">💬 22</span><span class="tag sys">系统 · 嵌入式</span></div>
+        <div class="zh">在世嘉 32X 上跑 Linux：谁还需要硬件同步原语呢？</div>
+        <div class="hn-meta"><span class="score">▲ 108</span><span class="comments">💬 22</span><span class="tag sys">系统 · 硬核</span></div>
       </div>
       <div></div>
     </div>
@@ -300,8 +301,8 @@
       <div class="hn-rank">7</div>
       <div>
         <a class="hn-title" href="https://news.ycombinator.com/item?id=48897104" target="_blank" rel="noopener">The infinite scroll may become endangered if controversial Calif. law passes</a>
-        <div class="zh">若加州争议法案通过，无限滚动或成"濒危物种"</div>
-        <div class="hn-meta"><span class="score">▲ 89</span><span class="comments">💬 149</span><span class="tag policy">科技政策</span></div>
+        <div class="zh">若加州争议法案通过，无限滚动或将成为历史</div>
+        <div class="hn-meta"><span class="score">▲ 104</span><span class="comments">💬 170</span><span class="tag policy">政策 · 平台</span></div>
       </div>
       <div></div>
     </div>
@@ -309,35 +310,35 @@
       <div class="hn-rank">8</div>
       <div>
         <a class="hn-title" href="https://news.ycombinator.com/item?id=48852159" target="_blank" rel="noopener">Ancient Roman Board Game</a>
-        <div class="zh">古罗马棋盘游戏（复刻项目）</div>
-        <div class="hn-meta"><span class="score">▲ 94</span><span class="comments">💬 37</span><span class="tag dev">复古 · 复刻</span></div>
+        <div class="zh">还原古罗马棋盘游戏</div>
+        <div class="hn-meta"><span class="score">▲ 98</span><span class="comments">💬 39</span><span class="tag dev">项目 · 文化</span></div>
       </div>
       <div></div>
     </div>
     <div class="hn-row">
       <div class="hn-rank">9</div>
       <div>
-        <a class="hn-title" href="https://news.ycombinator.com/item?id=48898154" target="_blank" rel="noopener">Show HN: YouTube Guitar Tab Parser</a>
-        <div class="zh">Show HN：YouTube 吉他谱解析器</div>
-        <div class="hn-meta"><span class="score">▲ 75</span><span class="comments">💬 47</span><span class="tag dev">Show HN</span></div>
+        <a class="hn-title" href="https://news.ycombinator.com/item?id=48901010" target="_blank" rel="noopener">The Git history command deserves more attention</a>
+        <div class="zh">Git history 命令值得被更多关注</div>
+        <div class="hn-meta"><span class="score">▲ 94</span><span class="comments">💬 60</span><span class="tag dev">开发者工具</span></div>
       </div>
       <div></div>
     </div>
     <div class="hn-row">
       <div class="hn-rank">10</div>
       <div>
-        <a class="hn-title" href="https://news.ycombinator.com/item?id=48894630" target="_blank" rel="noopener">Show HN: Jacquard, a programming language for AI-written, human-reviewed code</a>
-        <div class="zh">Show HN：Jacquard，一种让 AI 写、人审的代码语言</div>
-        <div class="hn-meta"><span class="score">▲ 54</span><span class="comments">💬 22</span><span class="tag ai">AI 编程</span></div>
+        <a class="hn-title" href="https://news.ycombinator.com/item?id=48898154" target="_blank" rel="noopener">Show HN: YouTube Guitar Tab Parser</a>
+        <div class="zh">Show HN：YouTube 吉他谱解析器</div>
+        <div class="hn-meta"><span class="score">▲ 82</span><span class="comments">💬 52</span><span class="tag dev">项目 · 音乐</span></div>
       </div>
       <div></div>
     </div>
     <div class="hn-row">
       <div class="hn-rank">11</div>
       <div>
-        <a class="hn-title" href="https://lalitm.com/post/git-history/" target="_blank" rel="noopener">The Git history command deserves more attention</a>
-        <div class="zh">Git history 命令值得更多关注</div>
-        <div class="hn-meta"><span class="score">▲ 53</span><span class="comments">💬 29</span><span class="tag dev">Git · 工具</span></div>
+        <a class="hn-title" href="https://news.ycombinator.com/item?id=48900191" target="_blank" rel="noopener">An Englishwoman who sketched India before photography took hold</a>
+        <div class="zh">摄影普及之前，用画笔记录印度的英国女性</div>
+        <div class="hn-meta"><span class="score">▲ 72</span><span class="comments">💬 21</span><span class="tag policy">文化 · 历史</span></div>
       </div>
       <div></div>
     </div>
@@ -345,408 +346,340 @@
       <div class="hn-rank">12</div>
       <div>
         <a class="hn-title" href="https://news.ycombinator.com/item?id=48897329" target="_blank" rel="noopener">TFTP Honey Pot Results</a>
-        <div class="zh">TFTP 蜜罐（honeypot）结果分析</div>
-        <div class="hn-meta"><span class="score">▲ 59</span><span class="comments">💬 27</span><span class="tag sys">安全 · 蜜罐</span></div>
+        <div class="zh">TFTP 蜜罐实验结果</div>
+        <div class="hn-meta"><span class="score">▲ 65</span><span class="comments">💬 28</span><span class="tag sys">安全</span></div>
       </div>
       <div></div>
     </div>
     <div class="hn-row">
       <div class="hn-rank">13</div>
       <div>
-        <a class="hn-title" href="https://careersatdoordash.com/blog/building-food-metadata-with-llm-juries-context-optimization-multimodal-ai/" target="_blank" rel="noopener">Building Food Metadata with LLM Juries</a>
-        <div class="zh">用 LLM 评委会构建食物元数据</div>
-        <div class="hn-meta"><span class="score">▲ 5</span><span class="comments">💬 0</span><span class="tag ai">LLM · 应用</span></div>
+        <a class="hn-title" href="https://news.ycombinator.com/item?id=48897975" target="_blank" rel="noopener">Show HN: I implemented a neural network in SQL</a>
+        <div class="zh">Show HN：我用 SQL 实现了一个神经网络</div>
+        <div class="hn-meta"><span class="score">▲ 65</span><span class="comments">💬 13</span><span class="tag ai">AI · 工程</span></div>
       </div>
       <div></div>
     </div>
     <div class="hn-row">
       <div class="hn-rank">14</div>
       <div>
-        <a class="hn-title" href="https://news.ycombinator.com/item?id=48899321" target="_blank" rel="noopener">A Study of Microsoft's Early 2026 Rollout of Claude Code and GitHub Copilot CLI</a>
-        <div class="zh">微软 2026 年初 Claude Code 与 GitHub Copilot CLI 落地研究</div>
-        <div class="hn-meta"><span class="score">▲ 28</span><span class="comments">💬 14</span><span class="tag ai">AI 编程 · 研究</span></div>
+        <a class="hn-title" href="https://news.ycombinator.com/item?id=48894630" target="_blank" rel="noopener">Show HN: Jacquard, a programming language for AI-written, human-reviewed code</a>
+        <div class="zh">Show HN：Jacquard——为「AI 编写、人工审查」而设计的编程语言</div>
+        <div class="hn-meta"><span class="score">▲ 59</span><span class="comments">💬 28</span><span class="tag ai">AI · 开发</span></div>
       </div>
       <div></div>
     </div>
     <div class="hn-row">
       <div class="hn-rank">15</div>
       <div>
-        <a class="hn-title" href="https://news.ycombinator.com/item?id=48893550" target="_blank" rel="noopener">Show HN: Hackney – Compare Uber, Lyft, Waymo, and Robotaxi Prices</a>
-        <div class="zh">Show HN：Hackney——对比 Uber、Lyft、Waymo 与 Robotaxi 价格</div>
-        <div class="hn-meta"><span class="score">▲ 24</span><span class="comments">💬 18</span><span class="tag dev">Show HN · 出行</span></div>
+        <a class="hn-title" href="https://news.ycombinator.com/item?id=48900790" target="_blank" rel="noopener">Success may not matter if you aren&#x27;t doing what you love</a>
+        <div class="zh">若做的不是热爱之事，成功或许也无足轻重</div>
+        <div class="hn-meta"><span class="score">▲ 48</span><span class="comments">💬 9</span><span class="tag policy">观点</span></div>
       </div>
       <div></div>
     </div>
     <div class="hn-row">
       <div class="hn-rank">16</div>
       <div>
-        <a class="hn-title" href="https://sleuth-io.github.io/sx/2026/07/10/your-dropbox-is-now-a-skill-server.html" target="_blank" rel="noopener">Show HN: Sx 2.0 – Share AI skills with your team through a Dropbox folder</a>
-        <div class="zh">Show HN：Sx 2.0——通过 Dropbox 文件夹与团队共享 AI 技能</div>
-        <div class="hn-meta"><span class="score">▲ 14</span><span class="comments">💬 6</span><span class="tag ai">AI Agent · 技能</span></div>
+        <a class="hn-title" href="https://news.ycombinator.com/item?id=48901569" target="_blank" rel="noopener">Japan develops a method to recover up to 90% of lithium from used EV batteries</a>
+        <div class="zh">日本研发新工艺，可从废旧电动车电池中回收多达 90% 的锂</div>
+        <div class="hn-meta"><span class="score">▲ 36</span><span class="comments">💬 4</span><span class="tag sys">科技 · 能源</span></div>
       </div>
       <div></div>
     </div>
     <div class="hn-row">
       <div class="hn-rank">17</div>
       <div>
-        <a class="hn-title" href="https://news.ycombinator.com/item?id=48862854" target="_blank" rel="noopener">The Difference Between Watercolor and Gouache Paints</a>
-        <div class="zh">水彩与水粉颜料的区别</div>
-        <div class="hn-meta"><span class="score">▲ 18</span><span class="comments">💬 1</span><span class="tag dev">艺术 · 随笔</span></div>
+        <a class="hn-title" href="https://news.ycombinator.com/item?id=48899321" target="_blank" rel="noopener">A Study of Microsoft&#x27;s Early 2026 Rollout of Claude Code and GitHub Copilot CLI</a>
+        <div class="zh">微软 2026 年初部署 Claude Code 与 GitHub Copilot CLI 的实证研究</div>
+        <div class="hn-meta"><span class="score">▲ 36</span><span class="comments">💬 18</span><span class="tag ai">AI · 开发</span></div>
       </div>
       <div></div>
     </div>
     <div class="hn-row">
       <div class="hn-rank">18</div>
       <div>
-        <a class="hn-title" href="https://news.ycombinator.com/item?id=48900191" target="_blank" rel="noopener">An Englishwoman who sketched India before photography took hold</a>
-        <div class="zh">摄影普及前，一位英国女性对印度的速写</div>
-        <div class="hn-meta"><span class="score">▲ 55</span><span class="comments">💬 12</span><span class="tag dev">历史 · 艺术</span></div>
+        <a class="hn-title" href="https://news.ycombinator.com/item?id=48901292" target="_blank" rel="noopener">What will be left for us to work on?</a>
+        <div class="zh">当 AI 无处不在，还有什么工作留给我们？</div>
+        <div class="hn-meta"><span class="score">▲ 34</span><span class="comments">💬 15</span><span class="tag ai">观点 · AI</span></div>
       </div>
       <div></div>
     </div>
     <div class="hn-row">
       <div class="hn-rank">19</div>
       <div>
-        <a class="hn-title" href="https://om-intelligence.ch/projects/vocal-notation/vocal-notation.html" target="_blank" rel="noopener">Turn your singing voice into printable notes (in the browser)</a>
-        <div class="zh">把你的歌声变成可打印的乐谱（浏览器内）</div>
-        <div class="hn-meta"><span class="score">▲ 16</span><span class="comments">💬 8</span><span class="tag dev">Web · 音频</span></div>
+        <a class="hn-title" href="https://news.ycombinator.com/item?id=48893550" target="_blank" rel="noopener">Show HN: Hackney – Compare Uber, Lyft, Waymo, and Robotaxi Prices</a>
+        <div class="zh">Show HN：Hackney——比价 Uber / Lyft / Waymo 与 Robotaxi</div>
+        <div class="hn-meta"><span class="score">▲ 33</span><span class="comments">💬 24</span><span class="tag dev">项目 · 出行</span></div>
       </div>
       <div></div>
     </div>
     <div class="hn-row">
       <div class="hn-rank">20</div>
       <div>
-        <a class="hn-title" href="https://github.com/DaqulaLin/MemStitch" target="_blank" rel="noopener">Show HN: MemStitch – Zero-copy context bridging for vLLM (25x TTFT speedup)</a>
-        <div class="zh">Show HN：MemStitch——vLLM 的零拷贝上下文桥接（TTFT 提速 25 倍）</div>
-        <div class="hn-meta"><span class="score">▲ 5</span><span class="comments">💬 0</span><span class="tag ai">AI 基础设施</span></div>
+        <a class="hn-title" href="https://news.ycombinator.com/item?id=48901454" target="_blank" rel="noopener">Fundamentals of Wireless Communication</a>
+        <div class="zh">《无线通信基础》(斯坦福公开教材)</div>
+        <div class="hn-meta"><span class="score">▲ 30</span><span class="comments">💬 2</span><span class="tag dev">学习 · 通信</span></div>
       </div>
       <div></div>
     </div>
   </div>
-
   <!-- ===== GitHub Trending ===== -->
   <div class="section-head" id="github">
-    <span class="emoji">⭐</span><h2>GitHub Trending 仓库</h2>
-    <span class="count">当日热门 · 按新增 Star 排序</span>
+    <span class="emoji">⭐</span><h2>GitHub Trending 今日热门</h2>
+    <span class="count">Top 10</span>
   </div>
   <div class="gh-grid">
     <div class="gh-card">
-      <span class="gh-rank-badge">#1 新增</span>
-      <a class="gh-name" href="https://github.com/OpenCut-app/OpenCut" target="_blank" rel="noopener"><span class="owner">OpenCut-app /</span> OpenCut</a>
-      <div class="gh-desc">The open-source CapCut alternative<div class="zh">开源版 CapCut（剪映）替代工具</div></div>
+      <span class="gh-rank-badge">#1</span>
+      <a class="gh-name" href="https://github.com/OpenCut-app/OpenCut" target="_blank" rel="noopener"><span class="owner">OpenCut-app / </span>OpenCut</a>
+      <div class="gh-desc">The open-source CapCut alternative<div class="zh">开源版剪映 / CapCut 视频剪辑工具</div></div>
       <div class="gh-meta">
         <span class="gh-lang"><span class="dot" style="background:#3178c6"></span>TypeScript</span>
-        <span class="gh-stars">★ 66,583</span>
-        <span class="gh-today">1,229 today</span>
+        <span class="gh-stars">★ 66,985</span>
+        <span class="gh-today">1,229 stars today</span>
       </div>
     </div>
     <div class="gh-card">
-      <span class="gh-rank-badge">#2 新增</span>
-      <a class="gh-name" href="https://github.com/HKUDS/Vibe-Trading" target="_blank" rel="noopener"><span class="owner">HKUDS /</span> Vibe-Trading</a>
-      <div class="gh-desc">"Vibe-Trading: Your Personal Trading Agent"<div class="zh">Vibe-Trading：你的个人交易 Agent</div></div>
+      <span class="gh-rank-badge">#2</span>
+      <a class="gh-name" href="https://github.com/HKUDS/Vibe-Trading" target="_blank" rel="noopener"><span class="owner">HKUDS / </span>Vibe-Trading</a>
+      <div class="gh-desc">&quot;Vibe-Trading: Your Personal Trading Agent&quot;<div class="zh">Vibe-Trading：你的个人交易 Agent</div></div>
       <div class="gh-meta">
         <span class="gh-lang"><span class="dot" style="background:#3572A5"></span>Python</span>
-        <span class="gh-stars">★ 21,807</span>
-        <span class="gh-today">1,153 today</span>
+        <span class="gh-stars">★ 21,957</span>
+        <span class="gh-today">1,153 stars today</span>
       </div>
     </div>
     <div class="gh-card">
-      <span class="gh-rank-badge">#3 新增</span>
-      <a class="gh-name" href="https://github.com/Graphify-Labs/graphify" target="_blank" rel="noopener"><span class="owner">Graphify-Labs /</span> graphify</a>
-      <div class="gh-desc">AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI). Turn any folder of code, SQL schemas, docs, papers into a queryable knowledge graph.<div class="zh">AI 编程助手技能，把代码 / SQL / 文档变成可查询知识图谱</div></div>
+      <span class="gh-rank-badge">#3</span>
+      <a class="gh-name" href="https://github.com/Graphify-Labs/graphify" target="_blank" rel="noopener"><span class="owner">Graphify-Labs / </span>graphify</a>
+      <div class="gh-desc">AI coding assistant skill — turn any folder of code, SQL, docs into a queryable knowledge graph<div class="zh">AI 编程助手技能：把代码 / SQL / 文档一键变成可查询的知识图谱</div></div>
       <div class="gh-meta">
         <span class="gh-lang"><span class="dot" style="background:#3572A5"></span>Python</span>
-        <span class="gh-stars">★ 84,806</span>
-        <span class="gh-today">1,095 today</span>
+        <span class="gh-stars">★ 84,961</span>
+        <span class="gh-today">1,095 stars today</span>
       </div>
     </div>
     <div class="gh-card">
-      <span class="gh-rank-badge">#4 新增</span>
-      <a class="gh-name" href="https://github.com/Shubhamsaboo/awesome-llm-apps" target="_blank" rel="noopener"><span class="owner">Shubhamsaboo /</span> awesome-llm-apps</a>
-      <div class="gh-desc">100+ AI Agent & RAG apps you can actually run — clone, customize, ship.<div class="zh">100+ 个可运行的 AI Agent 与 RAG 应用合集</div></div>
+      <span class="gh-rank-badge">#4</span>
+      <a class="gh-name" href="https://github.com/Shubhamsaboo/awesome-llm-apps" target="_blank" rel="noopener"><span class="owner">Shubhamsaboo / </span>awesome-llm-apps</a>
+      <div class="gh-desc">100+ AI Agent &amp; RAG apps you can actually run — clone, customize, ship<div class="zh">100+ 个可直接运行的 AI Agent 与 RAG 应用：克隆、定制、上线</div></div>
       <div class="gh-meta">
         <span class="gh-lang"><span class="dot" style="background:#3572A5"></span>Python</span>
-        <span class="gh-stars">★ 119,680</span>
-        <span class="gh-today">996 today</span>
+        <span class="gh-stars">★ 119,812</span>
+        <span class="gh-today">996 stars today</span>
       </div>
     </div>
     <div class="gh-card">
-      <span class="gh-rank-badge">#5 新增</span>
-      <a class="gh-name" href="https://github.com/Nutlope/hallmark" target="_blank" rel="noopener"><span class="owner">Nutlope /</span> hallmark</a>
-      <div class="gh-desc">Anti-AI-slop design skill for Claude Code, Cursor, and Codex.<div class="zh">面向 Claude Code / Cursor / Codex 的"反 AI 垃圾"设计技能</div></div>
+      <span class="gh-rank-badge">#5</span>
+      <a class="gh-name" href="https://github.com/Nutlope/hallmark" target="_blank" rel="noopener"><span class="owner">Nutlope / </span>hallmark</a>
+      <div class="gh-desc">Anti-AI-slop design skill for Claude Code, Cursor, and Codex<div class="zh">专治「AI 味设计」的审美技能，适配 Claude Code / Cursor / Codex</div></div>
       <div class="gh-meta">
         <span class="gh-lang"><span class="dot" style="background:#563d7c"></span>CSS</span>
-        <span class="gh-stars">★ 5,197</span>
-        <span class="gh-today">794 today</span>
+        <span class="gh-stars">★ 5,312</span>
+        <span class="gh-today">794 stars today</span>
       </div>
     </div>
     <div class="gh-card">
-      <span class="gh-rank-badge">#6 新增</span>
-      <a class="gh-name" href="https://github.com/github/spec-kit" target="_blank" rel="noopener"><span class="owner">github /</span> spec-kit</a>
-      <div class="gh-desc">💫 Toolkit to help you get started with Spec-Driven Development<div class="zh">帮你上手"规格驱动开发（Spec-Driven Dev）"的工具包</div></div>
+      <span class="gh-rank-badge">#6</span>
+      <a class="gh-name" href="https://github.com/github/spec-kit" target="_blank" rel="noopener"><span class="owner">github / </span>spec-kit</a>
+      <div class="gh-desc">Toolkit to help you get started with Spec-Driven Development<div class="zh">规约驱动开发（Spec-Driven Development）入门工具包</div></div>
       <div class="gh-meta">
         <span class="gh-lang"><span class="dot" style="background:#3572A5"></span>Python</span>
-        <span class="gh-stars">★ 120,639</span>
-        <span class="gh-today">543 today</span>
+        <span class="gh-stars">★ 120,724</span>
+        <span class="gh-today">543 stars today</span>
       </div>
     </div>
     <div class="gh-card">
-      <span class="gh-rank-badge">#7 新增</span>
-      <a class="gh-name" href="https://github.com/hasaneyldrm/exercises-dataset" target="_blank" rel="noopener"><span class="owner">hasaneyldrm /</span> exercises-dataset</a>
-      <div class="gh-desc">1,324-exercise fitness dataset — animation GIFs, thumbnails, muscle-group & equipment data, step-by-step instructions in 6 languages.<div class="zh">1324 个健身动作数据集（含动画 GIF、肌肉群与器械信息）</div></div>
+      <span class="gh-rank-badge">#7</span>
+      <a class="gh-name" href="https://github.com/hasaneyldrm/exercises-dataset" target="_blank" rel="noopener"><span class="owner">hasaneyldrm / </span>exercises-dataset</a>
+      <div class="gh-desc">1,324-exercise fitness dataset — animation GIFs, thumbnails, muscle-group &amp; equipment data<div class="zh">含 1,324 个动作的健身数据集：动图、缩略图、肌群与器械数据</div></div>
       <div class="gh-meta">
         <span class="gh-lang"><span class="dot" style="background:#e34c26"></span>HTML</span>
-        <span class="gh-stars">★ 12,651</span>
-        <span class="gh-today">451 today</span>
+        <span class="gh-stars">★ 12,751</span>
+        <span class="gh-today">451 stars today</span>
       </div>
     </div>
     <div class="gh-card">
-      <span class="gh-rank-badge">#8 新增</span>
-      <a class="gh-name" href="https://github.com/coreyhaines31/marketingskills" target="_blank" rel="noopener"><span class="owner">coreyhaines31 /</span> marketingskills</a>
-      <div class="gh-desc">Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.<div class="zh">面向 Claude Code 与 AI Agent 的营销技能（CRO / 文案 / SEO / 增长）</div></div>
+      <span class="gh-rank-badge">#8</span>
+      <a class="gh-name" href="https://github.com/coreyhaines31/marketingskills" target="_blank" rel="noopener"><span class="owner">coreyhaines31 / </span>marketingskills</a>
+      <div class="gh-desc">Marketing skills for Claude Code and AI agents — CRO, copywriting, SEO, analytics, growth<div class="zh">面向 Claude Code 与 AI Agent 的营销技能：转化 / 文案 / SEO / 分析 / 增长</div></div>
       <div class="gh-meta">
         <span class="gh-lang"><span class="dot" style="background:#f1e05a"></span>JavaScript</span>
-        <span class="gh-stars">★ 38,615</span>
-        <span class="gh-today">299 today</span>
+        <span class="gh-stars">★ 38,718</span>
+        <span class="gh-today">299 stars today</span>
       </div>
     </div>
     <div class="gh-card">
-      <span class="gh-rank-badge">#9 新增</span>
-      <a class="gh-name" href="https://github.com/Raphire/Win11Debloat" target="_blank" rel="noopener"><span class="owner">Raphire /</span> Win11Debloat</a>
-      <div class="gh-desc">A simple, lightweight PowerShell script that removes pre-installed apps, disables telemetry, and declutters Windows.<div class="zh">轻量 PowerShell 脚本，移除预装应用、关闭遥测，精简 Windows</div></div>
+      <span class="gh-rank-badge">#9</span>
+      <a class="gh-name" href="https://github.com/Raphire/Win11Debloat" target="_blank" rel="noopener"><span class="owner">Raphire / </span>Win11Debloat</a>
+      <div class="gh-desc">Lightweight PowerShell script to remove pre-installed apps and declutter Windows 10/11<div class="zh">轻量 PowerShell 脚本：卸载预装应用、精简 Windows 10/11</div></div>
       <div class="gh-meta">
         <span class="gh-lang"><span class="dot" style="background:#012456"></span>PowerShell</span>
-        <span class="gh-stars">★ 50,909</span>
-        <span class="gh-today">118 today</span>
+        <span class="gh-stars">★ 50,980</span>
+        <span class="gh-today">118 stars today</span>
       </div>
     </div>
     <div class="gh-card">
-      <span class="gh-rank-badge">#10 新增</span>
-      <a class="gh-name" href="https://github.com/moeru-ai/airi" target="_blank" rel="noopener"><span class="owner">moeru-ai /</span> airi</a>
-      <div class="gh-desc">💖🧸 Self hosted, you-owned Grok Companion — realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows.<div class="zh">自托管的 AI 伴侣（可实时语音、玩 Minecraft / Factorio）</div></div>
+      <span class="gh-rank-badge">#10</span>
+      <a class="gh-name" href="https://github.com/moeru-ai/airi" target="_blank" rel="noopener"><span class="owner">moeru-ai / </span>airi</a>
+      <div class="gh-desc">Self-hosted, you-owned companion — realtime voice chat, Minecraft &amp; Factorio playing<div class="zh">自托管、完全归你所有的 AI 陪伴体，支持实时语音、玩 Minecraft / Factorio</div></div>
       <div class="gh-meta">
         <span class="gh-lang"><span class="dot" style="background:#3178c6"></span>TypeScript</span>
-        <span class="gh-stars">★ 41,910</span>
-        <span class="gh-today">78 today</span>
+        <span class="gh-stars">★ 41,999</span>
+        <span class="gh-today">78 stars today</span>
       </div>
     </div>
   </div>
-
   <!-- ===== Product Hunt ===== -->
   <div class="section-head" id="producthunt">
     <span class="emoji">🚀</span><h2>Product Hunt 今日精选</h2>
-    <span class="count">Today · 8 款</span>
+    <span class="count">当日排行 Top 8</span>
   </div>
   <div class="ph-grid">
     <div class="ph-card">
       <div class="ph-top">
         <div class="ph-name">Osaurus</div>
-        <div class="ph-up"><b>86</b> ▲</div>
+        <div class="ph-up">当日 <b>#1</b></div>
       </div>
-      <div class="ph-desc">Open source agents that run 100% locally on your Mac<div class="zh">100% 在你的 Mac 本地运行的 AI 智能体</div></div>
-      <div class="ph-meta"><span class="ph-topics">Open Source</span><span class="ph-topics">Privacy</span><span class="ph-topics">AI</span></div>
+      <div class="ph-desc">Open source agents that run 100% locally on your Mac<div class="zh">开源 AI Agent，100% 在你的 Mac 本地运行</div></div>
+      <div class="ph-meta"><span class="ph-topics">Artificial Intelligence</span><span class="ph-topics">Developer Tools</span><span class="ph-topics">Mac</span></div>
     </div>
     <div class="ph-card">
       <div class="ph-top">
         <div class="ph-name">AgentKey</div>
-        <div class="ph-up"><b>100</b> ▲</div>
+        <div class="ph-up">当日 <b>#2</b></div>
       </div>
-      <div class="ph-desc">One-stop live data marketplace for your agent<div class="zh">为你的 Agent 打造的一站式实时数据市场</div></div>
-      <div class="ph-meta"><span class="ph-topics">Productivity</span><span class="ph-topics">AI</span><span class="ph-topics">Data</span></div>
-    </div>
-    <div class="ph-card">
-      <div class="ph-top">
-        <div class="ph-name">Loomal</div>
-        <div class="ph-up"><b>125</b> ▲</div>
-      </div>
-      <div class="ph-desc">Monetize any MCP server in 5 minutes with no % skim.<div class="zh">5 分钟把任意 MCP 服务变现，不抽成</div></div>
-      <div class="ph-meta"><span class="ph-topics">Payments</span><span class="ph-topics">Developer Tools</span><span class="ph-topics">AI</span></div>
+      <div class="ph-desc">One-stop live data marketplace for your agent<div class="zh">为 AI Agent 打造的一站式实时数据市场</div></div>
+      <div class="ph-meta"><span class="ph-topics">Artificial Intelligence</span><span class="ph-topics">Developer Tools</span><span class="ph-topics">APIs</span></div>
     </div>
     <div class="ph-card">
       <div class="ph-top">
         <div class="ph-name">AI Media Buyer By Creatify</div>
-        <div class="ph-up"><b>63</b> ▲</div>
+        <div class="ph-up">当日 <b>#3</b></div>
       </div>
-      <div class="ph-desc">Your ads, managed by AI that gets smarter daily.<div class="zh">AI 帮你打理广告，且每天变得更聪明</div></div>
-      <div class="ph-meta"><span class="ph-topics">Social Media</span><span class="ph-topics">Marketing</span><span class="ph-topics">Advertising</span></div>
+      <div class="ph-desc">Your ads, managed by AI that gets smarter daily<div class="zh">你的广告投放，交给每天都更聪明的 AI 打理</div></div>
+      <div class="ph-meta"><span class="ph-topics">Marketing</span><span class="ph-topics">Artificial Intelligence</span><span class="ph-topics">Advertising</span></div>
     </div>
     <div class="ph-card">
       <div class="ph-top">
-        <div class="ph-name">Simba Voice Agents</div>
-        <div class="ph-up"><b>24</b> ▲</div>
+        <div class="ph-name">Loomal</div>
+        <div class="ph-up">当日 <b>#4</b></div>
       </div>
-      <div class="ph-desc">Voice agents powered by Simba 3.2 the world's #1 voice model<div class="zh">由全球第一语音模型 Simba 3.2 驱动的语音 Agent</div></div>
-      <div class="ph-meta"><span class="ph-topics">API</span><span class="ph-topics">Developer Tools</span><span class="ph-topics">AI</span></div>
+      <div class="ph-desc">Monetize any MCP server in 5 minutes with no % skim<div class="zh">5 分钟给任意 MCP 服务器接入变现，且不抽成</div></div>
+      <div class="ph-meta"><span class="ph-topics">Developer Tools</span><span class="ph-topics">Artificial Intelligence</span><span class="ph-topics">SaaS</span></div>
     </div>
     <div class="ph-card">
       <div class="ph-top">
         <div class="ph-name">Playground</div>
-        <div class="ph-up"><b>22</b> ▲</div>
+        <div class="ph-up">当日 <b>#5</b></div>
       </div>
-      <div class="ph-desc">Earn $100K+ in weekly rewards for hacking AI agents.<div class="zh">破解 AI Agent，每周赢取 10 万美元+ 奖励</div></div>
-      <div class="ph-meta"><span class="ph-topics">AI</span><span class="ph-topics">GitHub</span><span class="ph-topics">Games</span></div>
-    </div>
-    <div class="ph-card">
-      <div class="ph-top">
-        <div class="ph-name">Marked QL</div>
-        <div class="ph-up"><b>23</b> ▲</div>
-      </div>
-      <div class="ph-desc">Instant markdown previews in Finder<div class="zh">在 Finder 中即时预览 Markdown</div></div>
-      <div class="ph-meta"><span class="ph-topics">Productivity</span><span class="ph-topics">UX</span><span class="ph-topics">Developer Tools</span></div>
+      <div class="ph-desc">Earn $100K+ in weekly rewards for hacking AI agents<div class="zh">攻破 AI Agent，每周赢取超 10 万美元奖励</div></div>
+      <div class="ph-meta"><span class="ph-topics">Artificial Intelligence</span><span class="ph-topics">Security</span></div>
     </div>
     <div class="ph-card">
       <div class="ph-top">
         <div class="ph-name">Knockoff</div>
-        <div class="ph-up"><b>21</b> ▲</div>
+        <div class="ph-up">当日 <b>#6</b></div>
       </div>
-      <div class="ph-desc">Amazon, without the knockoffs<div class="zh">没有假货的"亚马逊"</div></div>
-      <div class="ph-meta"><span class="ph-topics">Browser Extensions</span><span class="ph-topics">Amazon</span><span class="ph-topics">GitHub</span></div>
+      <div class="ph-desc">Amazon, without the knockoffs<div class="zh">没有假货的「亚马逊」</div></div>
+      <div class="ph-meta"><span class="ph-topics">E-Commerce</span><span class="ph-topics">Shopping</span></div>
+    </div>
+    <div class="ph-card">
+      <div class="ph-top">
+        <div class="ph-name">Marked QL</div>
+        <div class="ph-up">当日 <b>#7</b></div>
+      </div>
+      <div class="ph-desc">Instant markdown previews in Finder<div class="zh">在 Finder 里即时预览 Markdown</div></div>
+      <div class="ph-meta"><span class="ph-topics">Mac</span><span class="ph-topics">Developer Tools</span><span class="ph-topics">Productivity</span></div>
+    </div>
+    <div class="ph-card">
+      <div class="ph-top">
+        <div class="ph-name">Simba Voice Agents</div>
+        <div class="ph-up">当日 <b>#8</b></div>
+      </div>
+      <div class="ph-desc">Voice agents powered by Simba 3.2 the world&#x27;s #1 voice model<div class="zh">由号称全球第一的 Simba 3.2 语音模型驱动的语音 Agent</div></div>
+      <div class="ph-meta"><span class="ph-topics">Artificial Intelligence</span><span class="ph-topics">Voice</span></div>
     </div>
   </div>
-
-  <!-- ===== Hugging Face Papers ===== -->
+  <!-- ===== Daily Papers ===== -->
   <div class="section-head" id="papers">
     <span class="emoji">📄</span><h2>Daily Papers · Hugging Face</h2>
-    <span class="count">最新 12 篇</span>
+    <span class="count">当日精选</span>
   </div>
   <div class="hn-table papers">
     <div class="hn-row">
       <div class="hn-rank">1</div>
       <div>
-        <a class="hn-title" href="https://huggingface.co/papers/2607.08964" target="_blank" rel="noopener">Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading</a>
-        <div class="zh">长程终端任务 Agent 极限测试：基于密集奖励评分的基准</div>
-        <div class="hn-meta"><span class="score">🔥 48</span><span class="tag ai">Agent 评测</span></div>
+        <a class="hn-title" href="https://huggingface.co/papers/2607.10350" target="_blank" rel="noopener">ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory</a>
+        <div class="zh">ABot-AgentOS：具备终身多模态记忆的通用机器人 Agent 操作系统（阿里高德 CV Lab）</div>
+        <div class="hn-meta"><span class="score">▲ 14 热度</span><span class="tag ai">arXiv:2607.10350</span></div>
       </div>
       <div></div>
     </div>
     <div class="hn-row">
       <div class="hn-rank">2</div>
       <div>
-        <a class="hn-title" href="https://huggingface.co/papers/2607.09024" target="_blank" rel="noopener">Video Generation Models are General-Purpose Vision Learners</a>
-        <div class="zh">视频生成模型即通用视觉学习器</div>
-        <div class="hn-meta"><span class="score">🔥 42</span><span class="tag ai">多模态 · DeepMind</span></div>
+        <a class="hn-title" href="https://huggingface.co/papers/2607.10383" target="_blank" rel="noopener">ABot-N1: Toward a General Visual Language Navigation Foundation Model</a>
+        <div class="zh">ABot-N1：迈向通用视觉语言导航基础模型（阿里高德 CV Lab）</div>
+        <div class="hn-meta"><span class="score">▲ 14 热度</span><span class="tag ai">arXiv:2607.10383</span></div>
       </div>
       <div></div>
     </div>
     <div class="hn-row">
       <div class="hn-rank">3</div>
       <div>
-        <a class="hn-title" href="https://huggingface.co/papers/2607.09657" target="_blank" rel="noopener">Scalable Visual Pretraining for Language Intelligence</a>
-        <div class="zh">面向语言智能的可扩展视觉预训练</div>
-        <div class="hn-meta"><span class="score">🔥 42</span><span class="tag ai">视觉预训练</span></div>
+        <a class="hn-title" href="https://huggingface.co/papers/2607.11487" target="_blank" rel="noopener">LightMem-Ego: Your AI Memory for Everyday Life</a>
+        <div class="zh">LightMem-Ego：服务日常生活的 AI 记忆系统（浙大 ZJUNLP）</div>
+        <div class="hn-meta"><span class="score">▲ 13 热度</span><span class="tag ai">arXiv:2607.11487</span></div>
       </div>
       <div></div>
     </div>
     <div class="hn-row">
       <div class="hn-rank">4</div>
       <div>
-        <a class="hn-title" href="https://huggingface.co/papers/2607.04751" target="_blank" rel="noopener">Trust Region Policy Distillation</a>
-        <div class="zh">信任域策略蒸馏</div>
-        <div class="hn-meta"><span class="score">🔥 17</span><span class="tag sys">RL · 蒸馏</span></div>
+        <a class="hn-title" href="https://huggingface.co/papers/2607.11849" target="_blank" rel="noopener">AdvancedMathBench: A Benchmark Suite for Advanced Mathematical Proof Generation and Verification</a>
+        <div class="zh">AdvancedMathBench：面向高阶数学证明生成与验证的基准套件（书生大模型 InternLM）</div>
+        <div class="hn-meta"><span class="score">▲ 6 热度</span><span class="tag ai">arXiv:2607.11849</span></div>
       </div>
       <div></div>
     </div>
     <div class="hn-row">
       <div class="hn-rank">5</div>
       <div>
-        <a class="hn-title" href="https://huggingface.co/papers/2607.07964" target="_blank" rel="noopener">KronQ: LLM Quantization via Kronecker-Factored Hessian</a>
-        <div class="zh">KronQ：基于 Kronecker 分解 Hessian 的 LLM 量化</div>
-        <div class="hn-meta"><span class="score">🔥 16</span><span class="tag ai">量化 · LLM</span></div>
-      </div>
-      <div></div>
-    </div>
-    <div class="hn-row">
-      <div class="hn-rank">6</div>
-      <div>
-        <a class="hn-title" href="https://huggingface.co/papers/2607.06553" target="_blank" rel="noopener">From RGB Generation to Dense Field Readout: Pixel-Space Dense Prediction with Text-to-Image Models</a>
-        <div class="zh">从 RGB 生成到密集场读出：用文生图模型做像素空间密集预测</div>
-        <div class="hn-meta"><span class="score">🔥 10</span><span class="tag ai">文生图 · 密集预测</span></div>
-      </div>
-      <div></div>
-    </div>
-    <div class="hn-row">
-      <div class="hn-rank">7</div>
-      <div>
-        <a class="hn-title" href="https://huggingface.co/papers/2607.08393" target="_blank" rel="noopener">Towards Mechanistically Understanding Why Memorized Knowledge Fails to Generalize in Large Language Model Finetuning</a>
-        <div class="zh">从机制上理解为何记忆知识在 LLM 微调中无法泛化</div>
-        <div class="hn-meta"><span class="score">🔥 8</span><span class="tag ai">可解释性 · LLM</span></div>
-      </div>
-      <div></div>
-    </div>
-    <div class="hn-row">
-      <div class="hn-rank">8</div>
-      <div>
-        <a class="hn-title" href="https://huggingface.co/papers/2607.09661" target="_blank" rel="noopener">PanoWorld: Real-World Panoramic Generation</a>
-        <div class="zh">PanoWorld：真实世界全景生成</div>
-        <div class="hn-meta"><span class="score">🔥 7</span><span class="tag ai">3D · 全景生成</span></div>
-      </div>
-      <div></div>
-    </div>
-    <div class="hn-row">
-      <div class="hn-rank">9</div>
-      <div>
-        <a class="hn-title" href="https://huggingface.co/papers/2607.09415" target="_blank" rel="noopener">Self-Guided Test-Time Training for Long-Context LLMs</a>
-        <div class="zh">面向长上下文 LLM 的自引导测试时训练</div>
-        <div class="hn-meta"><span class="score">🔥 7</span><span class="tag ai">长上下文 · LLM</span></div>
-      </div>
-      <div></div>
-    </div>
-    <div class="hn-row">
-      <div class="hn-rank">10</div>
-      <div>
-        <a class="hn-title" href="https://huggingface.co/papers/2607.06957" target="_blank" rel="noopener">Flow-ERD: Agent-type Aware Flow Matching with Entropy-Regularized Distillation for Diverse Traffic Simulation</a>
-        <div class="zh">Flow-ERD：面向多样交通仿真的 Agent 感知流匹配与熵正则蒸馏</div>
-        <div class="hn-meta"><span class="score">🔥 5</span><span class="tag sys">仿真 · 流匹配</span></div>
-      </div>
-      <div></div>
-    </div>
-    <div class="hn-row">
-      <div class="hn-rank">11</div>
-      <div>
-        <a class="hn-title" href="https://huggingface.co/papers/2607.09020" target="_blank" rel="noopener">Phone Segmentation and Recognition through Phonological Activation Mapping</a>
-        <div class="zh">通过音位激活映射的语音分段与识别</div>
-        <div class="hn-meta"><span class="score">🔥 2</span><span class="tag sys">语音 · 音位</span></div>
-      </div>
-      <div></div>
-    </div>
-    <div class="hn-row">
-      <div class="hn-rank">12</div>
-      <div>
-        <a class="hn-title" href="https://huggingface.co/papers/2607.07673" target="_blank" rel="noopener">MedPMC: A Systematic Framework for Scaling High-Fidelity Medical Multimodal Data for Foundation Models</a>
-        <div class="zh">MedPMC：用于基础模型的高保真医疗多模态数据扩展框架</div>
-        <div class="hn-meta"><span class="score">🔥 2</span><span class="tag ai">医疗 · 多模态</span></div>
+        <a class="hn-title" href="https://huggingface.co/papers/2607.00397" target="_blank" rel="noopener">NeuroCogMap Reveals Cognitive Organization of Large Language Models</a>
+        <div class="zh">NeuroCogMap：揭示大语言模型的认知组织结构</div>
+        <div class="hn-meta"><span class="score">▲ 1 热度</span><span class="tag ai">arXiv:2607.00397</span></div>
       </div>
       <div></div>
     </div>
   </div>
-
-  <!-- ===== Insights ===== -->
+  <!-- ===== 趋势洞察 ===== -->
   <div class="section-head" id="insights">
     <span class="emoji">💡</span><h2>趋势洞察</h2>
     <span class="count">3 条核心信号</span>
   </div>
   <div class="insights">
     <div class="insight">
-      <h4><span class="num">01</span>本地优先与隐私觉醒：AI Agent 从云端走向端侧</h4>
-      <p>Product Hunt 上 Osaurus（"100% 在你的 Mac 本地运行"的 AI Agent）领跑当日新品，GitHub 上 OpenCut（开源版 CapCut，今日 +1,229 Star）与自托管 AI 伴侣 airi 持续走高；而 Hacker News 上 Samsung Health 因 AI 训练威胁删数据引发众怒（281 赞）。"自己的数据、自己的算力"正从极客诉求变成产品共识。</p>
-      <div class="sig">信号来源：<b>Product Hunt</b> Osaurus / AgentKey · <b>GitHub</b> OpenCut / airi · <b>HN</b> Samsung Health</div>
+      <h4><span class="num">01</span>本地优先与数据主权成为新共识</h4>
+      <p>四大平台今日信号高度一致地指向「本地 + 隐私」。Product Hunt 冠军 <b>Osaurus</b>（100% 在 Mac 本地运行的开源 Agent）领跑当日新品，GitHub 上 <b>awesome-llm-apps</b>（+996，主打「克隆即可本地运行」）霸榜，而 Hacker News 上 <b>Samsung Health 因 AI 训练威胁删数据</b>与「若退出 AI 训练就删数据」的隐私争议引爆讨论。用户与开发者都在把 AI 从云端往端侧和数据自控方向推。</p>
+      <div class="sig"><b>信号 ·</b> 跨平台印证：Osaurus (PH #1) · awesome-llm-apps +996 · HN 隐私争议</div>
     </div>
     <div class="insight">
-      <h4><span class="num">02</span>AI 编程 Agent 进入"技能 + 规约"双护栏时代</h4>
-      <p>GitHub Trending 被 Claude Code / Cursor / Codex 技能库霸榜：graphify（+1,095，把代码变知识图谱）、hallmark（+794，反 AI 垃圾设计技能）、awesome-llm-apps（+996）、spec-kit（+543，规格驱动开发）、marketingskills（+299）。HN 上 Jacquard（AI 写、人审的代码语言）与微软 Claude Code / Copilot CLI 落地研究同步升温。AI 编码正从"能写"转向"按规约写好、不写垃圾"。</p>
-      <div class="sig">信号来源：<b>GitHub</b> graphify / hallmark / spec-kit · <b>HN</b> Jacquard / 微软研究</div>
+      <h4><span class="num">02</span>AI 编程 Agent 进入「技能化 + 规约化」阶段</h4>
+      <p>GitHub Trending 被「AI 技能库」类项目集体霸榜：<b>graphify</b>（+1,095，代码→知识图谱）、<b>hallmark</b>（+794，专治 AI 味设计）、<b>spec-kit</b>（+543，规约驱动开发）、<b>marketingskills</b>（+299）。HN 侧 <b>Jacquard</b>（为「AI 写、人审」而生的编程语言）与微软 Claude Code / Copilot CLI 实证研究呼应。Agent 生态正从「能写代码」升级为「可控、可审、有品味」。</p>
+      <div class="sig"><b>信号 ·</b> 增速前列：graphify +1,095 · hallmark +794 · spec-kit +543 · HN Jacquard</div>
     </div>
     <div class="insight">
-      <h4><span class="num">03</span>学术前沿：长程 Agent 评测 + 多模态大一统</h4>
-      <p>Hugging Face Daily Papers 中，Tencent Hunyuan 的 Long-Horizon-Terminal-Bench（48 赞登顶，测试 Agent 长程极限）、Google DeepMind"视频生成即通用视觉学习器"（42 赞）、Scalable Visual Pretraining for Language Intelligence（42 赞）占据前列；GitHub 上 HKUDS 的 Vibe-Trading（个人交易 Agent，+1,153）则把 Agent 能力推向垂直场景。Agent 能力边界与统一表征是当下研究焦点。</p>
-      <div class="sig">信号来源：<b>Hugging Face</b> Long-Horizon-Terminal-Bench / DeepMind · <b>GitHub</b> Vibe-Trading</div>
+      <h4><span class="num">03</span>Agent 正长出「操作系统 + 长期记忆 + 垂直落地」</h4>
+      <p>Hugging Face Daily Papers 今日由阿里高德 <b>ABot-AgentOS</b>（终身多模态记忆的机器人 Agent OS，14 赞）与 <b>ABot-N1</b>（视觉语言导航基础模型，14 赞）领衔，浙大 <b>LightMem-Ego</b>（日常生活 AI 记忆，13 赞）紧随；GitHub 上 <b>Vibe-Trading</b>（个人交易 Agent，+1,153）、<b>airi</b>（自托管陪伴 Agent）则展示了 Agent 在垂直场景的落地。学术与工程双线都在给 Agent 补上「记忆」与「系统」这两块地基。</p>
+      <div class="sig"><b>信号 ·</b> 论文热度：ABot-AgentOS 14 · ABot-N1 14 · LightMem-Ego 13 | GitHub：Vibe-Trading +1,153</div>
     </div>
   </div>
-
   <footer>
     <div class="sources">
-      <b>数据来源</b>：Hacker News · GitHub Trending · Product Hunt · Hugging Face Papers<br>
-      报告生成于 2026-07-14（星期二）· 由 WorkBuddy 每日技术热点速览自动化任务产出
+      数据来源：<b>Hacker News</b> · <b>GitHub Trending</b> · <b>Product Hunt</b> · <b>Hugging Face Papers</b><br>
+      本报告由自动化任务于 2026-07-14（星期二）抓取生成 · 仅供技术趋势速览参考
     </div>
     <a class="totop" href="#top-story">↑ 回到顶部</a>
   </footer>
