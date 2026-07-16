@@ -1,10 +1,10 @@
 {
-  "date": "2026-07-15",
-  "date_label": "2026-07-15 · 星期三",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-07-15.html",
+  "date": "2026-07-16",
+  "date_label": "2026-07-16 · 星期四",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-07-16.html",
   "summary": [
-    "端侧/本地优先 AI 崛起：HN 上 Bonsai 27B「手机可跑的 27B 级模型」登 444 分，GitHub 的 OpenCut 开源剪映 +4,276★、awesome-llm-apps +1,106★ 同频印证「数据主权」成新主线。",
-    "AI 编程 Agent 进入「技能化+护栏」成熟期：mattpocock/skills +1,679★、Graphify +1,851★、hallmark 反 AI-slop 设计技能 +1,015★、destructive_command_guard 危险命令拦截 +473★ 齐发；HN「别让 Claude 老说 load-bearing」440 分。",
-    "Product Hunt 今日 8 款 AI 新品领跑（Pazi 596 赞、ClawTeams 581 赞居前）；Hugging Face 当日仅 1 篇新论文 ACQUIRE（提升 SWE-bench 代码修复 Pass@1，早间提交少已如实标注）。"
+    "开放权重/开源 AI 今日形成最强共识：Thinking Machines 的 Inkling 开放权重模型登顶 Hacker News（717 赞），Grok Build 开源、'政府应投资免费开源 AI'倡议同步升温。",
+    "编码 Agent 迈入'技能化 + 安全护栏'双成熟阶段：mattpocock/skills 单日 +2,130、hallmark 反 AI 口水设计技能 +1,277、destructive_command_guard 为 agent 拦截危险命令 +471。",
+    "本地优先与 Agent 自动化渗透内容创作与垂直场景：OpenCut 开源剪映 +1,664、V2Fun/Velo 3.0 的 AI 3D 与视频、HKUDS Vibe-Trading 个人交易 Agent +915，Hugging Face 的 MuScriptor 音乐转写模型以 576 赞居当日论文榜首。"
   ]
 }
