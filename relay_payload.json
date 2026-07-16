@@ -1,0 +1,10 @@
+{
+  "date": "2026-07-15",
+  "date_label": "2026-07-15 · 星期三",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-07-15.html",
+  "summary": [
+    "端侧/本地优先 AI 崛起：HN 上 Bonsai 27B「手机可跑的 27B 级模型」登 444 分，GitHub 的 OpenCut 开源剪映 +4,276★、awesome-llm-apps +1,106★ 同频印证「数据主权」成新主线。",
+    "AI 编程 Agent 进入「技能化+护栏」成熟期：mattpocock/skills +1,679★、Graphify +1,851★、hallmark 反 AI-slop 设计技能 +1,015★、destructive_command_guard 危险命令拦截 +473★ 齐发；HN「别让 Claude 老说 load-bearing」440 分。",
+    "Product Hunt 今日 8 款 AI 新品领跑（Pazi 596 赞、ClawTeams 581 赞居前）；Hugging Face 当日仅 1 篇新论文 ACQUIRE（提升 SWE-bench 代码修复 Pass@1，早间提交少已如实标注）。"
+  ]
+}
