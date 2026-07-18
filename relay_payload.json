@@ -1,10 +1,10 @@
 {
-  "date": "2026-07-17",
-  "date_label": "2026-07-17 · 星期五",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-07-17.html",
+  "date": "2026-07-18",
+  "date_label": "2026-07-18 · 星期六",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-07-18.html",
   "summary": [
-    "Kimi K3 开源前沿模型登顶 Hacker News（1120 赞），openinterpreter 已重写为面向 Kimi K3 等开源模型的编程 Agent；GitHub 上 OpenCut（+3,537）、hallmark（+3,372）、graphify（+1,107）等开源项目霸榜，开源从模型层打到应用层。",
-    "AI Agent 全面渗透工作流：Product Hunt 今日 8 款新品 6 款是 Agent（编程、邮件、销售、测试），Hugging Face 论文过半与 Agent 相关（PalmClaw 端侧 Agent、AgentCompass 评测、KnowAct-GUIClaw 个人 GUI 助手），Agent 从「能对话」走向「能执行+自进化」。",
-    "端侧/隐私优先与多模态大一统并行：HF 论文 Boogu-Image-0.1（开源统一多模态理解生成，755 赞）与 PalmClaw（手机端原生 Agent 框架，1.12k 赞）领跑，Product Hunt 的 Zro（私有推理）与 HN 隐私争议呼应本地化共识。"
+    "Kimi K3 成今日最强信号：开放 3T 级模型同时登顶 Product Hunt（#3，347 赞）、引爆 HN 讨论（267 赞）、并催生 openinterpreter 重写为其编程 Agent（GitHub +431 星/日）。",
+    "AI 编程 Agent「技能化 + 护栏」走向成熟：GitHub 上 hallmark 反 AI 垃圾设计规范（+1,485）、copilot-sdk 官方 Agent SDK（+233）、DeepTutor 个性化辅导（+531）霸榜。",
+    "学术前沿转向智能体评测与世界模型：HF 论文 From Pixels to States（世界模型即游戏引擎 406 赞）、SEED（智能体 RL 自我进化蒸馏 81 赞）、SearchOS-V1（开放域检索智能体 54 赞）领跑。"
   ]
 }

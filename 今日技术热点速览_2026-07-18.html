@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今日技术热点速览 · 2026-07-18</title>
+<meta name="description" content="每日技术热点速览（2026-07-18）：聚合 Hacker News、GitHub Trending、Product Hunt 与 Hugging Face Daily Papers 的当日技术动态。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --border:#30363d; --muted:#8b949e;
+    --accent:#58a6ff; --text:#e6edf3; --green:#3fb950; --orange:#f0883e; --purple:#bc8cff;
+  }
+  html{scroll-behavior:smooth;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--bg); color:var(--text);
+    font-family:'Inter','PingFang SC','Microsoft YaHei',-apple-system,system-ui,sans-serif;
+    line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px 60px;}
+  .mono{font-family:'JetBrains Mono',ui-monospace,monospace;}
+
+  /* ---------- Header ---------- */
+  header.hero-head{
+    text-align:center;padding:42px 20px 26px;
+    background:radial-gradient(1200px 400px at 50% -10%,rgba(88,166,255,.12),transparent 60%);
+    border-bottom:1px solid var(--border);
+  }
+  header.hero-head .kicker{font-size:13px;letter-spacing:.18em;color:var(--accent);font-weight:600;text-transform:uppercase;}
+  header.hero-head h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.5px;}
+  header.hero-head .date{font-size:14px;color:var(--muted);font-family:'JetBrains Mono',monospace;}
+  header.hero-head .sources{margin-top:14px;font-size:12.5px;color:var(--muted);}
+  header.hero-head .sources b{color:var(--accent);font-weight:600;}
+
+  /* ---------- Sticky quick nav ---------- */
+  .quick-nav{
+    position:sticky;top:0;z-index:100;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;
+    padding:12px 0;margin:0 0 26px;background:rgba(13,17,23,.85);
+    -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);
+  }
+  .quick-nav a{
+    font-size:12.5px;font-weight:500;color:var(--muted);text-decoration:none;
+    padding:5px 12px;border-radius:8px;border:1px solid var(--border);background:var(--card);
+    white-space:nowrap;transition:all .15s ease;
+  }
+  .quick-nav a:hover{color:var(--accent);border-color:var(--accent);background:rgba(88,166,255,.08);}
+
+  /* ---------- Section ---------- */
+  .section,.hero{scroll-margin-top:64px;}
+  .sec-title{display:flex;align-items:center;gap:10px;font-size:21px;font-weight:700;margin:34px 0 16px;}
+  .sec-title .num{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--accent);
+    border:1px solid var(--border);border-radius:7px;padding:3px 9px;background:rgba(88,166,255,.07);}
+  .sec-sub{font-size:13px;color:var(--muted);font-weight:400;margin-left:4px;}
+
+  /* ---------- Hero / Top story ---------- */
+  .hero-card{
+    background:linear-gradient(135deg,rgba(88,166,255,.10),rgba(188,140,255,.06));
+    border:1px solid var(--border);border-radius:14px;padding:26px 28px;position:relative;overflow:hidden;
+  }
+  .hero-card::before{content:"";position:absolute;inset:0;background:radial-gradient(600px 200px at 90% 0,rgba(88,166,255,.12),transparent 70%);pointer-events:none;}
+  .hero-card .badge{display:inline-block;font-size:12px;font-weight:600;color:var(--orange);
+    border:1px solid rgba(240,136,62,.4);background:rgba(240,136,62,.08);padding:3px 11px;border-radius:20px;margin-bottom:12px;}
+  .hero-card h2{font-size:24px;font-weight:800;line-height:1.3;letter-spacing:-.4px;}
+  .hero-card p{margin-top:12px;font-size:14.5px;color:#c9d1d9;line-height:1.7;}
+  .hero-stats{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;}
+  .hero-stats .chip{font-family:'JetBrains Mono',monospace;font-size:12.5px;font-weight:600;
+    background:var(--card);border:1px solid var(--border);border-radius:9px;padding:8px 13px;color:var(--text);}
+  .hero-stats .chip b{color:var(--accent);}
+
+  /* ---------- HN ---------- */
+  .hn-list{display:flex;flex-direction:column;gap:9px;}
+  .hn-item{display:flex;gap:14px;padding:12px 15px;background:var(--card);border:1px solid var(--border);border-radius:10px;transition:border-color .15s ease;}
+  .hn-item:hover{border-color:var(--accent);}
+  .hn-rank{font-family:'JetBrains Mono',monospace;font-size:17px;font-weight:700;color:var(--muted);min-width:26px;text-align:center;padding-top:2px;}
+  .hn-body{flex:1;min-width:0;}
+  .hn-title{font-size:15px;font-weight:600;color:var(--text);text-decoration:none;}
+  .hn-title:hover{color:var(--accent);}
+  .zh{color:#7d8590;font-size:12.5px;font-weight:400;line-height:1.45;margin-top:3px;}
+  .hn-meta{display:flex;flex-wrap:wrap;gap:14px;margin-top:7px;font-size:12.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;align-items:center;}
+  .hn-score{color:var(--orange);font-weight:700;}
+  .hn-comments{color:var(--muted);}
+  .tag{display:inline-block;font-size:11px;padding:2px 9px;border-radius:6px;border:1px solid var(--border);color:var(--accent);background:rgba(88,166,255,.08);font-family:'JetBrains Mono',monospace;}
+
+  /* ---------- GitHub ---------- */
+  .gh-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px;}
+  .gh-card{background:var(--card);border:1px solid var(--border);border-radius:11px;padding:16px;display:flex;flex-direction:column;gap:9px;transition:border-color .15s ease;}
+  .gh-card:hover{border-color:var(--accent);}
+  .gh-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;}
+  .gh-name{font-size:14.5px;font-weight:700;color:var(--accent);text-decoration:none;word-break:break-word;}
+  .gh-name:hover{text-decoration:underline;}
+  .gh-lang{font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap;flex-shrink:0;}
+  .gh-desc{font-size:13px;color:#c9d1d9;line-height:1.5;}
+  .gh-desc .zh{font-size:11.5px;margin-top:2px;}
+  .gh-foot{display:flex;justify-content:space-between;align-items:center;margin-top:auto;font-size:12px;color:var(--muted);font-family:'JetBrains Mono',monospace;}
+  .gh-today{color:var(--green);font-weight:700;}
+
+  /* ---------- Product Hunt ---------- */
+  .ph-card{background:var(--card);border:1px solid var(--border);border-radius:11px;padding:16px;display:flex;flex-direction:column;gap:9px;transition:border-color .15s ease;}
+  .ph-card:hover{border-color:var(--accent);}
+  .ph-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;}
+  .ph-name{font-size:15px;font-weight:700;color:var(--text);}
+  .ph-up{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--orange);font-weight:700;white-space:nowrap;flex-shrink:0;}
+  .ph-desc{font-size:13px;color:#c9d1d9;line-height:1.5;}
+  .ph-desc .zh{font-size:11.5px;margin-top:2px;}
+  .ph-meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;}
+  .ph-topic{font-size:11px;padding:2px 9px;border-radius:6px;border:1px solid var(--border);color:var(--accent);background:rgba(88,166,255,.08);font-family:'JetBrains Mono',monospace;}
+
+  /* ---------- Papers ---------- */
+  .paper-item{display:flex;gap:14px;padding:12px 15px;background:var(--card);border:1px solid var(--border);border-radius:10px;transition:border-color .15s ease;}
+  .paper-item:hover{border-color:var(--accent);}
+  .paper-rank{font-family:'JetBrains Mono',monospace;font-size:17px;font-weight:700;color:var(--muted);min-width:26px;text-align:center;padding-top:2px;}
+  .paper-body{flex:1;min-width:0;}
+  .paper-title{font-size:14.5px;font-weight:600;color:var(--text);text-decoration:none;}
+  .paper-title:hover{color:var(--accent);}
+  .paper-meta{display:flex;flex-wrap:wrap;gap:14px;margin-top:7px;font-size:12.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;align-items:center;}
+  .paper-up{color:var(--purple);font-weight:700;}
+
+  /* ---------- Insights ---------- */
+  .insight-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;}
+  .insight-card{background:var(--card);border:1px solid var(--border);border-radius:11px;padding:18px 20px;border-left:3px solid var(--accent);}
+  .insight-card h3{font-size:15.5px;font-weight:700;margin-bottom:8px;color:var(--text);}
+  .insight-card p{font-size:13.5px;color:#c9d1d9;line-height:1.65;}
+  .insight-card .src{margin-top:10px;font-size:11.5px;color:var(--muted);font-family:'JetBrains Mono',monospace;}
+
+  /* ---------- Footer ---------- */
+  footer{margin-top:46px;padding-top:22px;border-top:1px solid var(--border);text-align:center;color:var(--muted);font-size:12.5px;}
+  footer .sources{margin-bottom:10px;}
+  footer .sources b{color:var(--accent);}
+  footer a.top-link{color:var(--accent);text-decoration:none;font-weight:600;}
+  footer a.top-link:hover{text-decoration:underline;}
+</style>
+</head>
+<body>
+
+<header class="hero-head">
+  <div class="kicker">Daily Tech Digest</div>
+  <h1>今日技术热点速览</h1>
+  <div class="date">2026-07-18 · 星期六</div>
+  <div class="sources">数据来源：<b>Hacker News</b> · <b>GitHub Trending</b> · <b>Product Hunt</b> · <b>Hugging Face Papers</b></div>
+</header>
+
+<nav class="quick-nav">
+  <a href="#top-story">🔥 今日头条</a>
+  <a href="#hn">📰 Hacker News</a>
+  <a href="#github">⭐ GitHub</a>
+  <a href="#producthunt">🚀 Product Hunt</a>
+  <a href="#papers">📄 Papers</a>
+  <a href="#insights">💡 趋势洞察</a>
+</nav>
+
+<div class="wrap">
+
+  <!-- ===== 今日头条 ===== -->
+  <section class="hero section" id="top-story">
+    <div class="hero-card">
+      <span class="badge">🔥 今日头条 · 跨平台最强信号</span>
+      <h2>Kimi K3 引爆全场：开放 3T 级模型横扫 HN、Product Hunt 与 GitHub</h2>
+      <p>今日最清晰的跨平台共振信号来自 <b>Kimi K3</b>——这个号称「全球首个开放 3T 级（3 万亿参数）模型」的项目，同时出现在三大技术阵地：
+      在 Hacker News 引发关于 pelican 基准的技术讨论（267 赞），在 Product Hunt 登顶当日新品第 3 名（347 赞），并直接催生 <b>openinterpreter</b> 重写为面向 Kimi K3 等开放模型的编程 Agent（GitHub 单日 +431 星）。
+      开放权重模型正从「能跑起来」迈向「生态共建」，成为今日贯穿全报告的主线。</p>
+      <div class="hero-stats">
+        <span class="chip">HN 讨论 <b>267</b> 赞</span>
+        <span class="chip">Product Hunt <b>#3</b> · 347 赞</span>
+        <span class="chip">GitHub openinterpreter <b>+431</b> 星/日</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Hacker News ===== -->
+  <section class="section" id="hn">
+    <div class="sec-title"><span class="num">01</span> Hacker News 热门排行 <span class="sec-sub">Top 20 · 含分数 / 评论 / 标签</span></div>
+    <div class="hn-list">
+
+      <div class="hn-item"><div class="hn-rank">1</div><div class="hn-body">
+        <a class="hn-title" href="https://news.ycombinator.com/item?id=48945241">AWS: Inaccurate Estimated Billing Data – $1.7 billion</a>
+        <div class="zh">AWS 计费估算数据严重失准，误差高达 17 亿美元</div>
+        <div class="hn-meta"><span class="hn-score">▲ 1024</span><span class="hn-comments">💬 636</span><span class="tag">云计算</span></div>
+      </div></div>
+
+      <div class="hn-item"><div class="hn-rank">2</div><div class="hn-body">
+        <a class="hn-title" href="https://news.ycombinator.com/item?id=48947825">The state of open source AI</a>
+        <div class="zh">开源 AI 的现状（年度报告，引发 264 条深度讨论）</div>
+        <div class="hn-meta"><span class="hn-score">▲ 363</span><span class="hn-comments">💬 264</span><span class="tag">开源AI</span></div>
+      </div></div>
+
+      <div class="hn-item"><div class="hn-rank">3</div><div class="hn-body">
+        <a class="hn-title" href="https://www.bbc.com/news/articles/cy4kdd1e0ejo">First atmosphere found on Earth-like planet in habitable zone of distant star</a>
+        <div class="zh">在宜居带类地行星上首次发现大气层</div>
+        <div class="hn-meta"><span class="hn-score">▲ 358</span><span class="hn-comments">💬 224</span><span class="tag">天文</span></div>
+      </div></div>
+
+      <div class="hn-item"><div class="hn-rank">4</div><div class="hn-body">
+        <a class="hn-title" href="https://news.ycombinator.com/item?id=48949551">Thanks HN for 15 years of support and helping me find my life's work</a>
+        <div class="zh">感谢 HN 15 年来的支持，帮我找到了毕生事业</div>
+        <div class="hn-meta"><span class="hn-score">▲ 271</span><span class="hn-comments">💬 26</span><span class="tag">社区</span></div>
+      </div></div>
+
+      <div class="hn-item"><div class="hn-rank">5</div><div class="hn-body">
+        <a class="hn-title" href="https://simonwillison.net/2026/Jul/16/kimi-k3/">Kimi K3, and what we can still learn from the pelican benchmark</a>
+        <div class="zh">Kimi K3，以及我们仍能从 pelican 基准中学到什么</div>
+        <div class="hn-meta"><span class="hn-score">▲ 267</span><span class="hn-comments">💬 143</span><span class="tag">AI</span></div>
+      </div></div>
+
+      <div class="hn-item"><div class="hn-rank">6</div><div class="hn-body">
+        <a class="hn-title" href="https://news.ycombinator.com/item?id=48952880">Kaiser nurses say AI, workplace surveillance are making their jobs, care worse</a>
+        <div class="zh">凯撒医疗护士称 AI 与职场监控正让她们的工作和患者护理变得更糟</div>
+        <div class="hn-meta"><span class="hn-score">▲ 218</span><span class="hn-comments">💬 139</span><span class="tag">AI伦理</span></div>
+      </div></div>
+
+      <div class="hn-item"><div class="hn-rank">7</div><div class="hn-body">
+        <a class="hn-title" href="https://news.ycombinator.com/item?id=48951461">The Zilog Z80 has turned 50</a>
+        <div class="zh">Zilog Z80 处理器迎来 50 岁生日</div>
+        <div class="hn-meta"><span class="hn-score">▲ 157</span><span class="hn-comments">💬 47</span><span class="tag">硬件</span></div>
+      </div></div>
+
+      <div class="hn-item"><div class="hn-rank">8</div><div class="hn-body">
+        <a class="hn-title" href="https://jvns.ca/blog/2026/07/17/learning-about-running-sqlite/">Learning a few things about running SQLite</a>
+        <div class="zh">关于运行 SQLite 的一些学习笔记</div>
+        <div class="hn-meta"><span class="hn-score">▲ 153</span><span class="hn-comments">💬 38</span><span class="tag">数据库</span></div>
+      </div></div>
+
+      <div class="hn-item"><div class="hn-rank">9</div><div class="hn-body">
+        <a class="hn-title" href="https://www.cnbc.com/2026/07/17/faa-boeing-737-max-787.html">FAA lets Boeing sign off on 737 MAX, 787 airworthiness certificates again</a>
+        <div class="zh">FAA 允许波音重新自行签署 737 MAX 与 787 适航证书</div>
+        <div class="hn-meta"><span class="hn-score">▲ 107</span><span class="hn-comments">💬 62</span><span class="tag">航空</span></div>
+      </div></div>
+
+      <div class="hn-item"><div class="hn-rank">10</div><div class="hn-body">
+        <a class="hn-title" href="https://news.ycombinator.com/item?id=48952939">Texas wins court order to suspend domain name for violating age-verification law</a>
+        <div class="zh">得州获法院命令，因违反年龄验证法暂停某域名</div>
+        <div class="hn-meta"><span class="hn-score">▲ 92</span><span class="hn-comments">💬 82</span><span class="tag">法律</span></div>
+      </div></div>
+
+      <div class="hn-item"><div class="hn-rank">11</div><div class="hn-body">
+        <a class="hn-title" href="https://news.ycombinator.com/item?id=48887102">Frank Lloyd Wright's first home</a>
+        <div class="zh">弗兰克·劳埃德·赖特的第一个家</div>
+        <div class="hn-meta"><span class="hn-score">▲ 73</span><span class="hn-comments">💬 41</span><span class="tag">建筑</span></div>
+      </div></div>
+
+      <div class="hn-item"><div class="hn-rank">12</div><div class="hn-body">
+        <a class="hn-title" href="https://news.ycombinator.com/item?id=48950774">Show HN: A zoomable timeline of 4M Wikipedia events</a>
+        <div class="zh">Show HN：可缩放的 400 万维基百科事件时间线</div>
+        <div class="hn-meta"><span class="hn-score">▲ 54</span><span class="hn-comments">💬 23</span><span class="tag">Show HN</span></div>
+      </div></div>
+
+      <div class="hn-item"><div class="hn-rank">13</div><div class="hn-body">
+        <a class="hn-title" href="https://www.lego.com/en-us/history/articles/d-lego-building-instructions-through-time">Lego building instructions through time</a>
+        <div class="zh">乐高积木说明书的演变史</div>
+        <div class="hn-meta"><span class="hn-score">▲ 54</span><span class="hn-comments">💬 9</span><span class="tag">设计</span></div>
+      </div></div>
+
+      <div class="hn-item"><div class="hn-rank">14</div><div class="hn-body">
+        <a class="hn-title" href="https://www.crowdsupply.com/oddly-specific-objects/open-book-touch">Open Book Touch: open-source e-reader</a>
+        <div class="zh">Open Book Touch：开源电子阅读器</div>
+        <div class="hn-meta"><span class="hn-score">▲ 44</span><span class="hn-comments">💬 8</span><span class="tag">开源硬件</span></div>
+      </div></div>
+
+      <div class="hn-item"><div class="hn-rank">15</div><div class="hn-body">
+        <a class="hn-title" href="https://news.ycombinator.com/item?id=48951780">Painting the sides of railroad rails white to reduce derailment</a>
+        <div class="zh">把铁轨侧面刷白以减少脱轨</div>
+        <div class="hn-meta"><span class="hn-score">▲ 31</span><span class="hn-comments">💬 9</span><span class="tag">工程</span></div>
+      </div></div>
+
+      <div class="hn-item"><div class="hn-rank">16</div><div class="hn-body">
+        <a class="hn-title" href="https://bombich.com/blog/2026/07/07/disk-not-ejected-properly">"Disk Not Ejected Properly": What It Means</a>
+        <div class="zh">"磁盘未正常弹出"意味着什么</div>
+        <div class="hn-meta"><span class="hn-score">▲ 20</span><span class="hn-comments">💬 5</span><span class="tag">macOS</span></div>
+      </div></div>
+
+      <div class="hn-item"><div class="hn-rank">17</div><div class="hn-body">
+        <a class="hn-title" href="https://news.ycombinator.com/item?id=48952067">Topcoat: The full full-stack framework for Rust</a>
+        <div class="zh">Topcoat：面向 Rust 的全栈框架</div>
+        <div class="hn-meta"><span class="hn-score">▲ 31</span><span class="hn-comments">💬 22</span><span class="tag">Rust</span></div>
+      </div></div>
+
+      <div class="hn-item"><div class="hn-rank">18</div><div class="hn-body">
+        <a class="hn-title" href="https://curiouscoding.nl/posts/static-search-tree/">Static search trees: 40x faster than binary search (2024)</a>
+        <div class="zh">静态搜索树：比二分查找快 40 倍</div>
+        <div class="hn-meta"><span class="hn-score">▲ 33</span><span class="hn-comments">💬 2</span><span class="tag">算法</span></div>
+      </div></div>
+
+      <div class="hn-item"><div class="hn-rank">19</div><div class="hn-body">
+        <a class="hn-title" href="https://news.ycombinator.com/item?id=48953406">The Isomorphic Labs Drug Design Engine unlocks a new frontier beyond AlphaFold</a>
+        <div class="zh">Isomorphic Labs 的药物设计引擎开启超越 AlphaFold 的新前沿</div>
+        <div class="hn-meta"><span class="hn-score">▲ 22</span><span class="hn-comments">💬 0</span><span class="tag">AI制药</span></div>
+      </div></div>
+
+      <div class="hn-item"><div class="hn-rank">20</div><div class="hn-body">
+        <a class="hn-title" href="https://prathosh.in/vagdhenu/">Vāgdhenu: A Sanskrit Chanting TTS System</a>
+        <div class="zh">Vāgdhenu：梵语诵经文本转语音系统</div>
+        <div class="hn-meta"><span class="hn-score">▲ 21</span><span class="hn-comments">💬 0</span><span class="tag">TTS</span></div>
+      </div></div>
+
+    </div>
+  </section>
+
+  <!-- ===== GitHub ===== -->
+  <section class="section" id="github">
+    <div class="sec-title"><span class="num">02</span> GitHub Trending <span class="sec-sub">当日热门仓库 · 含 star 增量</span></div>
+    <div class="gh-grid">
+
+      <div class="gh-card"><div class="gh-top">
+        <a class="gh-name" href="https://github.com/Nutlope/hallmark">Nutlope / hallmark</a>
+        <span class="gh-lang">CSS</span></div>
+        <div class="gh-desc">Anti-AI-slop design skill for Claude Code, Cursor, and Codex.
+          <div class="zh">给 Claude Code、Cursor、Codex 用的「反 AI 垃圾」设计规范技能</div></div>
+        <div class="gh-foot"><span>⭐ 12,016</span><span class="gh-today">+1,485 today</span></div></div>
+
+      <div class="gh-card"><div class="gh-top">
+        <a class="gh-name" href="https://github.com/OpenCut-app/OpenCut">OpenCut-app / OpenCut</a>
+        <span class="gh-lang">TypeScript</span></div>
+        <div class="gh-desc">The open-source CapCut alternative.
+          <div class="zh">开源版 CapCut（剪映）替代品</div></div>
+        <div class="gh-foot"><span>⭐ 74,873</span><span class="gh-today">+1,074 today</span></div></div>
+
+      <div class="gh-card"><div class="gh-top">
+        <a class="gh-name" href="https://github.com/codecrafters-io/build-your-own-x">codecrafters-io / build-your-own-x</a>
+        <span class="gh-lang">Markdown</span></div>
+        <div class="gh-desc">Master programming by recreating your favorite technologies from scratch.
+          <div class="zh">通过从零复刻你喜欢的各类技术来掌握编程</div></div>
+        <div class="gh-foot"><span>⭐ 527,355</span><span class="gh-today">+1,068 today</span></div></div>
+
+      <div class="gh-card"><div class="gh-top">
+        <a class="gh-name" href="https://github.com/HKUDS/DeepTutor">HKUDS / DeepTutor</a>
+        <span class="gh-lang">Python</span></div>
+        <div class="gh-desc">DeepTutor: Lifelong Personalized Tutoring.
+          <div class="zh">DeepTutor——终身个性化辅导</div></div>
+        <div class="gh-foot"><span>⭐ 27,359</span><span class="gh-today">+531 today</span></div></div>
+
+      <div class="gh-card"><div class="gh-top">
+        <a class="gh-name" href="https://github.com/PostHog/posthog">PostHog / posthog</a>
+        <span class="gh-lang">Python</span></div>
+        <div class="gh-desc">🦔 PostHog is the leading platform for building self-driving products (AI observability, analytics, session replay, flags, experiments, error tracking, logs).
+          <div class="zh">构建「自动驾驶」产品的领先平台（AI 可观测性、分析、会话回放、Feature Flag 等）</div></div>
+        <div class="gh-foot"><span>⭐ 36,189</span><span class="gh-today">+438 today</span></div></div>
+
+      <div class="gh-card"><div class="gh-top">
+        <a class="gh-name" href="https://github.com/openinterpreter/openinterpreter">openinterpreter / openinterpreter</a>
+        <span class="gh-lang">Rust</span></div>
+        <div class="gh-desc">A coding agent for open models like Kimi K3.
+          <div class="zh">面向 Kimi K3 等开放模型的编程 Agent（今日已重写为 Rust）</div></div>
+        <div class="gh-foot"><span>⭐ 66,370</span><span class="gh-today">+431 today</span></div></div>
+
+      <div class="gh-card"><div class="gh-top">
+        <a class="gh-name" href="https://github.com/RyanCodrai/turbovec">RyanCodrai / turbovec</a>
+        <span class="gh-lang">Python</span></div>
+        <div class="gh-desc">A vector index built on TurboQuant, written in Rust with Python bindings.
+          <div class="zh">基于 TurboQuant 的向量索引，Rust 实现并带 Python 绑定</div></div>
+        <div class="gh-foot"><span>⭐ 13,309</span><span class="gh-today">+280 today</span></div></div>
+
+      <div class="gh-card"><div class="gh-top">
+        <a class="gh-name" href="https://github.com/PrismML-Eng/Bonsai-demo">PrismML-Eng / Bonsai-demo</a>
+        <span class="gh-lang">Shell</span></div>
+        <div class="gh-desc">Bonsai Demo (a 27B model that runs on your phone).
+          <div class="zh">Bonsai 演示——可在手机上运行的 27B 模型</div></div>
+        <div class="gh-foot"><span>⭐ 1,710</span><span class="gh-today">+278 today</span></div></div>
+
+      <div class="gh-card"><div class="gh-top">
+        <a class="gh-name" href="https://github.com/github/copilot-sdk">github / copilot-sdk</a>
+        <span class="gh-lang">Java</span></div>
+        <div class="gh-desc">Multi-platform SDK for integrating GitHub Copilot Agent into apps and services.
+          <div class="zh">将 GitHub Copilot Agent 集成进应用/服务的多平台 SDK（官方）</div></div>
+        <div class="gh-foot"><span>⭐ 9,793</span><span class="gh-today">+233 today</span></div></div>
+
+      <div class="gh-card"><div class="gh-top">
+        <a class="gh-name" href="https://github.com/HenryNdubuaku/maths-cs-ai-compendium">HenryNdubuaku / maths-cs-ai-compendium</a>
+        <span class="gh-lang">TypeScript</span></div>
+        <div class="gh-desc">Become a cracked AI/ML Research Engineer.
+          <div class="zh">进阶成为顶尖 AI/ML 研究工程师的学习合集</div></div>
+        <div class="gh-foot"><span>⭐ 6,619</span><span class="gh-today">+200 today</span></div></div>
+
+      <div class="gh-card"><div class="gh-top">
+        <a class="gh-name" href="https://github.com/docusealco/docuseal">docusealco / docuseal</a>
+        <span class="gh-lang">Ruby</span></div>
+        <div class="gh-desc">Open source DocuSign alternative. Create, fill, and sign digital documents.
+          <div class="zh">开源版 DocuSign，创建 / 填写 / 签署数字文档</div></div>
+        <div class="gh-foot"><span>⭐ 17,843</span><span class="gh-today">+91 today</span></div></div>
+
+      <div class="gh-card"><div class="gh-top">
+        <a class="gh-name" href="https://github.com/tirth8205/code-review-graph">tirth8205 / code-review-graph</a>
+        <span class="gh-lang">Python</span></div>
+        <div class="gh-desc">Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters.
+          <div class="zh">为 MCP 与 CLI 打造的本地优先代码智能图谱，只让 AI 读取关键代码</div></div>
+        <div class="gh-foot"><span>⭐ 19,753</span><span class="gh-today">+74 today</span></div></div>
+
+      <div class="gh-card"><div class="gh-top">
+        <a class="gh-name" href="https://github.com/anthropics/cwc-workshops">anthropics / cwc-workshops</a>
+        <span class="gh-lang">TypeScript</span></div>
+        <div class="gh-desc">Claude Code workshops from Anthropic.
+          <div class="zh">Anthropic 出品的 Claude Code 实战工作坊</div></div>
+        <div class="gh-foot"><span>⭐ 1,585</span><span class="gh-today">+45 today</span></div></div>
+
+      <div class="gh-card"><div class="gh-top">
+        <a class="gh-name" href="https://github.com/protocolbuffers/protobuf">protocolbuffers / protobuf</a>
+        <span class="gh-lang">C++</span></div>
+        <div class="gh-desc">Protocol Buffers - Google's data interchange format.
+          <div class="zh">Google 的数据交换格式 protobuf</div></div>
+        <div class="gh-foot"><span>⭐ 71,540</span><span class="gh-today">+11 today</span></div></div>
+
+    </div>
+  </section>
+
+  <!-- ===== Product Hunt ===== -->
+  <section class="section" id="producthunt">
+    <div class="sec-title"><span class="num">03</span> Product Hunt 今日精选 <span class="sec-sub">Top 8 · 含产品名 / 标语 / 点赞 / 话题</span></div>
+    <div class="gh-grid">
+
+      <div class="ph-card"><div class="ph-head">
+        <div class="ph-name">Unabyss for Claude</div>
+        <div class="ph-up">▲ 511</div></div>
+        <div class="ph-desc">Shared memory across all apps and LLMs. In Claude.
+          <div class="zh">在 Claude 中跨所有 App 与 LLM 共享记忆</div></div>
+        <div class="ph-meta"><span class="ph-topic">Productivity</span><span class="ph-topic">Artificial Intelligence</span></div></div>
+
+      <div class="ph-card"><div class="ph-head">
+        <div class="ph-name">Pebbles Ai</div>
+        <div class="ph-up">▲ 379</div></div>
+        <div class="ph-desc">AI sales platform for modern B2B teams.
+          <div class="zh">面向现代 B2B 团队的 AI 销售平台</div></div>
+        <div class="ph-meta"><span class="ph-topic">Sales</span><span class="ph-topic">Email Marketing</span><span class="ph-topic">AI</span></div></div>
+
+      <div class="ph-card"><div class="ph-head">
+        <div class="ph-name">Kimi K3</div>
+        <div class="ph-up">▲ 347</div></div>
+        <div class="ph-desc">The world's first open 3T-class model.
+          <div class="zh">全球首个开放的 3T 级（3 万亿参数）模型</div></div>
+        <div class="ph-meta"><span class="ph-topic">Open Source</span><span class="ph-topic">Artificial Intelligence</span><span class="ph-topic">Development</span></div></div>
+
+      <div class="ph-card"><div class="ph-head">
+        <div class="ph-name">Pocket Screen</div>
+        <div class="ph-up">▲ 207</div></div>
+        <div class="ph-desc">Keep any Mac window visible in a floating mini screen.
+          <div class="zh">让任意 Mac 窗口悬浮显示在迷你小屏上</div></div>
+        <div class="ph-meta"><span class="ph-topic">Mac</span><span class="ph-topic">Productivity</span><span class="ph-topic">Menu Bar Apps</span></div></div>
+
+      <div class="ph-card"><div class="ph-head">
+        <div class="ph-name">Timely</div>
+        <div class="ph-up">▲ 169</div></div>
+        <div class="ph-desc">Pull your calendar availability in 3 seconds.
+          <div class="zh">3 秒拉取你的日历空闲时间</div></div>
+        <div class="ph-meta"><span class="ph-topic">Email</span><span class="ph-topic">Productivity</span><span class="ph-topic">Calendar</span></div></div>
+
+      <div class="ph-card"><div class="ph-head">
+        <div class="ph-name">Basedash Suggestions</div>
+        <div class="ph-up">▲ 144</div></div>
+        <div class="ph-desc">Your AI data analyst, now with ideas of its own.
+          <div class="zh">你的 AI 数据分析师，现在有了自己的「主见」</div></div>
+        <div class="ph-meta"><span class="ph-topic">Artificial Intelligence</span><span class="ph-topic">Data & Analytics</span><span class="ph-topic">Business Intelligence</span></div></div>
+
+      <div class="ph-card"><div class="ph-head">
+        <div class="ph-name">Scribble Party</div>
+        <div class="ph-up">▲ 137</div></div>
+        <div class="ph-desc">A local-first whiteboard studio for teachers and creators.
+          <div class="zh">面向教师与创作者的本地优先白板工作室</div></div>
+        <div class="ph-meta"><span class="ph-topic">Productivity</span><span class="ph-topic">Education</span><span class="ph-topic">GitHub</span></div></div>
+
+      <div class="ph-card"><div class="ph-head">
+        <div class="ph-name">Aye</div>
+        <div class="ph-up">▲ 132</div></div>
+        <div class="ph-desc">Your teachable AI intern for everyday browser work.
+          <div class="zh">可训练的 AI 实习生，帮你处理日常浏览器工作</div></div>
+        <div class="ph-meta"><span class="ph-topic">Productivity</span><span class="ph-topic">Artificial Intelligence</span></div></div>
+
+    </div>
+  </section>
+
+  <!-- ===== Hugging Face Papers ===== -->
+  <section class="section" id="papers">
+    <div class="sec-title"><span class="num">04</span> Daily Papers · Hugging Face <span class="sec-sub">当日论文 Top 12 · 含标题 / 热度</span></div>
+    <div class="hn-list">
+
+      <div class="paper-item"><div class="paper-rank">1</div><div class="paper-body">
+        <a class="paper-title" href="https://huggingface.co/papers/2607.14076">From Pixels to States: Rethinking Interactive World Models as Game Engines</a>
+        <div class="zh">从像素到状态：将交互式世界模型重新定义为游戏引擎</div>
+        <div class="paper-meta"><span class="paper-up">▲ 406</span><span class="tag">World Model</span></div>
+      </div></div>
+
+      <div class="paper-item"><div class="paper-rank">2</div><div class="paper-body">
+        <a class="paper-title" href="https://huggingface.co/papers/2607.14777">SEED: Self-Evolving On-Policy Distillation for Agentic Reinforcement Learning</a>
+        <div class="zh">SEED：面向智能体强化学习的自我进化式同策略蒸馏</div>
+        <div class="paper-meta"><span class="paper-up">▲ 81</span><span class="tag">Agent · RL</span></div>
+      </div></div>
+
+      <div class="paper-item"><div class="paper-rank">3</div><div class="paper-body">
+        <a class="paper-title" href="https://huggingface.co/papers/2607.14187">RxBrain: Embodied Cognition Foundation Model with Joint Language-Visual Reasoning and Imagination</a>
+        <div class="zh">RxBrain：具备联合语言-视觉推理与想象能力的具身认知基础模型</div>
+        <div class="paper-meta"><span class="paper-up">▲ 74</span><span class="tag">Embodied AI</span></div>
+      </div></div>
+
+      <div class="paper-item"><div class="paper-rank">4</div><div class="paper-body">
+        <a class="paper-title" href="https://huggingface.co/papers/2607.15257">SearchOS-V1: Towards Robust Open-Domain Information-Seeking Agent Collaboration</a>
+        <div class="zh">SearchOS-V1：迈向稳健的开放域信息检索智能体协作</div>
+        <div class="paper-meta"><span class="paper-up">▲ 54</span><span class="tag">Agent · RAG</span></div>
+      </div></div>
+
+      <div class="paper-item"><div class="paper-rank">5</div><div class="paper-body">
+        <a class="paper-title" href="https://huggingface.co/papers/2607.14935">VideoChat3: Fully Open Video MLLM for Efficient and Generalist Video Understanding</a>
+        <div class="zh">VideoChat3：面向高效通用视频理解的全开放视频多模态大模型</div>
+        <div class="paper-meta"><span class="paper-up">▲ 43</span><span class="tag">Video MLLM</span></div>
+      </div></div>
+
+      <div class="paper-item"><div class="paper-rank">6</div><div class="paper-body">
+        <a class="paper-title" href="https://huggingface.co/papers/2607.15207">BadWAM: When World-Action Models Dream Right but Act Wrong</a>
+        <div class="zh">BadWAM：当世界-动作模型「想得对却做错」</div>
+        <div class="paper-meta"><span class="paper-up">▲ 32</span><span class="tag">World-Action Model</span></div>
+      </div></div>
+
+      <div class="paper-item"><div class="paper-rank">7</div><div class="paper-body">
+        <a class="paper-title" href="https://huggingface.co/papers/2607.15273">MeanFlowNFT: Bringing Forward-Process RL to Average-Velocity Generators</a>
+        <div class="zh">MeanFlowNFT：将前向过程强化学习引入平均速度生成器</div>
+        <div class="paper-meta"><span class="paper-up">▲ 21</span><span class="tag">Generative Model</span></div>
+      </div></div>
+
+      <div class="paper-item"><div class="paper-rank">8</div><div class="paper-body">
+        <a class="paper-title" href="https://huggingface.co/papers/2607.12800">UniVR: Thinking in Visual Space for Unified Visual Reasoning</a>
+        <div class="zh">UniVR：在视觉空间中思考以实现统一视觉推理</div>
+        <div class="paper-meta"><span class="paper-up">▲ 9</span><span class="tag">Visual Reasoning</span></div>
+      </div></div>
+
+      <div class="paper-item"><div class="paper-rank">9</div><div class="paper-body">
+        <a class="paper-title" href="https://huggingface.co/papers/2607.14189">MultiRef-Compass: Towards Comprehensive Evaluation of Multi-Reference-to-Audio-Video Generation</a>
+        <div class="zh">MultiRef-Compass：面向多参考音视频生成的综合评测</div>
+        <div class="paper-meta"><span class="paper-up">▲ 6</span><span class="tag">Evaluation</span></div>
+      </div></div>
+
+      <div class="paper-item"><div class="paper-rank">10</div><div class="paper-body">
+        <a class="paper-title" href="https://huggingface.co/papers/2607.14202">KeyFrame-Compass: Towards Comprehensive Evaluation of Keyframe-Conditioned Video Generation</a>
+        <div class="zh">KeyFrame-Compass：面向关键帧条件视频生成的综合评测</div>
+        <div class="paper-meta"><span class="paper-up">▲ 5</span><span class="tag">Evaluation</span></div>
+      </div></div>
+
+      <div class="paper-item"><div class="paper-rank">11</div><div class="paper-body">
+        <a class="paper-title" href="https://huggingface.co/papers/2607.14387">Chat2Scenic: An Iterative RAG-Based Framework for Scenario Generation in Autonomous Driving</a>
+        <div class="zh">Chat2Scenic：基于迭代 RAG 的自动驾驶场景生成框架</div>
+        <div class="paper-meta"><span class="paper-up">▲ 4</span><span class="tag">Autonomous Driving</span></div>
+      </div></div>
+
+      <div class="paper-item"><div class="paper-rank">12</div><div class="paper-body">
+        <a class="paper-title" href="https://huggingface.co/papers/2607.14952">LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget</a>
+        <div class="zh">LongStraw：固定 GPU 预算下突破 200 万 token 的长上下文强化学习</div>
+        <div class="paper-meta"><span class="paper-up">▲ 3</span><span class="tag">Long Context</span></div>
+      </div></div>
+
+    </div>
+  </section>
+
+  <!-- ===== 趋势洞察 ===== -->
+  <section class="section" id="insights">
+    <div class="sec-title"><span class="num">05</span> 趋势洞察 <span class="sec-sub">三大核心信号</span></div>
+    <div class="insight-grid">
+
+      <div class="insight-card">
+        <h3>① 开放模型全面接管：Kimi K3 成今日最强信号</h3>
+        <p>Kimi K3 同时登上 HN（pelican 基准讨论 267 赞）、Product Hunt（#3，347 赞，「全球首个开放 3T 级模型」）与 GitHub（openinterpreter 重写为其编程 Agent，+431 星/日）。开放权重模型正从「能跑」走向「生态共建」，Unabyss（跨 App/LLM 共享记忆 511 赞）、hallmark（+1,485）等工具链同步爆发。</p>
+        <div class="src">信号源：HN · Product Hunt · GitHub</div>
+      </div>
+
+      <div class="insight-card">
+        <h3>② AI 编程 Agent「技能化 + 护栏」走向成熟</h3>
+        <p>GitHub 上 hallmark（反 AI 垃圾设计规范 +1,485）、copilot-sdk（GitHub 官方 Agent SDK +233）、code-review-graph（本地优先代码图谱 +74）、DeepTutor（个性化辅导 +531）霸榜。AI 编码工具从「会写代码」升级为「有品味、有规范、懂上下文」。</p>
+        <div class="src">信号源：GitHub · HN · Product Hunt</div>
+      </div>
+
+      <div class="insight-card">
+        <h3>③ 智能体评测 + 世界模型成学术新前沿</h3>
+        <p>HF 论文中 From Pixels to States（世界模型即游戏引擎 406 赞）、SEED（智能体 RL 自我进化蒸馏 81 赞）、SearchOS-V1（开放域信息检索智能体 54 赞）、VideoChat3（开放视频 MLLM 43 赞）领跑。研究重心从「单模型能力」转向「可协作、可评测、可落地的智能体与世界模型」。同时隐私/安全议题升温（AWS 17 亿计费误差、TP-Link 摄像头 GPS 泄露）。</p>
+        <div class="src">信号源：Hugging Face Papers · HN</div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="sources">数据来源：<b>Hacker News</b> · <b>GitHub Trending</b> · <b>Product Hunt</b> · <b>Hugging Face Papers</b></div>
+    <div>本报告由自动化任务每日生成 · 2026-07-18</div>
+    <div style="margin-top:10px;"><a class="top-link" href="#top-story">↑ 回到顶部</a></div>
+  </footer>
+
+</div>
+</body>
+</html>
