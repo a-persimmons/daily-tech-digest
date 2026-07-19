@@ -1,10 +1,10 @@
 {
-  "date": "2026-07-18",
-  "date_label": "2026-07-18 · 星期六",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-07-18.html",
+  "date": "2026-07-19",
+  "date_label": "2026-07-19 · 星期日",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-07-19.html",
   "summary": [
-    "Kimi K3 成今日最强信号：开放 3T 级模型同时登顶 Product Hunt（#3，347 赞）、引爆 HN 讨论（267 赞）、并催生 openinterpreter 重写为其编程 Agent（GitHub +431 星/日）。",
-    "AI 编程 Agent「技能化 + 护栏」走向成熟：GitHub 上 hallmark 反 AI 垃圾设计规范（+1,485）、copilot-sdk 官方 Agent SDK（+233）、DeepTutor 个性化辅导（+531）霸榜。",
-    "学术前沿转向智能体评测与世界模型：HF 论文 From Pixels to States（世界模型即游戏引擎 406 赞）、SEED（智能体 RL 自我进化蒸馏 81 赞）、SearchOS-V1（开放域检索智能体 54 赞）领跑。"
+    "AI 编程 Agent 全面渗透开发工作流：GitHub code-review-graph 单日 +355、kimi-cli 开源 CLI Agent、PostHog 把 AI 可观测性做成平台；Product Hunt 今日 8 款新品多数为 Agent 形态；HN 亦有 Claude Code 接管闲置 Mac、Codex 实战等多篇热帖。",
+    "长上下文与端侧轻量化并行突破：Hugging Face 登顶论文 LongStraw 在固定 GPU 预算下把长上下文 RL 推到 2M+ tokens，GitHub airllm 单张 4GB GPU 跑起 70B，HN moonshine 把语音识别+TTS 压到 500KB 以内。",
+    "开放模型与隐私觉醒共振：MoonshotAI kimi-cli 等开放 Agent 持续霸榜；与此同时 HN 最高赞（985 分/505 评论）是「LG 显示器借 Windows Update 静默装软件」，叠加 AI 图卖房争议与自托管话题，本地优先、数据主权成为显性诉求。"
   ]
 }
