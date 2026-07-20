@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今日技术热点速览 · 2026-07-20 · 星期一</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0d1117; --card:#161b22; --card2:#1c2230; --border:#30363d;
+  --text:#e6edf3; --muted:#7d8590; --accent:#58a6ff; --accent2:#1f6feb;
+  --green:#3fb950; --orange:#d29922; --pink:#f778ba;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Inter','Noto Sans SC',system-ui,-apple-system,sans-serif;line-height:1.6;font-size:15px;}
+a{color:var(--accent);}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px 60px;}
+.zh{color:#7d8590;font-size:12.5px;font-weight:400;line-height:1.45;margin-top:3px;}
+.gh-desc .zh{font-size:11.5px;margin-top:2px;}
+.section,.hero{scroll-margin-top:64px;}
+
+/* header */
+header.site-header{padding:38px 18px 22px;text-align:center;background:radial-gradient(1200px 380px at 50% -120px,rgba(88,166,255,.18),transparent 70%);border-bottom:1px solid var(--border);}
+header.site-header h1{margin:0 0 6px;font-size:30px;letter-spacing:.5px;}
+header.site-header .date{color:var(--accent);font-weight:600;font-size:15px;}
+header.site-header .sub{color:var(--muted);font-size:13px;margin-top:8px;}
+
+/* quick nav */
+.quick-nav{position:sticky;top:0;z-index:100;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:12px 0;margin:0 0 26px;background:rgba(13,17,23,.85);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);}
+.quick-nav a{font-size:12.5px;font-weight:500;color:var(--muted);text-decoration:none;padding:5px 12px;border-radius:8px;border:1px solid var(--border);background:var(--card);white-space:nowrap;transition:all .15s ease;}
+.quick-nav a:hover{color:var(--accent);border-color:var(--accent);background:rgba(88,166,255,.08);}
+
+/* section title */
+.sec-title{display:flex;align-items:center;gap:10px;margin:34px 0 16px;font-size:21px;}
+.sec-title .emo{font-size:20px;}
+.sec-title .bar{width:4px;height:22px;background:var(--accent);border-radius:3px;}
+
+/* hero cards */
+.hero-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;}
+.hero-card{display:block;text-decoration:none;color:var(--text);background:linear-gradient(180deg,var(--card),var(--card2));border:1px solid var(--border);border-radius:14px;padding:16px 16px 14px;transition:all .18s ease;}
+.hero-card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 8px 26px rgba(0,0,0,.35);}
+.hero-meta{color:var(--green);font-size:12px;font-weight:600;}
+.hero-title{font-size:16px;font-weight:700;margin:6px 0 4px;}
+
+/* HN table */
+.hn-table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;}
+.hn-table th{text-align:left;font-size:12px;color:var(--muted);font-weight:600;padding:10px 12px;background:var(--card2);border-bottom:1px solid var(--border);}
+.hn-table td{padding:11px 12px;border-bottom:1px solid var(--border);vertical-align:top;}
+.hn-table tr:last-child td{border-bottom:none;}
+.hn-table .rank{color:var(--muted);font-weight:700;width:34px;text-align:center;}
+.hn-table .hn-title a{color:var(--text);font-weight:600;text-decoration:none;font-size:14.5px;}
+.hn-table .hn-title a:hover{color:var(--accent);text-decoration:underline;}
+.hn-table .hn-score{color:var(--orange);font-weight:700;white-space:nowrap;width:74px;}
+.hn-table .hn-comments{color:var(--muted);white-space:nowrap;width:64px;}
+.tag{display:inline-block;font-size:11px;color:var(--accent);background:rgba(88,166,255,.1);border:1px solid rgba(88,166,255,.3);padding:2px 8px;border-radius:20px;white-space:nowrap;}
+
+/* GitHub / PH grid */
+.gh-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:13px;}
+.gh-card,.ph-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:13px 14px;transition:all .18s ease;}
+.gh-card:hover,.ph-card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.3);}
+.gh-head,.ph-top{display:flex;align-items:center;gap:8px;margin-bottom:7px;}
+.gh-name{font-weight:700;color:var(--text);text-decoration:none;font-size:14.5px;font-family:'SFMono-Regular',Consolas,monospace;}
+.gh-name:hover{color:var(--accent);}
+.gh-lang{margin-left:auto;font-size:11px;color:var(--muted);background:var(--card2);border:1px solid var(--border);padding:1px 8px;border-radius:20px;}
+.gh-desc,.ph-desc{font-size:13px;color:#c9d1d9;line-height:1.5;}
+.gh-meta{display:flex;gap:14px;margin-top:9px;font-size:12px;}
+.gh-today{color:var(--green);font-weight:700;}
+.gh-total{color:var(--orange);font-weight:600;}
+.ph-rank{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:var(--accent2);color:#fff;font-size:12px;font-weight:700;}
+.ph-name{font-size:16px;font-weight:800;color:var(--text);text-decoration:none;}
+.ph-name:hover{color:var(--accent);}
+.ph-up{color:var(--green);font-weight:700;}
+.ph-topics{color:var(--muted);font-size:11.5px;}
+
+/* insights */
+.insight{background:linear-gradient(135deg,rgba(88,166,255,.06),transparent);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:12px;padding:15px 18px;margin-bottom:14px;}
+.insight-head{display:flex;align-items:center;gap:9px;margin-bottom:6px;}
+.insight-dot{width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent);}
+.insight-head h3{margin:0;font-size:16.5px;}
+.insight-src{margin-left:auto;font-size:11px;color:var(--muted);border:1px solid var(--border);padding:2px 8px;border-radius:20px;}
+.insight p{margin:4px 0 0;color:#c9d1d9;font-size:13.5px;}
+
+/* footer */
+footer.site-footer{margin-top:40px;padding:22px 18px;text-align:center;border-top:1px solid var(--border);color:var(--muted);font-size:12.5px;}
+footer.site-footer a{color:var(--accent);text-decoration:none;}
+.note{font-size:12px;color:var(--muted);background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px 13px;margin:0 0 14px;}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <h1>🔥 今日技术热点速览</h1>
+  <div class="date">2026-07-20 · 星期一</div>
+  <div class="sub">数据来源：Hacker News · GitHub Trending · Product Hunt · Hugging Face Papers</div>
+</header>
+
+<nav class="quick-nav">
+  <a href="#top-story">🔥 今日头条</a>
+  <a href="#hn">📰 Hacker News</a>
+  <a href="#github">⭐ GitHub</a>
+  <a href="#producthunt">🚀 Product Hunt</a>
+  <a href="#papers">📄 Papers</a>
+  <a href="#insights">💡 趋势洞察</a>
+</nav>
+
+<div class="wrap">
+
+  <section id="top-story" class="hero">
+    <div class="sec-title"><span class="emo">🔥</span><span class="bar"></span>今日头条</div>
+    <div class="hero-grid">      <a class="hero-card" href="https://news.ycombinator.com/item?id=48966120" target="_blank" rel="noopener">
+        <div class="hero-meta">HN 775 ▲ · 540 评</div>
+        <div class="hero-title">通义千问发布 Qwen 3.8 新一代大模型</div>
+        <div class="zh">阿里发布 Qwen 3.8，登 HN 775 分、540 条评论，社区热议其能力边界与开源前景。</div>
+      </a>
+      <a class="hero-card" href="https://news.ycombinator.com/item?id=48968606" target="_blank" rel="noopener">
+        <div class="hero-meta">HN 1419 ▲ · 155 评</div>
+        <div class="hero-title">开发者用 $1600 ESP32 替下 $120k 保龄球系统</div>
+        <div class="zh">Show HN 项目：以 1600 美元 ESP32 方案替换价值 12 万美元的保龄球中心控制系统，登顶 HN（1419 分）。</div>
+      </a>
+      <a class="hero-card" href="https://news.ycombinator.com/item?id=48966569" target="_blank" rel="noopener">
+        <div class="hero-meta">HN 382 ▲ · 528 评</div>
+        <div class="hero-title">Claude Code 底层换上 Rust 编写的 Bun</div>
+        <div class="zh">Claude Code 改用 Rust 实现的 Bun 运行时，引发 528 条讨论，反映 AI 编程工具对性能与底层的极致打磨。</div>
+      </a>
+</div>
+  </section>
+
+  <section id="hn" class="section">
+    <div class="sec-title"><span class="emo">📰</span><span class="bar"></span>Hacker News · 热门排行 Top 20</div>
+    <table class="hn-table">
+      <thead><tr><th>#</th><th>标题</th><th>分数</th><th>评论</th><th>标签</th></tr></thead>
+      <tbody>
+      <tr>
+        <td class="rank">1</td>
+        <td class="hn-title"><a href="https://news.ycombinator.com/item?id=48968606" target="_blank" rel="noopener">Show HN: I replaced a $120k bowling center system with $1,600 in ESP32s</a><div class="zh">我用 1600 美元的 ESP32 替下了价值 12 万美元的保龄球中心控制系统</div></td>
+        <td class="hn-score">▲ 1419</td>
+        <td class="hn-comments">155</td>
+        <td><span class="tag">硬件/DIY</span></td>
+      </tr>
+      <tr>
+        <td class="rank">2</td>
+        <td class="hn-title"><a href="https://news.ycombinator.com/item?id=48971738" target="_blank" rel="noopener">AI advice made people 3x less accurate but 2x confident, researchers found</a><div class="zh">研究发现：AI 建议让人准确率降为 1/3，自信度却翻倍</div></td>
+        <td class="hn-score">▲ 260</td>
+        <td class="hn-comments">140</td>
+        <td><span class="tag">AI/研究</span></td>
+      </tr>
+      <tr>
+        <td class="rank">3</td>
+        <td class="hn-title"><a href="https://news.ycombinator.com/item?id=48907390" target="_blank" rel="noopener">The Zen of Parallel Programming</a><div class="zh">并行编程的禅意</div></td>
+        <td class="hn-score">▲ 100</td>
+        <td class="hn-comments">10</td>
+        <td><span class="tag">编程</span></td>
+      </tr>
+      <tr>
+        <td class="rank">4</td>
+        <td class="hn-title"><a href="https://news.ycombinator.com/item?id=48920597" target="_blank" rel="noopener">Talk: The Art of Braiding Algorithms</a><div class="zh">讲座：编织算法的艺术</div></td>
+        <td class="hn-score">▲ 20</td>
+        <td class="hn-comments">0</td>
+        <td><span class="tag">算法</span></td>
+      </tr>
+      <tr>
+        <td class="rank">5</td>
+        <td class="hn-title"><a href="https://news.ycombinator.com/item?id=48966569" target="_blank" rel="noopener">Claude Code uses Bun written in Rust now</a><div class="zh">Claude Code 现在改用 Rust 编写的 Bun 运行</div></td>
+        <td class="hn-score">▲ 382</td>
+        <td class="hn-comments">528</td>
+        <td><span class="tag">AI工具</span></td>
+      </tr>
+      <tr>
+        <td class="rank">6</td>
+        <td class="hn-title"><a href="https://news.ycombinator.com/item?id=48971938" target="_blank" rel="noopener">Biggest Probabilistic Computer Turns Noise into Answers</a><div class="zh">最大的概率计算机：把噪声变成答案</div></td>
+        <td class="hn-score">▲ 25</td>
+        <td class="hn-comments">1</td>
+        <td><span class="tag">硬件/研究</span></td>
+      </tr>
+      <tr>
+        <td class="rank">7</td>
+        <td class="hn-title"><a href="https://news.ycombinator.com/item?id=48971566" target="_blank" rel="noopener">A new Intel Itanium (IA-64) emulator that boots Windows</a><div class="zh">一个能启动 Windows 的新 Intel Itanium (IA-64) 模拟器</div></td>
+        <td class="hn-score">▲ 42</td>
+        <td class="hn-comments">28</td>
+        <td><span class="tag">模拟器/复古</span></td>
+      </tr>
+      <tr>
+        <td class="rank">8</td>
+        <td class="hn-title"><a href="https://news.ycombinator.com/item?id=48972858" target="_blank" rel="noopener">Ask HN: What are your favorite blogs not about AI?</a><div class="zh">问 HN：你最喜欢的、不聊 AI 的博客有哪些？</div></td>
+        <td class="hn-score">▲ 26</td>
+        <td class="hn-comments">12</td>
+        <td><span class="tag">社区</span></td>
+      </tr>
+      <tr>
+        <td class="rank">9</td>
+        <td class="hn-title"><a href="https://news.ycombinator.com/item?id=48967256" target="_blank" rel="noopener">Minecraft: Java Edition now uses SDL3</a><div class="zh">《我的世界》Java 版现已改用 SDL3</div></td>
+        <td class="hn-score">▲ 265</td>
+        <td class="hn-comments">175</td>
+        <td><span class="tag">游戏</span></td>
+      </tr>
+      <tr>
+        <td class="rank">10</td>
+        <td class="hn-title"><a href="https://news.ycombinator.com/item?id=48911021" target="_blank" rel="noopener">Blender 5.2 LTS</a><div class="zh">Blender 5.2 长期支持版发布</div></td>
+        <td class="hn-score">▲ 358</td>
+        <td class="hn-comments">146</td>
+        <td><span class="tag">设计/3D</span></td>
+      </tr>
+      <tr>
+        <td class="rank">11</td>
+        <td class="hn-title"><a href="https://news.ycombinator.com/item?id=48968063" target="_blank" rel="noopener">Bananas sprout in Rayleigh Garden UK after 15 years</a><div class="zh">英国 Rayleigh 花园的香蕉树 15 年后终于结果</div></td>
+        <td class="hn-score">▲ 123</td>
+        <td class="hn-comments">86</td>
+        <td><span class="tag">趣闻</span></td>
+      </tr>
+      <tr>
+        <td class="rank">12</td>
+        <td class="hn-title"><a href="https://news.ycombinator.com/item?id=48965850" target="_blank" rel="noopener">OpenAI reduces Codex Model Context Size from 372k to 272k</a><div class="zh">OpenAI 将 Codex 模型上下文长度从 37.2 万缩减到 27.2 万</div></td>
+        <td class="hn-score">▲ 303</td>
+        <td class="hn-comments">145</td>
+        <td><span class="tag">AI工具</span></td>
+      </tr>
+      <tr>
+        <td class="rank">13</td>
+        <td class="hn-title"><a href="https://news.ycombinator.com/item?id=48966713" target="_blank" rel="noopener">What I learned selling 2,500 MIDI recorders: Hardware is not so hard</a><div class="zh">卖出 2500 台 MIDI 录音器后的心得：做硬件没那么难</div></td>
+        <td class="hn-score">▲ 393</td>
+        <td class="hn-comments">195</td>
+        <td><span class="tag">硬件/创业</span></td>
+      </tr>
+      <tr>
+        <td class="rank">14</td>
+        <td class="hn-title"><a href="https://news.ycombinator.com/item?id=48971847" target="_blank" rel="noopener">Show HN: A canvas-based note taking and organizer app</a><div class="zh">Show HN：一款基于画布的笔记与整理应用</div></td>
+        <td class="hn-score">▲ 29</td>
+        <td class="hn-comments">10</td>
+        <td><span class="tag">工具/Show HN</span></td>
+      </tr>
+      <tr>
+        <td class="rank">15</td>
+        <td class="hn-title"><a href="https://news.ycombinator.com/item?id=48966120" target="_blank" rel="noopener">Qwen 3.8</a><div class="zh">通义千问发布 Qwen 3.8 新一代大模型</div></td>
+        <td class="hn-score">▲ 775</td>
+        <td class="hn-comments">540</td>
+        <td><span class="tag">AI/大模型</span></td>
+      </tr>
+      <tr>
+        <td class="rank">16</td>
+        <td class="hn-title"><a href="https://news.ycombinator.com/item?id=48968949" target="_blank" rel="noopener">C64 Basic Dungeon Crawler: Goblin Attack (C64 Basic Part 8)</a><div class="zh">C64 Basic 地牢探险：哥布林袭击（C64 Basic 第 8 期）</div></td>
+        <td class="hn-score">▲ 59</td>
+        <td class="hn-comments">3</td>
+        <td><span class="tag">游戏/复古</span></td>
+      </tr>
+      <tr>
+        <td class="rank">17</td>
+        <td class="hn-title"><a href="https://news.ycombinator.com/item?id=48860719" target="_blank" rel="noopener">Cagire: Live Coding in Forth</a><div class="zh">Cagire：用 Forth 语言做实时编码</div></td>
+        <td class="hn-score">▲ 77</td>
+        <td class="hn-comments">11</td>
+        <td><span class="tag">编程/语言</span></td>
+      </tr>
+      <tr>
+        <td class="rank">18</td>
+        <td class="hn-title"><a href="https://news.ycombinator.com/item?id=48926307" target="_blank" rel="noopener">Ise Jingu and the Pyramid of Enabling Technologies (2021)</a><div class="zh">伊势神宫与赋能技术的金字塔（2021）</div></td>
+        <td class="hn-score">▲ 6</td>
+        <td class="hn-comments">3</td>
+        <td><span class="tag">设计/随笔</span></td>
+      </tr>
+      <tr>
+        <td class="rank">19</td>
+        <td class="hn-title"><a href="https://news.ycombinator.com/item?id=48966984" target="_blank" rel="noopener">I joined the IndieWeb, here&#x27;s what I learned</a><div class="zh">我加入了 IndieWeb，这是我的收获</div></td>
+        <td class="hn-score">▲ 150</td>
+        <td class="hn-comments">85</td>
+        <td><span class="tag">社区/Web</span></td>
+      </tr>
+      <tr>
+        <td class="rank">20</td>
+        <td class="hn-title"><a href="https://news.ycombinator.com/item?id=48972062" target="_blank" rel="noopener">We want Texans to know their rights</a><div class="zh">我们要让得州人民知晓自己的权利</div></td>
+        <td class="hn-score">▲ 109</td>
+        <td class="hn-comments">32</td>
+        <td><span class="tag">社会/法律</span></td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="github" class="section">
+    <div class="sec-title"><span class="emo">⭐</span><span class="bar"></span>GitHub Trending · 当日热门仓库（按 star 增量排序）</div>
+    <div class="gh-grid">      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/codecrafters-io/build-your-own-x" target="_blank" rel="noopener" class="gh-name">codecrafters-io/build-your-own-x</a><span class="gh-lang">Markdown</span></div>
+        <div class="gh-desc">Master programming by recreating your favorite technologies from scratch.<div class="zh">通过从零复刻你喜爱的技术来精通编程。</div></div>
+        <div class="gh-meta"><span class="gh-today">▲ +754 today</span><span class="gh-total">★ 528,946</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/tirth8205/code-review-graph" target="_blank" rel="noopener" class="gh-name">tirth8205/code-review-graph</a><span class="gh-lang">Python</span></div>
+        <div class="gh-desc">Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows.<div class="zh">本地优先的代码智能图谱（面向 MCP 与 CLI）：为代码库构建持久地图，让 AI 编程工具只读关键部分，在代码审查与大仓库场景下显著缩减上下文。</div></div>
+        <div class="gh-meta"><span class="gh-today">▲ +663 today</span><span class="gh-total">★ 21,298</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/jamiepine/voicebox" target="_blank" rel="noopener" class="gh-name">jamiepine/voicebox</a><span class="gh-lang">TypeScript</span></div>
+        <div class="gh-desc">The open-source AI voice studio. Clone, dictate, create.<div class="zh">开源 AI 语音工作室：克隆、听写、创作。</div></div>
+        <div class="gh-meta"><span class="gh-today">▲ +610 today</span><span class="gh-total">★ 43,387</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/KnockOutEZ/wigolo" target="_blank" rel="noopener" class="gh-name">KnockOutEZ/wigolo</a><span class="gh-lang">TypeScript</span></div>
+        <div class="gh-desc">The go-to web for your AI coding agent — local-first search, fetch, crawl &amp; research over MCP. No API keys, no cloud, $0/query. Public beta.<div class="zh">为你的 AI 编程 Agent 打造的本地网页工具：基于 MCP 的本地搜索、抓取、爬取与研究，无需 API key、不上云、每次查询零成本（公开测试）。</div></div>
+        <div class="gh-meta"><span class="gh-today">▲ +595 today</span><span class="gh-total">★ 1,866</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/rohitg00/ai-engineering-from-scratch" target="_blank" rel="noopener" class="gh-name">rohitg00/ai-engineering-from-scratch</a><span class="gh-lang">Python</span></div>
+        <div class="gh-desc">Learn it. Build it. Ship it for others.<div class="zh">从零学、自己造、为他人交付——AI 工程实战。</div></div>
+        <div class="gh-meta"><span class="gh-today">▲ +501 today</span><span class="gh-total">★ 39,702</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/PostHog/posthog" target="_blank" rel="noopener" class="gh-name">PostHog/posthog</a><span class="gh-lang">Python</span></div>
+        <div class="gh-desc">PostHog is the leading platform for building self-driving products. Our developer tools — AI observability, analytics, session replay, flags, experiments, error tracking, logs — capture all the context agents need to diagnose problems and ship fixes.<div class="zh">PostHog 是构建“自动驾驶”产品的领先平台，提供 AI 可观测性、分析、会话回放、特性开关、实验、错误追踪、日志等开发者工具。</div></div>
+        <div class="gh-meta"><span class="gh-today">▲ +411 today</span><span class="gh-total">★ 36,948</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/MoonshotAI/kimi-cli" target="_blank" rel="noopener" class="gh-name">MoonshotAI/kimi-cli</a><span class="gh-lang">Python</span></div>
+        <div class="gh-desc">Kimi Code CLI is your next CLI agent.<div class="zh">Kimi Code CLI 是你的下一代命令行 Agent。</div></div>
+        <div class="gh-meta"><span class="gh-today">▲ +410 today</span><span class="gh-total">★ 9,900</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/kvcache-ai/ktransformers" target="_blank" rel="noopener" class="gh-name">kvcache-ai/ktransformers</a><span class="gh-lang">Python</span></div>
+        <div class="gh-desc">A Flexible Framework for Experiencing Heterogeneous LLM Inference/Fine-tune Optimizations<div class="zh">一个灵活框架，用于体验异构 LLM 推理与微调优化。</div></div>
+        <div class="gh-meta"><span class="gh-today">▲ +360 today</span><span class="gh-total">★ 18,387</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/lyogavin/airllm" target="_blank" rel="noopener" class="gh-name">lyogavin/airllm</a><span class="gh-lang">Jupyter Notebook</span></div>
+        <div class="gh-desc">AirLLM 70B inference with single 4GB GPU<div class="zh">AirLLM：单张 4GB GPU 即可推理 70B 模型。</div></div>
+        <div class="gh-meta"><span class="gh-today">▲ +358 today</span><span class="gh-total">★ 23,640</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/1jehuang/jcode" target="_blank" rel="noopener" class="gh-name">1jehuang/jcode</a><span class="gh-lang">Rust</span></div>
+        <div class="gh-desc">Coding Agent Harness<div class="zh">编程 Agent 执行框架（harness）。</div></div>
+        <div class="gh-meta"><span class="gh-today">▲ +235 today</span><span class="gh-total">★ 8,930</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/PKUFlyingPig/cs-self-learning" target="_blank" rel="noopener" class="gh-name">PKUFlyingPig/cs-self-learning</a><span class="gh-lang">HTML</span></div>
+        <div class="gh-desc">计算机自学指南<div class="zh">计算机自学指南（中文）。</div></div>
+        <div class="gh-meta"><span class="gh-today">▲ +134 today</span><span class="gh-total">★ 74,189</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/Canner/WrenAI" target="_blank" rel="noopener" class="gh-name">Canner/WrenAI</a><span class="gh-lang">Python</span></div>
+        <div class="gh-desc">GenBI (Generative BI) for AI agents, an open-source, governed text-to-SQL through an open context layer that turns natural-language questions into trusted dashboards, charts, and SQL across 20+ data sources.<div class="zh">面向 AI Agent 的生成式 BI（GenBI）：开源、受治理的自然语言转 SQL，跨 20+ 数据源生成可信仪表盘、图表与 SQL。</div></div>
+        <div class="gh-meta"><span class="gh-today">▲ +121 today</span><span class="gh-total">★ 16,220</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/Flowseal/zapret-discord-youtube" target="_blank" rel="noopener" class="gh-name">Flowseal/zapret-discord-youtube</a><span class="gh-lang">Batchfile</span></div>
+        <div class="gh-desc">(no description provided)<div class="zh">（无官方描述；一款用于绕过 Discord / YouTube 网络限制的批处理工具）。</div></div>
+        <div class="gh-meta"><span class="gh-today">▲ +106 today</span><span class="gh-total">★ 31,038</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/AstrBotDevs/AstrBot" target="_blank" rel="noopener" class="gh-name">AstrBotDevs/AstrBot</a><span class="gh-lang">Python</span></div>
+        <div class="gh-desc">AI Agent Assistant &amp; development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative.<div class="zh">集成多种 IM 平台、LLM、插件与 AI 能力的 Agent 助手与开发框架（可作为 openclaw 的替代）。</div></div>
+        <div class="gh-meta"><span class="gh-today">▲ +83 today</span><span class="gh-total">★ 36,710</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/trycua/cua" target="_blank" rel="noopener" class="gh-name">trycua/cua</a><span class="gh-lang">HTML</span></div>
+        <div class="gh-desc">Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.<div class="zh">用开源驱动、跨操作系统集群与基准测试扩展 computer-use 2.0（用于训练、评估与数据生成）。</div></div>
+        <div class="gh-meta"><span class="gh-today">▲ +64 today</span><span class="gh-total">★ 20,244</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/microsoft/terminal" target="_blank" rel="noopener" class="gh-name">microsoft/terminal</a><span class="gh-lang">C++</span></div>
+        <div class="gh-desc">The new Windows Terminal and the original Windows console host, all in the same place!<div class="zh">新版 Windows 终端与原生控制台宿主合二为一。</div></div>
+        <div class="gh-meta"><span class="gh-today">▲ +59 today</span><span class="gh-total">★ 104,187</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/andrewrabert/jellium-desktop" target="_blank" rel="noopener" class="gh-name">andrewrabert/jellium-desktop</a><span class="gh-lang">Rust</span></div>
+        <div class="gh-desc">An unofficial desktop client for Jellyfin<div class="zh">Jellyfin 的非官方桌面客户端。</div></div>
+        <div class="gh-meta"><span class="gh-today">▲ +43 today</span><span class="gh-total">★ 1,297</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/github/copilot-sdk" target="_blank" rel="noopener" class="gh-name">github/copilot-sdk</a><span class="gh-lang">Java</span></div>
+        <div class="gh-desc">Multi-platform SDK for integrating GitHub Copilot Agent into apps and services<div class="zh">多平台 SDK，用于将 GitHub Copilot Agent 集成到应用与服务中。</div></div>
+        <div class="gh-meta"><span class="gh-today">▲ +39 today</span><span class="gh-total">★ 9,965</span></div>
+      </div>
+</div>
+  </section>
+
+  <section id="producthunt" class="section">
+    <div class="sec-title"><span class="emo">🚀</span><span class="bar"></span>Product Hunt · 今日精选（6 款）</div>
+    <div class="gh-grid">      <div class="ph-card">
+        <div class="ph-top"><span class="ph-rank">#1</span><a class="ph-name" href="https://www.producthunt.com/" target="_blank" rel="noopener">OpenSEO</a></div>
+        <div class="ph-desc">The open source Ahrefs alternative<div class="zh">开源版的 Ahrefs 替代品（SEO 分析）。</div></div>
+        <div class="ph-meta"><span class="ph-up">▲ 55</span><span class="ph-topics">Open Source · Marketing · SEO</span></div>
+      </div>
+      <div class="ph-card">
+        <div class="ph-top"><span class="ph-rank">#2</span><a class="ph-name" href="https://www.producthunt.com/" target="_blank" rel="noopener">Spycost</a></div>
+        <div class="ph-desc">Fell for a discount again?<div class="zh">又掉进打折陷阱了？（比价 / 防坑工具）。</div></div>
+        <div class="ph-meta"><span class="ph-up">▲ 52</span><span class="ph-topics">Productivity · Finance · Shopping</span></div>
+      </div>
+      <div class="ph-card">
+        <div class="ph-top"><span class="ph-rank">#3</span><a class="ph-name" href="https://www.producthunt.com/" target="_blank" rel="noopener">BaseRT</a></div>
+        <div class="ph-desc">6.4x faster than llama.cpp, 3.9x faster than MLX<div class="zh">比 llama.cpp 快 6.4 倍、比 MLX 快 3.9 倍的推理引擎（面向 Apple 平台）。</div></div>
+        <div class="ph-meta"><span class="ph-up">▲ 32</span><span class="ph-topics">Open Source · Artificial Intelligence · Apple</span></div>
+      </div>
+      <div class="ph-card">
+        <div class="ph-top"><span class="ph-rank">#4</span><a class="ph-name" href="https://www.producthunt.com/" target="_blank" rel="noopener">Detourmap</a></div>
+        <div class="ph-desc">Every place worth the detour, on one interactive map<div class="zh">把每个值得绕路去的地方，汇于一幅互动地图。</div></div>
+        <div class="ph-meta"><span class="ph-up">▲ 28</span><span class="ph-topics">Education · Travel · Maps</span></div>
+      </div>
+      <div class="ph-card">
+        <div class="ph-top"><span class="ph-rank">#5</span><a class="ph-name" href="https://www.producthunt.com/" target="_blank" rel="noopener">Rewisp</a></div>
+        <div class="ph-desc">See it once. Ask forever.<div class="zh">看一次，永久可问（一次性记录、持续问答的知识工具）。</div></div>
+        <div class="ph-meta"><span class="ph-up">▲ 26</span><span class="ph-topics">Productivity · User Experience · GitHub</span></div>
+      </div>
+      <div class="ph-card">
+        <div class="ph-top"><span class="ph-rank">#6</span><a class="ph-name" href="https://www.producthunt.com/" target="_blank" rel="noopener">Kobbe</a></div>
+        <div class="ph-desc">Privacy-friendly web analytics with traffic and revenue.<div class="zh">注重隐私的网站分析，同时跟踪流量与收入。</div></div>
+        <div class="ph-meta"><span class="ph-up">▲ 24</span><span class="ph-topics">Analytics · Marketing</span></div>
+      </div>
+</div>
+  </section>
+
+  <section id="papers" class="section">
+    <div class="sec-title"><span class="emo">📄</span><span class="bar"></span>Daily Papers · Hugging Face</div>
+    <div class="note">注：Hugging Face Daily Papers 当前最新可用批次为 <b>Jul 17</b>（07-20 早间尚未发布新批次，周末 arXiv 不更新），以下为最近一批 12 篇，如实呈现。</div>
+    <table class="hn-table">
+      <thead><tr><th>#</th><th>论文标题</th><th>热度</th></tr></thead>
+      <tbody>
+      <tr>
+        <td class="rank">1</td>
+        <td class="hn-title"><a href="https://huggingface.co/papers/2607.14952" target="_blank" rel="noopener">LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget</a><div class="zh">在固定 GPU 预算下突破 200 万 token 的长上下文强化学习。</div></td>
+        <td class="hn-score">♥ 176</td>
+      </tr>
+      <tr>
+        <td class="rank">2</td>
+        <td class="hn-title"><a href="https://huggingface.co/papers/2607.14935" target="_blank" rel="noopener">VideoChat3: Fully Open Video MLLM for Efficient and Generalist Video Understanding</a><div class="zh">VideoChat3：面向高效、通用视频理解的完全开放视频多模态大模型。</div></td>
+        <td class="hn-score">♥ 146</td>
+      </tr>
+      <tr>
+        <td class="rank">3</td>
+        <td class="hn-title"><a href="https://huggingface.co/papers/2607.14777" target="_blank" rel="noopener">SEED: Self-Evolving On-Policy Distillation for Agentic Reinforcement Learning</a><div class="zh">SEED：面向 Agent 强化学习的自进化在策蒸馏。</div></td>
+        <td class="hn-score">♥ 86</td>
+      </tr>
+      <tr>
+        <td class="rank">4</td>
+        <td class="hn-title"><a href="https://huggingface.co/papers/2607.15257" target="_blank" rel="noopener">SearchOS-V1: Towards Robust Open-Domain Information-Seeking Agent Collaboration</a><div class="zh">SearchOS-V1：迈向稳健的开放域信息检索 Agent 协作。</div></td>
+        <td class="hn-score">♥ 60</td>
+      </tr>
+      <tr>
+        <td class="rank">5</td>
+        <td class="hn-title"><a href="https://huggingface.co/papers/2607.15207" target="_blank" rel="noopener">BadWAM: When World-Action Models Dream Right but Act Wrong</a><div class="zh">BadWAM：当世界-动作模型“想得对、动错”时。</div></td>
+        <td class="hn-score">♥ 46</td>
+      </tr>
+      <tr>
+        <td class="rank">6</td>
+        <td class="hn-title"><a href="https://huggingface.co/papers/2607.14202" target="_blank" rel="noopener">KeyFrame-Compass: Towards Comprehensive Evaluation of Keyframe-Conditioned Video Generation</a><div class="zh">KeyFrame-Compass：面向关键帧条件视频生成的全面评测。</div></td>
+        <td class="hn-score">♥ 36</td>
+      </tr>
+      <tr>
+        <td class="rank">7</td>
+        <td class="hn-title"><a href="https://huggingface.co/papers/2607.14189" target="_blank" rel="noopener">MultiRef-Compass: Towards Comprehensive Evaluation of Multi-Reference-to-Audio-Video Generation</a><div class="zh">MultiRef-Compass：面向多参考音频-视频生成的全面评测。</div></td>
+        <td class="hn-score">♥ 31</td>
+      </tr>
+      <tr>
+        <td class="rank">8</td>
+        <td class="hn-title"><a href="https://huggingface.co/papers/2607.14076" target="_blank" rel="noopener">From Pixels to States: Rethinking Interactive World Models as Game Engines</a><div class="zh">从像素到状态：把交互式世界模型重新构想为游戏引擎。</div></td>
+        <td class="hn-score">♥ 29</td>
+      </tr>
+      <tr>
+        <td class="rank">9</td>
+        <td class="hn-title"><a href="https://huggingface.co/papers/2607.13188" target="_blank" rel="noopener">Concurrent Image Understanding and Generation: Self-Correcting Coupled Markov Jump Processes</a><div class="zh">图像理解与生成的并行进行：自校正耦合马尔可夫跳跃过程。</div></td>
+        <td class="hn-score">♥ 29</td>
+      </tr>
+      <tr>
+        <td class="rank">10</td>
+        <td class="hn-title"><a href="https://huggingface.co/papers/2607.12800" target="_blank" rel="noopener">UniVR: Thinking in Visual Space for Unified Visual Reasoning</a><div class="zh">UniVR：在视觉空间中思考，实现统一视觉推理。</div></td>
+        <td class="hn-score">♥ 28</td>
+      </tr>
+      <tr>
+        <td class="rank">11</td>
+        <td class="hn-title"><a href="https://huggingface.co/papers/2607.14187" target="_blank" rel="noopener">RxBrain: Embodied Cognition Foundation Model with Joint Language-Visual Reasoning and Imagination</a><div class="zh">RxBrain：具备联合语言-视觉推理与想象能力的具身认知基础模型。</div></td>
+        <td class="hn-score">♥ 23</td>
+      </tr>
+      <tr>
+        <td class="rank">12</td>
+        <td class="hn-title"><a href="https://huggingface.co/papers/2607.03065" target="_blank" rel="noopener">Spectral Rewiring for Exploration, Purification, and Model Merging</a><div class="zh">用于探索、提纯与模型融合的谱重连。</div></td>
+        <td class="hn-score">♥ 23</td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="insights" class="section">
+    <div class="sec-title"><span class="emo">💡</span><span class="bar"></span>趋势洞察 · 三大核心信号</div>
+          <div class="insight">
+        <div class="insight-head"><span class="insight-dot"></span><h3>AI 编程 Agent 基础设施持续领跑</h3><span class="insight-src">HN · GitHub</span></div>
+        <p>Claude Code 换上 Rust 版 Bun（HN 382 分/528 评论）、OpenAI 将 Codex 上下文从 372k 砍到 272k；GitHub 上 code-review-graph（+663）、kimi-cli（+410）、jcode（+235）、wigolo（本地 MCP 研究）、copilot-sdk 集体走高。信号明确：AI 编程 Agent 正从“能写”转向“更快、更省上下文、本地优先”的工程化成熟。</p>
+      </div>
+      <div class="insight">
+        <div class="insight-head"><span class="insight-dot"></span><h3>开放模型 + 端侧/轻量推理共振</h3><span class="insight-src">HN · GitHub · Product Hunt · HF</span></div>
+        <p>Qwen 3.8 发布登 HN 775 分；GitHub 上 ktransformers（+360，异构推理）、airllm（单 4GB 跑 70B，+358）、build-your-own-x（+754）霸榜；Product Hunt 的 BaseRT 号称比 llama.cpp 快 6.4×；HF 的 LongStraw 把长上下文 RL 推过 2M token。开源模型与极致推理效率正在形成正反馈。</p>
+      </div>
+      <div class="insight">
+        <div class="insight-head"><span class="insight-dot"></span><h3>Agent 评测 + 多模态/世界模型成学术新前沿</h3><span class="insight-src">HF · Product Hunt</span></div>
+        <p>HF Daily Papers 过半与 Agent 相关：SEED（自进化 Agent RL）、SearchOS-V1（信息检索 Agent 协作）、BadWAM（世界-动作模型）；VideoChat3 开放视频 MLLM、From Pixels to States 把世界模型当游戏引擎。Product Hunt 也涌现 OpenSEO、Rewisp（“看一次，永久可问”）等自动化/知识 Agent 新品——Agent 的智能与评测体系同步进化。</p>
+      </div>
+
+  </section>
+
+  <footer class="site-footer">
+    数据来源：Hacker News · GitHub Trending · Product Hunt · Hugging Face Papers<br>
+    本报告由自动化任务每日生成 · 2026-07-20 · 星期一 · <a href="#top-story">回到顶部 ↑</a>
+  </footer>
+
+</div>
+</body>
+</html>
