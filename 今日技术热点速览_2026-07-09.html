@@ -3,7 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>今日技术热点速览 — 2026-07-09</title>
+<title>今日技术热点速览 · 2026-07-20 · 星期一</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Serif+SC:wght@400;700;900&display=swap" rel="stylesheet">
 <style>
 :root{
   --paper:#f4ede0; --paper2:#efe7d8; --ink:#1a1a1a; --ink2:#333;
@@ -182,269 +185,291 @@ footer.site-footer a{color:var(--accent2);text-decoration:none;}
 </style>
 </head>
 <body>
-<a class="back-link" href="index.html" style="display:block;text-align:center;padding:10px;font-size:12px;color:#6b6357;text-decoration:none;">← 返回归档</a>
+<header class="site-header">
+  <a class="back-link" href="index.html">← 返回归档</a>
+  <div class="kicker">The Tech Dispatch</div>
+  <h1>🔥 今日技术热点速览</h1>
+  <div class="date">2026-07-09 · 星期四</div>
+  <div class="sub">数据来源：Hacker News · GitHub Trending · Product Hunt · Hugging Face Papers</div>
+</header>
 
-<div class="header">
-  <h1>📡 今日技术热点速览</h1>
-  <div class="date">2026年7月9日 星期四 · 数据来源: Hacker News & GitHub Trending</div>
-  <div class="summary-stats">
-    <div class="stat-box"><div class="num">20</div><div class="label">HN 热门</div></div>
-    <div class="stat-box"><div class="num">15</div><div class="label">GitHub Trending</div></div>
-    <div class="stat-box"><div class="num">3</div><div class="label">趋势洞察</div></div>
-  </div>
+<nav class="quick-nav">
+  <a href="#top-story">🔥 今日头条</a>
+  <a href="#hn">📰 Hacker News</a>
+  <a href="#github">⭐ GitHub</a>
+  <a href="#producthunt">🚀 Product Hunt</a>
+  <a href="#papers">📄 Papers</a>
+  <a href="#insights">💡 趋势洞察</a>
+</nav>
+
+<div class="wrap">
+
+  <section id="top-story" class="hero">
+    <div class="sec-title"><span class="emo">🔥</span><span class="bar"></span>今日头条</div>
+    <div class="hero-grid"><a class="hero-card" href="#hn"><div class="hero-meta">本期未单列头条</div><div class="hero-title">详见下方 HN / GitHub 排行</div></a></div>
+  </section>
+
+  <section id="hn" class="section">
+    <div class="sec-title"><span class="emo">📰</span><span class="bar"></span>Hacker News · 热门排行 Top 20</div>
+    <table class="hn-table">
+      <thead><tr><th>#</th><th>标题</th><th>分数</th><th>评论</th><th>标签</th></tr></thead>
+      <tbody>
+      <tr>
+        <td class="rank">1</td>
+        <td class="hn-title"><a href="https://news.ycombinator.com/item?id=48833116" target="_blank" rel="noopener">Chatto is now open source</a></td>
+        <td class="hn-score">▲ 936</td>
+        <td class="hn-comments">242</td>
+        <td><span class="tag">—</span></td>
+      </tr>
+      <tr>
+        <td class="rank">2</td>
+        <td class="hn-title"><a href="https://openai.com/index/introducing-gpt-live/" target="_blank" rel="noopener">GPT‑Live — OpenAI</a></td>
+        <td class="hn-score">▲ 689</td>
+        <td class="hn-comments">449</td>
+        <td><span class="tag">AI</span></td>
+      </tr>
+      <tr>
+        <td class="rank">3</td>
+        <td class="hn-title"><a href="https://x.ai/news/grok-4-5" target="_blank" rel="noopener">Grok 4.5 — xAI</a></td>
+        <td class="hn-score">▲ 600</td>
+        <td class="hn-comments">822</td>
+        <td><span class="tag">AI</span></td>
+      </tr>
+      <tr>
+        <td class="rank">4</td>
+        <td class="hn-title"><a href="https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/" target="_blank" rel="noopener">TypeScript 7.0 发布</a></td>
+        <td class="hn-score">▲ 587</td>
+        <td class="hn-comments">235</td>
+        <td><span class="tag">TypeScript</span></td>
+      </tr>
+      <tr>
+        <td class="rank">5</td>
+        <td class="hn-title"><a href="https://bun.com/blog/bun-in-rust" target="_blank" rel="noopener">Bun 用 Rust 重写</a></td>
+        <td class="hn-score">▲ 523</td>
+        <td class="hn-comments">296</td>
+        <td><span class="tag">Rust</span></td>
+      </tr>
+      <tr>
+        <td class="rank">6</td>
+        <td class="hn-title"><a href="https://www.cloudflare.com/drop/" target="_blank" rel="noopener">Cloudflare Drop</a></td>
+        <td class="hn-score">▲ 396</td>
+        <td class="hn-comments">202</td>
+        <td><span class="tag">—</span></td>
+      </tr>
+      <tr>
+        <td class="rank">7</td>
+        <td class="hn-title"><a href="https://www.abeyk.com/escape-the-rat-race/" target="_blank" rel="noopener">FAANG Simulator</a></td>
+        <td class="hn-score">▲ 385</td>
+        <td class="hn-comments">145</td>
+        <td><span class="tag">—</span></td>
+      </tr>
+      <tr>
+        <td class="rank">8</td>
+        <td class="hn-title"><a href="https://microsoft.github.io/flint-chart/" target="_blank" rel="noopener">Microsoft Flint — AI 可视化语言</a></td>
+        <td class="hn-score">▲ 267</td>
+        <td class="hn-comments">100</td>
+        <td><span class="tag">AI</span></td>
+      </tr>
+      <tr>
+        <td class="rank">9</td>
+        <td class="hn-title"><a href="https://openai.com/index/separating-signal-from-noise-coding-evaluations/" target="_blank" rel="noopener">OpenAI: 编码评估中的信号与噪声</a></td>
+        <td class="hn-score">▲ 206</td>
+        <td class="hn-comments">71</td>
+        <td><span class="tag">AI</span></td>
+      </tr>
+      <tr>
+        <td class="rank">10</td>
+        <td class="hn-title"><a href="https://www.yamanote.fun/" target="_blank" rel="noopener">Show HN: 东京山手线声音景观</a></td>
+        <td class="hn-score">▲ 152</td>
+        <td class="hn-comments">30</td>
+        <td><span class="tag">—</span></td>
+      </tr>
+      <tr>
+        <td class="rank">11</td>
+        <td class="hn-title"><a href="https://github.com/linuxrebel/DocuBrowser" target="_blank" rel="noopener">DocuBrowser — 文档转可搜索知识库</a></td>
+        <td class="hn-score">▲ 129</td>
+        <td class="hn-comments">28</td>
+        <td><span class="tag">—</span></td>
+      </tr>
+      <tr>
+        <td class="rank">12</td>
+        <td class="hn-title"><a href="https://shkspr.mobi/blog/2026/07/a-bug-which-only-affected-left-handed-users/" target="_blank" rel="noopener">一个只影响左撇子用户的 Bug</a></td>
+        <td class="hn-score">▲ 112</td>
+        <td class="hn-comments">63</td>
+        <td><span class="tag">—</span></td>
+      </tr>
+      <tr>
+        <td class="rank">13</td>
+        <td class="hn-title"><a href="https://forum.openmandriva.org/t/statement-regarding-attempted-distribution-sabotage/8997" target="_blank" rel="noopener">OpenMandriva 发布遭破坏声明</a></td>
+        <td class="hn-score">▲ 102</td>
+        <td class="hn-comments">21</td>
+        <td><span class="tag">—</span></td>
+      </tr>
+      <tr>
+        <td class="rank">14</td>
+        <td class="hn-title"><a href="https://seriot.ch/computation/uts35/" target="_blank" rel="noopener">Unicode 转写规则是图灵完备的</a></td>
+        <td class="hn-score">▲ 94</td>
+        <td class="hn-comments">29</td>
+        <td><span class="tag">—</span></td>
+      </tr>
+      <tr>
+        <td class="rank">15</td>
+        <td class="hn-title"><a href="https://www.liamcvw.com/p/remote-attestation" target="_blank" rel="noopener">Remote Attestation 详解</a></td>
+        <td class="hn-score">▲ 83</td>
+        <td class="hn-comments">71</td>
+        <td><span class="tag">—</span></td>
+      </tr>
+      <tr>
+        <td class="rank">16</td>
+        <td class="hn-title"><a href="https://www.databricks.com/blog/benchmarking-coding-agents-databricks-multi-million-line-codebase" target="_blank" rel="noopener">Databricks 百万行代码库评测 AI 编程代理</a></td>
+        <td class="hn-score">▲ 71</td>
+        <td class="hn-comments">22</td>
+        <td><span class="tag">AI</span></td>
+      </tr>
+      <tr>
+        <td class="rank">17</td>
+        <td class="hn-title"><a href="https://nexte.st/" target="_blank" rel="noopener">Cargo-nextest: 比 cargo test 快 3 倍</a></td>
+        <td class="hn-score">▲ 69</td>
+        <td class="hn-comments">20</td>
+        <td><span class="tag">Rust</span></td>
+      </tr>
+      <tr>
+        <td class="rank">18</td>
+        <td class="hn-title"><a href="https://mira-wm.com/" target="_blank" rel="noopener">MIRA: 多人交互世界模型 (Rocket League)</a></td>
+        <td class="hn-score">▲ 69</td>
+        <td class="hn-comments">13</td>
+        <td><span class="tag">AI</span></td>
+      </tr>
+      <tr>
+        <td class="rank">19</td>
+        <td class="hn-title"><a href="https://github.com/malisper/pgrust" target="_blank" rel="noopener">Postgres 用 Rust 重写，通过全部回归测试</a></td>
+        <td class="hn-score">▲ 47</td>
+        <td class="hn-comments">41</td>
+        <td><span class="tag">Rust</span></td>
+      </tr>
+      <tr>
+        <td class="rank">20</td>
+        <td class="hn-title"><a href="https://www.youtube.com/watch?v=CAJ_iIedx_I" target="_blank" rel="noopener">Beyond Git: Godot 实时版本控制</a></td>
+        <td class="hn-score">▲ 40</td>
+        <td class="hn-comments">2</td>
+        <td><span class="tag">—</span></td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="github" class="section">
+    <div class="sec-title"><span class="emo">⭐</span><span class="bar"></span>GitHub Trending · 当日热门仓库（按 star 增量排序）</div>
+    <div class="gh-grid">      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/OfficeCLI" target="_blank" rel="noopener" class="gh-name">OfficeCLI</a><span class="gh-lang">C#</span></div>
+        <div class="gh-desc">首个为 AI 代理打造的 Office CLI 套件，读写编辑 Word/Excel/PPT，单二进制、无需安装 Office</div>
+        <div class="gh-meta"><span class="gh-today">▲ +1717 today</span><span class="gh-total">★ 12,488</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/agent-skills" target="_blank" rel="noopener" class="gh-name">agent-skills</a><span class="gh-lang">JavaScript</span></div>
+        <div class="gh-desc">面向 AI 编程代理的工程级技能集合，由 Addy Osmani 维护</div>
+        <div class="gh-meta"><span class="gh-today">▲ +1297 today</span><span class="gh-total">★ 74,895</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/system_prompts_leaks" target="_blank" rel="noopener" class="gh-name">system_prompts_leaks</a><span class="gh-lang">JavaScript</span></div>
+        <div class="gh-desc">各大 AI 模型系统提示词泄露合集 — Claude, GPT-5.5, Gemini 3.5, Grok 等</div>
+        <div class="gh-meta"><span class="gh-today">▲ +1218 today</span><span class="gh-total">★ 54,521</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/PhotoGIMP" target="_blank" rel="noopener" class="gh-name">PhotoGIMP</a><span class="gh-lang">CSS</span></div>
+        <div class="gh-desc">GIMP 3+ 的 Photoshop 风格补丁</div>
+        <div class="gh-meta"><span class="gh-today">▲ +1125 today</span><span class="gh-total">★ 15,195</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/superpowers" target="_blank" rel="noopener" class="gh-name">superpowers</a><span class="gh-lang">Shell</span></div>
+        <div class="gh-desc">代理技能框架与软件开发方法论 — 250K+ stars 现象级项目</div>
+        <div class="gh-meta"><span class="gh-today">▲ +1116 today</span><span class="gh-total">★ 250,196</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/claude-video" target="_blank" rel="noopener" class="gh-name">claude-video</a><span class="gh-lang">Python</span></div>
+        <div class="gh-desc">让 Claude 观看任何视频 — 下载/提取帧/转写/分析</div>
+        <div class="gh-meta"><span class="gh-today">▲ +951 today</span><span class="gh-total">★ 6,258</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/RuView" target="_blank" rel="noopener" class="gh-name">RuView</a><span class="gh-lang">Rust</span></div>
+        <div class="gh-desc">WiFi 信号转实时空间感知：生命体征监测 + 存在检测，零像素视频</div>
+        <div class="gh-meta"><span class="gh-today">▲ +799 today</span><span class="gh-total">★ 79,363</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/CubeSandbox" target="_blank" rel="noopener" class="gh-name">CubeSandbox</a><span class="gh-lang">Rust</span></div>
+        <div class="gh-desc">腾讯云发布 — 即时并发安全的轻量AI代理沙箱</div>
+        <div class="gh-meta"><span class="gh-today">▲ +564 today</span><span class="gh-total">★ 9,087</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/zvec" target="_blank" rel="noopener" class="gh-name">zvec</a><span class="gh-lang">C++</span></div>
+        <div class="gh-desc">阿里巴巴开源 — 轻量级、极速进程内向量数据库</div>
+        <div class="gh-meta"><span class="gh-today">▲ +395 today</span><span class="gh-total">★ 14,540</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/last30days-skill" target="_blank" rel="noopener" class="gh-name">last30days-skill</a><span class="gh-lang">Python</span></div>
+        <div class="gh-desc">AI 代理技能：跨 Reddit/X/YouTube/HN 研究任何话题并合成摘要</div>
+        <div class="gh-meta"><span class="gh-today">▲ +352 today</span><span class="gh-total">★ 50,973</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/TencentDB-Agent-Memory" target="_blank" rel="noopener" class="gh-name">TencentDB-Agent-Memory</a><span class="gh-lang">TypeScript</span></div>
+        <div class="gh-desc">腾讯云 AI 代理长期记忆系统 — 4 级渐进管道，零外部 API 依赖</div>
+        <div class="gh-meta"><span class="gh-today">▲ +318 today</span><span class="gh-total">★ 7,840</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/autoremesher" target="_blank" rel="noopener" class="gh-name">autoremesher</a><span class="gh-lang">C++</span></div>
+        <div class="gh-desc">自动四边形网格重建工具</div>
+        <div class="gh-meta"><span class="gh-today">▲ +296 today</span><span class="gh-total">★ 2,119</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/prisma" target="_blank" rel="noopener" class="gh-name">prisma</a><span class="gh-lang">TypeScript</span></div>
+        <div class="gh-desc">新一代 Node.js &amp; TypeScript ORM</div>
+        <div class="gh-meta"><span class="gh-today">▲ +46 today</span><span class="gh-total">★ 46,666</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/argo-cd" target="_blank" rel="noopener" class="gh-name">argo-cd</a><span class="gh-lang">Go</span></div>
+        <div class="gh-desc">Kubernetes 声明式持续部署</div>
+        <div class="gh-meta"><span class="gh-today">▲ +29 today</span><span class="gh-total">★ 23,484</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/DesktopCommanderMCP" target="_blank" rel="noopener" class="gh-name">DesktopCommanderMCP</a><span class="gh-lang">TypeScript</span></div>
+        <div class="gh-desc">MCP 服务器：终端控制 + 文件搜索 + diff 编辑</div>
+        <div class="gh-meta"><span class="gh-today">▲ +28 today</span><span class="gh-total">★ 6,436</span></div>
+      </div>
 </div>
+  </section>
 
-<div class="section-title"><span class="icon">🔥</span> Hacker News 热门排行</div>
+  <section id="producthunt" class="section">
+    <div class="sec-title"><span class="emo">🚀</span><span class="bar"></span>Product Hunt · 今日精选</div>
+    <div class="gh-grid"><div class="ph-card"><div class="ph-top"><span class="ph-rank">–</span><span class="ph-name">本期未收录</span></div><div class="ph-desc">该期生成时尚未接入 Product Hunt 数据源，故无当日精选产品。</div></div></div>
+  </section>
 
-<div class="card">
-  <span class="rank top3">1</span>
-  <a class="title" href="https://news.ycombinator.com/item?id=48833116" target="_blank">Chatto is now open source</a>
-  <div class="meta"><span class="score">⭐ 936</span><span class="comments">💬 242</span>16h ago</div>
+  <section id="papers" class="section">
+    <div class="sec-title"><span class="emo">📄</span><span class="bar"></span>Daily Papers · Hugging Face</div>
+    <div class="note">该期生成时尚未接入 Hugging Face Daily Papers 数据源，故无当日论文列表。自 2026-07-13 起本报告开始收录该来源。</div>
+  </section>
+
+  <section id="insights" class="section">
+    <div class="sec-title"><span class="emo">💡</span><span class="bar"></span>趋势洞察 · 三大核心信号</div>
+          <div class="insight">
+        <div class="insight-head"><span class="insight-dot"></span><h3>AI 代理生态集中爆发。</h3><span class="insight-src">HN · GitHub</span></div>
+        <p>GitHub Trending 前 15 中有 8 个项目直接服务于 AI 代理能力 — agent-skills、superpowers、OfficeCLI、TencentDB-Agent-Memory、CubeSandbox、DesktopCommanderMCP、claude-video、last30days-skill。AI 代理的能力边界正在从「聊天」快速扩展到「文件操作」「记忆存储」「安全沙箱」「视频理解」等真实世界交互。</p>
+      </div>
+      <div class="insight">
+        <div class="insight-head"><span class="insight-dot"></span><h3>Rust 重写浪潮持续加速。</h3><span class="insight-src">HN · GitHub</span></div>
+        <p>Bun 宣布用 Rust 重写（523 pts），Postgres 的 Rust 重写 pgrust 通过全部回归测试（47 pts），再加上系统提示词泄露项目、RuView 等项目均使用 Rust — Rust 正在快速渗透到基础设施、工具链和安全领域。</p>
+      </div>
+      <div class="insight">
+        <div class="insight-head"><span class="insight-dot"></span><h3>大模型竞争白热化 + 开发工具迭代。</h3><span class="insight-src">HN · GitHub</span></div>
+        <p>同一天内 GPT‑Live（689 pts）、Grok 4.5（600 pts）、TypeScript 7（587 pts）三连发。再加上 Microsoft Flint 的 AI 可视化编程语言（267 pts）和 Chatto 开源（936 pts 全站第一），今天的 HN 首页几乎被 AI + 开发工具刷屏。</p>
+      </div>
+
+  </section>
+
+  <footer class="site-footer">
+    数据来源：Hacker News · GitHub Trending · Product Hunt · Hugging Face Papers<br>
+    本报告由自动化任务每日生成 · 2026-07-09 · 星期四 · <a href="index.html">← 返回归档</a> · <a href="#top-story">回到顶部 ↑</a>
+  </footer>
+
 </div>
-
-<div class="card">
-  <span class="rank top3">2</span>
-  <a class="title" href="https://openai.com/index/introducing-gpt-live/" target="_blank">GPT‑Live — OpenAI</a>
-  <div class="meta"><span class="score">⭐ 689</span><span class="comments">💬 449</span><span class="lang">AI</span>14h ago</div>
-</div>
-
-<div class="card">
-  <span class="rank top3">3</span>
-  <a class="title" href="https://x.ai/news/grok-4-5" target="_blank">Grok 4.5 — xAI</a>
-  <div class="meta"><span class="score">⭐ 600</span><span class="comments">💬 822</span><span class="lang">AI</span>14h ago</div>
-</div>
-
-<div class="card">
-  <span class="rank">4</span>
-  <a class="title" href="https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/" target="_blank">TypeScript 7.0 发布</a>
-  <div class="meta"><span class="score">⭐ 587</span><span class="comments">💬 235</span><span class="lang">TypeScript</span>15h ago</div>
-</div>
-
-<div class="card">
-  <span class="rank">5</span>
-  <a class="title" href="https://bun.com/blog/bun-in-rust" target="_blank">Bun 用 Rust 重写</a>
-  <div class="meta"><span class="score">⭐ 523</span><span class="comments">💬 296</span><span class="lang">Rust</span>10h ago</div>
-</div>
-
-<div class="card">
-  <span class="rank">6</span>
-  <a class="title" href="https://www.cloudflare.com/drop/" target="_blank">Cloudflare Drop</a>
-  <div class="meta"><span class="score">⭐ 396</span><span class="comments">💬 202</span>12h ago</div>
-</div>
-
-<div class="card">
-  <span class="rank">7</span>
-  <a class="title" href="https://www.abeyk.com/escape-the-rat-race/" target="_blank">FAANG Simulator</a>
-  <div class="meta"><span class="score">⭐ 385</span><span class="comments">💬 145</span>11h ago</div>
-</div>
-
-<div class="card">
-  <span class="rank">8</span>
-  <a class="title" href="https://microsoft.github.io/flint-chart/" target="_blank">Microsoft Flint — AI 可视化语言</a>
-  <div class="meta"><span class="score">⭐ 267</span><span class="comments">💬 100</span><span class="lang">AI</span>14h ago</div>
-</div>
-
-<div class="card">
-  <span class="rank">9</span>
-  <a class="title" href="https://openai.com/index/separating-signal-from-noise-coding-evaluations/" target="_blank">OpenAI: 编码评估中的信号与噪声</a>
-  <div class="meta"><span class="score">⭐ 206</span><span class="comments">💬 71</span><span class="lang">AI</span>10h ago</div>
-</div>
-
-<div class="card">
-  <span class="rank">10</span>
-  <a class="title" href="https://www.yamanote.fun/" target="_blank">Show HN: 东京山手线声音景观</a>
-  <div class="meta"><span class="score">⭐ 152</span><span class="comments">💬 30</span>10h ago</div>
-</div>
-
-<div class="card">
-  <span class="rank">11</span>
-  <a class="title" href="https://github.com/linuxrebel/DocuBrowser" target="_blank">DocuBrowser — 文档转可搜索知识库</a>
-  <div class="meta"><span class="score">⭐ 129</span><span class="comments">💬 28</span>11h ago</div>
-</div>
-
-<div class="card">
-  <span class="rank">12</span>
-  <a class="title" href="https://shkspr.mobi/blog/2026/07/a-bug-which-only-affected-left-handed-users/" target="_blank">一个只影响左撇子用户的 Bug</a>
-  <div class="meta"><span class="score">⭐ 112</span><span class="comments">💬 63</span>13h ago</div>
-</div>
-
-<div class="card">
-  <span class="rank">13</span>
-  <a class="title" href="https://forum.openmandriva.org/t/statement-regarding-attempted-distribution-sabotage/8997" target="_blank">OpenMandriva 发布遭破坏声明</a>
-  <div class="meta"><span class="score">⭐ 102</span><span class="comments">💬 21</span>13h ago</div>
-</div>
-
-<div class="card">
-  <span class="rank">14</span>
-  <a class="title" href="https://seriot.ch/computation/uts35/" target="_blank">Unicode 转写规则是图灵完备的</a>
-  <div class="meta"><span class="score">⭐ 94</span><span class="comments">💬 29</span>8h ago</div>
-</div>
-
-<div class="card">
-  <span class="rank">15</span>
-  <a class="title" href="https://www.liamcvw.com/p/remote-attestation" target="_blank">Remote Attestation 详解</a>
-  <div class="meta"><span class="score">⭐ 83</span><span class="comments">💬 71</span>7h ago</div>
-</div>
-
-<div class="card">
-  <span class="rank">16</span>
-  <a class="title" href="https://www.databricks.com/blog/benchmarking-coding-agents-databricks-multi-million-line-codebase" target="_blank">Databricks 百万行代码库评测 AI 编程代理</a>
-  <div class="meta"><span class="score">⭐ 71</span><span class="comments">💬 22</span><span class="lang">AI</span>5h ago</div>
-</div>
-
-<div class="card">
-  <span class="rank">17</span>
-  <a class="title" href="https://nexte.st/" target="_blank">Cargo-nextest: 比 cargo test 快 3 倍</a>
-  <div class="meta"><span class="score">⭐ 69</span><span class="comments">💬 20</span><span class="lang">Rust</span>6h ago</div>
-</div>
-
-<div class="card">
-  <span class="rank">18</span>
-  <a class="title" href="https://mira-wm.com/" target="_blank">MIRA: 多人交互世界模型 (Rocket League)</a>
-  <div class="meta"><span class="score">⭐ 69</span><span class="comments">💬 13</span><span class="lang">AI</span>7h ago</div>
-</div>
-
-<div class="card">
-  <span class="rank">19</span>
-  <a class="title" href="https://github.com/malisper/pgrust" target="_blank">Postgres 用 Rust 重写，通过全部回归测试</a>
-  <div class="meta"><span class="score">⭐ 47</span><span class="comments">💬 41</span><span class="lang">Rust</span>1h ago</div>
-</div>
-
-<div class="card">
-  <span class="rank">20</span>
-  <a class="title" href="https://www.youtube.com/watch?v=CAJ_iIedx_I" target="_blank">Beyond Git: Godot 实时版本控制</a>
-  <div class="meta"><span class="score">⭐ 40</span><span class="comments">💬 2</span>8h ago</div>
-</div>
-
-<div class="section-title"><span class="icon">📈</span> GitHub Trending 仓库</div>
-
-<div class="card gh-card">
-  <span class="rank top3">1</span>
-  <span class="repo">OfficeCLI</span> <span class="lang">C#</span>
-  <div class="desc">首个为 AI 代理打造的 Office CLI 套件，读写编辑 Word/Excel/PPT，单二进制、无需安装 Office</div>
-  <div class="stars-row"><span class="total-stars">⭐ 12,488</span><span class="today-stars">+1,717 today</span></div>
-</div>
-
-<div class="card gh-card">
-  <span class="rank top3">2</span>
-  <span class="repo">agent-skills</span> <span class="lang">JavaScript</span>
-  <div class="desc">面向 AI 编程代理的工程级技能集合，由 Addy Osmani 维护</div>
-  <div class="stars-row"><span class="total-stars">⭐ 74,895</span><span class="today-stars">+1,297 today</span></div>
-</div>
-
-<div class="card gh-card">
-  <span class="rank top3">3</span>
-  <span class="repo">system_prompts_leaks</span> <span class="lang">JavaScript</span>
-  <div class="desc">各大 AI 模型系统提示词泄露合集 — Claude, GPT-5.5, Gemini 3.5, Grok 等</div>
-  <div class="stars-row"><span class="total-stars">⭐ 54,521</span><span class="today-stars">+1,218 today</span></div>
-</div>
-
-<div class="card gh-card">
-  <span class="rank">4</span>
-  <span class="repo">PhotoGIMP</span> <span class="lang">CSS</span>
-  <div class="desc">GIMP 3+ 的 Photoshop 风格补丁</div>
-  <div class="stars-row"><span class="total-stars">⭐ 15,195</span><span class="today-stars">+1,125 today</span></div>
-</div>
-
-<div class="card gh-card">
-  <span class="rank">5</span>
-  <span class="repo">superpowers</span> <span class="lang">Shell</span>
-  <div class="desc">代理技能框架与软件开发方法论 — 250K+ stars 现象级项目</div>
-  <div class="stars-row"><span class="total-stars">⭐ 250,196</span><span class="today-stars">+1,116 today</span></div>
-</div>
-
-<div class="card gh-card">
-  <span class="rank">6</span>
-  <span class="repo">claude-video</span> <span class="lang">Python</span>
-  <div class="desc">让 Claude 观看任何视频 — 下载/提取帧/转写/分析</div>
-  <div class="stars-row"><span class="total-stars">⭐ 6,258</span><span class="today-stars">+951 today</span></div>
-</div>
-
-<div class="card gh-card">
-  <span class="rank">7</span>
-  <span class="repo">RuView</span> <span class="lang">Rust</span>
-  <div class="desc">WiFi 信号转实时空间感知：生命体征监测 + 存在检测，零像素视频</div>
-  <div class="stars-row"><span class="total-stars">⭐ 79,363</span><span class="today-stars">+799 today</span></div>
-</div>
-
-<div class="card gh-card">
-  <span class="rank">8</span>
-  <span class="repo">CubeSandbox</span> <span class="lang">Rust</span>
-  <div class="desc">腾讯云发布 — 即时并发安全的轻量AI代理沙箱</div>
-  <div class="stars-row"><span class="total-stars">⭐ 9,087</span><span class="today-stars">+564 today</span></div>
-</div>
-
-<div class="card gh-card">
-  <span class="rank">9</span>
-  <span class="repo">zvec</span> <span class="lang">C++</span>
-  <div class="desc">阿里巴巴开源 — 轻量级、极速进程内向量数据库</div>
-  <div class="stars-row"><span class="total-stars">⭐ 14,540</span><span class="today-stars">+395 today</span></div>
-</div>
-
-<div class="card gh-card">
-  <span class="rank">10</span>
-  <span class="repo">last30days-skill</span> <span class="lang">Python</span>
-  <div class="desc">AI 代理技能：跨 Reddit/X/YouTube/HN 研究任何话题并合成摘要</div>
-  <div class="stars-row"><span class="total-stars">⭐ 50,973</span><span class="today-stars">+352 today</span></div>
-</div>
-
-<div class="card gh-card">
-  <span class="rank">11</span>
-  <span class="repo">TencentDB-Agent-Memory</span> <span class="lang">TypeScript</span>
-  <div class="desc">腾讯云 AI 代理长期记忆系统 — 4 级渐进管道，零外部 API 依赖</div>
-  <div class="stars-row"><span class="total-stars">⭐ 7,840</span><span class="today-stars">+318 today</span></div>
-</div>
-
-<div class="card gh-card">
-  <span class="rank">12</span>
-  <span class="repo">autoremesher</span> <span class="lang">C++</span>
-  <div class="desc">自动四边形网格重建工具</div>
-  <div class="stars-row"><span class="total-stars">⭐ 2,119</span><span class="today-stars">+296 today</span></div>
-</div>
-
-<div class="card gh-card">
-  <span class="rank">13</span>
-  <span class="repo">prisma</span> <span class="lang">TypeScript</span>
-  <div class="desc">新一代 Node.js & TypeScript ORM</div>
-  <div class="stars-row"><span class="total-stars">⭐ 46,666</span><span class="today-stars">+46 today</span></div>
-</div>
-
-<div class="card gh-card">
-  <span class="rank">14</span>
-  <span class="repo">argo-cd</span> <span class="lang">Go</span>
-  <div class="desc">Kubernetes 声明式持续部署</div>
-  <div class="stars-row"><span class="total-stars">⭐ 23,484</span><span class="today-stars">+29 today</span></div>
-</div>
-
-<div class="card gh-card">
-  <span class="rank">15</span>
-  <span class="repo">DesktopCommanderMCP</span> <span class="lang">TypeScript</span>
-  <div class="desc">MCP 服务器：终端控制 + 文件搜索 + diff 编辑</div>
-  <div class="stars-row"><span class="total-stars">⭐ 6,436</span><span class="today-stars">+28 today</span></div>
-</div>
-
-<div class="section-title"><span class="icon">💡</span> 今日趋势洞察</div>
-
-<div class="insight">
-  <span class="number">1</span>
-  <span class="text"><strong>AI 代理生态集中爆发。</strong> GitHub Trending 前 15 中有 8 个项目直接服务于 AI 代理能力 — agent-skills、superpowers、OfficeCLI、TencentDB-Agent-Memory、CubeSandbox、DesktopCommanderMCP、claude-video、last30days-skill。AI 代理的能力边界正在从「聊天」快速扩展到「文件操作」「记忆存储」「安全沙箱」「视频理解」等真实世界交互。</span>
-</div>
-
-<div class="insight">
-  <span class="number">2</span>
-  <span class="text"><strong>Rust 重写浪潮持续加速。</strong> Bun 宣布用 Rust 重写（523 pts），Postgres 的 Rust 重写 pgrust 通过全部回归测试（47 pts），再加上系统提示词泄露项目、RuView 等项目均使用 Rust — Rust 正在快速渗透到基础设施、工具链和安全领域。</span>
-</div>
-
-<div class="insight">
-  <span class="number">3</span>
-  <span class="text"><strong>大模型竞争白热化 + 开发工具迭代。</strong> 同一天内 GPT‑Live（689 pts）、Grok 4.5（600 pts）、TypeScript 7（587 pts）三连发。再加上 Microsoft Flint 的 AI 可视化编程语言（267 pts）和 Chatto 开源（936 pts 全站第一），今天的 HN 首页几乎被 AI + 开发工具刷屏。</span>
-</div>
-
-<div class="footer">
-  由 WorkBuddy 自动生成 · 数据来源 Hacker News & GitHub Trending · 2026-07-09<br>
-  仅供参考，不构成任何投资或技术选型建议。
-</div>
-
-<footer style="text-align:center;padding:20px;border-top:1px solid #c9bfa9;margin-top:40px;font-size:12px;color:#6b6357;"><a href="index.html" style="color:#1a3a5c;text-decoration:none;">← 返回归档</a></footer>
 </body>
 </html>

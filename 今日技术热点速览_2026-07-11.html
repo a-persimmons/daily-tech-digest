@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>今日技术热点速览 · 2026-07-11</title>
+<title>今日技术热点速览 · 2026-07-20 · 星期一</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Serif+SC:wght@400;700;900&display=swap" rel="stylesheet">
 <style>
 :root{
   --paper:#f4ede0; --paper2:#efe7d8; --ink:#1a1a1a; --ink2:#333;
@@ -185,378 +185,286 @@ footer.site-footer a{color:var(--accent2);text-decoration:none;}
 </style>
 </head>
 <body>
-<a class="back-link" href="index.html" style="display:block;text-align:center;padding:10px;font-size:12px;color:#6b6357;text-decoration:none;">← 返回归档</a>
-<div class="container">
+<header class="site-header">
+  <a class="back-link" href="index.html">← 返回归档</a>
+  <div class="kicker">The Tech Dispatch</div>
+  <h1>🔥 今日技术热点速览</h1>
+  <div class="date">2026-07-11 · 星期六</div>
+  <div class="sub">数据来源：Hacker News · GitHub Trending · Product Hunt · Hugging Face Papers</div>
+</header>
 
-  <!-- Hero -->
-  <div class="hero">
-    <div class="hero-date">2026-07-11 · 星期六 · DAILY DIGEST #3</div>
-    <div class="hero-title">今日技术热点速览</div>
-    <div class="hero-sub">Hacker News × GitHub Trending · 数据驱动洞察</div>
-  </div>
+<nav class="quick-nav">
+  <a href="#top-story">🔥 今日头条</a>
+  <a href="#hn">📰 Hacker News</a>
+  <a href="#github">⭐ GitHub</a>
+  <a href="#producthunt">🚀 Product Hunt</a>
+  <a href="#papers">📄 Papers</a>
+  <a href="#insights">💡 趋势洞察</a>
+</nav>
 
-  <!-- Top Headline -->
-  <div class="top-banner">
-    <div class="top-banner-icon">⚡</div>
-    <div class="top-banner-content">
-      <div class="top-banner-label">今日头条</div>
-      <div class="top-banner-title">Apple 正式起诉 OpenAI：指控前员工窃取商业机密</div>
-      <div class="top-banner-desc">HN 522 分 / 251 评论 · 科技巨头间 AI 人才争夺白热化，Apple 认为前员工带走核心机密后加盟 OpenAI</div>
-    </div>
-  </div>
+<div class="wrap">
 
-  <!-- HN Section -->
-  <div class="section-header">
-    <div class="section-icon hn">Y</div>
-    Hacker News 热门排行 TOP 20
-  </div>
+  <section id="top-story" class="hero">
+    <div class="sec-title"><span class="emo">🔥</span><span class="bar"></span>今日头条</div>
+    <div class="hero-grid">      <a class="hero-card" href="#" target="_blank" rel="noopener">
+        <div class="hero-meta">今日头条</div>
+        <div class="hero-title">Apple 正式起诉 OpenAI：指控前员工窃取商业机密</div>
+        <div class="zh">HN 522 分 / 251 评论 · 科技巨头间 AI 人才争夺白热化，Apple 认为前员工带走核心机密后加盟 OpenAI</div>
+      </a>
+</div>
+  </section>
 
-  <!-- HN 1 -->
-  <div class="card">
-    <div class="card-headline"><a href="https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/">Apple sues OpenAI, accuses ex-employees of stealing trade secrets</a></div>
-    <div class="card-meta"><span class="pts">522 pts</span> · <span class="cmts">251 comments</span></div>
-    <div class="card-tags"><span class="tag tag-ai">AI</span><span class="tag tag-other">法律</span></div>
-  </div>
+  <section id="hn" class="section">
+    <div class="sec-title"><span class="emo">📰</span><span class="bar"></span>Hacker News · 热门排行 Top 20</div>
+    <table class="hn-table">
+      <thead><tr><th>#</th><th>标题</th><th>分数</th><th>评论</th><th>标签</th></tr></thead>
+      <tbody>
+      <tr>
+        <td class="rank">1</td>
+        <td class="hn-title"><a href="https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/" target="_blank" rel="noopener">Apple sues OpenAI, accuses ex-employees of stealing trade secrets</a></td>
+        <td class="hn-score">▲ 522</td>
+        <td class="hn-comments">251</td>
+        <td><span class="tag">AI · 法律</span></td>
+      </tr>
+      <tr>
+        <td class="rank">2</td>
+        <td class="hn-title"><a href="https://www.jeffgeerling.com/blog/2026/quadrf-can-spot-drones-and-see-wifi-through-my-wall/" target="_blank" rel="noopener">QuadRF can spot drones and see WiFi through my wall</a></td>
+        <td class="hn-score">▲ 451</td>
+        <td class="hn-comments">172</td>
+        <td><span class="tag">硬件 · 安全</span></td>
+      </tr>
+      <tr>
+        <td class="rank">3</td>
+        <td class="hn-title"><a href="https://www.theguardian.com/us-news/2026/jul/10/new-york-city-deceptive-subscriptions-ban" target="_blank" rel="noopener">New York City to ban deceptive subscription practices</a></td>
+        <td class="hn-score">▲ 414</td>
+        <td class="hn-comments">215</td>
+        <td><span class="tag">政策</span></td>
+      </tr>
+      <tr>
+        <td class="rank">4</td>
+        <td class="hn-title"><a href="https://www.gingerbill.org/article/2026/07/10/good-tools-are-invisible/" target="_blank" rel="noopener">Good Tools Are Invisible</a></td>
+        <td class="hn-score">▲ 361</td>
+        <td class="hn-comments">167</td>
+        <td><span class="tag">工程哲学</span></td>
+      </tr>
+      <tr>
+        <td class="rank">5</td>
+        <td class="hn-title"><a href="https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf" target="_blank" rel="noopener">GPT-5.6 Sol Ultra produces proof of the Cycle Double Cover Conjecture</a></td>
+        <td class="hn-score">▲ 346</td>
+        <td class="hn-comments">280</td>
+        <td><span class="tag">AI · 数学</span></td>
+      </tr>
+      <tr>
+        <td class="rank">6</td>
+        <td class="hn-title"><a href="https://acoup.blog/2026/01/30/collections-the-late-bronze-age-collapse-a-very-brief-introduction/" target="_blank" rel="noopener">Late Bronze Age Collapse – A Very Brief Introduction</a></td>
+        <td class="hn-score">▲ 322</td>
+        <td class="hn-comments">225</td>
+        <td><span class="tag">历史</span></td>
+      </tr>
+      <tr>
+        <td class="rank">7</td>
+        <td class="hn-title"><a href="http://yummymelon.com/devnull/in-emacs-everything-looks-like-a-service.html" target="_blank" rel="noopener">In Emacs, everything looks like a service</a></td>
+        <td class="hn-score">▲ 233</td>
+        <td class="hn-comments">100</td>
+        <td><span class="tag">开发工具</span></td>
+      </tr>
+      <tr>
+        <td class="rank">8</td>
+        <td class="hn-title"><a href="https://vfxblog.com/2017/08/23/the-tech-of-terminator-2-an-oral-history/" target="_blank" rel="noopener">The tech of Terminator 2 – an oral history</a></td>
+        <td class="hn-score">▲ 163</td>
+        <td class="hn-comments">67</td>
+        <td><span class="tag">影视</span></td>
+      </tr>
+      <tr>
+        <td class="rank">9</td>
+        <td class="hn-title"><a href="https://lesleylai.info/en/flashcards/" target="_blank" rel="noopener">A love letter to flashcards</a></td>
+        <td class="hn-score">▲ 125</td>
+        <td class="hn-comments">80</td>
+        <td><span class="tag">学习方法</span></td>
+      </tr>
+      <tr>
+        <td class="rank">10</td>
+        <td class="hn-title"><a href="https://combustionlab.net" target="_blank" rel="noopener">Combustion engine web-based simulator</a></td>
+        <td class="hn-score">▲ 118</td>
+        <td class="hn-comments">52</td>
+        <td><span class="tag">仿真 · 引擎</span></td>
+      </tr>
+      <tr>
+        <td class="rank">11</td>
+        <td class="hn-title"><a href="https://waratlas.org" target="_blank" rel="noopener">War Atlas: An interactive cartography of every named war in human history</a></td>
+        <td class="hn-score">▲ 112</td>
+        <td class="hn-comments">58</td>
+        <td><span class="tag">历史 · 可视化</span></td>
+      </tr>
+      <tr>
+        <td class="rank">12</td>
+        <td class="hn-title"><a href="https://serialc.github.io/altClocks/" target="_blank" rel="noopener">Alternate clock designs and time systems</a></td>
+        <td class="hn-score">▲ 98</td>
+        <td class="hn-comments">57</td>
+        <td><span class="tag">设计</span></td>
+      </tr>
+      <tr>
+        <td class="rank">13</td>
+        <td class="hn-title"><a href="https://www.brown.edu/news/2026-07-09/chemical-bonds-relativity" target="_blank" rel="noopener">Einstein&#x27;s relativity rules chemical bonds in heavy elements</a></td>
+        <td class="hn-score">▲ 92</td>
+        <td class="hn-comments">36</td>
+        <td><span class="tag">物理</span></td>
+      </tr>
+      <tr>
+        <td class="rank">14</td>
+        <td class="hn-title"><a href="https://ergo.org/courses/computation-as-a-universal-and-fundamental-concept" target="_blank" rel="noopener">Computation as a universal and fundamental concept</a></td>
+        <td class="hn-score">▲ 85</td>
+        <td class="hn-comments">72</td>
+        <td><span class="tag">计算理论</span></td>
+      </tr>
+      <tr>
+        <td class="rank">15</td>
+        <td class="hn-title"><a href="https://lwn.net/SubscriberLink/1080822/990a8a5e2d379085/" target="_blank" rel="noopener">An update on residential proxies and the scraper situation</a></td>
+        <td class="hn-score">▲ 83</td>
+        <td class="hn-comments">68</td>
+        <td><span class="tag">安全 · 基础设施</span></td>
+      </tr>
+      <tr>
+        <td class="rank">16</td>
+        <td class="hn-title"><a href="https://avi.press/posts/2026-07-10-after-7-years-in-production-scarf-has-reluctantly-moved-away-from-haskell.html" target="_blank" rel="noopener">After 7 years in production, Scarf has reluctantly moved away from Haskell</a></td>
+        <td class="hn-score">▲ 78</td>
+        <td class="hn-comments">87</td>
+        <td><span class="tag">语言</span></td>
+      </tr>
+      <tr>
+        <td class="rank">17</td>
+        <td class="hn-title"><a href="https://www.zdnet.com/home-and-office/networking/spacex-wants-to-launch-100000-more-starlink-satellites/" target="_blank" rel="noopener">SpaceX wants to launch 100k more Starlink satellites for 100x bandwidth</a></td>
+        <td class="hn-score">▲ 73</td>
+        <td class="hn-comments">230</td>
+        <td><span class="tag">基础设施 · 卫星</span></td>
+      </tr>
+      <tr>
+        <td class="rank">18</td>
+        <td class="hn-title"><a href="https://machinelearningmastery.com/choosing-the-right-ai-agent-memory-strategy-a-decision-tree-approach/" target="_blank" rel="noopener">Choosing the Right AI Agent Memory Strategy: A Decision-Tree Approach</a></td>
+        <td class="hn-score">▲ 6</td>
+        <td class="hn-comments">0</td>
+        <td><span class="tag">AI Agent</span></td>
+      </tr>
+      <tr>
+        <td class="rank">19</td>
+        <td class="hn-title"><a href="https://nebusec.ai/research/ionstack-part-2/" target="_blank" rel="noopener">GhostLock, a stack-UAF that has existed in ALL Linux distributions for 15 years</a></td>
+        <td class="hn-score">▲ 35</td>
+        <td class="hn-comments">9</td>
+        <td><span class="tag">安全漏洞</span></td>
+      </tr>
+      <tr>
+        <td class="rank">20</td>
+        <td class="hn-title"><a href="https://mimo.xiaomi.com/blog/mimo-v2-5-inference" target="_blank" rel="noopener">Inference Optimization for MiMo v2.5: Pushing Hybrid SWA Efficiency to the Limit</a></td>
+        <td class="hn-score">▲ 43</td>
+        <td class="hn-comments">13</td>
+        <td><span class="tag">AI推理</span></td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
 
-  <!-- HN 2 -->
-  <div class="card">
-    <div class="card-headline"><a href="https://www.jeffgeerling.com/blog/2026/quadrf-can-spot-drones-and-see-wifi-through-my-wall/">QuadRF can spot drones and see WiFi through my wall</a></div>
-    <div class="card-meta"><span class="pts">451 pts</span> · <span class="cmts">172 comments</span></div>
-    <div class="card-tags"><span class="tag tag-hardware">硬件</span><span class="tag tag-security">安全</span></div>
-  </div>
-
-  <!-- HN 3 -->
-  <div class="card">
-    <div class="card-headline"><a href="https://www.theguardian.com/us-news/2026/jul/10/new-york-city-deceptive-subscriptions-ban">New York City to ban deceptive subscription practices</a></div>
-    <div class="card-meta"><span class="pts">414 pts</span> · <span class="cmts">215 comments</span></div>
-    <div class="card-tags"><span class="tag tag-other">政策</span></div>
-  </div>
-
-  <!-- HN 4 -->
-  <div class="card">
-    <div class="card-headline"><a href="https://www.gingerbill.org/article/2026/07/10/good-tools-are-invisible/">Good Tools Are Invisible</a></div>
-    <div class="card-meta"><span class="pts">361 pts</span> · <span class="cmts">167 comments</span></div>
-    <div class="card-tags"><span class="tag tag-dev">工程哲学</span></div>
-  </div>
-
-  <!-- HN 5 -->
-  <div class="card">
-    <div class="card-headline"><a href="https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf">GPT-5.6 Sol Ultra produces proof of the Cycle Double Cover Conjecture</a></div>
-    <div class="card-meta"><span class="pts">346 pts</span> · <span class="cmts">280 comments</span></div>
-    <div class="card-tags"><span class="tag tag-ai">AI</span><span class="tag tag-science">数学</span></div>
-  </div>
-
-  <!-- HN 6 -->
-  <div class="card">
-    <div class="card-headline"><a href="https://acoup.blog/2026/01/30/collections-the-late-bronze-age-collapse-a-very-brief-introduction/">Late Bronze Age Collapse – A Very Brief Introduction</a></div>
-    <div class="card-meta"><span class="pts">322 pts</span> · <span class="cmts">225 comments</span></div>
-    <div class="card-tags"><span class="tag tag-science">历史</span></div>
-  </div>
-
-  <!-- HN 7 -->
-  <div class="card">
-    <div class="card-headline"><a href="http://yummymelon.com/devnull/in-emacs-everything-looks-like-a-service.html">In Emacs, everything looks like a service</a></div>
-    <div class="card-meta"><span class="pts">233 pts</span> · <span class="cmts">100 comments</span></div>
-    <div class="card-tags"><span class="tag tag-dev">开发工具</span></div>
-  </div>
-
-  <!-- HN 8 -->
-  <div class="card">
-    <div class="card-headline"><a href="https://vfxblog.com/2017/08/23/the-tech-of-terminator-2-an-oral-history/">The tech of Terminator 2 – an oral history</a></div>
-    <div class="card-meta"><span class="pts">163 pts</span> · <span class="cmts">67 comments</span></div>
-    <div class="card-tags"><span class="tag tag-other">影视</span></div>
-  </div>
-
-  <!-- HN 9 -->
-  <div class="card">
-    <div class="card-headline"><a href="https://lesleylai.info/en/flashcards/">A love letter to flashcards</a></div>
-    <div class="card-meta"><span class="pts">125 pts</span> · <span class="cmts">80 comments</span></div>
-    <div class="card-tags"><span class="tag tag-dev">学习方法</span></div>
-  </div>
-
-  <!-- HN 10 -->
-  <div class="card">
-    <div class="card-headline"><a href="https://combustionlab.net">Combustion engine web-based simulator</a></div>
-    <div class="card-meta"><span class="pts">118 pts</span> · <span class="cmts">52 comments</span></div>
-    <div class="card-tags"><span class="tag tag-science">仿真</span><span class="tag tag-hardware">引擎</span></div>
-  </div>
-
-  <!-- HN 11 -->
-  <div class="card">
-    <div class="card-headline"><a href="https://waratlas.org">War Atlas: An interactive cartography of every named war in human history</a></div>
-    <div class="card-meta"><span class="pts">112 pts</span> · <span class="cmts">58 comments</span></div>
-    <div class="card-tags"><span class="tag tag-science">历史</span><span class="tag tag-dev">可视化</span></div>
-  </div>
-
-  <!-- HN 12 -->
-  <div class="card">
-    <div class="card-headline"><a href="https://serialc.github.io/altClocks/">Alternate clock designs and time systems</a></div>
-    <div class="card-meta"><span class="pts">98 pts</span> · <span class="cmts">57 comments</span></div>
-    <div class="card-tags"><span class="tag tag-dev">设计</span></div>
-  </div>
-
-  <!-- HN 13 -->
-  <div class="card">
-    <div class="card-headline"><a href="https://www.brown.edu/news/2026-07-09/chemical-bonds-relativity">Einstein's relativity rules chemical bonds in heavy elements</a></div>
-    <div class="card-meta"><span class="pts">92 pts</span> · <span class="cmts">36 comments</span></div>
-    <div class="card-tags"><span class="tag tag-science">物理</span></div>
-  </div>
-
-  <!-- HN 14 -->
-  <div class="card">
-    <div class="card-headline"><a href="https://ergo.org/courses/computation-as-a-universal-and-fundamental-concept">Computation as a universal and fundamental concept</a></div>
-    <div class="card-meta"><span class="pts">85 pts</span> · <span class="cmts">72 comments</span></div>
-    <div class="card-tags"><span class="tag tag-science">计算理论</span></div>
-  </div>
-
-  <!-- HN 15 -->
-  <div class="card">
-    <div class="card-headline"><a href="https://lwn.net/SubscriberLink/1080822/990a8a5e2d379085/">An update on residential proxies and the scraper situation</a></div>
-    <div class="card-meta"><span class="pts">83 pts</span> · <span class="cmts">68 comments</span></div>
-    <div class="card-tags"><span class="tag tag-security">安全</span><span class="tag tag-infra">基础设施</span></div>
-  </div>
-
-  <!-- HN 16 -->
-  <div class="card">
-    <div class="card-headline"><a href="https://avi.press/posts/2026-07-10-after-7-years-in-production-scarf-has-reluctantly-moved-away-from-haskell.html">After 7 years in production, Scarf has reluctantly moved away from Haskell</a></div>
-    <div class="card-meta"><span class="pts">78 pts</span> · <span class="cmts">87 comments</span></div>
-    <div class="card-tags"><span class="tag tag-dev">语言</span></div>
-  </div>
-
-  <!-- HN 17 -->
-  <div class="card">
-    <div class="card-headline"><a href="https://www.zdnet.com/home-and-office/networking/spacex-wants-to-launch-100000-more-starlink-satellites/">SpaceX wants to launch 100k more Starlink satellites for 100x bandwidth</a></div>
-    <div class="card-meta"><span class="pts">73 pts</span> · <span class="cmts">230 comments</span></div>
-    <div class="card-tags"><span class="tag tag-infra">基础设施</span><span class="tag tag-hardware">卫星</span></div>
-  </div>
-
-  <!-- HN 18 -->
-  <div class="card">
-    <div class="card-headline"><a href="https://machinelearningmastery.com/choosing-the-right-ai-agent-memory-strategy-a-decision-tree-approach/">Choosing the Right AI Agent Memory Strategy: A Decision-Tree Approach</a></div>
-    <div class="card-meta"><span class="pts">6 pts</span> · <span class="cmts">0 comments</span></div>
-    <div class="card-tags"><span class="tag tag-ai">AI Agent</span></div>
-  </div>
-
-  <!-- HN 19 -->
-  <div class="card">
-    <div class="card-headline"><a href="https://nebusec.ai/research/ionstack-part-2/">GhostLock, a stack-UAF that has existed in ALL Linux distributions for 15 years</a></div>
-    <div class="card-meta"><span class="pts">35 pts</span> · <span class="cmts">9 comments</span></div>
-    <div class="card-tags"><span class="tag tag-security">安全漏洞</span></div>
-  </div>
-
-  <!-- HN 20 -->
-  <div class="card">
-    <div class="card-headline"><a href="https://mimo.xiaomi.com/blog/mimo-v2-5-inference">Inference Optimization for MiMo v2.5: Pushing Hybrid SWA Efficiency to the Limit</a></div>
-    <div class="card-meta"><span class="pts">43 pts</span> · <span class="cmts">13 comments</span></div>
-    <div class="card-tags"><span class="tag tag-ai">AI推理</span></div>
-  </div>
-
-  <!-- GitHub Section -->
-  <div class="section-header">
-    <div class="section-icon gh">⭐</div>
-    GitHub Trending 热门仓库
-  </div>
-
-  <!-- GH 1 -->
-  <div class="card">
-    <div class="gh-card">
-      <div class="gh-stars-today">+1,712</div>
-      <div class="gh-info">
-        <div class="gh-name"><a href="https://github.com/mattpocock/skills">mattpocock/skills</a></div>
+  <section id="github" class="section">
+    <div class="sec-title"><span class="emo">⭐</span><span class="bar"></span>GitHub Trending · 当日热门仓库（按 star 增量排序）</div>
+    <div class="gh-grid">      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener" class="gh-name">mattpocock/skills</a><span class="gh-lang">—</span></div>
         <div class="gh-desc">面向真正工程师的技能，直接来自他的 .claude 目录</div>
-        <div class="gh-detail"><span class="lang-dot lang-shell"></span>Shell · 164,629 total ⭐</div>
-        <div class="card-tags"><span class="tag tag-ai">AI Agent</span></div>
+        <div class="gh-meta"><span class="gh-today">▲ +1712 today</span></div>
       </div>
-    </div>
-  </div>
-
-  <!-- GH 2 -->
-  <div class="card">
-    <div class="gh-card">
-      <div class="gh-stars-today">+1,224</div>
-      <div class="gh-info">
-        <div class="gh-name"><a href="https://github.com/iOfficeAI/OfficeCLI">iOfficeAI/OfficeCLI</a></div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/iOfficeAI/OfficeCLI" target="_blank" rel="noopener" class="gh-name">iOfficeAI/OfficeCLI</a><span class="gh-lang">—</span></div>
         <div class="gh-desc">首个专为 AI 代理打造的 Office 套件，可读写自动化 Word/Excel/PPT，免费开源单二进制文件</div>
-        <div class="gh-detail"><span class="lang-dot lang-csharp"></span>C# · 14,432 total ⭐</div>
-        <div class="card-tags"><span class="tag tag-ai">AI Agent</span><span class="tag tag-dev">Office自动化</span></div>
+        <div class="gh-meta"><span class="gh-today">▲ +1224 today</span></div>
       </div>
-    </div>
-  </div>
-
-  <!-- GH 3 -->
-  <div class="card">
-    <div class="gh-card">
-      <div class="gh-stars-today">+1,116</div>
-      <div class="gh-info">
-        <div class="gh-name"><a href="https://github.com/addyosmani/agent-skills">addyosmani/agent-skills</a></div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/addyosmani/agent-skills" target="_blank" rel="noopener" class="gh-name">addyosmani/agent-skills</a><span class="gh-lang">—</span></div>
         <div class="gh-desc">面向 AI 编程代理的生产级工程技能</div>
-        <div class="gh-detail"><span class="lang-dot lang-js"></span>JavaScript · 76,823 total ⭐</div>
-        <div class="card-tags"><span class="tag tag-ai">AI Agent</span></div>
+        <div class="gh-meta"><span class="gh-today">▲ +1116 today</span></div>
       </div>
-    </div>
-  </div>
-
-  <!-- GH 4 -->
-  <div class="card">
-    <div class="gh-card">
-      <div class="gh-stars-today">+1,013</div>
-      <div class="gh-info">
-        <div class="gh-name"><a href="https://github.com/obra/superpowers">obra/superpowers</a></div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/obra/superpowers" target="_blank" rel="noopener" class="gh-name">obra/superpowers</a><span class="gh-lang">—</span></div>
         <div class="gh-desc">一个可用的智能体技能框架和软件开发方法论</div>
-        <div class="gh-detail"><span class="lang-dot lang-shell"></span>Shell · 251,778 total ⭐</div>
-        <div class="card-tags"><span class="tag tag-ai">AI Agent</span></div>
+        <div class="gh-meta"><span class="gh-today">▲ +1013 today</span></div>
       </div>
-    </div>
-  </div>
-
-  <!-- GH 5 -->
-  <div class="card">
-    <div class="gh-card">
-      <div class="gh-stars-today">+328</div>
-      <div class="gh-info">
-        <div class="gh-name"><a href="https://github.com/wonderwhy-er/DesktopCommanderMCP">wonderwhy-er/DesktopCommanderMCP</a></div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/wonderwhy-er/DesktopCommanderMCP" target="_blank" rel="noopener" class="gh-name">wonderwhy-er/DesktopCommanderMCP</a><span class="gh-lang">—</span></div>
         <div class="gh-desc">为 Claude 设计的 MCP 服务器，赋予终端控制、文件系统搜索和差异文件编辑能力</div>
-        <div class="gh-detail"><span class="lang-dot lang-ts"></span>TypeScript · 7,294 total ⭐</div>
-        <div class="card-tags"><span class="tag tag-ai">AI Agent</span><span class="tag tag-dev">MCP</span></div>
+        <div class="gh-meta"><span class="gh-today">▲ +328 today</span></div>
       </div>
-    </div>
-  </div>
-
-  <!-- GH 6 -->
-  <div class="card">
-    <div class="gh-card">
-      <div class="gh-stars-today">+209</div>
-      <div class="gh-info">
-        <div class="gh-name"><a href="https://github.com/oven-sh/bun">oven-sh/bun</a></div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/oven-sh/bun" target="_blank" rel="noopener" class="gh-name">oven-sh/bun</a><span class="gh-lang">—</span></div>
         <div class="gh-desc">极速 JavaScript 运行时、打包器、测试运行器和包管理器——四合一</div>
-        <div class="gh-detail"><span class="lang-dot lang-rust"></span>Rust · 94,228 total ⭐</div>
-        <div class="card-tags"><span class="tag tag-dev">运行时</span></div>
+        <div class="gh-meta"><span class="gh-today">▲ +209 today</span></div>
       </div>
-    </div>
-  </div>
-
-  <!-- GH 7 -->
-  <div class="card">
-    <div class="gh-card">
-      <div class="gh-stars-today">+191</div>
-      <div class="gh-info">
-        <div class="gh-name"><a href="https://github.com/vercel/next.js">vercel/next.js</a></div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/vercel/next.js" target="_blank" rel="noopener" class="gh-name">vercel/next.js</a><span class="gh-lang">—</span></div>
         <div class="gh-desc">React 框架</div>
-        <div class="gh-detail"><span class="lang-dot lang-js"></span>JavaScript · 140,705 total ⭐</div>
-        <div class="card-tags"><span class="tag tag-dev">Web框架</span></div>
+        <div class="gh-meta"><span class="gh-today">▲ +191 today</span></div>
       </div>
-    </div>
-  </div>
-
-  <!-- GH 8 -->
-  <div class="card">
-    <div class="gh-card">
-      <div class="gh-stars-today">+177</div>
-      <div class="gh-info">
-        <div class="gh-name"><a href="https://github.com/microsoft/TypeScript">microsoft/TypeScript</a></div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/microsoft/TypeScript" target="_blank" rel="noopener" class="gh-name">microsoft/TypeScript</a><span class="gh-lang">—</span></div>
         <div class="gh-desc">JavaScript 的超集，可编译为干净的 JavaScript 输出</div>
-        <div class="gh-detail"><span class="lang-dot lang-ts"></span>TypeScript · 109,775 total ⭐</div>
-        <div class="card-tags"><span class="tag tag-dev">语言</span></div>
+        <div class="gh-meta"><span class="gh-today">▲ +177 today</span></div>
       </div>
-    </div>
-  </div>
-
-  <!-- GH 9 -->
-  <div class="card">
-    <div class="gh-card">
-      <div class="gh-stars-today">+172</div>
-      <div class="gh-info">
-        <div class="gh-name"><a href="https://github.com/hashicorp/terraform">hashicorp/terraform</a></div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/hashicorp/terraform" target="_blank" rel="noopener" class="gh-name">hashicorp/terraform</a><span class="gh-lang">—</span></div>
         <div class="gh-desc">安全可预测地创建、更改和改进基础设施，声明式配置文件</div>
-        <div class="gh-detail"><span class="lang-dot lang-go"></span>Go · 49,167 total ⭐</div>
-        <div class="card-tags"><span class="tag tag-infra">基础设施</span></div>
+        <div class="gh-meta"><span class="gh-today">▲ +172 today</span></div>
       </div>
-    </div>
-  </div>
-
-  <!-- GH 10 -->
-  <div class="card">
-    <div class="gh-card">
-      <div class="gh-stars-today">+143</div>
-      <div class="gh-info">
-        <div class="gh-name"><a href="https://github.com/tailscale/tailscale">tailscale/tailscale</a></div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/tailscale/tailscale" target="_blank" rel="noopener" class="gh-name">tailscale/tailscale</a><span class="gh-lang">—</span></div>
         <div class="gh-desc">最简单、最安全的 WireGuard 和 2FA 使用方式</div>
-        <div class="gh-detail"><span class="lang-dot lang-go"></span>Go · 33,648 total ⭐</div>
-        <div class="card-tags"><span class="tag tag-security">网络安全</span></div>
+        <div class="gh-meta"><span class="gh-today">▲ +143 today</span></div>
       </div>
-    </div>
-  </div>
-
-  <!-- GH 11 -->
-  <div class="card">
-    <div class="gh-card">
-      <div class="gh-stars-today">+123</div>
-      <div class="gh-info">
-        <div class="gh-name"><a href="https://github.com/TencentCloud/TencentDB-Agent-Memory">TencentCloud/TencentDB-Agent-Memory</a></div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/TencentCloud/TencentDB-Agent-Memory" target="_blank" rel="noopener" class="gh-name">TencentCloud/TencentDB-Agent-Memory</a><span class="gh-lang">—</span></div>
         <div class="gh-desc">通过 4 层渐进式流水线为 AI 代理提供完全本地的长期记忆，零外部 API 依赖</div>
-        <div class="gh-detail"><span class="lang-dot lang-ts"></span>TypeScript · 8,232 total ⭐</div>
-        <div class="card-tags"><span class="tag tag-ai">AI Agent</span><span class="tag tag-infra">数据库</span></div>
+        <div class="gh-meta"><span class="gh-today">▲ +123 today</span></div>
       </div>
-    </div>
-  </div>
-
-  <!-- GH 12 -->
-  <div class="card">
-    <div class="gh-card">
-      <div class="gh-stars-today">+118</div>
-      <div class="gh-info">
-        <div class="gh-name"><a href="https://github.com/davila7/claude-code-templates">davila7/claude-code-templates</a></div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/davila7/claude-code-templates" target="_blank" rel="noopener" class="gh-name">davila7/claude-code-templates</a><span class="gh-lang">—</span></div>
         <div class="gh-desc">用于配置和监控 Claude Code 的 CLI 工具</div>
-        <div class="gh-detail"><span class="lang-dot lang-python"></span>Python · 28,767 total ⭐</div>
-        <div class="card-tags"><span class="tag tag-ai">AI Agent</span></div>
+        <div class="gh-meta"><span class="gh-today">▲ +118 today</span></div>
       </div>
-    </div>
-  </div>
-
-  <!-- GH 13 -->
-  <div class="card">
-    <div class="gh-card">
-      <div class="gh-stars-today">+117</div>
-      <div class="gh-info">
-        <div class="gh-name"><a href="https://github.com/google-labs-code/stitch-skills">google-labs-code/stitch-skills</a></div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/google-labs-code/stitch-skills" target="_blank" rel="noopener" class="gh-name">google-labs-code/stitch-skills</a><span class="gh-lang">—</span></div>
         <div class="gh-desc">Stitch MCP 服务器的 Agent Skills 库，遵循开放标准，兼容 Claude Code、Gemini CLI、Cursor 等</div>
-        <div class="gh-detail"><span class="lang-dot lang-ts"></span>TypeScript · 6,745 total ⭐</div>
-        <div class="card-tags"><span class="tag tag-ai">AI Agent</span><span class="tag tag-dev">MCP</span></div>
+        <div class="gh-meta"><span class="gh-today">▲ +117 today</span></div>
       </div>
-    </div>
-  </div>
+</div>
+  </section>
 
-  <!-- Insights Section -->
-  <div class="section-header">
-    <div class="section-icon insight">💡</div>
-    趋势洞察
-  </div>
+  <section id="producthunt" class="section">
+    <div class="sec-title"><span class="emo">🚀</span><span class="bar"></span>Product Hunt · 今日精选</div>
+    <div class="gh-grid"><div class="ph-card"><div class="ph-top"><span class="ph-rank">–</span><span class="ph-name">本期未收录</span></div><div class="ph-desc">该期生成时尚未接入 Product Hunt 数据源，故无当日精选产品。</div></div></div>
+  </section>
 
-  <div class="insight-card ic1">
-    <div class="insight-num">01</div>
-    <div class="insight-title">AI Agent 工具生态全面爆发</div>
-    <div class="insight-body">GitHub Trending 中超过一半项目直接服务于 AI 编程代理——skills / agent-skills / superpowers 三大技能框架单日合计增星近 4,000，DesktopCommanderMCP、claude-code-templates、stitch-skills 等进一步扩展 Claude / Gemini 等代理的能力边界。Agent 不只是写代码，正在接管文件操作、终端控制、Office 文档处理等整个开发流程。</div>
-  </div>
+  <section id="papers" class="section">
+    <div class="sec-title"><span class="emo">📄</span><span class="bar"></span>Daily Papers · Hugging Face</div>
+    <div class="note">该期生成时尚未接入 Hugging Face Daily Papers 数据源，故无当日论文列表。自 2026-07-13 起本报告开始收录该来源。</div>
+  </section>
 
-  <div class="insight-card ic2">
-    <div class="insight-num">02</div>
-    <div class="insight-title">AI 从辅助走向证明级推理</div>
-    <div class="insight-body">OpenAI GPT-5.6 Sol Ultra 发布了图论经典难题 Cycle Double Cover Conjecture 的证明（346 分 / 280 评论），标志着大模型在形式化推理领域迈出里程碑。同时，小米 MiMo v2.5 推理优化和腾讯云 Agent Memory 的 4 层渐进式记忆架构，暗示 AI 推理效率与长期记忆正成为下一个竞赛焦点。</div>
-  </div>
+  <section id="insights" class="section">
+    <div class="sec-title"><span class="emo">💡</span><span class="bar"></span>趋势洞察 · 三大核心信号</div>
+          <div class="insight">
+        <div class="insight-head"><span class="insight-dot"></span><h3>AI Agent 工具生态全面爆发</h3><span class="insight-src">HN · GitHub</span></div>
+        <p>GitHub Trending 中超过一半项目直接服务于 AI 编程代理——skills / agent-skills / superpowers 三大技能框架单日合计增星近 4,000，DesktopCommanderMCP、claude-code-templates、stitch-skills 等进一步扩展 Claude / Gemini 等代理的能力边界。Agent 不只是写代码，正在接管文件操作、终端控制、Office 文档处理等整个开发流程。</p>
+      </div>
+      <div class="insight">
+        <div class="insight-head"><span class="insight-dot"></span><h3>AI 从辅助走向证明级推理</h3><span class="insight-src">HN · GitHub</span></div>
+        <p>OpenAI GPT-5.6 Sol Ultra 发布了图论经典难题 Cycle Double Cover Conjecture 的证明（346 分 / 280 评论），标志着大模型在形式化推理领域迈出里程碑。同时，小米 MiMo v2.5 推理优化和腾讯云 Agent Memory 的 4 层渐进式记忆架构，暗示 AI 推理效率与长期记忆正成为下一个竞赛焦点。</p>
+      </div>
+      <div class="insight">
+        <div class="insight-head"><span class="insight-dot"></span><h3>巨头博弈与安全漏洞并存</h3><span class="insight-src">HN · GitHub</span></div>
+        <p>Apple 正式起诉 OpenAI 指控前员工窃取商业机密（522 分，HN 当日最高），科技巨头间的 AI 人才争夺白热化；GhostLock 暴露 Linux 全发行版 15 年未修的栈 UAF 漏洞，QuadRF 展示 SDR 设备可透视 WiFi 信号——安全与隐私议题持续升温。</p>
+      </div>
 
-  <div class="insight-card ic3">
-    <div class="insight-num">03</div>
-    <div class="insight-title">巨头博弈与安全漏洞并存</div>
-    <div class="insight-body">Apple 正式起诉 OpenAI 指控前员工窃取商业机密（522 分，HN 当日最高），科技巨头间的 AI 人才争夺白热化；GhostLock 暴露 Linux 全发行版 15 年未修的栈 UAF 漏洞，QuadRF 展示 SDR 设备可透视 WiFi 信号——安全与隐私议题持续升温。</div>
-  </div>
+  </section>
 
-  <!-- Footer -->
-  <div class="footer">
-    数据来源：Hacker News · GitHub Trending · 自动生成于 2026-07-11T09:50 CST<br>
-    归档地址：blog.codingforjoy.com/daily-tech-digest
-  </div>
+  <footer class="site-footer">
+    数据来源：Hacker News · GitHub Trending · Product Hunt · Hugging Face Papers<br>
+    本报告由自动化任务每日生成 · 2026-07-11 · 星期六 · <a href="index.html">← 返回归档</a> · <a href="#top-story">回到顶部 ↑</a>
+  </footer>
 
 </div>
-<footer style="text-align:center;padding:20px;border-top:1px solid #c9bfa9;margin-top:40px;font-size:12px;color:#6b6357;"><a href="index.html" style="color:#1a3a5c;text-decoration:none;">← 返回归档</a></footer>
 </body>
 </html>

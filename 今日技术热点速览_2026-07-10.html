@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>今日技术热点速览 2026-07-10</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Serif+SC:wght@400;700;900&display=swap" rel="stylesheet">
-    <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今日技术热点速览 · 2026-07-20 · 星期一</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Serif+SC:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
 :root{
   --paper:#f4ede0; --paper2:#efe7d8; --ink:#1a1a1a; --ink2:#333;
   --muted:#6b6357; --rule:#2b2b2b; --rule-light:#c9bfa9;
@@ -185,617 +184,307 @@ footer.site-footer a{color:var(--accent2);text-decoration:none;}
 }
 </style>
 </head>
-<body class="p-6 md:p-10">
-<a class="back-link" href="index.html" style="display:block;text-align:center;padding:10px;font-size:12px;color:#6b6357;text-decoration:none;">← 返回归档</a>
-    <div class="max-w-6xl mx-auto">
-        <!-- Header -->
-        <header class="header-glow text-center mb-10 relative">
-            <div class="text-sm font-semibold tracking-widest uppercase text-[#8b949e] mb-3">Daily Tech Briefing</div>
-            <h1 class="text-4xl md:text-5xl font-bold mb-3">
-                <span class="gradient-text">今日技术热点速览</span>
-            </h1>
-            <p class="text-[#8b949e] text-lg">2026年7月10日 · 星期五</p>
-        </header>
+<body>
+<header class="site-header">
+  <a class="back-link" href="index.html">← 返回归档</a>
+  <div class="kicker">The Tech Dispatch</div>
+  <h1>🔥 今日技术热点速览</h1>
+  <div class="date">2026-07-10 · 星期五</div>
+  <div class="sub">数据来源：Hacker News · GitHub Trending · Product Hunt · Hugging Face Papers</div>
+</header>
 
-        <!-- Top Headlines -->
-        <section class="mb-10">
-            <div class="section-title">今日头条</div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="card p-5">
-                    <div class="flex items-start gap-3">
-                        <div class="text-3xl">🚀</div>
-                        <div>
-                            <div class="text-xs font-semibold text-[#a371f7] mb-1">AI 模型</div>
-                            <h3 class="font-bold text-lg leading-snug mb-2">OpenAI 发布 GPT-5.6</h3>
-                            <p class="text-[#8b949e] text-sm leading-relaxed">HN 热度榜首，1065 分 / 777 评论，引发开发者对新一代模型能力的广泛讨论。</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card p-5">
-                    <div class="flex items-start gap-3">
-                        <div class="text-3xl">🦀</div>
-                        <div>
-                            <div class="text-xs font-semibold text-[#58a6ff] mb-1">系统编程</div>
-                            <h3 class="font-bold text-lg leading-snug mb-2">Postgres 用 Rust 重写通过全部回归测试</h3>
-                            <p class="text-[#8b949e] text-sm leading-relaxed">Rust 进入数据库内核的标志性进展，379 分 / 393 评论，社区高度关注。</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card p-5">
-                    <div class="flex items-start gap-3">
-                        <div class="text-3xl">🤖</div>
-                        <div>
-                            <div class="text-xs font-semibold text-[#3fb950] mb-1">AI Agent</div>
-                            <h3 class="font-bold text-lg leading-snug mb-2">AI 求职/办公自动化框架霸榜 GitHub</h3>
-                            <p class="text-[#8b949e] text-sm leading-relaxed">ai-job-search 单日 +3,716⭐，OfficeCLI +1,929⭐，AI Agent 落地应用加速。</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<nav class="quick-nav">
+  <a href="#top-story">🔥 今日头条</a>
+  <a href="#hn">📰 Hacker News</a>
+  <a href="#github">⭐ GitHub</a>
+  <a href="#producthunt">🚀 Product Hunt</a>
+  <a href="#papers">📄 Papers</a>
+  <a href="#insights">💡 趋势洞察</a>
+</nav>
 
-        <!-- Main Content Grid -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
-            <!-- HN Section -->
-            <section class="card">
-                <div class="p-5 border-b border-[#30363d] flex justify-between items-center">
-                    <div class="section-title mb-0">Hacker News 热门排行</div>
-                    <span class="text-xs text-[#8b949e] font-medium">前 20 条</span>
-                </div>
-                <div class="divide-y divide-[#30363d]">
-                    <div class="hn-row flex items-start gap-4">
-                        <div class="rank top3">1</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center gap-2 mb-1 flex-wrap">
-                                <span class="tag tag-ai">AI</span>
-                                <span class="tag tag-dev">模型</span>
-                            </div>
-                            <h3 class="font-semibold text-[#e6edf3] leading-snug mb-2">GPT-5.6</h3>
-                            <div class="flex items-center gap-4 flex-wrap">
-                                <span class="metric">▲ 1065</span>
-                                <span class="metric">💬 777</span>
-                                <span class="text-xs text-[#8b949e]">openai.com</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hn-row flex items-start gap-4">
-                        <div class="rank top3">2</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center gap-2 mb-1 flex-wrap">
-                                <span class="tag tag-policy">隐私政策</span>
-                            </div>
-                            <h3 class="font-semibold text-[#e6edf3] leading-snug mb-2">EU Parliament greenlights Chat Control 1.0</h3>
-                            <div class="flex items-center gap-4 flex-wrap">
-                                <span class="metric">▲ 995</span>
-                                <span class="metric">💬 478</span>
-                                <span class="text-xs text-[#8b949e]">patrick-breyer.de</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hn-row flex items-start gap-4">
-                        <div class="rank top3">3</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center gap-2 mb-1 flex-wrap">
-                                <span class="tag tag-show">Show HN</span>
-                            </div>
-                            <h3 class="font-semibold text-[#e6edf3] leading-snug mb-2">Show HN: 18 Words</h3>
-                            <div class="flex items-center gap-4 flex-wrap">
-                                <span class="metric">▲ 823</span>
-                                <span class="metric">💬 284</span>
-                                <span class="text-xs text-[#8b949e]">18words.com</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hn-row flex items-start gap-4">
-                        <div class="rank">4</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center gap-2 mb-1 flex-wrap">
-                                <span class="tag tag-ai">AI</span>
-                                <span class="tag tag-show">Show HN</span>
-                            </div>
-                            <h3 class="font-semibold text-[#e6edf3] leading-snug mb-2">Show HN: Getting GLM 5.2 running on my slow computer</h3>
-                            <div class="flex items-center gap-4 flex-wrap">
-                                <span class="metric">▲ 383</span>
-                                <span class="metric">💬 101</span>
-                                <span class="text-xs text-[#8b949e]">github.com/justvugg</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hn-row flex items-start gap-4">
-                        <div class="rank">5</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center gap-2 mb-1 flex-wrap">
-                                <span class="tag tag-dev">数据库</span>
-                                <span class="tag tag-dev">Rust</span>
-                            </div>
-                            <h3 class="font-semibold text-[#e6edf3] leading-snug mb-2">Postgres rewritten in Rust, now passing 100% of the Postgres regression tests</h3>
-                            <div class="flex items-center gap-4 flex-wrap">
-                                <span class="metric">▲ 379</span>
-                                <span class="metric">💬 393</span>
-                                <span class="text-xs text-[#8b949e]">github.com/malisper</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hn-row flex items-start gap-4">
-                        <div class="rank">6</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center gap-2 mb-1 flex-wrap">
-                                <span class="tag tag-ai">AI</span>
-                                <span class="tag tag-dev">音视频</span>
-                            </div>
-                            <h3 class="font-semibold text-[#e6edf3] leading-snug mb-2">Hy3</h3>
-                            <div class="flex items-center gap-4 flex-wrap">
-                                <span class="metric">▲ 388</span>
-                                <span class="metric">💬 83</span>
-                                <span class="text-xs text-[#8b949e]">hy.tencent.com</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hn-row flex items-start gap-4">
-                        <div class="rank">7</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center gap-2 mb-1 flex-wrap">
-                                <span class="tag tag-ai">AI</span>
-                                <span class="tag tag-dev">多模态</span>
-                            </div>
-                            <h3 class="font-semibold text-[#e6edf3] leading-snug mb-2">Muse Spark 1.1</h3>
-                            <div class="flex items-center gap-4 flex-wrap">
-                                <span class="metric">▲ 325</span>
-                                <span class="metric">💬 171</span>
-                                <span class="text-xs text-[#8b949e]">ai.meta.com</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hn-row flex items-start gap-4">
-                        <div class="rank">8</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center gap-2 mb-1 flex-wrap">
-                                <span class="tag tag-infra">基础设施</span>
-                            </div>
-                            <h3 class="font-semibold text-[#e6edf3] leading-snug mb-2">No leap second will be introduced at the end of December 2026</h3>
-                            <div class="flex items-center gap-4 flex-wrap">
-                                <span class="metric">▲ 235</span>
-                                <span class="metric">💬 181</span>
-                                <span class="text-xs text-[#8b949e]">iers.org</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hn-row flex items-start gap-4">
-                        <div class="rank">9</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center gap-2 mb-1 flex-wrap">
-                                <span class="tag tag-show">Show HN</span>
-                            </div>
-                            <h3 class="font-semibold text-[#e6edf3] leading-snug mb-2">A possible future for Damn Interesting</h3>
-                            <div class="flex items-center gap-4 flex-wrap">
-                                <span class="metric">▲ 233</span>
-                                <span class="metric">💬 29</span>
-                                <span class="text-xs text-[#8b949e]">damninteresting.com</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hn-row flex items-start gap-4">
-                        <div class="rank">10</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center gap-2 mb-1 flex-wrap">
-                                <span class="tag tag-dev">编程语言</span>
-                                <span class="tag tag-dev">Lisp</span>
-                            </div>
-                            <h3 class="font-semibold text-[#e6edf3] leading-snug mb-2">A road to Lisp: Why Lisp</h3>
-                            <div class="flex items-center gap-4 flex-wrap">
-                                <span class="metric">▲ 114</span>
-                                <span class="metric">💬 109</span>
-                                <span class="text-xs text-[#8b949e]">scotto.me</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hn-row flex items-start gap-4">
-                        <div class="rank">11</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center gap-2 mb-1 flex-wrap">
-                                <span class="tag tag-dev">终端</span>
-                                <span class="tag tag-dev">Zig</span>
-                            </div>
-                            <h3 class="font-semibold text-[#e6edf3] leading-snug mb-2">Interview with Mitchell Hashimoto about Ghostty and Zig</h3>
-                            <div class="flex items-center gap-4 flex-wrap">
-                                <span class="metric">▲ 120</span>
-                                <span class="metric">💬 45</span>
-                                <span class="text-xs text-[#8b949e]">alexalejandre.com</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hn-row flex items-start gap-4">
-                        <div class="rank">12</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center gap-2 mb-1 flex-wrap">
-                                <span class="tag tag-dev">并发</span>
-                                <span class="tag tag-dev">队列</span>
-                            </div>
-                            <h3 class="font-semibold text-[#e6edf3] leading-snug mb-2">Girls just wanna have fast MPMC queues with bounded waiting</h3>
-                            <div class="flex items-center gap-4 flex-wrap">
-                                <span class="metric">▲ 137</span>
-                                <span class="metric">💬 31</span>
-                                <span class="text-xs text-[#8b949e]">nahla.dev</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hn-row flex items-start gap-4">
-                        <div class="rank">13</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center gap-2 mb-1 flex-wrap">
-                                <span class="tag tag-sec">安全</span>
-                                <span class="tag tag-infra">TLS</span>
-                            </div>
-                            <h3 class="font-semibold text-[#e6edf3] leading-snug mb-2">TLS certificates for internal services done right</h3>
-                            <div class="flex items-center gap-4 flex-wrap">
-                                <span class="metric">▲ 132</span>
-                                <span class="metric">💬 94</span>
-                                <span class="text-xs text-[#8b949e]">tuxnet.dev</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hn-row flex items-start gap-4">
-                        <div class="rank">14</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center gap-2 mb-1 flex-wrap">
-                                <span class="tag tag-sec">安全</span>
-                                <span class="tag tag-dev">漏洞</span>
-                            </div>
-                            <h3 class="font-semibold text-[#e6edf3] leading-snug mb-2">Build your own vulnerability harness</h3>
-                            <div class="flex items-center gap-4 flex-wrap">
-                                <span class="metric">▲ 5</span>
-                                <span class="metric">💬 discuss</span>
-                                <span class="text-xs text-[#8b949e]">blog.cloudflare.com</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hn-row flex items-start gap-4">
-                        <div class="rank">15</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center gap-2 mb-1 flex-wrap">
-                                <span class="tag tag-ai">AI</span>
-                                <span class="tag tag-show">Launch HN</span>
-                            </div>
-                            <h3 class="font-semibold text-[#e6edf3] leading-snug mb-2">Launch HN: Context.dev (YC S26) – API to get structured data from any website</h3>
-                            <div class="flex items-center gap-4 flex-wrap">
-                                <span class="metric">▲ 72</span>
-                                <span class="metric">💬 54</span>
-                                <span class="text-xs text-[#8b949e]">context.dev</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hn-row flex items-start gap-4">
-                        <div class="rank">16</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center gap-2 mb-1 flex-wrap">
-                                <span class="tag tag-ai">AI</span>
-                                <span class="tag tag-dev">教育</span>
-                            </div>
-                            <h3 class="font-semibold text-[#e6edf3] leading-snug mb-2">Building a real-time AI tutor for 5-year-olds</h3>
-                            <div class="flex items-center gap-4 flex-wrap">
-                                <span class="metric">▲ 38</span>
-                                <span class="metric">💬 53</span>
-                                <span class="text-xs text-[#8b949e]">ello.com</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hn-row flex items-start gap-4">
-                        <div class="rank">17</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center gap-2 mb-1 flex-wrap">
-                                <span class="tag tag-dev">Rust</span>
-                                <span class="tag tag-infra">性能</span>
-                            </div>
-                            <h3 class="font-semibold text-[#e6edf3] leading-snug mb-2">Cache-Conscious Data Layout in Rust: Field Zoning, False Sharing, 128-Byte Rule</h3>
-                            <div class="flex items-center gap-4 flex-wrap">
-                                <span class="metric">▲ 5</span>
-                                <span class="metric">💬 discuss</span>
-                                <span class="text-xs text-[#8b949e]">debasishg.github.io</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hn-row flex items-start gap-4">
-                        <div class="rank">18</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center gap-2 mb-1 flex-wrap">
-                                <span class="tag tag-dev">可视化</span>
-                                <span class="tag tag-show">Show HN</span>
-                            </div>
-                            <h3 class="font-semibold text-[#e6edf3] leading-snug mb-2">Patterncollider: Generate and explore quasiperiodic tiling patterns</h3>
-                            <div class="flex items-center gap-4 flex-wrap">
-                                <span class="metric">▲ 21</span>
-                                <span class="metric">💬 1</span>
-                                <span class="text-xs text-[#8b949e]">github.com/aatishb</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hn-row flex items-start gap-4">
-                        <div class="rank">19</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center gap-2 mb-1 flex-wrap">
-                                <span class="tag tag-dev">嵌入式</span>
-                                <span class="tag tag-dev">Pi</span>
-                            </div>
-                            <h3 class="font-semibold text-[#e6edf3] leading-snug mb-2">Opinionated and easy Pi.dev configuration</h3>
-                            <div class="flex items-center gap-4 flex-wrap">
-                                <span class="metric">▲ 109</span>
-                                <span class="metric">💬 61</span>
-                                <span class="text-xs text-[#8b949e]">lazypi.org</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hn-row flex items-start gap-4">
-                        <div class="rank">20</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center gap-2 mb-1 flex-wrap">
-                                <span class="tag tag-ai">AI</span>
-                                <span class="tag tag-dev">基准测试</span>
-                            </div>
-                            <h3 class="font-semibold text-[#e6edf3] leading-snug mb-2">GLM 5.2 is nearly as accurate as a human book keeper</h3>
-                            <div class="flex items-center gap-4 flex-wrap">
-                                <span class="metric">▲ 186</span>
-                                <span class="metric">💬 111</span>
-                                <span class="text-xs text-[#8b949e]">toot-books.pages.dev</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+<div class="wrap">
 
-            <!-- GitHub Section -->
-            <section class="card">
-                <div class="p-5 border-b border-[#30363d] flex justify-between items-center">
-                    <div class="section-title mb-0">GitHub Trending</div>
-                    <span class="text-xs text-[#8b949e] font-medium">今日增速</span>
-                </div>
-                <div class="divide-y divide-[#30363d]">
-                    <div class="gh-row flex items-start gap-4">
-                        <div class="rank top3">1</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center justify-between mb-1">
-                                <h3 class="font-bold text-[#58a6ff] text-base truncate">MadsLorentzen / ai-job-search</h3>
-                                <span class="star-badge">+3,716 ⭐</span>
-                            </div>
-                            <p class="text-[#8b949e] text-sm mb-2 leading-relaxed">AI-powered job application framework built on Claude Code. Fork it, fill in your profile, and let Claude evaluate jobs, tailor CVs, write cover letters.</p>
-                            <div class="flex items-center gap-3 flex-wrap">
-                                <span class="text-xs text-[#8b949e]"><span class="lang-dot" style="background:#3178c6"></span>TypeScript</span>
-                                <span class="text-xs text-[#8b949e]">18,995 total ⭐</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gh-row flex items-start gap-4">
-                        <div class="rank top3">2</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center justify-between mb-1">
-                                <h3 class="font-bold text-[#58a6ff] text-base truncate">addyosmani / agent-skills</h3>
-                                <span class="star-badge">+2,554 ⭐</span>
-                            </div>
-                            <p class="text-[#8b949e] text-sm mb-2 leading-relaxed">Production-grade engineering skills for AI coding agents.</p>
-                            <div class="flex items-center gap-3 flex-wrap">
-                                <span class="text-xs text-[#8b949e]"><span class="lang-dot" style="background:#f1e05a"></span>JavaScript</span>
-                                <span class="text-xs text-[#8b949e]">75,870 total ⭐</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gh-row flex items-start gap-4">
-                        <div class="rank top3">3</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center justify-between mb-1">
-                                <h3 class="font-bold text-[#58a6ff] text-base truncate">iOfficeAI / OfficeCLI</h3>
-                                <span class="star-badge">+1,929 ⭐</span>
-                            </div>
-                            <p class="text-[#8b949e] text-sm mb-2 leading-relaxed">Office suite purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary.</p>
-                            <div class="flex items-center gap-3 flex-wrap">
-                                <span class="text-xs text-[#8b949e]"><span class="lang-dot" style="background:#178600"></span>C#</span>
-                                <span class="text-xs text-[#8b949e]">13,428 total ⭐</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gh-row flex items-start gap-4">
-                        <div class="rank">4</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center justify-between mb-1">
-                                <h3 class="font-bold text-[#58a6ff] text-base truncate">VoltAgent / awesome-design-md</h3>
-                                <span class="star-badge">+1,391 ⭐</span>
-                            </div>
-                            <p class="text-[#8b949e] text-sm mb-2 leading-relaxed">A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate matching UI.</p>
-                            <div class="flex items-center gap-3 flex-wrap">
-                                <span class="text-xs text-[#8b949e]">Docs / Design</span>
-                                <span class="text-xs text-[#8b949e]">99,676 total ⭐</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gh-row flex items-start gap-4">
-                        <div class="rank">5</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center justify-between mb-1">
-                                <h3 class="font-bold text-[#58a6ff] text-base truncate">asgeirtj / system_prompts_leaks</h3>
-                                <span class="star-badge">+1,125 ⭐</span>
-                            </div>
-                            <p class="text-[#8b949e] text-sm mb-2 leading-relaxed">Extracted system prompts from Anthropic, OpenAI, Google, xAI, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.</p>
-                            <div class="flex items-center gap-3 flex-wrap">
-                                <span class="text-xs text-[#8b949e]"><span class="lang-dot" style="background:#f1e05a"></span>JavaScript</span>
-                                <span class="text-xs text-[#8b949e]">55,153 total ⭐</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gh-row flex items-start gap-4">
-                        <div class="rank">6</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center justify-between mb-1">
-                                <h3 class="font-bold text-[#58a6ff] text-base truncate">bradautomates / claude-video</h3>
-                                <span class="star-badge">+718 ⭐</span>
-                            </div>
-                            <p class="text-[#8b949e] text-sm mb-2 leading-relaxed">Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it all to Claude.</p>
-                            <div class="flex items-center gap-3 flex-wrap">
-                                <span class="text-xs text-[#8b949e]"><span class="lang-dot" style="background:#3572A5"></span>Python</span>
-                                <span class="text-xs text-[#8b949e]">6,699 total ⭐</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gh-row flex items-start gap-4">
-                        <div class="rank">7</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center justify-between mb-1">
-                                <h3 class="font-bold text-[#58a6ff] text-base truncate">vxcontrol / pentagi</h3>
-                                <span class="star-badge">+535 ⭐</span>
-                            </div>
-                            <p class="text-[#8b949e] text-sm mb-2 leading-relaxed">Fully autonomous AI Agents system capable of performing complex penetration testing tasks.</p>
-                            <div class="flex items-center gap-3 flex-wrap">
-                                <span class="text-xs text-[#8b949e]"><span class="lang-dot" style="background:#00ADD8"></span>Go</span>
-                                <span class="text-xs text-[#8b949e]">19,400 total ⭐</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gh-row flex items-start gap-4">
-                        <div class="rank">8</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center justify-between mb-1">
-                                <h3 class="font-bold text-[#58a6ff] text-base truncate">SmartlyDressedGames / U3-SDK</h3>
-                                <span class="star-badge">+524 ⭐</span>
-                            </div>
-                            <p class="text-[#8b949e] text-sm mb-2 leading-relaxed">Source code for Unturned, a free open-world zombie survival sandbox game.</p>
-                            <div class="flex items-center gap-3 flex-wrap">
-                                <span class="text-xs text-[#8b949e]"><span class="lang-dot" style="background:#178600"></span>C#</span>
-                                <span class="text-xs text-[#8b949e]">2,020 total ⭐</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gh-row flex items-start gap-4">
-                        <div class="rank">9</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center justify-between mb-1">
-                                <h3 class="font-bold text-[#58a6ff] text-base truncate">huxingyi / autoremesher</h3>
-                                <span class="star-badge">+403 ⭐</span>
-                            </div>
-                            <p class="text-[#8b949e] text-sm mb-2 leading-relaxed">Automatic quad remeshing tool.</p>
-                            <div class="flex items-center gap-3 flex-wrap">
-                                <span class="text-xs text-[#8b949e]"><span class="lang-dot" style="background:#f34b7d"></span>C++</span>
-                                <span class="text-xs text-[#8b949e]">2,365 total ⭐</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gh-row flex items-start gap-4">
-                        <div class="rank">10</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center justify-between mb-1">
-                                <h3 class="font-bold text-[#58a6ff] text-base truncate">prisma / prisma</h3>
-                                <span class="star-badge">+376 ⭐</span>
-                            </div>
-                            <p class="text-[#8b949e] text-sm mb-2 leading-relaxed">Next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB and CockroachDB.</p>
-                            <div class="flex items-center gap-3 flex-wrap">
-                                <span class="text-xs text-[#8b949e]"><span class="lang-dot" style="background:#3178c6"></span>TypeScript</span>
-                                <span class="text-xs text-[#8b949e]">46,899 total ⭐</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gh-row flex items-start gap-4">
-                        <div class="rank">11</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center justify-between mb-1">
-                                <h3 class="font-bold text-[#58a6ff] text-base truncate">kyutai-labs / pocket-tts</h3>
-                                <span class="star-badge">+235 ⭐</span>
-                            </div>
-                            <p class="text-[#8b949e] text-sm mb-2 leading-relaxed">A TTS that fits in your CPU (and pocket).</p>
-                            <div class="flex items-center gap-3 flex-wrap">
-                                <span class="text-xs text-[#8b949e]"><span class="lang-dot" style="background:#3572A5"></span>Python</span>
-                                <span class="text-xs text-[#8b949e]">6,979 total ⭐</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gh-row flex items-start gap-4">
-                        <div class="rank">12</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center justify-between mb-1">
-                                <h3 class="font-bold text-[#58a6ff] text-base truncate">imthenachoman / How-To-Secure-A-Linux-Server</h3>
-                                <span class="star-badge">+243 ⭐</span>
-                            </div>
-                            <p class="text-[#8b949e] text-sm mb-2 leading-relaxed">An evolving how-to guide for securing a Linux server.</p>
-                            <div class="flex items-center gap-3 flex-wrap">
-                                <span class="text-xs text-[#8b949e]">Docs</span>
-                                <span class="text-xs text-[#8b949e]">29,085 total ⭐</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gh-row flex items-start gap-4">
-                        <div class="rank">13</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center justify-between mb-1">
-                                <h3 class="font-bold text-[#58a6ff] text-base truncate">unclecode / crawl4ai</h3>
-                                <span class="star-badge">+215 ⭐</span>
-                            </div>
-                            <p class="text-[#8b949e] text-sm mb-2 leading-relaxed">Open-source LLM Friendly Web Crawler & Scraper.</p>
-                            <div class="flex items-center gap-3 flex-wrap">
-                                <span class="text-xs text-[#8b949e]"><span class="lang-dot" style="background:#3572A5"></span>Python</span>
-                                <span class="text-xs text-[#8b949e]">71,824 total ⭐</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gh-row flex items-start gap-4">
-                        <div class="rank">14</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center justify-between mb-1">
-                                <h3 class="font-bold text-[#58a6ff] text-base truncate">anthropics / claude-cookbooks</h3>
-                                <span class="star-badge">+194 ⭐</span>
-                            </div>
-                            <p class="text-[#8b949e] text-sm mb-2 leading-relaxed">A collection of notebooks/recipes showcasing fun and effective ways of using Claude.</p>
-                            <div class="flex items-center gap-3 flex-wrap">
-                                <span class="text-xs text-[#8b949e]"><span class="lang-dot" style="background:#DA5B0B"></span>Jupyter</span>
-                                <span class="text-xs text-[#8b949e]">47,157 total ⭐</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gh-row flex items-start gap-4">
-                        <div class="rank">15</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center justify-between mb-1">
-                                <h3 class="font-bold text-[#58a6ff] text-base truncate">wonderwhy-er / DesktopCommanderMCP</h3>
-                                <span class="star-badge">+185 ⭐</span>
-                            </div>
-                            <p class="text-[#8b949e] text-sm mb-2 leading-relaxed">MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities.</p>
-                            <div class="flex items-center gap-3 flex-wrap">
-                                <span class="text-xs text-[#8b949e]"><span class="lang-dot" style="background:#3178c6"></span>TypeScript</span>
-                                <span class="text-xs text-[#8b949e]">6,573 total ⭐</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
+  <section id="top-story" class="hero">
+    <div class="sec-title"><span class="emo">🔥</span><span class="bar"></span>今日头条</div>
+    <div class="hero-grid">      <a class="hero-card" href="#" target="_blank" rel="noopener">
+        <div class="hero-meta">AI 模型</div>
+        <div class="hero-title">OpenAI 发布 GPT-5.6</div>
+        <div class="zh">HN 热度榜首，1065 分 / 777 评论，引发开发者对新一代模型能力的广泛讨论。</div>
+      </a>
+      <a class="hero-card" href="#" target="_blank" rel="noopener">
+        <div class="hero-meta">系统编程</div>
+        <div class="hero-title">Postgres 用 Rust 重写通过全部回归测试</div>
+        <div class="zh">Rust 进入数据库内核的标志性进展，379 分 / 393 评论，社区高度关注。</div>
+      </a>
+      <a class="hero-card" href="#" target="_blank" rel="noopener">
+        <div class="hero-meta">AI Agent</div>
+        <div class="hero-title">AI 求职/办公自动化框架霸榜 GitHub</div>
+        <div class="zh">ai-job-search 单日 +3,716⭐，OfficeCLI +1,929⭐，AI Agent 落地应用加速。</div>
+      </a>
+</div>
+  </section>
 
-        <!-- Trend Insights -->
-        <section class="mb-8">
-            <div class="section-title">趋势洞察</div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-                <div class="insight-card">
-                    <div class="flex items-center gap-3 mb-3">
-                        <div class="w-10 h-10 rounded-lg bg-[rgba(88,166,255,0.15)] flex items-center justify-center text-[#58a6ff] text-lg font-bold">1</div>
-                        <h3 class="font-bold text-lg">AI Agent 落地应用爆发</h3>
-                    </div>
-                    <p class="text-[#8b949e] text-sm leading-relaxed">GitHub 今日增速前五中，ai-job-search、agent-skills、OfficeCLI 均为 AI Agent 自动化框架，覆盖求职、办公、编程技能库。Agent 从概念走向具体工作流替代。</p>
-                </div>
-                <div class="insight-card">
-                    <div class="flex items-center gap-3 mb-3">
-                        <div class="w-10 h-10 rounded-lg bg-[rgba(163,113,247,0.15)] flex items-center justify-center text-[#a371f7] text-lg font-bold">2</div>
-                        <h3 class="font-bold text-lg">Claude 生态持续扩张</h3>
-                    </div>
-                    <p class="text-[#8b949e] text-sm leading-relaxed">Trending 仓库中大量项目基于 Claude（ai-job-search、claude-video、DesktopCommanderMCP、claude-cookbooks），同时 system_prompts_leaks 热度反映开发者对 Claude 系统提示的高度关注。</p>
-                </div>
-                <div class="insight-card">
-                    <div class="flex items-center gap-3 mb-3">
-                        <div class="w-10 h-10 rounded-lg bg-[rgba(63,185,80,0.15)] flex items-center justify-center text-[#3fb950] text-lg font-bold">3</div>
-                        <h3 class="font-bold text-lg">Rust 进入关键系统软件</h3>
-                    </div>
-                    <p class="text-[#8b949e] text-sm leading-relaxed">HN 热门话题中 Postgres 用 Rust 重写并通过全部回归测试引发大量讨论；同时 Rust 缓存布局、Ghostty/Zig 终端等系统编程话题保持高热度，底层基础设施正在重构。</p>
-                </div>
-            </div>
-        </section>
+  <section id="hn" class="section">
+    <div class="sec-title"><span class="emo">📰</span><span class="bar"></span>Hacker News · 热门排行 Top 20</div>
+    <table class="hn-table">
+      <thead><tr><th>#</th><th>标题</th><th>分数</th><th>评论</th><th>标签</th></tr></thead>
+      <tbody>
+      <tr>
+        <td class="rank">1</td>
+        <td class="hn-title"><a href="#" target="_blank" rel="noopener">GPT-5.6</a></td>
+        <td class="hn-score">▲ 1065</td>
+        <td class="hn-comments">777</td>
+        <td><span class="tag">AI · 模型</span></td>
+      </tr>
+      <tr>
+        <td class="rank">2</td>
+        <td class="hn-title"><a href="#" target="_blank" rel="noopener">EU Parliament greenlights Chat Control 1.0</a></td>
+        <td class="hn-score">▲ 995</td>
+        <td class="hn-comments">478</td>
+        <td><span class="tag">隐私政策</span></td>
+      </tr>
+      <tr>
+        <td class="rank">3</td>
+        <td class="hn-title"><a href="#" target="_blank" rel="noopener">Show HN: 18 Words</a></td>
+        <td class="hn-score">▲ 823</td>
+        <td class="hn-comments">284</td>
+        <td><span class="tag">Show HN</span></td>
+      </tr>
+      <tr>
+        <td class="rank">4</td>
+        <td class="hn-title"><a href="#" target="_blank" rel="noopener">Show HN: Getting GLM 5.2 running on my slow computer</a></td>
+        <td class="hn-score">▲ 383</td>
+        <td class="hn-comments">101</td>
+        <td><span class="tag">AI · Show HN</span></td>
+      </tr>
+      <tr>
+        <td class="rank">5</td>
+        <td class="hn-title"><a href="#" target="_blank" rel="noopener">Postgres rewritten in Rust, now passing 100% of the Postgres regression tests</a></td>
+        <td class="hn-score">▲ 379</td>
+        <td class="hn-comments">393</td>
+        <td><span class="tag">数据库 · Rust</span></td>
+      </tr>
+      <tr>
+        <td class="rank">6</td>
+        <td class="hn-title"><a href="#" target="_blank" rel="noopener">Hy3</a></td>
+        <td class="hn-score">▲ 388</td>
+        <td class="hn-comments">83</td>
+        <td><span class="tag">AI · 音视频</span></td>
+      </tr>
+      <tr>
+        <td class="rank">7</td>
+        <td class="hn-title"><a href="#" target="_blank" rel="noopener">Muse Spark 1.1</a></td>
+        <td class="hn-score">▲ 325</td>
+        <td class="hn-comments">171</td>
+        <td><span class="tag">AI · 多模态</span></td>
+      </tr>
+      <tr>
+        <td class="rank">8</td>
+        <td class="hn-title"><a href="#" target="_blank" rel="noopener">No leap second will be introduced at the end of December 2026</a></td>
+        <td class="hn-score">▲ 235</td>
+        <td class="hn-comments">181</td>
+        <td><span class="tag">基础设施</span></td>
+      </tr>
+      <tr>
+        <td class="rank">9</td>
+        <td class="hn-title"><a href="#" target="_blank" rel="noopener">A possible future for Damn Interesting</a></td>
+        <td class="hn-score">▲ 233</td>
+        <td class="hn-comments">29</td>
+        <td><span class="tag">Show HN</span></td>
+      </tr>
+      <tr>
+        <td class="rank">10</td>
+        <td class="hn-title"><a href="#" target="_blank" rel="noopener">A road to Lisp: Why Lisp</a></td>
+        <td class="hn-score">▲ 114</td>
+        <td class="hn-comments">109</td>
+        <td><span class="tag">编程语言 · Lisp</span></td>
+      </tr>
+      <tr>
+        <td class="rank">11</td>
+        <td class="hn-title"><a href="#" target="_blank" rel="noopener">Interview with Mitchell Hashimoto about Ghostty and Zig</a></td>
+        <td class="hn-score">▲ 120</td>
+        <td class="hn-comments">45</td>
+        <td><span class="tag">终端 · Zig</span></td>
+      </tr>
+      <tr>
+        <td class="rank">12</td>
+        <td class="hn-title"><a href="#" target="_blank" rel="noopener">Girls just wanna have fast MPMC queues with bounded waiting</a></td>
+        <td class="hn-score">▲ 137</td>
+        <td class="hn-comments">31</td>
+        <td><span class="tag">并发 · 队列</span></td>
+      </tr>
+      <tr>
+        <td class="rank">13</td>
+        <td class="hn-title"><a href="#" target="_blank" rel="noopener">TLS certificates for internal services done right</a></td>
+        <td class="hn-score">▲ 132</td>
+        <td class="hn-comments">94</td>
+        <td><span class="tag">安全 · TLS</span></td>
+      </tr>
+      <tr>
+        <td class="rank">14</td>
+        <td class="hn-title"><a href="#" target="_blank" rel="noopener">Build your own vulnerability harness</a></td>
+        <td class="hn-score">▲ 5</td>
+        <td class="hn-comments">0</td>
+        <td><span class="tag">安全 · 漏洞</span></td>
+      </tr>
+      <tr>
+        <td class="rank">15</td>
+        <td class="hn-title"><a href="#" target="_blank" rel="noopener">Launch HN: Context.dev (YC S26) – API to get structured data from any website</a></td>
+        <td class="hn-score">▲ 72</td>
+        <td class="hn-comments">54</td>
+        <td><span class="tag">AI · Launch HN</span></td>
+      </tr>
+      <tr>
+        <td class="rank">16</td>
+        <td class="hn-title"><a href="#" target="_blank" rel="noopener">Building a real-time AI tutor for 5-year-olds</a></td>
+        <td class="hn-score">▲ 38</td>
+        <td class="hn-comments">53</td>
+        <td><span class="tag">AI · 教育</span></td>
+      </tr>
+      <tr>
+        <td class="rank">17</td>
+        <td class="hn-title"><a href="#" target="_blank" rel="noopener">Cache-Conscious Data Layout in Rust: Field Zoning, False Sharing, 128-Byte Rule</a></td>
+        <td class="hn-score">▲ 5</td>
+        <td class="hn-comments">0</td>
+        <td><span class="tag">Rust · 性能</span></td>
+      </tr>
+      <tr>
+        <td class="rank">18</td>
+        <td class="hn-title"><a href="#" target="_blank" rel="noopener">Patterncollider: Generate and explore quasiperiodic tiling patterns</a></td>
+        <td class="hn-score">▲ 21</td>
+        <td class="hn-comments">1</td>
+        <td><span class="tag">可视化 · Show HN</span></td>
+      </tr>
+      <tr>
+        <td class="rank">19</td>
+        <td class="hn-title"><a href="#" target="_blank" rel="noopener">Opinionated and easy Pi.dev configuration</a></td>
+        <td class="hn-score">▲ 109</td>
+        <td class="hn-comments">61</td>
+        <td><span class="tag">嵌入式 · Pi</span></td>
+      </tr>
+      <tr>
+        <td class="rank">20</td>
+        <td class="hn-title"><a href="#" target="_blank" rel="noopener">GLM 5.2 is nearly as accurate as a human book keeper</a></td>
+        <td class="hn-score">▲ 186</td>
+        <td class="hn-comments">111</td>
+        <td><span class="tag">AI · 基准测试</span></td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
 
-        <!-- Footer -->
-        <footer class="text-center text-[#8b949e] text-xs pt-6 border-t border-[#30363d]">
-            <p>数据来源：Hacker News · GitHub Trending · 生成时间：2026-07-10 09:50 GMT+8</p>
-          <a href="index.html">← 返回归档</a>
-</footer>
-    </div>
+  <section id="github" class="section">
+    <div class="sec-title"><span class="emo">⭐</span><span class="bar"></span>GitHub Trending · 当日热门仓库（按 star 增量排序）</div>
+    <div class="gh-grid">      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/MadsLorentzen///ai-job-search" target="_blank" rel="noopener" class="gh-name">MadsLorentzen / ai-job-search</a><span class="gh-lang">—</span></div>
+        <div class="gh-desc">AI-powered job application framework built on Claude Code. Fork it, fill in your profile, and let Claude evaluate jobs, tailor CVs, write cover letters.</div>
+        <div class="gh-meta"><span class="gh-today">▲ +3716 today</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/addyosmani///agent-skills" target="_blank" rel="noopener" class="gh-name">addyosmani / agent-skills</a><span class="gh-lang">—</span></div>
+        <div class="gh-desc">Production-grade engineering skills for AI coding agents.</div>
+        <div class="gh-meta"><span class="gh-today">▲ +2554 today</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/iOfficeAI///OfficeCLI" target="_blank" rel="noopener" class="gh-name">iOfficeAI / OfficeCLI</a><span class="gh-lang">—</span></div>
+        <div class="gh-desc">Office suite purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary.</div>
+        <div class="gh-meta"><span class="gh-today">▲ +1929 today</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/VoltAgent///awesome-design-md" target="_blank" rel="noopener" class="gh-name">VoltAgent / awesome-design-md</a><span class="gh-lang">—</span></div>
+        <div class="gh-desc">A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate matching UI.</div>
+        <div class="gh-meta"><span class="gh-today">▲ +1391 today</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/asgeirtj///system_prompts_leaks" target="_blank" rel="noopener" class="gh-name">asgeirtj / system_prompts_leaks</a><span class="gh-lang">—</span></div>
+        <div class="gh-desc">Extracted system prompts from Anthropic, OpenAI, Google, xAI, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.</div>
+        <div class="gh-meta"><span class="gh-today">▲ +1125 today</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/bradautomates///claude-video" target="_blank" rel="noopener" class="gh-name">bradautomates / claude-video</a><span class="gh-lang">—</span></div>
+        <div class="gh-desc">Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it all to Claude.</div>
+        <div class="gh-meta"><span class="gh-today">▲ +718 today</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/vxcontrol///pentagi" target="_blank" rel="noopener" class="gh-name">vxcontrol / pentagi</a><span class="gh-lang">—</span></div>
+        <div class="gh-desc">Fully autonomous AI Agents system capable of performing complex penetration testing tasks.</div>
+        <div class="gh-meta"><span class="gh-today">▲ +535 today</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/SmartlyDressedGames///U3-SDK" target="_blank" rel="noopener" class="gh-name">SmartlyDressedGames / U3-SDK</a><span class="gh-lang">—</span></div>
+        <div class="gh-desc">Source code for Unturned, a free open-world zombie survival sandbox game.</div>
+        <div class="gh-meta"><span class="gh-today">▲ +524 today</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/huxingyi///autoremesher" target="_blank" rel="noopener" class="gh-name">huxingyi / autoremesher</a><span class="gh-lang">—</span></div>
+        <div class="gh-desc">Automatic quad remeshing tool.</div>
+        <div class="gh-meta"><span class="gh-today">▲ +403 today</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/prisma///prisma" target="_blank" rel="noopener" class="gh-name">prisma / prisma</a><span class="gh-lang">—</span></div>
+        <div class="gh-desc">Next-generation ORM for Node.js &amp; TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB and CockroachDB.</div>
+        <div class="gh-meta"><span class="gh-today">▲ +376 today</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/kyutai-labs///pocket-tts" target="_blank" rel="noopener" class="gh-name">kyutai-labs / pocket-tts</a><span class="gh-lang">—</span></div>
+        <div class="gh-desc">A TTS that fits in your CPU (and pocket).</div>
+        <div class="gh-meta"><span class="gh-today">▲ +235 today</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/imthenachoman///How-To-Secure-A-Linux-Server" target="_blank" rel="noopener" class="gh-name">imthenachoman / How-To-Secure-A-Linux-Server</a><span class="gh-lang">—</span></div>
+        <div class="gh-desc">An evolving how-to guide for securing a Linux server.</div>
+        <div class="gh-meta"><span class="gh-today">▲ +243 today</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/unclecode///crawl4ai" target="_blank" rel="noopener" class="gh-name">unclecode / crawl4ai</a><span class="gh-lang">—</span></div>
+        <div class="gh-desc">Open-source LLM Friendly Web Crawler &amp; Scraper.</div>
+        <div class="gh-meta"><span class="gh-today">▲ +215 today</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/anthropics///claude-cookbooks" target="_blank" rel="noopener" class="gh-name">anthropics / claude-cookbooks</a><span class="gh-lang">—</span></div>
+        <div class="gh-desc">A collection of notebooks/recipes showcasing fun and effective ways of using Claude.</div>
+        <div class="gh-meta"><span class="gh-today">▲ +194 today</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/wonderwhy-er///DesktopCommanderMCP" target="_blank" rel="noopener" class="gh-name">wonderwhy-er / DesktopCommanderMCP</a><span class="gh-lang">—</span></div>
+        <div class="gh-desc">MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities.</div>
+        <div class="gh-meta"><span class="gh-today">▲ +185 today</span></div>
+      </div>
+</div>
+  </section>
+
+  <section id="producthunt" class="section">
+    <div class="sec-title"><span class="emo">🚀</span><span class="bar"></span>Product Hunt · 今日精选</div>
+    <div class="gh-grid"><div class="ph-card"><div class="ph-top"><span class="ph-rank">–</span><span class="ph-name">本期未收录</span></div><div class="ph-desc">该期生成时尚未接入 Product Hunt 数据源，故无当日精选产品。</div></div></div>
+  </section>
+
+  <section id="papers" class="section">
+    <div class="sec-title"><span class="emo">📄</span><span class="bar"></span>Daily Papers · Hugging Face</div>
+    <div class="note">该期生成时尚未接入 Hugging Face Daily Papers 数据源，故无当日论文列表。自 2026-07-13 起本报告开始收录该来源。</div>
+  </section>
+
+  <section id="insights" class="section">
+    <div class="sec-title"><span class="emo">💡</span><span class="bar"></span>趋势洞察 · 三大核心信号</div>
+          <div class="insight">
+        <div class="insight-head"><span class="insight-dot"></span><h3>AI Agent 落地应用爆发</h3><span class="insight-src">HN · GitHub</span></div>
+        <p>GitHub 今日增速前五中，ai-job-search、agent-skills、OfficeCLI 均为 AI Agent 自动化框架，覆盖求职、办公、编程技能库。Agent 从概念走向具体工作流替代。</p>
+      </div>
+      <div class="insight">
+        <div class="insight-head"><span class="insight-dot"></span><h3>Claude 生态持续扩张</h3><span class="insight-src">HN · GitHub</span></div>
+        <p>Trending 仓库中大量项目基于 Claude（ai-job-search、claude-video、DesktopCommanderMCP、claude-cookbooks），同时 system_prompts_leaks 热度反映开发者对 Claude 系统提示的高度关注。</p>
+      </div>
+      <div class="insight">
+        <div class="insight-head"><span class="insight-dot"></span><h3>Rust 进入关键系统软件</h3><span class="insight-src">HN · GitHub</span></div>
+        <p>HN 热门话题中 Postgres 用 Rust 重写并通过全部回归测试引发大量讨论；同时 Rust 缓存布局、Ghostty/Zig 终端等系统编程话题保持高热度，底层基础设施正在重构。</p>
+      </div>
+
+  </section>
+
+  <footer class="site-footer">
+    数据来源：Hacker News · GitHub Trending · Product Hunt · Hugging Face Papers<br>
+    本报告由自动化任务每日生成 · 2026-07-10 · 星期五 · <a href="index.html">← 返回归档</a> · <a href="#top-story">回到顶部 ↑</a>
+  </footer>
+
+</div>
 </body>
 </html>

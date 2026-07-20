@@ -3,7 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>今日技术热点速览 · 2026-07-12 · 星期日</title>
+<title>今日技术热点速览 · 2026-07-20 · 星期一</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Serif+SC:wght@400;700;900&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -183,422 +185,296 @@ footer.site-footer a{color:var(--accent2);text-decoration:none;}
 </style>
 </head>
 <body>
-<a class="back-link" href="index.html" style="display:block;text-align:center;padding:10px;font-size:12px;color:#6b6357;text-decoration:none;">← 返回归档</a>
-<div class="container">
-<header>
-  <h1>今日技术热点速览</h1>
-  <div class="meta">2026-07-12 · 星期日 · Hacker News + GitHub Trending</div>
+<header class="site-header">
+  <a class="back-link" href="index.html">← 返回归档</a>
+  <div class="kicker">The Tech Dispatch</div>
+  <h1>🔥 今日技术热点速览</h1>
+  <div class="date">2026-07-12 · 星期日</div>
+  <div class="sub">数据来源：Hacker News · GitHub Trending · Product Hunt · Hugging Face Papers</div>
 </header>
 
-<section class="card headline">
-  <h2><span class="icon">🔥</span> 今日头条</h2>
-  <div class="lead"><a class="item-title" href="https://evanhahn.com/prefer-strict-tables-in-sqlite/">Prefer strict tables in SQLite</a></div>
-  <div class="stats">
-    <span><strong>218</strong> points</span>
-    <span><strong>108</strong> comments</span>
-    <span><span class="tag" style="color:#8b949e;border-color:#8b949e30">SQLite</span><span class="tag" style="color:#7ee787;border-color:#7ee78730">数据库</span></span>
-  </div>
-</section>
+<nav class="quick-nav">
+  <a href="#top-story">🔥 今日头条</a>
+  <a href="#hn">📰 Hacker News</a>
+  <a href="#github">⭐ GitHub</a>
+  <a href="#producthunt">🚀 Product Hunt</a>
+  <a href="#papers">📄 Papers</a>
+  <a href="#insights">💡 趋势洞察</a>
+</nav>
 
-<div class="grid">
-<section class="card">
-  <h2><span class="icon">📰</span> Hacker News 热门排行</h2>
-  <ul class="list">
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">1</span><a class="item-title" href="https://www.iroh.computer/blog/mesh-llm">Mesh LLM: distributed AI computing on iroh</a></div>
-      </div>
-      <div><span class="tag" style="color:#58a6ff;border-color:#58a6ff30">AI</span><span class="tag" style="color:#58a6ff;border-color:#58a6ff30">分布式</span><span class="tag" style="color:#58a6ff;border-color:#58a6ff30">LLM</span></div>
-      <div class="item-stats">
-        <span>▲ 88</span>
-        <span>💬 22</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">2</span><a class="item-title" href="https://antjs.org">Show HN: Ant – A JavaScript runtime and ecosystem</a></div>
-      </div>
-      <div><span class="tag" style="color:#f0883e;border-color:#f0883e30">JS运行时</span><span class="tag" style="color:#a371f7;border-color:#a371f730">Show HN</span></div>
-      <div class="item-stats">
-        <span>▲ 178</span>
-        <span>💬 77</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">3</span><a class="item-title" href="https://fabiensanglard.net/tb4/index.html">A dock that wakes up reliably</a></div>
-      </div>
-      <div><span class="tag" style="color:#8b949e;border-color:#8b949e30">硬件</span><span class="tag" style="color:#8b949e;border-color:#8b949e30">嵌入式</span></div>
-      <div class="item-stats">
-        <span>▲ 14</span>
-        <span>💬 11</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">4</span><a class="item-title" href="https://github.com/Wren6991/RISCBoy">RISCBoy is an open-source portable games console, designed from scratch</a></div>
-      </div>
-      <div><span class="tag" style="color:#f778ba;border-color:#f778ba30">开源硬件</span><span class="tag" style="color:#8b949e;border-color:#8b949e30">RISC</span></div>
-      <div class="item-stats">
-        <span>▲ 59</span>
-        <span>💬 15</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">5</span><a class="item-title" href="https://www.ijidonline.com/article/S1201-9712(26)00608-9/fulltext">Long Covid May Physically Damage the Nerves That Control the Stomach</a></div>
-      </div>
-      <div><span class="tag" style="color:#8b949e;border-color:#8b949e30">健康</span><span class="tag" style="color:#8b949e;border-color:#8b949e30">科学</span></div>
-      <div class="item-stats">
-        <span>▲ 26</span>
-        <span>💬 2</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">6</span><a class="item-title" href="https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom">Nvidia, CoreWeave, and Nebius: Inside the Circular Financing of the GPU Boom</a></div>
-      </div>
-      <div><span class="tag" style="color:#58a6ff;border-color:#58a6ff30">AI</span><span class="tag" style="color:#8b949e;border-color:#8b949e30">GPU</span><span class="tag" style="color:#8b949e;border-color:#8b949e30">金融</span></div>
-      <div class="item-stats">
-        <span>▲ 156</span>
-        <span>💬 56</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">7</span><a class="item-title" href="https://slacreditwatch.com">A public ledger of cloud outages and the SLA credits they trigger</a></div>
-      </div>
-      <div><span class="tag" style="color:#8b949e;border-color:#8b949e30">云服务</span><span class="tag" style="color:#8b949e;border-color:#8b949e30">SRE</span></div>
-      <div class="item-stats">
-        <span>▲ 10</span>
-        <span>💬 3</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">8</span><a class="item-title" href="https://arxiv.org/abs/2607.07267">Billions of Sketches Reveal Hidden Cultural Variation in Human Concepts</a></div>
-      </div>
-      <div><span class="tag" style="color:#58a6ff;border-color:#58a6ff30">AI</span><span class="tag" style="color:#8b949e;border-color:#8b949e30">认知科学</span></div>
-      <div class="item-stats">
-        <span>▲ 50</span>
-        <span>💬 5</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">9</span><a class="item-title" href="https://clickhouse.com/blog/pgbouncer-clickhouse-managed-postgres">We scaled PgBouncer to 4x throughput</a></div>
-      </div>
-      <div><span class="tag" style="color:#7ee787;border-color:#7ee78730">数据库</span><span class="tag" style="color:#7ee787;border-color:#7ee78730">性能</span></div>
-      <div class="item-stats">
-        <span>▲ 180</span>
-        <span>💬 36</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">10</span><a class="item-title" href="https://goeteia.dev">A pure scheme web programming tool</a></div>
-      </div>
-      <div><span class="tag" style="color:#8b949e;border-color:#8b949e30">Lisp</span><span class="tag" style="color:#8b949e;border-color:#8b949e30">Web</span></div>
-      <div class="item-stats">
-        <span>▲ 3</span>
-        <span>💬 1</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">11</span><a class="item-title" href="https://timeseriesofindia.com/economy/reads/upi-architecture/">UPI: Anatomy of a Payment Transaction</a></div>
-      </div>
-      <div><span class="tag" style="color:#8b949e;border-color:#8b949e30">支付系统</span><span class="tag" style="color:#8b949e;border-color:#8b949e30">架构</span></div>
-      <div class="item-stats">
-        <span>▲ 98</span>
-        <span>💬 33</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">12</span><a class="item-title" href="https://triapul.cz/automa/i_did_not_kill_stanley_lieber">I Did Not Kill Stanley Lieber: How to Draw (With 9front)</a></div>
-      </div>
-      <div><span class="tag" style="color:#8b949e;border-color:#8b949e30">艺术</span><span class="tag" style="color:#8b949e;border-color:#8b949e30">Plan9</span></div>
-      <div class="item-stats">
-        <span>▲ 4</span>
-        <span>💬 0</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">13</span><a class="item-title" href="https://evanhahn.com/prefer-strict-tables-in-sqlite/">Prefer strict tables in SQLite</a></div>
-      </div>
-      <div><span class="tag" style="color:#8b949e;border-color:#8b949e30">SQLite</span><span class="tag" style="color:#7ee787;border-color:#7ee78730">数据库</span></div>
-      <div class="item-stats">
-        <span>▲ 218</span>
-        <span>💬 108</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">14</span><a class="item-title" href="https://www.math.ucdavis.edu/~saito/courses/229A/stewart-svd.pdf">The early History of the Singular Value Decomposition (1993) [pdf]</a></div>
-      </div>
-      <div><span class="tag" style="color:#8b949e;border-color:#8b949e30">数学</span><span class="tag" style="color:#8b949e;border-color:#8b949e30">机器学习</span></div>
-      <div class="item-stats">
-        <span>▲ 89</span>
-        <span>💬 55</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">15</span><a class="item-title" href="https://archive.cancerworld.net/featured/how-doctors-die/">Doctors die. It&#x27;s not like the rest of us, but it should be (2016)</a></div>
-      </div>
-      <div><span class="tag" style="color:#8b949e;border-color:#8b949e30">健康</span><span class="tag" style="color:#8b949e;border-color:#8b949e30">社会</span></div>
-      <div class="item-stats">
-        <span>▲ 60</span>
-        <span>💬 36</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">16</span><a class="item-title" href="https://github.com/jacobobryant/biff/tree/v2.x/libs/graph">Biff.graph: structure your Clojure codebase as a queryable graph</a></div>
-      </div>
-      <div><span class="tag" style="color:#8b949e;border-color:#8b949e30">Clojure</span><span class="tag" style="color:#8b949e;border-color:#8b949e30">工具</span></div>
-      <div class="item-stats">
-        <span>▲ 83</span>
-        <span>💬 2</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">17</span><a class="item-title" href="https://abcnews.com/US/wireStory/martha-lillard-us-polio-patient-iron-lung-dies-134668491">Martha Lillard, last US polio patient using iron lung, dies at 78 in Oklahoma</a></div>
-      </div>
-      <div><span class="tag" style="color:#8b949e;border-color:#8b949e30">社会</span></div>
-      <div class="item-stats">
-        <span>▲ 13</span>
-        <span>💬 1</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">18</span><a class="item-title" href="https://shipthatcode.com">Show HN: Learn by rebuilding Redis, Git, a database from scratch</a></div>
-      </div>
-      <div><span class="tag" style="color:#8b949e;border-color:#8b949e30">学习</span><span class="tag" style="color:#8b949e;border-color:#8b949e30">编程</span><span class="tag" style="color:#a371f7;border-color:#a371f730">Show HN</span></div>
-      <div class="item-stats">
-        <span>▲ 127</span>
-        <span>💬 35</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">19</span><a class="item-title" href="https://www.zerofs.net/blog/zerofs-vs-aws-s3-files/">ZeroFS vs. Amazon S3 Files</a></div>
-      </div>
-      <div><span class="tag" style="color:#8b949e;border-color:#8b949e30">存储</span><span class="tag" style="color:#8b949e;border-color:#8b949e30">云</span></div>
-      <div class="item-stats">
-        <span>▲ 53</span>
-        <span>💬 16</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">20</span><a class="item-title" href="https://nagylukas.github.io/orbit.html">Show HN: Orbit – AR satellite tracker, watch 15k+ objects</a></div>
-      </div>
-      <div><span class="tag" style="color:#8b949e;border-color:#8b949e30">AR</span><span class="tag" style="color:#8b949e;border-color:#8b949e30">航天</span><span class="tag" style="color:#a371f7;border-color:#a371f730">Show HN</span></div>
-      <div class="item-stats">
-        <span>▲ 58</span>
-        <span>💬 17</span>
-      </div>
-    </li>
-  </ul>
-</section>
+<div class="wrap">
 
-<section class="card">
-  <h2><span class="icon">⭐</span> GitHub Trending 仓库</h2>
-  <ul class="list">
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">1</span><a class="item-title" href="https://github.com/obra/superpowers">obra/superpowers</a></div>
-      </div>
-      <div style="color:var(--text-2);font-size:0.9rem;margin-bottom:8px;">一个代理技能框架和软件开发方法论，切实可行</div>
-      <div class="item-stats">
-        <span class="lang"><span class="lang-dot"></span>Shell</span>
-        <span>⭐ 252,459</span>
-        <span class="gh-star">+740 today</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">2</span><a class="item-title" href="https://github.com/wonderwhy-er/DesktopCommanderMCP">wonderwhy-er/DesktopCommanderMCP</a></div>
-      </div>
-      <div style="color:var(--text-2);font-size:0.9rem;margin-bottom:8px;">为 Claude 提供终端控制、文件系统搜索和差异文件编辑能力的 MCP 服务器</div>
-      <div class="item-stats">
-        <span class="lang"><span class="lang-dot"></span>TypeScript</span>
-        <span>⭐ 7,776</span>
-        <span class="gh-star">+909 today</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">3</span><a class="item-title" href="https://github.com/malisper/pgrust">malisper/pgrust</a></div>
-      </div>
-      <div style="color:var(--text-2);font-size:0.9rem;margin-bottom:8px;">用 Rust 重写的 Postgres，现已通过 100% 的 Postgres 回归测试</div>
-      <div class="item-stats">
-        <span class="lang"><span class="lang-dot"></span>Rust</span>
-        <span>⭐ 2,067</span>
-        <span class="gh-star">+774 today</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">4</span><a class="item-title" href="https://github.com/oven-sh/bun">oven-sh/bun</a></div>
-      </div>
-      <div style="color:var(--text-2);font-size:0.9rem;margin-bottom:8px;">极速的 JavaScript 运行时、打包器、测试运行器和包管理器</div>
-      <div class="item-stats">
-        <span class="lang"><span class="lang-dot"></span>Rust</span>
-        <span>⭐ 94,568</span>
-        <span class="gh-star">+658 today</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">5</span><a class="item-title" href="https://github.com/google-labs-code/stitch-skills">google-labs-code/stitch-skills</a></div>
-      </div>
-      <div style="color:var(--text-2);font-size:0.9rem;margin-bottom:8px;">为 Stitch MCP 服务器设计的 Agent Skills 库</div>
-      <div class="item-stats">
-        <span class="lang"><span class="lang-dot"></span>TypeScript</span>
-        <span>⭐ 7,065</span>
-        <span class="gh-star">+340 today</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">6</span><a class="item-title" href="https://github.com/vercel/next.js">vercel/next.js</a></div>
-      </div>
-      <div style="color:var(--text-2);font-size:0.9rem;margin-bottom:8px;">The React Framework</div>
-      <div class="item-stats">
-        <span class="lang"><span class="lang-dot"></span>JavaScript</span>
-        <span>⭐ 140,958</span>
-        <span class="gh-star">+334 today</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">7</span><a class="item-title" href="https://github.com/davila7/claude-code-templates">davila7/claude-code-templates</a></div>
-      </div>
-      <div style="color:var(--text-2);font-size:0.9rem;margin-bottom:8px;">用于配置和监控 Claude Code 的 CLI 工具</div>
-      <div class="item-stats">
-        <span class="lang"><span class="lang-dot"></span>Python</span>
-        <span>⭐ 29,018</span>
-        <span class="gh-star">+232 today</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">8</span><a class="item-title" href="https://github.com/hashicorp/terraform">hashicorp/terraform</a></div>
-      </div>
-      <div style="color:var(--text-2);font-size:0.9rem;margin-bottom:8px;">安全、可预测地创建、更改和改进基础设施的工具</div>
-      <div class="item-stats">
-        <span class="lang"><span class="lang-dot"></span>Go</span>
-        <span>⭐ 49,370</span>
-        <span class="gh-star">+229 today</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">9</span><a class="item-title" href="https://github.com/anthropics/claude-cookbooks">anthropics/claude-cookbooks</a></div>
-      </div>
-      <div style="color:var(--text-2);font-size:0.9rem;margin-bottom:8px;">展示使用 Claude 的有趣且有效方式的笔记本/配方集合</div>
-      <div class="item-stats">
-        <span class="lang"><span class="lang-dot"></span>Jupyter Notebook</span>
-        <span>⭐ 47,938</span>
-        <span class="gh-star">+219 today</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">10</span><a class="item-title" href="https://github.com/catchorg/Catch2">catchorg/Catch2</a></div>
-      </div>
-      <div style="color:var(--text-2);font-size:0.9rem;margin-bottom:8px;">现代 C++ 原生测试框架</div>
-      <div class="item-stats">
-        <span class="lang"><span class="lang-dot"></span>C++</span>
-        <span>⭐ 21,043</span>
-        <span class="gh-star">+113 today</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">11</span><a class="item-title" href="https://github.com/zeux/meshoptimizer">zeux/meshoptimizer</a></div>
-      </div>
-      <div style="color:var(--text-2);font-size:0.9rem;margin-bottom:8px;">使网格更小、渲染更快的网格优化库</div>
-      <div class="item-stats">
-        <span class="lang"><span class="lang-dot"></span>C++</span>
-        <span>⭐ 8,141</span>
-        <span class="gh-star">+110 today</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">12</span><a class="item-title" href="https://github.com/abseil/abseil-cpp">abseil/abseil-cpp</a></div>
-      </div>
-      <div style="color:var(--text-2);font-size:0.9rem;margin-bottom:8px;">Abseil 通用库 (C++)</div>
-      <div class="item-stats">
-        <span class="lang"><span class="lang-dot"></span>C++</span>
-        <span>⭐ 17,802</span>
-        <span class="gh-star">+118 today</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">13</span><a class="item-title" href="https://github.com/home-assistant/core">home-assistant/core</a></div>
-      </div>
-      <div style="color:var(--text-2);font-size:0.9rem;margin-bottom:8px;">开源家庭自动化，本地控制优先，隐私至上</div>
-      <div class="item-stats">
-        <span class="lang"><span class="lang-dot"></span>Python</span>
-        <span>⭐ 88,699</span>
-        <span class="gh-star">+80 today</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">14</span><a class="item-title" href="https://github.com/DayuanJiang/next-ai-draw-io">DayuanJiang/next-ai-draw-io</a></div>
-      </div>
-      <div style="color:var(--text-2);font-size:0.9rem;margin-bottom:8px;">集成 AI 能力与 draw.io 图表的 Next.js Web 应用</div>
-      <div class="item-stats">
-        <span class="lang"><span class="lang-dot"></span>TypeScript</span>
-        <span>⭐ 33,293</span>
-        <span class="gh-star">+81 today</span>
-      </div>
-    </li>
-    <li class="item">
-      <div class="item-header">
-        <div><span class="rank">15</span><a class="item-title" href="https://github.com/chriskohlhoff/asio">chriskohlhoff/asio</a></div>
-      </div>
-      <div style="color:var(--text-2);font-size:0.9rem;margin-bottom:8px;">Asio C++ 库</div>
-      <div class="item-stats">
-        <span class="lang"><span class="lang-dot"></span>C++</span>
-        <span>⭐ 6,138</span>
-        <span class="gh-star">+76 today</span>
-      </div>
-    </li>
-  </ul>
-</section>
+  <section id="top-story" class="hero">
+    <div class="sec-title"><span class="emo">🔥</span><span class="bar"></span>今日头条</div>
+    <div class="hero-grid">      <a class="hero-card" href="https://evanhahn.com/prefer-strict-tables-in-sqlite/" target="_blank" rel="noopener">
+        <div class="hero-meta">HN 218 ▲ · 108 评</div>
+        <div class="hero-title">Prefer strict tables in SQLite</div>
+        
+      </a>
 </div>
+  </section>
 
-<section class="card">
-  <h2><span class="icon">🔮</span> 趋势洞察</h2>
-  <div class="insight">
-    <h3>AI Agent 基础设施继续领跑</h3>
-    <p>今日 GitHub Trending 新增 Star 前三名中，DesktopCommanderMCP、superpowers、stitch-skills 均为 Agent/MCP 工具链；HN 同样出现 Mesh LLM 分布式 AI 与 Sqlsure 等 AI 辅助 SQL 项目，说明 AI 不再只是模型层竞争，执行层与编排层正成为开源主战场。</p>
-  </div>
-  <div class="insight">
-    <h3>系统软件 Rust 化进入硬核验证阶段</h3>
-    <p>malisper/pgrust 宣布通过 100% Postgres 回归测试，标志 Rust 重写关键基础设施从“实验”走向“可验证替代”；HN 上 RISCBoy 自研游戏掌机、SQLite 严格表等底层话题同样高热。</p>
-  </div>
-  <div class="insight">
-    <h3>开发者体验与经典工具复兴并行</h3>
-    <p>Ant JS 运行时、Bun、Next.js 与 Redis/Git/DB 从零实现教程齐登 HN 首页；数据库性能（PgBouncer 4x 吞吐、SQLite strict tables）与工程教育内容持续受到资深开发者关注。</p>
-  </div>
-</section>
+  <section id="hn" class="section">
+    <div class="sec-title"><span class="emo">📰</span><span class="bar"></span>Hacker News · 热门排行 Top 20</div>
+    <table class="hn-table">
+      <thead><tr><th>#</th><th>标题</th><th>分数</th><th>评论</th><th>标签</th></tr></thead>
+      <tbody>
+      <tr>
+        <td class="rank">1</td>
+        <td class="hn-title"><a href="https://www.iroh.computer/blog/mesh-llm" target="_blank" rel="noopener">Mesh LLM: distributed AI computing on iroh</a></td>
+        <td class="hn-score">▲ 88</td>
+        <td class="hn-comments">22</td>
+        <td><span class="tag">—</span></td>
+      </tr>
+      <tr>
+        <td class="rank">2</td>
+        <td class="hn-title"><a href="https://antjs.org" target="_blank" rel="noopener">Show HN: Ant – A JavaScript runtime and ecosystem</a></td>
+        <td class="hn-score">▲ 178</td>
+        <td class="hn-comments">77</td>
+        <td><span class="tag">—</span></td>
+      </tr>
+      <tr>
+        <td class="rank">3</td>
+        <td class="hn-title"><a href="https://fabiensanglard.net/tb4/index.html" target="_blank" rel="noopener">A dock that wakes up reliably</a></td>
+        <td class="hn-score">▲ 14</td>
+        <td class="hn-comments">11</td>
+        <td><span class="tag">—</span></td>
+      </tr>
+      <tr>
+        <td class="rank">4</td>
+        <td class="hn-title"><a href="https://github.com/Wren6991/RISCBoy" target="_blank" rel="noopener">RISCBoy is an open-source portable games console, designed from scratch</a></td>
+        <td class="hn-score">▲ 59</td>
+        <td class="hn-comments">15</td>
+        <td><span class="tag">—</span></td>
+      </tr>
+      <tr>
+        <td class="rank">5</td>
+        <td class="hn-title"><a href="https://www.ijidonline.com/article/S1201-9712(26)00608-9/fulltext" target="_blank" rel="noopener">Long Covid May Physically Damage the Nerves That Control the Stomach</a></td>
+        <td class="hn-score">▲ 26</td>
+        <td class="hn-comments">2</td>
+        <td><span class="tag">—</span></td>
+      </tr>
+      <tr>
+        <td class="rank">6</td>
+        <td class="hn-title"><a href="https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom" target="_blank" rel="noopener">Nvidia, CoreWeave, and Nebius: Inside the Circular Financing of the GPU Boom</a></td>
+        <td class="hn-score">▲ 156</td>
+        <td class="hn-comments">0</td>
+        <td><span class="tag">—</span></td>
+      </tr>
+      <tr>
+        <td class="rank">7</td>
+        <td class="hn-title"><a href="https://slacreditwatch.com" target="_blank" rel="noopener">A public ledger of cloud outages and the SLA credits they trigger</a></td>
+        <td class="hn-score">▲ 10</td>
+        <td class="hn-comments">3</td>
+        <td><span class="tag">—</span></td>
+      </tr>
+      <tr>
+        <td class="rank">8</td>
+        <td class="hn-title"><a href="https://arxiv.org/abs/2607.07267" target="_blank" rel="noopener">Billions of Sketches Reveal Hidden Cultural Variation in Human Concepts</a></td>
+        <td class="hn-score">▲ 50</td>
+        <td class="hn-comments">5</td>
+        <td><span class="tag">—</span></td>
+      </tr>
+      <tr>
+        <td class="rank">9</td>
+        <td class="hn-title"><a href="https://clickhouse.com/blog/pgbouncer-clickhouse-managed-postgres" target="_blank" rel="noopener">We scaled PgBouncer to 4x throughput</a></td>
+        <td class="hn-score">▲ 180</td>
+        <td class="hn-comments">36</td>
+        <td><span class="tag">—</span></td>
+      </tr>
+      <tr>
+        <td class="rank">10</td>
+        <td class="hn-title"><a href="https://goeteia.dev" target="_blank" rel="noopener">A pure scheme web programming tool</a></td>
+        <td class="hn-score">▲ 3</td>
+        <td class="hn-comments">1</td>
+        <td><span class="tag">—</span></td>
+      </tr>
+      <tr>
+        <td class="rank">11</td>
+        <td class="hn-title"><a href="https://timeseriesofindia.com/economy/reads/upi-architecture/" target="_blank" rel="noopener">UPI: Anatomy of a Payment Transaction</a></td>
+        <td class="hn-score">▲ 98</td>
+        <td class="hn-comments">33</td>
+        <td><span class="tag">—</span></td>
+      </tr>
+      <tr>
+        <td class="rank">12</td>
+        <td class="hn-title"><a href="https://triapul.cz/automa/i_did_not_kill_stanley_lieber" target="_blank" rel="noopener">I Did Not Kill Stanley Lieber: How to Draw (With 9front)</a></td>
+        <td class="hn-score">▲ 4</td>
+        <td class="hn-comments">0</td>
+        <td><span class="tag">—</span></td>
+      </tr>
+      <tr>
+        <td class="rank">13</td>
+        <td class="hn-title"><a href="https://evanhahn.com/prefer-strict-tables-in-sqlite/" target="_blank" rel="noopener">Prefer strict tables in SQLite</a></td>
+        <td class="hn-score">▲ 218</td>
+        <td class="hn-comments">108</td>
+        <td><span class="tag">—</span></td>
+      </tr>
+      <tr>
+        <td class="rank">14</td>
+        <td class="hn-title"><a href="https://www.math.ucdavis.edu/~saito/courses/229A/stewart-svd.pdf" target="_blank" rel="noopener">The early History of the Singular Value Decomposition (1993) [pdf]</a></td>
+        <td class="hn-score">▲ 89</td>
+        <td class="hn-comments">55</td>
+        <td><span class="tag">—</span></td>
+      </tr>
+      <tr>
+        <td class="rank">15</td>
+        <td class="hn-title"><a href="https://archive.cancerworld.net/featured/how-doctors-die/" target="_blank" rel="noopener">Doctors die. It&amp;#x27;s not like the rest of us, but it should be (2016)</a></td>
+        <td class="hn-score">▲ 60</td>
+        <td class="hn-comments">36</td>
+        <td><span class="tag">—</span></td>
+      </tr>
+      <tr>
+        <td class="rank">16</td>
+        <td class="hn-title"><a href="https://github.com/jacobobryant/biff/tree/v2.x/libs/graph" target="_blank" rel="noopener">Biff.graph: structure your Clojure codebase as a queryable graph</a></td>
+        <td class="hn-score">▲ 83</td>
+        <td class="hn-comments">2</td>
+        <td><span class="tag">—</span></td>
+      </tr>
+      <tr>
+        <td class="rank">17</td>
+        <td class="hn-title"><a href="https://abcnews.com/US/wireStory/martha-lillard-us-polio-patient-iron-lung-dies-134668491" target="_blank" rel="noopener">Martha Lillard, last US polio patient using iron lung, dies at 78 in Oklahoma</a></td>
+        <td class="hn-score">▲ 13</td>
+        <td class="hn-comments">1</td>
+        <td><span class="tag">—</span></td>
+      </tr>
+      <tr>
+        <td class="rank">18</td>
+        <td class="hn-title"><a href="https://shipthatcode.com" target="_blank" rel="noopener">Show HN: Learn by rebuilding Redis, Git, a database from scratch</a></td>
+        <td class="hn-score">▲ 127</td>
+        <td class="hn-comments">35</td>
+        <td><span class="tag">—</span></td>
+      </tr>
+      <tr>
+        <td class="rank">19</td>
+        <td class="hn-title"><a href="https://www.zerofs.net/blog/zerofs-vs-aws-s3-files/" target="_blank" rel="noopener">ZeroFS vs. Amazon S3 Files</a></td>
+        <td class="hn-score">▲ 53</td>
+        <td class="hn-comments">16</td>
+        <td><span class="tag">—</span></td>
+      </tr>
+      <tr>
+        <td class="rank">20</td>
+        <td class="hn-title"><a href="https://nagylukas.github.io/orbit.html" target="_blank" rel="noopener">Show HN: Orbit – AR satellite tracker, watch 15k+ objects</a></td>
+        <td class="hn-score">▲ 58</td>
+        <td class="hn-comments">17</td>
+        <td><span class="tag">—</span></td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
 
-<footer>
-  <p>每日技术热点速览 · 自动生成于 2026-07-12 · 星期日 · <a href="https://github.com/a-persimmons/daily-tech-digest">GitHub 归档</a></p>
-  <a href="index.html">← 返回归档</a>
-</footer>
+  <section id="github" class="section">
+    <div class="sec-title"><span class="emo">⭐</span><span class="bar"></span>GitHub Trending · 当日热门仓库（按 star 增量排序）</div>
+    <div class="gh-grid">      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/obra/superpowers" target="_blank" rel="noopener" class="gh-name">obra/superpowers</a><span class="gh-lang">—</span></div>
+        <div class="gh-desc">一个代理技能框架和软件开发方法论，切实可行</div>
+        <div class="gh-meta"><span class="gh-today">▲ +740 today</span><span class="gh-total">★ 252,459</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/wonderwhy-er/DesktopCommanderMCP" target="_blank" rel="noopener" class="gh-name">wonderwhy-er/DesktopCommanderMCP</a><span class="gh-lang">—</span></div>
+        <div class="gh-desc">为 Claude 提供终端控制、文件系统搜索和差异文件编辑能力的 MCP 服务器</div>
+        <div class="gh-meta"><span class="gh-today">▲ +909 today</span><span class="gh-total">★ 7,776</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/malisper/pgrust" target="_blank" rel="noopener" class="gh-name">malisper/pgrust</a><span class="gh-lang">—</span></div>
+        <div class="gh-desc">用 Rust 重写的 Postgres，现已通过 100% 的 Postgres 回归测试</div>
+        <div class="gh-meta"><span class="gh-today">▲ +774 today</span><span class="gh-total">★ 2,067</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/oven-sh/bun" target="_blank" rel="noopener" class="gh-name">oven-sh/bun</a><span class="gh-lang">—</span></div>
+        <div class="gh-desc">极速的 JavaScript 运行时、打包器、测试运行器和包管理器</div>
+        <div class="gh-meta"><span class="gh-today">▲ +658 today</span><span class="gh-total">★ 94,568</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/google-labs-code/stitch-skills" target="_blank" rel="noopener" class="gh-name">google-labs-code/stitch-skills</a><span class="gh-lang">—</span></div>
+        <div class="gh-desc">为 Stitch MCP 服务器设计的 Agent Skills 库</div>
+        <div class="gh-meta"><span class="gh-today">▲ +340 today</span><span class="gh-total">★ 7,065</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/vercel/next.js" target="_blank" rel="noopener" class="gh-name">vercel/next.js</a><span class="gh-lang">—</span></div>
+        <div class="gh-desc">The React Framework</div>
+        <div class="gh-meta"><span class="gh-today">▲ +334 today</span><span class="gh-total">★ 140,958</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/davila7/claude-code-templates" target="_blank" rel="noopener" class="gh-name">davila7/claude-code-templates</a><span class="gh-lang">—</span></div>
+        <div class="gh-desc">用于配置和监控 Claude Code 的 CLI 工具</div>
+        <div class="gh-meta"><span class="gh-today">▲ +232 today</span><span class="gh-total">★ 29,018</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/hashicorp/terraform" target="_blank" rel="noopener" class="gh-name">hashicorp/terraform</a><span class="gh-lang">—</span></div>
+        <div class="gh-desc">安全、可预测地创建、更改和改进基础设施的工具</div>
+        <div class="gh-meta"><span class="gh-today">▲ +229 today</span><span class="gh-total">★ 49,370</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/anthropics/claude-cookbooks" target="_blank" rel="noopener" class="gh-name">anthropics/claude-cookbooks</a><span class="gh-lang">—</span></div>
+        <div class="gh-desc">展示使用 Claude 的有趣且有效方式的笔记本/配方集合</div>
+        <div class="gh-meta"><span class="gh-today">▲ +219 today</span><span class="gh-total">★ 47,938</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/catchorg/Catch2" target="_blank" rel="noopener" class="gh-name">catchorg/Catch2</a><span class="gh-lang">—</span></div>
+        <div class="gh-desc">现代 C++ 原生测试框架</div>
+        <div class="gh-meta"><span class="gh-today">▲ +113 today</span><span class="gh-total">★ 21,043</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/zeux/meshoptimizer" target="_blank" rel="noopener" class="gh-name">zeux/meshoptimizer</a><span class="gh-lang">—</span></div>
+        <div class="gh-desc">使网格更小、渲染更快的网格优化库</div>
+        <div class="gh-meta"><span class="gh-today">▲ +110 today</span><span class="gh-total">★ 8,141</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/abseil/abseil-cpp" target="_blank" rel="noopener" class="gh-name">abseil/abseil-cpp</a><span class="gh-lang">—</span></div>
+        <div class="gh-desc">Abseil 通用库 (C++)</div>
+        <div class="gh-meta"><span class="gh-today">▲ +118 today</span><span class="gh-total">★ 17,802</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/home-assistant/core" target="_blank" rel="noopener" class="gh-name">home-assistant/core</a><span class="gh-lang">—</span></div>
+        <div class="gh-desc">开源家庭自动化，本地控制优先，隐私至上</div>
+        <div class="gh-meta"><span class="gh-today">▲ +80 today</span><span class="gh-total">★ 88,699</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/DayuanJiang/next-ai-draw-io" target="_blank" rel="noopener" class="gh-name">DayuanJiang/next-ai-draw-io</a><span class="gh-lang">—</span></div>
+        <div class="gh-desc">集成 AI 能力与 draw.io 图表的 Next.js Web 应用</div>
+        <div class="gh-meta"><span class="gh-today">▲ +81 today</span><span class="gh-total">★ 33,293</span></div>
+      </div>
+      <div class="gh-card">
+        <div class="gh-head"><a href="https://github.com/chriskohlhoff/asio" target="_blank" rel="noopener" class="gh-name">chriskohlhoff/asio</a><span class="gh-lang">—</span></div>
+        <div class="gh-desc">Asio C++ 库</div>
+        <div class="gh-meta"><span class="gh-today">▲ +76 today</span><span class="gh-total">★ 6,138</span></div>
+      </div>
+</div>
+  </section>
+
+  <section id="producthunt" class="section">
+    <div class="sec-title"><span class="emo">🚀</span><span class="bar"></span>Product Hunt · 今日精选</div>
+    <div class="gh-grid"><div class="ph-card"><div class="ph-top"><span class="ph-rank">–</span><span class="ph-name">本期未收录</span></div><div class="ph-desc">该期生成时尚未接入 Product Hunt 数据源，故无当日精选产品。</div></div></div>
+  </section>
+
+  <section id="papers" class="section">
+    <div class="sec-title"><span class="emo">📄</span><span class="bar"></span>Daily Papers · Hugging Face</div>
+    <div class="note">该期生成时尚未接入 Hugging Face Daily Papers 数据源，故无当日论文列表。自 2026-07-13 起本报告开始收录该来源。</div>
+  </section>
+
+  <section id="insights" class="section">
+    <div class="sec-title"><span class="emo">💡</span><span class="bar"></span>趋势洞察 · 三大核心信号</div>
+          <div class="insight">
+        <div class="insight-head"><span class="insight-dot"></span><h3>AI Agent 基础设施继续领跑</h3><span class="insight-src">HN · GitHub</span></div>
+        <p>今日 GitHub Trending 新增 Star 前三名中，DesktopCommanderMCP、superpowers、stitch-skills 均为 Agent/MCP 工具链；HN 同样出现 Mesh LLM 分布式 AI 与 Sqlsure 等 AI 辅助 SQL 项目，说明 AI 不再只是模型层竞争，执行层与编排层正成为开源主战场。</p>
+      </div>
+      <div class="insight">
+        <div class="insight-head"><span class="insight-dot"></span><h3>系统软件 Rust 化进入硬核验证阶段</h3><span class="insight-src">HN · GitHub</span></div>
+        <p>malisper/pgrust 宣布通过 100% Postgres 回归测试，标志 Rust 重写关键基础设施从“实验”走向“可验证替代”；HN 上 RISCBoy 自研游戏掌机、SQLite 严格表等底层话题同样高热。</p>
+      </div>
+      <div class="insight">
+        <div class="insight-head"><span class="insight-dot"></span><h3>开发者体验与经典工具复兴并行</h3><span class="insight-src">HN · GitHub</span></div>
+        <p>Ant JS 运行时、Bun、Next.js 与 Redis/Git/DB 从零实现教程齐登 HN 首页；数据库性能（PgBouncer 4x 吞吐、SQLite strict tables）与工程教育内容持续受到资深开发者关注。</p>
+      </div>
+
+  </section>
+
+  <footer class="site-footer">
+    数据来源：Hacker News · GitHub Trending · Product Hunt · Hugging Face Papers<br>
+    本报告由自动化任务每日生成 · 2026-07-12 · 星期日 · <a href="index.html">← 返回归档</a> · <a href="#top-story">回到顶部 ↑</a>
+  </footer>
+
 </div>
 </body>
 </html>
