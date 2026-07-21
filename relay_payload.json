@@ -1,10 +1,10 @@
 {
-  "date": "2026-07-20",
-  "date_label": "2026-07-20 · 星期一",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-07-20.html",
+  "date": "2026-07-21",
+  "date_label": "2026-07-21 · 星期二",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-07-21.html",
   "summary": [
-    "AI 编程 Agent 基础设施持续领跑：Claude Code 换上 Rust 版 Bun、OpenAI 把 Codex 上下文从 372k 砍到 272k；GitHub 上 code-review-graph(+663)、kimi-cli(+410)、jcode、wigolo 集体走高，Agent 正从“能写”转向更快、更省上下文、本地优先。",
-    "开放模型 + 端侧/轻量推理共振：Qwen 3.8 发布登 HN 775 分；ktransformers、airllm(单 4GB 跑 70B)、build-your-own-x 霸榜；Product Hunt 的 BaseRT 号称比 llama.cpp 快 6.4×；HF 的 LongStraw 把长上下文 RL 推过 2M token。",
-    "Agent 评测 + 多模态/世界模型成学术新前沿：HF 当日论文过半与 Agent 相关（SEED、SearchOS-V1、BadWAM），VideoChat3 开放视频 MLLM、From Pixels to States 把世界模型当游戏引擎；Product Hunt 也涌现 OpenSEO、Rewisp 等知识 Agent 新品。"
+    "中国的开放权重 AI 战略正在获胜：相关长文以 973 分、776 条评论登顶 Hacker News 热议，叠加 Kimi Work 发布、kimi-cli 与 Qwen-Music 论文上线——开放权重路线已成中美 AI 博弈的主轴。",
+    "AI 编程 Agent 全面走向「本地优先 + 记忆化 + MCP 化」：GitHub Trending 被 code-review-graph(+1833)、openship(+1641)、open-seo(+939)、agency-agents(+862)、wigolo、fastmcp 等基础设施霸榜。",
+    "Agent 技能蒸馏与多模态/具身智能成为学术前沿：HF 当日论文 RESOURCE2SKILL（从多模态资源蒸馏可执行 Agent 技能，登顶 114）、小米机器人 1 号（10 万+ 小时真实轨迹扩展 VLA 模型）领跑，Product Hunt 的 Inkling（975B 开放多模态）、Creed（Agent 上下文文件）同步涌现。"
   ]
 }
