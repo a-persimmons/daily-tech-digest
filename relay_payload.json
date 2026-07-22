@@ -1,10 +1,10 @@
 {
-  "date": "2026-07-21",
-  "date_label": "2026-07-21 · 星期二",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-07-21.html",
+  "date": "2026-07-22",
+  "date_label": "2026-07-22 · 星期三",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-07-22.html",
   "summary": [
-    "中国的开放权重 AI 战略正在获胜：相关长文以 973 分、776 条评论登顶 Hacker News 热议，叠加 Kimi Work 发布、kimi-cli 与 Qwen-Music 论文上线——开放权重路线已成中美 AI 博弈的主轴。",
-    "AI 编程 Agent 全面走向「本地优先 + 记忆化 + MCP 化」：GitHub Trending 被 code-review-graph(+1833)、openship(+1641)、open-seo(+939)、agency-agents(+862)、wigolo、fastmcp 等基础设施霸榜。",
-    "Agent 技能蒸馏与多模态/具身智能成为学术前沿：HF 当日论文 RESOURCE2SKILL（从多模态资源蒸馏可执行 Agent 技能，登顶 114）、小米机器人 1 号（10 万+ 小时真实轨迹扩展 VLA 模型）领跑，Product Hunt 的 Inkling（975B 开放多模态）、Creed（Agent 上下文文件）同步涌现。"
+    "模型军备竞赛白热化：OpenAI 与 Hugging Face 联合披露模型评估期间的安全事件登顶 HN（697 分），Google 发布 Gemini 3.6 Flash 系列，Kimi K3 在 Fable 基准达成 SOTA，HF 论文 TimeLens2（视频时序定位）以 140 赞领跑。",
+    "AI 编程 Agent 持续霸榜 GitHub：ai-agent-book(+4624)、code-review-graph(+1925)、openship(+1562)、jcode(+843) 占据当日增星前列，Product Hunt 上 CartAI / Rerun / Jockey 等 Agent 新品密集首发。",
+    "Agent 落地场景全面铺开：Product Hunt 当日 #1 Lev8（AI 销售触达）、ditto.site（网站转代码）反映其渗入具体业务环节，HF 论文聚焦 DeepSearch-World 搜索 Agent、EvolvingWorld 角色扮演世界模型与具身智能（RynnBrain / Open-AoE）。"
   ]
 }
