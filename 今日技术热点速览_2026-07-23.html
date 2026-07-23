@@ -184,28 +184,29 @@ footer.site-footer a{color:var(--accent2);text-decoration:none;}
 <style>
 .wrap{max-width:1180px;}
 .hn-window-note{font-size:12px;color:#6b6357;background:#efe7d8;border-left:3px solid #9b1b1b;padding:7px 11px;margin-bottom:16px;line-height:1.6;}
-.hn-three{display:grid;grid-template-columns:1fr 1.7fr 1.3fr;gap:26px;align-items:stretch;}
-@media(max-width:900px){.hn-three{grid-template-columns:1fr;}}
+/* 统一两栏：左 当日综述（固定宽度、完整展示不滚动）/ 右 原内容（滚动框，高度由 JS 撑为左综述高度） */
+.two-col{display:grid;grid-template-columns:1fr 2.4fr;gap:26px;align-items:stretch;}
+@media(max-width:900px){.two-col{grid-template-columns:1fr;}}
+.col-summary{border:1px solid #ddd2c0;padding:13px 15px;background:#efe7d8;}
+.col-title{font-family:'Playfair Display',Georgia,serif;font-size:12.5px;letter-spacing:.07em;text-transform:uppercase;color:#9b1b1b;border-bottom:2px solid #9b1b1b;padding-bottom:6px;margin-bottom:12px;}
+.col-summary p{margin:0 0 11px;font-family:'Source Serif 4',Georgia,serif;font-size:13px;line-height:1.72;color:#2a2a2a;}
+.col-summary p:last-child{margin-bottom:0;}
+.col-summary .hl{color:#9b1b1b;font-weight:600;}
+.col-right{overflow-y:auto;scrollbar-width:thin;border:1px solid #ddd2c0;background:#efe7d8;padding:10px 13px;}
+.col-right::-webkit-scrollbar{width:8px;}
+.col-right::-webkit-scrollbar-thumb{background:#c9bca6;border-radius:4px;}
+.col-right .zh{font-size:10.5px;color:#8a8175;}
+/* HN 右栏内子标题与列表（沿用原样式） */
 .hn-col-title{font-family:'Playfair Display',Georgia,serif;font-size:12.5px;letter-spacing:.07em;text-transform:uppercase;color:#9b1b1b;border-bottom:2px solid #9b1b1b;padding-bottom:6px;margin-bottom:12px;}
-.hn-summary{font-family:'Source Serif 4',Georgia,serif;font-size:13px;line-height:1.72;color:#2a2a2a;}
-.hn-summary p{margin:0 0 11px;}
-.hn-summary .hl{color:#9b1b1b;font-weight:600;}
 .hn-top-item{padding:8px 0;border-bottom:1px solid #ddd2c0;}
 .hn-top-item a{font-family:'Source Serif 4',Georgia,serif;font-size:13px;color:#1a1a1a;text-decoration:none;font-weight:600;line-height:1.35;}
 .hn-top-item a:hover{color:#9b1b1b;}
 .hn-rank{color:#9b1b1b;font-weight:700;margin-right:6px;font-family:'Playfair Display',serif;}
 .hn-top-meta{font-size:11px;color:#6b6357;margin-top:2px;}
-.hn-all{height:640px;overflow-y:auto;border:1px solid #ddd2c0;padding:10px 13px;background:#efe7d8;scrollbar-width:thin;}
-.hn-all::-webkit-scrollbar{width:8px;}
-.hn-all::-webkit-scrollbar-thumb{background:#c9bca6;border-radius:4px;}
 .hn-all-row{padding:5px 0;border-bottom:1px dotted #ccc1ad;font-size:12px;line-height:1.45;}
 .hn-all-row a{color:#1a3a5c;text-decoration:none;}
 .hn-all-row a:hover{text-decoration:underline;}
 .hn-all-meta{color:#9b1b1b;font-weight:600;font-size:10.5px;margin-right:4px;}
-.hn-all .zh{font-size:10.5px;color:#8a8175;}
-.hn-left-scroll,.hn-top-scroll{height:640px;overflow-y:auto;border:1px solid #ddd2c0;padding:10px 13px;background:#efe7d8;scrollbar-width:thin;}
-.hn-left-scroll::-webkit-scrollbar,.hn-top-scroll::-webkit-scrollbar{width:8px;}
-.hn-left-scroll::-webkit-scrollbar-thumb,.hn-top-scroll::-webkit-scrollbar-thumb{background:#c9bca6;border-radius:4px;}
 /* 两栏：左侧当日综述 + 右侧原内容（GitHub / Product Hunt） */
 .two-col{display:grid;grid-template-columns:1fr 2.4fr;gap:26px;align-items:stretch;}
 @media(max-width:900px){.two-col{grid-template-columns:1fr;}}
@@ -259,21 +260,18 @@ footer.site-footer a{color:var(--accent2);text-decoration:none;}
 
   <section id="hn" class="section">
     <div class="sec-title"><span class="emo">📰</span><span>Hacker News · 全窗口热门</span></div>
-    <div class="hn-window-note">时间窗：2026-07-22 10:00 → 2026-07-23 10:00 (CST) · 窗口内共 <b>1000</b> 条新帖 · 排序：分数与评论 min-max 归一化后加权（0.6×分数 + 0.4×评论），降序取 Top20（中栏）；右栏为窗口内全量、固定框内滚动浏览。</div>
-    <div class="hn-three">
-      <div class="hn-col">
-        <div class="hn-col-title">📝 当日综述</div>
-        <div class="hn-left-scroll">
-          <div class="hn-summary"><p>本窗口（<span class="hl">7/22 10:00 → 7/23 10:00 CST</span>）Hacker News 共约 <span class="hl">1000 条</span>新帖。<b>AI 仍是绝对主轴</b>：数学泰斗陶哲轩与 ChatGPT 关于雅可比猜想反例的对话以 675▲ / 404💬 登顶；「AI 实验室是否在搞 Pelicanmaxxing（囤积模型）」引发 417▲ 热议；GigaToken 宣称分词提速约千倍（399▲）。</p>
+    <div class="hn-window-note">时间窗：2026-07-22 10:00 → 2026-07-23 10:00 (CST) · 窗口内共 <b>1000</b> 条新帖 · 排序：分数与评论 min-max 归一化后加权（0.6×分数 + 0.4×评论），降序取 Top20（右栏上）；下为窗口内全量、在右栏滚动浏览。左栏「当日综述」完整展示、不滚动。</div>
+    <div class="two-col">
+      <div class="col-summary">
+        <div class="col-title">📝 当日综述</div>
+        <div class="hn-summary"><p>本窗口（<span class="hl">7/22 10:00 → 7/23 10:00 CST</span>）Hacker News 共约 <span class="hl">1000 条</span>新帖。<b>AI 仍是绝对主轴</b>：数学泰斗陶哲轩与 ChatGPT 关于雅可比猜想反例的对话以 675▲ / 404💬 登顶；「AI 实验室是否在搞 Pelicanmaxxing（囤积模型）」引发 417▲ 热议；GigaToken 宣称分词提速约千倍（399▲）。</p>
 <p><b>工程与工具向</b>：Bento 用单个 HTML 文件实现完整 PPT（690▲，全窗口最高分）、创业公司 Postgres 生存指南（334▲）、SIMD 科普（299▲）、Kagi 回归（216▲）。<b>安全与标准争议集中爆发</b>：Passkeys 被批「发明者完全不懂消费者心理」以 634💬 成为评论之王；Reddit 判定纯 HTML 不安全（318▲ / 319💬）；Codeberg 相继封禁 vibe coding 与加密货币项目。<b>社会侧</b>：John C. Dvorak 逝世（625▲），「肌酸能否让人更聪明」与「美国人对 AI 数据中心说别建我家后院」反映公众情绪。</p>
 <p><b>排序方法</b>：对窗口内全部故事的分数与评论数做 min-max 归一化后加权（<span class="hl">0.6×分数 + 0.4×评论</span>），得热度 hot 并降序取 Top20（中栏）。右栏为窗口内全量约 1000 条、按同一热度排序、固定框内滚动——确保<span class="hl">零遗漏</span>。</p></div>
-          <div class="hn-col-title" style="margin-top:18px;">⚠️ 漏网高讨论</div>
-          <div class="hn-summary"><p style='margin:0;'><span class='hl'>OpenAI says its AI went rogue and launched</span>（99💬 / 75▲） · <span class='hl'>Never Enough</span>（94💬 / 208▲） · <span class='hl'>Why I am not going to buy a computer</span>（92💬 / 67▲）</p><p style='margin:6px 0 0;color:#6b6357;font-size:12px;'>「高分低讨论」之外的有效信号，均可在右栏翻到。</p></div>
-        </div>
+        <div class="col-title" style="margin-top:18px;">⚠️ 漏网高讨论</div>
+        <div class="hn-summary"><p style='margin:0;'><span class='hl'>OpenAI says its AI went rogue and launched</span>（99💬 / 75▲） · <span class='hl'>Never Enough</span>（94💬 / 208▲） · <span class='hl'>Why I am not going to buy a computer</span>（92💬 / 67▲）</p><p style='margin:6px 0 0;color:#6b6357;font-size:12px;'>「高分低讨论」之外的有效信号，均可在右栏翻到。</p></div>
       </div>
-      <div class="hn-col">
+      <div class="col-right">
         <div class="hn-col-title">🔥 算法 Top 20</div>
-        <div class="hn-top-scroll">
         <div class="hn-top-item">
           <span class="hn-rank">1</span><a href="https://news.ycombinator.com/item?id=49010345" target="_blank" rel="noopener">Terence Tao&#x27;s ChatGPT conversation about the Jacobian Conjecture counterexample</a>
           <div class="hn-top-meta">675▲ · 404💬 · hot 0.8418</div><div class="zh">陶哲轩（Terence Tao）与 ChatGPT 关于雅可比猜想反例的对话</div>
@@ -354,11 +352,8 @@ footer.site-footer a{color:var(--accent2);text-decoration:none;}
           <span class="hn-rank">20</span><a href="https://news.ycombinator.com/item?id=49015588" target="_blank" rel="noopener">Codeberg Bans Cryptocurrency Projects</a>
           <div class="hn-top-meta">153▲ · 179💬 · hot 0.2446</div><div class="zh">Codeberg 封禁加密货币项目</div>
         </div>
-        </div>
-      </div>
-      <div class="hn-col">
-        <div class="hn-col-title">🗂️ 全量（窗口内 · 滚动）</div>
-        <div class="hn-all">
+
+        <div class="hn-col-title" style="margin-top:16px;">🗂️ 全量（窗口内 · 滚动）</div>
         <div class="hn-all-row"><span class="hn-all-meta">1. 675▲/404💬</span> <a href="https://news.ycombinator.com/item?id=49010345" target="_blank" rel="noopener">Terence Tao&#x27;s ChatGPT conversation about the Jacobian Conjecture counterexample</a><div class="zh">陶哲轩（Terence Tao）与 ChatGPT 关于雅可比猜想反例的对话</div></div>
         <div class="hn-all-row"><span class="hn-all-meta">2. 464▲/634💬</span> <a href="https://news.ycombinator.com/item?id=49007374" target="_blank" rel="noopener">Passkeys were invented by engineers with zero understanding of consumer brain</a><div class="zh">Passkey 是被「完全不懂消费者心理」的工程师发明的</div></div>
         <div class="hn-all-row"><span class="hn-all-meta">3. 647▲/334💬</span> <a href="https://news.ycombinator.com/item?id=49004663" target="_blank" rel="noopener">OverpAId – Fire your CEO. Hire the future</a><div class="zh">OverpAId——炒掉你的 CEO，雇用未来</div></div>
@@ -1359,7 +1354,6 @@ footer.site-footer a{color:var(--accent2);text-decoration:none;}
         <div class="hn-all-row"><span class="hn-all-meta">998. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=49005154" target="_blank" rel="noopener">Learning from the &#x27;Voyage of the Damned&#x27;: The Making of a Russian Naval Disaster</a></div>
         <div class="hn-all-row"><span class="hn-all-meta">999. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=49005143" target="_blank" rel="noopener">The Spanish Navy&#x27;s Reserve Squadron and the Tragedy of Unpreparedness</a></div>
         <div class="hn-all-row"><span class="hn-all-meta">1000. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=49005035" target="_blank" rel="noopener">The Boring Frontier of Robotics</a></div>
-        </div>
       </div>
     </div>
   </section>
@@ -1371,7 +1365,7 @@ footer.site-footer a{color:var(--accent2);text-decoration:none;}
 <p>今日 GitHub Trending 由「<span class="hl">实时情报 + AI 基础设施</span>」双线领跑。<b>worldmonitor</b>（实时全球情报仪表盘，聚合 AI 新闻 / 地缘 / 基础设施监测，当日 <span class="hl">+4139★ 登顶</span>）与 <b>i-have-adhd</b>（给编程 Agent 的技能、防止它把答案埋没，+1699★）体现"把 AI 当成一个会犯错、需要被约束的协作者"的工具化思路。</p>
 <p>AI 编程基础设施继续高热：<b>OmniRoute</b>（多模型 AI 网关，聚合 268+ 供应商、500+ 模型，+1651★）、<b>code-review-graph</b>（本地优先代码图谱，+882★）与 <b>openship</b>（自托管部署平台，+1302★）三款直接服务 Agent 工作流，与 HN 板块的"Agent 基础设施化"信号一致。</p>
 <p>感知 / 空间智能升温：<b>RuView</b> 把普通 WiFi 信号变成实时空间智能与存在检测（零摄像头，+741★）。老牌长青项目 <b>croc</b>（安全传文件）、<b>Apollo-11</b>（阿波罗原始源码）仍在榜。</p></div>
-      <div class="gh-grid">
+      <div class="col-right"><div class="gh-grid">
         <div class="gh-card">
           <div class="gh-head">
             <a class="gh-name" href="https://github.com/koala73/worldmonitor" target="_blank" rel="noopener">koala73/worldmonitor</a>
@@ -1581,7 +1575,7 @@ footer.site-footer a{color:var(--accent2);text-decoration:none;}
             <span class="gh-total">★ 10,813</span>
           </div>
         </div>
-      </div>
+      </div></div>
     </div>
   </section>
 
@@ -1592,7 +1586,7 @@ footer.site-footer a{color:var(--accent2);text-decoration:none;}
 <p>今日 Product Hunt 8 款精选中，「<span class="hl">服务 AI Agent</span>」是主线：<b>Kastra</b>（面向 Claude/Cursor/Codex/OpenClaw 的运行时授权）、<b>box</b>（给 Agent 配完整虚拟机的简易计算机）、<b>Remote OpenClaw</b>（聚合 1.3 万+ MCP 服务器 / 技能）把 Agent 当成一个需要"权限 + 算力 + 工具箱"的新物种来服务。</p>
 <p>多模态与创作齐发：<b>Humalike x Hermes</b>（社交智能插件）、<b>Gemini 3.6 Flash 家族</b>（Flash / Flash-Lite / Flash Cyber）、<b>Buzzy</b>（AI 联合导演）覆盖对话、图像、视频创作。</p>
 <p>轻量效率向：<b>Migma AI</b>（AI 接管邮件营销）、<b>ACME.BOT</b>（"无废话"SEO Agent）、<b>MonoCloud for Startups</b>（统一身份层）瞄准具体工作流痛点。</p></div>
-      <div class="gh-grid">
+      <div class="col-right"><div class="gh-grid">
         <div class="ph-card">
           <div class="ph-top">
             <span class="ph-rank">#1</span>
@@ -1657,14 +1651,20 @@ footer.site-footer a{color:var(--accent2);text-decoration:none;}
           <div class="ph-desc">One identity layer for your customers, APIs, and agents<div class="zh">为你的客户、API 与 Agent 提供统一身份层</div></div>
           <div class="ph-topics">▲ 171 · SaaS · Developer Tools · Security</div>
         </div>
-      </div>
+      </div></div>
     </div>
   </section>
 
   <section id="papers" class="section">
     <div class="sec-title"><span class="emo">📄</span><span>Hugging Face Daily Papers</span></div>
     <div class="note">注：今日（2026-07-23）早间 Hugging Face Daily Papers 新批次尚未发布，以下为页面当前展示的最新批次（Jul 22，按热度取前 12 篇），如实呈现，未编造。</div>
-    <div class="gh-grid">
+    <div class="two-col">
+      <div class="col-summary"><div class="col-title">📝 当日综述</div>
+<p>今日（7/23 早间）Hugging Face Daily Papers 新批次尚未发布，以下为页面当前最新批次（<span class="hl">Jul 22</span>，按热度取前 12 篇），如实呈现、未编造。</p>
+<p><b>世界模型 / 视频生成</b>成为学术新热点：ABot-World-0（单张桌面 GPU 上的无限交互式世界推演）、交互式长程世界建模、Generative World Renderer（以"游戏速度"生成世界）。</p>
+<p><b>图像生成基础模型</b>崛起：Mage-Flow（高效原生分辨率图像生成与编辑）、扩散 Transformer 中文本模板 token 被揭示为隐式语义寄存器。</p>
+<p><b>可信 AI 与工程化</b>：GAMUT（开放式生成忠实度 / 完整性基准）、AgentDebugX（LLM Agent 故障可观测、归因与恢复工具包）、接地代码 Agent 平台（可编辑 LLM 数据流水线）。</p></div>
+      <div class="col-right"><div class="gh-grid">
         <div class="ph-card">
           <div class="ph-top">
             <span class="ph-rank">167▲</span>
@@ -1749,6 +1749,7 @@ footer.site-footer a{color:var(--accent2);text-decoration:none;}
           </div>
           <div class="zh">评估开放式生成的两级元量规：忠实度完整性基准 GAMUT</div>
         </div>
+      </div></div>
     </div>
   </section>
 
@@ -1775,5 +1776,18 @@ footer.site-footer a{color:var(--accent2);text-decoration:none;}
   由每日自动化任务自动生成 · 经 GitHub Pages 部署<br>
   <a href="index.html">← 返回归档</a> · <a href="#top-story">回到顶部 ↑</a>
 </footer>
+<script>
+function fitCols(){
+  document.querySelectorAll('.two-col').forEach(function(row){
+    var s = row.querySelector('.col-summary');
+    var r = row.querySelector('.col-right');
+    if(s && r){ r.style.maxHeight = s.offsetHeight + 'px'; }
+  });
+}
+fitCols();
+window.addEventListener('resize', fitCols);
+window.addEventListener('load', function(){ setTimeout(fitCols, 300); });
+if(document.fonts && document.fonts.ready){ document.fonts.ready.then(fitCols); }
+</script>
 </body>
 </html>
