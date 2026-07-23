@@ -184,19 +184,20 @@ footer.site-footer a{color:var(--accent2);text-decoration:none;}
 <style>
 .wrap{max-width:1180px;}
 .hn-window-note{font-size:12px;color:#6b6357;background:#efe7d8;border-left:3px solid #9b1b1b;padding:7px 11px;margin-bottom:16px;line-height:1.6;}
-/* 统一两栏：左 当日综述（固定宽度、完整展示不滚动）/ 右 原内容（滚动框，高度由 JS 撑为左综述高度） */
-.two-col{display:grid;grid-template-columns:1fr 2.4fr;gap:26px;align-items:stretch;}
-@media(max-width:900px){.two-col{grid-template-columns:1fr;}}
+/* 公共：综述栏 */
 .col-summary{border:1px solid #ddd2c0;padding:13px 15px;background:#efe7d8;}
 .col-title{font-family:'Playfair Display',Georgia,serif;font-size:12.5px;letter-spacing:.07em;text-transform:uppercase;color:#9b1b1b;border-bottom:2px solid #9b1b1b;padding-bottom:6px;margin-bottom:12px;}
 .col-summary p{margin:0 0 11px;font-family:'Source Serif 4',Georgia,serif;font-size:13px;line-height:1.72;color:#2a2a2a;}
 .col-summary p:last-child{margin-bottom:0;}
 .col-summary .hl{color:#9b1b1b;font-weight:600;}
-.col-right{overflow-y:auto;scrollbar-width:thin;border:1px solid #ddd2c0;background:#efe7d8;padding:10px 13px;}
-.col-right::-webkit-scrollbar{width:8px;}
-.col-right::-webkit-scrollbar-thumb{background:#c9bca6;border-radius:4px;}
-.col-right .zh{font-size:10.5px;color:#8a8175;}
-/* HN 右栏内子标题与列表（沿用原样式） */
+/* 公共：滚动内容栏（高度由 JS 设为左侧综述高度） */
+.col-mid,.col-right{overflow-y:auto;scrollbar-width:thin;border:1px solid #ddd2c0;background:#efe7d8;padding:10px 13px;}
+.col-mid::-webkit-scrollbar,.col-right::-webkit-scrollbar{width:8px;}
+.col-mid::-webkit-scrollbar-thumb,.col-right::-webkit-scrollbar-thumb{background:#c9bca6;border-radius:4px;}
+.col-mid .zh,.col-right .zh{font-size:10.5px;color:#8a8175;}
+/* HN 三栏：左综述 / 中 Top20 / 右全量 */
+.hn-three{display:grid;grid-template-columns:1fr 1.55fr 1.15fr;gap:18px;align-items:stretch;}
+@media(max-width:1000px){.hn-three{grid-template-columns:1fr;}}
 .hn-col-title{font-family:'Playfair Display',Georgia,serif;font-size:12.5px;letter-spacing:.07em;text-transform:uppercase;color:#9b1b1b;border-bottom:2px solid #9b1b1b;padding-bottom:6px;margin-bottom:12px;}
 .hn-top-item{padding:8px 0;border-bottom:1px solid #ddd2c0;}
 .hn-top-item a{font-family:'Source Serif 4',Georgia,serif;font-size:13px;color:#1a1a1a;text-decoration:none;font-weight:600;line-height:1.35;}
@@ -207,14 +208,9 @@ footer.site-footer a{color:var(--accent2);text-decoration:none;}
 .hn-all-row a{color:#1a3a5c;text-decoration:none;}
 .hn-all-row a:hover{text-decoration:underline;}
 .hn-all-meta{color:#9b1b1b;font-weight:600;font-size:10.5px;margin-right:4px;}
-/* 两栏：左侧当日综述 + 右侧原内容（GitHub / Product Hunt） */
+/* 两栏：左侧当日综述 + 右侧原内容（GitHub / Product Hunt / Papers） */
 .two-col{display:grid;grid-template-columns:1fr 2.4fr;gap:26px;align-items:stretch;}
 @media(max-width:900px){.two-col{grid-template-columns:1fr;}}
-.col-summary{border:1px solid #ddd2c0;padding:13px 15px;background:#efe7d8;align-self:stretch;}
-.col-summary .col-title{font-family:'Playfair Display',Georgia,serif;font-size:12.5px;letter-spacing:.07em;text-transform:uppercase;color:#9b1b1b;border-bottom:2px solid #9b1b1b;padding-bottom:6px;margin-bottom:12px;}
-.col-summary p{margin:0 0 11px;font-family:'Source Serif 4',Georgia,serif;font-size:13px;line-height:1.72;color:#2a2a2a;}
-.col-summary p:last-child{margin-bottom:0;}
-.col-summary .hl{color:#9b1b1b;font-weight:600;}
 </style>
 </head>
 <body>
@@ -260,8 +256,8 @@ footer.site-footer a{color:var(--accent2);text-decoration:none;}
 
   <section id="hn" class="section">
     <div class="sec-title"><span class="emo">📰</span><span>Hacker News · 全窗口热门</span></div>
-    <div class="hn-window-note">时间窗：2026-07-22 10:00 → 2026-07-23 10:00 (CST) · 窗口内共 <b>1000</b> 条新帖 · 排序：分数与评论 min-max 归一化后加权（0.6×分数 + 0.4×评论），降序取 Top20（右栏上）；下为窗口内全量、在右栏滚动浏览。左栏「当日综述」完整展示、不滚动。</div>
-    <div class="two-col">
+    <div class="hn-window-note">时间窗：2026-07-22 10:00 → 2026-07-23 10:00 (CST) · 窗口内共 <b>1000</b> 条新帖 · 排序：分数与评论 min-max 归一化后加权（0.6×分数 + 0.4×评论），降序取 Top20（中栏）。右栏为窗口内全量，滚动浏览。左栏「当日综述」完整展示、不滚动；中/右栏高度与左栏对齐。</div>
+    <div class="hn-three">
       <div class="col-summary">
         <div class="col-title">📝 当日综述</div>
         <div class="hn-summary"><p>本窗口（<span class="hl">7/22 10:00 → 7/23 10:00 CST</span>）Hacker News 共约 <span class="hl">1000 条</span>新帖。<b>AI 仍是绝对主轴</b>：数学泰斗陶哲轩与 ChatGPT 关于雅可比猜想反例的对话以 675▲ / 404💬 登顶；「AI 实验室是否在搞 Pelicanmaxxing（囤积模型）」引发 417▲ 热议；GigaToken 宣称分词提速约千倍（399▲）。</p>
@@ -270,7 +266,7 @@ footer.site-footer a{color:var(--accent2);text-decoration:none;}
         <div class="col-title" style="margin-top:18px;">⚠️ 漏网高讨论</div>
         <div class="hn-summary"><p style='margin:0;'><span class='hl'>OpenAI says its AI went rogue and launched</span>（99💬 / 75▲） · <span class='hl'>Never Enough</span>（94💬 / 208▲） · <span class='hl'>Why I am not going to buy a computer</span>（92💬 / 67▲）</p><p style='margin:6px 0 0;color:#6b6357;font-size:12px;'>「高分低讨论」之外的有效信号，均可在右栏翻到。</p></div>
       </div>
-      <div class="col-right">
+      <div class="col-mid">
         <div class="hn-col-title">🔥 算法 Top 20</div>
         <div class="hn-top-item">
           <span class="hn-rank">1</span><a href="https://news.ycombinator.com/item?id=49010345" target="_blank" rel="noopener">Terence Tao&#x27;s ChatGPT conversation about the Jacobian Conjecture counterexample</a>
@@ -352,8 +348,9 @@ footer.site-footer a{color:var(--accent2);text-decoration:none;}
           <span class="hn-rank">20</span><a href="https://news.ycombinator.com/item?id=49015588" target="_blank" rel="noopener">Codeberg Bans Cryptocurrency Projects</a>
           <div class="hn-top-meta">153▲ · 179💬 · hot 0.2446</div><div class="zh">Codeberg 封禁加密货币项目</div>
         </div>
-
-        <div class="hn-col-title" style="margin-top:16px;">🗂️ 全量（窗口内 · 滚动）</div>
+      </div>
+      <div class="col-right">
+        <div class="hn-col-title">🗂️ 全量（窗口内 · 滚动）</div>
         <div class="hn-all-row"><span class="hn-all-meta">1. 675▲/404💬</span> <a href="https://news.ycombinator.com/item?id=49010345" target="_blank" rel="noopener">Terence Tao&#x27;s ChatGPT conversation about the Jacobian Conjecture counterexample</a><div class="zh">陶哲轩（Terence Tao）与 ChatGPT 关于雅可比猜想反例的对话</div></div>
         <div class="hn-all-row"><span class="hn-all-meta">2. 464▲/634💬</span> <a href="https://news.ycombinator.com/item?id=49007374" target="_blank" rel="noopener">Passkeys were invented by engineers with zero understanding of consumer brain</a><div class="zh">Passkey 是被「完全不懂消费者心理」的工程师发明的</div></div>
         <div class="hn-all-row"><span class="hn-all-meta">3. 647▲/334💬</span> <a href="https://news.ycombinator.com/item?id=49004663" target="_blank" rel="noopener">OverpAId – Fire your CEO. Hire the future</a><div class="zh">OverpAId——炒掉你的 CEO，雇用未来</div></div>
@@ -1777,12 +1774,23 @@ footer.site-footer a{color:var(--accent2);text-decoration:none;}
   <a href="index.html">← 返回归档</a> · <a href="#top-story">回到顶部 ↑</a>
 </footer>
 <script>
+function fitTwoCol(row){
+  var s = row.querySelector('.col-summary');
+  var r = row.querySelector('.col-right');
+  if(s && r){ r.style.maxHeight = s.offsetHeight + 'px'; }
+}
+function fitThreeCol(row){
+  var s = row.querySelector('.col-summary');
+  if(!s) return;
+  var m = row.querySelector('.col-mid');
+  var r = row.querySelector('.col-right');
+  var h = s.offsetHeight + 'px';
+  if(m){ m.style.maxHeight = h; }
+  if(r){ r.style.maxHeight = h; }
+}
 function fitCols(){
-  document.querySelectorAll('.two-col').forEach(function(row){
-    var s = row.querySelector('.col-summary');
-    var r = row.querySelector('.col-right');
-    if(s && r){ r.style.maxHeight = s.offsetHeight + 'px'; }
-  });
+  document.querySelectorAll('.two-col').forEach(fitTwoCol);
+  document.querySelectorAll('.hn-three').forEach(fitThreeCol);
 }
 fitCols();
 window.addEventListener('resize', fitCols);
