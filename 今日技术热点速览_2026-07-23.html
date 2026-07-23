@@ -206,6 +206,14 @@ footer.site-footer a{color:var(--accent2);text-decoration:none;}
 .hn-left-scroll,.hn-top-scroll{height:640px;overflow-y:auto;border:1px solid #ddd2c0;padding:10px 13px;background:#efe7d8;scrollbar-width:thin;}
 .hn-left-scroll::-webkit-scrollbar,.hn-top-scroll::-webkit-scrollbar{width:8px;}
 .hn-left-scroll::-webkit-scrollbar-thumb,.hn-top-scroll::-webkit-scrollbar-thumb{background:#c9bca6;border-radius:4px;}
+/* 两栏：左侧当日综述 + 右侧原内容（GitHub / Product Hunt） */
+.two-col{display:grid;grid-template-columns:1fr 2.4fr;gap:26px;align-items:stretch;}
+@media(max-width:900px){.two-col{grid-template-columns:1fr;}}
+.col-summary{border:1px solid #ddd2c0;padding:13px 15px;background:#efe7d8;align-self:stretch;}
+.col-summary .col-title{font-family:'Playfair Display',Georgia,serif;font-size:12.5px;letter-spacing:.07em;text-transform:uppercase;color:#9b1b1b;border-bottom:2px solid #9b1b1b;padding-bottom:6px;margin-bottom:12px;}
+.col-summary p{margin:0 0 11px;font-family:'Source Serif 4',Georgia,serif;font-size:13px;line-height:1.72;color:#2a2a2a;}
+.col-summary p:last-child{margin-bottom:0;}
+.col-summary .hl{color:#9b1b1b;font-weight:600;}
 </style>
 </head>
 <body>
@@ -1358,7 +1366,12 @@ footer.site-footer a{color:var(--accent2);text-decoration:none;}
 
   <section id="github" class="section">
     <div class="sec-title"><span class="emo">⭐</span><span>GitHub Trending · 当日热门（按 star 增量排序）</span></div>
-    <div class="gh-grid">
+    <div class="two-col">
+      <div class="col-summary"><div class="col-title">📝 当日综述</div>
+<p>今日 GitHub Trending 由「<span class="hl">实时情报 + AI 基础设施</span>」双线领跑。<b>worldmonitor</b>（实时全球情报仪表盘，聚合 AI 新闻 / 地缘 / 基础设施监测，当日 <span class="hl">+4139★ 登顶</span>）与 <b>i-have-adhd</b>（给编程 Agent 的技能、防止它把答案埋没，+1699★）体现"把 AI 当成一个会犯错、需要被约束的协作者"的工具化思路。</p>
+<p>AI 编程基础设施继续高热：<b>OmniRoute</b>（多模型 AI 网关，聚合 268+ 供应商、500+ 模型，+1651★）、<b>code-review-graph</b>（本地优先代码图谱，+882★）与 <b>openship</b>（自托管部署平台，+1302★）三款直接服务 Agent 工作流，与 HN 板块的"Agent 基础设施化"信号一致。</p>
+<p>感知 / 空间智能升温：<b>RuView</b> 把普通 WiFi 信号变成实时空间智能与存在检测（零摄像头，+741★）。老牌长青项目 <b>croc</b>（安全传文件）、<b>Apollo-11</b>（阿波罗原始源码）仍在榜。</p></div>
+      <div class="gh-grid">
         <div class="gh-card">
           <div class="gh-head">
             <a class="gh-name" href="https://github.com/koala73/worldmonitor" target="_blank" rel="noopener">koala73/worldmonitor</a>
@@ -1568,12 +1581,18 @@ footer.site-footer a{color:var(--accent2);text-decoration:none;}
             <span class="gh-total">★ 10,813</span>
           </div>
         </div>
+      </div>
     </div>
   </section>
 
   <section id="producthunt" class="section">
     <div class="sec-title"><span class="emo">🚀</span><span>Product Hunt · 今日精选发布</span></div>
-    <div class="gh-grid">
+    <div class="two-col">
+      <div class="col-summary"><div class="col-title">📝 当日综述</div>
+<p>今日 Product Hunt 8 款精选中，「<span class="hl">服务 AI Agent</span>」是主线：<b>Kastra</b>（面向 Claude/Cursor/Codex/OpenClaw 的运行时授权）、<b>box</b>（给 Agent 配完整虚拟机的简易计算机）、<b>Remote OpenClaw</b>（聚合 1.3 万+ MCP 服务器 / 技能）把 Agent 当成一个需要"权限 + 算力 + 工具箱"的新物种来服务。</p>
+<p>多模态与创作齐发：<b>Humalike x Hermes</b>（社交智能插件）、<b>Gemini 3.6 Flash 家族</b>（Flash / Flash-Lite / Flash Cyber）、<b>Buzzy</b>（AI 联合导演）覆盖对话、图像、视频创作。</p>
+<p>轻量效率向：<b>Migma AI</b>（AI 接管邮件营销）、<b>ACME.BOT</b>（"无废话"SEO Agent）、<b>MonoCloud for Startups</b>（统一身份层）瞄准具体工作流痛点。</p></div>
+      <div class="gh-grid">
         <div class="ph-card">
           <div class="ph-top">
             <span class="ph-rank">#1</span>
@@ -1638,6 +1657,7 @@ footer.site-footer a{color:var(--accent2);text-decoration:none;}
           <div class="ph-desc">One identity layer for your customers, APIs, and agents<div class="zh">为你的客户、API 与 Agent 提供统一身份层</div></div>
           <div class="ph-topics">▲ 171 · SaaS · Developer Tools · Security</div>
         </div>
+      </div>
     </div>
   </section>
 
