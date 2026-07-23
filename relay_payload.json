@@ -1,10 +1,10 @@
 {
   "date": "2026-07-23",
-  "date_label": "2026-07-23 · 星期三",
+  "date_label": "2026-07-23 · 星期四",
   "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-07-23.html",
   "summary": [
-    "Hacker News 板块为三栏：左=当日 LLM 综述（完整展示）、中=算法 Top20（滚动，高度对齐左栏）、右=窗口内全量（滚动，高度对齐左栏）。排序用分数与评论 min-max 归一化加权（0.6×分+0.4×评论）。",
-    "AI 仍是 HN 主轴：陶哲轩与 ChatGPT 谈雅可比猜想反例登顶（675▲/404💬）、GigaToken 千倍分词、AI 实验室是否「囤积模型」热议；安全争议集中——Passkeys 被批不懂消费者（634💬）、Reddit 判纯 HTML 不安全。",
-    "GitHub / Product Hunt / Papers 统一两栏：左侧「当日综述」完整展示，右侧原内容滚动且高度与左侧对齐。GitHub 由 worldmonitor（+4139★）领跑，Agent 基础设施化信号明显；HF 论文聚焦世界模型与图像生成基础模型。"
+    "AI 编程 Agent 迈向「网关化 + 上下文智能」：OmniRoute 聚合 278+ 供应商单日 +1,651 星、code-review-graph 本地代码图谱 +882、i-have-adhd 输出规约 +1,699，GigaToken 分词提速 1000×。",
+    "单文件 / 本地优先 / 隐私觉醒共振：Bento 把整个 PPT 装进一个 HTML 文件（768 赞）、RuView 用 WiFi 信号做空间智能无需摄像头（+741）、Cactus Hybrid 端侧 Gemma 4 学会知错。",
+    "AI 可信度与前沿评测成焦点：陶哲轩用 ChatGPT 探讨雅可比猜想反例登顶 HN（790 分）、pelicanmaxxing 追问实验室刷榜，HF 论文聚焦 DeepSeek-V4 全参后训练与原生长视频外推。"
   ]
 }
