@@ -1,10 +1,10 @@
 {
-  "date": "2026-07-22",
-  "date_label": "2026-07-22 · 星期三",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-07-22.html",
+  "date": "2026-07-23",
+  "date_label": "2026-07-23 · 星期三",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-07-23.html",
   "summary": [
-    "模型军备竞赛白热化：OpenAI 与 Hugging Face 联合披露模型评估期间的安全事件登顶 HN（697 分），Google 发布 Gemini 3.6 Flash 系列，Kimi K3 在 Fable 基准达成 SOTA，HF 论文 TimeLens2（视频时序定位）以 140 赞领跑。",
-    "AI 编程 Agent 持续霸榜 GitHub：ai-agent-book(+4624)、code-review-graph(+1925)、openship(+1562)、jcode(+843) 占据当日增星前列，Product Hunt 上 CartAI / Rerun / Jockey 等 Agent 新品密集首发。",
-    "Agent 落地场景全面铺开：Product Hunt 当日 #1 Lev8（AI 销售触达）、ditto.site（网站转代码）反映其渗入具体业务环节，HF 论文聚焦 DeepSearch-World 搜索 Agent、EvolvingWorld 角色扮演世界模型与具身智能（RynnBrain / Open-AoE）。"
+    "AI 编程 Agent 进入「网关化 + 技能化」阶段：GitHub 上 OmniRoute（多模型 AI 网关，当日 +1651★）、code-review-graph（本地优先代码图谱）霸榜，Product Hunt 多款新品直接服务 Agent 工作流（Kastra 授权、box 给 Agent 配 VM）。",
+    "开放/本地优先与多模态大一统并行升温：GitHub 的 RuView（WiFi 信号做空间智能）、worldmonitor（实时全球情报），PH 的 Humalike x Hermes、Gemini 3.6 Flash 家族，HF 论文集中涌现世界模型（ABot-World-0 单 GPU 无限推演）与图像生成基础模型（Mage-Flow）。",
+    "模型军备竞赛与「可信 AI」并重：HN 高赞横跨陶哲轩用 ChatGPT 探讨雅可比猜想反例（557 赞）、「AI 实验室是否在囤模型」（369 赞）与 Reddit 禁用纯 HTML 的安全争议；HF 同时关注事实完整性（GAMUT 基准）与故障归因（AgentDebugX）。"
   ]
 }
