@@ -3,8 +3,8 @@
   "date_label": "2026-07-23 · 星期三",
   "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-07-23.html",
   "summary": [
-    "【试验版】Hacker News 板块重做为三栏：左=当日 LLM 综述、中=算法 Top20、右=固定框内可滚动全量（昨10→今10 CST 共1000条，零遗漏兜底）。排序用分数与评论 min-max 归一化加权（0.6×分+0.4×评论）。",
+    "Hacker News 板块为三栏：左=当日 LLM 综述（完整展示）、中=算法 Top20（滚动，高度对齐左栏）、右=窗口内全量（滚动，高度对齐左栏）。排序用分数与评论 min-max 归一化加权（0.6×分+0.4×评论）。",
     "AI 仍是 HN 主轴：陶哲轩与 ChatGPT 谈雅可比猜想反例登顶（675▲/404💬）、GigaToken 千倍分词、AI 实验室是否「囤积模型」热议；安全争议集中——Passkeys 被批不懂消费者（634💬）、Reddit 判纯 HTML 不安全。",
-    "GitHub 的 OmniRoute（多模型网关 +1651★）、code-review-graph 霸榜；Product Hunt 多款服务 Agent 工作流（Kastra/box/Remote OpenClaw）；HF 论文聚焦世界模型与图像生成基础模型。"
+    "GitHub / Product Hunt / Papers 统一两栏：左侧「当日综述」完整展示，右侧原内容滚动且高度与左侧对齐。GitHub 由 worldmonitor（+4139★）领跑，Agent 基础设施化信号明显；HF 论文聚焦世界模型与图像生成基础模型。"
   ]
 }
