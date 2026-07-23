@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今日技术热点速览 · 2026-07-23 · 星期四</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Serif+SC:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f4ede0; --paper2:#efe7d8; --ink:#1a1a1a; --ink2:#333;
+  --muted:#6b6357; --rule:#2b2b2b; --rule-light:#c9bfa9;
+  --accent:#9b1b1b; --accent2:#1a3a5c; --highlight:#e8e0d0;
+  --green:#2d6a2d; --orange:#8a5a00;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:'Source Serif 4','Noto Serif SC',Georgia,'Times New Roman',serif;
+  line-height:1.65;font-size:15.5px;
+  background-image:radial-gradient(ellipse at top,rgba(0,0,0,.02),transparent 60%);
+}
+a{color:var(--accent2);}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px 50px;}
+.zh{color:var(--muted);font-size:12.5px;font-weight:400;line-height:1.45;margin-top:3px;font-style:italic;}
+.gh-desc .zh{font-size:11.5px;margin-top:2px;}
+.section,.hero{scroll-margin-top:64px;}
+
+/* Masthead header */
+header.site-header{
+  padding:36px 24px 20px;text-align:center;
+  border-bottom:3px double var(--rule);
+  background:var(--paper);
+}
+.back-link{
+  display:inline-block;font-size:12px;color:var(--muted);
+  text-decoration:none;margin-bottom:10px;letter-spacing:.03em;
+  transition:color .15s ease;
+}
+.back-link:hover{color:var(--accent);}
+header.site-header .kicker{
+  font-size:11px;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:4px;
+}
+header.site-header h1{
+  margin:0 0 6px;font-size:32px;letter-spacing:-.01em;
+  font-family:'Playfair Display','Noto Serif SC',Georgia,serif;
+  font-weight:900;color:var(--ink);
+}
+header.site-header .date{color:var(--accent);font-weight:700;font-size:14px;letter-spacing:.05em;}
+header.site-header .sub{color:var(--muted);font-size:12px;margin-top:6px;font-style:italic;}
+
+/* Quick nav */
+.quick-nav{
+  position:sticky;top:0;z-index:100;display:flex;flex-wrap:wrap;
+  gap:6px;justify-content:center;padding:10px 0;
+  margin:0 0 28px;background:rgba(244,237,224,.92);
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--rule-light);
+}
+.quick-nav a{
+  font-size:12px;font-weight:600;color:var(--ink2);
+  text-decoration:none;padding:4px 11px;
+  border:1px solid var(--rule-light);background:var(--paper2);
+  white-space:nowrap;transition:all .15s ease;
+  font-family:'Source Serif 4',Georgia,serif;letter-spacing:.02em;
+}
+.quick-nav a:hover{color:var(--accent);border-color:var(--accent);background:var(--highlight);}
+
+/* Section title */
+.sec-title{
+  display:flex;align-items:center;gap:10px;margin:36px 0 16px;font-size:20px;
+  border-bottom:2px solid var(--rule);padding-bottom:8px;
+  font-family:'Playfair Display','Noto Serif SC',Georgia,serif;font-weight:800;
+}
+.sec-title .emo{font-size:18px;}
+.sec-title .bar{display:none;}
+
+/* Hero cards */
+.hero-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;}
+.hero-card{
+  display:block;text-decoration:none;color:var(--ink);
+  background:var(--paper2);border:1px solid var(--rule-light);
+  border-radius:2px;padding:16px 16px 14px;transition:all .18s ease;
+  position:relative;
+}
+.hero-card::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent);
+}
+.hero-card:hover{border-color:var(--ink);transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.1);}
+.hero-meta{color:var(--green);font-size:12px;font-weight:700;letter-spacing:.03em;}
+.hero-title{font-size:16px;font-weight:800;margin:6px 0 4px;font-family:'Playfair Display','Noto Serif SC',Georgia,serif;}
+
+/* Tables (HN / Papers) */
+.hn-table{
+  width:100%;border-collapse:collapse;
+  background:var(--paper2);border:2px solid var(--rule);
+}
+.hn-table th{
+  text-align:left;font-size:11px;color:var(--ink);font-weight:800;
+  padding:10px 12px;background:var(--highlight);
+  border-bottom:2px solid var(--rule);
+  text-transform:uppercase;letter-spacing:.08em;
+}
+.hn-table td{padding:11px 12px;border-bottom:1px solid var(--rule-light);vertical-align:top;}
+.hn-table tr:last-child td{border-bottom:none;}
+.hn-table .rank{
+  color:var(--accent);font-weight:900;width:34px;text-align:center;
+  font-family:'Playfair Display',Georgia,serif;font-size:16px;
+}
+.hn-table .hn-title a{color:var(--ink);font-weight:700;text-decoration:none;font-size:14.5px;}
+.hn-table .hn-title a:hover{color:var(--accent);text-decoration:underline;}
+.hn-table .hn-score{color:var(--orange);font-weight:800;white-space:nowrap;width:74px;font-variant-numeric:tabular-nums;}
+.hn-table .hn-comments{color:var(--muted);white-space:nowrap;width:64px;font-variant-numeric:tabular-nums;}
+.tag{
+  display:inline-block;font-size:10.5px;color:var(--accent2);
+  background:transparent;border:1px solid var(--accent2);
+  padding:1px 7px;border-radius:0;white-space:nowrap;
+  text-transform:uppercase;letter-spacing:.05em;
+}
+
+/* GitHub / PH grid */
+.gh-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:13px;}
+.gh-card,.ph-card{
+  background:var(--paper2);border:1px solid var(--rule-light);
+  border-radius:2px;padding:14px 15px;transition:all .18s ease;
+}
+.gh-card:hover,.ph-card:hover{border-color:var(--ink);box-shadow:0 4px 14px rgba(0,0,0,.08);}
+.gh-head,.ph-top{display:flex;align-items:center;gap:8px;margin-bottom:7px;}
+.gh-name{
+  font-weight:800;color:var(--ink);text-decoration:none;font-size:14.5px;
+  font-family:Georgia,serif;
+}
+.gh-name:hover{color:var(--accent);}
+.gh-lang{
+  margin-left:auto;font-size:10.5px;color:var(--muted);
+  background:transparent;border:1px solid var(--rule-light);
+  padding:1px 7px;border-radius:0;text-transform:uppercase;letter-spacing:.05em;
+}
+.gh-desc,.ph-desc{font-size:13px;color:var(--ink2);line-height:1.55;}
+.gh-meta{display:flex;gap:14px;margin-top:9px;font-size:12px;font-variant-numeric:tabular-nums;}
+.gh-today{color:var(--green);font-weight:800;}
+.gh-total{color:var(--orange);font-weight:700;}
+.ph-rank{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:26px;height:26px;border-radius:50%;background:var(--accent);
+  color:var(--paper);font-size:12px;font-weight:900;
+  font-family:'Playfair Display',Georgia,serif;
+}
+.ph-name{font-size:16px;font-weight:900;color:var(--ink);text-decoration:none;font-family:'Playfair Display','Noto Serif SC',Georgia,serif;}
+.ph-name:hover{color:var(--accent);}
+.ph-up{color:var(--green);font-weight:800;}
+.ph-topics{color:var(--muted);font-size:11px;}
+
+/* Insights */
+.insight{
+  background:var(--paper2);border:1px solid var(--rule-light);
+  border-left:4px solid var(--accent);border-radius:0;
+  padding:16px 18px;margin-bottom:14px;
+}
+.insight-head{display:flex;align-items:center;gap:9px;margin-bottom:6px;}
+.insight-dot{width:9px;height:9px;border-radius:50%;background:var(--accent);}
+.insight-head h3{margin:0;font-size:16px;font-family:'Playfair Display','Noto Serif SC',Georgia,serif;font-weight:800;}
+.insight-src{
+  margin-left:auto;font-size:10.5px;color:var(--muted);
+  border:1px solid var(--rule-light);padding:2px 8px;border-radius:0;
+  text-transform:uppercase;letter-spacing:.05em;
+}
+.insight p{margin:4px 0 0;color:var(--ink2);font-size:13.5px;}
+
+/* Footer */
+footer.site-footer{
+  margin-top:40px;padding:22px 24px;text-align:center;
+  border-top:3px double var(--rule);color:var(--muted);
+  font-size:12px;line-height:1.7;font-style:italic;
+}
+footer.site-footer a{color:var(--accent2);text-decoration:none;}
+.note{
+  font-size:12px;color:var(--muted);background:var(--paper2);
+  border:1px solid var(--rule-light);border-radius:0;
+  padding:10px 13px;margin:0 0 14px;font-style:italic;
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a class="back-link" href="index.html">← 返回归档</a>
+  <div class="kicker">The Tech Dispatch</div>
+  <h1>🔥 今日技术热点速览</h1>
+  <div class="date">2026-07-23 · 星期四</div>
+  <div class="sub">数据来源：Hacker News · GitHub Trending · Product Hunt · Hugging Face Papers</div>
+</header>
+
+<nav class="quick-nav">
+  <a href="#top-story">🔥 今日头条</a>
+  <a href="#hn">📰 Hacker News</a>
+  <a href="#github">⭐ GitHub</a>
+  <a href="#producthunt">🚀 Product Hunt</a>
+  <a href="#papers">📄 Papers</a>
+  <a href="#insights">💡 趋势洞察</a>
+</nav>
+
+<div class="wrap">
+
+  <section id="top-story" class="hero">
+    <div class="sec-title"><span class="emo">🔥</span><span>今日头条 · Top 3</span></div>
+    <div class="hero-grid">
+      <a class="hero-card" href="https://news.ycombinator.com/item?id=49008211" target="_blank" rel="noopener">
+        <div class="hero-meta">627▲ · 147 评 · Show HN</div>
+        <div class="hero-title">Show HN: Bento - An entire PowerPoint in one HTML file</div>
+        <div class="zh">展示：Bento——单个 HTML 文件搞定整套 PPT（编辑+演示+数据+协作）</div>
+      </a>
+      <a class="hero-card" href="https://news.ycombinator.com/item?id=49010345" target="_blank" rel="noopener">
+        <div class="hero-meta">557▲ · 354 评 · AI × 数学</div>
+        <div class="hero-title">Terrence Tao&#x27;s ChatGPT Conversation about the Jacobian Conjecture Counterexample</div>
+        <div class="zh">陶哲轩与 ChatGPT 探讨雅可比猜想反例的对话</div>
+      </a>
+      <a class="hero-card" href="https://github.com/marcelroed/gigatoken/" target="_blank" rel="noopener">
+        <div class="hero-meta">343▲ · 67 评 · AI 基础设施</div>
+        <div class="hero-title">GigaToken: ~1000x faster Language model tokenization</div>
+        <div class="zh">GigaToken：让语言模型分词速度提升约 1000 倍</div>
+      </a>
+    </div>
+  </section>
+
+  <section id="hn" class="section">
+    <div class="sec-title"><span class="emo">📰</span><span>Hacker News · 今日热门 Top 20</span></div>
+    <table class="hn-table">
+      <thead><tr><th>#</th><th>标题</th><th>分数</th><th>评论</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="rank">1</td>
+          <td class="hn-title"><a href="https://news.ycombinator.com/" target="_blank" rel="noopener">Quality non-fiction books are the antithesis of AI slop</a><div class="zh">优质非虚构书籍，是「AI 废话」的对立面</div></td>
+          <td class="hn-score">116▲</td>
+          <td class="hn-comments">68💬</td>
+        </tr>
+        <tr>
+          <td class="rank">2</td>
+          <td class="hn-title"><a href="https://news.ycombinator.com/" target="_blank" rel="noopener">Medici family mystery may be solved after more than 400 years</a><div class="zh">美第奇家族四百年谜团，或已破解</div></td>
+          <td class="hn-score">69▲</td>
+          <td class="hn-comments">12💬</td>
+        </tr>
+        <tr>
+          <td class="rank">3</td>
+          <td class="hn-title"><a href="https://news.ycombinator.com/" target="_blank" rel="noopener">GigaToken: ~1000x faster Language model tokenization</a><div class="zh">GigaToken：让语言模型分词速度提升约 1000 倍</div></td>
+          <td class="hn-score">343▲</td>
+          <td class="hn-comments">67💬</td>
+        </tr>
+        <tr>
+          <td class="rank">4</td>
+          <td class="hn-title"><a href="https://news.ycombinator.com/" target="_blank" rel="noopener">Show HN: Bento - An entire PowerPoint in one HTML file (edit+view+data+collab)</a><div class="zh">展示：Bento——单个 HTML 文件搞定整套 PPT（编辑+演示+数据+协作）</div></td>
+          <td class="hn-score">627▲</td>
+          <td class="hn-comments">147💬</td>
+        </tr>
+        <tr>
+          <td class="rank">5</td>
+          <td class="hn-title"><a href="https://news.ycombinator.com/" target="_blank" rel="noopener">Are AI Labs Pelicanmaxxing?</a><div class="zh">AI 实验室都在「信天翁式」囤模型吗？</div></td>
+          <td class="hn-score">369▲</td>
+          <td class="hn-comments">146💬</td>
+        </tr>
+        <tr>
+          <td class="rank">6</td>
+          <td class="hn-title"><a href="https://news.ycombinator.com/" target="_blank" rel="noopener">Terrence Tao&#x27;s ChatGPT Conversation about the Jacobian Conjecture Counterexample</a><div class="zh">陶哲轩与 ChatGPT 探讨雅可比猜想反例的对话</div></td>
+          <td class="hn-score">557▲</td>
+          <td class="hn-comments">354💬</td>
+        </tr>
+        <tr>
+          <td class="rank">7</td>
+          <td class="hn-title"><a href="https://news.ycombinator.com/" target="_blank" rel="noopener">Malleable Computing, Emacs, and You</a><div class="zh">可塑计算、Emacs 与你</div></td>
+          <td class="hn-score">64▲</td>
+          <td class="hn-comments">13💬</td>
+        </tr>
+        <tr>
+          <td class="rank">8</td>
+          <td class="hn-title"><a href="https://news.ycombinator.com/" target="_blank" rel="noopener">Everyone Should Know SIMD</a><div class="zh">每个人都该懂 SIMD（单指令多数据）</div></td>
+          <td class="hn-score">232▲</td>
+          <td class="hn-comments">69💬</td>
+        </tr>
+        <tr>
+          <td class="rank">9</td>
+          <td class="hn-title"><a href="https://news.ycombinator.com/" target="_blank" rel="noopener">Show HN: Cactus Hybrid: We taught Gemma 4 to know when it&#x27;s wrong</a><div class="zh">展示：Cactus Hybrid——我们让 Gemma 4 学会「知道自己何时出错」</div></td>
+          <td class="hn-score">55▲</td>
+          <td class="hn-comments">7💬</td>
+        </tr>
+        <tr>
+          <td class="rank">10</td>
+          <td class="hn-title"><a href="https://news.ycombinator.com/" target="_blank" rel="noopener">John C. Dvorak has died</a><div class="zh">科技评论家 John C. Dvorak 逝世</div></td>
+          <td class="hn-score">502▲</td>
+          <td class="hn-comments">165💬</td>
+        </tr>
+        <tr>
+          <td class="rank">11</td>
+          <td class="hn-title"><a href="https://news.ycombinator.com/" target="_blank" rel="noopener">Safari Technology Preview 248 Released</a><div class="zh">Safari 技术预览版 248 发布</div></td>
+          <td class="hn-score">67▲</td>
+          <td class="hn-comments">33💬</td>
+        </tr>
+        <tr>
+          <td class="rank">12</td>
+          <td class="hn-title"><a href="https://news.ycombinator.com/" target="_blank" rel="noopener">Fairphone 6 wide camera experimental Linux support</a><div class="zh">Fairphone 6 广角摄像头实验性 Linux 支持</div></td>
+          <td class="hn-score">61▲</td>
+          <td class="hn-comments">2💬</td>
+        </tr>
+        <tr>
+          <td class="rank">13</td>
+          <td class="hn-title"><a href="https://news.ycombinator.com/" target="_blank" rel="noopener">Any text-to-SQL benchmark should address difficulties of real-world data stores</a><div class="zh">任何 text-to-SQL 基准都必须直面真实数据仓库的难题</div></td>
+          <td class="hn-score">29▲</td>
+          <td class="hn-comments">6💬</td>
+        </tr>
+        <tr>
+          <td class="rank">14</td>
+          <td class="hn-title"><a href="https://news.ycombinator.com/" target="_blank" rel="noopener">Nobody knows what a used GPU cluster is worth</a><div class="zh">没人说得清二手 GPU 集群到底值多少钱</div></td>
+          <td class="hn-score">159▲</td>
+          <td class="hn-comments">145💬</td>
+        </tr>
+        <tr>
+          <td class="rank">15</td>
+          <td class="hn-title"><a href="https://news.ycombinator.com/" target="_blank" rel="noopener">Clarity didn&#x27;t work, trying mysterianism</a><div class="zh">清晰化行不通，转而尝试「神秘主义」</div></td>
+          <td class="hn-score">17▲</td>
+          <td class="hn-comments">3💬</td>
+        </tr>
+        <tr>
+          <td class="rank">16</td>
+          <td class="hn-title"><a href="https://news.ycombinator.com/" target="_blank" rel="noopener">Making</a><div class="zh">制造（AI 生成内容背后的「制作」）</div></td>
+          <td class="hn-score">264▲</td>
+          <td class="hn-comments">108💬</td>
+        </tr>
+        <tr>
+          <td class="rank">17</td>
+          <td class="hn-title"><a href="https://news.ycombinator.com/" target="_blank" rel="noopener">The startup&#x27;s Postgres survival guide</a><div class="zh">创业公司的 Postgres 生存指南</div></td>
+          <td class="hn-score">302▲</td>
+          <td class="hn-comments">166💬</td>
+        </tr>
+        <tr>
+          <td class="rank">18</td>
+          <td class="hn-title"><a href="https://news.ycombinator.com/" target="_blank" rel="noopener">Anthropomorphism in Children&#x27;s Interactions with LLM Chatbots</a><div class="zh">儿童与 LLM 聊天机器人互动中的「拟人化」现象</div></td>
+          <td class="hn-score">14▲</td>
+          <td class="hn-comments">5💬</td>
+        </tr>
+        <tr>
+          <td class="rank">19</td>
+          <td class="hn-title"><a href="https://news.ycombinator.com/" target="_blank" rel="noopener">So Reddit has decided that plain HTML is unsafe</a><div class="zh">Reddit 认定「纯 HTML 不安全」引发争议</div></td>
+          <td class="hn-score">249▲</td>
+          <td class="hn-comments">269💬</td>
+        </tr>
+        <tr>
+          <td class="rank">20</td>
+          <td class="hn-title"><a href="https://news.ycombinator.com/" target="_blank" rel="noopener">Launch HN: Unlayer (YC W22) – Add email and document builders to your app</a><div class="zh">发布：Unlayer（YC W22）——为你的应用集成邮件与文档编辑器</div></td>
+          <td class="hn-score">45▲</td>
+          <td class="hn-comments">28💬</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="github" class="section">
+    <div class="sec-title"><span class="emo">⭐</span><span>GitHub Trending · 当日热门（按 star 增量排序）</span></div>
+    <div class="gh-grid">
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/koala73/worldmonitor" target="_blank" rel="noopener">koala73/worldmonitor</a>
+            <span class="gh-lang">TypeScript</span>
+          </div>
+          <div class="gh-desc"><div class="zh">实时全球情报仪表盘：AI 驱动的新闻聚合、地缘监测与基础设施追踪，统一态势感知界面</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 4139 今日</span>
+            <span class="gh-total">★ 69,081</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/ayghri/i-have-adhd" target="_blank" rel="noopener">ayghri/i-have-adhd</a>
+            <span class="gh-lang">Python</span>
+          </div>
+          <div class="gh-desc"><div class="zh">给编程 Agent 的技能，防止它把答案埋没；ADHD 友好的输出</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 1699 今日</span>
+            <span class="gh-total">★ 8,331</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/diegosouzapw/OmniRoute" target="_blank" rel="noopener">diegosouzapw/OmniRoute</a>
+            <span class="gh-lang">TypeScript</span>
+          </div>
+          <div class="gh-desc"><div class="zh">永不中断编码：免费 MIT 协议 AI 网关，单一端点聚合 268+ 供应商（50+ 免费）、500+ 模型，兼容 Claude Code/Codex/Cursor 等，智能配额回退、最高省 95% token</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 1651 今日</span>
+            <span class="gh-total">★ 25,376</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/oblien/openship" target="_blank" rel="noopener">oblien/openship</a>
+            <span class="gh-lang">TypeScript</span>
+          </div>
+          <div class="gh-desc"><div class="zh">自托管部署平台</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 1302 今日</span>
+            <span class="gh-total">★ 7,330</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/tirth8205/code-review-graph" target="_blank" rel="noopener">tirth8205/code-review-graph</a>
+            <span class="gh-lang">Python</span>
+          </div>
+          <div class="gh-desc"><div class="zh">本地优先的代码智能图谱（MCP/CLI）：为代码库构建持久地图，让 AI 编程工具只读关键部分，评测可显著压缩上下文</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 882 今日</span>
+            <span class="gh-total">★ 25,338</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/chrislgarry/Apollo-11" target="_blank" rel="noopener">chrislgarry/Apollo-11</a>
+            <span class="gh-lang">Assembly</span>
+          </div>
+          <div class="gh-desc"><div class="zh">阿波罗 11 号制导计算机（AGC）原始源代码（指令舱与登月舱）</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 768 今日</span>
+            <span class="gh-total">★ 70,629</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/ruvnet/RuView" target="_blank" rel="noopener">ruvnet/RuView</a>
+            <span class="gh-lang">Rust</span>
+          </div>
+          <div class="gh-desc"><div class="zh">RuView 把普通 WiFi 信号变成实时空间智能、生命体征监测与存在检测，全程无需一帧视频</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 741 今日</span>
+            <span class="gh-total">★ 83,865</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/schollz/croc" target="_blank" rel="noopener">schollz/croc</a>
+            <span class="gh-lang">Go</span>
+          </div>
+          <div class="gh-desc"><div class="zh">轻松安全地跨电脑传输文件</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 739 今日</span>
+            <span class="gh-total">★ 37,633</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/rohitg00/ai-engineering-from-scratch" target="_blank" rel="noopener">rohitg00/ai-engineering-from-scratch</a>
+            <span class="gh-lang">Python</span>
+          </div>
+          <div class="gh-desc"><div class="zh">从零学、动手建、为他人交付</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 652 今日</span>
+            <span class="gh-total">★ 42,282</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/jamiepine/voicebox" target="_blank" rel="noopener">jamiepine/voicebox</a>
+            <span class="gh-lang">TypeScript</span>
+          </div>
+          <div class="gh-desc"><div class="zh">开源 AI 语音工作室：克隆、听写、创作</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 557 今日</span>
+            <span class="gh-total">★ 45,799</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/DioxusLabs/dioxus" target="_blank" rel="noopener">DioxusLabs/dioxus</a>
+            <span class="gh-lang">Rust</span>
+          </div>
+          <div class="gh-desc"><div class="zh">面向 Web/桌面/移动端的全栈应用框架</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 420 今日</span>
+            <span class="gh-total">★ 38,027</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/dottxt-ai/outlines" target="_blank" rel="noopener">dottxt-ai/outlines</a>
+            <span class="gh-lang">Python</span>
+          </div>
+          <div class="gh-desc"><div class="zh">结构化输出（约束 LLM 生成格式）</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 364 今日</span>
+            <span class="gh-total">★ 15,110</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/hyprwm/Hyprland" target="_blank" rel="noopener">hyprwm/Hyprland</a>
+            <span class="gh-lang">C++</span>
+          </div>
+          <div class="gh-desc"><div class="zh"></div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 356 今日</span>
+            <span class="gh-total">★ 37,300</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/agegr/pi-web" target="_blank" rel="noopener">agegr/pi-web</a>
+            <span class="gh-lang">TypeScript</span>
+          </div>
+          <div class="gh-desc"><div class="zh">pi 编程 Agent 的 Web 界面</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 314 今日</span>
+            <span class="gh-total">★ 2,088</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/ComposioHQ/awesome-claude-skills" target="_blank" rel="noopener">ComposioHQ/awesome-claude-skills</a>
+            <span class="gh-lang">Python</span>
+          </div>
+          <div class="gh-desc"><div class="zh">精选 Claude Skills、资源与工具清单，用于定制 Claude 工作流</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 163 今日</span>
+            <span class="gh-total">★ 68,805</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/shiyu-coder/Kronos" target="_blank" rel="noopener">shiyu-coder/Kronos</a>
+            <span class="gh-lang">Python</span>
+          </div>
+          <div class="gh-desc"><div class="zh">Kronos：面向金融市场「语言」的基础模型</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 137 今日</span>
+            <span class="gh-total">★ 32,619</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/Pumpkin-MC/Pumpkin" target="_blank" rel="noopener">Pumpkin-MC/Pumpkin</a>
+            <span class="gh-lang">Rust</span>
+          </div>
+          <div class="gh-desc"><div class="zh">让每个人都能托管高效快速的 Minecraft 服务器</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 108 今日</span>
+            <span class="gh-total">★ 8,439</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/likec4/likec4" target="_blank" rel="noopener">likec4/likec4</a>
+            <span class="gh-lang">TypeScript</span>
+          </div>
+          <div class="gh-desc"><div class="zh">用始终与代码同步的实时架构图来可视化、协作与演进软件架构</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 80 今日</span>
+            <span class="gh-total">★ 4,296</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/dreamhunter2333/cloudflare_temp_email" target="_blank" rel="noopener">dreamhunter2333/cloudflare_temp_email</a>
+            <span class="gh-lang">TypeScript</span>
+          </div>
+          <div class="gh-desc"><div class="zh">基于 Cloudflare 免费临时域名邮箱，支持附件、IMAP/SMTP、Telegram 机器人</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 68 今日</span>
+            <span class="gh-total">★ 10,813</span>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="producthunt" class="section">
+    <div class="sec-title"><span class="emo">🚀</span><span>Product Hunt · 今日精选发布</span></div>
+    <div class="gh-grid">
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#1</span>
+            <a class="ph-name" href="https://www.producthunt.com/products/humalike-x-hermes" target="_blank" rel="noopener">Humalike x Hermes</a>
+          </div>
+          <div class="ph-desc">Social intelligence plugin for Hermes Agent<div class="zh">为 Hermes Agent 打造的社交智能插件</div></div>
+          <div class="ph-topics">▲ 410 · API · Developer Tools · Artificial Intelligence</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#2</span>
+            <a class="ph-name" href="https://www.producthunt.com/products/migma-ai-4" target="_blank" rel="noopener">Migma AI</a>
+          </div>
+          <div class="ph-desc">AI runs your email marketing. Better with every send.<div class="zh">AI 接管你的邮件营销，越发越好</div></div>
+          <div class="ph-topics">▲ 383 · Email · Analytics · Marketing</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#3</span>
+            <a class="ph-name" href="https://www.producthunt.com/products/buzzy-2" target="_blank" rel="noopener">Buzzy</a>
+          </div>
+          <div class="ph-desc">Your creative AI co-director<div class="zh">你的创意 AI 联合导演</div></div>
+          <div class="ph-topics">▲ 329 · Movies · Marketing · Artificial Intelligence</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#4</span>
+            <a class="ph-name" href="https://www.producthunt.com/products/kastra" target="_blank" rel="noopener">Kastra</a>
+          </div>
+          <div class="ph-desc">Runtime authorization for Claude, Cursor, Codex and OpenClaw<div class="zh">面向 Claude/Cursor/Codex/OpenClaw 的运行时授权</div></div>
+          <div class="ph-topics">▲ 316 · Developer Tools · Artificial Intelligence · GitHub</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#5</span>
+            <a class="ph-name" href="https://www.producthunt.com/products/box-3" target="_blank" rel="noopener">box</a>
+          </div>
+          <div class="ph-desc">Simple computers for agent w/ full VMs<div class="zh">为 Agent 准备的、带完整虚拟机的简易计算机</div></div>
+          <div class="ph-topics">▲ 263 · Developer Tools · Artificial Intelligence</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#6</span>
+            <a class="ph-name" href="https://www.producthunt.com/products/acme-bot" target="_blank" rel="noopener">ACME.BOT</a>
+          </div>
+          <div class="ph-desc">No-slop AI SEO agent that interviews you first<div class="zh">先访谈再出方案的「无废话」AI SEO Agent</div></div>
+          <div class="ph-topics">▲ 184 · Marketing · SEO · Artificial Intelligence</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#7</span>
+            <a class="ph-name" href="https://www.producthunt.com/products/gemini-3-6-flash-family" target="_blank" rel="noopener">Gemini 3.6 Flash Family</a>
+          </div>
+          <div class="ph-desc">Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber<div class="zh">Gemini 3.6 Flash、3.5 Flash-Lite 与 3.5 Flash Cyber 模型家族</div></div>
+          <div class="ph-topics">▲ 176 · SaaS · Artificial Intelligence · Development</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#8</span>
+            <a class="ph-name" href="https://www.producthunt.com/products/monocloud-for-startups" target="_blank" rel="noopener">MonoCloud for Startups</a>
+          </div>
+          <div class="ph-desc">One identity layer for your customers, APIs, and agents<div class="zh">为你的客户、API 与 Agent 提供统一身份层</div></div>
+          <div class="ph-topics">▲ 171 · SaaS · Developer Tools · Security</div>
+        </div>
+    </div>
+  </section>
+
+  <section id="papers" class="section">
+    <div class="sec-title"><span class="emo">📄</span><span>Hugging Face Daily Papers</span></div>
+    <div class="note">注：今日（2026-07-23）早间 Hugging Face Daily Papers 新批次尚未发布，以下为页面当前展示的最新批次（Jul 22，按热度取前 12 篇），如实呈现，未编造。</div>
+    <div class="gh-grid">
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">167▲</span>
+            <a class="ph-name" href="https://huggingface.co/papers/2607.19191" target="_blank" rel="noopener">ABot-World-0: Infinite Interactive World Rollout on a Single Desktop GPU</a>
+          </div>
+          <div class="zh">单张桌面级 GPU 上的无限交互式世界推演</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">120▲</span>
+            <a class="ph-name" href="https://huggingface.co/papers/2607.16617" target="_blank" rel="noopener">DataFlow-Harness: A Grounded Code-Agent Platform for Constructing Editable LLM Data Pipelines</a>
+          </div>
+          <div class="zh">构建可编辑 LLM 数据流水线的接地代码 Agent 平台</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">66▲</span>
+            <a class="ph-name" href="https://huggingface.co/papers/2607.19139" target="_blank" rel="noopener">Text Template Tokens Are Implicit Semantic Registers in Diffusion Transformers</a>
+          </div>
+          <div class="zh">扩散 Transformer 中文本模板 token 是隐式语义寄存器</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">65▲</span>
+            <a class="ph-name" href="https://huggingface.co/papers/2607.18703" target="_blank" rel="noopener">Generative World Renderer at the Speed of Play</a>
+          </div>
+          <div class="zh">以「游戏速度」生成的世界的渲染器</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">56▲</span>
+            <a class="ph-name" href="https://huggingface.co/papers/2607.19064" target="_blank" rel="noopener">Mage-Flow: An Efficient Native-Resolution Foundation Model for Image Generation and Editing</a>
+          </div>
+          <div class="zh">高效原生分辨率图像生成与编辑基础模型</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">46▲</span>
+            <a class="ph-name" href="https://huggingface.co/papers/2607.18367" target="_blank" rel="noopener">AlayaWorld: Interactive Long-Horizon World Modeling -- Full Technical Report</a>
+          </div>
+          <div class="zh">交互式长程世界建模（完整技术报告）</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">33▲</span>
+            <a class="ph-name" href="https://huggingface.co/papers/2607.01774" target="_blank" rel="noopener">Subliminal Clocks: Latent Time Modelling in Diffusion Language Models</a>
+          </div>
+          <div class="zh">潜意识时钟：扩散语言模型中的潜时间建模</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">30▲</span>
+            <a class="ph-name" href="https://huggingface.co/papers/2607.18722" target="_blank" rel="noopener">Stale but Stable: Staleness-Adaptive Trust Regions for Stabilizing Asynchronous Reinforcement Learning</a>
+          </div>
+          <div class="zh">虽旧但稳：用「陈旧自适应信任域」稳定异步强化学习</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">20▲</span>
+            <a class="ph-name" href="https://huggingface.co/papers/2607.18754" target="_blank" rel="noopener">AgentDebugX: An Open-Source Toolkit for Failure Observability, Attribution, and Recovery in LLM Agents</a>
+          </div>
+          <div class="zh">开源工具包：LLM Agent 的故障可观测、归因与恢复</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">16▲</span>
+            <a class="ph-name" href="https://huggingface.co/papers/2607.18091" target="_blank" rel="noopener">SciForma: Structure-Faithful Generation of Scientific Diagrams</a>
+          </div>
+          <div class="zh">结构忠实的科学图表生成</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">8▲</span>
+            <a class="ph-name" href="https://huggingface.co/papers/2607.18839" target="_blank" rel="noopener">HPD-Parsing: Hierarchical Parallel Document Parsing</a>
+          </div>
+          <div class="zh">分层并行文档解析</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">6▲</span>
+            <a class="ph-name" href="https://huggingface.co/papers/2607.19322" target="_blank" rel="noopener">Two-Level Meta-Rubrics for Evaluating Open-Ended Generation: GAMUT, a Benchmark for Factual Completeness</a>
+          </div>
+          <div class="zh">评估开放式生成的两级元量规：忠实度完整性基准 GAMUT</div>
+        </div>
+    </div>
+  </section>
+
+  <section id="insights" class="section">
+    <div class="sec-title"><span class="emo">💡</span><span>趋势洞察 · 3 条核心信号</span></div>
+      <div class="insight">
+        <div class="insight-head"><span class="insight-dot"></span><h3>AI 编程 Agent 进入「网关化 + 技能化」阶段</h3><span class="insight-src">Hacker News · GitHub · Product Hunt</span></div>
+        <p>GitHub 上 OmniRoute（多模型 AI 网关，当日 +1651★）、code-review-graph（本地优先代码图谱，+882★）、awesome-claude-skills 持续霸榜；Product Hunt 今日 8 款新品中多款直接服务 Agent 工作流（Kastra 运行时授权、box 给 Agent 配 VM、Remote OpenClaw 聚合 1.3 万+ MCP/技能）。信号明确：Agent 正从单点工具走向「基础设施层」。</p>
+      </div>
+      <div class="insight">
+        <div class="insight-head"><span class="insight-dot"></span><h3>开放/本地优先 + 多模态大一统并行升温</h3><span class="insight-src">GitHub · Product Hunt · Hugging Face</span></div>
+        <p>GitHub 的 RuView（用 WiFi 信号做空间智能、零摄像头）、worldmonitor（实时全球情报）代表本地/隐私优先；Product Hunt 的 Humalike x Hermes（社交智能插件）、Gemini 3.6 Flash 家族主打多模态；Hugging Face 论文集中涌现世界模型（ABot-World-0 单 GPU 无限推演、AlayaWorld、Generative World Renderer）与图像生成基础模型（Mage-Flow）。世界模型/视频生成成为学术新热点。</p>
+      </div>
+      <div class="insight">
+        <div class="insight-head"><span class="insight-dot"></span><h3>模型军备竞赛与「可信 AI」并重</h3><span class="insight-src">Hacker News · Product Hunt · Hugging Face</span></div>
+        <p>HN 高赞话题横跨陶哲轩用 ChatGPT 探讨雅可比猜想反例（557 赞）、「AI 实验室是否在囤模型」（Pelicanmaxxing，369 赞）与 Reddit 禁用纯 HTML 的安全争议（269 评）；Product Hunt 同日发布 Gemini 3.6 Flash 家族、ACME.BOT 主打「无废话 SEO」；HF 论文同时关注事实完整性（GAMUT 基准）与故障归因（AgentDebugX）。「能力往上冲、可靠性与可解释性也要跟上」成为跨平台共性信号。</p>
+      </div>
+  </section>
+
+</div>
+
+<footer class="site-footer">
+  数据来源：Hacker News · GitHub Trending · Product Hunt · Hugging Face Papers<br>
+  由每日自动化任务自动生成 · 经 GitHub Pages 部署<br>
+  <a href="index.html">← 返回归档</a> · <a href="#top-story">回到顶部 ↑</a>
+</footer>
+</body>
+</html>
