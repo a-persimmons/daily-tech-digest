@@ -1,10 +1,10 @@
 {
-  "date": "2026-07-23",
-  "date_label": "2026-07-23 · 星期四",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-07-23.html",
+  "date": "2026-07-24",
+  "date_label": "2026-07-24 · 星期五",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-07-24.html",
   "summary": [
-    "AI 编程 Agent 迈向「网关化 + 上下文智能」：OmniRoute 聚合 278+ 供应商单日 +1,651 星、code-review-graph 本地代码图谱 +882、i-have-adhd 输出规约 +1,699，GigaToken 分词提速 1000×。",
-    "单文件 / 本地优先 / 隐私觉醒共振：Bento 把整个 PPT 装进一个 HTML 文件（768 赞）、RuView 用 WiFi 信号做空间智能无需摄像头（+741）、Cactus Hybrid 端侧 Gemma 4 学会知错。",
-    "AI 可信度与前沿评测成焦点：陶哲轩用 ChatGPT 探讨雅可比猜想反例登顶 HN（790 分）、pelicanmaxxing 追问实验室刷榜，HF 论文聚焦 DeepSeek-V4 全参后训练与原生长视频外推。"
+    "开放权重 AI 成中美博弈政策主战场：创始人联名请美政府别封杀中国开放权重模型（757▲/672💬 评论之王）与 OpenAI/Anthropic 联手抵制针锋相对，Show HN 的 Echo 以 1/3 成本达 Fable 级效果为开源背书。",
+    "AI 泡沫与账本焦虑同步升温：HN 头条「AI 公司隐藏惊人债务」（610▲）、Alphabet 现金消耗警报（256▲）密集出现，市场开始认真审视 AI 的财务可持续性。",
+    "Agent 走向「基础设施+评测」双轮：GitHub OmniRoute/buzz 领跑、Product Hunt 8 款 6 款服务 Agent（Teable 3.0 登顶、PromptQL 剑指 Slack）、HF 小批次里 AREX/NVIDIA OO Agents/腾讯 WorkBuddy Bench 同框。"
   ]
 }
