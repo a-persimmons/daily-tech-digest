@@ -1,10 +1,10 @@
 {
-  "date": "2026-07-24",
-  "date_label": "2026-07-24 · 星期五",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-07-24.html",
-  "summary": [
-    "开放权重 AI 成中美博弈政策主战场：创始人联名请美政府别封杀中国开放权重模型（757▲/672💬 评论之王）与 OpenAI/Anthropic 联手抵制针锋相对，Show HN 的 Echo 以 1/3 成本达 Fable 级效果为开源背书。",
-    "AI 泡沫与账本焦虑同步升温：HN 头条「AI 公司隐藏惊人债务」（610▲）、Alphabet 现金消耗警报（256▲）密集出现，市场开始认真审视 AI 的财务可持续性。",
-    "Agent 走向「基础设施+评测」双轮：GitHub OmniRoute/buzz 领跑、Product Hunt 8 款 6 款服务 Agent（Teable 3.0 登顶、PromptQL 剑指 Slack）、HF 小批次里 AREX/NVIDIA OO Agents/腾讯 WorkBuddy Bench 同框。"
-  ]
+ "date": "2026-07-25",
+ "date_label": "2026-07-25 · 星期六",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-07-25.html",
+ "summary": [
+  "Anthropic 发布 Claude Opus 5 断层登顶 HN（1343▲/729💬，衍生帖登顶 Artificial Analysis 智能榜），Flux 3 同日刷屏，模型军备竞赛再掀高潮。",
+  "开放权重监管之争升级：英伟达/微软/Meta 联名警告勿过度监管（524▲）与政府勒令 GitHub 下架 Jack Dorsey 的 Bitchat（397▲）正面交锋。",
+  "Agent 走向「基础设施+评测」双轮：GitHub block/buzz +3270★ 登顶（同登 PH）、OmniRoute 多模型网关领跑，HF AREX 递归自我改进 Agent 118▲ 登顶。"
+ ]
 }
