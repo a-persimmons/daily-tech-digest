@@ -1,10 +1,10 @@
 {
- "date": "2026-07-25",
- "date_label": "2026-07-25 · 星期六",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-07-25.html",
- "summary": [
-  "Anthropic 发布 Claude Opus 5 断层登顶 HN（1343▲/729💬，衍生帖登顶 Artificial Analysis 智能榜），Flux 3 同日刷屏，模型军备竞赛再掀高潮。",
-  "开放权重监管之争升级：英伟达/微软/Meta 联名警告勿过度监管（524▲）与政府勒令 GitHub 下架 Jack Dorsey 的 Bitchat（397▲）正面交锋。",
-  "Agent 走向「基础设施+评测」双轮：GitHub block/buzz +3270★ 登顶（同登 PH）、OmniRoute 多模型网关领跑，HF AREX 递归自我改进 Agent 118▲ 登顶。"
- ]
+  "date": "2026-07-26",
+  "date_label": "2026-07-26 · 星期日",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-07-26.html",
+  "summary": [
+    "「安卓或将限制设备端 ADB」以 883 赞/427 评断层登顶 HN，与民间拆除 Flock 监控摄像头运动、Tile 追踪器安全丑闻共振——设备主权与反监控成周末最强议题。",
+    "「开放权重 AI 正迎来 Kubernetes 时刻」（319 赞/259 评）引发激辩；英国 AISI 评估 Kimi K3 网络能力、DeepSeek 因算力差距言论泄露暂停融资，开放模型基础设施化与中美博弈暗线延续。",
+    "Agent 工程进入「技能库+语音交互」新阶段：mattpocock/skills +1740★、bitchat 下架风波后 +1720★ 领跑 GitHub；PH 榜首 Heard 给 Claude Code 一个声音；HF 最新批次 AREX 递归自我改进研究 Agent 128 赞登顶。"
+  ]
 }
