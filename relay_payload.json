@@ -1,10 +1,10 @@
 {
-  "date": "2026-07-27",
-  "date_label": "2026-07-27 · 星期一",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-07-27.html",
+  "date": "2026-07-28",
+  "date_label": "2026-07-28 · 星期二",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-07-28.html",
   "summary": [
-    "网络隐私升级为「运动」：「干掉 Cookie 弹窗」850▲/419💬 断层登顶 HN，GrapheneOS 防取证双帖霸榜，GitHub 上 bitchat iOS/Android 双榜（+1166★/+260★），PH 榜首 TouchGrass 也主打「无侵入式权限」——隐私民意跨四平台共振。",
-    "开发者工具链「性能军备」白热化：Ruff v0.16.0 默认规则 59→413 条（335▲），AST-grep 用 Rust 重写 Tree-sitter 提速 30%，Go 官方静态分析框架发布；谷歌工程师 impeccable（让 AI 更懂设计）+413★、阿里 open-code-review +832★ 补上「AI 审美与评审」新层。",
-    "Agent 走向「编排层+技能自进化」：PH 榜眼 Athena（统筹电商栈的编排 Agent）与 Openbase（语音指挥 Agent 团队）宣告「管 Agent 的 Agent」商用；HF 07-27 当日批次 8 篇高度聚焦 Molt（Agent RL 训练框架）、Skill Self-Play（技能共进化）——学术侧在给 Agent 自己长技能铺路。"
+    "开放权重模型「路线之战」全面开打：Kimi-K3 登陆 HuggingFace 以 1319▲/521💬 断层登顶 HN，「我们对开放权重模型的立场」721💬 成评论之王；同日 Claude Opus 5 与 Grok 4.5 罕见同登 Product Hunt。",
+    "AI 军备的「伦理账单」集中曝光：AI 公司粉碎珍本图书（742▲）、华盛顿游说费创纪录、苹果「坐看 AI 泡沫燃烧」、英伟达 7500 亿循环交易担忧、欧盟对谷歌开出 10.2 亿美元罚单——训练数据伦理与资本泡沫同步计价。",
+    "Agent 基建从「会写码」转向「会用电脑、会做研究」：GitHub claude-video/last30days-skill 给 Agent 装新感官，PH Webhound 给 Agent 配研究引擎，HF 当日批次 StateAct/数据金字塔/进度奖励建模齐指具身与电脑操作。"
   ]
 }
