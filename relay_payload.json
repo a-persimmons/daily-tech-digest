@@ -1,10 +1,10 @@
 {
-  "date": "2026-07-28",
-  "date_label": "2026-07-28 · 星期二",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-07-28.html",
-  "summary": [
-    "开放权重模型「路线之战」全面开打：Kimi-K3 登陆 HuggingFace 以 1319▲/521💬 断层登顶 HN，「我们对开放权重模型的立场」721💬 成评论之王；同日 Claude Opus 5 与 Grok 4.5 罕见同登 Product Hunt。",
-    "AI 军备的「伦理账单」集中曝光：AI 公司粉碎珍本图书（742▲）、华盛顿游说费创纪录、苹果「坐看 AI 泡沫燃烧」、英伟达 7500 亿循环交易担忧、欧盟对谷歌开出 10.2 亿美元罚单——训练数据伦理与资本泡沫同步计价。",
-    "Agent 基建从「会写码」转向「会用电脑、会做研究」：GitHub claude-video/last30days-skill 给 Agent 装新感官，PH Webhound 给 Agent 配研究引擎，HF 当日批次 StateAct/数据金字塔/进度奖励建模齐指具身与电脑操作。"
-  ]
+ "date": "2026-07-29",
+ "date_label": "2026-07-29 · 星期三",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-07-29.html",
+ "summary": [
+  "开放模型进入「被读懂」阶段：HN 一天七帖拆解 Kimi K3 架构/Kimi Linear/DeltaNet 线性注意力，花 500 美元微调 9B 开放模型击败前沿大模型（309▲）；日本 7.1 级地震 775▲ 登顶本窗口。",
+  "Agent 进入「评测与治理」元年：Product Hunt 前二 Prefactor（543▲）与 Cekura（367▲）都是「给 Agent 打分」的产品，微软 Agent 治理工具箱同日登上 GitHub Trending。",
+  "Agent 长出「新感官」：claude-video（让 Claude 看视频）以 +988★ 登顶 GitHub，HF 论文 HiFi-UMI 机器人操作策略（17▲）与 Wonder 视频世界模型把感知延伸到视频与物理世界。"
+ ]
 }
