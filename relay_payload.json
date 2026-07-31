@@ -1,10 +1,10 @@
 {
- "date": "2026-07-29",
- "date_label": "2026-07-29 · 星期三",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-07-29.html",
- "summary": [
-  "开放模型进入「被读懂」阶段：HN 一天七帖拆解 Kimi K3 架构/Kimi Linear/DeltaNet 线性注意力，花 500 美元微调 9B 开放模型击败前沿大模型（309▲）；日本 7.1 级地震 775▲ 登顶本窗口。",
-  "Agent 进入「评测与治理」元年：Product Hunt 前二 Prefactor（543▲）与 Cekura（367▲）都是「给 Agent 打分」的产品，微软 Agent 治理工具箱同日登上 GitHub Trending。",
-  "Agent 长出「新感官」：claude-video（让 Claude 看视频）以 +988★ 登顶 GitHub，HF 论文 HiFi-UMI 机器人操作策略（17▲）与 Wonder 视频世界模型把感知延伸到视频与物理世界。"
- ]
+  "date": "2026-07-31",
+  "date_label": "2026-07-31 · 星期五",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-07-31.html",
+  "summary": [
+    "语音正在成为 Agent 的第一交互界面：PH 榜首 SKI 用嘴给 Claude Code 写代码（485▲），同日 Yap、Phantom Voice 两款本地语音听写上榜，GitHub 上 HF 官方 speech-to-speech 管线 +628★ 强势回榜。",
+    "Agent 记忆成为新基建：HF 当日 10 篇论文记忆主题占三席（Metis 记忆基础模型、MemHarness、SpatialCLI 登顶），PH 第 3 名 Memmy Agent 直接把「跨模型共享记忆」做成产品。",
+    "模型军备与治理同频对撞：OpenAI GPT-5.6（502▲）与 Google Gemini Robotics 2（482▲）同日发布，但「GPT-5.6 Sol 经营真实生意亏 447 美元」、GCC/OpenJDK 出台 AI 政策、谷歌全球推行 Android 年龄验证等治理议题声量更大。"
+  ]
 }
