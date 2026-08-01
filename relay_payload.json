@@ -1,10 +1,10 @@
 {
-  "date": "2026-07-31",
-  "date_label": "2026-07-31 · 星期五",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-07-31.html",
-  "summary": [
-    "语音正在成为 Agent 的第一交互界面：PH 榜首 SKI 用嘴给 Claude Code 写代码（485▲），同日 Yap、Phantom Voice 两款本地语音听写上榜，GitHub 上 HF 官方 speech-to-speech 管线 +628★ 强势回榜。",
-    "Agent 记忆成为新基建：HF 当日 10 篇论文记忆主题占三席（Metis 记忆基础模型、MemHarness、SpatialCLI 登顶），PH 第 3 名 Memmy Agent 直接把「跨模型共享记忆」做成产品。",
-    "模型军备与治理同频对撞：OpenAI GPT-5.6（502▲）与 Google Gemini Robotics 2（482▲）同日发布，但「GPT-5.6 Sol 经营真实生意亏 447 美元」、GCC/OpenJDK 出台 AI 政策、谷歌全球推行 Android 年龄验证等治理议题声量更大。"
-  ]
+ "date": "2026-08-01",
+ "date_label": "2026-08-01 · 星期六",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-01.html",
+ "summary": [
+  "开源模型的性价比攻势从模型层打到工具层：DeepSeek V4 Flash 双帖霸榜 HN（官方更新 676▲ + 第三方三维评测 536▲），配合「29GB 内存跑起 Kimi K3」；GitHub 上 openwork（Claude Cowork 开源替代，+806★）与 jcode（最省内存的 Agent 运行框架，+527★）同频呼应。",
+  "Agent 竞争焦点从「能不能做」转向「多人怎么协作、怎么变现」：Product Hunt 前八清一色 Agent 商业化产品，Fundraisly（AI 融资 Agent）939▲ 登顶，Upstream（人与 Agent 共用收件箱）648💬 讨论最热；HN 侧 qm 多人协作 Agent harness 483▲。",
+  "AI 的「金融账单」与「可信度账单」同日到期：AI 交易靠借来的钱运转、Situational Awareness 基金 7 月暴跌 67%、美债/GDP 达 123%；同时谷歌「AI 让 Chrome 修复量超过去两年」以 492💬 成为当日评论之王，成效被反复质疑。"
+ ]
 }
