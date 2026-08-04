@@ -1,10 +1,10 @@
 {
- "date": "2026-08-02",
- "date_label": "2026-08-02 · 星期日",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-02.html",
+ "date": "2026-08-04",
+ "date_label": "2026-08-04 · 星期二",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-04.html",
  "summary": [
-  "「变烂学」成为当日最强共识：Cursor 悄悄删掉用量页与 CSV 导出里的成本信息（314▲/143💬）、「NAS 正在变烂的十种方式」、宝马把广告投进车内中控屏，加上谷歌扼杀 RSS 的旧文翻红拿下最高分（418▲）与「是不是已放弃 Google News」（256▲/184💬）；与之对冲的是社区自建可见性——Product Hunt 的 Basedash 审计日志、AgentMicro 菜单栏任务状态，以及 GitHub 上回榜的 YouTube 替代前端 invidious（+435★）。",
-  "Agent 基建正从云端下沉到本机、菜单栏与口袋：Product Hunt 前八有四席是 Agent 的本地载体（手机跑 Claude Code 的 Port22 231▲、菜单栏看 Codex 状态的 AgentMicro 155▲、TerminalWidget 134▲、Terminal Candy 117▲）；GitHub 侧安全技能路由包 reverse-skill 以 +1,320★ 断层登顶，腾讯 Agent 记忆中枢（+227★）、字节长程 SuperAgent 框架 deer-flow（+209★）、HF 本地语音 Agent（+442★）补齐技能、记忆、宿主、语音四条地基线。",
-  "AI 怀疑论回到「产出质量」，学术与新品侧同日降温：「AI 生成不出能用的产品，那仍然是你的活」249▲/265💬（当日评论第二），欧盟自 8 月 2 日起强制为拟真 AI 内容加标识；Product Hunt 榜首仅 285▲（昨日为 939▲），DeepSeek-V4-Flash-0731 以 270▲ 屈居第二；Hugging Face Daily Papers 当日批次为空，已是继周六后连续第二天休更（两次直连核实，未沿用旧批次）。"
+  "开放权重模型打出同日多榜合围：Qwen3.8-Max 同时拿下 Hacker News 第 2（1057▲）与 Product Hunt 第 4（247▲），AirLLM「单张 4GB 显卡跑 70B」同登 HN 与 GitHub Trending 第 5（+1,085★），GitHub 上 DeepSeek-Reasonix 与 antirez/ds4 两个本地推理项目并肩在榜——竞争位面已从「谁分数高」下移到「谁能在你自己的机器上稳定跑起来」。",
+  "AI 的账单同日到期：质量侧「SQLite 的严重 CVE 还是 LLM 编的垃圾」700▲ 指控伪漏洞报告污染开源安全生态，「手动重打 LLM 代码防认知负债」400▲ 给出对抗动作；资金侧 AI 隐性借款已达 1.65 万亿美元。GitHub 上 firecrawl/pdf-inspector（+1,699★）与 reverse-skill（+2,446★ 登顶）都在给 AI 的输入输出加一道可验证的闸。",
+  "Agent 基建关键词从「跑得动」换成「有记忆、能协作、看得见外面」：PH 榜首 AgentSky（云托管 Agent，386▲）、mpai（Codex/Claude Code 会话多人协作）、Inventory（检索全部 Agent 会话）；GitHub 上 TencentDB-Agent-Memory（团队级记忆中枢 +1,090★）与 Agent-Reach（一条 CLI 让 Agent 读遍全网 +1,057★）同日放量。"
  ]
 }
