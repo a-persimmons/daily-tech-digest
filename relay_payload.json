@@ -1,10 +1,6 @@
 {
- "date": "2026-08-04",
- "date_label": "2026-08-04 · 星期二",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-04.html",
- "summary": [
-  "开放权重模型打出同日多榜合围：Qwen3.8-Max 同时拿下 Hacker News 第 2（1057▲）与 Product Hunt 第 4（247▲），AirLLM「单张 4GB 显卡跑 70B」同登 HN 与 GitHub Trending 第 5（+1,085★），GitHub 上 DeepSeek-Reasonix 与 antirez/ds4 两个本地推理项目并肩在榜——竞争位面已从「谁分数高」下移到「谁能在你自己的机器上稳定跑起来」。",
-  "AI 的账单同日到期：质量侧「SQLite 的严重 CVE 还是 LLM 编的垃圾」700▲ 指控伪漏洞报告污染开源安全生态，「手动重打 LLM 代码防认知负债」400▲ 给出对抗动作；资金侧 AI 隐性借款已达 1.65 万亿美元。GitHub 上 firecrawl/pdf-inspector（+1,699★）与 reverse-skill（+2,446★ 登顶）都在给 AI 的输入输出加一道可验证的闸。",
-  "Agent 基建关键词从「跑得动」换成「有记忆、能协作、看得见外面」：PH 榜首 AgentSky（云托管 Agent，386▲）、mpai（Codex/Claude Code 会话多人协作）、Inventory（检索全部 Agent 会话）；GitHub 上 TencentDB-Agent-Memory（团队级记忆中枢 +1,090★）与 Agent-Reach（一条 CLI 让 Agent 读遍全网 +1,057★）同日放量。"
- ]
+  "date": "2026-08-05",
+  "date_label": "2026-08-05 · 星期三",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-05.html",
+  "summary": "今日四路信号一致指向「给 AI 装验证闸」：GitHub 上 pdf-inspector（+1,699★）给 PDF 输入加闸、reverse-skill（+2,446★）给调用加路由、uber/ADR 给企业 Agent 加安全基准，HF 的 JoyAI-Video-Edit 则把视频编辑做成实时可干预。Agent 基建关键词从「跑得动」换成「有记忆、能协作、看得见外面」：腾讯云 TencentDB-Agent-Memory（+1,090★）、livekit/agents 语音框架，以及 PH 上 Hey Noah/Atlaso「共享同一份记忆」类产品密集出现。本地优先从软件蔓延到产品与硬件：DeepSeek V4 Flash 单卡跑通、AirLLM 4GB 跑 70B 同登双榜，PH 的 Vibe Buddy 更是把 AI 编程做成一块实体硬件。"
 }
