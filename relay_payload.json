@@ -1,6 +1,10 @@
 {
-  "date": "2026-08-05",
-  "date_label": "2026-08-05 · 星期三",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-05.html",
-  "summary": "今日四路信号一致指向「给 AI 装验证闸」：GitHub 上 pdf-inspector（+1,699★）给 PDF 输入加闸、reverse-skill（+2,446★）给调用加路由、uber/ADR 给企业 Agent 加安全基准，HF 的 JoyAI-Video-Edit 则把视频编辑做成实时可干预。Agent 基建关键词从「跑得动」换成「有记忆、能协作、看得见外面」：腾讯云 TencentDB-Agent-Memory（+1,090★）、livekit/agents 语音框架，以及 PH 上 Hey Noah/Atlaso「共享同一份记忆」类产品密集出现。本地优先从软件蔓延到产品与硬件：DeepSeek V4 Flash 单卡跑通、AirLLM 4GB 跑 70B 同登双榜，PH 的 Vibe Buddy 更是把 AI 编程做成一块实体硬件。"
+  "date": "2026-08-06",
+  "date_label": "2026-08-06 · 星期四",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-06.html",
+  "summary": [
+    "Google DeepMind 高层地震：Hassabis 由 CEO 转任董事长、Jeff Dean 出走，三帖合围占据全站 C 位，是当日加权榜首兼评论之王（609 条）。",
+    "「可信度」成定价标尺：HN 上 Meta CSAM 广告、TIME 给爬虫另开带广告站，PH 上 AdAnt AI 用 Claude 批量生成广告，HF 登顶论文直指 LLM 编造用户画像——舆论、产品、学术三层同日呼应。",
+    "基础设施双线并进：Cloudflare 把算力包装成 Agent 可调用「电脑」与「钱包」（HN/PH/GH 同框），开放权重把 70B 模型压进 4GB 显卡（AirLLM +833★、DeepSeek-Reasonix +747★），能力底座继续下沉。"
+  ]
 }
