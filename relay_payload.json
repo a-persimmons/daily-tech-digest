@@ -1,10 +1,10 @@
 {
-  "date": "2026-08-06",
-  "date_label": "2026-08-06 · 星期四",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-06.html",
+  "date": "2026-08-07",
+  "date_label": "2026年8月7日（周五）",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-07.html",
   "summary": [
-    "Google DeepMind 高层地震：Hassabis 由 CEO 转任董事长、Jeff Dean 出走，三帖合围占据全站 C 位，是当日加权榜首兼评论之王（609 条）。",
-    "「可信度」成定价标尺：HN 上 Meta CSAM 广告、TIME 给爬虫另开带广告站，PH 上 AdAnt AI 用 Claude 批量生成广告，HF 登顶论文直指 LLM 编造用户画像——舆论、产品、学术三层同日呼应。",
-    "基础设施双线并进：Cloudflare 把算力包装成 Agent 可调用「电脑」与「钱包」（HN/PH/GH 同框），开放权重把 70B 模型压进 4GB 显卡（AirLLM +833★、DeepSeek-Reasonix +747★），能力底座继续下沉。"
+    "头条三连：Qwen3.8 Max Agentic 指数登顶、AMD 收购 Taalas 把大模型蚀刻进硅片、研究指人类会漏检三分之一的 Agent 威胁——Agent 的能力与风险同步飙升。",
+    "算力两端对撞：一端 AMD/擅长推理的小模型把智能压进硬件，另一端 Cloudflare 准备自建超大规模数据中心、Qwen/DeepSeek 持续放大权重开放，'云 vs 端'边界正在重写。",
+    "GitHub/PH/HF 今日关键词是'Agent 工具链'：cloudflare/computer、TencentDB-Agent-Memory、CopilotKit Channels SDK 领跑，HF 当日 9 篇论文聚焦 Agent 运维、失败学习与长时任务。"
   ]
 }
