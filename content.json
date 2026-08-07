@@ -1,0 +1,80 @@
+{
+  "date": "2026-08-07",
+  "hero": [
+    {
+      "url": "https://news.ycombinator.com/item?id=49200652",
+      "meta": "448▲ · 286 评 · Agent 能力综合榜登顶",
+      "title": "Qwen3.8 Max now ranked as the best overall model by agentic index",
+      "zh": "Qwen3.8 Max 在 Agentic 指数上被评为综合最佳模型——开放权重阵营首次在 Agent 能力综合榜登顶"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=49201970",
+      "meta": "414▲ · 324 评 · 算力固化进硅",
+      "title": "AMD acquires Taalas to boost inference performance by etching models into silicon",
+      "zh": "AMD 收购 Taalas：把模型直接蚀刻进硅片以提升推理性能——推理正从「跑在通用芯片」走向「固化进专用硅」"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=49195468",
+      "meta": "259▲ · 194 评 · Agent 信任边界",
+      "title": "Humans missed 1 in 3 threats approving AI agent commands across 40k games",
+      "zh": "4 万次实验：人类在审批 AI Agent 命令时漏掉了三分之一的威胁——「人类兜底」这道护栏本身并不可靠"
+    }
+  ],
+  "insights": [
+    {
+      "src": "四源共振",
+      "title": "Agent 护栏：从「人」转向「机器」",
+      "text": "本期四源不约而同指向同一转向——人类已不再是 Agent 值得信赖的「最后一道闸」。HN 上「4 万次实验：人类审批 Agent 命令漏掉 1/3 威胁」（259▲）直接戳破「人兜底」；GitHub 侧 code-review-graph、TencentDB-Agent-Memory 把「记忆 + 可观测」沉淀成基础设施；Product Hunt 的 Superlog Responder（开源自动修 bug 的 Agent）、CopilotKit Channels SDK 把护栏前置到「执行前」；HF 的 AgentOPSD 用递归自蒸馏让 Agent 自我纠错。护栏正在从「靠人看」变成「机器自检」。"
+    },
+    {
+      "src": "算力",
+      "title": "算力两端对撞：硅片 vs 数据中心",
+      "text": "模型能力的物理底座正同时向两个极端拉扯。一端是「把模型蚀刻进硅」——AMD 收购 Taalas（414▲）要让推理固化进专用芯片，Qwen3.8 Max 登顶 Agentic 榜（448▲）靠的是开放权重的高效；另一端是「算力被社区顶回」——纳什维尔征地阻建数据中心拿下评论之王（470💬），「美国人集体反对数据中心」（138💬）成漏网高讨论。硅片越来越专用，数据中心越来越被拒，算力正在「上桌」与「落地」之间拉锯。"
+    },
+    {
+      "src": "开放权重",
+      "title": "开放权重登顶，却开始谈涨价",
+      "text": "开放权重阵营第一次在 Agent 能力综合榜登顶（Qwen3.8 Max，448▲），这是里程碑；但同一窗口里 DeepSeek 计划大幅上调价格（79▲）给「开源即便宜」的叙事打了问号，GitHub 上 airllm（单张 4GB 跑 70B）与 DeepSeek-Reasonix 仍在把本地推理往前推。开放权重的「可用性」与「经济性」第一次出现背离——用得起 vs 用得值，开始分家。"
+    }
+  ],
+  "gh_summary": "<p>当日榜单共 <b><span class=\"hl\">13 个</span>仓库</b>，工作日满格。头部集中度极高：cloudflare/computer 以 <b>+2,802★</b> 断层登顶，其后是 mattpocock/skills（+1,873★）、firecrawl/pdf-inspector（+1,190★）——前三名合计增星超 <b>5,700★</b>，注意力几乎全给了头部。</p>\n<p><b>「给 Agent 一台电脑」登顶</b>：<b>cloudflare/computer</b>（TypeScript，<span class=\"hl\">+2,802★</span>，总星 4,886）直接把「可远程调用的电脑」作为 Agent 的底座，与当日 HN 的 Cloudflare OS、PH 的 Cloudflare 同出一门——Cloudflare 正把「Agent 时代的底层设施」一次性铺开。<b>技能化主线并列</b>：<b>mattpocock/skills</b>（Shell，<span class=\"hl\">+1,873★</span>，总星 207k）把作者 .agents 目录里的「真工程师技能」开源；<b>addyosmani/agent-skills</b>（+593★）是面向 AI 编程 Agent 的生产级技能合集。</p>\n<p><b>Agent 记忆与质控双线</b>：<b>TencentCloud/TencentDB-Agent-Memory</b>（TypeScript，<span class=\"hl\">+1,057★</span>）把对话 / 文档 / 代码沉淀为对话记忆、技能、LLM-Wiki、代码图谱四类可跨 Agent 共享的资产；<b>firecrawl/pdf-inspector</b>（Rust，<span class=\"hl\">+1,190★</span>）自动区分扫描件与文本型 PDF、为下游 RAG 做智能路由；<b>tirth8205/code-review-graph</b>（+237★）做本地优先的代码智能图谱。</p>\n<p><b>本地推理与长程循环</b>：<b>esengine/DeepSeek-Reasonix</b>（Go，<span class=\"hl\">+888★</span>）做常驻终端的 DeepSeek 原生编程 Agent；<b>obra/superpowers</b>（Shell，+858★，总星 268k）是能跑通的 Agent 技能框架与方法论；<b>huangruiteng/loopx</b>（+847★）做长时运行 AI Agent 团队的「循环工程」状态内核。<b>其余</b>：goauthentik/authentik（+138★，身份验证胶水）、TapXWorld/ChinaTextbook（+134★，全部中小学大学 PDF 教材）、Significant-Gravitas/AutoGPT（+37★）、google/guava（+13★，Java 核心库）。</p>",
+  "ph_summary": "<p>本期榜单（PT <span class=\"hl\">8/6</span> 批次）当日共 <b>21 款</b>产品上榜，本刊取前 8。头部回升：榜首 <b>Cloudflare OS</b> <span class=\"hl\">398▲</span>，是 Cloudflare 把「Agent 操作系统」直接推向开发者——与当日 HN 的 Cloudflare OS、GitHub 的 cloudflare/computer 同出一门，三家同源共振。</p>\n<p><b>AI 成本与「修 bug」上位</b>：<b>AI Spend Console by Rippling</b>（288▲ 第 2）把 AI 支出与业务结果对账，回应「AI 账单越堆越大」的普遍焦虑；<b>Superlog Responder</b>（268▲ 第 3，开源 AI 自动修 bug Agent）把「护栏」前置到执行前，与 HN「人类漏检 1/3 Agent 威胁」恰成对照。</p>\n<p><b>编码 Agent 密集</b>：<b>Muse Code</b>（213▲ 第 4，Meta 的终端长程编码 Agent）、<b>Annotate</b>（184▲ 第 5，把屏幕录制当 prompt）、<b>CopilotKit Channels SDK</b>（147▲ 第 6，把任意 Agent 接入 Slack / Teams 等任意渠道）与 HN 当日的 Show HN：Channels SDK 同源——「让 Agent 出现在你已经在的地方」是今天的统一主题。</p>\n<p><b>其余前八</b>：<b>Brandfetch MCP</b>（130▲ 第 7，别让 AI 瞎猜品牌 Logo）、<b>Website to Markdown API</b>（128▲ 第 8，把任意网站转成 LLM 友好的 Markdown）。整体看，开发者工具 + AI 成本治理 + Agent 渠道化占满当日榜单。</p>",
+  "papers_summary": "<p><b>2026-08-07 当日批次共 <span class=\"hl\">9 篇</span></b>，直连 <code>api/daily_papers?date=2026-08-07</code> 取得，按 upvotes 降序全量收录，未沿用任何往期批次。注：论文 <code>publishedAt</code> 多标 2026-08-06（arXiv 前日提交），属该日批次正常归属。周五早间互动偏低（最高 24▲），如实呈现，未补充或编造条数。</p>\n<p><b>断层登顶的是「Agent 自我进化」</b>：<b>AgentOPSD</b>（<span class=\"hl\">24▲</span>）用递归自蒸馏做 Agentic 强化学习，与 HN「人类漏检 1/3 Agent 威胁」、PH「Superlog 自动修 bug」呼应——护栏与自纠错正在成为 Agent 主线。</p>\n<p><b>时序与多模态推理</b>：<b>ChronoVision</b>（21▲，用潜状态重建做时序推理）、<b>Learning from Failures</b>（20▲，基于难负例的检索式 CoT，统一多模态检索）、<b>On-Policy Delta Distillation</b>（16▲，多语言数学推理的在线策略增量蒸馏）。</p>\n<p><b>世界模型与具身 / 评测</b>：<b>WorldClaw</b>（18▲，规模化 Agentic 3D 开放世界生成）、<b>HarnessOpt-Bench</b>（16▲，评测 LLM 在 Harness 优化上的能力）、<b>GST-Bench</b>（14▲，VLM 能否从视频发展出全局空间意识）、<b>DyPES-VLA</b>（14▲，跨具身操控的共享动力学先验 + 具身专属控制）、<b>CalibForge</b>（3▲，面向可学习终端任务的对抗求解器校准）。</p>",
+  "note_hf": "注：本板块为 <b>2026-08-07 当日批次</b>，直连 huggingface.co/api/daily_papers?date=2026-08-07 取得，共 <b>9 篇</b>，按 upvotes 降序全量收录（未截断）。论文 publishedAt 多标 2026-08-06（arXiv 前日提交），属该日批次正常归属。周五早间互动偏低（最高 24▲），如实呈现，未沿用往期批次、未补充或编造条数。",
+  "gh_tr": {
+    "cloudflare/computer": "Cloudflare 的「电脑」项目——给 Agent 一台可远程调用的计算机，作为应用与自动化底座（对应当日 HN 热议的 Cloudflare OS）",
+    "mattpocock/skills": "出自作者 .agents 目录的「真工程师技能」合集——写给 AI 编程 Agent 用的可复用技能",
+    "firecrawl/pdf-inspector": "高性能 Rust 库，用于 PDF 检查、分类与文本抽取；自动区分扫描件与文本型 PDF，据此为下游做智能路由",
+    "TencentCloud/TencentDB-Agent-Memory": "腾讯云 Agent 记忆中枢：把对话、文档与代码沉淀为四类可复用记忆资产（对话记忆 / 技能 / LLM-Wiki / 代码图谱），可跨 Agent 与框架治理共享",
+    "esengine/DeepSeek-Reasonix": "面向终端的 DeepSeek 原生编程 Agent：围绕前缀缓存稳定性设计，可长时间常驻运行",
+    "obra/superpowers": "一套真正能跑通的 Agent 技能框架与软件开发方法论",
+    "huangruiteng/loopx": "LoopX：面向长时运行 AI Agent 团队的轻量级「循环工程」状态内核，跨 Codex / Claude Code 等框架",
+    "addyosmani/agent-skills": "Agent Skills：由 Addy Osmani 维护、面向 AI 编程 Agent 的生产级工程技能合集",
+    "tirth8205/code-review-graph": "本地优先的代码智能图谱，面向 MCP 与 CLI，让 AI 编程工具只读该读的部分",
+    "goauthentik/authentik": "Authentik：你把应用接进身份体系时需要的「认证胶水」——开源 SSO / IAM",
+    "TapXWorld/ChinaTextbook": "收录全部小学 / 初中 / 高中 / 大学的 PDF 教材",
+    "Significant-Gravitas/AutoGPT": "AutoGPT：让 AI 能力触手可及、人人可建的开源 Agent 平台",
+    "google/guava": "Guava：Google 的 Java 核心工具库（集合 / 缓存 / 并发等）"
+  },
+  "ph_tr": {
+    "Cloudflare OS": "Cloudflare 的「AI 操作系统」：把 Agent、应用与工作统一编排到底层设施上",
+    "AI Spend Console by Rippling": "把 AI 支出与业务结果对账，看清每一笔 AI 钱花在了哪",
+    "Superlog Responder": "免费开源的 AI 自动修 bug Agent",
+    "Muse Code": "Meta 推出的终端长程编码 Agent",
+    "Annotate": "把屏幕录制直接当成 prompt 用",
+    "CopilotKit Channels SDK": "把任意 Agent 接入 Slack、Teams 等任意渠道",
+    "Brandfetch MCP": "别让你的 AI 瞎猜品牌 Logo——用 MCP 规范取品牌素材",
+    "Website to Markdown API": "把任意网站转成 LLM 友好的 Markdown"
+  },
+  "hf_tr": {
+    "2608.05987": "AgentOPSD：用递归自蒸馏做 Agentic 强化学习",
+    "2608.05631": "ChronoVision：用潜状态重建做时序推理",
+    "2608.06060": "Learning from Failures：基于难负例的检索式 CoT，统一多模态检索",
+    "2608.05248": "WorldClaw：规模化 Agentic 3D 开放世界生成",
+    "2608.05802": "On-Policy Delta Distillation：多语言数学推理的在线策略增量蒸馏",
+    "2608.06301": "HarnessOpt-Bench：评测 LLM 在 Harness 优化上的能力",
+    "2608.05747": "GST-Bench：VLM 能否从视频发展出全局空间意识",
+    "2608.06374": "DyPES-VLA：跨具身操控的共享动力学先验 + 具身专属控制",
+    "2608.06352": "CalibForge：面向可学习终端任务的对抗求解器校准"
+  }
+}
