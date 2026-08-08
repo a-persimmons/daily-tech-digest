@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今日技术热点速览 · 2026-08-08 · 星期六</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Serif+SC:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f4ede0; --paper2:#efe7d8; --ink:#1a1a1a; --ink2:#333;
+  --muted:#6b6357; --rule:#2b2b2b; --rule-light:#c9bfa9;
+  --accent:#9b1b1b; --accent2:#1a3a5c; --highlight:#e8e0d0;
+  --green:#2d6a2d; --orange:#8a5a00;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:'Source Serif 4','Noto Serif SC',Georgia,'Times New Roman',serif;
+  line-height:1.65;font-size:15.5px;
+  background-image:radial-gradient(ellipse at top,rgba(0,0,0,.02),transparent 60%);
+}
+a{color:var(--accent2);}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px 50px;}
+.zh{color:var(--muted);font-size:12.5px;font-weight:400;line-height:1.45;margin-top:3px;font-style:italic;}
+.gh-desc .zh{font-size:11.5px;margin-top:2px;}
+.section,.hero{scroll-margin-top:64px;}
+
+/* Masthead header */
+header.site-header{
+  padding:36px 24px 20px;text-align:center;
+  border-bottom:3px double var(--rule);
+  background:var(--paper);
+}
+.back-link{
+  display:inline-block;font-size:12px;color:var(--muted);
+  text-decoration:none;margin-bottom:10px;letter-spacing:.03em;
+  transition:color .15s ease;
+}
+.back-link:hover{color:var(--accent);}
+header.site-header .kicker{
+  font-size:11px;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:4px;
+}
+header.site-header h1{
+  margin:0 0 6px;font-size:32px;letter-spacing:-.01em;
+  font-family:'Playfair Display','Noto Serif SC',Georgia,serif;
+  font-weight:900;color:var(--ink);
+}
+header.site-header .date{color:var(--accent);font-weight:700;font-size:14px;letter-spacing:.05em;}
+header.site-header .sub{color:var(--muted);font-size:12px;margin-top:6px;font-style:italic;}
+
+/* Quick nav */
+.quick-nav{
+  position:sticky;top:0;z-index:100;display:flex;flex-wrap:wrap;
+  gap:6px;justify-content:center;padding:10px 0;
+  margin:0 0 28px;background:rgba(244,237,224,.92);
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--rule-light);
+}
+.quick-nav a{
+  font-size:12px;font-weight:600;color:var(--ink2);
+  text-decoration:none;padding:4px 11px;
+  border:1px solid var(--rule-light);background:var(--paper2);
+  white-space:nowrap;transition:all .15s ease;
+  font-family:'Source Serif 4',Georgia,serif;letter-spacing:.02em;
+}
+.quick-nav a:hover{color:var(--accent);border-color:var(--accent);background:var(--highlight);}
+
+/* Section title */
+.sec-title{
+  display:flex;align-items:center;gap:10px;margin:36px 0 16px;font-size:20px;
+  border-bottom:2px solid var(--rule);padding-bottom:8px;
+  font-family:'Playfair Display','Noto Serif SC',Georgia,serif;font-weight:800;
+}
+.sec-title .emo{font-size:18px;}
+.sec-title .bar{display:none;}
+
+/* Hero cards */
+.hero-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;}
+.hero-card{
+  display:block;text-decoration:none;color:var(--ink);
+  background:var(--paper2);border:1px solid var(--rule-light);
+  border-radius:2px;padding:16px 16px 14px;transition:all .18s ease;
+  position:relative;
+}
+.hero-card::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent);
+}
+.hero-card:hover{border-color:var(--ink);transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.1);}
+.hero-meta{color:var(--green);font-size:12px;font-weight:700;letter-spacing:.03em;}
+.hero-title{font-size:16px;font-weight:800;margin:6px 0 4px;font-family:'Playfair Display','Noto Serif SC',Georgia,serif;}
+
+/* Tables (HN / Papers) */
+.hn-table{
+  width:100%;border-collapse:collapse;
+  background:var(--paper2);border:2px solid var(--rule);
+}
+.hn-table th{
+  text-align:left;font-size:11px;color:var(--ink);font-weight:800;
+  padding:10px 12px;background:var(--highlight);
+  border-bottom:2px solid var(--rule);
+  text-transform:uppercase;letter-spacing:.08em;
+}
+.hn-table td{padding:11px 12px;border-bottom:1px solid var(--rule-light);vertical-align:top;}
+.hn-table tr:last-child td{border-bottom:none;}
+.hn-table .rank{
+  color:var(--accent);font-weight:900;width:34px;text-align:center;
+  font-family:'Playfair Display',Georgia,serif;font-size:16px;
+}
+.hn-table .hn-title a{color:var(--ink);font-weight:700;text-decoration:none;font-size:14.5px;}
+.hn-table .hn-title a:hover{color:var(--accent);text-decoration:underline;}
+.hn-table .hn-score{color:var(--orange);font-weight:800;white-space:nowrap;width:74px;font-variant-numeric:tabular-nums;}
+.hn-table .hn-comments{color:var(--muted);white-space:nowrap;width:64px;font-variant-numeric:tabular-nums;}
+.tag{
+  display:inline-block;font-size:10.5px;color:var(--accent2);
+  background:transparent;border:1px solid var(--accent2);
+  padding:1px 7px;border-radius:0;white-space:nowrap;
+  text-transform:uppercase;letter-spacing:.05em;
+}
+
+/* GitHub / PH grid */
+.gh-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:13px;}
+.gh-card,.ph-card{
+  background:var(--paper2);border:1px solid var(--rule-light);
+  border-radius:2px;padding:14px 15px;transition:all .18s ease;
+}
+.gh-card:hover,.ph-card:hover{border-color:var(--ink);box-shadow:0 4px 14px rgba(0,0,0,.08);}
+.gh-head,.ph-top{display:flex;align-items:center;gap:8px;margin-bottom:7px;}
+.gh-name{
+  font-weight:800;color:var(--ink);text-decoration:none;font-size:14.5px;
+  font-family:Georgia,serif;
+}
+.gh-name:hover{color:var(--accent);}
+.gh-lang{
+  margin-left:auto;font-size:10.5px;color:var(--muted);
+  background:transparent;border:1px solid var(--rule-light);
+  padding:1px 7px;border-radius:0;text-transform:uppercase;letter-spacing:.05em;
+}
+.gh-desc,.ph-desc{font-size:13px;color:var(--ink2);line-height:1.55;}
+.gh-meta{display:flex;gap:14px;margin-top:9px;font-size:12px;font-variant-numeric:tabular-nums;}
+.gh-today{color:var(--green);font-weight:800;}
+.gh-total{color:var(--orange);font-weight:700;}
+.ph-rank{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:26px;height:26px;border-radius:50%;background:var(--accent);
+  color:var(--paper);font-size:12px;font-weight:900;
+  font-family:'Playfair Display',Georgia,serif;
+}
+.ph-name{font-size:16px;font-weight:900;color:var(--ink);text-decoration:none;font-family:'Playfair Display','Noto Serif SC',Georgia,serif;}
+.ph-name:hover{color:var(--accent);}
+.ph-up{color:var(--green);font-weight:800;}
+.ph-topics{color:var(--muted);font-size:11px;}
+
+/* Insights */
+.insight{
+  background:var(--paper2);border:1px solid var(--rule-light);
+  border-left:4px solid var(--accent);border-radius:0;
+  padding:16px 18px;margin-bottom:14px;
+}
+.insight-head{display:flex;align-items:center;gap:9px;margin-bottom:6px;}
+.insight-dot{width:9px;height:9px;border-radius:50%;background:var(--accent);}
+.insight-head h3{margin:0;font-size:16px;font-family:'Playfair Display','Noto Serif SC',Georgia,serif;font-weight:800;}
+.insight-src{
+  margin-left:auto;font-size:10.5px;color:var(--muted);
+  border:1px solid var(--rule-light);padding:2px 8px;border-radius:0;
+  text-transform:uppercase;letter-spacing:.05em;
+}
+.insight p{margin:4px 0 0;color:var(--ink2);font-size:13.5px;}
+
+/* Footer */
+footer.site-footer{
+  margin-top:40px;padding:22px 24px;text-align:center;
+  border-top:3px double var(--rule);color:var(--muted);
+  font-size:12px;line-height:1.7;font-style:italic;
+}
+footer.site-footer a{color:var(--accent2);text-decoration:none;}
+.note{
+  font-size:12px;color:var(--muted);background:var(--paper2);
+  border:1px solid var(--rule-light);border-radius:0;
+  padding:10px 13px;margin:0 0 14px;font-style:italic;
+}
+</style>
+<style>
+.wrap{max-width:1180px;--summary-w:290px;}
+.hn-window-note{font-size:12px;color:#6b6357;background:#efe7d8;border-left:3px solid #9b1b1b;padding:7px 11px;margin-bottom:16px;line-height:1.6;}
+/* 公共：综述栏 */
+.col-summary{border:1px solid #ddd2c0;padding:13px 15px;background:#efe7d8;}
+.col-title{font-family:'Playfair Display',Georgia,serif;font-size:12.5px;letter-spacing:.07em;text-transform:uppercase;color:#9b1b1b;border-bottom:2px solid #9b1b1b;padding-bottom:6px;margin-bottom:12px;}
+.col-summary p{margin:0 0 11px;font-family:'Source Serif 4',Georgia,serif;font-size:13px;line-height:1.72;color:#2a2a2a;}
+.col-summary p:last-child{margin-bottom:0;}
+.col-summary .hl{color:#9b1b1b;font-weight:600;}
+/* 公共：滚动内容栏（高度由 JS 设为左侧综述高度；CSS 兜底防 JS 失效） */
+.col-mid,.col-right{overflow-y:scroll;scrollbar-width:thin;border:1px solid #ddd2c0;background:#efe7d8;padding:10px 13px;max-height:80vh;overscroll-behavior:contain;}
+.col-mid::-webkit-scrollbar,.col-right::-webkit-scrollbar{width:8px;}
+.col-mid::-webkit-scrollbar-thumb,.col-right::-webkit-scrollbar-thumb{background:#c9bca6;border-radius:4px;}
+.col-mid .zh,.col-right .zh{font-size:10.5px;color:#8a8175;}
+/* HN 三栏：左综述(固定宽，与 GitHub 左栏一致) / 中 Top20 / 右全量 */
+.hn-three{display:grid;grid-template-columns:var(--summary-w) 1.6fr 1.15fr;gap:18px;align-items:start;}
+@media(max-width:1000px){.hn-three{grid-template-columns:1fr;}}
+.hn-col-title{font-family:'Playfair Display',Georgia,serif;font-size:12.5px;letter-spacing:.07em;text-transform:uppercase;color:#9b1b1b;border-bottom:2px solid #9b1b1b;padding-bottom:6px;margin-bottom:12px;}
+.hn-top-item{padding:8px 0;border-bottom:1px solid #ddd2c0;}
+.hn-top-item a{font-family:'Source Serif 4',Georgia,serif;font-size:13px;color:#1a1a1a;text-decoration:none;font-weight:600;line-height:1.35;}
+.hn-top-item a:hover{color:#9b1b1b;}
+.hn-rank{color:#9b1b1b;font-weight:700;margin-right:6px;font-family:'Playfair Display',serif;}
+.hn-top-meta{font-size:11px;color:#6b6357;margin-top:2px;}
+.hn-all-row{padding:5px 0;border-bottom:1px dotted #ccc1ad;font-size:12px;line-height:1.45;}
+.hn-all-row a{color:#1a3a5c;text-decoration:none;}
+.hn-all-row a:hover{text-decoration:underline;}
+.hn-all-meta{color:#9b1b1b;font-weight:600;font-size:10.5px;margin-right:4px;}
+/* 两栏：左侧当日综述(固定宽) + 右侧原内容（GitHub / Product Hunt / Papers） */
+.two-col{display:grid;grid-template-columns:var(--summary-w) 1fr;gap:26px;align-items:start;}
+@media(max-width:900px){.two-col{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a class="back-link" href="index.html">← 返回归档</a>
+  <div class="kicker">The Tech Dispatch</div>
+  <h1>🔥 今日技术热点速览</h1>
+  <div class="date">2026-08-08 · 星期六</div>
+  <div class="sub">数据来源：Hacker News · GitHub Trending · Product Hunt · Hugging Face Papers</div>
+</header>
+
+<nav class="quick-nav">
+  <a href="#top-story">🔥 今日头条</a>
+  <a href="#hn">📰 Hacker News</a>
+  <a href="#github">⭐ GitHub</a>
+  <a href="#producthunt">🚀 Product Hunt</a>
+  <a href="#papers">📄 Papers</a>
+  <a href="#insights">💡 趋势洞察</a>
+</nav>
+
+<div class="wrap">
+
+  <section id="top-story" class="hero">
+    <div class="sec-title"><span class="emo">🔥</span><span>今日头条 · Top 3</span></div>
+    <div class="hero-grid">
+      <a class="hero-card" href="https://news.ycombinator.com/item?id=49208314" target="_blank" rel="noopener">
+        <div class="hero-meta">858▲ · 820💬 · 今日双冠</div>
+        <div class="hero-title">US strikes $1.2B deal to pay German firm to halt offshore wind projects</div>
+        <div class="zh">美国砸 12 亿美元雇德国公司叫停海上风电项目——今日 HN 分数与评论双冠，罕见断层领先</div>
+      </a>
+      <a class="hero-card" href="https://news.ycombinator.com/item?id=49213754" target="_blank" rel="noopener">
+        <div class="hero-meta">402▲ · 271💬 · AI 编码治理</div>
+        <div class="hero-title">Oracle bans AI-generated code from OpenJDK</div>
+        <div class="zh">Oracle 禁止向 OpenJDK 提交 AI 生成代码——开源旗舰项目首次给「AI 写码」立规矩</div>
+      </a>
+      <a class="hero-card" href="https://github.com/PrimeIntellect-ai/prime-agent" target="_blank" rel="noopener">
+        <div class="hero-meta">TypeScript · 今日 +2,293★</div>
+        <div class="hero-title">PrimeIntellect-ai/prime-agent: A self-improving RLM agent for coding workflows and long-running autonomous tasks</div>
+        <div class="zh">PrimeIntellect 的 prime-agent：会自我进化的 RLM 智能体，单日激增 2,293★ 登顶 GitHub Trending</div>
+      </a>
+    </div>
+  </section>
+
+  <section id="hn" class="section">
+    <div class="sec-title"><span class="emo">📰</span><span>Hacker News · 全窗口热门</span></div>
+    <div class="hn-window-note">时间窗：2026-08-07 10:00 → 2026-08-08 10:00 (CST) · 窗口内共 <b>102</b> 条新帖 · 排序：分数与评论 min-max 归一化后加权（0.6×分数 + 0.4×评论），降序取 Top20（中栏）。右栏为窗口内全量，滚动浏览。左栏「当日综述」完整展示、不滚动；中/右栏高度与左栏对齐。</div>
+    <div class="hn-three">
+      <div class="col-summary">
+        <div class="col-title">📝 当日综述</div>
+        <div class="hn-summary"><p>本窗口（<span class="hl">8/7 10:00 → 8/8 10:00 CST</span>）Hacker News 共 <span class="hl">102 条</span>新帖，是近期罕见的低活跃周六窗口（约为工作日的 1/10）。《今日头条》由一篇政治经济长文包揽——「美国砸 12 亿美元雇德国公司叫停海上风电项目」以 <span class="hl">858▲/820💬</span> 同时登顶分数与评论，是窗口内唯一一条分数与讨论都断层领先的故事（罕见双冠）。</p>
+<p><b>AI 编码治理与模型发布同日对撞</b>：「Oracle 禁止向 OpenJDK 提交 AI 生成代码」<span class="hl">402▲/271💬</span> 把「AI 写码」推上治理台面；「DeepSeek V4 Flash 0731」<span class="hl">490▲/299💬</span> 是窗口内第二高分，「China's Kimi K3 安全测试逃脱沙箱」9▲ 续写开放权重模型的安全叙事；「规模化管控 AI 编程成本」177▲/175💬 与「Claude Code 8/14 起默认 auto 模式」19▲/17💬 呼应——企业正在给 AI 编程既开绿灯又装仪表盘。</p>
+<p><b>经济、气候与算力硬件缠绕</b>：「美国经济 7 月意外净减 2.3 万岗位」<span class="hl">340▲/338💬</span> 与「传 2027 年存储产能已售罄」267▲/250💬（AI 算力饥渴的硬件侧回声）并列；「正在崩塌气候叙事的弥天大谎」<span class="hl">141▲/166💬</span> 拿下漏网高讨论第二。安全与监控线贯穿多帖：「前 NSA 主管：水务系统控制器不该连网」141▲/97💬、「Framework 因 Metabase 0day 数据泄露」142▲/53💬、「Flock 想把司机变成移动监控」29▲/2💬、「抗议 Flock，亚利桑那男子反过来监控政府」12▲。</p>
+<p><b>社区与技术治理亮点</b>：「Nixpkgs 核心团队解散」122▲/50💬 震动 Nix 生态；「USA Today 联手 Palantir 分析受众数据」183▲/71💬、「AI 妄想成为领导力新盲点」161▲/103💬 折射技术与社会的张力。本窗口政治/经济/气候议题权重明显高于纯技术，AI 退居次轴线。</p>
+<p><b>排序方法</b>：对窗口内全部故事的分数与评论数做 min-max 归一化后加权（<span class="hl">0.6×分数 + 0.4×评论</span>），得热度 hot 并降序取 Top20（中栏）。右栏为窗口内全量 102 条、按同一热度排序、固定框内滚动——确保<span class="hl">零遗漏</span>。</p></div>
+        <div class="col-title" style="margin-top:18px;">⚠️ 漏网高讨论</div>
+        <div class="hn-summary"><p style='margin:0;'><span class='hl'>Adults over 65 will outnumber children b</span>（151💬 / 84▲） · <span class='hl'>I won't read LLM authored fiction</span>（112💬 / 71▲） · <span class='hl'>Radical Study Suggests Life on Earth Aro</span>（86💬 / 106▲）</p><p style='margin:6px 0 0;color:#6b6357;font-size:12px;'>「高分低讨论」之外的有效信号，均可在右栏翻到。</p></div>
+      </div>
+      <div class="col-mid">
+        <div class="hn-col-title">🔥 算法 Top 20</div>
+        <div class="hn-top-item">
+          <span class="hn-rank">1</span><a href="https://news.ycombinator.com/item?id=49208314" target="_blank" rel="noopener">US strikes $1.2B deal to pay German firm to halt offshore wind projects</a>
+          <div class="hn-top-meta">858▲ · 820💬 · hot 1.0000</div><div class="zh">美国砸 12 亿美元，雇德国公司叫停海上风电项目</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">2</span><a href="https://news.ycombinator.com/item?id=49209539" target="_blank" rel="noopener">What happens if an entire class of workers loses faith in their careers</a>
+          <div class="hn-top-meta">458▲ · 564💬 · hot 0.5924</div><div class="zh">当整整一代打工人对自己职业失去信念，会发生什么</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">3</span><a href="https://news.ycombinator.com/item?id=49214008" target="_blank" rel="noopener">DeepSeek V4 Flash 0731</a>
+          <div class="hn-top-meta">490▲ · 299💬 · hot 0.4858</div><div class="zh">DeepSeek V4 Flash 0731 发布</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">4</span><a href="https://news.ycombinator.com/item?id=49211386" target="_blank" rel="noopener">A year of fighting scrapers on my 1.5 million-page website</a>
+          <div class="hn-top-meta">385▲ · 363💬 · hot 0.4428</div><div class="zh">我的 150 万页网站，与爬虫斗争的一年</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">5</span><a href="https://news.ycombinator.com/item?id=49213754" target="_blank" rel="noopener">Oracle bans AI-generated code from OpenJDK</a>
+          <div class="hn-top-meta">402▲ · 271💬 · hot 0.4099</div><div class="zh">Oracle 禁止向 OpenJDK 提交 AI 生成的代码</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">6</span><a href="https://news.ycombinator.com/item?id=49209546" target="_blank" rel="noopener">U.S. economy lost 23,000 jobs in July, a sudden reversal</a>
+          <div class="hn-top-meta">340▲ · 338💬 · hot 0.3988</div><div class="zh">美国经济 7 月意外净减 2.3 万岗位，突然逆转</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">7</span><a href="https://news.ycombinator.com/item?id=49207236" target="_blank" rel="noopener">2027 memory capacity is reportedly sold out</a>
+          <div class="hn-top-meta">267▲ · 250💬 · hot 0.3043</div><div class="zh">传 2027 年存储产能已被预订一空</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">8</span><a href="https://news.ycombinator.com/item?id=49214863" target="_blank" rel="noopener">App Store Rejection of the Week: Dark Hours</a>
+          <div class="hn-top-meta">289▲ · 173💬 · hot 0.2823</div><div class="zh">本周 App Store 拒审案例：Dark Hours</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">9</span><a href="https://news.ycombinator.com/item?id=49208535" target="_blank" rel="noopener">Making Postgres 300x faster for analytics: batching, operator fusion, and SIMD</a>
+          <div class="hn-top-meta">258▲ · 120💬 · hot 0.2345</div><div class="zh">让 Postgres 分析查询快 300 倍：批处理、算子融合与 SIMD</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">10</span><a href="https://news.ycombinator.com/item?id=49214098" target="_blank" rel="noopener">Assembly Hall of Shame</a>
+          <div class="hn-top-meta">270▲ · 65💬 · hot 0.2162</div><div class="zh">汇编语言「耻辱厅」：那些不该手写的场景</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">11</span><a href="https://news.ycombinator.com/item?id=49213097" target="_blank" rel="noopener">Tax cuts for the wealthy only benefit the rich (2023)</a>
+          <div class="hn-top-meta">175▲ · 181💬 · hot 0.2056</div><div class="zh">给富人的减税，只惠及富人（2023 复盘）</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">12</span><a href="https://news.ycombinator.com/item?id=49214468" target="_blank" rel="noopener">Managing AI Coding Costs at Scale</a>
+          <div class="hn-top-meta">177▲ · 175💬 · hot 0.2041</div><div class="zh">规模化管控 AI 编程成本</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">13</span><a href="https://news.ycombinator.com/item?id=49213029" target="_blank" rel="noopener">Responding to the next frontier of critical cyber capabilities</a>
+          <div class="hn-top-meta">163▲ · 168💬 · hot 0.1908</div><div class="zh">应对下一前沿的关键网络能力</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">14</span><a href="https://news.ycombinator.com/item?id=49208686" target="_blank" rel="noopener">The Gargantuan Lie That Is Collapsing the Climate</a>
+          <div class="hn-top-meta">141▲ · 166💬 · hot 0.1743</div><div class="zh">正在崩塌气候叙事的弥天大谎</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">15</span><a href="https://news.ycombinator.com/item?id=49209385" target="_blank" rel="noopener">Show HN: Wyzer Programming Language</a>
+          <div class="hn-top-meta">178▲ · 100💬 · hot 0.1682</div><div class="zh">Show HN：Wyzer 编程语言</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">16</span><a href="https://news.ycombinator.com/item?id=49211438" target="_blank" rel="noopener">Iceberg Collapses and Flips over in Ilulissat, Greenland (July 25, 2026) [video]</a>
+          <div class="hn-top-meta">200▲ · 50💬 · hot 0.1594</div><div class="zh">格陵兰 Ilulissat 冰山崩塌并翻转（2026-07-25）[视频]</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">17</span><a href="https://news.ycombinator.com/item?id=49210077" target="_blank" rel="noopener">AI psychosis is the new leadership blind spot</a>
+          <div class="hn-top-meta">161▲ · 103💬 · hot 0.1577</div><div class="zh">「AI 妄想」成为领导力新的盲点</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">18</span><a href="https://news.ycombinator.com/item?id=49210589" target="_blank" rel="noopener">USA Today Co., partners with Palantir to analyze audience data</a>
+          <div class="hn-top-meta">183▲ · 71💬 · hot 0.1576</div><div class="zh">USA Today 联手 Palantir 分析受众数据</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">19</span><a href="https://news.ycombinator.com/item?id=49216362" target="_blank" rel="noopener">Water system controllers don&#x27;t belong on the internet, says ex-NSA chief</a>
+          <div class="hn-top-meta">141▲ · 97💬 · hot 0.1406</div><div class="zh">前 NSA 主管：水务系统控制器不该连上互联网</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">20</span><a href="https://news.ycombinator.com/item?id=49208393" target="_blank" rel="noopener">Kitesurf: Agent-first browser that runs in V8 isolates</a>
+          <div class="hn-top-meta">172▲ · 44💬 · hot 0.1367</div><div class="zh">Kitesurf：跑在 V8 沙箱里的「Agent 优先」浏览器</div>
+        </div>
+      </div>
+      <div class="col-right">
+        <div class="hn-col-title">🗂️ 全量（窗口内 · 滚动）</div>
+<div class="hn-all-row"><span class="hn-all-meta">1. 858▲/820💬</span> <a href="https://news.ycombinator.com/item?id=49208314" target="_blank" rel="noopener">US strikes $1.2B deal to pay German firm to halt offshore wind projects</a><div class="zh">美国砸 12 亿美元，雇德国公司叫停海上风电项目</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">2. 458▲/564💬</span> <a href="https://news.ycombinator.com/item?id=49209539" target="_blank" rel="noopener">What happens if an entire class of workers loses faith in their careers</a><div class="zh">当整整一代打工人对自己职业失去信念，会发生什么</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">3. 490▲/299💬</span> <a href="https://news.ycombinator.com/item?id=49214008" target="_blank" rel="noopener">DeepSeek V4 Flash 0731</a><div class="zh">DeepSeek V4 Flash 0731 发布</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">4. 385▲/363💬</span> <a href="https://news.ycombinator.com/item?id=49211386" target="_blank" rel="noopener">A year of fighting scrapers on my 1.5 million-page website</a><div class="zh">我的 150 万页网站，与爬虫斗争的一年</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">5. 402▲/271💬</span> <a href="https://news.ycombinator.com/item?id=49213754" target="_blank" rel="noopener">Oracle bans AI-generated code from OpenJDK</a><div class="zh">Oracle 禁止向 OpenJDK 提交 AI 生成的代码</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">6. 340▲/338💬</span> <a href="https://news.ycombinator.com/item?id=49209546" target="_blank" rel="noopener">U.S. economy lost 23,000 jobs in July, a sudden reversal</a><div class="zh">美国经济 7 月意外净减 2.3 万岗位，突然逆转</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">7. 267▲/250💬</span> <a href="https://news.ycombinator.com/item?id=49207236" target="_blank" rel="noopener">2027 memory capacity is reportedly sold out</a><div class="zh">传 2027 年存储产能已被预订一空</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">8. 289▲/173💬</span> <a href="https://news.ycombinator.com/item?id=49214863" target="_blank" rel="noopener">App Store Rejection of the Week: Dark Hours</a><div class="zh">本周 App Store 拒审案例：Dark Hours</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">9. 258▲/120💬</span> <a href="https://news.ycombinator.com/item?id=49208535" target="_blank" rel="noopener">Making Postgres 300x faster for analytics: batching, operator fusion, and SIMD</a><div class="zh">让 Postgres 分析查询快 300 倍：批处理、算子融合与 SIMD</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">10. 270▲/65💬</span> <a href="https://news.ycombinator.com/item?id=49214098" target="_blank" rel="noopener">Assembly Hall of Shame</a><div class="zh">汇编语言「耻辱厅」：那些不该手写的场景</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">11. 175▲/181💬</span> <a href="https://news.ycombinator.com/item?id=49213097" target="_blank" rel="noopener">Tax cuts for the wealthy only benefit the rich (2023)</a><div class="zh">给富人的减税，只惠及富人（2023 复盘）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">12. 177▲/175💬</span> <a href="https://news.ycombinator.com/item?id=49214468" target="_blank" rel="noopener">Managing AI Coding Costs at Scale</a><div class="zh">规模化管控 AI 编程成本</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">13. 163▲/168💬</span> <a href="https://news.ycombinator.com/item?id=49213029" target="_blank" rel="noopener">Responding to the next frontier of critical cyber capabilities</a><div class="zh">应对下一前沿的关键网络能力</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">14. 141▲/166💬</span> <a href="https://news.ycombinator.com/item?id=49208686" target="_blank" rel="noopener">The Gargantuan Lie That Is Collapsing the Climate</a><div class="zh">正在崩塌气候叙事的弥天大谎</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">15. 178▲/100💬</span> <a href="https://news.ycombinator.com/item?id=49209385" target="_blank" rel="noopener">Show HN: Wyzer Programming Language</a><div class="zh">Show HN：Wyzer 编程语言</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">16. 200▲/50💬</span> <a href="https://news.ycombinator.com/item?id=49211438" target="_blank" rel="noopener">Iceberg Collapses and Flips over in Ilulissat, Greenland (July 25, 2026) [video]</a><div class="zh">格陵兰 Ilulissat 冰山崩塌并翻转（2026-07-25）[视频]</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">17. 161▲/103💬</span> <a href="https://news.ycombinator.com/item?id=49210077" target="_blank" rel="noopener">AI psychosis is the new leadership blind spot</a><div class="zh">「AI 妄想」成为领导力新的盲点</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">18. 183▲/71💬</span> <a href="https://news.ycombinator.com/item?id=49210589" target="_blank" rel="noopener">USA Today Co., partners with Palantir to analyze audience data</a><div class="zh">USA Today 联手 Palantir 分析受众数据</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">19. 141▲/97💬</span> <a href="https://news.ycombinator.com/item?id=49216362" target="_blank" rel="noopener">Water system controllers don&#x27;t belong on the internet, says ex-NSA chief</a><div class="zh">前 NSA 主管：水务系统控制器不该连上互联网</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">20. 172▲/44💬</span> <a href="https://news.ycombinator.com/item?id=49208393" target="_blank" rel="noopener">Kitesurf: Agent-first browser that runs in V8 isolates</a><div class="zh">Kitesurf：跑在 V8 沙箱里的「Agent 优先」浏览器</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">21. 162▲/54💬</span> <a href="https://news.ycombinator.com/item?id=49214770" target="_blank" rel="noopener">Ancient Library – 1,060 Greek/Latin texts, click any word to parse it</a><div class="zh">Ancient Library：1060 部希腊/拉丁典籍，点任意词即解析</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">22. 84▲/151💬</span> <a href="https://news.ycombinator.com/item?id=49212424" target="_blank" rel="noopener">Adults over 65 will outnumber children by 2029</a><div class="zh">2029 年：65 岁以上老人数量将超过儿童</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">23. 142▲/66💬</span> <a href="https://news.ycombinator.com/item?id=49209368" target="_blank" rel="noopener">DOGE overstated savings, government watchdog says</a><div class="zh">政府 watchdog：DOGE 夸大了节省金额</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">24. 136▲/73💬</span> <a href="https://news.ycombinator.com/item?id=49214306" target="_blank" rel="noopener">ICE will release body cam video only when seen in the agency&#x27;s &#x27;best interests&#x27;</a><div class="zh">ICE 称只在「符合自身最大利益」时才公开执法记录仪视频</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">25. 143▲/62💬</span> <a href="https://news.ycombinator.com/item?id=49208458" target="_blank" rel="noopener">Show HN: textlog – A quiet, text-only microblogging platform, open-source, no JS</a><div class="zh">Show HN：textlog——无 JS、开源的纯文本微博平台</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">26. 142▲/53💬</span> <a href="https://news.ycombinator.com/item?id=49206130" target="_blank" rel="noopener">Framework discloses data breach via Metabase 0-day</a><div class="zh">Framework 因 Metabase 0day 曝光数据泄露</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">27. 146▲/37💬</span> <a href="https://news.ycombinator.com/item?id=49211921" target="_blank" rel="noopener">An all-sky map of half a million supermassive black holes</a><div class="zh">半百万个超大质量黑洞的全天图</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">28. 106▲/86💬</span> <a href="https://news.ycombinator.com/item?id=49209572" target="_blank" rel="noopener">Radical Study Suggests Life on Earth Arose Twice</a><div class="zh">激进研究：地球生命可能起源了两次</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">29. 122▲/50💬</span> <a href="https://news.ycombinator.com/item?id=49217993" target="_blank" rel="noopener">The Nixpkgs core team has disbanded</a><div class="zh">Nixpkgs 核心团队解散</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">30. 121▲/46💬</span> <a href="https://news.ycombinator.com/item?id=49216946" target="_blank" rel="noopener">U.S. Department of Energy Launches the Genesis Open Models Initiative</a><div class="zh">美国能源部启动 Genesis 开放模型计划</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">31. 71▲/112💬</span> <a href="https://news.ycombinator.com/item?id=49207146" target="_blank" rel="noopener">I won&#x27;t read LLM authored fiction</a><div class="zh">我不会去读 AI 写的小说</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">32. 64▲/82💬</span> <a href="https://news.ycombinator.com/item?id=49206115" target="_blank" rel="noopener">Anthropic CEO reportedly worried new hires only care about money</a><div class="zh">传 Anthropic CEO 担忧新员工只在乎钱</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">33. 64▲/78💬</span> <a href="https://news.ycombinator.com/item?id=49211758" target="_blank" rel="noopener">Another Corner of the Internet Has Been Ruined</a><div class="zh">互联网又一个角落被毁掉了</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">34. 60▲/62💬</span> <a href="https://news.ycombinator.com/item?id=49209921" target="_blank" rel="noopener">The web server deployment model breaks at hobby scale</a><div class="zh">Web 服务器部署模型在个人小项目规模下就崩了</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">35. 72▲/35💬</span> <a href="https://news.ycombinator.com/item?id=49212698" target="_blank" rel="noopener">This Mine Predicts Major Wars. It&#x27;s Opening Again</a><div class="zh">这座能预测大战的矿，又要开工了</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">36. 68▲/28💬</span> <a href="https://news.ycombinator.com/item?id=49208341" target="_blank" rel="noopener">Bulldozers Plow Through Big Bend National Park, Sparking Fury in Texas</a><div class="zh">推土机开进大本德国家公园，得州民众愤怒</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">37. 48▲/57💬</span> <a href="https://news.ycombinator.com/item?id=49211437" target="_blank" rel="noopener">Software is about people, not code (2020)</a><div class="zh">软件关乎人，而非代码（2020）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">38. 66▲/29💬</span> <a href="https://news.ycombinator.com/item?id=49212459" target="_blank" rel="noopener">Zohran Mamdani&#x27;s NYC Tech Team Is What DOGE Should Have Been</a><div class="zh">Mamdani 的纽约技术团队，才是 DOGE 本该有的样子</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">39. 41▲/57💬</span> <a href="https://news.ycombinator.com/item?id=49213985" target="_blank" rel="noopener">The Claudyssey: A line-for-line translation of Homer&#x27;s Odyssey by Claude Fable 5</a><div class="zh">Claudyssey：用 Claude Fable 5 逐行翻译荷马《奥德赛》</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">40. 54▲/35💬</span> <a href="https://news.ycombinator.com/item?id=49205790" target="_blank" rel="noopener">Mythos Attempted to Social Engineer Open Source Maintainer to Merge Malware</a><div class="zh">Mythos 试图社会工程开源维护者合入恶意代码</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">41. 33▲/64💬</span> <a href="https://news.ycombinator.com/item?id=49207770" target="_blank" rel="noopener">Generative &quot;AI&quot;: The Guitar Hero of Creativity</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">42. 32▲/62💬</span> <a href="https://news.ycombinator.com/item?id=49212928" target="_blank" rel="noopener">The AI Billboards Are Killing SF</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">43. 72▲/3💬</span> <a href="https://news.ycombinator.com/item?id=49210240" target="_blank" rel="noopener">U.S. Lost 23,000 Jobs in July, While Unemployment Ticked Lower</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">44. 53▲/30💬</span> <a href="https://news.ycombinator.com/item?id=49208270" target="_blank" rel="noopener">Kalshi and Polymarket bets on clinical trials criticized as &#x27;ghastly&#x27;</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">45. 36▲/50💬</span> <a href="https://news.ycombinator.com/item?id=49217629" target="_blank" rel="noopener">Should AI labs be treated like the owners of dangerous animals?</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">46. 53▲/25💬</span> <a href="https://news.ycombinator.com/item?id=49206642" target="_blank" rel="noopener">Artificial Intelligence used to design new viruses</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">47. 59▲/2💬</span> <a href="https://news.ycombinator.com/item?id=49205461" target="_blank" rel="noopener">&quot;It&#x27;s unclear how Sopwith escaped to the general public.&quot;</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">48. 35▲/36💬</span> <a href="https://news.ycombinator.com/item?id=49215786" target="_blank" rel="noopener">Lost my phone at the office. Claude suggested tracking Bluetooth signal strength</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">49. 54▲/7💬</span> <a href="https://news.ycombinator.com/item?id=49211660" target="_blank" rel="noopener">Möbius-Strip Crosswords</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">50. 56▲/2💬</span> <a href="https://news.ycombinator.com/item?id=49214775" target="_blank" rel="noopener">Psychological Warfare in Reverse Engineering (2015)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">51. 44▲/16💬</span> <a href="https://news.ycombinator.com/item?id=49205813" target="_blank" rel="noopener">Executable Emoji</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">52. 41▲/15💬</span> <a href="https://news.ycombinator.com/item?id=49213367" target="_blank" rel="noopener">Canada adds 75,000 new jobs in July, unemployment rate lowest in 2 years</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">53. 34▲/14💬</span> <a href="https://news.ycombinator.com/item?id=49215292" target="_blank" rel="noopener">Mykhailo Fedorov reveals struggle to secure Patriot missiles and Western support</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">54. 40▲/3💬</span> <a href="https://news.ycombinator.com/item?id=49218179" target="_blank" rel="noopener">NASA to keep its 48-year-old Voyager 2 probe running for yet another year</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">55. 30▲/3💬</span> <a href="https://news.ycombinator.com/item?id=49215839" target="_blank" rel="noopener">BMW Rolling Out In-Car Spam</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">56. 28▲/4💬</span> <a href="https://news.ycombinator.com/item?id=49212760" target="_blank" rel="noopener">State Department Wants Palantir&#x27;s Advice on Free Speech</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">57. 19▲/17💬</span> <a href="https://news.ycombinator.com/item?id=49214994" target="_blank" rel="noopener">Claude Code: Starting August 14, auto mode will be the default permission mode</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">58. 29▲/2💬</span> <a href="https://news.ycombinator.com/item?id=49209653" target="_blank" rel="noopener">Flock Pitched a Plan to Turn Uber and Lyft Drivers into Roaming Surveillance</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">59. 27▲/4💬</span> <a href="https://news.ycombinator.com/item?id=49209918" target="_blank" rel="noopener">Stowaway – take the window seat on any plane or satellite overhead</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">60. 17▲/17💬</span> <a href="https://news.ycombinator.com/item?id=49210930" target="_blank" rel="noopener">Terafab</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">61. 9▲/25💬</span> <a href="https://news.ycombinator.com/item?id=49205595" target="_blank" rel="noopener">Lines of code. 1,596 BTC gone</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">62. 20▲/6💬</span> <a href="https://news.ycombinator.com/item?id=49213016" target="_blank" rel="noopener">The Tokenpocalypse Is Here: Companies Are Scrambling to Stop Spending on AI</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">63. 22▲/1💬</span> <a href="https://news.ycombinator.com/item?id=49214166" target="_blank" rel="noopener">New Mexico Survivors&#x27; Truth Commission – Jeffrey Epstein at Zorro Ranch [pdf]</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">64. 11▲/16💬</span> <a href="https://news.ycombinator.com/item?id=49213081" target="_blank" rel="noopener">Kalshi and Polymarket bets on clinical trials criticized as &#x27;ghastly&#x27;</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">65. 18▲/5💬</span> <a href="https://news.ycombinator.com/item?id=49206262" target="_blank" rel="noopener">I&#x27;ve succesfully compiled Netscape 3.0.2 on a 64 Debian</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">66. 19▲/1💬</span> <a href="https://news.ycombinator.com/item?id=49212726" target="_blank" rel="noopener">U.S. Intel Finds Putin Could Test NATO&#x27;s Resolve with Limited Incursion</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">67. 15▲/6💬</span> <a href="https://news.ycombinator.com/item?id=49207786" target="_blank" rel="noopener">Meta&#x27;s Ray-Bans are getting banned from UK pubs, and the EU is circling</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">68. 14▲/7💬</span> <a href="https://news.ycombinator.com/item?id=49205836" target="_blank" rel="noopener">Why Is Everyone in Tech So Sad?</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">69. 10▲/12💬</span> <a href="https://news.ycombinator.com/item?id=49206566" target="_blank" rel="noopener">OpenAI&#x27;s New Device Will Be Hockey Puck-Sized and Cost over $300</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">70. 16▲/3💬</span> <a href="https://news.ycombinator.com/item?id=49214813" target="_blank" rel="noopener">US Sold Euros to Save the Yen, Europe Found Out After</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">71. 17▲/1💬</span> <a href="https://news.ycombinator.com/item?id=49216075" target="_blank" rel="noopener">YouTube&#x27;s AI Detection Kicked Us in the Face</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">72. 14▲/5💬</span> <a href="https://news.ycombinator.com/item?id=49212531" target="_blank" rel="noopener">AI agents fake identities, target real people in new security incident</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">73. 12▲/6💬</span> <a href="https://news.ycombinator.com/item?id=49205627" target="_blank" rel="noopener">Show HN: Sidebar – a private ESP32 intercom for five kids, no accounts</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">74. 16▲/0💬</span> <a href="https://news.ycombinator.com/item?id=49212487" target="_blank" rel="noopener">Finland to stop maintaining poles carrying communication lines with Russia</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">75. 15▲/0💬</span> <a href="https://news.ycombinator.com/item?id=49207793" target="_blank" rel="noopener">Show HN: Certo – An open source platform to deliver Open Badges</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">76. 12▲/4💬</span> <a href="https://news.ycombinator.com/item?id=49216389" target="_blank" rel="noopener">Opus5/low can do CryptoNote base58 decoding toolless, in working memory alone</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">77. 11▲/5💬</span> <a href="https://news.ycombinator.com/item?id=49208461" target="_blank" rel="noopener">New Intelligence Warns Russia May Provoke NATO Amid Dwindling U.S. Munitions</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">78. 14▲/0💬</span> <a href="https://news.ycombinator.com/item?id=49205592" target="_blank" rel="noopener">C64 Demo Effects Explained: Rodents in the Attic [video]</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">79. 12▲/2💬</span> <a href="https://news.ycombinator.com/item?id=49216761" target="_blank" rel="noopener">William Orbit, pop producer for Madonna, All Saints and more, dies aged 69</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">80. 12▲/2💬</span> <a href="https://news.ycombinator.com/item?id=49210554" target="_blank" rel="noopener">Alibaba plans to charge big users of its next open-source AI model</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">81. 13▲/0💬</span> <a href="https://news.ycombinator.com/item?id=49208513" target="_blank" rel="noopener">How to Not Write Parsers</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">82. 12▲/1💬</span> <a href="https://news.ycombinator.com/item?id=49216988" target="_blank" rel="noopener">Target Is Slicing Open Pokémon Card Boxes Before They&#x27;re Sold to Deter Scalpers</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">83. 12▲/1💬</span> <a href="https://news.ycombinator.com/item?id=49215515" target="_blank" rel="noopener">Protesting Flock, Arizona Man Presents Plan to Surveil Government Officials</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">84. 12▲/0💬</span> <a href="https://news.ycombinator.com/item?id=49207250" target="_blank" rel="noopener">Why and how the Austrian Military moved to LibreOffice (Part 1)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">85. 11▲/1💬</span> <a href="https://news.ycombinator.com/item?id=49209009" target="_blank" rel="noopener">Original iPhone Loses Its Last Cellular Network as T-Mobile Kills 2G</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">86. 10▲/2💬</span> <a href="https://news.ycombinator.com/item?id=49206534" target="_blank" rel="noopener">I&#x27;m leaving OpenAI to build Jurassic Park</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">87. 9▲/3💬</span> <a href="https://news.ycombinator.com/item?id=49212542" target="_blank" rel="noopener">The secret nuclear material the US forgot how to make</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">88. 9▲/3💬</span> <a href="https://news.ycombinator.com/item?id=49209983" target="_blank" rel="noopener">Salem Brought a Guillotine to Oppose New Data Center</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">89. 9▲/3💬</span> <a href="https://news.ycombinator.com/item?id=49205536" target="_blank" rel="noopener">Framework Data Breach</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">90. 11▲/0💬</span> <a href="https://news.ycombinator.com/item?id=49215432" target="_blank" rel="noopener">Europe&#x27;s drought reveals medieval buildings, Nazi warships, mammoth remains</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">91. 11▲/0💬</span> <a href="https://news.ycombinator.com/item?id=49212587" target="_blank" rel="noopener">Code review bottlenecks: How we hill climbed our way to higher PR throughput</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">92. 11▲/0💬</span> <a href="https://news.ycombinator.com/item?id=49207533" target="_blank" rel="noopener">US to vet social media of foreign journalists applying for visas, report says</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">93. 11▲/0💬</span> <a href="https://news.ycombinator.com/item?id=49206338" target="_blank" rel="noopener">Trump administration to pay German firm $1.22B to cut offshore wind leases</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">94. 10▲/1💬</span> <a href="https://news.ycombinator.com/item?id=49215898" target="_blank" rel="noopener">Mailüfterl (Early Transistorized Computer)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">95. 9▲/2💬</span> <a href="https://news.ycombinator.com/item?id=49207898" target="_blank" rel="noopener">Show HN: Recipe Jar, a local-first recipe keeper with no account or ads</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">96. 10▲/0💬</span> <a href="https://news.ycombinator.com/item?id=49213400" target="_blank" rel="noopener">Show HN: 514 - Managed infra, agents and data to simulate coding agents as users</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">97. 10▲/0💬</span> <a href="https://news.ycombinator.com/item?id=49207991" target="_blank" rel="noopener">CrossPoint 1.5 has officially been released</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">98. 9▲/1💬</span> <a href="https://news.ycombinator.com/item?id=49216185" target="_blank" rel="noopener">China&#x27;s Kimi K3 AI model escapes isolated sandbox during security test</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">99. 9▲/1💬</span> <a href="https://news.ycombinator.com/item?id=49214715" target="_blank" rel="noopener">White House Ballroom Construction Must Stop, Appeals Court Rules</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">100. 9▲/1💬</span> <a href="https://news.ycombinator.com/item?id=49209354" target="_blank" rel="noopener">They don&#x27;t make &#x27;em like Sublime Text anymore</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">101. 9▲/0💬</span> <a href="https://news.ycombinator.com/item?id=49215268" target="_blank" rel="noopener">Ten ways I&#x27;ve Sped Up Sonic on the Amiga 1200</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">102. 9▲/0💬</span> <a href="https://news.ycombinator.com/item?id=49212883" target="_blank" rel="noopener">Jujutsu 0.44.0</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="github" class="section">
+    <div class="sec-title"><span class="emo">⭐</span><span>GitHub Trending · 当日热门（按 star 增量排序）</span></div>
+    <div class="two-col">
+      <div class="col-summary"><div class="col-title">📝 当日综述</div><p>当日榜单共 <b><span class="hl">17 个</span>仓库</b>，且是周六低活跃窗口，但头部集中度依然极高：<b>mattpocock/skills</b> 以 <b>+2,152★</b> 登顶，<b>PrimeIntellect-ai/prime-agent</b>（<span class="hl">+2,293★</span>，总星仅 6,653）作为全新仓库单日暴涨 34%，是本期最大黑马。</p>
+<p><b>「Agent 技能化」全线霸榜</b>：除 mattpocock/skills 外，<b>addyosmani/agent-skills</b>（<span class="hl">+1,131★</span>）、<b>google/skills</b>（+327★）、<b>obra/superpowers</b>（+782★）、<b>unclebob/swarm-forge</b>（+81★）清一色是「给 AI 编程 Agent 用的技能 / 编排框架」。开源社区正在把「怎么让 Agent 好好干活」沉淀成可复用的工程标准件。</p>
+<p><b>「给 Agent 一台电脑」与可观测底座</b>：<b>cloudflare/computer</b>（TypeScript，<span class="hl">+872★</span>）把可远程调用的电脑作为 Agent 底座；<b>denoland/celld</b>（Rust，+516★）做自托管分布式 Durable Objects；<b>goauthentik/authentik</b>（Python，+530★）是身份胶水；<b>pranshuparmar/witr</b>（+234★）做进程溯源。Agent 从「能对话」走向「能操作环境、能审计」。</p>
+<p><b>其余</b>：<b>Significant-Gravitas/AutoGPT</b>（+355★，AI 平民化平台）、<b>666ghj/MiroFish</b>（+141★，群体智能引擎，总星 70k）、<b>jdx/mise</b>（+135★，Rust 重写 DevOps 标配）、<b>semantica-agi/semantica</b>（+122★，图原生 AI 基础设施）、<b>K2SOsint/Legendary_OSINT</b>（+109★，OSINT 工具清单）、<b>google/guava</b>（+152★，Java 核心库）、<b>chenyme/grok2api</b>（+55★，Grok 多账号网关）。</p></div>
+      <div class="col-right"><div class="gh-grid">
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/PrimeIntellect-ai/prime-agent" target="_blank" rel="noopener">PrimeIntellect-ai/prime-agent</a>
+            <span class="gh-lang">TypeScript</span>
+          </div>
+          <div class="gh-desc">A self-improving RLM agent for coding workflows and long-running autonomous tasks.<div class="zh">PrimeIntellect 的 prime-agent：会自我进化的 RLM（推理型大模型）智能体，面向编程工作流与长程自主任务</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 2,293 今日</span>
+            <span class="gh-total">★ 6,653</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">mattpocock/skills</a>
+            <span class="gh-lang">Shell</span>
+          </div>
+          <div class="gh-desc">Skills for Real Engineers. Straight from my .agents directory.<div class="zh">出自作者 .agents 目录的「真工程师技能」合集——写给 AI 编程 Agent 用的可复用技能</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 2,152 今日</span>
+            <span class="gh-total">★ 208,884</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/addyosmani/agent-skills" target="_blank" rel="noopener">addyosmani/agent-skills</a>
+            <span class="gh-lang">JavaScript</span>
+          </div>
+          <div class="gh-desc">Production-grade engineering skills for AI coding agents.<div class="zh">Agent Skills：由 Addy Osmani 维护、面向 AI 编程 Agent 的生产级工程技能合集</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 1,131 今日</span>
+            <span class="gh-total">★ 83,929</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/cloudflare/computer" target="_blank" rel="noopener">cloudflare/computer</a>
+            <span class="gh-lang">TypeScript</span>
+          </div>
+          <div class="gh-desc">Give your agent a computer.<div class="zh">Cloudflare 的「电脑」项目——给 Agent 一台可远程调用的计算机，作为应用与自动化底座</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 872 今日</span>
+            <span class="gh-total">★ 5,783</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/obra/superpowers" target="_blank" rel="noopener">obra/superpowers</a>
+            <span class="gh-lang">Shell</span>
+          </div>
+          <div class="gh-desc">An agentic skills framework & software development methodology that works.<div class="zh">一套真正能跑通的 Agent 技能框架与软件开发方法论</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 782 今日</span>
+            <span class="gh-total">★ 268,765</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/goauthentik/authentik" target="_blank" rel="noopener">goauthentik/authentik</a>
+            <span class="gh-lang">Python</span>
+          </div>
+          <div class="gh-desc">The authentication glue you need.<div class="zh">Authentik：你把应用接进身份体系时需要的「认证胶水」——开源 SSO / IAM</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 530 今日</span>
+            <span class="gh-total">★ 23,627</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/denoland/celld" target="_blank" rel="noopener">denoland/celld</a>
+            <span class="gh-lang">Rust</span>
+          </div>
+          <div class="gh-desc">self-hosted, distributed Durable Objects.<div class="zh">celld：自托管、分布式的 Durable Objects（持久化对象）运行时</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 516 今日</span>
+            <span class="gh-total">★ 2,224</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/Significant-Gravitas/AutoGPT" target="_blank" rel="noopener">Significant-Gravitas/AutoGPT</a>
+            <span class="gh-lang">Python</span>
+          </div>
+          <div class="gh-desc">AutoGPT is the vision of accessible AI for everyone, to use and to build on.<div class="zh">AutoGPT：让 AI 能力触手可及、人人可建的开源 Agent 平台</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 355 今日</span>
+            <span class="gh-total">★ 186,339</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/google/skills" target="_blank" rel="noopener">google/skills</a>
+            <span class="gh-lang">Python</span>
+          </div>
+          <div class="gh-desc">Agent Skills for Google products and technologies.<div class="zh">Google 出品的 Agent Skills：面向自家产品与技术的智能体技能合集</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 327 今日</span>
+            <span class="gh-total">★ 16,271</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/pranshuparmar/witr" target="_blank" rel="noopener">pranshuparmar/witr</a>
+            <span class="gh-lang">Go</span>
+          </div>
+          <div class="gh-desc">Why is this running? Trace any process, port, container, or file back to what started it - CLI + TUI.<div class="zh">witr：追溯任意进程 / 端口 / 容器 / 文件「是谁启动的」——CLI + TUI 排查工具</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 234 今日</span>
+            <span class="gh-total">★ 19,782</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/google/guava" target="_blank" rel="noopener">google/guava</a>
+            <span class="gh-lang">Java</span>
+          </div>
+          <div class="gh-desc">Google core libraries for Java.<div class="zh">Guava：Google 的 Java 核心工具库（集合 / 缓存 / 并发等）</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 152 今日</span>
+            <span class="gh-total">★ 51,765</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/666ghj/MiroFish" target="_blank" rel="noopener">666ghj/MiroFish</a>
+            <span class="gh-lang">Python</span>
+          </div>
+          <div class="gh-desc">A Simple and Universal Swarm Intelligence Engine, Predicting Anything.<div class="zh">MiroFish：简洁通用的群体智能引擎，宣称可「预测万物」</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 141 今日</span>
+            <span class="gh-total">★ 70,520</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/jdx/mise" target="_blank" rel="noopener">jdx/mise</a>
+            <span class="gh-lang">Rust</span>
+          </div>
+          <div class="gh-desc">dev tools, env vars, task runner.<div class="zh">mise：开发工具链、环境变量与任务运行器（Rust 重写 DevOps 标配）</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 135 今日</span>
+            <span class="gh-total">★ 32,082</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/semantica-agi/semantica" target="_blank" rel="noopener">semantica-agi/semantica</a>
+            <span class="gh-lang">Python</span>
+          </div>
+          <div class="gh-desc">Graph-Native Infrastructure for Context and Accountable AI Systems.<div class="zh">semantica：用于上下文与可问责 AI 系统的「图原生」基础设施</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 122 今日</span>
+            <span class="gh-total">★ 2,367</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/K2SOsint/Legendary_OSINT" target="_blank" rel="noopener">K2SOsint/Legendary_OSINT</a>
+            <span class="gh-lang"></span>
+          </div>
+          <div class="gh-desc">A list of OSINT tools & resources for (fraud-)investigators, CTI-analysts, KYC, AML and more.<div class="zh">Legendary_OSINT：面向（反欺诈）调查员、CTI 分析师、KYC/AML 的 OSINT 工具与资源清单</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 109 今日</span>
+            <span class="gh-total">★ 1,452</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/unclebob/swarm-forge" target="_blank" rel="noopener">unclebob/swarm-forge</a>
+            <span class="gh-lang">Clojure</span>
+          </div>
+          <div class="gh-desc">A simple tool for coordinating several AI agents.<div class="zh">swarm-forge：Uncle Bob 出品，用于协调多个 AI Agent 的简单工具（Clojure）</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 81 今日</span>
+            <span class="gh-total">★ 1,840</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/chenyme/grok2api" target="_blank" rel="noopener">chenyme/grok2api</a>
+            <span class="gh-lang">Go</span>
+          </div>
+          <div class="gh-desc">Multi-account API gateway for Grok Build, Grok Web, and Grok Console.<div class="zh">grok2api：面向 Grok Build / Web / Console 的多账号 API 网关</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 55 今日</span>
+            <span class="gh-total">★ 7,145</span>
+          </div>
+        </div>
+      </div></div>
+    </div>
+  </section>
+
+  <section id="producthunt" class="section">
+    <div class="sec-title"><span class="emo">🚀</span><span>Product Hunt · 今日精选发布</span></div>
+    <div class="two-col">
+      <div class="col-summary"><div class="col-title">📝 当日综述</div><p>本期榜单（PT <span class="hl">8/8</span> 批次）当日共 <b>8 款</b>产品，且清一色围绕「Agent 工作流」——AI 编码与自动化工具占满榜单。头部：<b>Coldtea.ai</b> <span class="hl">415▲</span> 让软件交付「自动驾驶」；<b>Soloop</b> 368▲ 做面向独立开发者的「审批优先」Agent OS；<b>Nitro 4.0</b> 228▲ 是首个为 AI Agent 打造的人工翻译平台。</p>
+<p><b>「把手工活交给 Agent」成统一主题</b>：<b>Rindler</b>（220▲）自动化团队还在手工做的网页工作；<b>BrowserOS neo</b>（171▲）是为 Claude / Cowork / Codex 而生的「缺位浏览器」；<b>Crew</b>（135▲）给 Claude Code Agent 配一队「怪兽」帮手——与当日 HN 的 Kitesurf「Agent 优先浏览器」、GitHub 的 prime-agent 同源共振。</p>
+<p><b>可观测与基础设施</b>：<b>Progress AI Observability</b>（154▲）在生产环境追踪 / 评估 / 改进 AI Agent，呼应 HN「规模化管控 AI 编程成本」与 Oracle 的 AI 代码禁令；<b>Kitesurf</b>（128▲）做跑在 Cloudflare Workers 上的 Agent 浏览器。整体看，开发者把 Agent 从「聊天框」推进到「能操作浏览器、能交付软件、能被审计」的生产环节。</p></div>
+      <div class="col-right"><div class="gh-grid">
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#1</span>
+            <a class="ph-name" href="https://www.producthunt.com/products/coldtea" target="_blank" rel="noopener">Coldtea.ai</a>
+          </div>
+          <div class="ph-desc">Make your software delivery self-driving<div class="zh">Coldtea：让你的软件交付「自动驾驶」——把研发流程交给 Agent</div></div>
+          <div class="ph-topics">▲ 415 · Software Engineering · Developer Tools · Artificial Intelligence</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#2</span>
+            <a class="ph-name" href="https://www.producthunt.com/products/soloop" target="_blank" rel="noopener">Soloop</a>
+          </div>
+          <div class="ph-desc">Approval-first Agent OS for solo founders<div class="zh">Soloop：面向独立开发者的「审批优先」Agent OS</div></div>
+          <div class="ph-topics">▲ 368 · Productivity · Artificial Intelligence · Maker Tools</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#3</span>
+            <a class="ph-name" href="https://www.producthunt.com/products/alconost-localization" target="_blank" rel="noopener">Nitro 4.0</a>
+          </div>
+          <div class="ph-desc">The first human translation platform built for AI agents<div class="zh">Nitro 4.0：首个为 AI Agent 打造的人工翻译平台</div></div>
+          <div class="ph-topics">▲ 228 · API · Languages · Artificial Intelligence</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#4</span>
+            <a class="ph-name" href="https://www.producthunt.com/products/rindler" target="_blank" rel="noopener">Rindler</a>
+          </div>
+          <div class="ph-desc">Automate the web work your team does by hand<div class="zh">Rindler：把你团队还在手工做的网页工作自动化</div></div>
+          <div class="ph-topics">▲ 220 · Productivity · Developer Tools · Artificial Intelligence</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#5</span>
+            <a class="ph-name" href="https://www.producthunt.com/products/browseros_ai" target="_blank" rel="noopener">BrowserOS neo</a>
+          </div>
+          <div class="ph-desc">The Missing Browser for Claude, Cowork &amp; Codex<div class="zh">BrowserOS neo：为 Claude、Cowork 与 Codex 而生的「缺位浏览器」</div></div>
+          <div class="ph-topics">▲ 171 · Open Source · Privacy · Artificial Intelligence</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#6</span>
+            <a class="ph-name" href="https://www.producthunt.com/products/progress-ai-observability" target="_blank" rel="noopener">Progress AI Observability</a>
+          </div>
+          <div class="ph-desc">Trace, evaluate, and improve AI agents in production<div class="zh">Progress AI Observability：在生产环境追踪、评估并改进 AI Agent</div></div>
+          <div class="ph-topics">▲ 154 · SaaS · Software Engineering · Artificial Intelligence</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#7</span>
+            <a class="ph-name" href="https://www.producthunt.com/products/crew-a-tiny-crew-for-claude-code" target="_blank" rel="noopener">Crew</a>
+          </div>
+          <div class="ph-desc">A tiny crew of monsters for your Claude Code agents<div class="zh">Crew：给你 Claude Code Agent 配备的一小队「怪兽」帮手</div></div>
+          <div class="ph-topics">▲ 135 · Mac · Productivity · Developer Tools</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#8</span>
+            <a class="ph-name" href="https://www.producthunt.com/products/kitesurf" target="_blank" rel="noopener">Kitesurf</a>
+          </div>
+          <div class="ph-desc">Browser built for agents, running on Cloudflare Workers<div class="zh">Kitesurf：为 Agent 打造的浏览器，跑在 Cloudflare Workers 上</div></div>
+          <div class="ph-topics">▲ 128 · Developer Tools</div>
+        </div>
+      </div></div>
+    </div>
+  </section>
+
+  <section id="papers" class="section">
+    <div class="sec-title"><span class="emo">📄</span><span>Hugging Face Daily Papers</span></div>
+    <div class="note">注：本板块为 2026-08-08 当日批次，直连 huggingface.co/api/daily_papers?date=2026-08-08 返回空数组（周六 Hugging Face 未发布新论文批次）。按既定规则不沿用往期批次、不编造条数，本节留空如实呈现。最近可用批次为 2026-08-07（9 篇，AgentOPSD 24▲ 登顶）。</div>
+    <div class="two-col">
+      <div class="col-summary"><div class="col-title">📝 当日综述</div><p><b>2026-08-08 当日批次为空</b>。直连 <code>huggingface.co/api/daily_papers?date=2026-08-08</code> 返回 <b>空数组 []</b>——周六 Hugging Face 未发布新论文批次（与 08-01、08-02 两个周六同为休更）。按既定规则：<b>不沿用往期批次、不编造条数</b>，本节右栏留空如实呈现。</p>
+<p>最近一次有内容的 Daily Papers 批次为 <b>2026-08-07</b>（9 篇，AgentOPSD 24▲ 登顶）。新批次通常于工作日（周一至周五）早间发布，下期日报将恢复论文板块。</p></div>
+      <div class="col-right"><div class="gh-grid">
+
+      </div></div>
+    </div>
+  </section>
+
+  <section id="insights" class="section">
+    <div class="sec-title"><span class="emo">💡</span><span>趋势洞察 · 跨四源</span></div>
+    <div class="insight">
+      <div class="insight-head"><span class="insight-dot"></span><h3>Agent 技能化：从「个人玩具」走向「工程基础设施」</h3><span class="insight-src">四源共振</span></div>
+      <p>本期四源几乎被同一条线串起——「给 Agent 一套可复用、可治理的技能」。GitHub 霸榜者清一色是技能/框架：mattpocock/skills 单日 +2,152★、addyosmani/agent-skills +1,131★、google/skills +327★、obra/superpowers +782★，连 Uncle Bob 都下场做了 swarm-forge；Product Hunt 前八有五款是 Agent 工作流工具（Coldtea、Soloop、Rindler、Progress AI Observability、Crew）；Hacker News 则有 Kitesurf「Agent 优先浏览器」与 prime-agent 自我进化。技能库 + 编排 + 可观测，正在成为 Agent 的「标准件」，而不再是某个人的 prompt 玩具。</p>
+    </div>
+    <div class="insight">
+      <div class="insight-head"><span class="insight-dot"></span><h3>AI 编程进入「装仪表盘」时代</h3><span class="insight-src">治理</span></div>
+      <p>能力放开的同时，闸门正在被重新拧紧。Oracle 禁止向 OpenJDK 提交 AI 生成代码（402▲）是开源界首次对「AI 写码」立规矩；Hacker News「规模化管控 AI 编程成本」177▲ 与「Claude Code 8/14 起默认 auto 模式」19▲ 反映企业既想用、又怕失控；Product Hunt 的 Progress AI Observability（154▲）把「追踪 / 评估生产环境里的 Agent」直接做成产品。治理、成本、可观测——三条线在同一天浮现，说明 AI 编程已从「能不能写」切换到「写了多少、花了多少、靠不靠谱」。</p>
+    </div>
+    <div class="insight">
+      <div class="insight-head"><span class="insight-dot"></span><h3>开放模型狂奔，安全闸门同步收紧</h3><span class="insight-src">开放权重</span></div>
+      <p>DeepSeek V4 Flash 0731（490▲）与 GitHub 上单日 +2,293★ 的 prime-agent 延续开放权重的攻势，模型与 Agent 能力继续向社区外溢；但同日「China&#x27;s Kimi K3 安全测试逃脱沙箱」9▲ 与 Oracle 的 AI 代码禁令提示：能力放开的同时，沙箱逃逸、代码溯源等安全闸门正在被重新拧紧。开放与可控的张力，本周达到一个新高点——而这恰是 Agent 从演示走向生产必须跨过的门槛。</p>
+    </div>
+  </section>
+
+</div>
+
+<footer class="site-footer">
+  数据来源：Hacker News · GitHub Trending · Product Hunt · Hugging Face Papers<br>
+  由每日自动化任务自动生成 · 经 GitHub Pages 部署<br>
+  <a href="index.html">← 返回归档</a> · <a href="#top-story">回到顶部 ↑</a>
+</footer>
+<script>
+function fitTwoCol(row){
+  var s = row.querySelector('.col-summary');
+  var r = row.querySelector('.col-right');
+  if(s && r){ r.style.maxHeight = s.offsetHeight + 'px'; }
+}
+function fitThreeCol(row){
+  var s = row.querySelector('.col-summary');
+  if(!s) return;
+  var m = row.querySelector('.col-mid');
+  var r = row.querySelector('.col-right');
+  var h = s.offsetHeight + 'px';
+  if(m){ m.style.maxHeight = h; }
+  if(r){ r.style.maxHeight = h; }
+}
+function fitCols(){
+  document.querySelectorAll('.two-col').forEach(fitTwoCol);
+  document.querySelectorAll('.hn-three').forEach(fitThreeCol);
+}
+function rafFit(){ requestAnimationFrame(function(){ requestAnimationFrame(fitCols); }); }
+fitCols(); rafFit();
+window.addEventListener('resize', fitCols);
+window.addEventListener('load', function(){ fitCols(); setTimeout(fitCols, 200); setTimeout(fitCols, 600); setTimeout(fitCols, 1200); });
+if(document.fonts && document.fonts.ready){ document.fonts.ready.then(function(){ fitCols(); rafFit(); }); }
+</script>
+</body>
+</html>
