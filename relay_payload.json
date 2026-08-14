@@ -1,10 +1,10 @@
 {
-  "date": "2026-08-13",
-  "date_label": "2026-08-13 · 星期四",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-13.html",
+  "date": "2026-08-14",
+  "date_label": "2026-08-14 · 星期五",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-14.html",
   "summary": [
-    "模型军备与「模型工具链」同日爆发：HN 上 DeepSeek V4 Pro 0813、Grok 4.6、Qwen3.8-2.4T 三款对垒，GitHub 把模型调度与端侧小模型做成开源项目。",
-    "Agent 从「能对话」走向「能协作、可视化、可治理」：GitHub 头部被 diagram-design/agency-agents/orca 包揽，Product Hunt 把 Agent 推进到团队共享与本地桌面。",
-    "「被看见」的焦虑催生两类产品——隐私盾与 AI 可见性：从 HN 车牌识别需搜查令、uBO 弃守 FB 广告，到 PH Lettertrace 与 HF ToolHazard/Agent 安全契约。"
+    "Agent 成为四源共同的「默认交付物」：HN 的 Codex 桌面端/Launch HN Bullet、GitHub 的 diagram-design（单日 +4,475★ 登顶）/agency-agents/anthropics-skills、PH 的 Kane CLI/Ito、HF 的 Spatial Memory Agent/DarwinX 同日共振，Agent 已从 demo 变成带界面、带记忆、能协作的生产件。",
+    "模型密集上新且加速端侧化：Gemini 3.7 Flash 以 647▲ 登顶 HN，DeepSeek Harness、GPT-5.6 Sol Ultrafast、Mistral OCR 4.1 同日发布；GitHub 的 needle（仅 14MB 的端侧基础模型）与 unsloth 把大模型训练/推理重新压回本地设备。",
+    "AI 可信度账单前置：HN 三帖围攻「文本 AI 水印永远可轻易去除 / Claude 用户怒于被识别 / 水印原理」，HF 同期补「修辞如何 reward-hack AI 审稿人」「通过自然选择演化 Agent Harness」等评测治理论文——当 Agent 成默认交付物，「靠不靠谱」自然成为下一站焦点。"
   ]
 }
