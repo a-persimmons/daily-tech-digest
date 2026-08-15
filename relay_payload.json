@@ -1,10 +1,10 @@
 {
-  "date": "2026-08-14",
-  "date_label": "2026-08-14 · 星期五",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-14.html",
+  "date": "2026-08-15",
+  "date_label": "2026-08-15 · 星期六",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-15.html",
   "summary": [
-    "Agent 成为四源共同的「默认交付物」：HN 的 Codex 桌面端/Launch HN Bullet、GitHub 的 diagram-design（单日 +4,475★ 登顶）/agency-agents/anthropics-skills、PH 的 Kane CLI/Ito、HF 的 Spatial Memory Agent/DarwinX 同日共振，Agent 已从 demo 变成带界面、带记忆、能协作的生产件。",
-    "模型密集上新且加速端侧化：Gemini 3.7 Flash 以 647▲ 登顶 HN，DeepSeek Harness、GPT-5.6 Sol Ultrafast、Mistral OCR 4.1 同日发布；GitHub 的 needle（仅 14MB 的端侧基础模型）与 unsloth 把大模型训练/推理重新压回本地设备。",
-    "AI 可信度账单前置：HN 三帖围攻「文本 AI 水印永远可轻易去除 / Claude 用户怒于被识别 / 水印原理」，HF 同期补「修辞如何 reward-hack AI 审稿人」「通过自然选择演化 Agent Harness」等评测治理论文——当 Agent 成默认交付物，「靠不靠谱」自然成为下一站焦点。"
+    "开放权重模型同日合围 HN 前二——智谱 GLM-5.3（1041▲）登顶、阿里 Qwen 3.8 27B 紧随，与 GitHub 端开源模型工具链共振。",
+    "AI 编程 Agent 从「多强」转向「顺不顺手」——HN 评论之王「为什么 Opus 5 用起来变差了」、GitHub diagram-design/holaOS/ego-lite、PH Freebuff/DeepSeek Harness 全是「让 Agent 更好用更可控」的具象产品。",
+    "隐私、安全与监管同日升温——Firefox 成唯一支持 uBlock Origin 的主流浏览器、Google 用同态加密做隐私 AI、美国大规模监控争议，与 GitHub holehe/spiderfoot 攻防补线。"
   ]
 }
