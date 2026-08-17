@@ -1,10 +1,10 @@
 {
-  "date": "2026-08-15",
-  "date_label": "2026-08-15 · 星期六",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-15.html",
+  "date": "2026-08-17",
+  "date_label": "2026-08-17 · 星期一",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-17.html",
   "summary": [
-    "开放权重模型同日合围 HN 前二——智谱 GLM-5.3（1041▲）登顶、阿里 Qwen 3.8 27B 紧随，与 GitHub 端开源模型工具链共振。",
-    "AI 编程 Agent 从「多强」转向「顺不顺手」——HN 评论之王「为什么 Opus 5 用起来变差了」、GitHub diagram-design/holaOS/ego-lite、PH Freebuff/DeepSeek Harness 全是「让 Agent 更好用更可控」的具象产品。",
-    "隐私、安全与监管同日升温——Firefox 成唯一支持 uBlock Origin 的主流浏览器、Google 用同态加密做隐私 AI、美国大规模监控争议，与 GitHub holehe/spiderfoot 攻防补线。"
+    "AI 透明与可控成头号议题：HN 登顶帖曝光 Claude 系统提示词，叠加「模型被故意调笨」「Claude 水印式文本篡改」，社区从追问「模型多强」转向追问「谁在决定模型怎么想」。",
+    "Agent 基建下沉到「接口与护栏」：PH 的 HarnessRouter（开源 Agent harness 统一接口）、Chert（FaceTime 上的 AI 视频 Agent）与 GitHub 的 CLI-Anything、munder-difflin、ollama 同指一个方向——竞争从模型智商转向可组合、可本地跑。",
+    "隐私反监控四源同框：Firefox iOS 原生广告拦截、Cloudflare 悄悄注入分析、普通 WiFi 精准识别你，以及 GitHub 的 holehe/spiderfoot/rayhunter，反制默认选项都是「数据留在自己机器上」。"
   ]
 }
