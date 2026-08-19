@@ -1,10 +1,10 @@
 {
-  "date": "2026-08-17",
-  "date_label": "2026-08-17 · 星期一",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-17.html",
+  "date": "2026-08-18",
+  "date_label": "2026-08-18 · 星期二",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-18.html",
   "summary": [
-    "AI 透明与可控成头号议题：HN 登顶帖曝光 Claude 系统提示词，叠加「模型被故意调笨」「Claude 水印式文本篡改」，社区从追问「模型多强」转向追问「谁在决定模型怎么想」。",
-    "Agent 基建下沉到「接口与护栏」：PH 的 HarnessRouter（开源 Agent harness 统一接口）、Chert（FaceTime 上的 AI 视频 Agent）与 GitHub 的 CLI-Anything、munder-difflin、ollama 同指一个方向——竞争从模型智商转向可组合、可本地跑。",
-    "隐私反监控四源同框：Firefox iOS 原生广告拦截、Cloudflare 悄悄注入分析、普通 WiFi 精准识别你，以及 GitHub 的 holehe/spiderfoot/rayhunter，反制默认选项都是「数据留在自己机器上」。"
+    "GitHub 大规模故障霸榜 HN：Incident 帖（697▲）与其「已恢复」变体（535▲/916💬 居评论榜首）登顶，Ask HN 找替代方案、Cursor 推出 Origin 同框，中心化托管脆弱性被重新讨论。",
+    "AI 视觉模型密集发布且转向「值不值」：GPT 5.6 Sol 称 OpenAI 最强视觉模型后价格腰斩，Qwen3.8 27B 得分 52；HF 当日 10 篇论文以多模态 Agent 构建 3D 世界与 ACID 合规 Agent 系统领跑。",
+    "数据来源黑箱成暗线：HN 揭亚马逊用珍本书训练 AI、如何规避侵入式 AI；GitHub 自托管工具 immich/Motrix 上榜——「数据留在自己机器上、可被审计」从极客偏好变普遍诉求。"
   ]
 }
