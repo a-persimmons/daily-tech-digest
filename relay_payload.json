@@ -1,10 +1,10 @@
 {
-  "date": "2026-08-19",
-  "date_label": "2026-08-19 · 星期三",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-19.html",
+  "date": "2026-08-20",
+  "date_label": "2026-08-20 · 星期四",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-20.html",
   "summary": [
-    "Agent 从「能对话」走向「在你机器上持久干活、记得住、守得住」：GitHub 的 ai-memory/munder-difflin/OpenViking、PH 的 Shepherd Terminal 与 ElevenLabs MCP、HN 的 Claude 写打印机驱动、HF 的 Agentic ESOpt 四源同指这一暗线。",
-    "平台权力与数据主权同日升温：HN「亚马逊税」973▲ 登顶、Google 收购破产航司数据、Meta 人脸识别专利；PH 的 Hubble/Finch 把数据交回用户，GH 的 OpenCut/Motrix 以开源自托管回应中心化。",
-    "评测与可信 AI 站上 C 位：HN「基准末日」、HF 的 ASI-Bench/StartupBench/Security Assessment of DeepSeek Harness、GH 的 Anthropic-Cybersecurity-Skills（+730★）、PH 的 Clara AI SDR 把可信度压力传导到具体岗位。"
+    "HN 头条 OpenRouter 加入 Stripe（676▲/356💬），AI 推理聚合层被支付巨头收编；隐私/反监控同日升温——GrapheneOS 隐私手机 2027 上市、Flock 摄像头追踪争议密集出现。",
+    "GitHub Trending 由 MoneyPrinterTurbo（+2,221★，AI 一键生成短视频）领跑，Agent 技能框架与记忆/安全 harness 密集上榜，工程化主线清晰。",
+    "Product Hunt 前八聚焦 Agent 落地到具体岗位与工具（Origin by Cursor 的 Git forge、Clipto MCP 视频检索）；Hugging Face 当日早间批次仅 5 篇、互动极低，已如实呈现未编造。"
   ]
 }
