@@ -1,10 +1,10 @@
 {
-  "date": "2026-08-20",
-  "date_label": "2026-08-20 · 星期四",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-20.html",
+  "date": "2026-08-24",
+  "date_label": "2026-08-24 · 星期一",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-24.html",
   "summary": [
-    "HN 头条 OpenRouter 加入 Stripe（676▲/356💬），AI 推理聚合层被支付巨头收编；隐私/反监控同日升温——GrapheneOS 隐私手机 2027 上市、Flock 摄像头追踪争议密集出现。",
-    "GitHub Trending 由 MoneyPrinterTurbo（+2,221★，AI 一键生成短视频）领跑，Agent 技能框架与记忆/安全 harness 密集上榜，工程化主线清晰。",
-    "Product Hunt 前八聚焦 Agent 落地到具体岗位与工具（Origin by Cursor 的 Git forge、Clipto MCP 视频检索）；Hugging Face 当日早间批次仅 5 篇、互动极低，已如实呈现未编造。"
+    "Agent 从「能对话」走向「有电脑、有环境、可验证」：OpenAI codex 单日 +2,715★ 登顶 GitHub、Construct Computer 登顶 Product Hunt（给 AI 配真电脑）、HF AgentMercury 合成可验证业务环境。",
+    "开放模型与开源技能生态同日合围：Qwen 3.8 27B 本地逆向实战（HN 159▲）、mattpocock/skills +2,447★、Anthropic 官方 Claude Academy 上线，模型能力+技能库+端侧量化汇成可组装系统。",
+    "本地优先与可信 AI 同日抬头：OpenLogi/vaultwarden 自托管、HF 安全对齐论文，与 HN 电厂停摆/测速摄像头后门/车机固件恶意软件等基础设施安全帖形成共振。"
   ]
 }
