@@ -1,10 +1,10 @@
 {
-  "date": "2026-08-24",
-  "date_label": "2026-08-24 · 星期一",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-24.html",
+  "date": "2026-08-25",
+  "date_label": "2026-08-25 · 星期二",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-25.html",
   "summary": [
-    "Agent 从「能对话」走向「有电脑、有环境、可验证」：OpenAI codex 单日 +2,715★ 登顶 GitHub、Construct Computer 登顶 Product Hunt（给 AI 配真电脑）、HF AgentMercury 合成可验证业务环境。",
-    "开放模型与开源技能生态同日合围：Qwen 3.8 27B 本地逆向实战（HN 159▲）、mattpocock/skills +2,447★、Anthropic 官方 Claude Academy 上线，模型能力+技能库+端侧量化汇成可组装系统。",
-    "本地优先与可信 AI 同日抬头：OpenLogi/vaultwarden 自托管、HF 安全对齐论文，与 HN 电厂停摆/测速摄像头后门/车机固件恶意软件等基础设施安全帖形成共振。"
+    "Agent 从「会对话」走向「有记忆、可治理、能驻你机器」——GitHub openai/codex（+1,994★）、OpenLogi、hermes-agent，Product Hunt Decawork/Offloop/Dropstone，Hugging Face Apodex 1.1（59▲ 登顶）四源同指一条暗线。",
+    "开放生态与本地优先同日合围：Hacker News「欧洲正在扼杀创客」以 1091▲/673💬 断层登顶，GitHub awesome-gpt-image-2（+2,449★ 当日增星第一）、andrej-karpathy-skills、openclaw、vaultwarden、omarchy 把「技能库 + 插件 + 本地托管」铺成生态。",
+    "能力暴涨的同时信任与韧性成四源共识：HN MS Paint 静默水印（581▲）、开源模型定时后门，PH PaymentKit（404▲ 登顶，支付处理器停摆也能存活的账单），HF 审计 RAG 答案漂移——能力越强越要可问责、可溯源、可恢复。"
   ]
 }
