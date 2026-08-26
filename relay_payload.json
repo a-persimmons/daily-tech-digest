@@ -1,10 +1,10 @@
 {
-  "date": "2026-08-25",
-  "date_label": "2026-08-25 · 星期二",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-25.html",
-  "summary": [
-    "Agent 从「会对话」走向「有记忆、可治理、能驻你机器」——GitHub openai/codex（+1,994★）、OpenLogi、hermes-agent，Product Hunt Decawork/Offloop/Dropstone，Hugging Face Apodex 1.1（59▲ 登顶）四源同指一条暗线。",
-    "开放生态与本地优先同日合围：Hacker News「欧洲正在扼杀创客」以 1091▲/673💬 断层登顶，GitHub awesome-gpt-image-2（+2,449★ 当日增星第一）、andrej-karpathy-skills、openclaw、vaultwarden、omarchy 把「技能库 + 插件 + 本地托管」铺成生态。",
-    "能力暴涨的同时信任与韧性成四源共识：HN MS Paint 静默水印（581▲）、开源模型定时后门，PH PaymentKit（404▲ 登顶，支付处理器停摆也能存活的账单），HF 审计 RAG 答案漂移——能力越强越要可问责、可溯源、可恢复。"
-  ]
+ "date": "2026-08-26",
+ "date_label": "2026-08-26 · 星期三",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-26.html",
+ "summary": [
+  "算力竞争下移到硅片层：苹果 M6/M5 Ultra 三帖霸榜 HN（988▲/925💬 登顶），OpenAI 自研 Jalapeño 芯片声称胜过英伟达 Blackwell，SiFive 首个 RISC-V 服务器平台同日登场；配套账单也到期——美国数据中心年耗水翻三倍至 170 亿加仑。",
+  "Agent 从「造执行体」进入「配周边 + 自我改进」：GitHub 上 openai/codex(+1,181★)、apache/maka、openhuman 强调本地优先；Product Hunt 榜首 akta.pro(363▲) 做 Agent 数据 API，Agentcard 做支付、Agnost AI 做故障可观测；Hugging Face 当日 9 篇论文近半在讲 harness 自动优化（AutoSaddler 19▲ 登顶）。",
+  "开放生态一退一进，「可信」成四源共同标尺：Nitter/XCancel 收到停止侵权通知后接连下线（688▲/590💬），另一侧 Qwen 3.8-Flash-Next 明日发布、Firefox 157 默认启用 JPEG XL；同时「HN 里有多少内容是 AI 写的」251▲/302💬、C2PA 相机被指站不住脚、斯坦福称 AI 冲击入门岗最重。"
+ ]
 }
