@@ -1,0 +1,120 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""每日内容覆盖层生成器（只产 content.json，不碰 gen_report.py 布局/CSS/JS）"""
+import json
+
+DATE = "2026-08-27"
+
+hero = [
+    {
+        "url": "https://news.ycombinator.com/item?id=49458161",
+        "meta": "309▲/130💬 · HN 当日 #17",
+        "title": "Nvidia agrees to acquire Hugging Face for $13B",
+        "zh": "英伟达同意以 130 亿美元收购 Hugging Face——AI 开源模型的最大集散地被芯片巨头纳入版图，同窗另有官方复盘帖「Hugging Face 安全事件与后续之路」（189▲/237💬），交易时点格外耐人寻味",
+    },
+    {
+        "url": "https://news.ycombinator.com/item?id=49449507",
+        "meta": "908▲/453💬 · HN 加权登顶兼评论之王",
+        "title": "GLM-5.3-Flash",
+        "zh": "GLM-5.3-Flash 发布——智谱新一代开放权重快速模型以 908▲/453💬 加权登顶并拿下评论之王，同日 Qwen3.8-Flash-Next（635▲）与「Ox Alpha 确认为 GLM 新成员且将开放权重」（419▲）合围前十",
+    },
+    {
+        "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+        "meta": "▲ 4,050 今日 · GitHub 当日增星第一",
+        "title": "freestylefly/awesome-gpt-image-2",
+        "zh": "awesome-gpt-image-2 以 +4,050★ 断层蝉联 GitHub Trending 榜首（累计 21,635★，增速较昨日 +1,698★ 翻倍以上）：GPT-Image2 工业级提示词引擎与模板库，530+ 案例逆向工程、20+ 套模板并提炼成 Skills",
+    },
+]
+
+gh_tr = {
+    "freestylefly/awesome-gpt-image-2": "GPT-Image2 工业级提示词引擎与模板库：530+ 案例逆向工程、20+ 套工业级模板，并提炼成可直接调用的 Skills，持续更新",
+    "DietrichGebert/ponytail": "让你的 AI Agent 像屋里最懒的资深工程师那样思考——最好的代码是你从没写过的那行",
+    "MadsLorentzen/ai-job-search": "跑在你自己机器上的求职流水线：基于 Claude Code 的 AI 投递框架，自动评估岗位、定制简历、写求职信并准备面试",
+    "tt-a1i/archify": "生成美观且可验证的架构图 / 流程图 / 时序图 / 数据流图 / 生命周期图的 Agent 技能——输出自包含 HTML，带动效与清晰导出",
+    "basecamp/omarchy": "Basecamp 出品的「美观、现代、有主张」的 Linux 桌面发行配置",
+    "rohitg00/ai-engineering-from-scratch": "AI 工程从零学：学会它、造出来、交付给别人用",
+    "AgriciDaniel/claude-obsidian": "面向 Obsidian + Claude Code 的自组织 AI 第二大脑：丢进任意素材，Claude 自动阅读、建链并归入一张连通的知识图谱",
+    "anthropics/claude-plugins-community": "Claude Cowork 与 Claude Code 的社区插件市场（只读镜像，投稿走官方插件目录）",
+    "Alishahryar1/free-claude-code": "免费使用 Claude Code / Codex / Pi / OpenCode（13 亿+ 免费 token），可从终端、App、IDE 或手机调用，支持语音且符合服务条款",
+    "tinyhumansai/openhuman": "属于你个人的 AI 超级智能：用 Rust 构建本地优先的人生记忆库，并充当 Agent 集群与工作流的编排者",
+    "marin-community/marin": "开源基础模型研发框架，面向研究与工程全流程",
+    "anthropics/claude-plugins-official": "Anthropic 官方维护的高质量 Claude Code 插件目录",
+    "VoltAgent/awesome-agent-skills": "1000+ 个 Agent 技能精选合集，来自官方团队与社区，兼容 Claude Code / Codex / Gemini CLI / Cursor 等",
+    "browser-use/browser-use": "让网站对 AI Agent 可用：轻松自动化各类线上任务",
+    "K-Dense-AI/scientific-agent-skills": "把任意 AI Agent 变成 AI 科学家：科研领域第一大 Agent 技能库，17.5 万+ 科研人员在用，含 163 个经验证的现成技能",
+    "ConardLi/garden-skills": "ConardLi 的开源 Skills 合集，涵盖网页设计、知识检索、图像生成等场景",
+}
+
+ph_tr = {
+    "x1": "iPhone 应用的 Lovable：从一个想法直接做到上架 App Store",
+    "Expertise AI": "把你的 GTM（市场进入）技能变成可持续复购的收入",
+    "PostHog Desktop": "为产品建造者打造的产品编辑器（PostHog 桌面端）",
+    "ChatCut Desktop": "为人与 AI 共同打造的视频编辑器：用 GPT 与 Claude 剪片",
+    "MCP-Builder.ai": "把你的数据接进 AI 工具的最快方式（MCP 服务快速搭建）",
+    "Tellie Prompter 1.5": "知道你还没说到哪儿的提词器——按讲稿实时追踪未覆盖内容",
+    "OpenComputer": "给 Agent 用的 Firebase——一站式后端与运行环境",
+    "Termy": "从游戏、视频和网页里学语言",
+}
+
+hf_tr = {
+    "2608.24979": "FrontierChallenge：评测 AI 完成前沿科研工作流的能力",
+    "2608.26105": "VBVR-Pro：可扩展且可验证的原生视觉推理评测套件",
+    "2608.23318": "Agent-G²：用高斯引导做 Agent 强化学习",
+    "2608.24099": "AnTrap：安卓 GUI Agent 在运行时异常下够稳健吗——动态对抗环境下的 Agent 评测",
+    "2608.19583": "VGI-BENCH：探查视频生成模型中的视觉智能",
+    "2608.25927": "Code World Model：把编码 Agent 当作「世界大脑」",
+    "2608.24987": "D³-MOPD：面向高效多教师蒸馏的自适应动态域调度",
+    "2608.25512": "一种面向时空可组合性的编程范式",
+    "2608.24909": "Super Star：面向数字人的流式实时交互 Agent",
+}
+
+gh_summary = """<p>今日 GitHub Trending 抓到 <span class="hl">16 个</span>仓库（周四页面实际量级，如实呈现不补数）。榜首 <span class="hl">freestylefly/awesome-gpt-image-2</span> 以 <span class="hl">+4,050★</span> 断层蝉联（累计 21,635★），增速比昨日 +1,698★ 翻了一倍以上——GPT-Image2 的工业级提示词引擎与模板库，把 530+ 个案例逆向工程成 20+ 套模板并提炼为 Skills。</p>
+<p><b>今日最强共性：Agent「技能包」正在市场化。</b>一张榜上同时出现六个技能/插件生态项目——<span class="hl">tt-a1i/archify</span>（<span class="hl">+1,035★</span>，专出可验证架构图的 Agent 技能）、<span class="hl">anthropics/claude-plugins-community</span>（+538★）与 <span class="hl">claude-plugins-official</span>（+308★）一社区一官方双轨分发、<span class="hl">VoltAgent/awesome-agent-skills</span>（+242★，1000+ 技能且跨 Claude Code / Codex / Gemini CLI / Cursor）、<span class="hl">K-Dense-AI/scientific-agent-skills</span>（+138★，163 个科研技能、17.5 万科研人员在用）、<span class="hl">ConardLi/garden-skills</span>（+113★）。技能从「个人 prompt 收藏」变成了带目录、带兼容性声明、带垂直领域分工的可分发件。</p>
+<p><b>第二条线仍是本地优先与「管住 Agent」。</b><span class="hl">DietrichGebert/ponytail</span>（<span class="hl">+1,598★</span>，累计 11.3 万★）主张「最好的代码是没写的那行」；<span class="hl">MadsLorentzen/ai-job-search</span>（+1,300★）与 <span class="hl">AgriciDaniel/claude-obsidian</span>（+810★）、<span class="hl">tinyhumansai/openhuman</span>（+525★，Rust 本地人生记忆库）都在强调「跑在你的机器上、记忆留在本地」；<span class="hl">browser-use</span>（+149★，累计 11.1 万★）继续给 Agent 补浏览器这只手。</p>
+<p>其余：<span class="hl">Alishahryar1/free-claude-code</span>（+536★）打「13 亿免费 token」的门槛牌，<span class="hl">basecamp/omarchy</span>（+1,024★）代表桌面 Linux 的有主张路线，<span class="hl">marin-community/marin</span>（+441★）与 <span class="hl">rohitg00/ai-engineering-from-scratch</span>（+838★）补齐从基础模型研发到工程入门的教学侧。</p>"""
+
+ph_summary = """<p>Product Hunt 当日榜共抓到 <span class="hl">28 款</span>发布，取前 8 呈现（PT 日期 2026-08-26，按 dailyRank 排序，票数取 launchDayScore）。榜首 <span class="hl">x1</span>（<span class="hl">427▲</span>）自称「iPhone 应用的 Lovable」——从一句想法直接做到 App Store 上架，vibe coding 从网页端推进到移动原生分发链。</p>
+<p><b>今日 PH 的关键词是「给 Agent 铺后端与管道」。</b><span class="hl">OpenComputer</span>（#7，132▲）把自己定义成「给 Agent 用的 Firebase」；<span class="hl">MCP-Builder.ai</span>（#5，165▲）主打「把数据接进 AI 工具的最快方式」；再往后还有 <span class="hl">Warren</span>（#19，85▲，编码 Agent 工作负载的基础设施）、<span class="hl">Knack MCP Server</span>（#21，符合 HIPAA 的 AI 后端）、<span class="hl">DeployHermes</span>（#22，招聘带角色/记忆/技能的常驻 Hermes Agent）、<span class="hl">TaskShell 2.0</span>（#24，Agent 优先的任务管理）。与 GitHub 的技能包潮流对上——一边出技能，一边出跑技能的地基。</p>
+<p><b>第二条线是「桌面端回归」。</b><span class="hl">PostHog Desktop</span>（#3，306▲）与 <span class="hl">ChatCut Desktop</span>（#4，259▲，用 GPT 与 Claude 剪片）同日进前四，配合 <span class="hl">EasySwitch</span>（#18）、<span class="hl">BaudBuddy</span>（#20，原生 macOS 串口终端）、<span class="hl">choclift for iPad</span>（#25）、<span class="hl">Message Album</span>（#26，把 iMessage 会话存成离线私人相册）——本地原生应用在 AI 时代重新变成卖点。</p>
+<p>此外 <span class="hl">Expertise AI</span>（#2，318▲）把 GTM 专业能力做成复购收入，<span class="hl">Tellie Prompter 1.5</span>（#6，134▲）用「知道你还没讲到哪儿」这一个细节切入提词器，<span class="hl">LoupeKit</span>（#16）则专门检测「任意网页由什么搭建、其中多少是 AI 写的」，与 HN 的内容真实性议题呼应。</p>"""
+
+papers_summary = """<p>Hugging Face <span class="hl">2026-08-27 当日批次共 9 篇</span>（周四早间批次，仍在形成中，互动量偏低，最高 18▲），此处<span class="hl">全量收录未截断</span>、未沿用任何历史批次。</p>
+<p><b>本批次的主题几乎压倒性地是「怎么评测 Agent 与生成模型」。</b>登顶的 <span class="hl">FrontierChallenge</span>（18▲，2608.24979）直接评测 AI 能否完成前沿科研工作流；第二名 <span class="hl">VBVR-Pro</span>（11▲）做可扩展且<b>可验证</b>的原生视觉推理评测套件；<span class="hl">AnTrap</span>（7▲）把安卓 GUI Agent 放进动态对抗环境，专测运行时异常下的稳健性；<span class="hl">VGI-BENCH</span>（5▲）探查视频生成模型内部到底有没有视觉智能。四篇评测占据前四——学术界正在给能力暴涨的 Agent 补上量尺。</p>
+<p>另一簇是<b>Agent 训练与世界模型</b>：<span class="hl">Agent-G²</span>（10▲）用高斯引导改进 Agent 强化学习，<span class="hl">Code World Model</span>（4▲）把编码 Agent 直接当作「世界大脑」；效率侧则有 <span class="hl">D³-MOPD</span>（3▲，多教师蒸馏的动态域调度）与 <span class="hl">时空可组合性编程范式</span>（1▲），交互侧有 <span class="hl">Super Star</span>（数字人流式实时交互 Agent）。</p>
+<p>与另外三源对照：GitHub 在批量生产 Agent 技能包，Product Hunt 在给 Agent 铺后端，而 Hugging Face 在追问<span class="hl">「这些东西到底行不行、稳不稳」</span>。</p>"""
+
+note_hf = """本板块数据取自 Hugging Face Daily Papers <span class="hl">2026-08-27 当日批次</span>（清空代理环境变量后直连 <code>api/daily_papers?date=2026-08-27</code>，HTTP 200）。当日批次共 <span class="hl">9 篇</span>，周四早间批次仍在形成中、互动量偏低（最高 18▲，多篇 0–5▲），已<span class="hl">全量收录</span>、按 upvotes 降序排列，未截断、未编造条数，也未沿用历史批次。部分论文 <code>publishedAt</code> 标记为 08-20～08-26，属 HF 当日批次的正常聚合归属。"""
+
+insights = [
+    {
+        "src": "资本收编",
+        "title": "同一天两笔并购直插开源心脏：AI 基础设施进入被巨头收编阶段",
+        "text": "今日最硬的信号不在模型也不在工具，而在股权。「Nvidia agrees to acquire Hugging Face for $13B」以 309▲/130💬 出现在窗口后半段，而当日最高原始分是「AWS Acquires DuckLabs」987▲/293💬。这两笔交易一起把开源生态的两个中枢换了主人——模型与数据集的集散地，以及嵌入式分析引擎 DuckDB 背后的公司。更耐读的是时点：同窗还有 Hugging Face 官方复盘帖「The Hugging Face incident and the road ahead」拿下 189▲/237💬，安全事件与收购公告前后脚落地。另一条平行线是中心化托管的可靠性焦虑：「Disruption with Some GitHub Services – Resolved」256▲/156💬，社区当天就自建了「GitHub Outage Tracker: Is GitHub Cooked?」193▲/117💬。开发者一边看着开源枢纽被收购，一边发现自己连推代码都得看别人脸色——这是今日窗口最完整的一条叙事。",
+    },
+    {
+        "src": "Agent 工程化",
+        "title": "Agent 技能包开始市场化，配套的「后端」与「量尺」同日到位",
+        "text": "GitHub 侧是供给端爆发：一张 16 个仓库的榜上塞进六个技能/插件生态项目——tt-a1i/archify（+1,035★，专出可验证架构图的技能）、anthropics/claude-plugins-community（+538★）与 claude-plugins-official（+308★）双轨分发、VoltAgent/awesome-agent-skills（+242★，1000+ 技能且跨 Claude Code / Codex / Gemini CLI / Cursor）、K-Dense-AI/scientific-agent-skills（+138★，163 个科研技能、17.5 万科研人员在用）、ConardLi/garden-skills（+113★）。技能已经不是个人 prompt 收藏，而是带目录、带兼容矩阵、带垂直分工的可分发件。Product Hunt 侧则在铺地基：OpenComputer（132▲）自称「给 Agent 用的 Firebase」，MCP-Builder.ai（165▲）做数据接入管道，再加 Warren（编码 Agent 工作负载基础设施）、DeployHermes（带角色/记忆/技能的常驻 Agent）、TaskShell 2.0（Agent 优先的任务管理）。Hugging Face 侧补的是量尺：FrontierChallenge（18▲ 登顶）测科研工作流完成度，AnTrap（7▲）把安卓 GUI Agent 丢进动态对抗环境测稳健性，Agent-G² 与 Code World Model 则改训练与建模方式。出技能、铺后端、上量尺——同一天三层齐活。",
+    },
+    {
+        "src": "开放与可信",
+        "title": "开放权重前排被中国模型占满，而「能不能信」正在四源同时被定价",
+        "text": "开放的一侧异常拥挤：GLM-5.3-Flash 以 908▲/453💬 加权登顶兼评论之王，Qwen3.8-Flash-Next 紧随 635▲/206💬，「Z.ai confirms Ox Alpha is a new GLM-series model and will release its weights」419▲/142💬 揭开匿名打榜模型身份，第三方「GLM-5.3-Flash Intelligence, Performance and Price Analysis」133▲ 当天就把价格性能算了一遍——发布、验明、比价一天走完。可信的一侧则横跨四源：Hacker News 有「VMs won't contain cyber-capable agents」146▲/116💬 质疑 Agent 的隔离边界、「RAG Is Simpler Than You Think」437▲/179💬 给落地方法去魅、「Fake US thinktank set up and funded by Israel sought to game AI for propaganda」239▲ 曝出针对 AI 的信息战；GitHub 的 ponytail（+1,598★）本质是给 AI 输出加闸；Product Hunt 的 LoupeKit 专门检测「任意网页多少是 AI 写的」；Hugging Face 的 VBVR-Pro 直接把「可验证」写进套件名。与之对照，收缩的一侧同样清晰：XCancel 与 Nitter 收到 X 的停止侵权函（281▲）、美国政府着手压制对数据中心的反对声（173▲/148💬）、Mechanical Turk 将于 9 月 30 日关停（169▲）。能力越涨，验证与准入越贵。",
+    },
+]
+
+out = {
+    "date": DATE,
+    "hero": hero,
+    "insights": insights,
+    "gh_summary": gh_summary,
+    "ph_summary": ph_summary,
+    "papers_summary": papers_summary,
+    "note_hf": note_hf,
+    "gh_tr": gh_tr,
+    "ph_tr": ph_tr,
+    "hf_tr": hf_tr,
+}
+json.dump(out, open('/Users/peotry/WorkBuddy/2026-07-09-13-58-54/content.json', 'w', encoding='utf-8'),
+          ensure_ascii=False, indent=1)
+print("written content.json", DATE, "gh_tr", len(gh_tr), "ph_tr", len(ph_tr), "hf_tr", len(hf_tr))
