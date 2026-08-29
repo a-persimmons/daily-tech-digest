@@ -1,10 +1,10 @@
 {
- "date": "2026-08-27",
- "date_label": "2026-08-27 · 星期四",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-27.html",
- "summary": [
-  "并购日：英伟达同意以 130 亿美元收购 Hugging Face（309▲），AWS 收购 DuckLabs 拿下当日最高分（987▲）——开源生态的模型集散地与嵌入式分析引擎一天内换了主人；同窗 GitHub 又一次服务中断（256▲），社区当天自建故障追踪器（193▲）。",
-  "Agent 技能包开始市场化：GitHub 16 个仓库里塞进 6 个技能/插件生态项目（archify +1,035★、claude-plugins 社区版+官方版双轨、awesome-agent-skills 1000+ 技能、scientific-agent-skills 17.5 万科研人员在用）；Product Hunt 同日补地基（OpenComputer 自称「给 Agent 用的 Firebase」、MCP-Builder.ai）；Hugging Face 则补量尺（FrontierChallenge 18▲ 登顶、AnTrap 测 GUI Agent 稳健性）。",
-  "开放权重前排被中国模型占满：GLM-5.3-Flash 以 908▲/453💬 加权登顶兼评论之王，Qwen3.8-Flash-Next 635▲ 紧随，Z.ai 确认 Ox Alpha 为 GLM 新成员且将开放权重（419▲）；与之对照，可信与准入同时收紧——VM 挡不住攻击型 Agent（146▲）、以色列出资假智库操纵 AI 做宣传（239▲）、XCancel/Nitter 收到停止侵权函（281▲）。"
- ]
+  "date": "2026-08-29",
+  "date_label": "2026-08-29 · 星期六",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-29.html",
+  "summary": [
+    "平台权力 vs 用户与开源今日集中爆发：HN「App 里更好用」加权登顶，Luanti 被 Google Play 无据下架、Autistici/Inventati 域名因「恐怖组织」认定失联、Flock CEO 住址被挂上网，商家/监管/平台/监控四路权力同日被声讨。",
+    "AI 治理与开放权重同日对撞：美方制裁 A/I Collective 登全窗评论之王、Anthropic 黑名单被裁定违法，而 GLM-5.3 开放权重、archify（+4,562★）连续霸榜 GitHub，顶层收紧与草根开放同框。",
+    "老派工程价值观回潮：键盘驱动 GUI（644▲）、Htmx 4.0、Mac Studio 本地跑 Qwen3.8 27B、关掉智能电视追踪——端侧/自主/键盘效率在周六窗口集中闪光；Hugging Face 当日批次因周末休更为空，已如实标注。"
+  ]
 }
