@@ -1,10 +1,10 @@
 {
-  "date": "2026-08-29",
-  "date_label": "2026-08-29 · 星期六",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-29.html",
+  "date": "2026-08-30",
+  "date_label": "2026-08-30 · 星期日",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-30.html",
   "summary": [
-    "平台权力 vs 用户与开源今日集中爆发：HN「App 里更好用」加权登顶，Luanti 被 Google Play 无据下架、Autistici/Inventati 域名因「恐怖组织」认定失联、Flock CEO 住址被挂上网，商家/监管/平台/监控四路权力同日被声讨。",
-    "AI 治理与开放权重同日对撞：美方制裁 A/I Collective 登全窗评论之王、Anthropic 黑名单被裁定违法，而 GLM-5.3 开放权重、archify（+4,562★）连续霸榜 GitHub，顶层收紧与草根开放同框。",
-    "老派工程价值观回潮：键盘驱动 GUI（644▲）、Htmx 4.0、Mac Studio 本地跑 Qwen3.8 27B、关掉智能电视追踪——端侧/自主/键盘效率在周六窗口集中闪光；Hugging Face 当日批次因周末休更为空，已如实标注。"
+    "「负责任使用生成式 AI」成开源社区头号议题：Debian 就 AI 在发行版中的边界首次表决，登顶 HN（474▲/441💬 兼评论之王），GitHub 的 Agent 技能生态与 Product Hunt 的腾讯 770B 开放模型 Hy4 同日合流。",
+    "监控与隐私同日对撞：DHS 用冷门法律监控记者、Flock 摄像头靠车险隐形税扩张、Pixel 11 砍掉内存标记 MTE，而 publicdesktop.lol 把「设备可见性」反转成公共展品——一边被监控，一边主动公开。",
+    "对 AI 的冷静反思与 Agent 工程化并进：HN 高呼「文化先于工具、AI 未必是生产力杠杆」，GitHub 却仍在批量产出 archify / OpenMontage / 模型路由器等 Agent 框架——反思与建设同日发生。"
   ]
 }
