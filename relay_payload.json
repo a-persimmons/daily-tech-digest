@@ -1,10 +1,10 @@
 {
-  "date": "2026-08-30",
-  "date_label": "2026-08-30 · 星期日",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-30.html",
+  "date": "2026-08-31",
+  "date_label": "2026-08-31 · 星期一",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-31.html",
   "summary": [
-    "「负责任使用生成式 AI」成开源社区头号议题：Debian 就 AI 在发行版中的边界首次表决，登顶 HN（474▲/441💬 兼评论之王），GitHub 的 Agent 技能生态与 Product Hunt 的腾讯 770B 开放模型 Hy4 同日合流。",
-    "监控与隐私同日对撞：DHS 用冷门法律监控记者、Flock 摄像头靠车险隐形税扩张、Pixel 11 砍掉内存标记 MTE，而 publicdesktop.lol 把「设备可见性」反转成公共展品——一边被监控，一边主动公开。",
-    "对 AI 的冷静反思与 Agent 工程化并进：HN 高呼「文化先于工具、AI 未必是生产力杠杆」，GitHub 却仍在批量产出 archify / OpenMontage / 模型路由器等 Agent 框架——反思与建设同日发生。"
+    "Agent 工程化技能继续霸榜：archify（+3,722★）居 GitHub 当日增星第一，清华多智能体课堂、科研 Agent 技能库、实时语音 Agent 框架同日合流，Agent 从「会对话」走向「有架构、可验证执行」。",
+    "免费/开源/自主情绪升温：GitHub 上聚合 34 家免费 LLM 的 freellmapi、SEO 开源替代、LLM 友好爬虫，与 PH「别为记笔记付费」的开源替代品共振；HN「加州 Linux 豁免年龄验证法」登顶（715▲）、欧盟重启加密后门诉求，主权与反监控同日抬头。",
+    "安全与可验证成今日最硬暗线：HN「Omarchy 任意进程可提权到 root」（445▲/423💬 评论之王）与 QubesOS 漏洞、HF 被黑复盘三帖合流，GitHub 的 ghidra、heretic 与 HF 的 LMSM/StepGuard 护栏论文把「从系统到模型都可被验证、被护栏」推上 C 位。"
   ]
 }
