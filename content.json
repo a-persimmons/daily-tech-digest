@@ -1,83 +1,77 @@
 {
- "date": "2026-08-27",
+ "date": "2026-09-01",
  "hero": [
   {
-   "url": "https://news.ycombinator.com/item?id=49458161",
-   "meta": "309▲/130💬 · HN 当日 #17",
-   "title": "Nvidia agrees to acquire Hugging Face for $13B",
-   "zh": "英伟达同意以 130 亿美元收购 Hugging Face——AI 开源模型的最大集散地被芯片巨头纳入版图，同窗另有官方复盘帖「Hugging Face 安全事件与后续之路」（189▲/237💬），交易时点格外耐人寻味"
+   "url": "https://news.ycombinator.com/item?id=49514878",
+   "meta": "591▲/452💬 · HN 分数+评论双榜首",
+   "title": "Google Has Removed MV2 Extensions from the Chrome Web Store, Including uBO",
+   "zh": "谷歌已从 Chrome 应用商店下架全部 Manifest V2 扩展、uBlock Origin 在列——拦截类扩展被平台方一次性清场，MV2 时代正式终结，是今日 HN 分数与评论双第一（591▲/452💬）"
   },
   {
-   "url": "https://news.ycombinator.com/item?id=49449507",
-   "meta": "908▲/453💬 · HN 加权登顶兼评论之王",
-   "title": "GLM-5.3-Flash",
-   "zh": "GLM-5.3-Flash 发布——智谱新一代开放权重快速模型以 908▲/453💬 加权登顶并拿下评论之王，同日 Qwen3.8-Flash-Next（635▲）与「Ox Alpha 确认为 GLM 新成员且将开放权重」（419▲）合围前十"
+   "url": "https://github.com/tt-a1i/archify",
+   "meta": "▲ 3,991 今日 · GitHub 增星第一",
+   "title": "tt-a1i/archify",
+   "zh": "archify 以 +3,991★ 居 GitHub Trending 当日榜首——一个 Agent skill，把架构图 / 流程图 / 时序图做成自包含 HTML 且强调「可验证」，画图从人工手活变成 Agent 标准动作"
   },
   {
-   "url": "https://github.com/freestylefly/awesome-gpt-image-2",
-   "meta": "▲ 4,050 今日 · GitHub 当日增星第一",
-   "title": "freestylefly/awesome-gpt-image-2",
-   "zh": "awesome-gpt-image-2 以 +4,050★ 断层蝉联 GitHub Trending 榜首（累计 21,635★，增速较昨日 +1,698★ 翻倍以上）：GPT-Image2 工业级提示词引擎与模板库，530+ 案例逆向工程、20+ 套模板并提炼成 Skills"
+   "url": "https://www.producthunt.com/posts/video-agent-by-fotor",
+   "meta": "327▲ · PH 当日 #1",
+   "title": "Video Agent by Fotor",
+   "zh": "Video Agent by Fotor 以 327▲ 登顶 Product Hunt——用对话生成并逐帧修改动态图形与视频，把「精确控制」这件专业软件的活搬进聊天框"
   }
  ],
  "insights": [
   {
-   "src": "资本收编",
-   "title": "同一天两笔并购直插开源心脏：AI 基础设施进入被巨头收编阶段",
-   "text": "今日最硬的信号不在模型也不在工具，而在股权。「Nvidia agrees to acquire Hugging Face for $13B」以 309▲/130💬 出现在窗口后半段，而当日最高原始分是「AWS Acquires DuckLabs」987▲/293💬。这两笔交易一起把开源生态的两个中枢换了主人——模型与数据集的集散地，以及嵌入式分析引擎 DuckDB 背后的公司。更耐读的是时点：同窗还有 Hugging Face 官方复盘帖「The Hugging Face incident and the road ahead」拿下 189▲/237💬，安全事件与收购公告前后脚落地。另一条平行线是中心化托管的可靠性焦虑：「Disruption with Some GitHub Services – Resolved」256▲/156💬，社区当天就自建了「GitHub Outage Tracker: Is GitHub Cooked?」193▲/117💬。开发者一边看着开源枢纽被收购，一边发现自己连推代码都得看别人脸色——这是今日窗口最完整的一条叙事。"
+   "src": "Agent Skills 成为分发单位",
+   "title": "能力不再以「模型」或「应用」为单位打包，而是以 skill 包与记忆文件为单位流通",
+   "text": "今日 GitHub Trending 前四名全是 skill 包：archify（+3,991★，Agent 画可验证架构图）、scientific-agent-skills（+1,980★，165 个已验证科研 skill、覆盖 100+ 科学数据库、号称 19 万科学家在用）、reverse-skill（+1,401★，逆向/渗透 skill 路由包，按需自举工具链）、patent-disclosure-skill（+571★，中国专利交底书 skill），再加 ECC（+512★，把 skills / instincts / memory / security 做成 agent harness）。HN 侧同日出现「ChatGPT 工作工具与 Skill 参考手册」（189▲）与「把 Agent 记忆做成一种文件格式」（165▲/85💬）；Product Hunt 侧 Interactive Sessions 以 #3（232▲）主打「用 AI agent 逐步驱动完整 SDLC」。四源指向同一件事：Agent 生态的最小交付物已经从 prompt 模板变成可安装、可路由、可跨客户端复用的 skill 包。"
   },
   {
-   "src": "Agent 工程化",
-   "title": "Agent 技能包开始市场化，配套的「后端」与「量尺」同日到位",
-   "text": "GitHub 侧是供给端爆发：一张 16 个仓库的榜上塞进六个技能/插件生态项目——tt-a1i/archify（+1,035★，专出可验证架构图的技能）、anthropics/claude-plugins-community（+538★）与 claude-plugins-official（+308★）双轨分发、VoltAgent/awesome-agent-skills（+242★，1000+ 技能且跨 Claude Code / Codex / Gemini CLI / Cursor）、K-Dense-AI/scientific-agent-skills（+138★，163 个科研技能、17.5 万科研人员在用）、ConardLi/garden-skills（+113★）。技能已经不是个人 prompt 收藏，而是带目录、带兼容矩阵、带垂直分工的可分发件。Product Hunt 侧则在铺地基：OpenComputer（132▲）自称「给 Agent 用的 Firebase」，MCP-Builder.ai（165▲）做数据接入管道，再加 Warren（编码 Agent 工作负载基础设施）、DeployHermes（带角色/记忆/技能的常驻 Agent）、TaskShell 2.0（Agent 优先的任务管理）。Hugging Face 侧补的是量尺：FrontierChallenge（18▲ 登顶）测科研工作流完成度，AnTrap（7▲）把安卓 GUI Agent 丢进动态对抗环境测稳健性，Agent-G² 与 Code World Model 则改训练与建模方式。出技能、铺后端、上量尺——同一天三层齐活。"
+   "src": "算力下沉到桌面",
+   "title": "AI 需求正从数据中心传导到桌面整机与内存现货，「自己跑、自己训」的主权诉求同步升温",
+   "text": "HN 当日评论第二是「苹果被 AI 需求打了个措手不及：Mac Mini 与 Mac Studio 供不应求」（312▲/365💬），紧随其后是「SK 海力士 CEO：内存芯片短缺将持续到 2030 年」（79💬）——两条合起来说明本地推理的算力饥渴已经吃到消费级硬件供应。GitHub 侧对应三条：Osmantic/ODS（+77★，把 PC/Mac/Linux 变成带推理、语音、RAG、生图的 AI 服务器）、minimind（+495★，2 小时从零训一个 64M 参数 LLM）、heretic（+537★，全自动移除语言模型审查限制）。共同底色是：开发者不满足于调 API，要把模型、算力和行为约束权都攥回自己手里。"
   },
   {
-   "src": "开放与可信",
-   "title": "开放权重前排被中国模型占满，而「能不能信」正在四源同时被定价",
-   "text": "开放的一侧异常拥挤：GLM-5.3-Flash 以 908▲/453💬 加权登顶兼评论之王，Qwen3.8-Flash-Next 紧随 635▲/206💬，「Z.ai confirms Ox Alpha is a new GLM-series model and will release its weights」419▲/142💬 揭开匿名打榜模型身份，第三方「GLM-5.3-Flash Intelligence, Performance and Price Analysis」133▲ 当天就把价格性能算了一遍——发布、验明、比价一天走完。可信的一侧则横跨四源：Hacker News 有「VMs won't contain cyber-capable agents」146▲/116💬 质疑 Agent 的隔离边界、「RAG Is Simpler Than You Think」437▲/179💬 给落地方法去魅、「Fake US thinktank set up and funded by Israel sought to game AI for propaganda」239▲ 曝出针对 AI 的信息战；GitHub 的 ponytail（+1,598★）本质是给 AI 输出加闸；Product Hunt 的 LoupeKit 专门检测「任意网页多少是 AI 写的」；Hugging Face 的 VBVR-Pro 直接把「可验证」写进套件名。与之对照，收缩的一侧同样清晰：XCancel 与 Nitter 收到 X 的停止侵权函（281▲）、美国政府着手压制对数据中心的反对声（173▲/148💬）、Mechanical Turk 将于 9 月 30 日关停（169▲）。能力越涨，验证与准入越贵。"
+   "src": "从「能生成」到「能验证、谁担责」",
+   "title": "可验证性、护栏与责任归属在同一天被四个平台同时推到台面",
+   "text": "HN 有「AI 写的代码依然是你的代码」（89💬，责任不因工具转移）、「欧盟已开始执行《AI 法案》：首批问询函发往模型提供方」（99💬，监管从立法进入执法）、「一次 CVE 争议」（185▲，漏洞该由谁裁定）。GitHub 侧 archify 的卖点关键词就是 verifiable，firecrawl/pdf-inspector（+228★）专门判别扫描版与文本版 PDF 以做可靠路由，老牌 checkstyle（+198★）在 AI 写码时代重新被翻出来。Hugging Face 当日仅 3 篇的批次里，两篇正好是这个方向：《On-Policy 蒸馏真的在蒸馏吗？》质疑主流蒸馏范式的有效性，PaperGym 用评分表（rubric）为中心评测研究计划生成。生成能力的边际收益在下降，验证与追责能力的价值在上升。"
   }
  ],
- "gh_summary": "<p>今日 GitHub Trending 抓到 <span class=\"hl\">16 个</span>仓库（周四页面实际量级，如实呈现不补数）。榜首 <span class=\"hl\">freestylefly/awesome-gpt-image-2</span> 以 <span class=\"hl\">+4,050★</span> 断层蝉联（累计 21,635★），增速比昨日 +1,698★ 翻了一倍以上——GPT-Image2 的工业级提示词引擎与模板库，把 530+ 个案例逆向工程成 20+ 套模板并提炼为 Skills。</p>\n<p><b>今日最强共性：Agent「技能包」正在市场化。</b>一张榜上同时出现六个技能/插件生态项目——<span class=\"hl\">tt-a1i/archify</span>（<span class=\"hl\">+1,035★</span>，专出可验证架构图的 Agent 技能）、<span class=\"hl\">anthropics/claude-plugins-community</span>（+538★）与 <span class=\"hl\">claude-plugins-official</span>（+308★）一社区一官方双轨分发、<span class=\"hl\">VoltAgent/awesome-agent-skills</span>（+242★，1000+ 技能且跨 Claude Code / Codex / Gemini CLI / Cursor）、<span class=\"hl\">K-Dense-AI/scientific-agent-skills</span>（+138★，163 个科研技能、17.5 万科研人员在用）、<span class=\"hl\">ConardLi/garden-skills</span>（+113★）。技能从「个人 prompt 收藏」变成了带目录、带兼容性声明、带垂直领域分工的可分发件。</p>\n<p><b>第二条线仍是本地优先与「管住 Agent」。</b><span class=\"hl\">DietrichGebert/ponytail</span>（<span class=\"hl\">+1,598★</span>，累计 11.3 万★）主张「最好的代码是没写的那行」；<span class=\"hl\">MadsLorentzen/ai-job-search</span>（+1,300★）与 <span class=\"hl\">AgriciDaniel/claude-obsidian</span>（+810★）、<span class=\"hl\">tinyhumansai/openhuman</span>（+525★，Rust 本地人生记忆库）都在强调「跑在你的机器上、记忆留在本地」；<span class=\"hl\">browser-use</span>（+149★，累计 11.1 万★）继续给 Agent 补浏览器这只手。</p>\n<p>其余：<span class=\"hl\">Alishahryar1/free-claude-code</span>（+536★）打「13 亿免费 token」的门槛牌，<span class=\"hl\">basecamp/omarchy</span>（+1,024★）代表桌面 Linux 的有主张路线，<span class=\"hl\">marin-community/marin</span>（+441★）与 <span class=\"hl\">rohitg00/ai-engineering-from-scratch</span>（+838★）补齐从基础模型研发到工程入门的教学侧。</p>",
- "ph_summary": "<p>Product Hunt 当日榜共抓到 <span class=\"hl\">28 款</span>发布，取前 8 呈现（PT 日期 2026-08-26，按 dailyRank 排序，票数取 launchDayScore）。榜首 <span class=\"hl\">x1</span>（<span class=\"hl\">427▲</span>）自称「iPhone 应用的 Lovable」——从一句想法直接做到 App Store 上架，vibe coding 从网页端推进到移动原生分发链。</p>\n<p><b>今日 PH 的关键词是「给 Agent 铺后端与管道」。</b><span class=\"hl\">OpenComputer</span>（#7，132▲）把自己定义成「给 Agent 用的 Firebase」；<span class=\"hl\">MCP-Builder.ai</span>（#5，165▲）主打「把数据接进 AI 工具的最快方式」；再往后还有 <span class=\"hl\">Warren</span>（#19，85▲，编码 Agent 工作负载的基础设施）、<span class=\"hl\">Knack MCP Server</span>（#21，符合 HIPAA 的 AI 后端）、<span class=\"hl\">DeployHermes</span>（#22，招聘带角色/记忆/技能的常驻 Hermes Agent）、<span class=\"hl\">TaskShell 2.0</span>（#24，Agent 优先的任务管理）。与 GitHub 的技能包潮流对上——一边出技能，一边出跑技能的地基。</p>\n<p><b>第二条线是「桌面端回归」。</b><span class=\"hl\">PostHog Desktop</span>（#3，306▲）与 <span class=\"hl\">ChatCut Desktop</span>（#4，259▲，用 GPT 与 Claude 剪片）同日进前四，配合 <span class=\"hl\">EasySwitch</span>（#18）、<span class=\"hl\">BaudBuddy</span>（#20，原生 macOS 串口终端）、<span class=\"hl\">choclift for iPad</span>（#25）、<span class=\"hl\">Message Album</span>（#26，把 iMessage 会话存成离线私人相册）——本地原生应用在 AI 时代重新变成卖点。</p>\n<p>此外 <span class=\"hl\">Expertise AI</span>（#2，318▲）把 GTM 专业能力做成复购收入，<span class=\"hl\">Tellie Prompter 1.5</span>（#6，134▲）用「知道你还没讲到哪儿」这一个细节切入提词器，<span class=\"hl\">LoupeKit</span>（#16）则专门检测「任意网页由什么搭建、其中多少是 AI 写的」，与 HN 的内容真实性议题呼应。</p>",
- "papers_summary": "<p>Hugging Face <span class=\"hl\">2026-08-27 当日批次共 9 篇</span>（周四早间批次，仍在形成中，互动量偏低，最高 18▲），此处<span class=\"hl\">全量收录未截断</span>、未沿用任何历史批次。</p>\n<p><b>本批次的主题几乎压倒性地是「怎么评测 Agent 与生成模型」。</b>登顶的 <span class=\"hl\">FrontierChallenge</span>（18▲，2608.24979）直接评测 AI 能否完成前沿科研工作流；第二名 <span class=\"hl\">VBVR-Pro</span>（11▲）做可扩展且<b>可验证</b>的原生视觉推理评测套件；<span class=\"hl\">AnTrap</span>（7▲）把安卓 GUI Agent 放进动态对抗环境，专测运行时异常下的稳健性；<span class=\"hl\">VGI-BENCH</span>（5▲）探查视频生成模型内部到底有没有视觉智能。四篇评测占据前四——学术界正在给能力暴涨的 Agent 补上量尺。</p>\n<p>另一簇是<b>Agent 训练与世界模型</b>：<span class=\"hl\">Agent-G²</span>（10▲）用高斯引导改进 Agent 强化学习，<span class=\"hl\">Code World Model</span>（4▲）把编码 Agent 直接当作「世界大脑」；效率侧则有 <span class=\"hl\">D³-MOPD</span>（3▲，多教师蒸馏的动态域调度）与 <span class=\"hl\">时空可组合性编程范式</span>（1▲），交互侧有 <span class=\"hl\">Super Star</span>（数字人流式实时交互 Agent）。</p>\n<p>与另外三源对照：GitHub 在批量生产 Agent 技能包，Product Hunt 在给 Agent 铺后端，而 Hugging Face 在追问<span class=\"hl\">「这些东西到底行不行、稳不稳」</span>。</p>",
- "note_hf": "本板块数据取自 Hugging Face Daily Papers <span class=\"hl\">2026-08-27 当日批次</span>（清空代理环境变量后直连 <code>api/daily_papers?date=2026-08-27</code>，HTTP 200）。当日批次共 <span class=\"hl\">9 篇</span>，周四早间批次仍在形成中、互动量偏低（最高 18▲，多篇 0–5▲），已<span class=\"hl\">全量收录</span>、按 upvotes 降序排列，未截断、未编造条数，也未沿用历史批次。部分论文 <code>publishedAt</code> 标记为 08-20～08-26，属 HF 当日批次的正常聚合归属。",
+ "gh_summary": "<p>今日 GitHub Trending 共 <span class=\"hl\">16 条</span>入榜，增星第一是 <span class=\"hl\">tt-a1i/archify</span>（<span class=\"hl\">+3,991★</span>，累计 39,197★）——一个专给 Agent 用的 skill，生成架构图 / 流程图 / 时序图，输出自包含 HTML 并强调「<span class=\"hl\">verifiable（可验证）</span>」。第二名 <span class=\"hl\">THU-MAIC/OpenMAIC</span>（+2,824★）把多 Agent 做成互动课堂。</p>\n<p><b>今日榜单最刺眼的结构性特征：前四名全是 skill 包。</b>除 archify 外，<span class=\"hl\">scientific-agent-skills</span>（+1,980★，165 个已验证科研 skill、100+ 科学数据库、覆盖生物/化学/医学/药物发现）、<span class=\"hl\">reverse-skill</span>（+1,401★，逆向/渗透安全 skill 路由包，AI 自动路由 + 按需自举工具链 + 自进化经验库）、<span class=\"hl\">patent-disclosure-skill</span>（+571★，中国专利交底书撰写）三条紧随其后；再加 <span class=\"hl\">affaan-m/ECC</span>（+512★，把 skills / instincts / memory / security 做成 agent harness 优化系统，累计 24.5 万★）。这说明 Agent 能力的分发单位已经从「一个应用」下沉到「一个可安装、可跨客户端复用的 skill」。</p>\n<p><b>另一条线是「把 AI 搬回本机」。</b><span class=\"hl\">jingyaogong/minimind</span>（+495★，2 小时从零训 64M 参数 LLM）、<span class=\"hl\">p-e-w/heretic</span>（+537★，全自动移除模型审查限制）、<span class=\"hl\">Osmantic/ODS</span>（+77★，把 PC/Mac/Linux 变成带推理、语音、RAG、生图的 AI 服务器）三条合流，指向同一种开发者情绪：模型权重、算力与行为约束都要自己掌握。工程侧则有 <span class=\"hl\">firecrawl/pdf-inspector</span>（+228★，Rust 写的 PDF 检查/分类/抽取，智能判别扫描版 vs 文本版以做路由）、<span class=\"hl\">every-app/open-seo</span>（+610★，Semrush/Ahrefs 的开源替代）、<span class=\"hl\">majd/ipatool</span>（+373★）与老牌 <span class=\"hl\">checkstyle</span>（+198★）。右栏为当日全量 16 条、按 star 增量降序、固定框内滚动。</p>",
+ "ph_summary": "<p>Product Hunt <span class=\"hl\">2026-08-31（PT）</span>当日共 <span class=\"hl\">12 款</span>精选上榜，本板块取前 8。榜首 <span class=\"hl\">Video Agent by Fotor</span>（<span class=\"hl\">327▲</span>）主打「用对话创建并精确编辑动态图形与视频」——把 After Effects 级别的精细控制搬进聊天框，是今日 PH 最典型的一条：AI 不再只做「一键生成」，开始接手「反复修改」。</p>\n<p><b>第 2–3 名把 Agent 推向真实工作流。</b><span class=\"hl\">BrandJet</span>（243▲）把公开的采购意向信号转成销售管道；<span class=\"hl\">Interactive Sessions</span>（232▲）更值得注意——「用 AI Agent 逐步驱动完整 SDLC」，明确采用「step by step」而非一把梭的编排方式，与今日 GitHub 榜上 skill 包 + agent harness 的思路完全同频。开发者向的还有 <span class=\"hl\">Radar by Particle</span>（134▲，播客搜索引擎）。</p>\n<p><b>但今日 PH 一半榜位属于「AI 之外」。</b><span class=\"hl\">EP–2350 FX–MIC</span>（199▲，能捏能摇当乐器演奏的可编程麦克风，硬件）、<span class=\"hl\">Tether</span>（192▲，会议无聊时陪你的 Mac 菜单栏小球）、<span class=\"hl\">Ask My Wardrobe</span>（164▲，数字衣橱）、<span class=\"hl\">BrandMyLaptop</span>（159▲，把笔记本外壳卖成广告位）——硬件玩物、消费级体验与轻商业创意占了四席。榜单口径：按 <span class=\"hl\">featuredAt = 2026-08-31（PT）</span>过滤当日精选，票数取 launchDayScore，已剔除首页推广位与跨期条目。右栏固定框内滚动。</p>",
+ "papers_summary": "<p><b>先说实情：Hugging Face Daily Papers <span class=\"hl\">2026-09-01 当日批次</span>目前仅 <span class=\"hl\">3 篇</span>，投票 3 / 1 / 0，是典型的「早间批次尚未回填」状态</b>（本任务运行于 CST 上午 10:00 后，直连 <code>api/daily_papers?date=2026-09-01</code> 返回 HTTP 200、条目真实为 3 条）。条数少不代表方向不清——本批 3 篇里有 2 篇正好落在今日跨源共性上。</p>\n<p><span class=\"hl\">《On-Policy 蒸馏真的在蒸馏吗？从「有噪声的教师」到「自我提升」》</span>（3▲，当日最高）直接质疑当前最流行的对齐/压缩范式：如果教师本身带噪声，那么 on-policy 蒸馏的收益究竟来自教师传授的知识，还是来自学生的自我改进？这是对「蒸馏有效」这一默认假设的正面检验。<span class=\"hl\">《PaperGym》</span>（1▲）则把「AI 能不能写出靠谱的研究方案」做成以评分表（rubric）为中心的演化式基准——同样是把不可验证的能力变成可打分的能力。</p>\n<p>第三篇 <span class=\"hl\">《跨语言功能向量用于大语言模型中的情绪识别》</span>（0▲）走的是多语种可迁移表征路线。<b>结论倾向：</b>今日 HF 侧的信号量偏弱，但两篇高位论文与 HN、GitHub 同日共振——<span class=\"hl\">「能不能验证」正在取代「能不能生成」成为研究与工程的共同焦点</span>。本板块如实呈现 3 条，不补数、不套用历史批次。</p>",
+ "note_hf": "本板块数据取自 Hugging Face Daily Papers <span class=\"hl\">2026-09-01 当日批次</span>（直连 <code>api/daily_papers?date=2026-09-01</code>，HTTP 200，返回 <span class=\"hl\">3 篇</span>，投票 3/1/0）。当日批次<span class=\"hl\">条目极少</span>——早间提交尚未回填，属平台常态，非抓取失败；<span class=\"hl\">未沿用任何历史批次、未补足条数</span>。",
  "gh_tr": {
-  "freestylefly/awesome-gpt-image-2": "GPT-Image2 工业级提示词引擎与模板库：530+ 案例逆向工程、20+ 套工业级模板，并提炼成可直接调用的 Skills，持续更新",
-  "DietrichGebert/ponytail": "让你的 AI Agent 像屋里最懒的资深工程师那样思考——最好的代码是你从没写过的那行",
-  "MadsLorentzen/ai-job-search": "跑在你自己机器上的求职流水线：基于 Claude Code 的 AI 投递框架，自动评估岗位、定制简历、写求职信并准备面试",
-  "tt-a1i/archify": "生成美观且可验证的架构图 / 流程图 / 时序图 / 数据流图 / 生命周期图的 Agent 技能——输出自包含 HTML，带动效与清晰导出",
-  "basecamp/omarchy": "Basecamp 出品的「美观、现代、有主张」的 Linux 桌面发行配置",
-  "rohitg00/ai-engineering-from-scratch": "AI 工程从零学：学会它、造出来、交付给别人用",
-  "AgriciDaniel/claude-obsidian": "面向 Obsidian + Claude Code 的自组织 AI 第二大脑：丢进任意素材，Claude 自动阅读、建链并归入一张连通的知识图谱",
-  "anthropics/claude-plugins-community": "Claude Cowork 与 Claude Code 的社区插件市场（只读镜像，投稿走官方插件目录）",
-  "Alishahryar1/free-claude-code": "免费使用 Claude Code / Codex / Pi / OpenCode（13 亿+ 免费 token），可从终端、App、IDE 或手机调用，支持语音且符合服务条款",
-  "tinyhumansai/openhuman": "属于你个人的 AI 超级智能：用 Rust 构建本地优先的人生记忆库，并充当 Agent 集群与工作流的编排者",
-  "marin-community/marin": "开源基础模型研发框架，面向研究与工程全流程",
-  "anthropics/claude-plugins-official": "Anthropic 官方维护的高质量 Claude Code 插件目录",
-  "VoltAgent/awesome-agent-skills": "1000+ 个 Agent 技能精选合集，来自官方团队与社区，兼容 Claude Code / Codex / Gemini CLI / Cursor 等",
-  "browser-use/browser-use": "让网站对 AI Agent 可用：轻松自动化各类线上任务",
-  "K-Dense-AI/scientific-agent-skills": "把任意 AI Agent 变成 AI 科学家：科研领域第一大 Agent 技能库，17.5 万+ 科研人员在用，含 163 个经验证的现成技能",
-  "ConardLi/garden-skills": "ConardLi 的开源 Skills 合集，涵盖网页设计、知识检索、图像生成等场景"
+  "tt-a1i/archify": "Agent skill：生成美观且可验证的架构图、工作流图、时序图、数据流图与生命周期图——输出自包含 HTML，带动效、可清晰导出",
+  "THU-MAIC/OpenMAIC": "开放多智能体互动课堂——一键获得沉浸式的多 Agent 学习体验",
+  "K-Dense-AI/scientific-agent-skills": "把任意 AI Agent 变成 AI 科学家。面向科研的头号 Agent Skills 库，号称全球 19 万+ 科学家在用；含 165 个开箱可用的已验证 skill 与 100+ 科学数据库，覆盖生物、化学、医学与药物发现，兼容 Cursor / Claude Code / Codex / Pi / Antigravity 及开放 Agent Skills 标准",
+  "zhaoxuya520/reverse-skill": "逆向工程 / 授权渗透测试 / 安全研究的 skill 路由包：AI 自动路由 + 按需自举工具链 + 自进化经验库，支持 Claude Code、Kiro、Cursor、Cline 等代码 AI 客户端",
+  "every-app/open-seo": "Semrush 与 Ahrefs 的开源替代品",
+  "k1tbyte/Wand-Enhancer": "为 Wand（WeMod）应用提供的进阶交互与互操作性扩展",
+  "handsomestWei/patent-disclosure-skill": "中国专利 skill：挖掘专利点、撰写发明/实用/外观交底书，通俗解读专利，嗅探政策动向，辅助审查答复",
+  "p-e-w/heretic": "全自动移除语言模型的审查限制",
+  "affaan-m/ECC": "Agent harness 性能优化系统：skills、instincts、memory、security 与研究优先的开发流程，适配 Claude Code、Codex、Opencode、Cursor 等",
+  "jingyaogong/minimind": "🧠 2 小时从零训练一个 64M 参数的 LLM",
+  "pollen-robotics/microduck_rl": "Microduck 机器人的强化学习训练环境（基于 mjlab）",
+  "majd/ipatool": "命令行工具：从 App Store 搜索并下载 iOS / iPadOS / tvOS / visionOS 的 ipa 安装包",
+  "firecrawl/pdf-inspector": "高性能 Rust 库，用于 PDF 检查、分类与文本抽取；能智能判别扫描版与文本版 PDF，以支撑后续的路由决策",
+  "checkstyle/checkstyle": "帮助程序员写出符合编码规范的 Java 代码的开发工具；默认支持 Google Java 风格指南与 Sun 编码约定，高度可配置，可通过 ANT 任务或命令行调用",
+  "kaifcodec/user-scanner": "🕵️ 二合一邮箱与用户名 OSINT 套件：仅凭一个邮箱/用户名做深度数据抽取，覆盖 465+ 个仍在维护的扫描向量（邮箱 175+ / 用户名 290+），用于安全研究、调查取证与数字足迹分析",
+  "Osmantic/ODS": "把你的 PC、Mac 或 Linux 机器变成 AI 服务器：LLM 推理、聊天 UI、语音、Agent、工作流、RAG 与图像生成"
  },
  "ph_tr": {
-  "x1": "iPhone 应用的 Lovable：从一个想法直接做到上架 App Store",
-  "Expertise AI": "把你的 GTM（市场进入）技能变成可持续复购的收入",
-  "PostHog Desktop": "为产品建造者打造的产品编辑器（PostHog 桌面端）",
-  "ChatCut Desktop": "为人与 AI 共同打造的视频编辑器：用 GPT 与 Claude 剪片",
-  "MCP-Builder.ai": "把你的数据接进 AI 工具的最快方式（MCP 服务快速搭建）",
-  "Tellie Prompter 1.5": "知道你还没说到哪儿的提词器——按讲稿实时追踪未覆盖内容",
-  "OpenComputer": "给 Agent 用的 Firebase——一站式后端与运行环境",
-  "Termy": "从游戏、视频和网页里学语言"
+  "Video Agent by Fotor": "用对话创建并编辑精确的动态图形与视频",
+  "BrandJet": "把公开的采购意向信号变成销售管道",
+  "Interactive Sessions": "用 AI Agent 逐步驱动完整的软件开发生命周期",
+  "EP–2350 FX–MIC": "可编程麦克风：能捏、能摇、能当乐器演奏",
+  "Tether": "一个陪你熬过无聊会议的小球（Mac 菜单栏应用）",
+  "Ask My Wardrobe": "完整的数字衣橱体验",
+  "BrandMyLaptop": "把你笔记本上的位置卖成广告位",
+  "Radar by Particle": "播客搜索引擎"
  },
  "hf_tr": {
-  "2608.24979": "FrontierChallenge：评测 AI 完成前沿科研工作流的能力",
-  "2608.26105": "VBVR-Pro：可扩展且可验证的原生视觉推理评测套件",
-  "2608.23318": "Agent-G²：用高斯引导做 Agent 强化学习",
-  "2608.24099": "AnTrap：安卓 GUI Agent 在运行时异常下够稳健吗——动态对抗环境下的 Agent 评测",
-  "2608.19583": "VGI-BENCH：探查视频生成模型中的视觉智能",
-  "2608.25927": "Code World Model：把编码 Agent 当作「世界大脑」",
-  "2608.24987": "D³-MOPD：面向高效多教师蒸馏的自适应动态域调度",
-  "2608.25512": "一种面向时空可组合性的编程范式",
-  "2608.24909": "Super Star：面向数字人的流式实时交互 Agent"
+  "2608.31046": "On-Policy 蒸馏真的在蒸馏吗？从「有噪声的教师」到「自我提升」——质疑主流 on-policy 蒸馏的收益究竟来自教师知识还是学生自身的自我改进",
+  "2608.31119": "PaperGym：以评分表（rubric）为中心的演化式研究计划生成评测——把「AI 能不能写出靠谱研究方案」变成可打分、可迭代的基准",
+  "2608.29613": "跨语言功能向量用于大语言模型中的情绪识别——用可迁移的功能向量做多语种情绪检测"
  }
 }

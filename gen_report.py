@@ -428,6 +428,12 @@ def build_papers():
             f'          </div>\n' + zh_html +
             f'        </div>'
         )
+    if not cards:
+        cards.append(
+            '        <div class="ph-card" style="grid-column:1/-1;">\n'
+            '          <div class="ph-desc">当日 Hugging Face Daily Papers 批次为空（周末休更），无条目可列。说明见下方「注」。</div>\n'
+            '        </div>'
+        )
     note = f'    <div class="note">{C["note_hf"]}</div>\n' if C.get("note_hf") else ""
     return (
         '  <section id="papers" class="section">\n'

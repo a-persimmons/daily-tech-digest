@@ -1,10 +1,10 @@
 {
-  "date": "2026-08-31",
-  "date_label": "2026-08-31 · 星期一",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-08-31.html",
-  "summary": [
-    "Agent 工程化技能继续霸榜：archify（+3,722★）居 GitHub 当日增星第一，清华多智能体课堂、科研 Agent 技能库、实时语音 Agent 框架同日合流，Agent 从「会对话」走向「有架构、可验证执行」。",
-    "免费/开源/自主情绪升温：GitHub 上聚合 34 家免费 LLM 的 freellmapi、SEO 开源替代、LLM 友好爬虫，与 PH「别为记笔记付费」的开源替代品共振；HN「加州 Linux 豁免年龄验证法」登顶（715▲）、欧盟重启加密后门诉求，主权与反监控同日抬头。",
-    "安全与可验证成今日最硬暗线：HN「Omarchy 任意进程可提权到 root」（445▲/423💬 评论之王）与 QubesOS 漏洞、HF 被黑复盘三帖合流，GitHub 的 ghidra、heretic 与 HF 的 LMSM/StepGuard 护栏论文把「从系统到模型都可被验证、被护栏」推上 C 位。"
-  ]
+ "date": "2026-09-01",
+ "date_label": "2026-09-01 · 星期二",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-09-01.html",
+ "summary": [
+  "谷歌把 Chrome 应用商店里的 MV2 扩展全部下架（uBlock Origin 在列），以 591▲/452💬 拿下 HN 分数与评论双榜首——拦截类扩展生态被平台方一次性清场。",
+  "GitHub Trending 前四名全是 Agent skill 包：archify（+3,991★，可验证架构图）、scientific-agent-skills（165 个科研 skill）、reverse-skill、中国专利 skill——能力的分发单位已从应用下沉到可安装的 skill。",
+  "AI 需求吃到消费级硬件：苹果 Mac Mini/Studio 供不应求（312▲/365💬）+ SK 海力士称内存短缺持续到 2030；Hugging Face 当日批次仅 3 篇，其中两篇在质疑蒸馏有效性、做研究计划评测——「能不能验证」正取代「能不能生成」。"
+ ]
 }
