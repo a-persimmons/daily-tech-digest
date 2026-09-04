@@ -1,10 +1,10 @@
 {
- "date": "2026-09-03",
- "date_label": "2026-09-03 · 星期四",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-09-03.html",
- "summary": [
-  "「更省」压过「更强」：GitHub 增星第一是反过度工程的 Agent skill ponytail（+1,354★，最好的代码是你永远不用写的那行），caveman 用穴居人式说话砍 65% token；HN 头条是快而廉的 Gemini 3.8 Flash（853▲/501💬），Show HN 实测同一模型换 9 种 harness、单次通过成本差 17 倍——决定账单的是脚手架不是模型。",
-  "AI 输出的可核验性被逐条清算：三个站点为 AI 量产 215,128 篇「最佳软件」页面而 Perplexity 照单引用（323▲），另有三分之一引用不含所引数字；OpenAI 与 Anthropic 一无所获后，人工审计从 curl 挖出六个 CVE。GitHub 上 humanizer（+374★）反向印证 AI 检测需求，PH 榜三 Articos 标语就是「凭信心发布，而不是凭直觉」。",
-  "Agent 开始长出手脚与身份：PH 榜首 Monid（390▲）做 Agent 工具的统一路由，Dial 十秒给 Agent 配真实电话号；GitHub 上 atlas（+888★）给 Agent 做版本控制、hermes-agent 主打长期记忆。HF 当日 10 篇论文里 SolarWM（28▲）、Cliff、PaperCompiler 集体转向「监督过程而非只看终点」。"
- ]
+  "date": "2026-09-04",
+  "date_label": "2026-09-04 · 星期五",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-09-04.html",
+  "summary": [
+    "GPT-6 Astra 今日发布（HN 1402▲/1150💬 双冠），但同一天 OpenAI、Claude、Grok 集体宕机——能力叙事与可用性叙事正面相撞。",
+    "GitHub 与 Product Hunt 头部几乎被同一类东西占据：让 Agent 更省、更稳、更自治的 skill 与基础设施（ponytail +2128★、Nex 270▲「Claude Cowork」等）。",
+    "Hugging Face 当日 11 篇论文集中押注效率——Gated DeltaNet 4-bit 量化、KV 缓存驱逐、上下文压缩领跑，少资源可核验正取代纯规模成为主赛道。"
+  ]
 }
