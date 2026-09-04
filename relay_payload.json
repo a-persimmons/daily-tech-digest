@@ -1,10 +1,10 @@
 {
- "date": "2026-09-01",
- "date_label": "2026-09-01 · 星期二",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-09-01.html",
+ "date": "2026-09-03",
+ "date_label": "2026-09-03 · 星期四",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-09-03.html",
  "summary": [
-  "谷歌把 Chrome 应用商店里的 MV2 扩展全部下架（uBlock Origin 在列），以 591▲/452💬 拿下 HN 分数与评论双榜首——拦截类扩展生态被平台方一次性清场。",
-  "GitHub Trending 前四名全是 Agent skill 包：archify（+3,991★，可验证架构图）、scientific-agent-skills（165 个科研 skill）、reverse-skill、中国专利 skill——能力的分发单位已从应用下沉到可安装的 skill。",
-  "AI 需求吃到消费级硬件：苹果 Mac Mini/Studio 供不应求（312▲/365💬）+ SK 海力士称内存短缺持续到 2030；Hugging Face 当日批次仅 3 篇，其中两篇在质疑蒸馏有效性、做研究计划评测——「能不能验证」正取代「能不能生成」。"
+  "「更省」压过「更强」：GitHub 增星第一是反过度工程的 Agent skill ponytail（+1,354★，最好的代码是你永远不用写的那行），caveman 用穴居人式说话砍 65% token；HN 头条是快而廉的 Gemini 3.8 Flash（853▲/501💬），Show HN 实测同一模型换 9 种 harness、单次通过成本差 17 倍——决定账单的是脚手架不是模型。",
+  "AI 输出的可核验性被逐条清算：三个站点为 AI 量产 215,128 篇「最佳软件」页面而 Perplexity 照单引用（323▲），另有三分之一引用不含所引数字；OpenAI 与 Anthropic 一无所获后，人工审计从 curl 挖出六个 CVE。GitHub 上 humanizer（+374★）反向印证 AI 检测需求，PH 榜三 Articos 标语就是「凭信心发布，而不是凭直觉」。",
+  "Agent 开始长出手脚与身份：PH 榜首 Monid（390▲）做 Agent 工具的统一路由，Dial 十秒给 Agent 配真实电话号；GitHub 上 atlas（+888★）给 Agent 做版本控制、hermes-agent 主打长期记忆。HF 当日 10 篇论文里 SolarWM（28▲）、Cliff、PaperCompiler 集体转向「监督过程而非只看终点」。"
  ]
 }
