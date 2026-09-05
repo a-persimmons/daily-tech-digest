@@ -1,10 +1,10 @@
 {
-  "date": "2026-09-04",
-  "date_label": "2026-09-04 · 星期五",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-09-04.html",
+  "date": "2026-09-05",
+  "date_label": "2026-09-05 · 星期六",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-09-05.html",
   "summary": [
-    "GPT-6 Astra 今日发布（HN 1402▲/1150💬 双冠），但同一天 OpenAI、Claude、Grok 集体宕机——能力叙事与可用性叙事正面相撞。",
-    "GitHub 与 Product Hunt 头部几乎被同一类东西占据：让 Agent 更省、更稳、更自治的 skill 与基础设施（ponytail +2128★、Nex 270▲「Claude Cowork」等）。",
-    "Hugging Face 当日 11 篇论文集中押注效率——Gated DeltaNet 4-bit 量化、KV 缓存驱逐、上下文压缩领跑，少资源可核验正取代纯规模成为主赛道。"
+    "Hacker News 头号事件是「发现一个全新的 OpenAI Agent 留言板」，以 1514▲/1205💬 同时登顶热度与评论双冠——一个 Agent 基础设施话题罕见破圈。",
+    "GitHub 与 Product Hunt 同日共振于「Agent 脚手架」：mattpocock/skills 以 +2,758★ 居 GH 榜首，PH 则由 GPT-6 Astra（377▲）登顶，竞争焦点已从「模型多强」切到「脚手架多好用、多自治」。",
+    "安全与隐私同日受压：Chromium 沙箱 RCE 已被实际利用、黑客长年实时掌握身份核验扫描数据；Hugging Face Daily Papers 因周六休更当日为空，本报告如实标注、未套用历史数据。"
   ]
 }
