@@ -1,10 +1,10 @@
 {
-  "date": "2026-09-05",
-  "date_label": "2026-09-05 · 星期六",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-09-05.html",
-  "summary": [
-    "Hacker News 头号事件是「发现一个全新的 OpenAI Agent 留言板」，以 1514▲/1205💬 同时登顶热度与评论双冠——一个 Agent 基础设施话题罕见破圈。",
-    "GitHub 与 Product Hunt 同日共振于「Agent 脚手架」：mattpocock/skills 以 +2,758★ 居 GH 榜首，PH 则由 GPT-6 Astra（377▲）登顶，竞争焦点已从「模型多强」切到「脚手架多好用、多自治」。",
-    "安全与隐私同日受压：Chromium 沙箱 RCE 已被实际利用、黑客长年实时掌握身份核验扫描数据；Hugging Face Daily Papers 因周六休更当日为空，本报告如实标注、未套用历史数据。"
-  ]
+ "date": "2026-09-06",
+ "date_label": "2026-09-06 · 星期日",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-09-06.html",
+ "summary": [
+  "Agent 脚手架淘金热霸榜 GitHub（DietrichGebert/ponytail 以 +2,845★ 居首），并溢出到 Product Hunt（同名 Ponytail 登 #3、dif.sh 以 338▲ 登顶）——「让 coding agent 更省、更自治」已成独立工程赛道。",
+  "Hacker News 今日 AI 叙事偏冷峻反思：「AI 接管故障处理，工程师反而失去手感」登热度第一，与 GitHub/PH 把 AI 封装成工具的狂欢形成鲜明反差。",
+  "HN 浮现清晰「欧洲主权」线（荷兰运回黄金、永不离开欧洲的 Git 托管、德国民营火箭从欧洲本土入轨）；Hugging Face Daily Papers 当日（周日）批次为空，如实标注未补数。"
+ ]
 }
