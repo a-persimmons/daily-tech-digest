@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今日技术热点速览 · 2026-09-08 · 星期二</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Serif+SC:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f4ede0; --paper2:#efe7d8; --ink:#1a1a1a; --ink2:#333;
+  --muted:#6b6357; --rule:#2b2b2b; --rule-light:#c9bfa9;
+  --accent:#9b1b1b; --accent2:#1a3a5c; --highlight:#e8e0d0;
+  --green:#2d6a2d; --orange:#8a5a00;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:'Source Serif 4','Noto Serif SC',Georgia,'Times New Roman',serif;
+  line-height:1.65;font-size:15.5px;
+  background-image:radial-gradient(ellipse at top,rgba(0,0,0,.02),transparent 60%);
+}
+a{color:var(--accent2);}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px 50px;}
+.zh{color:var(--muted);font-size:12.5px;font-weight:400;line-height:1.45;margin-top:3px;font-style:italic;}
+.gh-desc .zh{font-size:11.5px;margin-top:2px;}
+.section,.hero{scroll-margin-top:64px;}
+
+/* Masthead header */
+header.site-header{
+  padding:36px 24px 20px;text-align:center;
+  border-bottom:3px double var(--rule);
+  background:var(--paper);
+}
+.back-link{
+  display:inline-block;font-size:12px;color:var(--muted);
+  text-decoration:none;margin-bottom:10px;letter-spacing:.03em;
+  transition:color .15s ease;
+}
+.back-link:hover{color:var(--accent);}
+header.site-header .kicker{
+  font-size:11px;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:4px;
+}
+header.site-header h1{
+  margin:0 0 6px;font-size:32px;letter-spacing:-.01em;
+  font-family:'Playfair Display','Noto Serif SC',Georgia,serif;
+  font-weight:900;color:var(--ink);
+}
+header.site-header .date{color:var(--accent);font-weight:700;font-size:14px;letter-spacing:.05em;}
+header.site-header .sub{color:var(--muted);font-size:12px;margin-top:6px;font-style:italic;}
+
+/* Quick nav */
+.quick-nav{
+  position:sticky;top:0;z-index:100;display:flex;flex-wrap:wrap;
+  gap:6px;justify-content:center;padding:10px 0;
+  margin:0 0 28px;background:rgba(244,237,224,.92);
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--rule-light);
+}
+.quick-nav a{
+  font-size:12px;font-weight:600;color:var(--ink2);
+  text-decoration:none;padding:4px 11px;
+  border:1px solid var(--rule-light);background:var(--paper2);
+  white-space:nowrap;transition:all .15s ease;
+  font-family:'Source Serif 4',Georgia,serif;letter-spacing:.02em;
+}
+.quick-nav a:hover{color:var(--accent);border-color:var(--accent);background:var(--highlight);}
+
+/* Section title */
+.sec-title{
+  display:flex;align-items:center;gap:10px;margin:36px 0 16px;font-size:20px;
+  border-bottom:2px solid var(--rule);padding-bottom:8px;
+  font-family:'Playfair Display','Noto Serif SC',Georgia,serif;font-weight:800;
+}
+.sec-title .emo{font-size:18px;}
+.sec-title .bar{display:none;}
+
+/* Hero cards */
+.hero-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;}
+.hero-card{
+  display:block;text-decoration:none;color:var(--ink);
+  background:var(--paper2);border:1px solid var(--rule-light);
+  border-radius:2px;padding:16px 16px 14px;transition:all .18s ease;
+  position:relative;
+}
+.hero-card::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent);
+}
+.hero-card:hover{border-color:var(--ink);transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.1);}
+.hero-meta{color:var(--green);font-size:12px;font-weight:700;letter-spacing:.03em;}
+.hero-title{font-size:16px;font-weight:800;margin:6px 0 4px;font-family:'Playfair Display','Noto Serif SC',Georgia,serif;}
+
+/* Tables (HN / Papers) */
+.hn-table{
+  width:100%;border-collapse:collapse;
+  background:var(--paper2);border:2px solid var(--rule);
+}
+.hn-table th{
+  text-align:left;font-size:11px;color:var(--ink);font-weight:800;
+  padding:10px 12px;background:var(--highlight);
+  border-bottom:2px solid var(--rule);
+  text-transform:uppercase;letter-spacing:.08em;
+}
+.hn-table td{padding:11px 12px;border-bottom:1px solid var(--rule-light);vertical-align:top;}
+.hn-table tr:last-child td{border-bottom:none;}
+.hn-table .rank{
+  color:var(--accent);font-weight:900;width:34px;text-align:center;
+  font-family:'Playfair Display',Georgia,serif;font-size:16px;
+}
+.hn-table .hn-title a{color:var(--ink);font-weight:700;text-decoration:none;font-size:14.5px;}
+.hn-table .hn-title a:hover{color:var(--accent);text-decoration:underline;}
+.hn-table .hn-score{color:var(--orange);font-weight:800;white-space:nowrap;width:74px;font-variant-numeric:tabular-nums;}
+.hn-table .hn-comments{color:var(--muted);white-space:nowrap;width:64px;font-variant-numeric:tabular-nums;}
+.tag{
+  display:inline-block;font-size:10.5px;color:var(--accent2);
+  background:transparent;border:1px solid var(--accent2);
+  padding:1px 7px;border-radius:0;white-space:nowrap;
+  text-transform:uppercase;letter-spacing:.05em;
+}
+
+/* GitHub / PH grid */
+.gh-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:13px;}
+.gh-card,.ph-card{
+  background:var(--paper2);border:1px solid var(--rule-light);
+  border-radius:2px;padding:14px 15px;transition:all .18s ease;
+}
+.gh-card:hover,.ph-card:hover{border-color:var(--ink);box-shadow:0 4px 14px rgba(0,0,0,.08);}
+.gh-head,.ph-top{display:flex;align-items:center;gap:8px;margin-bottom:7px;}
+.gh-name{
+  font-weight:800;color:var(--ink);text-decoration:none;font-size:14.5px;
+  font-family:Georgia,serif;
+}
+.gh-name:hover{color:var(--accent);}
+.gh-lang{
+  margin-left:auto;font-size:10.5px;color:var(--muted);
+  background:transparent;border:1px solid var(--rule-light);
+  padding:1px 7px;border-radius:0;text-transform:uppercase;letter-spacing:.05em;
+}
+.gh-desc,.ph-desc{font-size:13px;color:var(--ink2);line-height:1.55;}
+.gh-meta{display:flex;gap:14px;margin-top:9px;font-size:12px;font-variant-numeric:tabular-nums;}
+.gh-today{color:var(--green);font-weight:800;}
+.gh-total{color:var(--orange);font-weight:700;}
+.ph-rank{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:26px;height:26px;border-radius:50%;background:var(--accent);
+  color:var(--paper);font-size:12px;font-weight:900;
+  font-family:'Playfair Display',Georgia,serif;
+}
+.ph-name{font-size:16px;font-weight:900;color:var(--ink);text-decoration:none;font-family:'Playfair Display','Noto Serif SC',Georgia,serif;}
+.ph-name:hover{color:var(--accent);}
+.ph-up{color:var(--green);font-weight:800;}
+.ph-topics{color:var(--muted);font-size:11px;}
+
+/* Insights */
+.insight{
+  background:var(--paper2);border:1px solid var(--rule-light);
+  border-left:4px solid var(--accent);border-radius:0;
+  padding:16px 18px;margin-bottom:14px;
+}
+.insight-head{display:flex;align-items:center;gap:9px;margin-bottom:6px;}
+.insight-dot{width:9px;height:9px;border-radius:50%;background:var(--accent);}
+.insight-head h3{margin:0;font-size:16px;font-family:'Playfair Display','Noto Serif SC',Georgia,serif;font-weight:800;}
+.insight-src{
+  margin-left:auto;font-size:10.5px;color:var(--muted);
+  border:1px solid var(--rule-light);padding:2px 8px;border-radius:0;
+  text-transform:uppercase;letter-spacing:.05em;
+}
+.insight p{margin:4px 0 0;color:var(--ink2);font-size:13.5px;}
+
+/* Footer */
+footer.site-footer{
+  margin-top:40px;padding:22px 24px;text-align:center;
+  border-top:3px double var(--rule);color:var(--muted);
+  font-size:12px;line-height:1.7;font-style:italic;
+}
+footer.site-footer a{color:var(--accent2);text-decoration:none;}
+.note{
+  font-size:12px;color:var(--muted);background:var(--paper2);
+  border:1px solid var(--rule-light);border-radius:0;
+  padding:10px 13px;margin:0 0 14px;font-style:italic;
+}
+</style>
+<style>
+.wrap{max-width:1180px;--summary-w:290px;}
+.hn-window-note{font-size:12px;color:#6b6357;background:#efe7d8;border-left:3px solid #9b1b1b;padding:7px 11px;margin-bottom:16px;line-height:1.6;}
+/* 公共：综述栏 */
+.col-summary{border:1px solid #ddd2c0;padding:13px 15px;background:#efe7d8;}
+.col-title{font-family:'Playfair Display',Georgia,serif;font-size:12.5px;letter-spacing:.07em;text-transform:uppercase;color:#9b1b1b;border-bottom:2px solid #9b1b1b;padding-bottom:6px;margin-bottom:12px;}
+.col-summary p{margin:0 0 11px;font-family:'Source Serif 4',Georgia,serif;font-size:13px;line-height:1.72;color:#2a2a2a;}
+.col-summary p:last-child{margin-bottom:0;}
+.col-summary .hl{color:#9b1b1b;font-weight:600;}
+/* 公共：滚动内容栏（高度由 JS 设为左侧综述高度；CSS 兜底防 JS 失效） */
+.col-mid,.col-right{overflow-y:scroll;scrollbar-width:thin;border:1px solid #ddd2c0;background:#efe7d8;padding:10px 13px;max-height:80vh;overscroll-behavior:contain;}
+.col-mid::-webkit-scrollbar,.col-right::-webkit-scrollbar{width:8px;}
+.col-mid::-webkit-scrollbar-thumb,.col-right::-webkit-scrollbar-thumb{background:#c9bca6;border-radius:4px;}
+.col-mid .zh,.col-right .zh{font-size:10.5px;color:#8a8175;}
+/* HN 三栏：左综述(固定宽，与 GitHub 左栏一致) / 中 Top20 / 右全量 */
+.hn-three{display:grid;grid-template-columns:var(--summary-w) 1.6fr 1.15fr;gap:18px;align-items:start;}
+@media(max-width:1000px){.hn-three{grid-template-columns:1fr;}}
+.hn-col-title{font-family:'Playfair Display',Georgia,serif;font-size:12.5px;letter-spacing:.07em;text-transform:uppercase;color:#9b1b1b;border-bottom:2px solid #9b1b1b;padding-bottom:6px;margin-bottom:12px;}
+.hn-top-item{padding:8px 0;border-bottom:1px solid #ddd2c0;}
+.hn-top-item a{font-family:'Source Serif 4',Georgia,serif;font-size:13px;color:#1a1a1a;text-decoration:none;font-weight:600;line-height:1.35;}
+.hn-top-item a:hover{color:#9b1b1b;}
+.hn-rank{color:#9b1b1b;font-weight:700;margin-right:6px;font-family:'Playfair Display',serif;}
+.hn-top-meta{font-size:11px;color:#6b6357;margin-top:2px;}
+.hn-all-row{padding:5px 0;border-bottom:1px dotted #ccc1ad;font-size:12px;line-height:1.45;}
+.hn-all-row a{color:#1a3a5c;text-decoration:none;}
+.hn-all-row a:hover{text-decoration:underline;}
+.hn-all-meta{color:#9b1b1b;font-weight:600;font-size:10.5px;margin-right:4px;}
+/* 两栏：左侧当日综述(固定宽) + 右侧原内容（GitHub / Product Hunt / Papers） */
+.two-col{display:grid;grid-template-columns:var(--summary-w) 1fr;gap:26px;align-items:start;}
+@media(max-width:900px){.two-col{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a class="back-link" href="index.html">← 返回归档</a>
+  <div class="kicker">The Tech Dispatch</div>
+  <h1>🔥 今日技术热点速览</h1>
+  <div class="date">2026-09-08 · 星期二</div>
+  <div class="sub">数据来源：Hacker News · GitHub Trending · Product Hunt · Hugging Face Papers</div>
+</header>
+
+<nav class="quick-nav">
+  <a href="#top-story">🔥 今日头条</a>
+  <a href="#hn">📰 Hacker News</a>
+  <a href="#github">⭐ GitHub</a>
+  <a href="#producthunt">🚀 Product Hunt</a>
+  <a href="#papers">📄 Papers</a>
+  <a href="#insights">💡 趋势洞察</a>
+</nav>
+
+<div class="wrap">
+
+  <section id="top-story" class="hero">
+    <div class="sec-title"><span class="emo">🔥</span><span>今日头条 · Top 3</span></div>
+    <div class="hero-grid">
+      <a class="hero-card" href="https://news.ycombinator.com/item?id=49593563" target="_blank" rel="noopener">
+        <div class="hero-meta">947▲/245💬 · HN 分数第一</div>
+        <div class="hero-title">Keep Our Servers Running</div>
+        <div class="zh">HN 今日分数第一（947▲/245💬）：疑似某基础设施/社区运维帖「让服务器继续转下去」，在多条服务稳定性风波背景下引发大范围共鸣——运维人的集体情绪出口</div>
+      </a>
+      <a class="hero-card" href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener">
+        <div class="hero-meta">▲ 1,897 今日 · GitHub 增星第一</div>
+        <div class="hero-title">affaan-m/ECC</div>
+        <div class="zh">affaan-m/ECC 以 +1,897★ 居 GitHub Trending 当日增星第一——面向 Claude Code / Codex / Opencode / Cursor 的「agent harness 性能优化系统」（skills、instincts、memory、security），是今日 agent 工程化叙事的锚点</div>
+      </a>
+      <a class="hero-card" href="https://www.producthunt.com/" target="_blank" rel="noopener">
+        <div class="hero-meta">295▲ · PH 当日 #1</div>
+        <div class="hero-title">PR Lens by Coldtea.ai</div>
+        <div class="zh">PR Lens by Coldtea.ai 以 295▲ 登顶 Product Hunt——「用新视角看代码（See code through a new lens）」，把代码评审/可读性的 AI 辅助推到发布榜首，与 GitHub 今日的 coding-agent 主线同源</div>
+      </a>
+    </div>
+  </section>
+
+  <section id="hn" class="section">
+    <div class="sec-title"><span class="emo">📰</span><span>Hacker News · 全窗口热门</span></div>
+    <div class="hn-window-note">时间窗：2026-09-08 首页实时榜（网络中断，替代完整时间窗 9/7 10:00→9/8 10:00 CST） · 窗口内共 <b>29</b> 条新帖 · 排序：分数与评论 min-max 归一化后加权（0.6×分数 + 0.4×评论），降序取 Top20（中栏）。右栏为窗口内全量，滚动浏览。左栏「当日综述」完整展示、不滚动；中/右栏高度与左栏对齐。</div>
+    <div class="hn-three">
+      <div class="col-summary">
+        <div class="col-title">📝 当日综述</div>
+        <div class="hn-summary"><p>本期 Hacker News 数据取自 <span class="hl">2026-09-08 首页实时榜（29 条）</span>——因本机外网出口中断，Algolia 时间窗 API 不可达，故以首页榜替代完整时间窗（9/7 10:00→9/8 10:00 CST）。数据真实，但<span class="hl">非完整窗口全量</span>，右栏即为这 29 条首页榜，未做零遗漏补全。</p>
+<p><b>隐私与监控今日最热。</b>分数第一是 <span class="hl">「让服务器继续转下去」</span>（<span class="hl">947▲/245💬</span>，疑似基础设施/社区运维帖引发大共鸣）；而<span class="hl">评论数全场最高</span>的是 <span class="hl">「2.16 亿台监视电视——LG 智能电视的问题」</span>（480▲/<span class="hl">709💬</span>），把智能电视变监控摄像头的话题再次引爆。安全侧 <span class="hl">「针对整个 Linux 发行版的『信任的信任』攻击」</span>（136▲/35💬）与 <span class="hl">「Stuxnet 重构源码」</span>（Show HN，54▲）同日走高。</p>
+<p><b>工程与系统叙事稳健。</b><span class="hl">「简单不等于小」</span>（195▲/62💬，工程哲学）、<span class="hl">「重访 Dataflow 模型」</span>（82▲）、<span class="hl">「解码 NEC V20 微码」</span>（114▲）、<span class="hl">「博通下架 VDDK 后离开 VMware 更难了」</span>（79▲/36💬，虚拟化许可）覆盖了从理念到芯片到厂商锁定的多条线；<span class="hl">Ladybird 浏览器本月进展</span>（154▲）延续独立浏览器叙事。排序：分数与评论 min-max 归一化加权（<span class="hl">0.6×分数 + 0.4×评论</span>），得 hot 降序取 Top20（中栏）。</p></div>
+        <div class="col-title" style="margin-top:18px;">⚠️ 漏网高讨论</div>
+        <div class="hn-summary"><p style='margin:0;'><span class='hl'>Show HN: Stuxnet – A reconstructed sou</span>（13💬 / 54▲） · <span class='hl'>Macbeth and His Problems</span>（12💬 / 32▲） · <span class='hl'>Show HN: I built an aesthetically plea</span>（9💬 / 38▲）</p><p style='margin:6px 0 0;color:#6b6357;font-size:12px;'>首页榜中评论较高但未进 Top20 的条目；完整时间窗因网络中断未取回。</p></div>
+      </div>
+      <div class="col-mid">
+        <div class="hn-col-title">🔥 算法 Top 20</div>
+        <div class="hn-top-item">
+          <span class="hn-rank">1</span><a href="https://news.ycombinator.com/item?id=49593563" target="_blank" rel="noopener">Keep Our Servers Running</a>
+          <div class="hn-top-meta">947▲ · 245💬 · hot 0.7382</div><div class="zh">「让服务器继续转下去」（947▲/245💬，今日分数第一，疑似某基础设施/社区运维帖，引发大范围共鸣）</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">2</span><a href="https://news.ycombinator.com/item?id=49592375" target="_blank" rel="noopener">216M Spy TVs – The LG Smart TV Problem [video]</a>
+          <div class="hn-top-meta">480▲ · 709💬 · hot 0.7022</div><div class="zh">「2.16 亿台监视电视——LG 智能电视的问题」[视频]（480▲/709💬，评论数全场最高，智能电视隐私/监控争议）</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">3</span><a href="https://news.ycombinator.com/item?id=49598291" target="_blank" rel="noopener">bzip3</a>
+          <div class="hn-top-meta">374▲ · 106💬 · hot 0.2944</div><div class="zh">bzip3 —— 新一代压缩工具（374▲/106💬）</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">4</span><a href="https://news.ycombinator.com/item?id=49601655" target="_blank" rel="noopener">Watch Los Angeles get built, one building at a time (1880–2026)</a>
+          <div class="hn-top-meta">207▲ · 97💬 · hot 0.1829</div><div class="zh">看洛杉矶一栋栋建起来（1880–2026）（207▲/97💬，城市生长可视化）</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">5</span><a href="https://news.ycombinator.com/item?id=49596055" target="_blank" rel="noopener">Caltech Mathathon – first hackathon ever devoted to research level mathematics</a>
+          <div class="hn-top-meta">221▲ · 81💬 · hot 0.1828</div><div class="zh">Caltech Mathathon——史上首个面向研究级数学的黑客松（221▲/81💬）</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">6</span><a href="https://news.ycombinator.com/item?id=49552299" target="_blank" rel="noopener">WeatherNext 3</a>
+          <div class="hn-top-meta">218▲ · 44💬 · hot 0.1600</div><div class="zh">WeatherNext 3（Google 的 AI 天气预报模型，218▲/44💬）</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">7</span><a href="https://news.ycombinator.com/item?id=49595865" target="_blank" rel="noopener">Live map of public transport in Belgium</a>
+          <div class="hn-top-meta">185▲ · 77💬 · hot 0.1576</div><div class="zh">比利时公共交通实时地图（185▲/77💬）</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">8</span><a href="https://news.ycombinator.com/item?id=49558685" target="_blank" rel="noopener">Simple Is Not Small</a>
+          <div class="hn-top-meta">195▲ · 62💬 · hot 0.1555</div><div class="zh">「简单不等于小」（195▲/62💬，工程哲学帖）</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">9</span><a href="https://news.ycombinator.com/item?id=49571096" target="_blank" rel="noopener">This Month in Ladybird – August 2026</a>
+          <div class="hn-top-meta">154▲ · 37💬 · hot 0.1152</div><div class="zh">Ladybird 浏览器本月进展（2026 年 8 月）（154▲/37💬）</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">10</span><a href="https://news.ycombinator.com/item?id=49575515" target="_blank" rel="noopener">Trusting-Trust Attack against an Entire Linux Distribution</a>
+          <div class="hn-top-meta">136▲ · 35💬 · hot 0.1026</div><div class="zh">针对整个 Linux 发行版的「信任的信任」攻击（136▲/35💬，安全）</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">11</span><a href="https://news.ycombinator.com/item?id=49569838" target="_blank" rel="noopener">Scientists observe Einstein&#x27;s gravity in the quantum world</a>
+          <div class="hn-top-meta">131▲ · 28💬 · hot 0.0955</div><div class="zh">科学家在量子世界观测到爱因斯坦引力（131▲/28💬）</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">12</span><a href="https://news.ycombinator.com/item?id=49586207" target="_blank" rel="noopener">Icy Moons Are Ocean Worlds</a>
+          <div class="hn-top-meta">126▲ · 11💬 · hot 0.0827</div><div class="zh">冰卫星是海洋世界（126▲/11💬）</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">13</span><a href="https://news.ycombinator.com/item?id=49561002" target="_blank" rel="noopener">Decoding the NEC V20 Microcode</a>
+          <div class="hn-top-meta">114▲ · 8💬 · hot 0.0734</div><div class="zh">解码 NEC V20 微码（114▲/8💬，复古芯片）</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">14</span><a href="https://news.ycombinator.com/item?id=49602699" target="_blank" rel="noopener">Leaving VMware just got harder after Broadcom pulled VDDK downloads</a>
+          <div class="hn-top-meta">79▲ · 36💬 · hot 0.0669</div><div class="zh">博通下架 VDDK 下载后，离开 VMware 更难了（虚拟化/许可，79▲/36💬）</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">15</span><a href="https://news.ycombinator.com/item?id=49589190" target="_blank" rel="noopener">The Dataflow Model Revisited</a>
+          <div class="hn-top-meta">82▲ · 14💬 · hot 0.0564</div><div class="zh">重访 Dataflow 模型（流处理/系统，82▲/14💬）</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">16</span><a href="https://news.ycombinator.com/item?id=49601814" target="_blank" rel="noopener">Replaceable but Employed: Automation and the Meaning of Work</a>
+          <div class="hn-top-meta">53▲ · 46💬 · hot 0.0559</div><div class="zh">「可被替代却仍在职：自动化与工作的意义」（53▲/46💬，社会议题）</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">17</span><a href="https://news.ycombinator.com/item?id=49569748" target="_blank" rel="noopener">Finding a bug in Dummit and Foote&#x27;s Abstract Algebra</a>
+          <div class="hn-top-meta">62▲ · 32💬 · hot 0.0538</div><div class="zh">在《抽象代数》教材里挑出一个 bug（数学趣闻，62▲/32💬）</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">18</span><a href="https://news.ycombinator.com/item?id=49603086" target="_blank" rel="noopener">Working on Economics with Fable 5</a>
+          <div class="hn-top-meta">51▲ · 34💬 · hot 0.0479</div><div class="zh">用 Fable 5 做经济学（51▲/34💬）</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">19</span><a href="https://news.ycombinator.com/item?id=49562440" target="_blank" rel="noopener">Whistle Synth Mac App</a>
+          <div class="hn-top-meta">61▲ · 14💬 · hot 0.0430</div><div class="zh">哨音合成器 Mac 应用（61▲/14💬）</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">20</span><a href="https://news.ycombinator.com/item?id=49559069" target="_blank" rel="noopener">Show HN: Interactive Tree of Life</a>
+          <div class="hn-top-meta">53▲ · 16💬 · hot 0.0390</div><div class="zh">Show HN：交互式生命之树（53▲/16💬）</div>
+        </div>
+      </div>
+      <div class="col-right">
+        <div class="hn-col-title">🗂️ 全量（窗口内 · 滚动）</div>
+<div class="hn-all-row"><span class="hn-all-meta">1. 947▲/245💬</span> <a href="https://news.ycombinator.com/item?id=49593563" target="_blank" rel="noopener">Keep Our Servers Running</a><div class="zh">「让服务器继续转下去」（947▲/245💬，今日分数第一，疑似某基础设施/社区运维帖，引发大范围共鸣）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">2. 480▲/709💬</span> <a href="https://news.ycombinator.com/item?id=49592375" target="_blank" rel="noopener">216M Spy TVs – The LG Smart TV Problem [video]</a><div class="zh">「2.16 亿台监视电视——LG 智能电视的问题」[视频]（480▲/709💬，评论数全场最高，智能电视隐私/监控争议）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">3. 374▲/106💬</span> <a href="https://news.ycombinator.com/item?id=49598291" target="_blank" rel="noopener">bzip3</a><div class="zh">bzip3 —— 新一代压缩工具（374▲/106💬）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">4. 207▲/97💬</span> <a href="https://news.ycombinator.com/item?id=49601655" target="_blank" rel="noopener">Watch Los Angeles get built, one building at a time (1880–2026)</a><div class="zh">看洛杉矶一栋栋建起来（1880–2026）（207▲/97💬，城市生长可视化）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">5. 221▲/81💬</span> <a href="https://news.ycombinator.com/item?id=49596055" target="_blank" rel="noopener">Caltech Mathathon – first hackathon ever devoted to research level mathematics</a><div class="zh">Caltech Mathathon——史上首个面向研究级数学的黑客松（221▲/81💬）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">6. 218▲/44💬</span> <a href="https://news.ycombinator.com/item?id=49552299" target="_blank" rel="noopener">WeatherNext 3</a><div class="zh">WeatherNext 3（Google 的 AI 天气预报模型，218▲/44💬）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">7. 185▲/77💬</span> <a href="https://news.ycombinator.com/item?id=49595865" target="_blank" rel="noopener">Live map of public transport in Belgium</a><div class="zh">比利时公共交通实时地图（185▲/77💬）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">8. 195▲/62💬</span> <a href="https://news.ycombinator.com/item?id=49558685" target="_blank" rel="noopener">Simple Is Not Small</a><div class="zh">「简单不等于小」（195▲/62💬，工程哲学帖）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">9. 154▲/37💬</span> <a href="https://news.ycombinator.com/item?id=49571096" target="_blank" rel="noopener">This Month in Ladybird – August 2026</a><div class="zh">Ladybird 浏览器本月进展（2026 年 8 月）（154▲/37💬）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">10. 136▲/35💬</span> <a href="https://news.ycombinator.com/item?id=49575515" target="_blank" rel="noopener">Trusting-Trust Attack against an Entire Linux Distribution</a><div class="zh">针对整个 Linux 发行版的「信任的信任」攻击（136▲/35💬，安全）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">11. 131▲/28💬</span> <a href="https://news.ycombinator.com/item?id=49569838" target="_blank" rel="noopener">Scientists observe Einstein&#x27;s gravity in the quantum world</a><div class="zh">科学家在量子世界观测到爱因斯坦引力（131▲/28💬）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">12. 126▲/11💬</span> <a href="https://news.ycombinator.com/item?id=49586207" target="_blank" rel="noopener">Icy Moons Are Ocean Worlds</a><div class="zh">冰卫星是海洋世界（126▲/11💬）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">13. 114▲/8💬</span> <a href="https://news.ycombinator.com/item?id=49561002" target="_blank" rel="noopener">Decoding the NEC V20 Microcode</a><div class="zh">解码 NEC V20 微码（114▲/8💬，复古芯片）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">14. 79▲/36💬</span> <a href="https://news.ycombinator.com/item?id=49602699" target="_blank" rel="noopener">Leaving VMware just got harder after Broadcom pulled VDDK downloads</a><div class="zh">博通下架 VDDK 下载后，离开 VMware 更难了（虚拟化/许可，79▲/36💬）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">15. 82▲/14💬</span> <a href="https://news.ycombinator.com/item?id=49589190" target="_blank" rel="noopener">The Dataflow Model Revisited</a><div class="zh">重访 Dataflow 模型（流处理/系统，82▲/14💬）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">16. 53▲/46💬</span> <a href="https://news.ycombinator.com/item?id=49601814" target="_blank" rel="noopener">Replaceable but Employed: Automation and the Meaning of Work</a><div class="zh">「可被替代却仍在职：自动化与工作的意义」（53▲/46💬，社会议题）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">17. 62▲/32💬</span> <a href="https://news.ycombinator.com/item?id=49569748" target="_blank" rel="noopener">Finding a bug in Dummit and Foote&#x27;s Abstract Algebra</a><div class="zh">在《抽象代数》教材里挑出一个 bug（数学趣闻，62▲/32💬）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">18. 51▲/34💬</span> <a href="https://news.ycombinator.com/item?id=49603086" target="_blank" rel="noopener">Working on Economics with Fable 5</a><div class="zh">用 Fable 5 做经济学（51▲/34💬）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">19. 61▲/14💬</span> <a href="https://news.ycombinator.com/item?id=49562440" target="_blank" rel="noopener">Whistle Synth Mac App</a><div class="zh">哨音合成器 Mac 应用（61▲/14💬）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">20. 53▲/16💬</span> <a href="https://news.ycombinator.com/item?id=49559069" target="_blank" rel="noopener">Show HN: Interactive Tree of Life</a><div class="zh">Show HN：交互式生命之树（53▲/16💬）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">21. 54▲/13💬</span> <a href="https://news.ycombinator.com/item?id=49603546" target="_blank" rel="noopener">Show HN: Stuxnet – A reconstructed source code of the infamous cyber-weapon</a><div class="zh">Show HN：Stuxnet—— infamous 网络武器的重构源码（54▲/13💬，安全/历史）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">22. 47▲/4💬</span> <a href="https://news.ycombinator.com/item?id=49604150" target="_blank" rel="noopener">TALA Is Open-Source</a><div class="zh">TALA 开源了（47▲/4💬）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">23. 45▲/4💬</span> <a href="https://news.ycombinator.com/item?id=49557986" target="_blank" rel="noopener">Methods for Random Gradients (2024)</a><div class="zh">随机梯度方法（2024）（45▲/4💬，ML 理论）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">24. 38▲/9💬</span> <a href="https://news.ycombinator.com/item?id=49568162" target="_blank" rel="noopener">Show HN: I built an aesthetically pleasing puzzle</a><div class="zh">Show HN：我做了一个好看的谜题（38▲/9💬）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">25. 32▲/12💬</span> <a href="https://news.ycombinator.com/item?id=49602716" target="_blank" rel="noopener">Macbeth and His Problems</a><div class="zh">麦克白与他的问题（文学，32▲/12💬）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">26. 21▲/5💬</span> <a href="https://news.ycombinator.com/item?id=49564839" target="_blank" rel="noopener">She Also Found It at the Movies</a><div class="zh">她也在电影里找到了它（21▲/5💬，随笔）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">27. 12▲/4💬</span> <a href="https://news.ycombinator.com/item?id=49584053" target="_blank" rel="noopener">Catching Crumbs from the Table (2000)</a><div class="zh">拾人牙慧（2000）（12▲/4💬，随笔）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">28. 7▲/1💬</span> <a href="https://news.ycombinator.com/item?id=49604280" target="_blank" rel="noopener">Secure temporary file sharing for AI agents and humans</a><div class="zh">面向 AI 代理与人类的安全临时文件共享（7▲/1💬）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">29. 6▲/0💬</span> <a href="https://news.ycombinator.com/item?id=49560682" target="_blank" rel="noopener">John Margolies&#x27; Photographs of Roadside America</a><div class="zh">John Margolies 的美国路边摄影（6▲/0💬）</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="github" class="section">
+    <div class="sec-title"><span class="emo">⭐</span><span>GitHub Trending · 当日热门（按 star 增量排序）</span></div>
+    <div class="two-col">
+      <div class="col-summary"><div class="col-title">📝 当日综述</div><p>今日 GitHub Trending 共 <span class="hl">14 条</span>入榜（网络受限经 WebFetch 取回；正常应为 25 条左右），增星第一是 <span class="hl">affaan-m/ECC</span>（<span class="hl">+1,897★</span>，累计 25.3 万★）——面向 Claude Code / Codex / Opencode / Cursor 的「agent harness 性能优化系统」，一句话把今日榜单调性定了下来：agent / skills 基建仍是绝对主线。</p>
+<p><b>榜单整页在回答「怎么让 Agent 更省、更稳、更可复用」。</b>除 affaan-m/ECC 外，<span class="hl">openai/skills</span>（+351★，OpenAI 官方 Codex Skills 目录）、<span class="hl">coreyhaines31/marketingskills</span>（+580★，给 Claude Code 的营销 skill）、<span class="hl">ruvnet/ruflo</span>（+394★，agent meta-harness）、<span class="hl">mksglu/context-mode</span>（+96★，AI coding agent 上下文窗口优化）、<span class="hl">bytedance/deer-flow</span>（+195★，字节长程 SuperAgent harness）、<span class="hl">jo-inc/camofox-browser</span>（+135★，给 AI agent 的隐身无头浏览器）覆盖从 skills 到 harness 到浏览器自动化的全栈。</p>
+<p><b>底层与系统叙事并进。</b><span class="hl">lightpanda-io/browser</span>（+58★，Zig 写的 AI 无头浏览器）、<span class="hl">microsoft/markitdown</span>（+886★，文档转 Markdown）、<span class="hl">heygen-com/hyperframes</span>（+474★，「写 HTML、渲视频、为 agent 而生」）、<span class="hl">pascalorg/editor</span>（+168★，3D 建筑项目协作)说明开发者在 agent 之外仍广泛押注浏览器内核、文档与可视化工具。右栏为当日全量 14 条、按 star 增量降序、固定框内滚动。<span class="hl">注：本批为网络中断兜底数据，非完整 25 条榜单。</span></p></div>
+      <div class="col-right"><div class="gh-grid">
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/heygen-com/hyperframes" target="_blank" rel="noopener">heygen-com/hyperframes</a>
+            <span class="gh-lang">TypeScript</span>
+          </div>
+          <div class="gh-desc">Write HTML. Render video. Built for agents.<div class="zh">写 HTML、渲视频，为 agent 而生（今日 +474★）</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 474 今日</span>
+            <span class="gh-total">★ 46,235</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/microsoft/markitdown" target="_blank" rel="noopener">microsoft/markitdown</a>
+            <span class="gh-lang">Python</span>
+          </div>
+          <div class="gh-desc">Python tool for converting files and office documents to Markdown.<div class="zh">把文件与办公文档转成 Markdown 的 Python 工具（今日 +886★）</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 886 今日</span>
+            <span class="gh-total">★ 180,451</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/mksglu/context-mode" target="_blank" rel="noopener">mksglu/context-mode</a>
+            <span class="gh-lang">TypeScript</span>
+          </div>
+          <div class="gh-desc">Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.<div class="zh">AI coding agent 的上下文窗口优化：沙箱化工具输出（降 98%）、持久化会话记忆、经 MCP+hooks 跨 17 平台路由</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 96 今日</span>
+            <span class="gh-total">★ 20,923</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/jo-inc/camofox-browser" target="_blank" rel="noopener">jo-inc/camofox-browser</a>
+            <span class="gh-lang">JavaScript</span>
+          </div>
+          <div class="gh-desc">Stealth headless browser for AI agents — bypass Cloudflare, bot detection, and anti-scraping. Drop-in Puppeteer/Playwright replacement.<div class="zh">给 AI agent 用的隐身无头浏览器——绕过 Cloudflare、反爬与反检测，Puppeteer/Playwright 直替</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 135 今日</span>
+            <span class="gh-total">★ 9,815</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/MoonTechLab/LunaTV" target="_blank" rel="noopener">MoonTechLab/LunaTV</a>
+            <span class="gh-lang">TypeScript</span>
+          </div>
+          <div class="gh-desc">开源影视库前端（采用 CC BY-NC-SA 非商业协议，衍生项目须保留源地址并以相同协议开源）。<div class="zh">开源影视库前端（CC BY-NC-SA 非商业协议，衍生须保留源地址并同协议开源）</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 197 今日</span>
+            <span class="gh-total">★ 9,818</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener">affaan-m/ECC</a>
+            <span class="gh-lang">JavaScript</span>
+          </div>
+          <div class="gh-desc">The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.<div class="zh">面向 Claude Code / Codex / Opencode / Cursor 的 agent harness 性能优化系统：skills、instincts、memory、security 与研究优先——当日 +1,897★，GitHub 增星第一</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 1,897 今日</span>
+            <span class="gh-total">★ 252,963</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/coreyhaines31/marketingskills" target="_blank" rel="noopener">coreyhaines31/marketingskills</a>
+            <span class="gh-lang">JavaScript</span>
+          </div>
+          <div class="gh-desc">Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.<div class="zh">给 Claude Code 与 AI agent 的营销 skill：CRO、文案、SEO、分析与增长工程</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 580 今日</span>
+            <span class="gh-total">★ 48,210</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/The-Swarm-Corporation/AutoHedge" target="_blank" rel="noopener">The-Swarm-Corporation/AutoHedge</a>
+            <span class="gh-lang">Python</span>
+          </div>
+          <div class="gh-desc">Build your autonomous hedge fund in minutes. AutoHedge harnesses the power of swarm intelligence and AI agents to automate market analysis, risk management, and trade execution.<div class="zh">几分钟搭起自治对冲基金：用 swarm 智能与 AI agent 自动化市场分析、风控与交易执行</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 517 今日</span>
+            <span class="gh-total">★ 5,306</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/BraveOPotato/FckSignups" target="_blank" rel="noopener">BraveOPotato/FckSignups</a>
+            <span class="gh-lang">TypeScript</span>
+          </div>
+          <div class="gh-desc">A list of tools that are open-source, in-browser, and require no-signups!<div class="zh">一份开源、浏览器内、免注册的工具清单</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 501 今日</span>
+            <span class="gh-total">★ 3,873</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/bytedance/deer-flow" target="_blank" rel="noopener">bytedance/deer-flow</a>
+            <span class="gh-lang">Python</span>
+          </div>
+          <div class="gh-desc">An open-source long-horizon SuperAgent harness that researches, codes, and creates. With sandboxes, memories, tools, skill, subagents and message gateway.<div class="zh">字节开源的长程 SuperAgent harness：能研究、写代码、创作，含沙箱、记忆、工具、skill、子 agent 与消息网关</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 195 今日</span>
+            <span class="gh-total">★ 81,886</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/openai/skills" target="_blank" rel="noopener">openai/skills</a>
+            <span class="gh-lang">Python</span>
+          </div>
+          <div class="gh-desc">Skills Catalog for Codex.<div class="zh">OpenAI 官方 Codex Skills 目录</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 351 今日</span>
+            <span class="gh-total">★ 26,084</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/lightpanda-io/browser" target="_blank" rel="noopener">lightpanda-io/browser</a>
+            <span class="gh-lang">Zig</span>
+          </div>
+          <div class="gh-desc">Lightpanda: the headless browser designed for AI and automation.<div class="zh">Lightpanda：为 AI 与自动化设计的无头浏览器（Zig 实现）</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 58 今日</span>
+            <span class="gh-total">★ 34,918</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/pascalorg/editor" target="_blank" rel="noopener">pascalorg/editor</a>
+            <span class="gh-lang">TypeScript</span>
+          </div>
+          <div class="gh-desc">Create and share 3D architectural projects.<div class="zh">创建并分享 3D 建筑项目</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 168 今日</span>
+            <span class="gh-total">★ 22,377</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/ruvnet/ruflo" target="_blank" rel="noopener">ruvnet/ruflo</a>
+            <span class="gh-lang">TypeScript</span>
+          </div>
+          <div class="gh-desc">🌊 The original agent meta-harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems.<div class="zh">🌊 元 harness 鼻祖——部署智能多智能体 swarm、编排自治工作流、构建对话式 AI 系统</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 394 今日</span>
+            <span class="gh-total">★ 71,436</span>
+          </div>
+        </div>
+      </div></div>
+    </div>
+  </section>
+
+  <section id="producthunt" class="section">
+    <div class="sec-title"><span class="emo">🚀</span><span>Product Hunt · 今日精选发布</span></div>
+    <div class="two-col">
+      <div class="col-summary"><div class="col-title">📝 当日综述</div><p>Product Hunt <span class="hl">2026-09-08</span>当日「Top Products Launching Today」共 <span class="hl">8 款</span>精选上榜（WebFetch 取回）。榜首 <span class="hl">PR Lens by Coldtea.ai</span>（<span class="hl">295▲</span>）——「用新视角看代码」，把 AI 代码评审推到发布榜首，与 GitHub 今日的 coding-agent 主线同源。</p>
+<p><b>第 2–4 名都在卖「本地优先 / AI 嵌入工作流」。</b><span class="hl">TuckyNotes</span>（227▲，屏幕边缘停靠 + 内置 AI agent 的笔记）、<span class="hl">Scriptly</span>（225▲，语音控制的 iOS 提词器）、<span class="hl">Routines by Databox</span>（162▲，按日程跑分析并出报告的 AI 分析师）共同指向「AI 能力被封装进具体协作场景」。</p>
+<p><b>第 5–8 名各有侧重。</b><span class="hl">Airuncode</span>（134▲）在本机并行跑多个本地 coding agent；<span class="hl">AssistVoice</span>（130▲）/ <span class="hl">Bloop</span>（128▲）是 Mac 端的标注与音频可视化；<span class="hl">Clipnote</span>（111▲）让 AI 对话关掉标签页后仍持久——整体看，PH 今日与 GitHub 的「本地优先 + agent 工程化」叙事高度同源。<span class="hl">注：网络中断兜底，PH 单品深链取不到，url 暂指 PH 首页。</span></p></div>
+      <div class="col-right"><div class="gh-grid">
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#1</span>
+            <a class="ph-name" href="https://www.producthunt.com/" target="_blank" rel="noopener">PR Lens by Coldtea.ai</a>
+          </div>
+          <div class="ph-desc">See code through a new lens<div class="zh">用新视角看代码——今日 PH 榜首（295▲）</div></div>
+          <div class="ph-topics">▲ 295 · Open Source · Software Engineering · Developer Tools</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#2</span>
+            <a class="ph-name" href="https://www.producthunt.com/" target="_blank" rel="noopener">TuckyNotes</a>
+          </div>
+          <div class="ph-desc">docked to your screen edge, with an AI agent inside<div class="zh">停靠在屏幕边缘、内置 AI agent 的笔记（227▲）</div></div>
+          <div class="ph-topics">▲ 227 · Productivity · Notes · Artificial Intelligence</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#3</span>
+            <a class="ph-name" href="https://www.producthunt.com/" target="_blank" rel="noopener">Scriptly</a>
+          </div>
+          <div class="ph-desc">An iOS teleprompter app controlled by your voice<div class="zh">用语音控制的 iOS 提词器（225▲）</div></div>
+          <div class="ph-topics">▲ 225 · Productivity · Artificial Intelligence</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#4</span>
+            <a class="ph-name" href="https://www.producthunt.com/" target="_blank" rel="noopener">Routines by Databox</a>
+          </div>
+          <div class="ph-desc">An AI Analyst that runs analysis and reports on a schedule<div class="zh">按日程跑分析并出报告的 AI 分析师（162▲）</div></div>
+          <div class="ph-topics">▲ 162 · Analytics · Artificial Intelligence · Marketing automation</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#5</span>
+            <a class="ph-name" href="https://www.producthunt.com/" target="_blank" rel="noopener">Airuncode</a>
+          </div>
+          <div class="ph-desc">Run multiple local coding agents on your machine<div class="zh">在本机并行跑多个本地 coding agent（134▲）</div></div>
+          <div class="ph-topics">▲ 134 · Software Engineering · Developer Tools · Artificial Intelligence</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#6</span>
+            <a class="ph-name" href="https://www.producthunt.com/" target="_blank" rel="noopener">AssistVoice</a>
+          </div>
+          <div class="ph-desc">annotate your Mac, get screenshots + clipboard manager<div class="zh">标注你的 Mac，得到截图 + 剪贴板管理器（130▲）</div></div>
+          <div class="ph-topics">▲ 130 · Mac · Productivity · Audio</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#7</span>
+            <a class="ph-name" href="https://www.producthunt.com/" target="_blank" rel="noopener">Bloop</a>
+          </div>
+          <div class="ph-desc">Turn any Mac audio into a visual you can actually export<div class="zh">把任意 Mac 音频变成可导出的可视化（128▲）</div></div>
+          <div class="ph-topics">▲ 128 · Mac · Design Tools · Music</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#8</span>
+            <a class="ph-name" href="https://www.producthunt.com/" target="_blank" rel="noopener">Clipnote</a>
+          </div>
+          <div class="ph-desc">Save your AI conversations so they persist after closing tab<div class="zh">保存你的 AI 对话，关掉标签页后仍持久（111▲）</div></div>
+          <div class="ph-topics">▲ 111 · Productivity · Artificial Intelligence</div>
+        </div>
+      </div></div>
+    </div>
+  </section>
+
+  <section id="papers" class="section">
+    <div class="sec-title"><span class="emo">📄</span><span>Hugging Face Daily Papers</span></div>
+    <div class="note">本板块数据取自 Hugging Face Daily Papers <span class="hl">2026-09-08 当日批次</span>（WebFetch 取回，页面仅列 <span class="hl">2 篇</span>）。2026-09-08 为周二工作日，但抓取时（约 11:00 CST）当日批次尚在累积，仅 2 篇、票数 2▲/1▲，属真实早间轻批——<span class="hl">本报告如实呈现全部 2 篇、未沿用历史批次、未补足条数</span>。完整时间窗 HN 数据因本机外网中断未能经 Algolia API 取回，本期 HN 取自首页实时榜替代。</div>
+    <div class="two-col">
+      <div class="col-summary"><div class="col-title">📝 当日综述</div><p>Hugging Face Daily Papers <span class="hl">2026-09-08 当日批次仅 2 篇</span>（WebFetch 取回，页面仅列 2 篇）——早间批次、票数极低（2▲ / 1▲）。本报告如实呈现全部 2 篇、不补足条数。</p>
+<p><b>研究主线偏「训练/推理效率与可控性」。</b>头部 <span class="hl">Verify Before You Distill</span>（蒸馏前的 prompt 级教师门控，让 on-policy 蒸馏更稳）与 <span class="hl">What Else Needs Fixing?</span>（对话生成制品里修订传播的低成本 test-time compute）都聚焦「让模型更省、更可控」——与今日 GitHub/PH 的 agent 工程化叙事同向，只是落在训练与推理侧。</p>
+<p><b>跨源共性：</b>今日 GitHub/PH 的「agent 更省更稳」工程化主线，与 HF 这批「蒸馏门控 / 低成本修正」的效率研究同向——都在把「AI 工作流做成可复现、可核验的工程对象」。早间批次条目少，后续当日批次会继续累积。</p></div>
+      <div class="col-right"><div class="gh-grid">
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">2▲</span>
+            <a class="ph-name" href="https://huggingface.co/papers/2609.02998" target="_blank" rel="noopener">Verify Before You Distill: Prompt-Level Teacher Gating for On-Policy Distillation</a>
+          </div>
+<div class="zh">Verify Before You Distill：蒸馏前的 prompt 级教师门控（on-policy 蒸馏更稳）</div>        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">1▲</span>
+            <a class="ph-name" href="https://huggingface.co/papers/2609.03254" target="_blank" rel="noopener">What Else Needs Fixing? Exploring Cost-Effective Test-Time Compute for Revision Propagation in Artifacts Generated Through Conversation</a>
+          </div>
+<div class="zh">还有什么要修？探索对话生成制品中修订传播的低成本 test-time compute</div>        </div>
+      </div></div>
+    </div>
+  </section>
+
+  <section id="insights" class="section">
+    <div class="sec-title"><span class="emo">💡</span><span>趋势洞察 · 跨四源</span></div>
+    <div class="insight">
+      <div class="insight-head"><span class="insight-dot"></span><h3>affaan-m/ECC（+1,897★）居 GitHub 增星第一，agent harness / skills / 多 agent 编排整页进榜；Product Hunt 同日同频，Hugging Face 也压蒸馏与修正成本——「让 Agent 更省、更稳、更可复用」跨三源</h3><span class="insight-src">Agent / skills 基建仍是绝对主线：GitHub 整页，PH 同日同频，HN 代理向</span></div>
+      <p>GitHub Trending 当日 14 条，agent 与 coding-agent 基建几乎整页：affaan-m/ECC（面向 Claude Code / Codex / Opencode / Cursor 的 agent harness 性能优化系统，+1,897★ 居当日增星第一）、openai/skills（+351★，OpenAI 官方 Codex Skills 目录）、coreyhaines31/marketingskills（+580★，给 Claude Code 的营销 skill）、ruvnet/ruflo（+394★，agent meta-harness）、mksglu/context-mode（+96★，AI coding agent 的上下文窗口优化：沙箱化工具输出降 98%、跨 17 平台路由）、bytedance/deer-flow（+195★，字节的长程 SuperAgent harness）、jo-inc/camofox-browser（+135★，给 AI agent 用的隐身无头浏览器，绕过 Cloudflare 反爬）。Product Hunt 同日高度同源：Airuncode（134▲，「在本机并行跑多个本地 coding agent」）、PR Lens（295▲，AI 代码评审透镜）、Clipnote（111▲，「让 AI 对话在关掉标签页后仍持久」）。Hacker News 也有代理/自动化向——「可被替代却仍在职：自动化与工作的意义」（53▲/46💬）。三源合起来的判断：模型能力之外，「怎么让 Agent 更省、更稳、更可复用」仍是独立工程胜负手，且今天明显向「本地优先 / 多 agent 并行」收口。</p>
+    </div>
+    <div class="insight">
+      <div class="insight-head"><span class="insight-dot"></span><h3>HN 评论数第一是「2.16 亿台监视电视——LG 智能电视的问题」（709💬），「信任的信任」攻击 Linux 发行版；Product Hunt 多款本地/Mac 工具把数据留在本机——隐私与反锁定呼应</h3><span class="insight-src">隐私与监控同日走高：HN 评论第一是智能电视监控，PH 本地/Mac 工具收敛</span></div>
+      <p>Hacker News 今日评论数全场最高的是「2.16 亿台监视电视——LG 智能电视的问题」（480▲/709💬），把「智能电视变监控摄像头」的老话题重新引爆；同窗还有「针对整个 Linux 发行版的『信任的信任』攻击」（136▲/35💬，编译器级供应链安全）与「Stuxnet 重构源码」（Show HN，54▲）两条安全线。Product Hunt 一侧则把「数据留在本机」做成产品：AssistVoice（130▲，Mac 标注 + 截图/剪贴板管理）、Bloop（128▲，Mac 音频转可视化导出）、TuckyNotes（227▲，屏幕边缘停靠 + 内置 AI agent 的笔记）——大量 Mac/本地工具指向对云端托管的警惕与「本地优先」回潮。一端是「被监控 / 被锁定」的焦虑，一端是「把能力收回到自己机器上」的对应解法，安全与隐私在今日四源里形成清晰供需呼应。</p>
+    </div>
+    <div class="insight">
+      <div class="insight-head"><span class="insight-dot"></span><h3>Ladybird 本月进展、Lightpanda（AI 无头浏览器）、Camofox（绕过反爬的隐身浏览器）三条浏览器线同进 GitHub；博通下架 VDDK 让离开 VMware 更难——工程自主对抗厂商锁定</h3><span class="insight-src">开源浏览器与自主系统：Ladybird / Lightpanda / Camofox 三线上桌，VMware 许可收紧</span></div>
+      <p>GitHub 今日把「浏览器 / 自动化内核」做成一条独立线：Ladybird 浏览器本月进展（154▲ 由 HN 同步上榜，独立引擎叙事）、lightpanda-io/browser（+58★，Zig 写的「为 AI 与自动化设计的无头浏览器」）、jo-inc/camofox-browser（+135★，「绕过 Cloudflare、反爬检测的隐身无头浏览器，Puppeteer/Playwright 直替」）——三者分别覆盖独立渲染、AI 自动化、反检测抓取，共同指向「把浏览能力从平台手里拿回来」。同一「反厂商锁定」张力也出现在系统层：HN「博通下架 VDDK 下载后，离开 VMware 更难了」（79▲/36💬）讲虚拟化许可收紧。研究端 Hugging Face 当日早间仅 2 篇，但主题仍是工程效率——「Verify Before You Distill」（蒸馏前的 prompt 级教师门控）与「Revision Propagation 的低成本 test-time compute」，把「让模型更省、更可控」讲到训练与推理侧。整体看，今日三条源都在讲同一件事：能力自主 vs 平台锁定。</p>
+    </div>
+  </section>
+
+</div>
+
+<footer class="site-footer">
+  数据来源：Hacker News · GitHub Trending · Product Hunt · Hugging Face Papers<br>
+  由每日自动化任务自动生成 · 经 GitHub Pages 部署<br>
+  <a href="index.html">← 返回归档</a> · <a href="#top-story">回到顶部 ↑</a>
+</footer>
+<script>
+function fitTwoCol(row){
+  var s = row.querySelector('.col-summary');
+  var r = row.querySelector('.col-right');
+  if(s && r){ r.style.maxHeight = s.offsetHeight + 'px'; }
+}
+function fitThreeCol(row){
+  var s = row.querySelector('.col-summary');
+  if(!s) return;
+  var m = row.querySelector('.col-mid');
+  var r = row.querySelector('.col-right');
+  var h = s.offsetHeight + 'px';
+  if(m){ m.style.maxHeight = h; }
+  if(r){ r.style.maxHeight = h; }
+}
+function fitCols(){
+  document.querySelectorAll('.two-col').forEach(fitTwoCol);
+  document.querySelectorAll('.hn-three').forEach(fitThreeCol);
+}
+function rafFit(){ requestAnimationFrame(function(){ requestAnimationFrame(fitCols); }); }
+fitCols(); rafFit();
+window.addEventListener('resize', fitCols);
+window.addEventListener('load', function(){ fitCols(); setTimeout(fitCols, 200); setTimeout(fitCols, 600); setTimeout(fitCols, 1200); });
+if(document.fonts && document.fonts.ready){ document.fonts.ready.then(function(){ fitCols(); rafFit(); }); }
+</script>
+</body>
+</html>
