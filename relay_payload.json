@@ -1,10 +1,10 @@
 {
-  "date": "2026-09-07",
-  "date_label": "2026-09-07 · 星期一",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-09-07.html",
+  "date": "2026-09-08",
+  "date_label": "2026-09-08 · 星期二",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-09-08.html",
   "summary": [
-    "AI 代理工程化今天三面同频：GitHub Trending 18 条里 agent/skills 基建整页霸榜（mattpocock/skills +2,207★ 居首），Product Hunt 的 Kit by Speakeasy、Agentic Video in Gemini 与 HN 的「监控 coding agent 是否跑偏」同源，Hugging Face 当日研究也在攻 Agentic 内核生成与自提升——「让 Agent 更省、更稳、更可复用」已是独立工程赛道。",
-    "开放网络与本地优先对抗平台锁定：HN 上 Nitter/XCancel 在法律建议后恢复服务（503▲）引爆反平台讨论，GitHub 同步进榜 opencode、FckSignups 免注册工具、open-science 本地优先科研台等开源基础设施，PH 的 AI Toolbox 3.0 则做用户侧 AI 聊天聚合。",
-    "安全与隐私同日走高：HN 分数第一是 qBittorrent 挣脱沙箱（1,212▲），同窗还有 Liquid Federation 4,000 BTC 失窃与 GrapheneOS 安全剪贴板；GitHub 用 magnitude 本地推理、open-science 本地优先给出「数据留本机」的对应解法。"
+    "Agent / skills 基建仍是绝对主线：GitHub 增星第一 affaan-m/ECC（+1,897★）领衔，openai/skills、marketingskills、ruflo、context-mode、deer-flow 整页进榜；Product Hunt 同日 Airuncode（本机多 coding agent）、PR Lens（AI 代码评审）同频。",
+    "隐私与监控同日走高：HN 评论数第一是「2.16 亿台监视电视——LG 智能电视」（709💬），「信任的信任」攻击 Linux 发行版；Product Hunt 多款本地/Mac 工具把数据留本机，反平台锁定回潮。",
+    "开源浏览器与自主系统三线同进：Ladybird 本月进展、Lightpanda（AI 无头浏览器）、Camofox（绕过反爬）齐上榜；博通下架 VDDK 让离开 VMware 更难——工程自主对抗厂商锁定。"
   ]
 }
