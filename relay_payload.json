@@ -1,10 +1,10 @@
 {
-  "date": "2026-09-09",
-  "date_label": "2026-09-09 · 星期三",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-09-09.html",
+  "date": "2026-09-10",
+  "date_label": "2026-09-10 · 星期四",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-09-10.html",
   "summary": [
-    "纳维-斯托克斯「千禧年难题」罕见霸榜 HN（1152▲/992💬），数学界世纪悬案引爆科普级讨论；Mistral 融资 30 亿欧元（810▲）领跑商业线。",
-    "Agent 工程化基建仍是绝对主线：GitHub 增星前二被 hyperframes（+2,627★）/ markitdown（+2,047★）包揽，ECC/camofox/skills/context-mode 整页进榜；Product Hunt 的 Switch（419▲）把任意 AI agent 接进 Slack/Teams/Discord，PH 几乎整页是「agent 接入协作栈」。",
-    "隐私与监控同日走高：HN「LG 电视离线仍窥探」（494▲）与 Meta 智能眼镜偷拍、DHS 预测性警务分析财务习惯同线；HF 当日仅 3 篇轻批（DriveZero / NeoHorse-1 自改进 / MOLE agent 内部威胁），如实呈现未补足。"
+    "GitHub 当日增星被 agent 工具包揽：ayghri/i-have-adhd（+4,650★）登顶，diagram-design、ECC、superpowers 紧随，agent 工程化向本地优先与桌面化收口；Product Hunt 同日同频（Mastra Factory 让 agent 从 issue 直接跑生产、Harden 给 AI 编码 agent 安全层）。",
+    "苹果未发布硬件泄密风暴席卷 Hacker News：iPhone Duo 以 954▲/1750💬 登顶，AirPods 5、iPhone 18 Pro、Apple Watch S12/Ultra 4 整组进榜，单家未发阵容罕见霸屏。",
+    "监控与 AI 安全同日高压：Flock「无处可逃的监控世界」、Anthropic 监视活动人士的预测系统、研究员离职警告 AI 灭绝风险；Hugging Face 当日 9 篇论文偏「agent 操控实体 / 世界模型 / 评测认证」。"
   ]
 }
