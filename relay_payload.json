@@ -1,10 +1,10 @@
 {
-  "date": "2026-09-11",
-  "date_label": "2026-09-11 · 星期五",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-09-11.html",
+  "date": "2026-09-20",
+  "date_label": "2026-09-20 · 星期日",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-09-20.html",
   "summary": [
-    "DeepSeek v4.1 Flash 以 947▲ 登顶 HN，Shopify 弃用 React Native 回退原生 Swift/Kotlin 引发工程圈对跨端成本的新反思——模型与工程两端同日高热。",
-    "Agent 工程化继续霸榜 GitHub/PH 并向「可观测 / 本地优先」收口：i-have-adhd +3,882★ 居 GitHub 增星第一，OpenObserve 给 LLM 做可观测，colibri 让你在自己硬件跑 MoE。",
-    "OpenAI 信任危机成 HN 最强叙事（偷证明 / 未公开数学 / 形式化证明连成质疑链）；HF 当日 7 篇轻批聚焦世界模型与空间智能，本地优先与隐私主权同日对冲平台越界。"
+    "Hacker News 今日 AI 叙事转冷、转向自省与权属质疑：「几乎不该用 AI 写」「AI 帖子为何高分」「AI 安全是性爱邪教」连成疲劳链，叠加微软总监称 AI 抓取是「人类史上最大规模劳动窃取」、诉讼指 Anthropic/OpenAI 就 AI 放缓达成非法协议。",
+    "Agent 工程化继续霸榜 GitHub/Product Hunt 并向「开源模型 / 安全审计 / 电脑操作」收口：Cloudflare security-audit-skill 以 +3,155★ 居 GitHub 当日增星第一，Bolt Forge（开源模型 + 50 倍用量的新 agent）居 Product Hunt 第一。",
+    "硬核系统/底层同日走强且明显「去 AI 中心」：Zig/Rust、Apple M6 Pro、Btrfs/ZFS/bcachefs、ZK-JPEG、NASA-IBM 月球地理空间 AI 模型——开发者把能力收回自己手里；Hugging Face 当日批次尚未发布（属实为空，未套用历史数据）。"
   ]
 }
