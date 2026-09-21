@@ -1,10 +1,10 @@
 {
-  "date": "2026-09-20",
-  "date_label": "2026-09-20 · 星期日",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-09-20.html",
+  "date": "2026-09-21",
+  "date_label": "2026-09-21 · 星期一",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-09-21.html",
   "summary": [
-    "Hacker News 今日 AI 叙事转冷、转向自省与权属质疑：「几乎不该用 AI 写」「AI 帖子为何高分」「AI 安全是性爱邪教」连成疲劳链，叠加微软总监称 AI 抓取是「人类史上最大规模劳动窃取」、诉讼指 Anthropic/OpenAI 就 AI 放缓达成非法协议。",
-    "Agent 工程化继续霸榜 GitHub/Product Hunt 并向「开源模型 / 安全审计 / 电脑操作」收口：Cloudflare security-audit-skill 以 +3,155★ 居 GitHub 当日增星第一，Bolt Forge（开源模型 + 50 倍用量的新 agent）居 Product Hunt 第一。",
-    "硬核系统/底层同日走强且明显「去 AI 中心」：Zig/Rust、Apple M6 Pro、Btrfs/ZFS/bcachefs、ZK-JPEG、NASA-IBM 月球地理空间 AI 模型——开发者把能力收回自己手里；Hugging Face 当日批次尚未发布（属实为空，未套用历史数据）。"
+    "HN 今日隐私议题登顶：「ChatGPT 借广告采集器跨站追踪」以 630▲/334💬 成为热度第一，连同西班牙封禁 Archive.today、Flock 离职、Dropbox 条款变更，形成「平台越界」质疑链。",
+    "GitHub 仍是 agent 工程化主场：cloudflare/security-audit-skill 以 +2,428★ 居当日增星第一，trycua/cua、ECC、agent-skills 等把「更安全/更开源/更可审计」推向产品线。",
+    "Product Hunt 主打 AI 生产力（Mycel 270▲ 居首）；Hugging Face 当日轻批 8 篇，集中在 agentic 编码/电脑操作环境，与 GitHub 主线同频。"
   ]
 }
