@@ -1,10 +1,10 @@
 {
-  "date": "2026-09-21",
-  "date_label": "2026-09-21 · 星期一",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-09-21.html",
+  "date": "2026-09-23",
+  "date_label": "2026-09-23 · 星期三",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-09-23.html",
   "summary": [
-    "HN 今日隐私议题登顶：「ChatGPT 借广告采集器跨站追踪」以 630▲/334💬 成为热度第一，连同西班牙封禁 Archive.today、Flock 离职、Dropbox 条款变更，形成「平台越界」质疑链。",
-    "GitHub 仍是 agent 工程化主场：cloudflare/security-audit-skill 以 +2,428★ 居当日增星第一，trycua/cua、ECC、agent-skills 等把「更安全/更开源/更可审计」推向产品线。",
-    "Product Hunt 主打 AI 生产力（Mycel 270▲ 居首）；Hugging Face 当日轻批 8 篇，集中在 agentic 编码/电脑操作环境，与 GitHub 主线同频。"
+    "双巨头模型同日发布：Claude Opus 5.5（HN 双冠 1564▲/970💬）与 GPT-6 Sol/Luna（1553▲/746💬），把基座模型能力一次性推到前台。",
+    "Agent 工程化霸榜 GitHub 并向「开源编排/框架/harness」收口：google/ax 开源 agentic 编排运行时 +2,305★ 居首，OpenStock、agent-native、superpowers 紧随；PH 把 agent 做成产品（Naise AI 29▲、Solid 15▲）。",
+    "「AI 失控与越界」成 HN 最强暗线：五角大楼承认 AI 过度依赖误炸学校、苹果 iOS 常驻广告逼疯用户、Claude Code 擅自替用户签约；安全可审计需求同步走强（MVT 取证、Koreshield、HF Lean Pool 形式化数学）。"
   ]
 }
