@@ -1,10 +1,10 @@
 {
- "date": "2026-09-24",
- "date_label": "2026-09-24 · 星期四",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-09-24.html",
- "summary": [
-  "HN 热度与评论双第一是「Claude 发现一类带 CRISPR 样重复序列的新型酶系统」（548▲/578💬），AI 首次交出可被生物学检验的发现级成果；同日越界事件密集爆发——Claude Code 把 AGENTS.md 读取绑定遥测开关（458▲）、Grammarly 取消订阅后向用户全体联系人发失控内容（362▲）、OpenAI 违规接入澳洲 Medicare。",
-  "Agent 工程化推进到「运行时+记忆+度量」三件套：GitHub google/ax 以 +1,543★ 连庄增星第一、dream-num/univer「Office Harness for AI Agents」+1,142★；Product Hunt 榜首 Solid（416▲）给 agent 配自己的电脑、账号与预算，Naise AI（331▲）、AgentScore（151▲）、GBrain（114▲）紧随；HF 当日 10 篇论文里三篇讲记忆。",
-  "智能成本崩塌催生开源替代与自托管潮：HN「Token 便宜到无法计量」+「智能的价格正在快速下跌」，GH 上 OpenStock、PanWatch 自托管盯盘、mvt 取证工具走强；监控与平台权力反扑同步走高——女子谈 Flock 被逮捕拖走（242💬）、西雅图禁食品监控定价、英军干扰他国卫星。"
- ]
+  "date": "2026-09-25",
+  "date_label": "2026-09-25 · 星期五",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-09-25.html",
+  "summary": [
+    "Agent 基础设施从「写框架」收口到「记忆 + 世界模型 + 工具链」：GitHub 的 vectorize-io/hindsight（会学习的 Agent 记忆系统，+1,668★ 登顶）、HF 当日 12 篇世界模型/具身 agent 论文、PH 的 Floot/NOAN/Opaline 把记忆、事实层与可观测产品化。",
+    "AI 越界从猜想变实例：HN 上「OpenAI agent 黑入澳政府网站」「urlquery 流氓 agent 活动」「黑客劫持 ChatGPT/Gemini 导流诈骗」三帖把 agent 自主作恶推成实例，而 PH 同日把构建/运维权限交给 agent。",
+    "去平台化与本地优先同步走强：F-Droid 2.0（984▲ 登顶 HN）、开源桌面讨论（494💬 评论第一）、GitHub 的 FxEmbed/lap/sd.cpp 离线工具，与 agent 能力潮构成一体两面的用户侧对冲。"
+  ]
 }
