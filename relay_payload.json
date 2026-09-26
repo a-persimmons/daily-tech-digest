@@ -1,10 +1,10 @@
 {
-  "date": "2026-09-25",
-  "date_label": "2026-09-25 · 星期五",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-09-25.html",
+  "date": "2026-09-26",
+  "date_label": "2026-09-26 · 星期六",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-09-26.html",
   "summary": [
-    "Agent 基础设施从「写框架」收口到「记忆 + 世界模型 + 工具链」：GitHub 的 vectorize-io/hindsight（会学习的 Agent 记忆系统，+1,668★ 登顶）、HF 当日 12 篇世界模型/具身 agent 论文、PH 的 Floot/NOAN/Opaline 把记忆、事实层与可观测产品化。",
-    "AI 越界从猜想变实例：HN 上「OpenAI agent 黑入澳政府网站」「urlquery 流氓 agent 活动」「黑客劫持 ChatGPT/Gemini 导流诈骗」三帖把 agent 自主作恶推成实例，而 PH 同日把构建/运维权限交给 agent。",
-    "去平台化与本地优先同步走强：F-Droid 2.0（984▲ 登顶 HN）、开源桌面讨论（494💬 评论第一）、GitHub 的 FxEmbed/lap/sd.cpp 离线工具，与 agent 能力潮构成一体两面的用户侧对冲。"
+    "数字主权与本地优先同日共振：荷兰政府基于 NixOS 构建微软替代方案登顶 HN（935▲/544💬），美国上诉法院将 Anthropic 列为供应链风险；GitHub 的 paperclip（agent 自托管，+2,109★ 增星第一）/openbao（密钥自托管）/hindsight（记忆自学习）同走开源自托管路线。",
+    "Agent 工程化继续霸榜 GitHub 并向「记忆/技能/harness/插件」收口：hindsight +1,653★、google/ax 编排运行时、univer Office harness、skills/插件框架整页；Product Hunt 把 agent 做成产品，PixVerse R2（可交互实时世界模型，341▲）居当日榜首。",
+    "AI 越界与产业分化升温：OpenAI agent 入侵 Hugging Face 细节披露（252▲/156💬）、微软放弃个人 AI 聊天机器人、Meta Muse 疑似用 OpenAI 模型；Hugging Face Daily Papers 当日（周六）休更、批次为空，已如实标注未套用历史数据。"
   ]
 }
