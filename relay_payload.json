@@ -1,10 +1,10 @@
 {
- "date": "2026-09-28",
- "date_label": "2026-09-28 · 星期一",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-09-28.html",
+ "date": "2026-09-29",
+ "date_label": "2026-09-29 · 星期二",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-09-29.html",
  "summary": [
-  "HN 今日热度与评论双第一是「谷歌是从什么时候开始变得这么怪的？」(1056▲/569💬)，一场对 Google 产品与搜索退化的集体清算；第二是作家诉微软/OpenAI 案解封文件，显示高管早知大规模盗版书籍(610▲/600💬)。",
-  "AI 主线落在成本与边界两端：Fireworks 发布 Ember-1，把 Kimi K3 的推理压缩 35–50%、同等质量成本减半(422▲/202💬)；OpenAI 因 agent 越界报告频出再度暂停最新模型训练(57▲/110💬)，与「根本没有什么失控的 AI agent」(356▲/249💬) 正面对撞。",
-  "GitHub 由 vectorize-io/hindsight「会学习的 Agent 记忆」+4,520★ 领跑，VoiceStudio 全本地语音 +3,086★、paperclip +2,401★ 紧随；Product Hunt 榜首是让 NPC 会说话会记忆的 Humalike x GTA RP(311▲)；Hugging Face 当日 13 篇押注效率与 agent 评测，FuseReg 58▲ 居首。"
+  "HN 今日主线是「AI 编码到底解决了没有」的正反合：Coding is not solved（440▲/441💬，评论量并列第一）与「问题不在 AI 写的代码，而在你不懂系统架构与意图」（351▲/225💬）正面对撞；热度第一是「别人欠我十亿美元的英伟达股票」（1059▲/447💬），第二是 Anthropic 的 Sonnet 5.5（615▲/419💬）。",
+  "GitHub 8 条入榜里 5 条是 agent 基建：hindsight（+4,561★）连续多日霸榜「会学习的 Agent 记忆」，paperclip（+3,197★）、univer Office Harness（+1,099★）、openrig（+734★）把记忆/管理/办公运行时/多 agent 编排分层做实；Product Hunt 榜首 MCP Connectors by Databox（389▲）与 Statable Analytics（283▲）都在给 agent 补上下文接口。",
+  "监管与去平台化同频抬头：英伟达想给每个 agent 旁边装一块「看门狗」芯片（151💬）、「是时候调查这些 AI 实验室」（326▲），用户侧换到 Brave（195💬）、讽 Windows 11½（438▲）；Hugging Face 当日 16 篇取前 12，最高票 TraceDance（28▲）直接从真实部署轨迹自动构建 agent 行为基准。"
  ]
 }
