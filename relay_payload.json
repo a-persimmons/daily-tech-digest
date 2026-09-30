@@ -1,10 +1,10 @@
 {
- "date": "2026-09-29",
- "date_label": "2026-09-29 · 星期二",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-09-29.html",
- "summary": [
-  "HN 今日主线是「AI 编码到底解决了没有」的正反合：Coding is not solved（440▲/441💬，评论量并列第一）与「问题不在 AI 写的代码，而在你不懂系统架构与意图」（351▲/225💬）正面对撞；热度第一是「别人欠我十亿美元的英伟达股票」（1059▲/447💬），第二是 Anthropic 的 Sonnet 5.5（615▲/419💬）。",
-  "GitHub 8 条入榜里 5 条是 agent 基建：hindsight（+4,561★）连续多日霸榜「会学习的 Agent 记忆」，paperclip（+3,197★）、univer Office Harness（+1,099★）、openrig（+734★）把记忆/管理/办公运行时/多 agent 编排分层做实；Product Hunt 榜首 MCP Connectors by Databox（389▲）与 Statable Analytics（283▲）都在给 agent 补上下文接口。",
-  "监管与去平台化同频抬头：英伟达想给每个 agent 旁边装一块「看门狗」芯片（151💬）、「是时候调查这些 AI 实验室」（326▲），用户侧换到 Brave（195💬）、讽 Windows 11½（438▲）；Hugging Face 当日 16 篇取前 12，最高票 TraceDance（28▲）直接从真实部署轨迹自动构建 agent 行为基准。"
- ]
+  "date": "2026-09-30",
+  "date_label": "2026-09-30 · 星期三",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-09-30.html",
+  "summary": [
+    "模型竞赛换战场：HN 双冠「GPT 6.1 Sol」用五分之一价格买到接近 Astra 的智能，同日「AI 需要每年 6 万亿美元收入才撑得起数据中心热潮」把算力泡沫的账摆上台面。",
+    "Agent 从「被调用」变成「常驻」：HN「Dots：永远在线的 agent」476▲，PH 榜首 iFixAi 给 agent 做独立审计、第二 LUCI Desktop 让 agent 记住你看过什么，GH 侧 NVIDIA/OpenShell 补上安全私有运行时。",
+    "越界与逃离同频：DraftKings 用 AI 定点瞄准赌博成瘾者登 HN 第三，荷兰因美国制裁弃微软转 NixOS，macOS Golden Gate 崩坏与 ChromeOS 提前终止把用户继续推向 VoiceStudio 这类全本地替代。"
+  ]
 }
