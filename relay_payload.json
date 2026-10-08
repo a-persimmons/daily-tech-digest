@@ -1,10 +1,10 @@
 {
-  "date": "2026-09-30",
-  "date_label": "2026-09-30 · 星期三",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-09-30.html",
+  "date": "2026-10-08",
+  "date_label": "2026-10-08 · 星期四",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-08.html",
   "summary": [
-    "模型竞赛换战场：HN 双冠「GPT 6.1 Sol」用五分之一价格买到接近 Astra 的智能，同日「AI 需要每年 6 万亿美元收入才撑得起数据中心热潮」把算力泡沫的账摆上台面。",
-    "Agent 从「被调用」变成「常驻」：HN「Dots：永远在线的 agent」476▲，PH 榜首 iFixAi 给 agent 做独立审计、第二 LUCI Desktop 让 agent 记住你看过什么，GH 侧 NVIDIA/OpenShell 补上安全私有运行时。",
-    "越界与逃离同频：DraftKings 用 AI 定点瞄准赌博成瘾者登 HN 第三，荷兰因美国制裁弃微软转 NixOS，macOS Golden Gate 崩坏与 ChromeOS 提前终止把用户继续推向 VoiceStudio 这类全本地替代。"
+    "Hacker News（10/7 10:00→10/8 10:00 CST 共 1111 条）：热度第一是 Claude Haiku 5.5（688▲/342💬），最高分是「Margaret Hamilton 去世」（747▲，阿波罗制导计算机软件奠基者），评论第一是「Visa、万事达等大行因反竞争手续费面临新诉讼」（487▲/352💬）；Chrome 正式上线 JPEG XL（491▲/316💬）结束了近二十年的图像格式拉锯。",
+    "GitHub Trending 13 条：增星第一是 morluto/rea（+4,655★，用 agent 逆向一切），agent 基建占去大半且已细分为记忆（claude-mem +578★）、测试（e2e +1,390★）、电脑操作（cua +228★）、技能包（skills +1,403★ / agent-skills +677★）四格。Product Hunt 当日 44 款取前 8：IrisGo（391▲）与 Velozity（390▲）只差 1 票，都在定义「你和 agent 一起上班」的办公室。",
+    "今天最锋利的一条是「Meta 与微软开始限制员工使用 Claude」（277▲/276💬）——竞品模型被自家员工用成了生产力依赖。Hugging Face 2026-10-08 当日批次 7 篇（早间轻批，全部列示，最高 8▲ Questioning the Questions），主题集中在自演化推理的持续性、agent 自蒸馏崩塌与 web agent 的可靠往返。"
   ]
 }
