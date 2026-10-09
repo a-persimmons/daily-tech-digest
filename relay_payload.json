@@ -1,10 +1,10 @@
 {
-  "date": "2026-10-08",
-  "date_label": "2026-10-08 · 星期四",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-08.html",
+  "date": "2026-10-09",
+  "date_label": "2026-10-09 · 星期五",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-09.html",
   "summary": [
-    "Hacker News（10/7 10:00→10/8 10:00 CST 共 1111 条）：热度第一是 Claude Haiku 5.5（688▲/342💬），最高分是「Margaret Hamilton 去世」（747▲，阿波罗制导计算机软件奠基者），评论第一是「Visa、万事达等大行因反竞争手续费面临新诉讼」（487▲/352💬）；Chrome 正式上线 JPEG XL（491▲/316💬）结束了近二十年的图像格式拉锯。",
-    "GitHub Trending 13 条：增星第一是 morluto/rea（+4,655★，用 agent 逆向一切），agent 基建占去大半且已细分为记忆（claude-mem +578★）、测试（e2e +1,390★）、电脑操作（cua +228★）、技能包（skills +1,403★ / agent-skills +677★）四格。Product Hunt 当日 44 款取前 8：IrisGo（391▲）与 Velozity（390▲）只差 1 票，都在定义「你和 agent 一起上班」的办公室。",
-    "今天最锋利的一条是「Meta 与微软开始限制员工使用 Claude」（277▲/276💬）——竞品模型被自家员工用成了生产力依赖。Hugging Face 2026-10-08 当日批次 7 篇（早间轻批，全部列示，最高 8▲ Questioning the Questions），主题集中在自演化推理的持续性、agent 自蒸馏崩塌与 web agent 的可靠往返。"
+    "Hacker News（10/8 10:00→10/9 10:00 CST 共 1142 条）：热度与评论双第一是「特朗普政府把微软踢出一项绿卡项目」（837▲/1434💬）；真正的行业主线是 AI 数学成果被集体复核——「OpenAI 撤回三项数学成果」252▲/547💬、「撤回 3 篇数学论文」338▲、AHM 正式声明，与陶哲轩「数学 2.0」593▲/631💬 同窗。",
+    "GitHub Trending 9 条（页面实际条目，如实呈现）：增星第一 morluto/rea +7,738★（用 agent 从应用行为逆向到原生二进制），第二 AnyPS5 +4,669★（PS5 可执行文件移植到 Linux/Windows），其余为 artcraft、skills、diagram-design、claude-mem、knowledge-work-plugins 等 agent 工程化配套。Product Hunt 当日 46 款取前 8：OpenSwarm 324▲ 夺冠（一群 agent 在你工位上），OpenSEO 295▲、Claude Haiku 5.5 290▲ 紧随。",
+    "Hugging Face 2026-10-09 当日批次 17 篇取前 12（最高 SuperNav 32▲、AgentGarten 14▲），方向集中在「agent 怎么被造出来、怎么被看住、怎么被跑便宜」三问。今天四源最一致的一条：算力的账开始被公开对表——HN「OpenAI 年化收入比此前信号少 200 亿美元」359▲/246💬，成本侧的答案是 Whistle 16.9MB、亚 1-bit 压缩与 HF 的 TokenRouter。"
   ]
 }
