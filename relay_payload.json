@@ -1,10 +1,10 @@
 {
-  "date": "2026-10-09",
-  "date_label": "2026-10-09 · 星期五",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-09.html",
-  "summary": [
-    "Hacker News（10/8 10:00→10/9 10:00 CST 共 1142 条）：热度与评论双第一是「特朗普政府把微软踢出一项绿卡项目」（837▲/1434💬）；真正的行业主线是 AI 数学成果被集体复核——「OpenAI 撤回三项数学成果」252▲/547💬、「撤回 3 篇数学论文」338▲、AHM 正式声明，与陶哲轩「数学 2.0」593▲/631💬 同窗。",
-    "GitHub Trending 9 条（页面实际条目，如实呈现）：增星第一 morluto/rea +7,738★（用 agent 从应用行为逆向到原生二进制），第二 AnyPS5 +4,669★（PS5 可执行文件移植到 Linux/Windows），其余为 artcraft、skills、diagram-design、claude-mem、knowledge-work-plugins 等 agent 工程化配套。Product Hunt 当日 46 款取前 8：OpenSwarm 324▲ 夺冠（一群 agent 在你工位上），OpenSEO 295▲、Claude Haiku 5.5 290▲ 紧随。",
-    "Hugging Face 2026-10-09 当日批次 17 篇取前 12（最高 SuperNav 32▲、AgentGarten 14▲），方向集中在「agent 怎么被造出来、怎么被看住、怎么被跑便宜」三问。今天四源最一致的一条：算力的账开始被公开对表——HN「OpenAI 年化收入比此前信号少 200 亿美元」359▲/246💬，成本侧的答案是 Whistle 16.9MB、亚 1-bit 压缩与 HF 的 TokenRouter。"
-  ]
+ "date": "2026-10-10",
+ "date_label": "2026-10-10 · 星期六",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-10.html",
+ "summary": [
+  "Cloudflare 收购 Deno 拿下 HN 热度与评论双第一（1093▲/569💬），同日 GitHub 增星榜首是 morluto/rea（+14,927★，用 agent 逆向一切）——平台正在收编「运行时」与「打开黑盒」的能力。",
+  "AI 的产出开始被真实流程追责：OpenAI 解雇三名安全研究员（318▲/203💬）、Anthropic 模型提交费城悬案假线索、伊朗用 ChatGPT 在美国媒体植假稿、法官因 AI 视频推翻量刑，四条链条同日点亮，可审计成刚需。",
+  "Product Hunt 今日 36 款上榜，前八里六款在给 agent 配「工位」（Busabase 288▲、Gemini Agent for Google Cloud 141▲、OpenPilot 94▲、Pine Computer 89▲），GitHub 同步补齐 agent 手艺层；Hugging Face 当日批次周末休更为空，已如实留空。"
+ ]
 }
