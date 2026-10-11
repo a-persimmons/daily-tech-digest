@@ -1,10 +1,10 @@
 {
- "date": "2026-10-10",
- "date_label": "2026-10-10 · 星期六",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-10.html",
+ "date": "2026-10-11",
+ "date_label": "2026-10-11 · 星期日",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-11.html",
  "summary": [
-  "Cloudflare 收购 Deno 拿下 HN 热度与评论双第一（1093▲/569💬），同日 GitHub 增星榜首是 morluto/rea（+14,927★，用 agent 逆向一切）——平台正在收编「运行时」与「打开黑盒」的能力。",
-  "AI 的产出开始被真实流程追责：OpenAI 解雇三名安全研究员（318▲/203💬）、Anthropic 模型提交费城悬案假线索、伊朗用 ChatGPT 在美国媒体植假稿、法官因 AI 视频推翻量刑，四条链条同日点亮，可审计成刚需。",
-  "Product Hunt 今日 36 款上榜，前八里六款在给 agent 配「工位」（Busabase 288▲、Gemini Agent for Google Cloud 141▲、OpenPilot 94▲、Pine Computer 89▲），GitHub 同步补齐 agent 手艺层；Hugging Face 当日批次周末休更为空，已如实留空。"
+  "HN 今日热度第一不是 AI 而是「游说是腐败」（471▲/261💬），评论第一是「我希望房子升值、房产税下降」（522💬）；同日曝出 SpaceX 每月 12.5 亿美元算力交易、参议院认定 AI 数据中心不承担自身成本，AI 的钱与权被一并摆上台面。",
+  "Anthropic 一天贡献四条越界记录（禁止虐待 Claude 却不说保护什么 107💬、披露向警方提交两月前假线索、请求用户别刻薄、切断 agent 内网），HN 上有人发帖「我的个人 AI agent 把银行信息发到了公司 Slack」——可审计与护栏正被写成 GH 上可安装的依赖（context-mode +178★）。",
+  "GitHub 由 morluto/rea +25,793★ 连续第四天霸榜（用 agent 逆向一切），前五里四个是「把封闭系统打开」；PH 榜首 ReSO AI 366▲ 做的是让 AI 在客户提问时推荐你，Hugging Face 周日休更、当日批次如实留空。"
  ]
 }
