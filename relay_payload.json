@@ -1,10 +1,10 @@
 {
- "date": "2026-10-11",
- "date_label": "2026-10-11 · 星期日",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-11.html",
+ "date": "2026-10-12",
+ "date_label": "2026-10-12 · 星期一",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-12.html",
  "summary": [
-  "HN 今日热度第一不是 AI 而是「游说是腐败」（471▲/261💬），评论第一是「我希望房子升值、房产税下降」（522💬）；同日曝出 SpaceX 每月 12.5 亿美元算力交易、参议院认定 AI 数据中心不承担自身成本，AI 的钱与权被一并摆上台面。",
-  "Anthropic 一天贡献四条越界记录（禁止虐待 Claude 却不说保护什么 107💬、披露向警方提交两月前假线索、请求用户别刻薄、切断 agent 内网），HN 上有人发帖「我的个人 AI agent 把银行信息发到了公司 Slack」——可审计与护栏正被写成 GH 上可安装的依赖（context-mode +178★）。",
-  "GitHub 由 morluto/rea +25,793★ 连续第四天霸榜（用 agent 逆向一切），前五里四个是「把封闭系统打开」；PH 榜首 ReSO AI 366▲ 做的是让 AI 在客户提问时推荐你，Hugging Face 周日休更、当日批次如实留空。"
+  "HN 今日双冠被 Yandex 占住：「来自 Yandex 的机器人流量」590▲ 分数第一，「Yandex 云第三个数据中心出事」555▲/680💬 评论第一——爬虫把网络当自助餐，而集中式云在同一天倒下。",
+  "GitHub 榜首 morluto/rea 单日 +25,599★、连续第五天霸榜（用 agent 从应用行为逆向到原生二进制）；Product Hunt 前八里 HireKey 254▲、kōdlo 225▲、Perplexity Automations 167▲、Ayven 109▲ 全都把 agent 塞进具体岗位，#4 Ghost Core 155▲ 做出完全跑在本地的个人 AI 电脑。",
+  "另一条暗线是「关闭—替代」：HN 同日刷出 Nitter 寻求资金与法律援助（420▲）、LineageOS 24、IRCv3、用纯 Rust 净室重写的 Word，以及 CIA《世界概况》停更后的复刻；而 Karpathy「对 LLM 能力的共同理解正在撕裂」拿到 456💬 评论第二——产品在往前冲，共识在往后退。"
  ]
 }
