@@ -1,10 +1,10 @@
 {
- "date": "2026-10-12",
- "date_label": "2026-10-12 · 星期一",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-12.html",
+ "date": "2026-10-13",
+ "date_label": "2026-10-13 · 星期二",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-13.html",
  "summary": [
-  "HN 今日双冠被 Yandex 占住：「来自 Yandex 的机器人流量」590▲ 分数第一，「Yandex 云第三个数据中心出事」555▲/680💬 评论第一——爬虫把网络当自助餐，而集中式云在同一天倒下。",
-  "GitHub 榜首 morluto/rea 单日 +25,599★、连续第五天霸榜（用 agent 从应用行为逆向到原生二进制）；Product Hunt 前八里 HireKey 254▲、kōdlo 225▲、Perplexity Automations 167▲、Ayven 109▲ 全都把 agent 塞进具体岗位，#4 Ghost Core 155▲ 做出完全跑在本地的个人 AI 电脑。",
-  "另一条暗线是「关闭—替代」：HN 同日刷出 Nitter 寻求资金与法律援助（420▲）、LineageOS 24、IRCv3、用纯 Rust 净室重写的 Word，以及 CIA《世界概况》停更后的复刻；而 Karpathy「对 LLM 能力的共同理解正在撕裂」拿到 456💬 评论第二——产品在往前冲，共识在往后退。"
+  "网络攻击越过了屏幕：黑客远程启动欧洲超市冷柜的自动除霜程序，拿下 HN 当日热度与评论双第一（477▲/680💬），另有两条法国超市冷柜被关停的同题补充，配上 Google 9 万美元 RCE 与 Zod 4.6.6 投毒疑云——攻击已经打到线下，追责还停在线上。",
+  "agent 从「被调用」变成「常驻」：Codex CLI 默认安装一个常驻自更新后台守护进程（484▲/245💬），GitHub 侧 morluto/rea 单日 +45,327★ 连续第六天霸榜，context-mode 给 17 个平台做上下文路由；PH 前八里 guilds.run、Hexis Cloud、Manifold MCP 都在补 agent 的可信与数据源。",
+  "手艺层集体回话「更多代码不等于更多软件」：QGIS 宣布暂停接受 AI 代码贡献（367▲/398💬）、Rich Hickey 说「AI 不是工具」、HF 当日批次里《Thinking Inertia》从模型侧呼应同一议题；而 GitHub 的 free-claude-code、open-webui 与 PH 的 Google EmbeddingGemma 2（259▲ 榜首）继续把地基做实。"
  ]
 }
