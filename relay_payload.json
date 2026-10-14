@@ -1,10 +1,10 @@
 {
- "date": "2026-10-13",
- "date_label": "2026-10-13 · 星期二",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-13.html",
+ "date": "2026-10-14",
+ "date_label": "2026-10-14 · 星期三",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-14.html",
  "summary": [
-  "网络攻击越过了屏幕：黑客远程启动欧洲超市冷柜的自动除霜程序，拿下 HN 当日热度与评论双第一（477▲/680💬），另有两条法国超市冷柜被关停的同题补充，配上 Google 9 万美元 RCE 与 Zod 4.6.6 投毒疑云——攻击已经打到线下，追责还停在线上。",
-  "agent 从「被调用」变成「常驻」：Codex CLI 默认安装一个常驻自更新后台守护进程（484▲/245💬），GitHub 侧 morluto/rea 单日 +45,327★ 连续第六天霸榜，context-mode 给 17 个平台做上下文路由；PH 前八里 guilds.run、Hexis Cloud、Manifold MCP 都在补 agent 的可信与数据源。",
-  "手艺层集体回话「更多代码不等于更多软件」：QGIS 宣布暂停接受 AI 代码贡献（367▲/398💬）、Rich Hickey 说「AI 不是工具」、HF 当日批次里《Thinking Inertia》从模型侧呼应同一议题；而 GitHub 的 free-claude-code、open-webui 与 PH 的 Google EmbeddingGemma 2（259▲ 榜首）继续把地基做实。"
+  "模型冲顶与账本塌陷同一个 24 小时发生：HN 上 Gemini 4 Argon 1061▲/788💬 拿下分数第一，另一头 Character.ai 主动申请第 11 章破产（300▲/270💬）、IMF 警告 AI 股价崩盘威胁全球金融稳定（111▲/124💬）。",
+  "苹果一天把客厅、电视和浏览器入口全收了一遍：Apple HomeView 687▲/799💬 评论第一，同日还有新款 Apple TV 4K（305▲/566💬）、「改用 Safari」广告（205▲/345💬），开源侧 Firefox Enterprise（669▲）与 Thunderbird for iOS（360▲）同日回应，GitHub 上 xtool +1,198★ 做跨平台 Xcode 替代。",
+  "agent 的问题从「能不能用」换成「谁在管它、它改不改自己」：HN「Anthropic 重做源码管理」581▲/554💬 与「AI 模型可被证明隐藏任意能力」273▲/136💬，PH 前八里六款给 agent 配工位（Articos MCP 304▲ 居首），GH morluto/rea +54,679★ 连续第七天霸榜，HF 当日 10 篇里三篇直接写 agent 递归自我改进。"
  ]
 }
