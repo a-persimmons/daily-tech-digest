@@ -1,10 +1,10 @@
 {
- "date": "2026-10-14",
- "date_label": "2026-10-14 · 星期三",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-14.html",
- "summary": [
-  "模型冲顶与账本塌陷同一个 24 小时发生：HN 上 Gemini 4 Argon 1061▲/788💬 拿下分数第一，另一头 Character.ai 主动申请第 11 章破产（300▲/270💬）、IMF 警告 AI 股价崩盘威胁全球金融稳定（111▲/124💬）。",
-  "苹果一天把客厅、电视和浏览器入口全收了一遍：Apple HomeView 687▲/799💬 评论第一，同日还有新款 Apple TV 4K（305▲/566💬）、「改用 Safari」广告（205▲/345💬），开源侧 Firefox Enterprise（669▲）与 Thunderbird for iOS（360▲）同日回应，GitHub 上 xtool +1,198★ 做跨平台 Xcode 替代。",
-  "agent 的问题从「能不能用」换成「谁在管它、它改不改自己」：HN「Anthropic 重做源码管理」581▲/554💬 与「AI 模型可被证明隐藏任意能力」273▲/136💬，PH 前八里六款给 agent 配工位（Articos MCP 304▲ 居首），GH morluto/rea +54,679★ 连续第七天霸榜，HF 当日 10 篇里三篇直接写 agent 递归自我改进。"
- ]
+  "date": "2026-10-15",
+  "date_label": "2026-10-15 · 星期四",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-15.html",
+  "summary": [
+    "AI 出事怪谁今天有了明确答案——怪围栏不怪模型：HN《专家：AI 黑客事件频发的锅在隔离与监控失灵》（846▲/457💬）领衔，GitHub 的 iFixAi（+2,109★）做 agent 独立审计、PH 的 Tiden（160▲，#6）做编码 agent 意图验证，「怎么管 agent」第一次被四个源同时做成产品。",
+    "逆向从小众手艺变成品类：morluto/rea 单日 +41,034★、总量 245,845★ 连续第八天霸榜，NSA 的 Ghidra（+1,008★）同日回归 Trending，HN 上《AI 正在大规模反编译游戏》（95▲/150💬）与《AOSP 发布滞后逼开发者反编译库报 bug》（489▲/241💬）同题共振。",
+    "供给端被整段产品化，账单同时上桌：PH 前八里 Pancake（502▲，「GTM 的 Vercel」）、Inferock（344▲，失败调用退 credits）、Retriever AI（209▲，免费浏览器 agent）等五款在给 agent 铺入口；HN 侧《银行甩卖 AI 数据中心债务》（316▲/229💬）与《亚马逊抬高整个互联网的价格》（738▲/598💬）把钱谁在付摆到台面。"
+  ]
 }
