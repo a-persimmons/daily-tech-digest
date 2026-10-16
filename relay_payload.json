@@ -1,10 +1,10 @@
 {
-  "date": "2026-10-15",
-  "date_label": "2026-10-15 · 星期四",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-15.html",
-  "summary": [
-    "AI 出事怪谁今天有了明确答案——怪围栏不怪模型：HN《专家：AI 黑客事件频发的锅在隔离与监控失灵》（846▲/457💬）领衔，GitHub 的 iFixAi（+2,109★）做 agent 独立审计、PH 的 Tiden（160▲，#6）做编码 agent 意图验证，「怎么管 agent」第一次被四个源同时做成产品。",
-    "逆向从小众手艺变成品类：morluto/rea 单日 +41,034★、总量 245,845★ 连续第八天霸榜，NSA 的 Ghidra（+1,008★）同日回归 Trending，HN 上《AI 正在大规模反编译游戏》（95▲/150💬）与《AOSP 发布滞后逼开发者反编译库报 bug》（489▲/241💬）同题共振。",
-    "供给端被整段产品化，账单同时上桌：PH 前八里 Pancake（502▲，「GTM 的 Vercel」）、Inferock（344▲，失败调用退 credits）、Retriever AI（209▲，免费浏览器 agent）等五款在给 agent 铺入口；HN 侧《银行甩卖 AI 数据中心债务》（316▲/229💬）与《亚马逊抬高整个互联网的价格》（738▲/598💬）把钱谁在付摆到台面。"
-  ]
+ "date": "2026-10-16",
+ "date_label": "2026-10-16 · 星期五",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-16.html",
+ "summary": [
+  "Hacker News 今日热度第一是 Meta 开源的 Muse Spark Open（660▲/361💬），但评论第一是《我知道数学家为什么哭泣》（347▲/575💬），陶哲轩同日发问《我们到底在干这些干什么？》，Simons 基金会宣布投 1500 万美元帮数学家穿越 AI 时代。",
+  "AdFection（404▲/572💬）：Citizen Lab 报告指出定向广告被做成零点击雇佣兵间谍软件的投递管道，同题还有《卫报》500▲ 与两条经广告向半岛电视台投间谍软件的报道；供给端同日补上刹车——PH 的 Navige 218▲ 砍 agent 成本、withHuman 99▲ 人类批准层、Polylane 110▲ 拦风险 PR。",
+  "GitHub Trending 12 条在榜，morluto/rea +32,314★ 连续第九天霸榜（总量 273,426★），NSA 的 ghidra +1,369★ 同框；「省 token」首次成品类——caveman 砍 65% token、context-mode 削 98%、xerj 比 grep 少 40 倍 token。Hugging Face 2026-10-16 当日批次为空，已交叉核验 10-15 批次 50 篇确认接口正常，如实留空未套历史。"
+ ]
 }
