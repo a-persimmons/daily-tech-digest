@@ -1,10 +1,11 @@
 {
- "date": "2026-10-16",
- "date_label": "2026-10-16 · 星期五",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-16.html",
+ "date": "2026-10-17",
+ "date_label": "2026-10-17 · 星期六",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-17.html",
  "summary": [
-  "Hacker News 今日热度第一是 Meta 开源的 Muse Spark Open（660▲/361💬），但评论第一是《我知道数学家为什么哭泣》（347▲/575💬），陶哲轩同日发问《我们到底在干这些干什么？》，Simons 基金会宣布投 1500 万美元帮数学家穿越 AI 时代。",
-  "AdFection（404▲/572💬）：Citizen Lab 报告指出定向广告被做成零点击雇佣兵间谍软件的投递管道，同题还有《卫报》500▲ 与两条经广告向半岛电视台投间谍软件的报道；供给端同日补上刹车——PH 的 Navige 218▲ 砍 agent 成本、withHuman 99▲ 人类批准层、Polylane 110▲ 拦风险 PR。",
-  "GitHub Trending 12 条在榜，morluto/rea +32,314★ 连续第九天霸榜（总量 273,426★），NSA 的 ghidra +1,369★ 同框；「省 token」首次成品类——caveman 砍 65% token、context-mode 削 98%、xerj 比 grep 少 40 倍 token。Hugging Face 2026-10-16 当日批次为空，已交叉核验 10-15 批次 50 篇确认接口正常，如实留空未套历史。"
+  "Hacker News 今日榜首是 Anthropic 的《Claude 揭开 ECDSA 曲线种子由来》（720▲/277💬）：困扰密码学界 25 年的 NIST 曲线常数之谜结案——那些可疑种子只是 1990 年代 lrand48 拿 Unix 时间戳初始化后吐出的比特，10 个素数域 + 4 个二进制种子全部可复现，赏金 36,864 美元捐给 ISRG。",
+  "「AI 能干大部分活」被数据顶了回去：Mercor 劳动指数称美国 90% 工时落在 benchmark 覆盖不好的任务上（420▲/359💬，分数与评论双第二）；GitHub Trending 榜首换成完全本地的 VoiceStudio（+2,301★，终结 morluto/rea 九连庄），Product Hunt 榜首是给视频库做索引与理解的 Jockey by TwelveLabs（378▲）。",
+  "另需如实说明：Hugging Face Daily Papers 2026-10-17 当日批次截至抓取时仍为空（服务端最新批次只到 10-16，交叉核验 10-15/10-16 各返回 50 篇），按规程留空呈现，未沿用任何历史批次数据。",
+  "其他值得一看：Postgres 19 因 AI 评审员找 bug 比人修得快而延期（181▲/70💬）、Waymo 开进多伦多拿下评论第一（393💬）、Anthropic 六月被评到最高档垃圾级信用（223▲/70💬）。"
  ]
 }
