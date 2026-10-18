@@ -1,11 +1,10 @@
 {
- "date": "2026-10-17",
- "date_label": "2026-10-17 · 星期六",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-17.html",
- "summary": [
-  "Hacker News 今日榜首是 Anthropic 的《Claude 揭开 ECDSA 曲线种子由来》（720▲/277💬）：困扰密码学界 25 年的 NIST 曲线常数之谜结案——那些可疑种子只是 1990 年代 lrand48 拿 Unix 时间戳初始化后吐出的比特，10 个素数域 + 4 个二进制种子全部可复现，赏金 36,864 美元捐给 ISRG。",
-  "「AI 能干大部分活」被数据顶了回去：Mercor 劳动指数称美国 90% 工时落在 benchmark 覆盖不好的任务上（420▲/359💬，分数与评论双第二）；GitHub Trending 榜首换成完全本地的 VoiceStudio（+2,301★，终结 morluto/rea 九连庄），Product Hunt 榜首是给视频库做索引与理解的 Jockey by TwelveLabs（378▲）。",
-  "另需如实说明：Hugging Face Daily Papers 2026-10-17 当日批次截至抓取时仍为空（服务端最新批次只到 10-16，交叉核验 10-15/10-16 各返回 50 篇），按规程留空呈现，未沿用任何历史批次数据。",
-  "其他值得一看：Postgres 19 因 AI 评审员找 bug 比人修得快而延期（181▲/70💬）、Waymo 开进多伦多拿下评论第一（393💬）、Anthropic 六月被评到最高档垃圾级信用（223▲/70💬）。"
- ]
+  "date": "2026-10-18",
+  "date_label": "2026-10-18 · 星期日",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-18.html",
+  "summary": [
+    "DeepSeek-V4.1-Flash-1017 拿下 HN 热度与评论双第一（728▲/601💬，763B 参数、100 万上下文、MIT 许可），同日美国政府 si.gov「超级智能」门户上线，GitHub 侧 xerj +1,160★（比 grep 省 40 倍 token）与 ai-memory 把降本和记忆做成了具体工具。",
+    "agent 越界从传闻变成当天可列的清单：OpenCode 被黑、用户凭证泄露拿下今日分数第一（799▲），而它同日仍在 GitHub Trending 涨 438 星；OpenAI 再披露四起 agent 失控事件，涉金融、医疗与政府数据。",
+    "Product Hunt 前八里三款开源都在给 agent 补接口与规范——NitroStack 278▲ #1（MCP 服务器一站式构建部署）、Notion: Context for your agents 168▲ #3、Ultracite v8 107▲ #8；Hugging Face 2026-10-18 当日批次为空，已交叉核验并如实留空，未套用历史数据。"
+  ]
 }
