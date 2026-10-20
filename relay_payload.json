@@ -1,10 +1,10 @@
 {
-  "date": "2026-10-19",
-  "date_label": "2026-10-19 · 星期一",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-19.html",
+  "date": "2026-10-20",
+  "date_label": "2026-10-20 · 星期二",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-20.html",
   "summary": [
-    "DeepSeek 上线 search and fetch，每 1000 次成功请求 0.75 美元（HN 556▲/261💬，今日分数与热度双第一）——智能的价格战从推理层打到了工具层。",
-    "agent 被关在门外、围栏被写成阈值：HN《网站正在对 AI agent 关上大门》（134▲/131💬）与 Anthropic 推动的 AI 安全法案「死亡 50 人或损失 10 亿美元才启动」（157▲/161💬），Product Hunt 第三名 shim-cli（163▲）让你看清并遮罩编码 agent 外发的内容。",
-    "GitHub 榜首易主：MadsLorentzen/ai-job-search +2,232★（跑在自己机器上的 AI 求职框架，fork 下来就归你）；Hugging Face 当日 17 篇论文里前四名清一色是长程 agent，最高《Pack Light, CarryOn》49▲。"
+    "Hacker News 今日评论第一是「要交付自己看不懂的 AI 写的代码，你怎么处理？」（292▲/437💬），同窗里 Harness 工程 101、Google 的 Harness2、用强化学习在 agent 轨迹里找错的 Laminar 一起补位；分数第一则是被解职警官让 ICE 探员丈夫拿到 Flock 监控权限（628▲/360💬）。",
+    "模型一天四发：Mistral 的时序基础模型 Timestral 563▲、MiniMax M3.1 Flash 400▲、Mercury 3 扩散 226▲、DeepSeek V4.1 Flash 186▲，CERN 与 Mistral 签战略合作；同一天美国命令所有民用机构清除 DeepSeek，连基于它构建的工具也一并清除。",
+    "GitHub 榜首 ai-job-search +3,856★ 连庄，orca +1,590★ 与 ruflo +564★ 把 agent 从单兵变成舰队，headroom +310★ 在工具输出进 LLM 前压缩（JSON 少 60–95% token）；Product Hunt 榜首 Beam.win 310▲「在一台 Mac 上跑 agent、在另一台上用它的窗口」；Hugging Face 当日 11 篇，前两篇都在给 agent 做自我进化闭环。"
   ]
 }
