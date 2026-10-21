@@ -1,10 +1,10 @@
 {
-  "date": "2026-10-20",
-  "date_label": "2026-10-20 · 星期二",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-20.html",
+  "date": "2026-10-21",
+  "date_label": "2026-10-21 · 星期三",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-21.html",
   "summary": [
-    "Hacker News 今日评论第一是「要交付自己看不懂的 AI 写的代码，你怎么处理？」（292▲/437💬），同窗里 Harness 工程 101、Google 的 Harness2、用强化学习在 agent 轨迹里找错的 Laminar 一起补位；分数第一则是被解职警官让 ICE 探员丈夫拿到 Flock 监控权限（628▲/360💬）。",
-    "模型一天四发：Mistral 的时序基础模型 Timestral 563▲、MiniMax M3.1 Flash 400▲、Mercury 3 扩散 226▲、DeepSeek V4.1 Flash 186▲，CERN 与 Mistral 签战略合作；同一天美国命令所有民用机构清除 DeepSeek，连基于它构建的工具也一并清除。",
-    "GitHub 榜首 ai-job-search +3,856★ 连庄，orca +1,590★ 与 ruflo +564★ 把 agent 从单兵变成舰队，headroom +310★ 在工具输出进 LLM 前压缩（JSON 少 60–95% token）；Product Hunt 榜首 Beam.win 310▲「在一台 Mac 上跑 agent、在另一台上用它的窗口」；Hugging Face 当日 11 篇，前两篇都在给 agent 做自我进化闭环。"
+    "Hacker News 今日三冠来自 DeepInfer：DeepSeek 官方开源的高性能推理框架，2153▲/838💬，评论区贴出单集群 155 万亿 token/天、每卡每小时 38 美元的生产数据——开源模型的单位经济第一次被账本正面回答。",
+    "信任的两端同日被打：eMudhra 8 个 ECC 中间 CA 私钥全是单字节（最小是 4，684▲/346💬），Chrome 正考虑把它踢出根计划；另一头是作者花 50 美元造的假统计站被 LLM 引用，最后进了学术论文和银行报告（324▲/191💬）。",
+    "交付侧 AI 已不满足于 demo：前沿模型几天把 TypeScript 编译器移植到 Rust（Tsrs 355▲/174💬，快 3 倍、内存降 70%，作者称一行代码没写），Mistral 发布闭源实时语音 agent SDK Voxtral 3（544▲）；反弹侧 Steam 用户集体求「无 AI」筛选器（170▲/198💬），GitHub 榜首 ai-job-search +3,861★ 连庄第三日，Cloudflare 安全审计技能包 +1,712★ 补齐可验证层。"
   ]
 }
