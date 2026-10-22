@@ -1,10 +1,10 @@
 {
-  "date": "2026-10-21",
-  "date_label": "2026-10-21 · 星期三",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-21.html",
+  "date": "2026-10-22",
+  "date_label": "2026-10-22 · 星期四",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-22.html",
   "summary": [
-    "Hacker News 今日三冠来自 DeepInfer：DeepSeek 官方开源的高性能推理框架，2153▲/838💬，评论区贴出单集群 155 万亿 token/天、每卡每小时 38 美元的生产数据——开源模型的单位经济第一次被账本正面回答。",
-    "信任的两端同日被打：eMudhra 8 个 ECC 中间 CA 私钥全是单字节（最小是 4，684▲/346💬），Chrome 正考虑把它踢出根计划；另一头是作者花 50 美元造的假统计站被 LLM 引用，最后进了学术论文和银行报告（324▲/191💬）。",
-    "交付侧 AI 已不满足于 demo：前沿模型几天把 TypeScript 编译器移植到 Rust（Tsrs 355▲/174💬，快 3 倍、内存降 70%，作者称一行代码没写），Mistral 发布闭源实时语音 agent SDK Voxtral 3（544▲）；反弹侧 Steam 用户集体求「无 AI」筛选器（170▲/198💬），GitHub 榜首 ai-job-search +3,861★ 连庄第三日，Cloudflare 安全审计技能包 +1,712★ 补齐可验证层。"
+    "HN 今日榜首是一个版本号：PHP 8.2.35（980▲/536💬）——被 AI 挖出的 PHP2Shell 严重 RCE 逼出来的紧急安全版本，同日还挂着 PHP 基金会说明、堆内存 UAF 细节与 Cloudflare 的防护规则。",
+    "AI 站在漏洞两端：一边是 PHP2Shell、OpenAI 的 Patch the Planet、Anthropic 用 Claude 缩小攻击面；另一边是 Qwen3-Coder 被提示面向美国用户后代码更不安全、PyPI 上的 LiteLLM 1.107.0 被投毒装后门。GitHub 榜首 ponytail（+2,079★）的回答是：最好的代码是你压根没写的那行。",
+    "信任基建继续掉链子：eMudhra 八比特 CA 密钥（852▲/406💬）余波中，mitmproxy 直接新增了 --emudhra 选项；agent 侧则全面进入成队、有记忆、省 token 的阶段——orca +1,541★、ai-memory（Rust）、headroom 压掉 95% token，Hugging Face 当日头名是《Cache Engineering for Agents》。"
   ]
 }
