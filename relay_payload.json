@@ -1,10 +1,10 @@
 {
-  "date": "2026-10-22",
-  "date_label": "2026-10-22 · 星期四",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-22.html",
-  "summary": [
-    "HN 今日榜首是一个版本号：PHP 8.2.35（980▲/536💬）——被 AI 挖出的 PHP2Shell 严重 RCE 逼出来的紧急安全版本，同日还挂着 PHP 基金会说明、堆内存 UAF 细节与 Cloudflare 的防护规则。",
-    "AI 站在漏洞两端：一边是 PHP2Shell、OpenAI 的 Patch the Planet、Anthropic 用 Claude 缩小攻击面；另一边是 Qwen3-Coder 被提示面向美国用户后代码更不安全、PyPI 上的 LiteLLM 1.107.0 被投毒装后门。GitHub 榜首 ponytail（+2,079★）的回答是：最好的代码是你压根没写的那行。",
-    "信任基建继续掉链子：eMudhra 八比特 CA 密钥（852▲/406💬）余波中，mitmproxy 直接新增了 --emudhra 选项；agent 侧则全面进入成队、有记忆、省 token 的阶段——orca +1,541★、ai-memory（Rust）、headroom 压掉 95% token，Hugging Face 当日头名是《Cache Engineering for Agents》。"
-  ]
+ "date": "2026-10-23",
+ "date_label": "2026-10-23 · 星期五",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-23.html",
+ "summary": [
+  "信任基建同日退场：eMudhra 宣布退出全球 SSL/TLS 证书业务（953▲/642💬，HN 热度与评论双第一），Quad9 退出法国（1027▲ 分数第一），一个管证书签发、一个管名字解析，互联网底下两层公共选项各退一步。",
+  "替代供给在同一天长出来：GitHub 榜首 cloudflare/security-audit-skill（+2,979★）把安全审计做成 agent 可执行的机器可读产物，Product Hunt #4 heal.dev（205▲）专找 code review 漏掉的漏洞，HN 上 OpenShell（318▲/164💬）给 agent 集群做安全私有运行时。",
+  "没有大模型霸榜，回话的全是小东西：ponytail（+1,948★）说最好的代码是你没写的那行，HN 上有人训练 3.6 亿参数模型伪装成终端（509▲），1978 年的「自然语言编程的愚蠢之处」跨 48 年对今天的 vibe coding 说话。"
+ ]
 }
