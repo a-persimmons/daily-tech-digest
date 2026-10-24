@@ -1,10 +1,10 @@
 {
- "date": "2026-10-23",
- "date_label": "2026-10-23 · 星期五",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-23.html",
- "summary": [
-  "信任基建同日退场：eMudhra 宣布退出全球 SSL/TLS 证书业务（953▲/642💬，HN 热度与评论双第一），Quad9 退出法国（1027▲ 分数第一），一个管证书签发、一个管名字解析，互联网底下两层公共选项各退一步。",
-  "替代供给在同一天长出来：GitHub 榜首 cloudflare/security-audit-skill（+2,979★）把安全审计做成 agent 可执行的机器可读产物，Product Hunt #4 heal.dev（205▲）专找 code review 漏掉的漏洞，HN 上 OpenShell（318▲/164💬）给 agent 集群做安全私有运行时。",
-  "没有大模型霸榜，回话的全是小东西：ponytail（+1,948★）说最好的代码是你没写的那行，HN 上有人训练 3.6 亿参数模型伪装成终端（509▲），1978 年的「自然语言编程的愚蠢之处」跨 48 年对今天的 vibe coding 说话。"
- ]
+  "date": "2026-10-24",
+  "date_label": "2026-10-24 · 星期六",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-24.html",
+  "summary": [
+    "HN 今日双冠是《我们黑掉了我们本来要去黑的东西：iPhone》（767▲/518💬），紧随其后 Kimi K3.1 Pro 以 756▲/468💬 拿下热度第二——设备安全可复现验证与模型发布同日并列前二。",
+    "AI 成本叙事升级为电网问题：《同一次 AI 请求在得州排放的二氧化碳是瑞典 8.5 倍》（140▲/154💬）配《投资者所有的电力公司电价高 23%》（527▲/384💬），算力账正以居民电价结算。",
+    "GitHub 榜首仍是把安全审计做成 agent 可执行产物的 cloudflare/security-audit-skill（+2,716★），NVIDIA/OpenShell（+1,119★）与 SnailSploit/Claude-Red（+226★）同日构成「笼子与撬棍」；Product Hunt 当日 48 款取前 8，Agent Hunt/Context Engine/Polylane 把 agent 的榜单、记忆、值守三件套补齐；Hugging Face 2026-10-24 当日批次尚未发布，如实留空。"
+  ]
 }
