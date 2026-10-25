@@ -1,10 +1,10 @@
 {
-  "date": "2026-10-24",
-  "date_label": "2026-10-24 · 星期六",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-24.html",
-  "summary": [
-    "HN 今日双冠是《我们黑掉了我们本来要去黑的东西：iPhone》（767▲/518💬），紧随其后 Kimi K3.1 Pro 以 756▲/468💬 拿下热度第二——设备安全可复现验证与模型发布同日并列前二。",
-    "AI 成本叙事升级为电网问题：《同一次 AI 请求在得州排放的二氧化碳是瑞典 8.5 倍》（140▲/154💬）配《投资者所有的电力公司电价高 23%》（527▲/384💬），算力账正以居民电价结算。",
-    "GitHub 榜首仍是把安全审计做成 agent 可执行产物的 cloudflare/security-audit-skill（+2,716★），NVIDIA/OpenShell（+1,119★）与 SnailSploit/Claude-Red（+226★）同日构成「笼子与撬棍」；Product Hunt 当日 48 款取前 8，Agent Hunt/Context Engine/Polylane 把 agent 的榜单、记忆、值守三件套补齐；Hugging Face 2026-10-24 当日批次尚未发布，如实留空。"
-  ]
+ "date": "2026-10-25",
+ "date_label": "2026-10-25 · 星期日",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-25.html",
+ "summary": [
+  "Hacker News 榜首从「发布模型」换成「出示收据」：《科技行业之外，看不到 AI 回报的任何迹象》502▲/505💬 拿下分数与评论双第一，同日奥特曼承认「所有 bug 是补不完的」（112💬，漏网评论第一）。",
+  "设备主权同日集中爆发：三星电视拿到 root shell（490▲，分数第三）、谷歌把 Nest 恒温器变回「傻」恒温器、丹麦悄悄放弃弃用 Office；GitHub 榜首 cloudflare/security-audit-skill 连续霸榜（+2,264★），Product Hunt 第三名 1Password for Agents（216▲）让 agent 登录却看不到密码。",
+  "手艺层集体抬头：Goose 编程语言（267▲/178💬）、OBS Studio 33（444▲）、FreeDNS（261▲）、PHP 基金会只有一名全职员工（120▲/79💬）；Hugging Face 2026-10-25 当日批次为空（接口核验正常，周末未发布），如实留空未套历史。"
+ ]
 }
