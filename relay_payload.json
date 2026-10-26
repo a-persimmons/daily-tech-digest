@@ -1,10 +1,10 @@
 {
- "date": "2026-10-25",
- "date_label": "2026-10-25 · 星期日",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-25.html",
+ "date": "2026-10-26",
+ "date_label": "2026-10-26 · 星期一",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-26.html",
  "summary": [
-  "Hacker News 榜首从「发布模型」换成「出示收据」：《科技行业之外，看不到 AI 回报的任何迹象》502▲/505💬 拿下分数与评论双第一，同日奥特曼承认「所有 bug 是补不完的」（112💬，漏网评论第一）。",
-  "设备主权同日集中爆发：三星电视拿到 root shell（490▲，分数第三）、谷歌把 Nest 恒温器变回「傻」恒温器、丹麦悄悄放弃弃用 Office；GitHub 榜首 cloudflare/security-audit-skill 连续霸榜（+2,264★），Product Hunt 第三名 1Password for Agents（216▲）让 agent 登录却看不到密码。",
-  "手艺层集体抬头：Goose 编程语言（267▲/178💬）、OBS Studio 33（444▲）、FreeDNS（261▲）、PHP 基金会只有一名全职员工（120▲/79💬）；Hugging Face 2026-10-25 当日批次为空（接口核验正常，周末未发布），如实留空未套历史。"
+  "HN 今日榜首不是模型也不是漏洞，而是 Meta 无视巴西法院要求停止偏袒博索纳罗的命令（472▲/327💬，分数与评论双第一）——同栏并排放着卢拉胜选与「卢拉账号被限流」的报道，一家公司同时握着裁决的遵守与否和选票的流向。",
+  "AI 的能力账与价格账同日摊开：一个有十年历史的 CNN 在皮肤癌诊断上胜过前沿大模型（463▲/216💬，分数第二），而 OpenAI 与 Anthropic 几个月内把价格砍了最多 80%（181▲/206💬）——旧方法既然够用，降价更像需求不足的信号。",
+  "供给端在补「可验证与可回收」：GitHub 榜首 cloudflare/security-audit-skill 连续第三日霸榜（+2,878★），Product Hunt 榜首 Moli 把无头浏览器定义为「给 agent 与 harness 用的」，HF 当日 6 篇里最高票 UserArena（13▲）做的是长程 agent 的交互式评测。"
  ]
 }
