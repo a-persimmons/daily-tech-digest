@@ -1,10 +1,10 @@
 {
- "date": "2026-10-26",
- "date_label": "2026-10-26 · 星期一",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-26.html",
- "summary": [
-  "HN 今日榜首不是模型也不是漏洞，而是 Meta 无视巴西法院要求停止偏袒博索纳罗的命令（472▲/327💬，分数与评论双第一）——同栏并排放着卢拉胜选与「卢拉账号被限流」的报道，一家公司同时握着裁决的遵守与否和选票的流向。",
-  "AI 的能力账与价格账同日摊开：一个有十年历史的 CNN 在皮肤癌诊断上胜过前沿大模型（463▲/216💬，分数第二），而 OpenAI 与 Anthropic 几个月内把价格砍了最多 80%（181▲/206💬）——旧方法既然够用，降价更像需求不足的信号。",
-  "供给端在补「可验证与可回收」：GitHub 榜首 cloudflare/security-audit-skill 连续第三日霸榜（+2,878★），Product Hunt 榜首 Moli 把无头浏览器定义为「给 agent 与 harness 用的」，HF 当日 6 篇里最高票 UserArena（13▲）做的是长程 agent 的交互式评测。"
- ]
+  "date": "2026-10-27",
+  "date_label": "2026-10-27 · 星期二",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-27.html",
+  "summary": [
+    "Hacker News 今天没有第二名：Anthropic 的 S-1 招股书以 1504▲/1468💬 拿下分数与评论双第一，热度是第二名的两倍，注脚是「披露 810 亿美元净亏损」「赶在泡沫破裂前突击 IPO」——AI 第一次被迫用监管格式而不是发布会格式交代自己。",
+    "同一本账的三条口径同日对上：微软向约四分之一员工提出大规模买断离职（797▲/708💬），布朗学生绘制出支撑 AI 的隐秘全球劳动力地图，美国工资占国民总收入比重降到 75 年最低；产品侧回应全是算术——PH #3 MiniMax M3.1 Flash 便宜 70%、#7 CloudKnife 砍云账单、GH ECC +896★ 做 harness 性能优化。",
+    "技能包成为主力品类后门禁同日到位：GitHub 前七名四条是 agent 技能或设计语言（hallmark +2,244★ 反 AI 味、impeccable +1,506★、karpathy-skills +638★），英伟达 SkillSpector +214★ 做安装前安全扫描，HF 最高票 Trajectory2Gym 28▲ 与 Trial by Trace 11▲ 补上失败归因基准；另一侧是 EPA 悄悄关掉网页档案库、Flock CEO 泄露录音，手艺层用「可打印、可保存」对冲。"
+  ]
 }
