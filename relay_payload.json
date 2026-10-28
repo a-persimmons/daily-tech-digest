@@ -1,10 +1,10 @@
 {
-  "date": "2026-10-27",
-  "date_label": "2026-10-27 · 星期二",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-27.html",
+  "date": "2026-10-28",
+  "date_label": "2026-10-28 · 星期三",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-28.html",
   "summary": [
-    "Hacker News 今天没有第二名：Anthropic 的 S-1 招股书以 1504▲/1468💬 拿下分数与评论双第一，热度是第二名的两倍，注脚是「披露 810 亿美元净亏损」「赶在泡沫破裂前突击 IPO」——AI 第一次被迫用监管格式而不是发布会格式交代自己。",
-    "同一本账的三条口径同日对上：微软向约四分之一员工提出大规模买断离职（797▲/708💬），布朗学生绘制出支撑 AI 的隐秘全球劳动力地图，美国工资占国民总收入比重降到 75 年最低；产品侧回应全是算术——PH #3 MiniMax M3.1 Flash 便宜 70%、#7 CloudKnife 砍云账单、GH ECC +896★ 做 harness 性能优化。",
-    "技能包成为主力品类后门禁同日到位：GitHub 前七名四条是 agent 技能或设计语言（hallmark +2,244★ 反 AI 味、impeccable +1,506★、karpathy-skills +638★），英伟达 SkillSpector +214★ 做安装前安全扫描，HF 最高票 Trajectory2Gym 28▲ 与 Trial by Trace 11▲ 补上失败归因基准；另一侧是 EPA 悄悄关掉网页档案库、Flock CEO 泄露录音，手艺层用「可打印、可保存」对冲。"
+    "HN 今日 1112 条：DeepMind Genie 4（765▲/463💬）拿下热度第一，而《AI 承诺少干活。可我从来没有这么忙过》（622▲/618💬）以评论第一压过它——能力冲顶与体感变差同一天登顶。",
+    "「抓取者被追着要收据」：《Anthropic 用非法获取的斯坦福教授著作训练了 Claude》483▲/266💬、《Roblox 未经询问下载 145GB 模型》460▲/268💬、《维基百科清理 AI 生成内容》460▲/211💬 三层同时收紧。",
+    "GitHub 榜首是反 AI 味的 Nutlope/hallmark（+2,830★），Product Hunt 榜首 TheySaid 4.0（329▲）做验证前置，HF 当日 20 篇里前四全是世界模型（ChronoReplay 34▲ 居首）——四源都在解决「产出变多之后怎么收口」。"
   ]
 }
