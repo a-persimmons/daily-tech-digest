@@ -1,10 +1,10 @@
 {
-  "date": "2026-10-28",
-  "date_label": "2026-10-28 · 星期三",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-28.html",
-  "summary": [
-    "HN 今日 1112 条：DeepMind Genie 4（765▲/463💬）拿下热度第一，而《AI 承诺少干活。可我从来没有这么忙过》（622▲/618💬）以评论第一压过它——能力冲顶与体感变差同一天登顶。",
-    "「抓取者被追着要收据」：《Anthropic 用非法获取的斯坦福教授著作训练了 Claude》483▲/266💬、《Roblox 未经询问下载 145GB 模型》460▲/268💬、《维基百科清理 AI 生成内容》460▲/211💬 三层同时收紧。",
-    "GitHub 榜首是反 AI 味的 Nutlope/hallmark（+2,830★），Product Hunt 榜首 TheySaid 4.0（329▲）做验证前置，HF 当日 20 篇里前四全是世界模型（ChronoReplay 34▲ 居首）——四源都在解决「产出变多之后怎么收口」。"
-  ]
+ "date": "2026-10-29",
+ "date_label": "2026-10-29 · 星期四",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-29.html",
+ "summary": [
+  "今天 HN 的分数与评论双第一不是模型，而是一份证据：《ICE 对左翼社会运动实施间谍行动的证据》（1105▲/923💬）；同日还有两则反向泄露，曝光了 41,000 名国土安全部雇员名单。",
+  "信任基建进入第二波：《苹果的 git 仍在信任已被攻陷的 eMudhra 证书》（1059▲/378💬，分数第二）——问题从「谁签发了坏证书」变成「谁还在信任它」；而 GitHub Trending 今天 14 条里没有一条安全审计项目。",
+  "能力侧 Gemini 4 Carbon（829▲/692💬）冲到第二，Qwenputer 在 Qwen3.5 里跑起 RISC-V CPU、英伟达开源 40 语种 ASR；反作用力同样整齐——《微软与 Epic Games 突然一致认为 AI 就是盗窃》、StackOverflow 月提问不足 1000、Emacs 五十岁、MicroZig 宣布不要 LLM。"
+ ]
 }
