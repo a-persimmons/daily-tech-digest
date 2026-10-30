@@ -1,10 +1,10 @@
 {
- "date": "2026-10-29",
- "date_label": "2026-10-29 · 星期四",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-29.html",
- "summary": [
-  "今天 HN 的分数与评论双第一不是模型，而是一份证据：《ICE 对左翼社会运动实施间谍行动的证据》（1105▲/923💬）；同日还有两则反向泄露，曝光了 41,000 名国土安全部雇员名单。",
-  "信任基建进入第二波：《苹果的 git 仍在信任已被攻陷的 eMudhra 证书》（1059▲/378💬，分数第二）——问题从「谁签发了坏证书」变成「谁还在信任它」；而 GitHub Trending 今天 14 条里没有一条安全审计项目。",
-  "能力侧 Gemini 4 Carbon（829▲/692💬）冲到第二，Qwenputer 在 Qwen3.5 里跑起 RISC-V CPU、英伟达开源 40 语种 ASR；反作用力同样整齐——《微软与 Epic Games 突然一致认为 AI 就是盗窃》、StackOverflow 月提问不足 1000、Emacs 五十岁、MicroZig 宣布不要 LLM。"
- ]
+  "date": "2026-10-30",
+  "date_label": "2026-10-30 · 星期五",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-30.html",
+  "summary": [
+    "HN 今日技术头名是《我们开放了 Mistral Large 4 的权重》（1238▲/347💬），同日 Gemini 4 Carbon 登顶 Artificial Analysis 智能指数 v5；但更扎眼的是两条相反方向的官宣——《Claude Code 会定期把每个后台 agent 的完整转录回传给它的模型》（562▲/226💬，附可复现 gist）与「Binance 单笔被盗 56 亿美元」（819▲/486💬）。",
+    "四个数据源今天指向同一个判断：瓶颈不在模型，而在「把 agent 放进什么样的世界」——HF 当日 5 篇论文里 4 篇在造 agent 训练/评测环境（VibeGame、WorkFactory、WebAnything、IntReal），PH 榜上有给 agent 的云浏览器 Gologin 与「你不需要 AI SRE」的 Radar，GitHub 榜首 pbakaus/impeccable（+2,870★）卖的是给编码 agent 用的设计词汇。",
+    "账本同时到期：谷歌搜索在 Alphabet 营收占比首次跌破一半（399▲/337💬）、DoorDash 收购 Instacart（436▲/609💬，今日评论第一）、链式 PHP2Shell 拿下含美国政府在内的 25 台服务器（297▲/148💬）；手艺层照常营业——NetBSD 新增 atto 编辑器（167▲/138💬，漏网评论第一）、H.264 是魔法（348▲）。"
+  ]
 }
