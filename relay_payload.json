@@ -1,10 +1,10 @@
 {
-  "date": "2026-10-30",
-  "date_label": "2026-10-30 · 星期五",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-30.html",
-  "summary": [
-    "HN 今日技术头名是《我们开放了 Mistral Large 4 的权重》（1238▲/347💬），同日 Gemini 4 Carbon 登顶 Artificial Analysis 智能指数 v5；但更扎眼的是两条相反方向的官宣——《Claude Code 会定期把每个后台 agent 的完整转录回传给它的模型》（562▲/226💬，附可复现 gist）与「Binance 单笔被盗 56 亿美元」（819▲/486💬）。",
-    "四个数据源今天指向同一个判断：瓶颈不在模型，而在「把 agent 放进什么样的世界」——HF 当日 5 篇论文里 4 篇在造 agent 训练/评测环境（VibeGame、WorkFactory、WebAnything、IntReal），PH 榜上有给 agent 的云浏览器 Gologin 与「你不需要 AI SRE」的 Radar，GitHub 榜首 pbakaus/impeccable（+2,870★）卖的是给编码 agent 用的设计词汇。",
-    "账本同时到期：谷歌搜索在 Alphabet 营收占比首次跌破一半（399▲/337💬）、DoorDash 收购 Instacart（436▲/609💬，今日评论第一）、链式 PHP2Shell 拿下含美国政府在内的 25 台服务器（297▲/148💬）；手艺层照常营业——NetBSD 新增 atto 编辑器（167▲/138💬，漏网评论第一）、H.264 是魔法（348▲）。"
-  ]
+ "date": "2026-10-31",
+ "date_label": "2026-10-31 · 星期六",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-31.html",
+ "summary": [
+  "HN 今日分数与评论双第一是《Cursor 市场上的「Claude Code for VS Code」扩展里被发现后门》（799▲/500💬），同栏另挂两条同源报道，加上 Northflank、Linode、Bunny CDN、GitHub、Polymarket 五起供应商事故——agent 的入口第一次被证实成了投递渠道。",
+  "AI 的账单进了议会：民主党议员领衔决议反对为 AI 泡沫纾困（627▲/477💬），美股科技股因 AI 成本担忧大跌（242▲/266💬），黑石称 Anthropic 上市后可能拿不到投资级评级（286▲/239💬），英特尔同日暴跌 25%。",
+  "GitHub 15 条里 9 条在给 agent 配工位（pbakaus/impeccable +2,300★ 设计词汇、DeepTutor +2,282★、claude-mem +1,140★、t3code +930★）；Product Hunt 官网今日被 Cloudflare 全面拦截，改用官方 Atom Feed 最新批次（无票数）；Hugging Face 2026-10-31 当日批次为空，已交叉核验接口正常、未套历史。"
+ ]
 }
