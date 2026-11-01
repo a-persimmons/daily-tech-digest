@@ -1,10 +1,10 @@
 {
- "date": "2026-10-31",
- "date_label": "2026-10-31 · 星期六",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-10-31.html",
+ "date": "2026-11-01",
+ "date_label": "2026-11-01 · 星期日",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-11-01.html",
  "summary": [
-  "HN 今日分数与评论双第一是《Cursor 市场上的「Claude Code for VS Code」扩展里被发现后门》（799▲/500💬），同栏另挂两条同源报道，加上 Northflank、Linode、Bunny CDN、GitHub、Polymarket 五起供应商事故——agent 的入口第一次被证实成了投递渠道。",
-  "AI 的账单进了议会：民主党议员领衔决议反对为 AI 泡沫纾困（627▲/477💬），美股科技股因 AI 成本担忧大跌（242▲/266💬），黑石称 Anthropic 上市后可能拿不到投资级评级（286▲/239💬），英特尔同日暴跌 25%。",
-  "GitHub 15 条里 9 条在给 agent 配工位（pbakaus/impeccable +2,300★ 设计词汇、DeepTutor +2,282★、claude-mem +1,140★、t3code +930★）；Product Hunt 官网今日被 Cloudflare 全面拦截，改用官方 Atom Feed 最新批次（无票数）；Hugging Face 2026-10-31 当日批次为空，已交叉核验接口正常、未套历史。"
+  "记忆成了 agent 的第一配件：GitHub 今日增量第一 claude-mem（+1,723★）做跨会话持久记忆，Product Hunt 的 SpaceO 直接给 agent 一块专属屏幕，Orkas 用 Commander 调度 16 个专家 agent——三家平台都不谈模型，只谈持续性与工位。",
+  "AI 公司同日收紧钱袋与条款：HN 上《OpenAI 只融到 300 亿目标的一半不到》（182▲/186💬）与《沾上训练更大模型 Anthropic 就封号》（218▲/123💬）同栏，注脚是漏网评论第一的《为什么 Anthropic 的上市文件砸崩了科技股》（76💬）；Anthropic 另有两条封杀游戏反向工程。",
+  "攻击面沉到协议、手艺层跟着下沉：最硬的一条是《TCP 释放后重用 CVE-2026-98432 / CVSS 9.8》（371▲/177💬），配《怎么接管 ChatGPT 账号》304▲、《Molly 三个月未更新》311▲；同一天有人在读《GCC 里的 switch 下沉》与《是内存延迟，笨蛋》。今日 HF Daily Papers（date=2026-11-01）为空批次，已交叉核验接口正常后如实留空。"
  ]
 }
