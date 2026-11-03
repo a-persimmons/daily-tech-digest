@@ -1,10 +1,10 @@
 {
-  "date": "2026-11-02",
-  "date_label": "2026-11-02 · 星期一",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-11-02.html",
+  "date": "2026-11-03",
+  "date_label": "2026-11-03 · 星期二",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-11-03.html",
   "summary": [
-    "HN 今日双冠都不在 AI：裸分第一是社区自造的 HackerBooks（997▲），评论第一是《挪威观光公路沿线的公共厕所》（675▲/396💬）。",
-    "AI 的账被摆上台面——《AI 给大多数公司零财务回报》（195▲/179💬）、《美国劳动者资本份额创 1947 年以来最低》（229▲/128💬），配套《JavaScript 框架的 AI 代价》（314▲/231💬）与奥特曼「DRAM 应给数据中心」。",
-    "GitHub 17 条里五条给 agent 配工位（t3code +3,094★ 登顶、claude-mem +1,526★），PH 上新 agent 仪表盘（agentmash / Modelpeers / Claude 用量组件），HF 当日 3 篇全在造 agent 训练环境。"
+    "Anthropic 修订版 S-1 把 AI 账本摊开：Q3 营收 170 亿美元、承诺支出 8950 亿美元，HN 同栏四条拆读（内部 AI 用量按零售价已超过员工工资、增长踩平、SEC 应否决 IPO），甲骨文再发 200 亿美元股债为 AI 建设筹资。",
+    "HN 分数与评论双第一是 Astra 直接读写权重改进 Qwen（2051▲/667💬）；GitHub 前四有三条在给 agent 装控制面（t3code +3,229★ 连续登顶、Vercel agent-desktop、claude-mem），Product Hunt 把 agent 当同事排班（Cedric 替你开会、Friday Work 在 Claude 撞限额时接着跑）。",
+    "Hugging Face 2026-11-03 当日批次为空（接口正常、尚未发布，如实留空未套历史）；安全侧欧洲超市冷柜第二次遭疑似网络攻击（374▲/418💬），Ubuntu 的 Linux 0day RCE 近三周未发补丁。"
   ]
 }
