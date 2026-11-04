@@ -1,10 +1,10 @@
 {
-  "date": "2026-11-03",
-  "date_label": "2026-11-03 · 星期二",
-  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-11-03.html",
-  "summary": [
-    "Anthropic 修订版 S-1 把 AI 账本摊开：Q3 营收 170 亿美元、承诺支出 8950 亿美元，HN 同栏四条拆读（内部 AI 用量按零售价已超过员工工资、增长踩平、SEC 应否决 IPO），甲骨文再发 200 亿美元股债为 AI 建设筹资。",
-    "HN 分数与评论双第一是 Astra 直接读写权重改进 Qwen（2051▲/667💬）；GitHub 前四有三条在给 agent 装控制面（t3code +3,229★ 连续登顶、Vercel agent-desktop、claude-mem），Product Hunt 把 agent 当同事排班（Cedric 替你开会、Friday Work 在 Claude 撞限额时接着跑）。",
-    "Hugging Face 2026-11-03 当日批次为空（接口正常、尚未发布，如实留空未套历史）；安全侧欧洲超市冷柜第二次遭疑似网络攻击（374▲/418💬），Ubuntu 的 Linux 0day RCE 近三周未发补丁。"
-  ]
+ "date": "2026-11-04",
+ "date_label": "2026-11-04 · 星期三",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-11-04.html",
+ "summary": [
+  "「同意」被跳过的一天：HN 分数第一是 Postman 静默安装 AI 插件并试图共享全部 API 数据（1071▲/353💬），同日 OpenAI 被指悄悄恢复用 Codex 聊天训练模型、谷歌要关掉拒绝 AI 的学校的搜索（567▲/415💬）。",
+  "昨日「Astra 读写权重改进 Qwen」的神话被 916▲ 打假，笔记本上的 Qwen 3.8 27B 也能解读权重；GitHub 榜首换成 Vercel 的 agent-desktop（+3,791★），spotify 的 shunt 把重 I/O 分流给便宜模型省 82–94% token，HF 当日 4 篇里也有 ParetoSaddler 在优化 agent harness 成本。",
+  "工位与账单同时到期：GitHub / PH 整页给 agent 配桌面、记忆、终端与共用数据副本，HN 则摊开 3.2 万亿隐性 AI 债务（286▲）、Anthropic 上市文件与 Kalshi 重罪指控（评论第一 435💬）。"
+ ]
 }
