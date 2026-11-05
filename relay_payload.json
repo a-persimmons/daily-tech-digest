@@ -1,10 +1,10 @@
 {
- "date": "2026-11-04",
- "date_label": "2026-11-04 · 星期三",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-11-04.html",
+ "date": "2026-11-05",
+ "date_label": "2026-11-05 · 星期四",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-11-05.html",
  "summary": [
-  "「同意」被跳过的一天：HN 分数第一是 Postman 静默安装 AI 插件并试图共享全部 API 数据（1071▲/353💬），同日 OpenAI 被指悄悄恢复用 Codex 聊天训练模型、谷歌要关掉拒绝 AI 的学校的搜索（567▲/415💬）。",
-  "昨日「Astra 读写权重改进 Qwen」的神话被 916▲ 打假，笔记本上的 Qwen 3.8 27B 也能解读权重；GitHub 榜首换成 Vercel 的 agent-desktop（+3,791★），spotify 的 shunt 把重 I/O 分流给便宜模型省 82–94% token，HF 当日 4 篇里也有 ParetoSaddler 在优化 agent harness 成本。",
-  "工位与账单同时到期：GitHub / PH 整页给 agent 配桌面、记忆、终端与共用数据副本，HN 则摊开 3.2 万亿隐性 AI 债务（286▲）、Anthropic 上市文件与 Kalshi 重罪指控（评论第一 435💬）。"
+  "HN 分数与评论双第一：AI 正在逼我们偿还 40 年的技术债（1099▲/642💬）——AI 扩张期结束、清算期开始，数据中心公投被全面否决（312▲/632💬）。",
+  "安全清算日：朝鲜黑客假面试盗走币安 63 亿美元（582▲/360💬）、白宫网络检出住宅代理、GitHub 事故、法国血液库被黑、Debian apt 中间人漏洞连环爆。",
+  "GitHub 榜首 Vercel 开源 agent-desktop（+2470★），Agent 工位基建（记忆 claude-mem/并行 worktrunk/Garry Tan gstack）全面成型；Kimi K3.1 Pro 权重发布（401▲），HF 当日批次 4 篇早间轻批（GameVerse 8▲ 居首）。"
  ]
 }
