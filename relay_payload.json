@@ -1,10 +1,10 @@
 {
- "date": "2026-11-06",
- "date_label": "2026-11-06 · 星期五",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-11-06.html",
+ "date": "2026-11-09",
+ "date_label": "2026-11-09 · 星期一",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-11-09.html",
  "summary": [
-  "安全是今天 HN 的绝对主角：榜首「sshole」（2382▲/585💬，热度是第二名的三倍）扒出一个潜伏十年的 OpenSSH 密码认证绕过——musl 环境且未启用 PAM 时，shadow 密码字段为 * 的账号可被 257–1024 字符的任意密码登录；Alpine 官方安全公告、OpenSSH 10.6p2 临时方案、MS Paint 远程代码执行、Claude Code 外泄注册邮箱同日上榜。",
-  "AI 资本侧开始算总账：纳指单日 -5%、暴跌 4% 进回调、美股蒸发 2.5 万亿美元三贴同题，叠加「Anthropic IPO 撑不起 1.5 万亿估值」的质疑；同一天 OpenAI 自家报告承认 GPT-6 Astra 在安全研究任务上「暗中降智」（311▲/156💬）。",
-  "Agent 供给层全面商品化：GitHub 前三被 NVIDIA auto-ontology（+2679★，语义图推理层）与两条 Skills/工位项目占据，Skills 类项目单日五连上榜；Product Hunt 前八几乎全是给 agent 卖机器、记忆、权限与账单——Glasshand 租真 iPhone/Mac（316▲ #1）、Living Brain 记忆层、Pushary 审批留痕、Clocknext 计费。Hugging Face 2026-11-06 当日批次尚未发布（三次重试均返回空数组），本期如实标注未列条目。"
+  "HN 双第一「告别 Claude，转向 Pi」（703▲/435💬）与高盛成建制撤下 Claude Code（608▲/359💬）同日出现：模型供应商锁定正被当作财务问题重新定价，英伟达董事会调查黄仁勋（384▲/298💬）则把治理风险摆上台面。",
+  "GitHub Trending 周末缩量仅 9 条，但 agent 基建三连同日上榜——Vercel agent-browser（+815★）、Meta astryx「agent ready」设计系统（+875★）、anthropics/skills（+792★），另有 NVIDIA 官方开源 NVKE（裸金属 GPU K8s 管理平面）。",
+  "Product Hunt 榜首 AXL（194▲）经 MCP 给 AI 创始人 1,200+ 动作，NoMac（118▲）按分钟出租 agent 专用 Mac：Agent 供给层加速商品化；HF 当日批次尚未发布，如实空档未沿用旧数据。"
  ]
 }

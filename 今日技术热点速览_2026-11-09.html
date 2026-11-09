@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今日技术热点速览 · 2026-11-09 · 星期一</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Serif+SC:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f4ede0; --paper2:#efe7d8; --ink:#1a1a1a; --ink2:#333;
+  --muted:#6b6357; --rule:#2b2b2b; --rule-light:#c9bfa9;
+  --accent:#9b1b1b; --accent2:#1a3a5c; --highlight:#e8e0d0;
+  --green:#2d6a2d; --orange:#8a5a00;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:'Source Serif 4','Noto Serif SC',Georgia,'Times New Roman',serif;
+  line-height:1.65;font-size:15.5px;
+  background-image:radial-gradient(ellipse at top,rgba(0,0,0,.02),transparent 60%);
+}
+a{color:var(--accent2);}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px 50px;}
+.zh{color:var(--muted);font-size:12.5px;font-weight:400;line-height:1.45;margin-top:3px;font-style:italic;}
+.gh-desc .zh{font-size:11.5px;margin-top:2px;}
+.section,.hero{scroll-margin-top:64px;}
+
+/* Masthead header */
+header.site-header{
+  padding:36px 24px 20px;text-align:center;
+  border-bottom:3px double var(--rule);
+  background:var(--paper);
+}
+.back-link{
+  display:inline-block;font-size:12px;color:var(--muted);
+  text-decoration:none;margin-bottom:10px;letter-spacing:.03em;
+  transition:color .15s ease;
+}
+.back-link:hover{color:var(--accent);}
+header.site-header .kicker{
+  font-size:11px;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:4px;
+}
+header.site-header h1{
+  margin:0 0 6px;font-size:32px;letter-spacing:-.01em;
+  font-family:'Playfair Display','Noto Serif SC',Georgia,serif;
+  font-weight:900;color:var(--ink);
+}
+header.site-header .date{color:var(--accent);font-weight:700;font-size:14px;letter-spacing:.05em;}
+header.site-header .sub{color:var(--muted);font-size:12px;margin-top:6px;font-style:italic;}
+
+/* Quick nav */
+.quick-nav{
+  position:sticky;top:0;z-index:100;display:flex;flex-wrap:wrap;
+  gap:6px;justify-content:center;padding:10px 0;
+  margin:0 0 28px;background:rgba(244,237,224,.92);
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--rule-light);
+}
+.quick-nav a{
+  font-size:12px;font-weight:600;color:var(--ink2);
+  text-decoration:none;padding:4px 11px;
+  border:1px solid var(--rule-light);background:var(--paper2);
+  white-space:nowrap;transition:all .15s ease;
+  font-family:'Source Serif 4',Georgia,serif;letter-spacing:.02em;
+}
+.quick-nav a:hover{color:var(--accent);border-color:var(--accent);background:var(--highlight);}
+
+/* Section title */
+.sec-title{
+  display:flex;align-items:center;gap:10px;margin:36px 0 16px;font-size:20px;
+  border-bottom:2px solid var(--rule);padding-bottom:8px;
+  font-family:'Playfair Display','Noto Serif SC',Georgia,serif;font-weight:800;
+}
+.sec-title .emo{font-size:18px;}
+.sec-title .bar{display:none;}
+
+/* Hero cards */
+.hero-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;}
+.hero-card{
+  display:block;text-decoration:none;color:var(--ink);
+  background:var(--paper2);border:1px solid var(--rule-light);
+  border-radius:2px;padding:16px 16px 14px;transition:all .18s ease;
+  position:relative;
+}
+.hero-card::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent);
+}
+.hero-card:hover{border-color:var(--ink);transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.1);}
+.hero-meta{color:var(--green);font-size:12px;font-weight:700;letter-spacing:.03em;}
+.hero-title{font-size:16px;font-weight:800;margin:6px 0 4px;font-family:'Playfair Display','Noto Serif SC',Georgia,serif;}
+
+/* Tables (HN / Papers) */
+.hn-table{
+  width:100%;border-collapse:collapse;
+  background:var(--paper2);border:2px solid var(--rule);
+}
+.hn-table th{
+  text-align:left;font-size:11px;color:var(--ink);font-weight:800;
+  padding:10px 12px;background:var(--highlight);
+  border-bottom:2px solid var(--rule);
+  text-transform:uppercase;letter-spacing:.08em;
+}
+.hn-table td{padding:11px 12px;border-bottom:1px solid var(--rule-light);vertical-align:top;}
+.hn-table tr:last-child td{border-bottom:none;}
+.hn-table .rank{
+  color:var(--accent);font-weight:900;width:34px;text-align:center;
+  font-family:'Playfair Display',Georgia,serif;font-size:16px;
+}
+.hn-table .hn-title a{color:var(--ink);font-weight:700;text-decoration:none;font-size:14.5px;}
+.hn-table .hn-title a:hover{color:var(--accent);text-decoration:underline;}
+.hn-table .hn-score{color:var(--orange);font-weight:800;white-space:nowrap;width:74px;font-variant-numeric:tabular-nums;}
+.hn-table .hn-comments{color:var(--muted);white-space:nowrap;width:64px;font-variant-numeric:tabular-nums;}
+.tag{
+  display:inline-block;font-size:10.5px;color:var(--accent2);
+  background:transparent;border:1px solid var(--accent2);
+  padding:1px 7px;border-radius:0;white-space:nowrap;
+  text-transform:uppercase;letter-spacing:.05em;
+}
+
+/* GitHub / PH grid */
+.gh-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:13px;}
+.gh-card,.ph-card{
+  background:var(--paper2);border:1px solid var(--rule-light);
+  border-radius:2px;padding:14px 15px;transition:all .18s ease;
+}
+.gh-card:hover,.ph-card:hover{border-color:var(--ink);box-shadow:0 4px 14px rgba(0,0,0,.08);}
+.gh-head,.ph-top{display:flex;align-items:center;gap:8px;margin-bottom:7px;}
+.gh-name{
+  font-weight:800;color:var(--ink);text-decoration:none;font-size:14.5px;
+  font-family:Georgia,serif;
+}
+.gh-name:hover{color:var(--accent);}
+.gh-lang{
+  margin-left:auto;font-size:10.5px;color:var(--muted);
+  background:transparent;border:1px solid var(--rule-light);
+  padding:1px 7px;border-radius:0;text-transform:uppercase;letter-spacing:.05em;
+}
+.gh-desc,.ph-desc{font-size:13px;color:var(--ink2);line-height:1.55;}
+.gh-meta{display:flex;gap:14px;margin-top:9px;font-size:12px;font-variant-numeric:tabular-nums;}
+.gh-today{color:var(--green);font-weight:800;}
+.gh-total{color:var(--orange);font-weight:700;}
+.ph-rank{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:26px;height:26px;border-radius:50%;background:var(--accent);
+  color:var(--paper);font-size:12px;font-weight:900;
+  font-family:'Playfair Display',Georgia,serif;
+}
+.ph-name{font-size:16px;font-weight:900;color:var(--ink);text-decoration:none;font-family:'Playfair Display','Noto Serif SC',Georgia,serif;}
+.ph-name:hover{color:var(--accent);}
+.ph-up{color:var(--green);font-weight:800;}
+.ph-topics{color:var(--muted);font-size:11px;}
+
+/* Insights */
+.insight{
+  background:var(--paper2);border:1px solid var(--rule-light);
+  border-left:4px solid var(--accent);border-radius:0;
+  padding:16px 18px;margin-bottom:14px;
+}
+.insight-head{display:flex;align-items:center;gap:9px;margin-bottom:6px;}
+.insight-dot{width:9px;height:9px;border-radius:50%;background:var(--accent);}
+.insight-head h3{margin:0;font-size:16px;font-family:'Playfair Display','Noto Serif SC',Georgia,serif;font-weight:800;}
+.insight-src{
+  margin-left:auto;font-size:10.5px;color:var(--muted);
+  border:1px solid var(--rule-light);padding:2px 8px;border-radius:0;
+  text-transform:uppercase;letter-spacing:.05em;
+}
+.insight p{margin:4px 0 0;color:var(--ink2);font-size:13.5px;}
+
+/* Footer */
+footer.site-footer{
+  margin-top:40px;padding:22px 24px;text-align:center;
+  border-top:3px double var(--rule);color:var(--muted);
+  font-size:12px;line-height:1.7;font-style:italic;
+}
+footer.site-footer a{color:var(--accent2);text-decoration:none;}
+.note{
+  font-size:12px;color:var(--muted);background:var(--paper2);
+  border:1px solid var(--rule-light);border-radius:0;
+  padding:10px 13px;margin:0 0 14px;font-style:italic;
+}
+</style>
+<style>
+.wrap{max-width:1180px;--summary-w:290px;}
+.hn-window-note{font-size:12px;color:#6b6357;background:#efe7d8;border-left:3px solid #9b1b1b;padding:7px 11px;margin-bottom:16px;line-height:1.6;}
+/* 公共：综述栏 */
+.col-summary{border:1px solid #ddd2c0;padding:13px 15px;background:#efe7d8;}
+.col-title{font-family:'Playfair Display',Georgia,serif;font-size:12.5px;letter-spacing:.07em;text-transform:uppercase;color:#9b1b1b;border-bottom:2px solid #9b1b1b;padding-bottom:6px;margin-bottom:12px;}
+.col-summary p{margin:0 0 11px;font-family:'Source Serif 4',Georgia,serif;font-size:13px;line-height:1.72;color:#2a2a2a;}
+.col-summary p:last-child{margin-bottom:0;}
+.col-summary .hl{color:#9b1b1b;font-weight:600;}
+/* 公共：滚动内容栏（高度由 JS 设为左侧综述高度；CSS 兜底防 JS 失效） */
+.col-mid,.col-right{overflow-y:scroll;scrollbar-width:thin;border:1px solid #ddd2c0;background:#efe7d8;padding:10px 13px;max-height:80vh;overscroll-behavior:contain;}
+.col-mid::-webkit-scrollbar,.col-right::-webkit-scrollbar{width:8px;}
+.col-mid::-webkit-scrollbar-thumb,.col-right::-webkit-scrollbar-thumb{background:#c9bca6;border-radius:4px;}
+.col-mid .zh,.col-right .zh{font-size:10.5px;color:#8a8175;}
+/* HN 三栏：左综述(固定宽，与 GitHub 左栏一致) / 中 Top20 / 右全量 */
+.hn-three{display:grid;grid-template-columns:var(--summary-w) 1.6fr 1.15fr;gap:18px;align-items:start;}
+@media(max-width:1000px){.hn-three{grid-template-columns:1fr;}}
+.hn-col-title{font-family:'Playfair Display',Georgia,serif;font-size:12.5px;letter-spacing:.07em;text-transform:uppercase;color:#9b1b1b;border-bottom:2px solid #9b1b1b;padding-bottom:6px;margin-bottom:12px;}
+.hn-top-item{padding:8px 0;border-bottom:1px solid #ddd2c0;}
+.hn-top-item a{font-family:'Source Serif 4',Georgia,serif;font-size:13px;color:#1a1a1a;text-decoration:none;font-weight:600;line-height:1.35;}
+.hn-top-item a:hover{color:#9b1b1b;}
+.hn-rank{color:#9b1b1b;font-weight:700;margin-right:6px;font-family:'Playfair Display',serif;}
+.hn-top-meta{font-size:11px;color:#6b6357;margin-top:2px;}
+.hn-all-row{padding:5px 0;border-bottom:1px dotted #ccc1ad;font-size:12px;line-height:1.45;}
+.hn-all-row a{color:#1a3a5c;text-decoration:none;}
+.hn-all-row a:hover{text-decoration:underline;}
+.hn-all-meta{color:#9b1b1b;font-weight:600;font-size:10.5px;margin-right:4px;}
+/* 两栏：左侧当日综述(固定宽) + 右侧原内容（GitHub / Product Hunt / Papers） */
+.two-col{display:grid;grid-template-columns:var(--summary-w) 1fr;gap:26px;align-items:start;}
+@media(max-width:900px){.two-col{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a class="back-link" href="index.html">← 返回归档</a>
+  <div class="kicker">The Tech Dispatch</div>
+  <h1>🔥 今日技术热点速览</h1>
+  <div class="date">2026-11-09 · 星期一</div>
+  <div class="sub">数据来源：Hacker News · GitHub Trending · Product Hunt · Hugging Face Papers</div>
+</header>
+
+<nav class="quick-nav">
+  <a href="#top-story">🔥 今日头条</a>
+  <a href="#hn">📰 Hacker News</a>
+  <a href="#github">⭐ GitHub</a>
+  <a href="#producthunt">🚀 Product Hunt</a>
+  <a href="#papers">📄 Papers</a>
+  <a href="#insights">💡 趋势洞察</a>
+</nav>
+
+<div class="wrap">
+
+  <section id="top-story" class="hero">
+    <div class="sec-title"><span class="emo">🔥</span><span>今日头条 · Top 3</span></div>
+    <div class="hero-grid">
+      <a class="hero-card" href="https://news.ycombinator.com/item?id=50410107" target="_blank" rel="noopener">
+        <div class="hero-meta">HN 703▲ / 435💬 · 今日分数与评论双第一 · Hacker News 讨论页</div>
+        <div class="hero-title">Goodbye Claude, hello Pi</div>
+        <div class="zh">告别 Claude，转向 Pi：一个重度用户的迁移记录。评论区反复出现的词是「迁移成本」——prompt、上下文、工具链、审计，当它从技术问题变成财务问题，多供应商就成了默认选项。</div>
+      </a>
+      <a class="hero-card" href="https://news.ycombinator.com/item?id=50416801" target="_blank" rel="noopener">
+        <div class="hero-meta">HN 384▲ / 298💬 · Hacker News 讨论页</div>
+        <div class="hero-title">Nvidia Board of Directors Is Investigating Jensen Huang</div>
+        <div class="zh">英伟达董事会正在调查黄仁勋；同日黄仁勋就私人关系传闻致信员工（351▲/368💬）。市场真正定价的是「一家公司把整条 AI 供应链押在一个人身上」的治理风险。</div>
+      </a>
+      <a class="hero-card" href="https://github.com/sherlock-project/sherlock" target="_blank" rel="noopener">
+        <div class="hero-meta">GitHub Trending +2,373★ 今日第一 · 总 103,785★</div>
+        <div class="hero-title">sherlock-project/sherlock</div>
+        <div class="zh">老牌 OSINT 工具「按用户名跨社交网络搜人」单日 +2,373★ 登顶；同榜 Vercel agent-browser（+815★）、Meta astryx（+875★）、anthropics/skills（+792★）构成 agent 基建三连。</div>
+      </a>
+    </div>
+  </section>
+
+  <section id="hn" class="section">
+    <div class="sec-title"><span class="emo">📰</span><span>Hacker News · 全窗口热门</span></div>
+    <div class="hn-window-note">时间窗：2026-11-08 10:00 → 2026-11-09 10:00 (CST) · 窗口内共 <b>700</b> 条新帖 · 排序：分数与评论 min-max 归一化后加权（0.6×分数 + 0.4×评论），降序取 Top20（中栏）。右栏为窗口内全量，滚动浏览。左栏「当日综述」完整展示、不滚动；中/右栏高度与左栏对齐。</div>
+    <div class="hn-three">
+      <div class="col-summary">
+        <div class="col-title">📝 当日综述</div>
+        <div class="hn-summary"><p>本窗口（<span class="hl">11/08 10:00 → 11/09 10:00 CST</span>）Hacker News 共 <span class="hl">700 条</span>新帖（全量落库）。分数与评论双第一是一篇标题朴素的迁移记录：<span class="hl">「告别 Claude，转向 Pi」</span>（<span class="hl">702▲/435💬</span>）；紧跟其后的是 <span class="hl">高盛把 Claude Code 从银行家和交易员的机器上撤掉</span>（<span class="hl">607▲/359💬</span>）。今天最响的一声不是新模型发布，而是<b>大用户在重新计算「绑死一家模型供应商」的成本</b>。</p>
+<p><b>主线一：模型忠诚度开始有价格。</b>一边是个人把主力切走（702▲/435💬），一边是投行成建制撤编（607▲/359💬）；同日 <span class="hl">OpenAI 以 1.25 万亿美元估值融资 110 亿美元</span>（181▲/202💬）说明资本仍在给头部定价，而 <span class="hl">苹果 CEO 施压软件负责人要更激进的 AI 战略</span>（58💬）则暴露了追赶方的焦虑。讨论里反复出现同一个词：迁移成本——prompt、上下文、工具链、审计。当它从技术问题变成财务问题，多供应商就成了默认选项。</p>
+<p><b>主线二：英伟达人设与治理同日受压。</b><span class="hl">黄仁勋致员工的信</span>（351▲/368💬，评论数全窗第二）与 <span class="hl">董事会正在调查黄仁勋</span>（384▲/298💬）两条并排挂在榜上，合计 749▲/666💬。评论区争论的其实不是八卦，而是「一家公司把整条 AI 供应链押在一个人身上」的风险定价——这和主线一是同一个问题的两个尺度。</p>
+<p><b>主线三：Agent 的记忆与上下文开始要标准。</b><span class="hl">Agent memory needs its OpenTelemetry moment</span>（175▲/103💬）提出给记忆层定开放格式；配套的还有 <span class="hl">Llama-modchip：64GB 内存无 GPU 跑 284B DeepSeek</span>（365▲/158💬，本地推理把成本压到零边际）与 <span class="hl">GitHub 又挂了</span>（120▲/127💬）——依赖链的脆弱性在同一天被反复展示。手艺与人间照常：<span class="hl">把写作当思考工具</span>（280▲/83💬）、<span class="hl">为什么我不在编码里用 LLM</span>（108▲/220💬）、<span class="hl">RAM Altman 脚本每天报告闲置内存</span>（216▲/102💬）、<span class="hl">Dux：Wayland 桌面外壳</span>（201▲/61💬）、<span class="hl">KetchUp：Rust+WebGPU 版 SketchUp</span>（202▲/49💬）。排序：分数与评论 min-max 归一化加权（<span class="hl">0.6×分数 + 0.4×评论</span>）得 hot 降序取 Top20（中栏）；右栏为窗口全量 <span class="hl">700 条</span>、按同一热度排序、固定框内滚动——确保<span class="hl">零遗漏</span>。</p></div>
+        <div class="col-title" style="margin-top:18px;">⚠️ 漏网高讨论</div>
+        <div class="hn-summary"><p style='margin:0;'><span class='hl'>Silicon Valley Promises AI Will Cure Dis</span>（108💬 / 89▲） · <span class='hl'>A lack of male protagonists is making it</span>（104💬 / 42▲） · <span class='hl'>ZapFast: A fast, native WhatsApp client </span>（87💬 / 99▲）</p><p style='margin:6px 0 0;color:#6b6357;font-size:12px;'>「高分低讨论」之外的有效信号，均可在右栏翻到。</p></div>
+      </div>
+      <div class="col-mid">
+        <div class="hn-col-title">🔥 算法 Top 20</div>
+        <div class="hn-top-item">
+          <span class="hn-rank">1</span><a href="https://news.ycombinator.com/item?id=50410107" target="_blank" rel="noopener">Goodbye Claude, hello Pi</a>
+          <div class="hn-top-meta">703▲ · 435💬 · hot 0.9671</div><div class="zh">告别 Claude，转向 Pi：一个重度用户的迁移记录</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">2</span><a href="https://news.ycombinator.com/item?id=50415628" target="_blank" rel="noopener">Goldman Sachs is pulling Claude Code from its bankers and traders</a>
+          <div class="hn-top-meta">608▲ · 359💬 · hot 0.8218</div><div class="zh">高盛撤下银行家与交易员电脑上的 Claude Code</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">3</span><a href="https://news.ycombinator.com/item?id=50418016" target="_blank" rel="noopener">Nvidia CEO Jensen Huang&#x27;s letter to staff about affair</a>
+          <div class="hn-top-meta">352▲ · 370💬 · hot 0.6122</div><div class="zh">英伟达 CEO 黄仁勋就私人关系传闻致员工的信</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">4</span><a href="https://news.ycombinator.com/item?id=50416801" target="_blank" rel="noopener">Nvidia Board of Directors Is Investigating Jensen Huang</a>
+          <div class="hn-top-meta">384▲ · 298💬 · hot 0.5788</div><div class="zh">英伟达董事会正在调查黄仁勋</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">5</span><a href="https://news.ycombinator.com/item?id=50417407" target="_blank" rel="noopener">Ask HN: What are you working on? (November 2026)</a>
+          <div class="hn-top-meta">128▲ · 474💬 · hot 0.5085</div><div class="zh">Ask HN：你在做什么项目？（2026 年 11 月）</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">6</span><a href="https://news.ycombinator.com/item?id=50411961" target="_blank" rel="noopener">Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU</a>
+          <div class="hn-top-meta">366▲ · 158💬 · hot 0.4453</div><div class="zh">Llama-modchip：在 64GB 内存、没有 GPU 的机器上跑 284B 的 DeepSeek</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">7</span><a href="https://news.ycombinator.com/item?id=50412318" target="_blank" rel="noopener">Person of Interest</a>
+          <div class="hn-top-meta">289▲ · 188💬 · hot 0.4048</div><div class="zh">《疑犯追踪》十五年后重看：那台「机器」离我们有多近</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">8</span><a href="https://news.ycombinator.com/item?id=50414427" target="_blank" rel="noopener">Tesla Hasn&#x27;t Had a Successful New Product Launch Since JB Straubel Stepped Down</a>
+          <div class="hn-top-meta">194▲ · 248💬 · hot 0.3742</div><div class="zh">自 JB Straubel 离开后，特斯拉再没有一次成功的新品发布</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">9</span><a href="https://news.ycombinator.com/item?id=50416158" target="_blank" rel="noopener">Outlook.com Is Quietly Rejecting Email from Domains Without DMARC</a>
+          <div class="hn-top-meta">247▲ · 188💬 · hot 0.3689</div><div class="zh">Outlook.com 正在悄悄拒收未配 DMARC 的域名邮件</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">10</span><a href="https://news.ycombinator.com/item?id=50413822" target="_blank" rel="noopener">OpenAI raises $11B at a $1.25T valuation</a>
+          <div class="hn-top-meta">181▲ · 202💬 · hot 0.3243</div><div class="zh">OpenAI 以 1.25 万亿美元估值融资 110 亿美元</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">11</span><a href="https://news.ycombinator.com/item?id=50412067" target="_blank" rel="noopener">Writing as a thinking tool</a>
+          <div class="hn-top-meta">281▲ · 83💬 · hot 0.3094</div><div class="zh">把写作当思考工具：写下来才想得清楚</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">12</span><a href="https://news.ycombinator.com/item?id=50412591" target="_blank" rel="noopener">Why I will not be using LLMs in my coding</a>
+          <div class="hn-top-meta">108▲ · 220💬 · hot 0.2771</div><div class="zh">为什么我不在编码里用大模型</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">13</span><a href="https://news.ycombinator.com/item?id=50415172" target="_blank" rel="noopener">RAM Altman: Linux Script Emails Sam Altman Daily How Much Unused RAM in Your PC</a>
+          <div class="hn-top-meta">216▲ · 102💬 · hot 0.2698</div><div class="zh">RAM Altman：一个 Linux 脚本每天给 Sam Altman 发邮件，报告你电脑里闲置的内存</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">14</span><a href="https://news.ycombinator.com/item?id=50416363" target="_blank" rel="noopener">How I Fight AI Brain Fry</a>
+          <div class="hn-top-meta">155▲ · 130💬 · hot 0.2413</div><div class="zh">我怎么对抗「AI 用脑过度」</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">15</span><a href="https://news.ycombinator.com/item?id=50411467" target="_blank" rel="noopener">Agent memory needs its OpenTelemetry moment</a>
+          <div class="hn-top-meta">175▲ · 103💬 · hot 0.2356</div><div class="zh">Agent 记忆需要它的 OpenTelemetry 时刻：先把格式标准化</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">16</span><a href="https://news.ycombinator.com/item?id=50416053" target="_blank" rel="noopener">Dux: Free, open-source Wayland desktop shell with file manager and theming</a>
+          <div class="hn-top-meta">201▲ · 61💬 · hot 0.2224</div><div class="zh">Dux：免费开源的 Wayland 桌面外壳，自带文件管理器与主题</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">17</span><a href="https://news.ycombinator.com/item?id=50418176" target="_blank" rel="noopener">KetchUp – Open-source SketchUp alternative built with Rust and WebGPU</a>
+          <div class="hn-top-meta">205▲ · 51💬 · hot 0.2174</div><div class="zh">KetchUp：用 Rust + WebGPU 写的开源 SketchUp 替代品</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">18</span><a href="https://news.ycombinator.com/item?id=50412152" target="_blank" rel="noopener">Petered</a>
+          <div class="hn-top-meta">159▲ · 92💬 · hot 0.2127</div><div class="zh">「彼得化」之后：升到不胜任层级的人，会变成对所有人的威胁</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">19</span><a href="https://news.ycombinator.com/item?id=50411818" target="_blank" rel="noopener">GitHub Down Again?</a>
+          <div class="hn-top-meta">120▲ · 127💬 · hot 0.2089</div><div class="zh">GitHub 又挂了？</div>
+        </div>
+        <div class="hn-top-item">
+          <span class="hn-rank">20</span><a href="https://news.ycombinator.com/item?id=50409856" target="_blank" rel="noopener">Consumer brain wave headsets threaten privacy</a>
+          <div class="hn-top-meta">116▲ · 91💬 · hot 0.1751</div><div class="zh">消费级脑电头环正在把脑数据喂给 AI，隐私告急</div>
+        </div>
+      </div>
+      <div class="col-right">
+        <div class="hn-col-title">🗂️ 全量（窗口内 · 滚动）</div>
+<div class="hn-all-row"><span class="hn-all-meta">1. 703▲/435💬</span> <a href="https://news.ycombinator.com/item?id=50410107" target="_blank" rel="noopener">Goodbye Claude, hello Pi</a><div class="zh">告别 Claude，转向 Pi：一个重度用户的迁移记录</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">2. 608▲/359💬</span> <a href="https://news.ycombinator.com/item?id=50415628" target="_blank" rel="noopener">Goldman Sachs is pulling Claude Code from its bankers and traders</a><div class="zh">高盛撤下银行家与交易员电脑上的 Claude Code</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">3. 352▲/370💬</span> <a href="https://news.ycombinator.com/item?id=50418016" target="_blank" rel="noopener">Nvidia CEO Jensen Huang&#x27;s letter to staff about affair</a><div class="zh">英伟达 CEO 黄仁勋就私人关系传闻致员工的信</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">4. 384▲/298💬</span> <a href="https://news.ycombinator.com/item?id=50416801" target="_blank" rel="noopener">Nvidia Board of Directors Is Investigating Jensen Huang</a><div class="zh">英伟达董事会正在调查黄仁勋</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">5. 128▲/474💬</span> <a href="https://news.ycombinator.com/item?id=50417407" target="_blank" rel="noopener">Ask HN: What are you working on? (November 2026)</a><div class="zh">Ask HN：你在做什么项目？（2026 年 11 月）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">6. 366▲/158💬</span> <a href="https://news.ycombinator.com/item?id=50411961" target="_blank" rel="noopener">Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU</a><div class="zh">Llama-modchip：在 64GB 内存、没有 GPU 的机器上跑 284B 的 DeepSeek</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">7. 289▲/188💬</span> <a href="https://news.ycombinator.com/item?id=50412318" target="_blank" rel="noopener">Person of Interest</a><div class="zh">《疑犯追踪》十五年后重看：那台「机器」离我们有多近</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">8. 194▲/248💬</span> <a href="https://news.ycombinator.com/item?id=50414427" target="_blank" rel="noopener">Tesla Hasn&#x27;t Had a Successful New Product Launch Since JB Straubel Stepped Down</a><div class="zh">自 JB Straubel 离开后，特斯拉再没有一次成功的新品发布</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">9. 247▲/188💬</span> <a href="https://news.ycombinator.com/item?id=50416158" target="_blank" rel="noopener">Outlook.com Is Quietly Rejecting Email from Domains Without DMARC</a><div class="zh">Outlook.com 正在悄悄拒收未配 DMARC 的域名邮件</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">10. 181▲/202💬</span> <a href="https://news.ycombinator.com/item?id=50413822" target="_blank" rel="noopener">OpenAI raises $11B at a $1.25T valuation</a><div class="zh">OpenAI 以 1.25 万亿美元估值融资 110 亿美元</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">11. 281▲/83💬</span> <a href="https://news.ycombinator.com/item?id=50412067" target="_blank" rel="noopener">Writing as a thinking tool</a><div class="zh">把写作当思考工具：写下来才想得清楚</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">12. 108▲/220💬</span> <a href="https://news.ycombinator.com/item?id=50412591" target="_blank" rel="noopener">Why I will not be using LLMs in my coding</a><div class="zh">为什么我不在编码里用大模型</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">13. 216▲/102💬</span> <a href="https://news.ycombinator.com/item?id=50415172" target="_blank" rel="noopener">RAM Altman: Linux Script Emails Sam Altman Daily How Much Unused RAM in Your PC</a><div class="zh">RAM Altman：一个 Linux 脚本每天给 Sam Altman 发邮件，报告你电脑里闲置的内存</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">14. 155▲/130💬</span> <a href="https://news.ycombinator.com/item?id=50416363" target="_blank" rel="noopener">How I Fight AI Brain Fry</a><div class="zh">我怎么对抗「AI 用脑过度」</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">15. 175▲/103💬</span> <a href="https://news.ycombinator.com/item?id=50411467" target="_blank" rel="noopener">Agent memory needs its OpenTelemetry moment</a><div class="zh">Agent 记忆需要它的 OpenTelemetry 时刻：先把格式标准化</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">16. 201▲/61💬</span> <a href="https://news.ycombinator.com/item?id=50416053" target="_blank" rel="noopener">Dux: Free, open-source Wayland desktop shell with file manager and theming</a><div class="zh">Dux：免费开源的 Wayland 桌面外壳，自带文件管理器与主题</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">17. 205▲/51💬</span> <a href="https://news.ycombinator.com/item?id=50418176" target="_blank" rel="noopener">KetchUp – Open-source SketchUp alternative built with Rust and WebGPU</a><div class="zh">KetchUp：用 Rust + WebGPU 写的开源 SketchUp 替代品</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">18. 159▲/92💬</span> <a href="https://news.ycombinator.com/item?id=50412152" target="_blank" rel="noopener">Petered</a><div class="zh">「彼得化」之后：升到不胜任层级的人，会变成对所有人的威胁</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">19. 120▲/127💬</span> <a href="https://news.ycombinator.com/item?id=50411818" target="_blank" rel="noopener">GitHub Down Again?</a><div class="zh">GitHub 又挂了？</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">20. 116▲/91💬</span> <a href="https://news.ycombinator.com/item?id=50409856" target="_blank" rel="noopener">Consumer brain wave headsets threaten privacy</a><div class="zh">消费级脑电头环正在把脑数据喂给 AI，隐私告急</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">21. 89▲/108💬</span> <a href="https://news.ycombinator.com/item?id=50415817" target="_blank" rel="noopener">Silicon Valley Promises AI Will Cure Disease. Drugmaker CEOs Aren&#x27;t Buying It</a><div class="zh">硅谷说 AI 能治好疾病，药企 CEO 们不买账</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">22. 99▲/87💬</span> <a href="https://news.ycombinator.com/item?id=50409855" target="_blank" rel="noopener">ZapFast: A fast, native WhatsApp client in Rust and egui</a><div class="zh">ZapFast：用 Rust + egui 写的原生 WhatsApp 客户端</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">23. 126▲/55💬</span> <a href="https://news.ycombinator.com/item?id=50410249" target="_blank" rel="noopener">ISponsorBlockTV: SponsorBlock client for all YouTube TV clients</a><div class="zh">ISponsorBlockTV：给所有 YouTube 电视客户端用的 SponsorBlock 客户端</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">24. 78▲/82💬</span> <a href="https://news.ycombinator.com/item?id=50414331" target="_blank" rel="noopener">UK House of Lords to propose mandatory CSAM detection software on smartphones</a><div class="zh">英国上议院拟推动智能手机预装强制 CSAM 检测软件</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">25. 92▲/55💬</span> <a href="https://news.ycombinator.com/item?id=50416471" target="_blank" rel="noopener">Starship Flight 15 on 11/13 plans to catch both booster and ship</a><div class="zh">星舰第 15 次试飞定在 11/13，计划同时回收助推器与飞船</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">26. 42▲/104💬</span> <a href="https://news.ycombinator.com/item?id=50412954" target="_blank" rel="noopener">A lack of male protagonists is making it harder to get young boys into books</a><div class="zh">缺少男性主角，正在让小男孩远离阅读</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">27. 95▲/47💬</span> <a href="https://news.ycombinator.com/item?id=50415135" target="_blank" rel="noopener">A Little Snitch for Windows</a><div class="zh">Windows 版 Little Snitch：出站连接防火墙</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">28. 110▲/26💬</span> <a href="https://news.ycombinator.com/item?id=50415281" target="_blank" rel="noopener">Ads in Popular Apps Give Police a Powerful Tool to Spy on Users</a><div class="zh">热门 App 里的广告 SDK，成了警方追踪用户的强力工具</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">29. 86▲/42💬</span> <a href="https://news.ycombinator.com/item?id=50413769" target="_blank" rel="noopener">I&#x27;m not a fan of Deno&#x27;s security model (2024)</a><div class="zh">我不喜欢 Deno 的权限安全模型（2024）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">30. 78▲/39💬</span> <a href="https://news.ycombinator.com/item?id=50416456" target="_blank" rel="noopener">The Web Is More Than Enough, by Paul Ford</a><div class="zh">Paul Ford：Web 本身就够用了</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">31. 94▲/18💬</span> <a href="https://news.ycombinator.com/item?id=50412072" target="_blank" rel="noopener">JIT bitmap text rendering for microcontrollers</a><div class="zh">为微控制器做 JIT 位图文字渲染</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">32. 62▲/41💬</span> <a href="https://news.ycombinator.com/item?id=50418818" target="_blank" rel="noopener">Herb Sutter: When a language&#x27;s creator and its owners strongly disagree [pdf]</a><div class="zh">Herb Sutter：当语言的创造者与它的所有者严重分歧（PDF）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">33. 88▲/14💬</span> <a href="https://news.ycombinator.com/item?id=50418182" target="_blank" rel="noopener">Chimera Vocal Synth</a><div class="zh">Chimera：浏览器里的歌声合成器</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">34. 54▲/41💬</span> <a href="https://news.ycombinator.com/item?id=50413885" target="_blank" rel="noopener">Drones built to look like birds evaded detection at Air Force tech exercise</a><div class="zh">仿鸟无人机在空军技术演习中成功躲过探测</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">35. 71▲/23💬</span> <a href="https://news.ycombinator.com/item?id=50410359" target="_blank" rel="noopener">Kirlian Photography: Building Your Own Equipment</a><div class="zh">基尔良摄影：自己动手做拍摄设备</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">36. 56▲/38💬</span> <a href="https://news.ycombinator.com/item?id=50414524" target="_blank" rel="noopener">Top Astrophysicist Leaves U.S.</a><div class="zh">顶尖天体物理学家离开美国</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">37. 34▲/58💬</span> <a href="https://news.ycombinator.com/item?id=50414021" target="_blank" rel="noopener">Apple CEO Presses Software Chief to Pursue More Ambitious AI Strategy</a><div class="zh">苹果 CEO 施压软件负责人，要求更激进的 AI 战略</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">38. 54▲/23💬</span> <a href="https://news.ycombinator.com/item?id=50419215" target="_blank" rel="noopener">Unlocking any car from X brand in most of the world</a><div class="zh">在世界上多数地区打开某品牌任意一辆车：一次车联网安全拆解</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">39. 65▲/7💬</span> <a href="https://news.ycombinator.com/item?id=50412830" target="_blank" rel="noopener">How to prove equations using diagrams, part 1</a><div class="zh">如何用图证明等式（第一部分）</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">40. 42▲/30💬</span> <a href="https://news.ycombinator.com/item?id=50410649" target="_blank" rel="noopener">My parents chose to die together and I was left to grieve alone</a><div class="zh">父母选择一起离世，留下我独自哀悼</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">41. 29▲/42💬</span> <a href="https://news.ycombinator.com/item?id=50411522" target="_blank" rel="noopener">I&#x27;m Rewriting IBM SPSS Statistics in 100% Safe Rust, Alone</a><div class="zh">我一个人在用 100% 安全 Rust 重写 IBM SPSS Statistics</div></div>
+<div class="hn-all-row"><span class="hn-all-meta">42. 39▲/27💬</span> <a href="https://news.ycombinator.com/item?id=50412760" target="_blank" rel="noopener">Anthropic strikes $3.4B deal to generate gas-fired power for data centres</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">43. 37▲/28💬</span> <a href="https://news.ycombinator.com/item?id=50416014" target="_blank" rel="noopener">Playing with the STM32MP2</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">44. 45▲/11💬</span> <a href="https://news.ycombinator.com/item?id=50411083" target="_blank" rel="noopener">WaveDudeNext 2D Wave Simulator</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">45. 43▲/12💬</span> <a href="https://news.ycombinator.com/item?id=50415078" target="_blank" rel="noopener">A field guide to CAPTCHA types and how they break</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">46. 45▲/8💬</span> <a href="https://news.ycombinator.com/item?id=50412766" target="_blank" rel="noopener">RAM-Altman: a bash script that emails Sam Altman about your unused RAM</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">47. 40▲/11💬</span> <a href="https://news.ycombinator.com/item?id=50416679" target="_blank" rel="noopener">Nvidia Board to Probe Spying Case After CEO Admits Affair</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">48. 37▲/14💬</span> <a href="https://news.ycombinator.com/item?id=50414234" target="_blank" rel="noopener">I have never seen a game fail because the artists were too slow</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">49. 19▲/26💬</span> <a href="https://news.ycombinator.com/item?id=50410279" target="_blank" rel="noopener">I Use Development-Driven Specs, Not Spec-Driven Development</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">50. 29▲/13💬</span> <a href="https://news.ycombinator.com/item?id=50415750" target="_blank" rel="noopener">Playing Zork 1 on a CP/M emulator on Linux (2021)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">51. 30▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415498" target="_blank" rel="noopener">The efficiency trap: why optimising everything can backfire, badly</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">52. 19▲/9💬</span> <a href="https://news.ycombinator.com/item?id=50409979" target="_blank" rel="noopener">Microsoft Removes PC-to-PC Migration from Windows 11, Pushes Users to OneDrive</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">53. 21▲/6💬</span> <a href="https://news.ycombinator.com/item?id=50418975" target="_blank" rel="noopener">I&#x27;m Not Convinced the AI Bubble Exists</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">54. 20▲/5💬</span> <a href="https://news.ycombinator.com/item?id=50410253" target="_blank" rel="noopener">Show HN: Maple – Sub-2-BPW Moe Pruning to Run Gemma 4 26B at 45 TPS on a 6GB GPU</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">55. 18▲/5💬</span> <a href="https://news.ycombinator.com/item?id=50416263" target="_blank" rel="noopener">Fishermen find Royal Caribbean cruise ship employee in water 20 miles off coast</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">56. 5▲/18💬</span> <a href="https://news.ycombinator.com/item?id=50412307" target="_blank" rel="noopener">Ask HN: What are your advice for a CS/IT student for the future?</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">57. 20▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50414264" target="_blank" rel="noopener">Aaron Swartz would have turned 40 today. His &#x27;legacy lives on&#x27; says FSF</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">58. 17▲/3💬</span> <a href="https://news.ycombinator.com/item?id=50416787" target="_blank" rel="noopener">Nvidia Opens Investigation into Jensen Huang&#x27;s Relationship with Chinese Spy</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">59. 15▲/5💬</span> <a href="https://news.ycombinator.com/item?id=50413229" target="_blank" rel="noopener">Old, Polluting Jet Engines Are Being Scavenged to Power Data Centers</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">60. 16▲/3💬</span> <a href="https://news.ycombinator.com/item?id=50415161" target="_blank" rel="noopener">US believes Nvidia&#x27;s Huang had romantic relationship with alleged Chinese spy</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">61. 10▲/7💬</span> <a href="https://news.ycombinator.com/item?id=50413732" target="_blank" rel="noopener">Sunshine Atlas – the climate of 3,833 destinations, month by month</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">62. 7▲/10💬</span> <a href="https://news.ycombinator.com/item?id=50410796" target="_blank" rel="noopener">70% of Brits say please or thank you when speaking to AI, some even apologize</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">63. 11▲/5💬</span> <a href="https://news.ycombinator.com/item?id=50417956" target="_blank" rel="noopener">Trump Media investors lost 2.2B dollars</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">64. 9▲/7💬</span> <a href="https://news.ycombinator.com/item?id=50417478" target="_blank" rel="noopener">Show HN: SafeScript, a safe version of JavaScript for executing untrusted code</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">65. 15▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416103" target="_blank" rel="noopener">Etsy changes terms to train AI on your creations, while blocking you doing it [video]</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">66. 14▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50416011" target="_blank" rel="noopener">Reverse engineering a vintage diode-transistor logic chip</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">67. 13▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50414445" target="_blank" rel="noopener">We deleted almost all our agent code, and other lessons from 100k PRs</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">68. 13▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50409986" target="_blank" rel="noopener">Show HN: LLM weight editing tool made by a 15-year-old</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">69. 7▲/8💬</span> <a href="https://news.ycombinator.com/item?id=50414155" target="_blank" rel="noopener">Scrine – Joyscroll books. Read any book one sentence at a time</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">70. 13▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50417283" target="_blank" rel="noopener">Nvidia launches investigation into CEO&#x27;s affair with suspected Chinese spy</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">71. 12▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50419973" target="_blank" rel="noopener">Video of Jensen Huang after learning about the Chinese honeypot scandal</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">72. 10▲/4💬</span> <a href="https://news.ycombinator.com/item?id=50417253" target="_blank" rel="noopener">There Is No Place in a Functional Society for Elon Musk</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">73. 12▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50417219" target="_blank" rel="noopener">Nvidia&#x27;s Jensen Huang admits to affair with Chinese spy</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">74. 7▲/6💬</span> <a href="https://news.ycombinator.com/item?id=50409992" target="_blank" rel="noopener">Anthropic warns that it&#x27;s close to RSI capability, a.k.a. self-building AI</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">75. 10▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50416386" target="_blank" rel="noopener">Systemd Loves Rust</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">76. 7▲/5💬</span> <a href="https://news.ycombinator.com/item?id=50415638" target="_blank" rel="noopener">Show HN: Recto – A tool that lets you visually edit what coding agents create</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">77. 5▲/7💬</span> <a href="https://news.ycombinator.com/item?id=50413633" target="_blank" rel="noopener">Controversy Surrounding Anduril Industries</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">78. 10▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50411981" target="_blank" rel="noopener">Investigating Jared Kushner&#x27;s Empire of Fraud and Corruption [video]</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">79. 9▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50415363" target="_blank" rel="noopener">Russia&#x27;s combat losses in the data of Rosstat</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">80. 9▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50411261" target="_blank" rel="noopener">Is Opus 5.5 nerfed? Thinking patterns changed on November 3</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">81. 8▲/3💬</span> <a href="https://news.ycombinator.com/item?id=50419019" target="_blank" rel="noopener">Tell HN: A flood of reports of Opus 5.5 being nerfed</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">82. 5▲/6💬</span> <a href="https://news.ycombinator.com/item?id=50413266" target="_blank" rel="noopener">Show HN: Micron – The Oberon with the Power of C</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">83. 10▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416293" target="_blank" rel="noopener">PDP-8/E Restoration Log</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">84. 10▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413632" target="_blank" rel="noopener">AI stance is not binary</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">85. 10▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411638" target="_blank" rel="noopener">ThinkStream – AI generates the work. We still need to understand it</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">86. 9▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50417488" target="_blank" rel="noopener">U.S. Cleared Nvidia Chips to Chinese Firms with Empty Offices and Troubling Ties</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">87. 9▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413357" target="_blank" rel="noopener">I Resist Generative &quot;AI&quot;</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">88. 8▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50418128" target="_blank" rel="noopener">Trump&#x27;s war in Iran driving shift from fossil fuels</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">89. 8▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50414363" target="_blank" rel="noopener">Leftwing Alliance Led by Yanis Varoufakis Loses Access to Bank Account</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">90. 8▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50411460" target="_blank" rel="noopener">Why Is Everyone Leaving New Zealand? [video]</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">91. 7▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50411093" target="_blank" rel="noopener">Crypto industry braces for reckoning over Trump ties</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">92. 6▲/3💬</span> <a href="https://news.ycombinator.com/item?id=50417248" target="_blank" rel="noopener">UK Government &#x27;looking seriously&#x27; at banning under-16s from Vinted and eBay</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">93. 4▲/5💬</span> <a href="https://news.ycombinator.com/item?id=50413014" target="_blank" rel="noopener">Roku Retires Fish Tank Screensaver to Reel Viewers into Roku City</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">94. 2▲/7💬</span> <a href="https://news.ycombinator.com/item?id=50413968" target="_blank" rel="noopener">Show HN: Loop – your coding agents, from your phone</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">95. 8▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413912" target="_blank" rel="noopener">I Just Deleted All My Agent Skills</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">96. 7▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50418284" target="_blank" rel="noopener">Nvidia Board to Probe Spying Case After CEO Admits Affair</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">97. 7▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50417891" target="_blank" rel="noopener">Nvidia opens investigation: Was CEO Jensen Huang target of foreign intelligence?</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">98. 7▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50415899" target="_blank" rel="noopener">US Bonds’ Election Rally Skids to Halt After Strong Jobs Data</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">99. 7▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50415476" target="_blank" rel="noopener">Show HN: Email-like interface to review, decide, and annotate agent work</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">100. 6▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50414699" target="_blank" rel="noopener">One of Classical Music&#x27;s Biggest Stars Says AI Is Degrading Our Taste</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">101. 6▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50410126" target="_blank" rel="noopener">Good Night, and Good Luck: AI, fear and what the job data says</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">102. 5▲/3💬</span> <a href="https://news.ycombinator.com/item?id=50416731" target="_blank" rel="noopener">Just Fucking Use IPv6</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">103. 4▲/4💬</span> <a href="https://news.ycombinator.com/item?id=50413137" target="_blank" rel="noopener">Who first said, &#x27;The best government is that which governs least&#x27;?</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">104. 3▲/5💬</span> <a href="https://news.ycombinator.com/item?id=50413708" target="_blank" rel="noopener">What have you learned that&#x27;s now outdated?</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">105. 1▲/7💬</span> <a href="https://news.ycombinator.com/item?id=50411756" target="_blank" rel="noopener">Is the era of the educated elite over? (M.Gove, T.Debbonaire, D.Susskind) [video]</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">106. 7▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414215" target="_blank" rel="noopener">From Infocom to 80 Days: An oral history of text games and interactive fiction</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">107. 7▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412294" target="_blank" rel="noopener">AI Alignment Considered Harmful</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">108. 6▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50413608" target="_blank" rel="noopener">Musk documentary from Alex Gibney (2026)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">109. 6▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50410747" target="_blank" rel="noopener">Reddit User Detects Decrease in Thinking Blocks for Opus 5.5</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">110. 4▲/3💬</span> <a href="https://news.ycombinator.com/item?id=50411269" target="_blank" rel="noopener">I Won&#x27;t Hire People Who Use Poor Grammar. Here&#x27;s Why (2012)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">111. 4▲/3💬</span> <a href="https://news.ycombinator.com/item?id=50410056" target="_blank" rel="noopener">Show HN: I&#x27;m 15 and my personal website looks like iMessage</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">112. 3▲/4💬</span> <a href="https://news.ycombinator.com/item?id=50418253" target="_blank" rel="noopener">Show HN:Free Web Tools</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">113. 3▲/4💬</span> <a href="https://news.ycombinator.com/item?id=50416177" target="_blank" rel="noopener">Buying Computers at Costco</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">114. 3▲/4💬</span> <a href="https://news.ycombinator.com/item?id=50415740" target="_blank" rel="noopener">Show HN: Is your product AI slop?</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">115. 3▲/4💬</span> <a href="https://news.ycombinator.com/item?id=50411036" target="_blank" rel="noopener">Ask HN: LLM-Resistant Publishing Strategies</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">116. 3▲/4💬</span> <a href="https://news.ycombinator.com/item?id=50410767" target="_blank" rel="noopener">We&#x27;re All Idiots</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">117. 6▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415905" target="_blank" rel="noopener">Canada&#x27;s AI translation tool keeps making hilarious mistakes</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">118. 6▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411385" target="_blank" rel="noopener">6th-grade Peano arithmetic broke OpenAI&#x27;s $100B Yang-Mills mass gap proof</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">119. 6▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410199" target="_blank" rel="noopener">The Maya used so much red paint that they poisoned their water with mercury</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">120. 6▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410130" target="_blank" rel="noopener">British soldier ignored order to pull his SIM card, then got blackmailed</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">121. 5▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50417726" target="_blank" rel="noopener">Nvidia CEO Jensen Huang admits affair, board to launch investigation</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">122. 5▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50417144" target="_blank" rel="noopener">Crows Make Decisions Twice as Fast as Humans</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">123. 5▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50414789" target="_blank" rel="noopener">Less coal, less oil: China&#x27;s emissions fall sharply</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">124. 5▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50413483" target="_blank" rel="noopener">Rosstat Leaks: combat deaths and mortality</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">125. 5▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50412713" target="_blank" rel="noopener">LLMs are terrible at designing AI systems</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">126. 4▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50418982" target="_blank" rel="noopener">Cruise ship pianist rescued after nine hours treading water miles from shore</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">127. 4▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50416026" target="_blank" rel="noopener">Tell HN: There is a housing crisis where Sam Altman lives</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">128. 4▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50413906" target="_blank" rel="noopener">Show HN: Aircheck shows every post your agents queued today on one screen</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">129. 4▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50413015" target="_blank" rel="noopener">$6M/Year Cosmetics Empire Crumbles After Adobe Website Disaster [video]</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">130. 4▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50412946" target="_blank" rel="noopener">Download Netscape Communicator or Navigator Software</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">131. 4▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50412719" target="_blank" rel="noopener">The price of the Raspberry Pi has gone over $350. This is insane</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">132. 4▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50410329" target="_blank" rel="noopener">Simon Winchester, Author of &#x27;The Professor and the Madman,&#x27; Has Died</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">133. 3▲/3💬</span> <a href="https://news.ycombinator.com/item?id=50415379" target="_blank" rel="noopener">Show HN: Build a PC in 3D in the Browser</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">134. 3▲/3💬</span> <a href="https://news.ycombinator.com/item?id=50414466" target="_blank" rel="noopener">US offers $20M reward for information about Iran&#x27;s nuclear programme</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">135. 3▲/3💬</span> <a href="https://news.ycombinator.com/item?id=50410961" target="_blank" rel="noopener">Amp is the best thing since sliced bread</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">136. 5▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416770" target="_blank" rel="noopener">FBI arrests man accused of using Steam games to drain victims&#x27; crypto wallets</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">137. 5▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415720" target="_blank" rel="noopener">Torrents Are Perfect for Model Distribution</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">138. 5▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415450" target="_blank" rel="noopener">Design Fiction Mood Board</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">139. 5▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411720" target="_blank" rel="noopener">We Visited China&#x27;s Stargate in Inner Mongolia</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">140. 5▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411326" target="_blank" rel="noopener">The Rise of Microdramas</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">141. 5▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410557" target="_blank" rel="noopener">The internet has a human slop problem, and AI is exposing it</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">142. 4▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50415927" target="_blank" rel="noopener">Why a pink potato-like robot is wheeling around Philadelphia</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">143. 4▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50415474" target="_blank" rel="noopener">Show HN: 25 LTC Bounty to find a bug in Lean 4 formal Yang-Mills proof</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">144. 4▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50412646" target="_blank" rel="noopener">Show HN: No more code reviews. Fuzz instead</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">145. 4▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50410977" target="_blank" rel="noopener">The message format that was already in ASCII</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">146. 4▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50410766" target="_blank" rel="noopener">Have a 401(k)? Help ProPublica Investigate What&#x27;s Happening to Your Money</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">147. 4▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50410653" target="_blank" rel="noopener">Modern LLMs have tiny GPTs hidden inside them</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">148. 4▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50410259" target="_blank" rel="noopener">MiniToolDesk Tools</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">149. 3▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50418715" target="_blank" rel="noopener">SS United States will be sunk, becoming the world&#x27;s largest artificial reef</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">150. 3▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50416397" target="_blank" rel="noopener">NCM: Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">151. 3▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50415959" target="_blank" rel="noopener">HN&#x27;s HTML has changed slightly</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">152. 3▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50415725" target="_blank" rel="noopener">Show HN: Elo Ratings for Tests, ODIs, and T20Is</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">153. 3▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50413970" target="_blank" rel="noopener">Show HN: Recalc – Spreadsheet where cells can be Claude Code or Codex terminals</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">154. 3▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50413647" target="_blank" rel="noopener">We review 4x more AI code without reading every line</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">155. 3▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50413487" target="_blank" rel="noopener">The Learjet Repo Man</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">156. 3▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50412564" target="_blank" rel="noopener">Why Hasn&#x27;t Figma Shut Down Already?</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">157. 3▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50411801" target="_blank" rel="noopener">Incredible take from one of the GNU maintainers</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">158. 2▲/3💬</span> <a href="https://news.ycombinator.com/item?id=50416800" target="_blank" rel="noopener">UK developer creates script to email Sam Altman about his unused RAM every day</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">159. 2▲/3💬</span> <a href="https://news.ycombinator.com/item?id=50414079" target="_blank" rel="noopener">Show HN: Apartment floor plan generator using discrete diffusion</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">160. 2▲/3💬</span> <a href="https://news.ycombinator.com/item?id=50413158" target="_blank" rel="noopener">Ask HN: Is it possible to backtest math/scinse breakthroughs with AI models?</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">161. 1▲/4💬</span> <a href="https://news.ycombinator.com/item?id=50419277" target="_blank" rel="noopener">Tinker – a lightweight WoW addon manager</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">162. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418815" target="_blank" rel="noopener">Micron – a Pascal/Oberon-derived systems language with the power of C</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">163. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418094" target="_blank" rel="noopener">Reddit Founder Says Building Social Media Apps Is &#x27;Not Cool Anymore&#x27;</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">164. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50417894" target="_blank" rel="noopener">macOS 26.5 on the Xiaomi Pad 7</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">165. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50417613" target="_blank" rel="noopener">Compend, Everything Is Up for Review</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">166. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50417460" target="_blank" rel="noopener">Piezoelectric toothbrush reduces plaque</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">167. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50417371" target="_blank" rel="noopener">Surnames</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">168. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50417324" target="_blank" rel="noopener">Future startup ideas, excavated from science fiction</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">169. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415806" target="_blank" rel="noopener">New drug could be cure for common cause of high blood pressure</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">170. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415508" target="_blank" rel="noopener">NASA seeks next generation of astronauts to live and work on the moon</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">171. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415475" target="_blank" rel="noopener">As budgets tighten, people are breaking out their library cards</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">172. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415437" target="_blank" rel="noopener">You Can&#x27;t Speedrun Yourself</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">173. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415406" target="_blank" rel="noopener">Show HN: psi, a 6.4 MB cross-platform portable coding agent in ANSI C &amp; Lua</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">174. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415106" target="_blank" rel="noopener">Show HN: Maple – Run Gemma 4 26B on a 6GB Laptop GPU at 45 TPS (Sub-2-BPW)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">175. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415103" target="_blank" rel="noopener">GPT-6 Luna and GPT-6.1 Sol are 90% off the listed price</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">176. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414985" target="_blank" rel="noopener">Dissolving the Fermi Paradox</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">177. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414435" target="_blank" rel="noopener">A bash script that writes to Sam Altman once a day to report the RAM he missed</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">178. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414337" target="_blank" rel="noopener">What should we teach our (undergraduate) students?</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">179. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413644" target="_blank" rel="noopener">Climate change transforms the colors of our world</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">180. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413314" target="_blank" rel="noopener">&#x27;Free grand piano&#x27;: the scam playing on music lovers&#x27; heartstrings</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">181. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413022" target="_blank" rel="noopener">Pinot Noir: inside the criminal gangs making fake wine</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">182. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412988" target="_blank" rel="noopener">A 3-Line Torus Geometry Proof Wrecked OpenAI&#x27;s $100B Biotech Venture</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">183. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412899" target="_blank" rel="noopener">AI clog&#x27;: UK public bodies battle onslaught of chatbot-generated complaints</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">184. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412554" target="_blank" rel="noopener">NetBSD 11 desktop on a Raspberry Pi 4</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">185. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412547" target="_blank" rel="noopener">Afterlife of Pi</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">186. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412155" target="_blank" rel="noopener">Dear Open Source Developers: It&#x27;s OK Not to Embargo</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">187. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411207" target="_blank" rel="noopener">Unattended reboots with encrypted disks (ZFS)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">188. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410772" target="_blank" rel="noopener">DeepSeek Harness – Creator Mode</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">189. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410460" target="_blank" rel="noopener">The Loss of Positive Friction</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">190. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410427" target="_blank" rel="noopener">The SideWinder Game Pad, Microsoft&#x27;s first game controller</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">191. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410352" target="_blank" rel="noopener">Bringing Your Muse to Life</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">192. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410342" target="_blank" rel="noopener">Gossip penalty hits men harder than woman at work</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">193. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410137" target="_blank" rel="noopener">NHS breach helpline left staff carrying a &#x27;significant emotional burden&#x27;</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">194. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410131" target="_blank" rel="noopener">Ships loiter near subsea cables amid Iran&#x27;s warnings to Trump</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">195. 4▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50409972" target="_blank" rel="noopener">The Story Behind Edward Hopper&#x27;s Iconic Painting, &quot;Nighthawks&quot;</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">196. 3▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50419742" target="_blank" rel="noopener">Jensen Huang Betrayed Nvidia, Not Just His Family</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">197. 3▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50419491" target="_blank" rel="noopener">China&#x27;s Top Spy Agency Recruited Woman Who Targeted Jensen Huang</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">198. 3▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50418811" target="_blank" rel="noopener">Avatar Web Integration</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">199. 3▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50418114" target="_blank" rel="noopener">Spreadsheets are all you need</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">200. 3▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50418024" target="_blank" rel="noopener">Wild OS, a hardened Debian desktop that runs Windows apps as windows</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">201. 3▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50417974" target="_blank" rel="noopener">Show HN: Remedy – Prompt stuff out of your feeds</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">202. 3▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50417348" target="_blank" rel="noopener">Microseason.app</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">203. 3▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50416732" target="_blank" rel="noopener">U.S. Obesity Rate Drops as Use of GLP-1 Weight Loss Drugs Surges</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">204. 3▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50416691" target="_blank" rel="noopener">Technology Has Become Disrespectful</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">205. 3▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50415397" target="_blank" rel="noopener">Viscerality</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">206. 3▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50415219" target="_blank" rel="noopener">Show HN: FELF – AppImage-like single binaries without FUSE, root, or a runtime</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">207. 3▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50414244" target="_blank" rel="noopener">Algae: Nature&#x27;s Tiny Power Plant [video]</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">208. 3▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50413442" target="_blank" rel="noopener">My browser OCR couldn&#x27;t read a sunscreen bottle. Here&#x27;s what fixed it</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">209. 3▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50413287" target="_blank" rel="noopener">Tailscale Native Git Forge</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">210. 3▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50412434" target="_blank" rel="noopener">Tesla Model Y – Best Selling Car in the World Again</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">211. 3▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50411618" target="_blank" rel="noopener">AI Companies Want to Buy Your Work Files and Emails</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">212. 3▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50411554" target="_blank" rel="noopener">From the Vault to Your Library–How Seven of EA&#x27;s Classic Games Were Restored</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">213. 3▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50411044" target="_blank" rel="noopener">There&#x27;s No Such Thing as a Stock-Market Bubble</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">214. 3▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50410860" target="_blank" rel="noopener">More Than 30M Years Ago, Monkeys Rafted Across the Atlantic to South America</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">215. 3▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50410756" target="_blank" rel="noopener">British Rail Double Arrow</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">216. 3▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50410728" target="_blank" rel="noopener">Chimera Vocal Synth</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">217. 3▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50410293" target="_blank" rel="noopener">Le Salon Client IRCv3 natif en Rust – interface GPU avec GPUI</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">218. 3▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50410105" target="_blank" rel="noopener">Obituary for a Computer Magazine</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">219. 2▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50417574" target="_blank" rel="noopener">The &#x27;Silver Label&#x27; Commodore 64: The Beginning of a Legend</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">220. 2▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50415885" target="_blank" rel="noopener">For learning self help content, deciding what to believe is most important</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">221. 2▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50415581" target="_blank" rel="noopener">Show HN: Notekpr – An open-source, E2EE alternative to Notion and Obsidian</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">222. 2▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50413760" target="_blank" rel="noopener">Never Bring Your Phone to the Shower</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">223. 2▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50412994" target="_blank" rel="noopener">Want to fly to the moon? NASA is looking for new astronauts to help grow its Art</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">224. 2▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50412316" target="_blank" rel="noopener">Show HN: CloudShare app for iOS, simple way to share to your own S3 bucket</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">225. 2▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50412181" target="_blank" rel="noopener">Pillow – Friendly PIL Fork</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">226. 2▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50411515" target="_blank" rel="noopener">Deuterium&#x27;s Impact on OLED Displays (2024)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">227. 2▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50410979" target="_blank" rel="noopener">Show HN: ScrivenSpell</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">228. 2▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50410816" target="_blank" rel="noopener">AI labs are paying $100K–$2M for internal company workflow data</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">229. 2▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50409885" target="_blank" rel="noopener">Streaming Sites, Endless Content, IDK What to Watch</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">230. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419747" target="_blank" rel="noopener">Staff at the US center for AI safety are reporting to the White House</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">231. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419645" target="_blank" rel="noopener">Ian Murdock – And we learn about Debian</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">232. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419542" target="_blank" rel="noopener">Show HN: Midgarth Quest. Browser-Playable Mmorpg Written by AI</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">233. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419476" target="_blank" rel="noopener">Starlink is in 223 countries, but in India its IP addresses sit almost unused</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">234. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419025" target="_blank" rel="noopener">Show HN: Velorki - open-source bike navigation that works with just your phone</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">235. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418790" target="_blank" rel="noopener">Email Encryption</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">236. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418506" target="_blank" rel="noopener">Internet governance about to get its quadrennial stress test at ITU meeting</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">237. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418310" target="_blank" rel="noopener">AI, Bullshit and Art Speak: How the art world prepared us for the age of AI slop</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">238. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50417839" target="_blank" rel="noopener">Paste Markdown formatted anywhere (Linux)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">239. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50417782" target="_blank" rel="noopener">Show HN: Record, branch, and compare command runs in stdlib-only Python</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">240. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50417680" target="_blank" rel="noopener">Project Detroit: From Foreign Libraries to Foreign Language Runtimes</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">241. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50417165" target="_blank" rel="noopener">What Anthropic&#x27;s IPO Filing Says About the Future of A.I</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">242. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416877" target="_blank" rel="noopener">Tech Moguls Are Mistaking Science Fiction for a Political Plan</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">243. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416799" target="_blank" rel="noopener">Physicists listened to electrical noise to crack a superconductor mystery</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">244. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416622" target="_blank" rel="noopener">Extreme cold. Pollution. Why do locals love the Arctic city of Norilsk? (2015)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">245. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416555" target="_blank" rel="noopener">Croft – A VSCode-style TUI text editor</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">246. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416484" target="_blank" rel="noopener">Bloomington, Indiana Bans Artificial Intelligence: Ordinance 2026-29 Explained</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">247. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416291" target="_blank" rel="noopener">Quotes and Dashes for Typography Novices</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">248. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416088" target="_blank" rel="noopener">Ask HN: Can I do a Show HN for a closed source tool I built?</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">249. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415881" target="_blank" rel="noopener">A new web bsed Markdown editor WASM</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">250. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415877" target="_blank" rel="noopener">Craft: A Tendon-Driven Hand with Hybrid Hard-Soft Compliance</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">251. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415854" target="_blank" rel="noopener">The Heavy Cloud: Hydrosocial Dispossession and the Water Coloniality of AI Infra</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">252. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415852" target="_blank" rel="noopener">Two Dimensional Version Control</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">253. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415821" target="_blank" rel="noopener">Open dataset of prompt-injection CVEs with a monthly threat index</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">254. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415810" target="_blank" rel="noopener">Web frameworks overtrust the HTTP Forwarded: header</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">255. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415742" target="_blank" rel="noopener">I built a mailing list where strangers write every email</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">256. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415594" target="_blank" rel="noopener">Western Design Center</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">257. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415561" target="_blank" rel="noopener">Sem86: A Full-System Emulator Without Hard-Coded Semantics</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">258. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415486" target="_blank" rel="noopener">The same work on a third of the tokens: tuning a fleet of coding agents</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">259. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415240" target="_blank" rel="noopener">I fixed my Mac&#x27;s window mess with a tiny free app</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">260. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415220" target="_blank" rel="noopener">The New Space Force Special Operations Command, Spacefor-SoC, Formally Activated</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">261. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415091" target="_blank" rel="noopener">Here Comes Another Bubble v1.1 – The Richter Scales [video]</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">262. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414964" target="_blank" rel="noopener">The future of Software Engineering is boring</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">263. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414719" target="_blank" rel="noopener">China&#x27;s AI models, led by Kimi, dominate open-source enterprise spending</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">264. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414494" target="_blank" rel="noopener">The Art of Letting Go</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">265. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414490" target="_blank" rel="noopener">Add Bugs to Your Website</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">266. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414354" target="_blank" rel="noopener">OpenAI deal to cut Abu Dhabi government processing times from days to minutes</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">267. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414163" target="_blank" rel="noopener">Dear Valve: It Is Time to Open Source SteamVR</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">268. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414117" target="_blank" rel="noopener">Show HN: Ghanaian street games you can play in the browser</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">269. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414115" target="_blank" rel="noopener">How Many Solar Panels Does It Take to Power a Mine? [video]</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">270. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414016" target="_blank" rel="noopener">DeepSeek Harness: Growing Together with Our Plugin Community</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">271. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414004" target="_blank" rel="noopener">&quot;Jumping genes&quot; helped ants evolve after the extinction of the dinosaurs</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">272. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413786" target="_blank" rel="noopener">Valence: A language of homonymy and structural ambiguity</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">273. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413601" target="_blank" rel="noopener">Show HN: Nino – Fastest C# serializer, safe on untrusted input, also TS/Go/Rust</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">274. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413567" target="_blank" rel="noopener">Gg is Git good. An UI to inspect and update Git repos</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">275. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413496" target="_blank" rel="noopener">Agentic Software Engineering (ASE) 2.0: Grilling, Task Boards, Agents, and More</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">276. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413396" target="_blank" rel="noopener">A 55-Year-Old Math Problem Was Solved–This Time by Humans</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">277. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413395" target="_blank" rel="noopener">Photo of the ISS Next to Jupiter Was Two Years in the Making</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">278. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413394" target="_blank" rel="noopener">Earth&#x27;s Rocks Have a Missing Layer Spanning Up to a Billion Years</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">279. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413369" target="_blank" rel="noopener">The Stone Age of Local Coding Agents</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">280. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413354" target="_blank" rel="noopener">Google energy head: space data centers would cost up to 100x more than on Earth</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">281. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413282" target="_blank" rel="noopener">Show HN: OfflineVault – AI based offline library for when the internet is down</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">282. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412913" target="_blank" rel="noopener">The Modern World</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">283. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412764" target="_blank" rel="noopener">Nondeterminism in Futhark</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">284. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412600" target="_blank" rel="noopener">Reproducible Builds</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">285. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412324" target="_blank" rel="noopener">PHP2Shell Deep Dive</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">286. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412225" target="_blank" rel="noopener">The complete history of Civilization, as told by Sid Meier and more [video]</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">287. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412209" target="_blank" rel="noopener">Stable URLs for 42,000 Huts and Peaks</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">288. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411824" target="_blank" rel="noopener">Happy Diwali</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">289. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411622" target="_blank" rel="noopener">Running cyberpunk 2077 natively on Vision Pro</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">290. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411512" target="_blank" rel="noopener">Samsung Put Ads on a Refrigerator You Bought</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">291. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411347" target="_blank" rel="noopener">Category Theory Illustrated</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">292. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411106" target="_blank" rel="noopener">Never Gonna Print You Up</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">293. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411064" target="_blank" rel="noopener">In Praise of Cash (2017)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">294. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411011" target="_blank" rel="noopener">James Barnor: Outstanding Contribution to Photography 2027</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">295. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410999" target="_blank" rel="noopener">Windows Are Absurd (From an engineering standpoint)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">296. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410997" target="_blank" rel="noopener">Lens – The Browser Your iPhone Deserves</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">297. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410996" target="_blank" rel="noopener">Fourteen MB Hinglish STT pWER 29, stary words 2.3/100</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">298. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410842" target="_blank" rel="noopener">Digital Presenteeism as a Stratified Signalling System [pdf]</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">299. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410561" target="_blank" rel="noopener">How do photonic logic gates work?</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">300. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410522" target="_blank" rel="noopener">Indirect Change</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">301. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410517" target="_blank" rel="noopener">Sequoia shutting down its Scouts program marks the end of an era</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">302. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410242" target="_blank" rel="noopener">Show HN: Reges Town – a 3D city run by AI citizens, in the browser</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">303. 3▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410122" target="_blank" rel="noopener">A Quantum Theorem Has Killed Einstein&#x27;s Reality</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">304. 2▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50419308" target="_blank" rel="noopener">I am building Threadz. Human first AI writing app</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">305. 2▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50419042" target="_blank" rel="noopener">OpenAGPS – The New Kid on the Block</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">306. 2▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50418809" target="_blank" rel="noopener">Astryx: An open source design system that&#x27;s customizable and agent ready</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">307. 2▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50418752" target="_blank" rel="noopener">Users have started buying RTX 5060 Ti 16GB graphics cards for the sake of AI</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">308. 2▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50416829" target="_blank" rel="noopener">Show HN: Bulk-harden all your GitHub repos&#x27; settings without an API token</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">309. 2▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50416526" target="_blank" rel="noopener">0: An open-source multi-model harness for security research</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">310. 2▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50415946" target="_blank" rel="noopener">Show HN: Nexjoin – A C++ remote desktop alternative (Windows XP+, macOS 10.13)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">311. 2▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50415659" target="_blank" rel="noopener">(Artificial) Intelligence as a political construct</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">312. 2▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50415253" target="_blank" rel="noopener">5k-year-old bread loaves go on display in Turkey</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">313. 2▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50414836" target="_blank" rel="noopener">Pixel city generation with a small model and LoRAs</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">314. 2▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50414574" target="_blank" rel="noopener">Project Xanadu</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">315. 2▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50414502" target="_blank" rel="noopener">The 0rwx framework for AI usage attribution</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">316. 2▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50413876" target="_blank" rel="noopener">Show HN: Joggo – a self-hosted GitHub Actions runner for the Windows PC you use</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">317. 2▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50413638" target="_blank" rel="noopener">Meridian – an experimental web browser built on Servo and GPUI</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">318. 2▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50413568" target="_blank" rel="noopener">Show HN: Cross-device passkey auth on Android 9, synced with Bitwarden</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">319. 2▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50413075" target="_blank" rel="noopener">BerryBox – GitHub Actions runners at $0.002/min, billed per second</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">320. 2▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50412923" target="_blank" rel="noopener">Show HN: AIDA – agentic generated user guides</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">321. 2▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50412550" target="_blank" rel="noopener">Russia races to build rival to Elon Musk&#x27;s Starlink</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">322. 2▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50412268" target="_blank" rel="noopener">Codex is my Linux Janitor</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">323. 2▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50411921" target="_blank" rel="noopener">Russian spymaster claimed to have toppled Austrian leader</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">324. 2▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50411704" target="_blank" rel="noopener">Researchers unveiled new techniques to protect AI from backdoor attacks</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">325. 2▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50411688" target="_blank" rel="noopener">Arete-27B: Training methodology and accepted factual inaccuracies</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">326. 2▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50411327" target="_blank" rel="noopener">Investing vs. gambling: how to tell the difference</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">327. 2▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50410976" target="_blank" rel="noopener">BYD&#x27;s electric hypercar hits 312 MPH, first production car over 500 km/h</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">328. 2▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50410640" target="_blank" rel="noopener">Self-promotion and the Altmetric score (2021)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">329. 2▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50410477" target="_blank" rel="noopener">Show HN: We Build Shareable Context Layer for Agent Teams</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">330. 2▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50410236" target="_blank" rel="noopener">Ocarina of Time (Switch 2) PC Recompilation</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">331. 2▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50410205" target="_blank" rel="noopener">I Love the Smiths AI: A Familiar Elevator Scene, with You in It</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">332. 2▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50410115" target="_blank" rel="noopener">Goodbye Duolingo: a new Italian Teaching App</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">333. 2▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50409949" target="_blank" rel="noopener">AIG Mistakenly Locks and Erases iPhone and Cannot Resolve After 3 Weeks</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">334. 1▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50419058" target="_blank" rel="noopener">Money that pays people to preserve and evolve the heritage of their land</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">335. 1▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50417106" target="_blank" rel="noopener">*sshole</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">336. 1▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50414111" target="_blank" rel="noopener">Show HN: Velork – Design and Code, Together</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">337. 1▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50412518" target="_blank" rel="noopener">UmbrelOS 2.0 – Whats New</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">338. 1▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50412439" target="_blank" rel="noopener">Artificial Intelligence in higher education – gov report (Norwegian)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">339. 1▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50412135" target="_blank" rel="noopener">Show HN: An open-source IDE for software architecture</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">340. 1▲/2💬</span> <a href="https://news.ycombinator.com/item?id=50410806" target="_blank" rel="noopener">Joe Rogan Experience #2578 – Calley Means [video]</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">341. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419936" target="_blank" rel="noopener">How Low-Dimensional Is Intelligence?</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">342. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419582" target="_blank" rel="noopener">Show HN: Replay your Claude Code logs to count parallel session collisions</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">343. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419498" target="_blank" rel="noopener">CCTV captures streets shaking as 5.7-magnitude earthquake hits Japan</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">344. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419487" target="_blank" rel="noopener">Vibecoding in Plato&#x27;s Cave (AI, Music Tech, and Star Trek) [video]</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">345. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419469" target="_blank" rel="noopener">Blacksmith.sh: security incident affecting CI job logs</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">346. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419463" target="_blank" rel="noopener">The Commanding Heights: Where AI will create wealth [pdf]</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">347. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418742" target="_blank" rel="noopener">NASA-Funded Study Details One of Oldest Mars Meteorites Ever Found</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">348. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418667" target="_blank" rel="noopener">Rent-a-grandchild: Businesses offering companions to elderly grow in India</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">349. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418553" target="_blank" rel="noopener">Industrial History: MWRD – Sanitary District of Chicago Railroad (2016)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">350. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418366" target="_blank" rel="noopener">Six GPUs on One X16 Slot: R9700s and RTX 3090s Behind a PCIe Switch</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">351. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418351" target="_blank" rel="noopener">Exody – Native macOS AI Workbench (5-stage loop, 100% BYOK, $0 markup)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">352. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418234" target="_blank" rel="noopener">The Architecture Behind Our SSE Streams</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">353. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418208" target="_blank" rel="noopener">Game Engine Black Book: Quake</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">354. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418179" target="_blank" rel="noopener">N6k – Let users and agents run untrusted SQL on production databases</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">355. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418158" target="_blank" rel="noopener">Show HN: My first project, an AI-powered financial news analyzer</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">356. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418113" target="_blank" rel="noopener">The NBA player who got hooked on sports betting</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">357. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50417832" target="_blank" rel="noopener">Nondisruptive 3D profiling of combinations of epigenetic marks in single cells</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">358. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50417769" target="_blank" rel="noopener">Who do AI search engines name when buyers ask about 12 cold-email tools?</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">359. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50417715" target="_blank" rel="noopener">The great software IP writedown</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">360. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50417653" target="_blank" rel="noopener">The Overton Window: How Unthinkable Ideas Become the Norm</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">361. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50417614" target="_blank" rel="noopener">Super Fast Linux Photo Viewer</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">362. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50417467" target="_blank" rel="noopener">Show HN: A kernel written in Rust that can boot Ubuntu with Plasma desktop</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">363. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50417320" target="_blank" rel="noopener">Welcome to Boulder Ruby</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">364. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50417189" target="_blank" rel="noopener">You can no longer (un-)star archived GitHub repositories</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">365. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50417180" target="_blank" rel="noopener">Map of Science</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">366. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50417179" target="_blank" rel="noopener">Save Our Screen: Generated Art for Samsung Frame TVs</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">367. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50417138" target="_blank" rel="noopener">The problem with Micron MT 4264 RAM</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">368. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416965" target="_blank" rel="noopener">Near Horizons</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">369. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416922" target="_blank" rel="noopener">AI skill to provide IPA and English translations from uploaded sheet music</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">370. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416876" target="_blank" rel="noopener">ID3 Tag Version 2.3.0 (1999)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">371. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416806" target="_blank" rel="noopener">RGBGuessr with a Battle Mode</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">372. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416782" target="_blank" rel="noopener">Show HN: Hyper Compress: The Best Open Source PDF Compression Engine</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">373. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416778" target="_blank" rel="noopener">Living in Omelas (2025)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">374. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416773" target="_blank" rel="noopener">Not another AI note taker</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">375. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416745" target="_blank" rel="noopener">What you should know about fundamental physics</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">376. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416736" target="_blank" rel="noopener">Are You a GLP-1 Nonresponder?</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">377. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416722" target="_blank" rel="noopener">LLMs can understand and write neural network weights</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">378. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416651" target="_blank" rel="noopener">Show HN: Claude Opus 5.5 (Max) best at generating startup ideas</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">379. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416606" target="_blank" rel="noopener">Grote Reber and the &#x27;Square Kilometre Array&#x27; Near Bothwell, Tasmania (2017)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">380. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416584" target="_blank" rel="noopener">Army cooks are now &#x27;tactical field feeding specialists&#x27;</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">381. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416571" target="_blank" rel="noopener">A Farewell to Hubs</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">382. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416567" target="_blank" rel="noopener">A new cardiovascular drug lowered Lp(a) by 78%. Why didn&#x27;t heart events fall?</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">383. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416538" target="_blank" rel="noopener">Show HN: A medieval world where growth and citizens are pure functions of time</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">384. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416442" target="_blank" rel="noopener">Correctness of Automatic Differentiation via Diffeologies and Categorical Gluing</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">385. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416365" target="_blank" rel="noopener">Optimizing Reference Deletions in Git</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">386. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416179" target="_blank" rel="noopener">The Costs of Federal Permitting [pdf]</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">387. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416167" target="_blank" rel="noopener">Pork Roll vs. Taylor Ham?</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">388. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416124" target="_blank" rel="noopener">When the Kubernetes API went silent: A three-layer networking mystery</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">389. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416106" target="_blank" rel="noopener">Titanic insurance document could fetch £50k</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">390. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416045" target="_blank" rel="noopener">An Apology for the Mirror: The Thief Cries &quot;Stop, Thief &quot;</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">391. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415938" target="_blank" rel="noopener">Sketching software architecture with Svugy</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">392. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415784" target="_blank" rel="noopener">A Unicode Escape Can Turn a Java Comment into Executable Code</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">393. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415745" target="_blank" rel="noopener">Show HN: Hackertube for Roku TV</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">394. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415560" target="_blank" rel="noopener">NASA Seeks Next Generation of Explorers to Join Astronaut Corps</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">395. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415485" target="_blank" rel="noopener">Advanced Meditation Alters Consciousness and Our Basic Sense of Self</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">396. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415469" target="_blank" rel="noopener">Show HN: Search Everywhere at Once. Instantly</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">397. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415441" target="_blank" rel="noopener">Designing an Always-On Agent</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">398. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415438" target="_blank" rel="noopener">Tricking DeepSeek into Not Hacking Your Website</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">399. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415435" target="_blank" rel="noopener">Self Improving Software Factory</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">400. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415265" target="_blank" rel="noopener">Etsy Expands AI Training Rights over Content, Restricts 3rd Party Training</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">401. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415089" target="_blank" rel="noopener">Get notified when new vulnerability appear to your website&#x27;s dependencies</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">402. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415047" target="_blank" rel="noopener">So Much Tech News: The Week of 11/01/2026</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">403. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414840" target="_blank" rel="noopener">NASA Is Selecting Future Astronauts. Here’s How to Apply.</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">404. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414830" target="_blank" rel="noopener">Dispatch 007: Three Black and Milds</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">405. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414770" target="_blank" rel="noopener">Thinking Machines Lab $5B funding round at a $40B valuation</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">406. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414754" target="_blank" rel="noopener">Play ASCII Doom in the Terminal</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">407. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414691" target="_blank" rel="noopener">Show HN: Jabhook – Harnessing computer vision for martial arts training</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">408. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414657" target="_blank" rel="noopener">A Compendium of Abandoned Greenhouses</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">409. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414607" target="_blank" rel="noopener">Teach Students to Code in English</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">410. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414450" target="_blank" rel="noopener">Why Agile Often Fails</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">411. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414389" target="_blank" rel="noopener">Kill That Cat</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">412. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414365" target="_blank" rel="noopener">Falsehoods programmers believe about aviation (2025)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">413. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414359" target="_blank" rel="noopener">My new backlinks are all ads</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">414. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414330" target="_blank" rel="noopener">Show HN: DoShare Personal Cloud – Cloud Storage for Humans</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">415. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414317" target="_blank" rel="noopener">From the Depiction of Space to the Organization of the Environment</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">416. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414307" target="_blank" rel="noopener">Find Community in San Francisco</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">417. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414223" target="_blank" rel="noopener">Someone Paid Three Dollars to Wake Me Up</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">418. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414183" target="_blank" rel="noopener">I&#x27;m 14, built an open-source platform for advanced math</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">419. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414112" target="_blank" rel="noopener">Byward – put any MCP server behind OAuth 2.1 and Entra ID</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">420. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414060" target="_blank" rel="noopener">What&#x27;s the deal with screenshots on macOS Golden Gate?</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">421. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414001" target="_blank" rel="noopener">Indians should have higher standards</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">422. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413991" target="_blank" rel="noopener">DSpine for Qwen3.8-27B</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">423. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413962" target="_blank" rel="noopener">We&#x27;re Not Paid to Practice Scrum</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">424. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413898" target="_blank" rel="noopener">Interactive text adventure device on ESP32, e-ink, and Gemini</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">425. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413856" target="_blank" rel="noopener">CWPdoor: The Invisible Backdoor Living Inside Control Web Panel</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">426. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413808" target="_blank" rel="noopener">Who has a copy of your secrets?</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">427. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413767" target="_blank" rel="noopener">BootForge – Native Rufus and Ventoy USB Creator for Linux and Windows</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">428. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413739" target="_blank" rel="noopener">I made an open-web protocol for local LLM storage sharing</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">429. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413714" target="_blank" rel="noopener">Twelve years of building a game engine, and what it means to finish one</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">430. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413709" target="_blank" rel="noopener">SpiderFarmer GGS Controler – New ESP32 Controller Bridge</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">431. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413699" target="_blank" rel="noopener">How the Internet ruined San Francisco (1999)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">432. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413587" target="_blank" rel="noopener">Show HN: Lipwise</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">433. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413575" target="_blank" rel="noopener">Git Good User Guide</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">434. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413549" target="_blank" rel="noopener">My secret life as a relapsed alcoholic</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">435. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413455" target="_blank" rel="noopener">Show HN: After decades, I have my almost perfect music player</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">436. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413440" target="_blank" rel="noopener">Archimedes: AI agents that design physical things</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">437. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413240" target="_blank" rel="noopener">Cyber at the Frontier</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">438. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413098" target="_blank" rel="noopener">This implant burns up excess blood sugar with electricity</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">439. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413080" target="_blank" rel="noopener">Chapter 04: Implementing Sails-style Routing</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">440. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412978" target="_blank" rel="noopener">KapX is a groundbreaking mobility and orientation aid</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">441. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412743" target="_blank" rel="noopener">Four Seasons Total Landscaping press conference</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">442. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412720" target="_blank" rel="noopener">Four Bugs, One Day: What a Self-Policing Agent Org Looks Like When It Works</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">443. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412715" target="_blank" rel="noopener">How to make a CNC plasma cutter with high-frequency start</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">444. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412674" target="_blank" rel="noopener">Extropy, journal of transhumanist thought, 1988-1996, complete archive</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">445. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412643" target="_blank" rel="noopener">Lockheed Martin&#x27;s Mk21A Reentry Vehicle Completed Maiden Test Flight</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">446. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412551" target="_blank" rel="noopener">The Boostrappable Builds Project</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">447. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412516" target="_blank" rel="noopener">Space become critical to balance of the war</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">448. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412435" target="_blank" rel="noopener">Kon-Tiki Expedition</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">449. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412412" target="_blank" rel="noopener">Bella Caledonia Statement on Artificial Intelligence</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">450. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412406" target="_blank" rel="noopener">Norwegian Heavy Water Sabotage</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">451. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412394" target="_blank" rel="noopener">Early Hackers Used Whistles from Cap&#x27;n Crunch Cereal Boxes</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">452. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412226" target="_blank" rel="noopener">Show HN: Throng, a project first, terminal 2nd IDE for command line people</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">453. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412169" target="_blank" rel="noopener">WIKI New Link (V3)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">454. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411959" target="_blank" rel="noopener">Coffee: A Journey</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">455. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411900" target="_blank" rel="noopener">Daily 3D Crossword</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">456. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411752" target="_blank" rel="noopener">What Can AI Hack? Inside Frontier Labs&#x27; Tests</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">457. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411705" target="_blank" rel="noopener">Kalder CEO Sentenced to 25 Months in Prison</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">458. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411654" target="_blank" rel="noopener">Taiwan sets new short-selling limits to aid beaten stock market 1d •</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">459. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411561" target="_blank" rel="noopener">Thermodynamics in Einstein&#x27;s Thought(1967) [pdf]</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">460. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411542" target="_blank" rel="noopener">Agentic Development Future and Current Directions – Nov 2026</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">461. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411494" target="_blank" rel="noopener">AetherScope – WebGL2 codebase visualizer and &lt;50ms SAST in Rust</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">462. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411484" target="_blank" rel="noopener">C# Solid/Svelte Like UI Framework Without Mono/Blazor</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">463. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411449" target="_blank" rel="noopener">Pakistani astronaut to become first foreigner on China&#x27;s space station</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">464. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411418" target="_blank" rel="noopener">C development for Linux without a standard library (2024)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">465. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411402" target="_blank" rel="noopener">Build Software on Your Phone</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">466. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411351" target="_blank" rel="noopener">NASA is looking for new astronauts to help grow its Artemis program</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">467. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410926" target="_blank" rel="noopener">Reconfigurable Photonic Integrated Circuits in Glass, Femtosecond Laser Writing [pdf]</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">468. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410857" target="_blank" rel="noopener">The Specter of Neuralese</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">469. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410729" target="_blank" rel="noopener">AI Live Speech Rewriting Patent</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">470. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410727" target="_blank" rel="noopener">Real-Time Data Streaming for Live Video</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">471. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410648" target="_blank" rel="noopener">Here Be Monsters</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">472. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410621" target="_blank" rel="noopener">What It Costs to Run 4 Apps on My Own Servers</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">473. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410587" target="_blank" rel="noopener">Pinot Noir: inside the criminal gangs making fake wine</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">474. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410488" target="_blank" rel="noopener">Next bcachefs release will be 100% Rust</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">475. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410480" target="_blank" rel="noopener">My Two Front Teeth</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">476. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410416" target="_blank" rel="noopener">Sony World Photography Awards Honors James Barnor, Ghana&#x27;s First Photojournalist</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">477. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410388" target="_blank" rel="noopener">Are Passkeys a Trap?</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">478. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410321" target="_blank" rel="noopener">Four shark killings in 1916 led to a tsunami of hysteria and Spielberg&#x27;s &quot;Jaws&quot;</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">479. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410282" target="_blank" rel="noopener">Breaking the Decade-Long Trump Fever</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">480. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410172" target="_blank" rel="noopener">Addressing protocol security gaps in multi-tenant Kubernetes</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">481. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50409966" target="_blank" rel="noopener">35 by 35 electrification is the agenda for COP31</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">482. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50409943" target="_blank" rel="noopener">Super Mario 64 on the Atari Jaguar [video]</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">483. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50409915" target="_blank" rel="noopener">RuneHQ – A Tribute and Farewell</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">484. 2▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50409866" target="_blank" rel="noopener">Claude Watermark Text</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">485. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50419343" target="_blank" rel="noopener">Open Source AI Research Collaboration Platform</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">486. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50419260" target="_blank" rel="noopener">Ask HN: What do you use to get the latest technical AI news?</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">487. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50418974" target="_blank" rel="noopener">Fictitious Investigation by Springer Nature&#x27;s Research Integrity Team</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">488. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50418930" target="_blank" rel="noopener">Anybody Have Proxy Links?</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">489. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50418703" target="_blank" rel="noopener">After Ten Years: An Account at the Turn of the Year 1942–1943 [pdf]</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">490. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50418146" target="_blank" rel="noopener">A speaker on my desk that plays any MP3 you upload</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">491. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50418042" target="_blank" rel="noopener">The Rise of the One-Person Institution</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">492. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50417658" target="_blank" rel="noopener">YouTube&#x27;s dominance has Hollywood running scared</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">493. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50416640" target="_blank" rel="noopener">Peer-to-peer WebRTC connections with built-in signaling and discovery</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">494. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50416107" target="_blank" rel="noopener">Show HN: Models Engineering Index</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">495. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50416075" target="_blank" rel="noopener">Ask HN- Will AI agents behave differently in a swarm?</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">496. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50415888" target="_blank" rel="noopener">Eggnomic.com – Mac app that researches sites from screenshot</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">497. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50415020" target="_blank" rel="noopener">Show HN: Just a Pause – Blur your Mac&#x27;s screen when you turn away, using AirPods</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">498. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50414541" target="_blank" rel="noopener">Titol Submit Proba</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">499. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50414095" target="_blank" rel="noopener">Show HN: Jurex in House – Handles Legal Side of Your Business with AI</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">500. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50413615" target="_blank" rel="noopener">Mercedes Gives Its Cars an AI Upgrade</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">501. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50413501" target="_blank" rel="noopener">DoorDash Shareholders Aren&#x27;t Convinced the Company Can Take on Amazon</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">502. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50413458" target="_blank" rel="noopener">Show HN: Fuel prices in 11 European countries, with maps and border comparisons</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">503. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50413425" target="_blank" rel="noopener">Anthropic Let an Outsider Check Its AI Progress. Here&#x27;s What We Can&#x27;t See</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">504. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50412998" target="_blank" rel="noopener">Asserts You Can Read at a Glance</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">505. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50412935" target="_blank" rel="noopener">Storehouse – storing your creative work shouldn&#x27;t be a ball ache</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">506. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50412645" target="_blank" rel="noopener">Empires of AI – The Rise and Fall of a New Global Order</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">507. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50412273" target="_blank" rel="noopener">Show HN: I Built Duolingo for Anything</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">508. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50412102" target="_blank" rel="noopener">A Minecraft launcher for Arch Linux with zero telemetry (PyQt6)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">509. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50412062" target="_blank" rel="noopener">GitHub: Increase in timeouts for some unauthenticated users</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">510. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50412004" target="_blank" rel="noopener">A Faster Bluetooth OTA Update for the ESP32</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">511. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50411881" target="_blank" rel="noopener">Ask HN: Specialized Agents vs. General Agents with Skills</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">512. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50411870" target="_blank" rel="noopener">Print Shops Hate Her</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">513. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50411679" target="_blank" rel="noopener">Ask HN: Is anyone using Codex, Gemini or another model over Claude Code?</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">514. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50411610" target="_blank" rel="noopener">2026 ACM SIGOPS Annual Technical Conference</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">515. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50411283" target="_blank" rel="noopener">The Great GOP Dummymander of 2026</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">516. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50411182" target="_blank" rel="noopener">Show HN: Ramen – an AI agent that has to earn its own rent</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">517. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50410740" target="_blank" rel="noopener">Maths Genealogy Project Graph</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">518. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50410733" target="_blank" rel="noopener">Interleaf: An experimental tool for LLM assisted knowledge exploration</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">519. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50410473" target="_blank" rel="noopener">PolyNotes App</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">520. 1▲/1💬</span> <a href="https://news.ycombinator.com/item?id=50410027" target="_blank" rel="noopener">I Build Qorqbot – OS Grokbot</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">521. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50420040" target="_blank" rel="noopener">AI-first browser test automation at $0.01 per step</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">522. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50420035" target="_blank" rel="noopener">RIP, Harvest</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">523. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50420025" target="_blank" rel="noopener">Revolut Cut AI Costs 90% and Started Shipping Faster</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">524. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50420014" target="_blank" rel="noopener">Local data center fights are fueling a wider backlash</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">525. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419954" target="_blank" rel="noopener">You&#x27;ve Given the Insider Threats in Your Company a Super Intelligent Accomplice</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">526. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419906" target="_blank" rel="noopener">Returning Starship to the Launch Site</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">527. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419884" target="_blank" rel="noopener">Agents don&#x27;t suggest the use of LLMs for problems where they should</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">528. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419871" target="_blank" rel="noopener">Read Huang&#x27;s email to his staff and statement from Nvidia&#x27;s board of directors</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">529. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419843" target="_blank" rel="noopener">Microsoft Workers Call for Accountable AI</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">530. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419839" target="_blank" rel="noopener">Investigating Vault Particles with Claude</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">531. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419825" target="_blank" rel="noopener">Adapting for a World of Software Factories</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">532. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419805" target="_blank" rel="noopener">Advent of Computing Episode 194 – SpeedCoding Your Way to Software</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">533. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419797" target="_blank" rel="noopener">Dodo – A Community Fork of Deno</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">534. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419790" target="_blank" rel="noopener">RetroWEB 2.0: a forwarding proxy for old browsers</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">535. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419761" target="_blank" rel="noopener">The Psychology of Letting Go</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">536. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419739" target="_blank" rel="noopener">Nvidia launches investigation into CEO&#x27;s alleged relationship with Chinese spy</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">537. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419726" target="_blank" rel="noopener">Replacing corporations with openly operated ERP</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">538. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419675" target="_blank" rel="noopener">Artificial Analysis Decision Index v2</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">539. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419657" target="_blank" rel="noopener">Parse_number() as a SQLite extension: C vs. Rust</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">540. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419615" target="_blank" rel="noopener">Show HN: Airlock – Policy-as-code for fleets of AI coding agents</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">541. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419555" target="_blank" rel="noopener">Learning Abstractions: The Next Frontier for AI</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">542. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419541" target="_blank" rel="noopener">Don&#x27;t make me a meat proxy</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">543. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419479" target="_blank" rel="noopener">LaFranceenDébat: An open-source platform for peaceful,source-based public debate</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">544. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419437" target="_blank" rel="noopener">Superscore Remix – highly accurate character replacements and lip sync</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">545. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419299" target="_blank" rel="noopener">Show HN: TabVault – Export Chrome Tab Groups to Obsidian as Markdown</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">546. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419242" target="_blank" rel="noopener">Open Source Web Operating System Terminal Velocity</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">547. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419220" target="_blank" rel="noopener">Turn prompts into images and editable SVGs with GPT Image 2.6</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">548. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419086" target="_blank" rel="noopener">Debezium Postgres WAL Subscription Monitoring</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">549. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419083" target="_blank" rel="noopener">Peering over the Waterfall</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">550. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419054" target="_blank" rel="noopener">The Last Man (1805)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">551. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419043" target="_blank" rel="noopener">Earning Report in Simple Language</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">552. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50419001" target="_blank" rel="noopener">Google Soft 404 for a page titled What is a 404 Error?</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">553. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418906" target="_blank" rel="noopener">When Writers Lose Faith in Free Speech</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">554. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418831" target="_blank" rel="noopener">I shipped a CLI and what I run is a proxy</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">555. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418825" target="_blank" rel="noopener">Veda: The Agentic Native Hobby OS</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">556. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418814" target="_blank" rel="noopener">How to Build the Future: Paul Graham and Amjad Masad [video]</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">557. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418771" target="_blank" rel="noopener">AI model to learn language the way children do</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">558. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418751" target="_blank" rel="noopener">Adopting Python 3.15&#x27;s lazy imports: a 4× faster CLI, and where they didn&#x27;t help</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">559. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418740" target="_blank" rel="noopener">Xfce Wayland Development Roadmap</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">560. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418709" target="_blank" rel="noopener">Benchma(r)king: Carpentry with LLMs</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">561. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418686" target="_blank" rel="noopener">Cooperative Vectors and Neural Rendering [pdf]</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">562. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418651" target="_blank" rel="noopener">AI to find vulnerabilities in global legislation (on Git)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">563. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418404" target="_blank" rel="noopener">a way to keep coding agents within the rules</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">564. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418379" target="_blank" rel="noopener">Managed Deep Agents delivers a better user experience for agents in production</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">565. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418359" target="_blank" rel="noopener">Is curiosity all it&#x27;s cooked up to be?</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">566. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418162" target="_blank" rel="noopener">Alphamaxxing</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">567. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418101" target="_blank" rel="noopener">Harness Leaderboard Which coding-agent harness should you run your open model in</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">568. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418064" target="_blank" rel="noopener">Exposure Notification</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">569. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418037" target="_blank" rel="noopener">Save the world with a new money design</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">570. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50418020" target="_blank" rel="noopener">Launching any game crashes when system set to timezone &quot;Pacific Time (BC)&quot;</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">571. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50417858" target="_blank" rel="noopener">File sharing platform made in Python – Not vibe coded – Since 2025</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">572. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50417788" target="_blank" rel="noopener">Genetics and intelligence differences: five special findings</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">573. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50417585" target="_blank" rel="noopener">Show HN: Fireside Folio – free books, comics and news editions for reMarkable</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">574. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50417560" target="_blank" rel="noopener">&#x27;Starlog&#x27; Magazine Returns with First Cover in 17 Years</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">575. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50417244" target="_blank" rel="noopener">Making profile-guided optimization reproducible</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">576. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50417227" target="_blank" rel="noopener">Mstein – Ich klau den RAM</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">577. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50417178" target="_blank" rel="noopener">Ask HN: Anyone here does cold email?</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">578. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50417169" target="_blank" rel="noopener">Meta&#x27;s Charm gadget carries CEO Zuckerberg&#x27;s big AI ambitions</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">579. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50417052" target="_blank" rel="noopener">Offline context-aware dictation without screenshots, LLMs or fine-tuning</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">580. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50417036" target="_blank" rel="noopener">Beyond code generation: A developer&#x27;s guide to agentic engineering</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">581. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416999" target="_blank" rel="noopener">How to Build a Bridge to a &#x27;Rogue Silo&#x27; Team</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">582. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416994" target="_blank" rel="noopener">Building Your Own DSL</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">583. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416992" target="_blank" rel="noopener">Show HN: A free Gameboy–style music tracker in the browser with shareable URLs</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">584. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416757" target="_blank" rel="noopener">Show HN: APC Playground – Stop AI agents from modifying your API tool calls</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">585. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416741" target="_blank" rel="noopener">Vibe-Shield – Static security scanner for AI-generated Next.js/Supabase code</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">586. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416660" target="_blank" rel="noopener">A Git hook to augment Claude-code attribution</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">587. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416492" target="_blank" rel="noopener">Show HN: Minimalistic roguelike game about hiking in Clojure</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">588. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416470" target="_blank" rel="noopener">Show HN: Vynyo – AI creative studio for hairstyle, image and video</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">589. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416454" target="_blank" rel="noopener">Stanford Paper Could Make Nvidia&#x27;s Memory Chips Unnecessary [video]</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">590. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416447" target="_blank" rel="noopener">Smart Soil Sensors Tested and Compared</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">591. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416440" target="_blank" rel="noopener">Threat of air strikes: US looks to bolster base infrastructure with 3D printing</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">592. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416248" target="_blank" rel="noopener">Show HN: Tab-league – archive Chrome tabs locally so closing them feels safe</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">593. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416216" target="_blank" rel="noopener">AI detection trap: When machines put human creativity on trial</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">594. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50416082" target="_blank" rel="noopener">My Local Coding Agent</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">595. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415915" target="_blank" rel="noopener">Updates to JWT Client Authentication and Assertion-Based Authorization Grants</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">596. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415785" target="_blank" rel="noopener">Show HN: LLM-cost-watch – Ask Claude why your LLM bill jumped</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">597. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415706" target="_blank" rel="noopener">What Should We Learn? What LLMs Taught Me: Understanding Isn&#x27;t Producing</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">598. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415664" target="_blank" rel="noopener">Show HN: 3-SAT: Let me show you 500K variables</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">599. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415559" target="_blank" rel="noopener">Rethinking Virtual Machine Monitors for Better Security in Clouds [pdf]</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">600. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415544" target="_blank" rel="noopener">Show HN: Figma for Investing</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">601. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415454" target="_blank" rel="noopener">Free, classroom friendly Seterra replacement for map quizzes</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">602. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415434" target="_blank" rel="noopener">Running a Language Model on a $35 FPGA</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">603. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415399" target="_blank" rel="noopener">Show HN: Claude Code status line, hooks and permissions builders (in-browser)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">604. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415374" target="_blank" rel="noopener">A proof that Z is Diophantine in Q</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">605. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415359" target="_blank" rel="noopener">Weird (but useful) questions to ask startups before joining</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">606. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415295" target="_blank" rel="noopener">Hold Fire – deep dive on nuclear near-miss incidents and deterrence theory song</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">607. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415185" target="_blank" rel="noopener">Show HN: Recap Studio – A Mac screen recorder for clean, polished demos</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">608. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415162" target="_blank" rel="noopener">I gave an agent a lakehouse and control of my garden</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">609. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415131" target="_blank" rel="noopener">ALPRs show that we need a constitutional amendment for information privacy</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">610. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415034" target="_blank" rel="noopener">Npx castov audit – find secrets hiding in your MCP setup</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">611. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50415021" target="_blank" rel="noopener">Inboxjot: Email for Builders and Their Agents</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">612. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414894" target="_blank" rel="noopener">Show HN: Kinesis API for Tests and CI</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">613. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414872" target="_blank" rel="noopener">Simon Winchester, RIP</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">614. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414866" target="_blank" rel="noopener">What I&#x27;ve Been Reading</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">615. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414806" target="_blank" rel="noopener">AetherSkin – A diagnostic skin intelligence platform I&#x27;m building</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">616. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414800" target="_blank" rel="noopener">A guy running Claude KYC business to bypass anthropics restrictions</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">617. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414793" target="_blank" rel="noopener">Condition-Vault</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">618. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414751" target="_blank" rel="noopener">Radical Computing Evolution [video]</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">619. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414668" target="_blank" rel="noopener">Show HN: ModelRefs – Interactive reference hub for AI models</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">620. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414590" target="_blank" rel="noopener">From mass psychology to media studies: Interview with Jaap van Ginneken</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">621. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414575" target="_blank" rel="noopener">Show HN: emcee – macOS Stage Manager alternative</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">622. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414535" target="_blank" rel="noopener">Fridge Hack</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">623. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414520" target="_blank" rel="noopener">The unwritten rules of engineering management [video]</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">624. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414519" target="_blank" rel="noopener">A Platform for Bespoke Software</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">625. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414485" target="_blank" rel="noopener">Show HN: Cinnamon AI – an agent you can share with your household</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">626. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414483" target="_blank" rel="noopener">They longed to hold their fragile NICU babies. A new device made it possible</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">627. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414454" target="_blank" rel="noopener">I built a visual UI editor extension for Rust in VS Code (Iced, egui, Slint)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">628. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414398" target="_blank" rel="noopener">Show HN: HackerPodcast – YouTube for podcasts, from HN comments 2007 to 2026</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">629. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414396" target="_blank" rel="noopener">Show HN: Webcrawl – Open-source Firecrawl alternative, runs locally, no API key</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">630. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414381" target="_blank" rel="noopener">Hypruse: A computer-use alternative built specifically for Hyprland</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">631. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50414185" target="_blank" rel="noopener">Show HN: XMarkdown – Markdown with charts, controls and validated SVG</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">632. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413806" target="_blank" rel="noopener">The Missing Undo Button for Coding Agents [video]</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">633. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413719" target="_blank" rel="noopener">What 1.5T tokens cost per month</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">634. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413639" target="_blank" rel="noopener">RedisME: Redis GUI in the World</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">635. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413585" target="_blank" rel="noopener">The worl went video, professional ecosystem didn&#x27;t</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">636. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413544" target="_blank" rel="noopener">Show HN: Study Scout, a novelty search with no NOVEL verdict</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">637. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413485" target="_blank" rel="noopener">Amp Code Launches Spaces</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">638. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413453" target="_blank" rel="noopener">The GPT Architecture, on a Napkin (2022)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">639. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50413087" target="_blank" rel="noopener">Why forcing Ukraine into a peace deal won&#x27;t work [video]</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">640. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412886" target="_blank" rel="noopener">VedaOS</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">641. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412861" target="_blank" rel="noopener">EVi, a pre-LLM fork of Vim</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">642. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412856" target="_blank" rel="noopener">Scaling Citus without limits: announcing Query Routers</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">643. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412828" target="_blank" rel="noopener">Building Maintainable PHP Applications: Patterns and Principles</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">644. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412775" target="_blank" rel="noopener">High level API for local LLMs in Node</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">645. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412737" target="_blank" rel="noopener">One step agents own end to end: how agent.ceo fixes its own bugs</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">646. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412710" target="_blank" rel="noopener">Show HN: Neural Network Formal Verification</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">647. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412706" target="_blank" rel="noopener">The Tragedy of the Oxide Root of Trust</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">648. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412675" target="_blank" rel="noopener">Why Your AI Agent Can&#x27;t Solve CTF Challenges</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">649. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412639" target="_blank" rel="noopener">Show HN: Shutdown Watch – App shutdowns, export deadlines, and alternatives</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">650. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412613" target="_blank" rel="noopener">Bob Dylan – The Entrance</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">651. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412546" target="_blank" rel="noopener">Show HN: Cake Farm. Cozy multiplayer communal farm. Grow berries to bake cakes</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">652. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412490" target="_blank" rel="noopener">Hyperliquid whales are adding to their $BTC shorts</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">653. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412484" target="_blank" rel="noopener">Show HN: Gitbet – A free sourcetree style Git client for Linux</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">654. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412447" target="_blank" rel="noopener">Etsy AI training terms change</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">655. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412418" target="_blank" rel="noopener">Show HN: aiport – A self-improving local LLM gateway for the erratic vibe coder</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">656. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412414" target="_blank" rel="noopener">Terminal, Augmented</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">657. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412409" target="_blank" rel="noopener">Finding Bugs in DuckDB with Property-based Testing</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">658. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412399" target="_blank" rel="noopener">GhostMap: The Android flaw that crashes your phone before you open the app</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">659. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412386" target="_blank" rel="noopener">RankForge Etsy and KDP Research SaaS</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">660. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412361" target="_blank" rel="noopener">Whose driving licence counts where in Europe – and what B covers only at home</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">661. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412336" target="_blank" rel="noopener">Analyzing Software Vulnerabilities faster and orders of magnitudes cheaper</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">662. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412221" target="_blank" rel="noopener">Best Gym Management Software</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">663. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412216" target="_blank" rel="noopener">Muru: Looking Inside the Workers</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">664. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50412189" target="_blank" rel="noopener">Impressive Stunt Car racer port on the NES [video]</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">665. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411986" target="_blank" rel="noopener">Show HN: PicoDiet – compress images to a visual quality score, not a setting</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">666. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411946" target="_blank" rel="noopener">Putting writers in control of their tools</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">667. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411937" target="_blank" rel="noopener">Humans&#x27; origin story is being revised [video]</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">668. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411918" target="_blank" rel="noopener">Show HN: RepoMagpie – your coding agent remembers the repos you&#x27;ve tried</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">669. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411912" target="_blank" rel="noopener">Show HN: Webpage to PDF with real text, working links, and nothing uploaded</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">670. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411910" target="_blank" rel="noopener">Show HN: Privacy First Compress – compress images without uploading them</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">671. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411907" target="_blank" rel="noopener">Stash: A fast, lightweight clipboard manager for macOS</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">672. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411883" target="_blank" rel="noopener">An interactive Flow Lenia ecosystem, written from the ALIFE 2023 paper</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">673. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411856" target="_blank" rel="noopener">Let&#x27;s talk about Temple&#x27;s Research (with receipts)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">674. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411840" target="_blank" rel="noopener">Delegated Capability and Non-Delegated Responsibility</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">675. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411827" target="_blank" rel="noopener">Unified Grid: How We Re-Architected Slack for Our Largest Customers</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">676. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411810" target="_blank" rel="noopener">OpenSSL 3.4 and 3.6 End of Life</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">677. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411800" target="_blank" rel="noopener">Show HN: stardelt.io – a self-hosted lakehouse on k8s (pre-alpha)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">678. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411728" target="_blank" rel="noopener">Elliptic Curve Arithmetic for Quantum Cryptanalysis: A Study of Curve25519</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">679. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411673" target="_blank" rel="noopener">Aina Ring</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">680. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411597" target="_blank" rel="noopener">Project Steadfast</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">681. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411371" target="_blank" rel="noopener">The Credit Card</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">682. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411352" target="_blank" rel="noopener">Being a line cook without talking to AI</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">683. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411346" target="_blank" rel="noopener">Show HN: Ferrule – copy-in React Native UI components for iOS, Android and web</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">684. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411293" target="_blank" rel="noopener">Show HN: Hacker News Column View</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">685. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411238" target="_blank" rel="noopener">Autonomous Dynamics Runtime (ADR) – Zero-copy C++20 execution spec</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">686. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411219" target="_blank" rel="noopener">My Grok Bot Started Vendor Locking Me</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">687. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50411013" target="_blank" rel="noopener">Show HN: SEC Fundamentals – free financial API</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">688. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410855" target="_blank" rel="noopener">Show HN: I built an AI code editor that for teams</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">689. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410758" target="_blank" rel="noopener">Show HN: Codend – Build and publish web apps with AI agents</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">690. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410646" target="_blank" rel="noopener">VindexLLM – Windows Vulkan GPU GGUF LLM inference engine written in Delphi 12</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">691. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410643" target="_blank" rel="noopener">PullDash – Review pull requests in a high-performance UI, driven by keybinds</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">692. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410454" target="_blank" rel="noopener">Show HN: Gimbap – A themeable replacement for the macOS Dock</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">693. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410429" target="_blank" rel="noopener">Show HN: Reges Code – a free AI code editor that runs on local models</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">694. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410387" target="_blank" rel="noopener">Our software engineering interviews are changing (a little)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">695. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410369" target="_blank" rel="noopener">Is &quot;GPU-hour per user&quot; a sane way to price LLM inference?</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">696. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410356" target="_blank" rel="noopener">New type of architecture for agentic memory</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">697. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410337" target="_blank" rel="noopener">JobRequester: I built this free Chrome extension that tracks job applications</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">698. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50410270" target="_blank" rel="noopener">Elephant-Goldfish Model (Agent Skill)</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">699. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50409962" target="_blank" rel="noopener">Why mandating AI use in the workplace can backfire</a></div>
+<div class="hn-all-row"><span class="hn-all-meta">700. 1▲/0💬</span> <a href="https://news.ycombinator.com/item?id=50409957" target="_blank" rel="noopener">DFIR Level-0 Protocol: Sanitization of UEFI Bootkits and Linux Rootkits</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="github" class="section">
+    <div class="sec-title"><span class="emo">⭐</span><span>GitHub Trending · 当日热门（按 star 增量排序）</span></div>
+    <div class="two-col">
+      <div class="col-summary"><div class="col-title">📝 当日综述</div><p>本日 Trending 共 <span class="hl">9 条</span>（周末榜单缩量，页面实际仅 9 个条目，如实呈现不补数）。榜首是老牌 OSINT 工具 <span class="hl">sherlock-project/sherlock</span>（<span class="hl">+2,373★</span>，总 103,785★），开源 Grok 替代品 <span class="hl">OpenMausBot</span>（+1,439★）次之。</p>
+<p><b>主线：Agent 基建三连。</b><span class="hl">vercel-labs/agent-browser</span>（+815★，给 agent 的浏览器自动化 CLI）、<span class="hl">meta/astryx</span>（+875★，Meta 开源「agent ready」设计系统）、<span class="hl">anthropics/skills</span>（+792★，官方 Skills 仓库）同时上榜——agent 的「手脚、界面、技能」三层同日获市场加注。</p>
+<p><b>次线：</b>NVIDIA 官方开源 <span class="hl">nvke</span>（裸金属 GPU K8s 管理平面）；<span class="hl">billion-context</span>（+460★）把上下文压缩做到「100K 窗口够用、省 5 倍 token」，与 HN 的模型迁移主线互为成本侧注脚。</p></div>
+      <div class="col-right"><div class="gh-grid">
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/sherlock-project/sherlock" target="_blank" rel="noopener">sherlock-project/sherlock</a>
+            <span class="gh-lang">Python</span>
+          </div>
+          <div class="gh-desc">Hunt down social media accounts by username across social networks<div class="zh">跨社交网络按用户名搜人的老牌 OSINT 工具，单日 +2,373★ 登顶（总 103,785★）</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 2,373 今日</span>
+            <span class="gh-total">★ 103,785</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/dsx-ai-factory/nvke" target="_blank" rel="noopener">dsx-ai-factory/nvke</a>
+            <span class="gh-lang">Go</span>
+          </div>
+          <div class="gh-desc">NVIDIA Kubernetes Engine (NVKE). A management plane for GPU Kubernetes on bare metal.<div class="zh">NVIDIA Kubernetes Engine：裸金属 GPU Kubernetes 的管理平面，NVIDIA 官方开源（Go，+345★，总 875）</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 345 今日</span>
+            <span class="gh-total">★ 875</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/milind-soni/OpenMausBot" target="_blank" rel="noopener">milind-soni/OpenMausBot</a>
+            <span class="gh-lang">TypeScript</span>
+          </div>
+          <div class="gh-desc">Open-source Grok Bot alternative with a virtual machine that bots can use<div class="zh">开源 Grok Bot 替代品：给 bot 配一台真正可用的虚拟机（TypeScript，+1,439★，总 18,358）</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 1,439 今日</span>
+            <span class="gh-total">★ 18,358</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/anthropics/claude-quickstarts" target="_blank" rel="noopener">anthropics/claude-quickstarts</a>
+            <span class="gh-lang">Python</span>
+          </div>
+          <div class="gh-desc">A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API<div class="zh">Anthropic 官方 Claude API 快速上手项目集（Python，+32★，总 19,466）</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 32 今日</span>
+            <span class="gh-total">★ 19,466</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/vercel-labs/agent-browser" target="_blank" rel="noopener">vercel-labs/agent-browser</a>
+            <span class="gh-lang">Rust</span>
+          </div>
+          <div class="gh-desc">Browser automation CLI for AI agents<div class="zh">Vercel 的 AI agent 浏览器自动化 CLI（Rust，+815★，总 47,675）</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 815 今日</span>
+            <span class="gh-total">★ 47,675</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/meta/astryx" target="_blank" rel="noopener">meta/astryx</a>
+            <span class="gh-lang">TypeScript</span>
+          </div>
+          <div class="gh-desc">An open source design system that's fully customizable and agent ready<div class="zh">Meta 开源的完全可定制、agent-ready 设计系统（TypeScript，+875★，总 16,986）</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 875 今日</span>
+            <span class="gh-total">★ 16,986</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/anthropics/skills" target="_blank" rel="noopener">anthropics/skills</a>
+            <span class="gh-lang">Python</span>
+          </div>
+          <div class="gh-desc">Public repository for Agent Skills<div class="zh">Anthropic 官方 Agent Skills 公共仓库（Python，+792★，总 189,713）</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 792 今日</span>
+            <span class="gh-total">★ 189,713</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/google-deepmind/mujoco" target="_blank" rel="noopener">google-deepmind/mujoco</a>
+            <span class="gh-lang">C++</span>
+          </div>
+          <div class="gh-desc">Multi-Joint dynamics with Contact. A general purpose physics simulator.<div class="zh">DeepMind 通用多体接触动力学物理仿真器（C++，+41★，总 16,452）</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 41 今日</span>
+            <span class="gh-total">★ 16,452</span>
+          </div>
+        </div>
+        <div class="gh-card">
+          <div class="gh-head">
+            <a class="gh-name" href="https://github.com/ranxianglei/billion-context" target="_blank" rel="noopener">ranxianglei/billion-context</a>
+            <span class="gh-lang">TypeScript</span>
+          </div>
+          <div class="gh-desc">A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need<div class="zh">上下文压缩插件：月级长会话 + 小窗口（100K 够用）+ 省 5 倍 token（TypeScript，+460★，总 5,205）</div></div>
+          <div class="gh-meta">
+            <span class="gh-today">▲ 460 今日</span>
+            <span class="gh-total">★ 5,205</span>
+          </div>
+        </div>
+      </div></div>
+    </div>
+  </section>
+
+  <section id="producthunt" class="section">
+    <div class="sec-title"><span class="emo">🚀</span><span>Product Hunt · 今日精选发布</span></div>
+    <div class="two-col">
+      <div class="col-summary"><div class="col-title">📝 当日综述</div><p>PT=2026-11-08 批次（CST−1），取前 8。<span class="hl">AXL</span>（<span class="hl">194▲</span>）登顶：经 MCP 给 AI 产品创始人 1,200+ 个 GTM 动作——Agent 供给层商品化的典型样本。</p>
+<p><b>给 agent 卖生产资料</b>是今天最整齐的一条线：<span class="hl">NoMac</span>（118▲）按分钟出租一台真 Mac、<span class="hl">outages.live</span>（98▲）给 agent 供宕机监控流、<span class="hl">Sage2</span>（179▲）把人话变结构化动作。</p>
+<p><b>Mac 生态小工具扎堆</b>：Archie（截图+刘海置物架，107▲）、Zigzag Browser（后 Arc 时代原生浏览器，98▲）、NotchIsland/Keypause/Textly 等长尾在榜——开发者把「Arc 之死」与刘海缺口当成了新矿脉。</p></div>
+      <div class="col-right"><div class="gh-grid">
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#1</span>
+            <a class="ph-name" href="https://www.producthunt.com/products/axl-2" target="_blank" rel="noopener">AXL</a>
+          </div>
+          <div class="ph-desc">GTM copilot for AI product founders: 1,200+ actions via MCP<div class="zh">面向 AI 产品创始人的 GTM 副驾：经 MCP 提供 1,200+ 动作（194▲/31💬 当日第一）</div></div>
+          <div class="ph-topics">▲ 194 · Sales · Marketing · AI</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#2</span>
+            <a class="ph-name" href="https://www.producthunt.com/products/sagecraft" target="_blank" rel="noopener">Sage2 by Levanto Labs</a>
+          </div>
+          <div class="ph-desc">Turn live talk into structured data and instant actions<div class="zh">把现场对话变成结构化数据与即时动作（179▲）</div></div>
+          <div class="ph-topics">▲ 179 · API · Developer Tools · AI</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#3</span>
+            <a class="ph-name" href="https://www.producthunt.com/products/tinker-2" target="_blank" rel="noopener">Inkling 2 Small</a>
+          </div>
+          <div class="ph-desc">A model that can see and refine what it builds<div class="zh">一个能「看见并打磨」自己构建物的模型（163▲）</div></div>
+          <div class="ph-topics">▲ 163 · AI · Development</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#4</span>
+            <a class="ph-name" href="https://www.producthunt.com/products/hacker-noon" target="_blank" rel="noopener">Deduplication</a>
+          </div>
+          <div class="ph-desc">Which Meaning Owns the Word?<div class="zh">HackerNoon 出品：「去重」这个词的意义归谁？（133▲）</div></div>
+          <div class="ph-topics">▲ 133 · Developer Tools</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#5</span>
+            <a class="ph-name" href="https://www.producthunt.com/products/nomac" target="_blank" rel="noopener">NoMac</a>
+          </div>
+          <div class="ph-desc">Your AI agent&#x27;s own Mac, billed per minute. No subscription<div class="zh">给你的 AI agent 一台专属 Mac，按分钟计费、无订阅（118▲）</div></div>
+          <div class="ph-topics">▲ 118 · Mac · Developer Tools · AI</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#6</span>
+            <a class="ph-name" href="https://www.producthunt.com/products/docsalot-2" target="_blank" rel="noopener">DocsAlot for customer support</a>
+          </div>
+          <div class="ph-desc">Slack and Discord bot that answers your customers questions<div class="zh">Slack/Discord 机器人自动回答客户问题（114▲）</div></div>
+          <div class="ph-topics">▲ 114 · Slack · SaaS · Developer Tools</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#7</span>
+            <a class="ph-name" href="https://www.producthunt.com/products/archie-3" target="_blank" rel="noopener">Archie</a>
+          </div>
+          <div class="ph-desc">Mac Screenshot Manager &amp; Notch Shelf<div class="zh">Mac 截图管理器 + 刘海置物架（107▲）</div></div>
+          <div class="ph-topics">▲ 107 · Design Tools · Productivity · UX</div>
+        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">#8</span>
+            <a class="ph-name" href="https://www.producthunt.com/products/zigzag-browser" target="_blank" rel="noopener">Zigzag Browser</a>
+          </div>
+          <div class="ph-desc">The polished, native Mac browser for life after Arc<div class="zh">后 Arc 时代的精致原生 Mac 浏览器（98▲，开源）</div></div>
+          <div class="ph-topics">▲ 98 · Mac · Open Source · GitHub</div>
+        </div>
+      </div></div>
+    </div>
+  </section>
+
+  <section id="papers" class="section">
+    <div class="sec-title"><span class="emo">📄</span><span>Hugging Face Daily Papers</span></div>
+    <div class="note">注：2026-11-09 当日批次（date=2026-11-09）经多次重试返回 HTTP 400，11-07/11-08 亦为空数组 []，官方当日尚未发布；本期不列条目，未沿用任何历史批次、未编造条数。</div>
+    <div class="two-col">
+      <div class="col-summary"><div class="col-title">📝 当日综述</div><p><span class="hl">2026-11-09 当日批次截至发稿尚未发布</span>：API 对 date=2026-11-09 返回 HTTP 400，相邻的 11-07（周六）、11-08（周日）亦为空数组。周一早间 PT 尚未走完，属正常节奏。</p>
+<p>最近一个可用批次为 <span class="hl">11-06（周五，32 篇）</span>，按规范本期不列历史条目、不编造。建议明日窗口回看周一新批次。</p></div>
+      <div class="col-right"><div class="gh-grid">
+        <div class="ph-card" style="grid-column:1/-1;">
+          <div class="ph-desc">当日 Hugging Face Daily Papers 批次为空，无条目可列。原因见下方「注」。</div>
+        </div>
+      </div></div>
+    </div>
+  </section>
+
+  <section id="insights" class="section">
+    <div class="sec-title"><span class="emo">💡</span><span>趋势洞察 · 跨四源</span></div>
+    <div class="insight">
+      <div class="insight-head"><span class="insight-dot"></span><h3>模型忠诚度开始被重新定价</h3><span class="insight-src">HN × GitHub</span></div>
+      <p>个人迁移（Goodbye Claude→Pi，703▲/435💬 双第一）与企业成建制撤编（高盛把 Claude Code 从银行家交易员机器上撤下，608▲/359💬）同日出现；GitHub 的 billion-context 用上下文压缩把 token 开销压到 1/5（+460★）。切换成本从技术问题变成财务问题后，多供应商与压缩层成为对冲手段。</p>
+    </div>
+    <div class="insight">
+      <div class="insight-head"><span class="insight-dot"></span><h3>Agent 供给层进入商品化收口</h3><span class="insight-src">GitHub × Product Hunt</span></div>
+      <p>GitHub 整页 agent 基建：agent-browser（+815★）、Meta astryx「agent ready」设计系统（+875★）、anthropics/skills（+792★）；PH 开始卖 agent 的生产资料——NoMac 按分钟出租 Mac（118▲）、AXL 提供 1,200+ 个 MCP 动作（194▲ 登顶）、outages.live 给 agent 供宕机流（98▲）。基建已齐，竞争转向供给与成本。</p>
+    </div>
+    <div class="insight">
+      <div class="insight-head"><span class="insight-dot"></span><h3>平台脆弱性与数据边界同日受压</h3><span class="insight-src">HN</span></div>
+      <p>GitHub 又挂了（120▲/127💬）与 Outlook.com 悄悄拒收无 DMARC 域名邮件（247▲/188💬）同日提醒依赖链的脆弱；消费级脑电头环把脑数据喂给 AI（116▲/91💬）与热门 App 广告 SDK 沦为警方追踪工具，则把数据边界问题压到个人设备层。</p>
+    </div>
+  </section>
+
+</div>
+
+<footer class="site-footer">
+  数据来源：Hacker News · GitHub Trending · Product Hunt · Hugging Face Papers<br>
+  由每日自动化任务自动生成 · 经 GitHub Pages 部署<br>
+  <a href="index.html">← 返回归档</a> · <a href="#top-story">回到顶部 ↑</a>
+</footer>
+<script>
+function fitTwoCol(row){
+  var s = row.querySelector('.col-summary');
+  var r = row.querySelector('.col-right');
+  if(s && r){ r.style.maxHeight = s.offsetHeight + 'px'; }
+}
+function fitThreeCol(row){
+  var s = row.querySelector('.col-summary');
+  if(!s) return;
+  var m = row.querySelector('.col-mid');
+  var r = row.querySelector('.col-right');
+  var h = s.offsetHeight + 'px';
+  if(m){ m.style.maxHeight = h; }
+  if(r){ r.style.maxHeight = h; }
+}
+function fitCols(){
+  document.querySelectorAll('.two-col').forEach(fitTwoCol);
+  document.querySelectorAll('.hn-three').forEach(fitThreeCol);
+}
+function rafFit(){ requestAnimationFrame(function(){ requestAnimationFrame(fitCols); }); }
+fitCols(); rafFit();
+window.addEventListener('resize', fitCols);
+window.addEventListener('load', function(){ fitCols(); setTimeout(fitCols, 200); setTimeout(fitCols, 600); setTimeout(fitCols, 1200); });
+if(document.fonts && document.fonts.ready){ document.fonts.ready.then(function(){ fitCols(); rafFit(); }); }
+</script>
+</body>
+</html>
