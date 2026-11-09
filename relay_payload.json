@@ -3,8 +3,8 @@
  "date_label": "2026-11-09 · 星期一",
  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-11-09.html",
  "summary": [
-  "HN 双第一「告别 Claude，转向 Pi」（703▲/435💬）与高盛成建制撤下 Claude Code（608▲/359💬）同日出现：模型供应商锁定正被当作财务问题重新定价，英伟达董事会调查黄仁勋（384▲/298💬）则把治理风险摆上台面。",
-  "GitHub Trending 周末缩量仅 9 条，但 agent 基建三连同日上榜——Vercel agent-browser（+815★）、Meta astryx「agent ready」设计系统（+875★）、anthropics/skills（+792★），另有 NVIDIA 官方开源 NVKE（裸金属 GPU K8s 管理平面）。",
-  "Product Hunt 榜首 AXL（194▲）经 MCP 给 AI 创始人 1,200+ 动作，NoMac（118▲）按分钟出租 agent 专用 Mac：Agent 供给层加速商品化；HF 当日批次尚未发布，如实空档未沿用旧数据。"
+  "模型供应商绑定第一次被当财务问题算：HN 双第一是个人「告别 Claude 转向 Pi」（703▲/435💬），第二是机构「高盛撤下 Claude Code」（607▲/359💬）。",
+  "Agent 基建从「能不能干」转向记忆/权限/账单：HN 记忆格式标准化提案（175▲）、GitHub billion-context 上下文压缩 +460★、Skills 仓库 +792★、PH 按分钟出租 Mac 的 NoMac（118▲）。",
+  "治理与隐私同日受压：英伟达董事会调查黄仁勋 +749▲ 与脑电头环、广告 SDK 助警追踪、英国强制 CSAM 检测同榜；HF 当日批次未发布，如实留空。"
  ]
 }
