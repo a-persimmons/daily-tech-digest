@@ -1,10 +1,10 @@
 {
- "date": "2026-11-09",
- "date_label": "2026-11-09 · 星期一",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-11-09.html",
+ "date": "2026-11-10",
+ "date_label": "2026-11-10 · 星期二",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-11-10.html",
  "summary": [
-  "模型供应商绑定第一次被当财务问题算：HN 双第一是个人「告别 Claude 转向 Pi」（703▲/435💬），第二是机构「高盛撤下 Claude Code」（607▲/359💬）。",
-  "Agent 基建从「能不能干」转向记忆/权限/账单：HN 记忆格式标准化提案（175▲）、GitHub billion-context 上下文压缩 +460★、Skills 仓库 +792★、PH 按分钟出租 Mac 的 NoMac（118▲）。",
-  "治理与隐私同日受压：英伟达董事会调查黄仁勋 +749▲ 与脑电头环、广告 SDK 助警追踪、英国强制 CSAM 检测同榜；HF 当日批次未发布，如实留空。"
+  "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2、Artificial Analysis 65 分历史最高，而 HN 热度第一却是「Opus 5.5 被削了」的体感质疑（758▲/482💬）——模型信任进入「体感审计」时代，苹果还给工程师的每日 AI 预算封顶 200 美元。",
+  "算力定价黑箱被两头撕开：同一块 H100 租金 2.69 或 12.29 美元一小时、树莓派 5 16GB 涨到 385 美元，Google 连发 TPU 8tx/8i Max、DeepX 宣称 5W 跑 100B 推理。",
+  "隐私边界同日两连破：谷歌 Gemini 把个人 Drive 文件和邮件路由给人工标注员（450▲）、ChatGPT 桌面版把 SSH agent 转发到远程机器（206▲）；GitHub 上 agent 基建连续两日获加注，HF 当日论文批次尚未发布（已如实标注）。"
  ]
 }
