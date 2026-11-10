@@ -237,19 +237,19 @@ footer.site-footer a{color:var(--accent2);text-decoration:none;}
     <div class="sec-title"><span class="emo">🔥</span><span>今日头条 · Top 3</span></div>
     <div class="hero-grid">
       <a class="hero-card" href="https://news.ycombinator.com/item?id=50422069" target="_blank" rel="noopener">
-        <div class="hero-meta">HN 758▲ / 482💬 · 热度第一 · Hacker News 讨论页</div>
-        <div class="hero-title">「Opus 5.5 被削了？」：发布会的最高分与用户的体感在同一个 24 小时里打架</div>
-        <div class="zh">11 月 3 日起思考模式明显变化引发大规模讨论；同日 Claude Fable 5.2 发布并拿到 Artificial Analysis 65 分历史最高——模型质量的「官方口径」与「用户体感」首次同日公开对撞。</div>
+        <div class="hero-meta">机会卡 1/3 · 人群：把 LLM 当生产依赖的 solo dev · 信号：HN 758▲ / 482💬</div>
+        <div class="hero-title">模型会悄悄变笨，但没人给它做版本 diff</div>
+        <div class="zh">人群：把 LLM 接进产品的独立开发者与小团队。痛点：Fable 5.2 刚拿 Artificial Analysis 历史最高 65 分，热度第一却是「Opus 5.5 从 11 月 3 日起被削了」的 482 条体感抱怨——供应商改行为不通知、不提供回归基线。现有凑合：手动跑几个 prompt、翻论坛。缺口：没有轻量的「模型行为版本 diff + 变更告警」服务。最小验证动作：做一个 20 题固定评测集，每天跑一次、有漂移就发邮件，落地页收 20 个 waitlist。</div>
       </a>
-      <a class="hero-card" href="https://news.ycombinator.com/item?id=50429906" target="_blank" rel="noopener">
-        <div class="hero-meta">HN 964▲ / 215▲/607💬 双帖进 Top5 · Hacker News 讨论页</div>
-        <div class="hero-title">Claude Fable 5.2 与 Mythos 5.2 发布：分数新高之外，讨论聚焦「还会不会再悄悄变」</div>
-        <div class="zh">Anthropic 发布 Fable 5.2 与 Mythos 5.2，Artificial Analysis 65 分历史最高；但社区把最多评论给了「被削疑云」与「一次性写出一个游戏」的实测帖——发布不再是终点，可审计性才是。</div>
+      <a class="hero-card" href="https://news.ycombinator.com/item?id=50427085" target="_blank" rel="noopener">
+        <div class="hero-meta">机会卡 2/3 · 人群：用 API 做副业的单人开发者 · 信号：HN 167▲ / 84💬 + PH 156▲</div>
+        <div class="hero-title">AI 成本正在变成一笔算不清的账</div>
+        <div class="zh">人群：同时用 2 家以上模型 API 做副业的 solo dev。痛点：同一块 H100 租金 2.69 或 12.29 美元一小时（价差 4.6 倍）、苹果给工程师 AI 日预算封顶 200 美元、PH 上 ProtoMap（156▲）专门卖「别浪费 token 重复发现依赖」——成本不可见已成公开抱怨。现有凑合：各家控制台分开看、Excel 手工记。缺口：跨供应商、按项目或按功能归一的 token 成本 + 预算阈值告警。最小验证动作：接两家账单 CSV 做一封周报邮件，定价假设 6 美元/月，落地页先测付费意愿。</div>
       </a>
       <a class="hero-card" href="https://news.ycombinator.com/item?id=50429426" target="_blank" rel="noopener">
-        <div class="hero-meta">HN 450▲ / 104💬 · Hacker News 讨论页</div>
-        <div class="hero-title">谷歌 Gemini 把个人 Drive 文件和邮件路由给人工标注员：云端隐私边界再失守</div>
-        <div class="zh">个人云端硬盘文件与邮件被送进人工标注流程；同日 ChatGPT 桌面版被曝把 SSH agent 转发到远程机器（206▲/71💬）——云上隐私与本地密钥在同一天被同一类问题击穿。</div>
+        <div class="hero-meta">机会卡 3/3 · 人群：在本机跑 coding agent 的开发者 · 信号：HN 450▲ / 206▲ + PH 207▲</div>
+        <div class="hero-title">Agent 拿到的权限，比它的使用者以为的多</div>
+        <div class="zh">人群：在自己机器上跑 coding agent 的开发者。痛点：Gemini 把个人 Drive 文件和邮件路由给人工标注员（450▲），ChatGPT 桌面版把 SSH agent 转发到远程机器（206▲/71💬）；PH 上 Arcjet 已开始卖「为编码 agent 定制的安全模型」（207▲）——需求被验证，但只覆盖企业侧。现有凑合：靠沙箱、靠手工点权限弹窗。缺口：一个跨工具通用的「agent 能碰哪些本地凭据与文件」策略层。最小验证动作：先做 CLI 版，只管 SSH agent 与 .env 两类，发 Show HN 收反馈，不写 GUI。</div>
       </a>
     </div>
   </section>
@@ -260,10 +260,9 @@ footer.site-footer a{color:var(--accent2);text-decoration:none;}
     <div class="hn-three">
       <div class="col-summary">
         <div class="col-title">📝 当日综述</div>
-        <div class="hn-summary"><p>本窗口（<span class="hl">11/09 10:00 → 11/10 10:00 CST</span>）Hacker News 共 <span class="hl">1026 条</span>新帖（全量落库，触发递归切分）。热度第一是社区对模型的信任危机：<span class="hl">「Opus 5.5 被削了？11 月 3 日起思考模式明显变了」</span>（<span class="hl">758▲/482💬</span>）；同日 Anthropic 实际发布了 <span class="hl">Claude Fable 5.2 与 Mythos 5.2</span>（964▲/215▲，双帖进 Top5），<span class="hl">Artificial Analysis 榜单 65 分历史最高</span>——「模型被削了吗」的怀疑与「史上最高分」的发布会出现在同一个 24 小时里。</p>
-<p><b>主线一：用户开始用「体感」审计模型供应商。</b>发布会的分数再高，社区关心的是「我的使用模式里它变笨了没有」；配套故事还有 <span class="hl">苹果给工程师的每日 AI 预算封顶 200 美元</span>（112▲/121💬）、<span class="hl">强制 100% 用 AI 一年后没人看得懂代码</span>（136💬 漏网高讨论）——企业与个人都在重新谈判「信任什么、为 AI 花多少」。</p>
-<p><b>主线二：基础设施的价格与边界在重画。</b><span class="hl">同一块 H100 租金 2.69 或 12.29 美元一小时</span>（167▲/84💬）撕开算力定价黑箱；<span class="hl">树莓派 5 16GB 卖到 385 美元</span>（284▲/252💬）是内存涨价之痛；Google 则连发 <span class="hl">TPU 8tx 与 8i Max</span> 与 <span class="hl">DeepX 5W 跑 100B 推理</span>，从云端到边缘两头压价。</p>
-<p><b>主线三：隐私边界再度失守。</b><span class="hl">谷歌 Gemini 把个人 Drive 文件和邮件路由给人工标注员</span>（450▲/104💬）与 <span class="hl">ChatGPT 桌面版把你的 SSH agent 转发到远程机器</span>（206▲/71💬）一前一后，一个动云上隐私、一个动本地密钥。手艺与人间照常：<span class="hl">可折叠飞行·最好的纸飞机</span>（868▲）、<span class="hl">人类再也做不出维基百科这样的项目</span>（471▲/415💬）、<span class="hl">USPS 官方开放 ZIP 边界数据</span>（504▲）、<span class="hl">malloc 到底在干什么</span>（230▲）。排序：分数与评论 min-max 归一化加权（<span class="hl">0.6×分数 + 0.4×评论</span>）得 hot 降序取 Top20（中栏）；右栏为窗口全量 <span class="hl">1026 条</span>、按同一热度排序、固定框内滚动——确保<span class="hl">零遗漏</span>。</p></div>
+        <div class="hn-summary"><p>窗口（<span class="hl">11/09 10:00 → 11/10 10:00 CST</span>）共 <span class="hl">1026 条</span>。热度第一不是新模型，是「Opus 5.5 被削了」的体感质疑（<span class="hl">758▲/482💬</span>）——同日 Fable 5.2 刚拿下 Artificial Analysis 历史最高 65 分。</p>
+<p>供给端在涨价与收紧（H100 同卡价差 4.6 倍、树莓派 16GB 卖 385 美元、苹果 AI 日预算封顶 200 美元），用户端开始要求可审计的模型行为与成本。</p>
+<p><b>今日机会：</b>模型行为回归基线、跨供应商成本归因、agent 本地凭据策略，三张机会卡见页首；右栏 1026 条为全量索引，仅考古用，中栏 Top20 由 <span class="hl">0.6×分数 + 0.4×评论</span> 加权排序。</p></div>
         <div class="col-title" style="margin-top:18px;">⚠️ 漏网高讨论</div>
         <div class="hn-summary"><p style='margin:0;'><span class='hl'>A year after the 100% AI mandate nobody </span>（136💬 / 114▲） · <span class='hl'>Try Gleam</span>（124💬 / 117▲） · <span class='hl'>Apple capped engineers at a $200 daily A</span>（121💬 / 112▲）</p><p style='margin:6px 0 0;color:#6b6357;font-size:12px;'>「高分低讨论」之外的有效信号，均可在右栏翻到。</p></div>
       </div>
@@ -1385,9 +1384,9 @@ footer.site-footer a{color:var(--accent2);text-decoration:none;}
   <section id="github" class="section">
     <div class="sec-title"><span class="emo">⭐</span><span>GitHub Trending · 当日热门（按 star 增量排序）</span></div>
     <div class="two-col">
-      <div class="col-summary"><div class="col-title">📝 当日综述</div><p>本日 Trending 共 <span class="hl">11 条</span>（周一榜单缩量，页面实际仅 11 个条目，如实呈现不补数）。榜首连续两日是老牌 OSINT 工具 <span class="hl">sherlock-project/sherlock</span>（<span class="hl">+4,267★</span>，总 107,313★），<span class="hl">meta/astryx</span>（+3,278★）次之，<span class="hl">OpenMausBot</span>（+1,587★）第三。</p>
-<p><b>主线：Agent 基建连续两日获加注。</b><span class="hl">anthropics/skills</span>（+1,038★，总 191,139★）、<span class="hl">meta/astryx</span>（+3,278★）、<span class="hl">vercel-labs/agent-browser</span>（+916★）、<span class="hl">anthropics/claude-quickstarts</span>（+551★）、<span class="hl">garrytan/gbrain</span>（Garry Tan 的 agent brain，+216★）——技能、界面、浏览器、上手集、人格大脑，agent 供给侧五路并进。</p>
-<p><b>次线：</b>中文项目 <span class="hl">ZhuLinsen/daily_stock_analysis</span>（+506★，总 68,999★）用 LLM 做多市场股票分析与自动推送；<span class="hl">RuView</span> 把普通 WiFi 信号变实时空间感知（总 103,535★）。</p></div>
+      <div class="col-summary"><div class="col-title">📝 当日综述</div><p>本日 <span class="hl">11 条</span>（周一缩量，如实呈现不补数）。<span class="hl">sherlock +4,267★</span> 连续两日登顶，meta/astryx +3,278★、OpenMausBot +1,587★ 次之。</p>
+<p>Agent 基建连续两日五路在榜（skills / astryx / agent-browser / claude-quickstarts / gbrain）：「给 agent 造配件」仍是最拥挤、也最容易被单人验证的赛道。</p>
+<p><b>可切入口：</b>中文项目 daily_stock_analysis（+506★，总 68,999★）证明「垂直人群 + LLM + 自动推送」的单人产品需求远未被满足。</p></div>
       <div class="col-right"><div class="gh-grid">
         <div class="gh-card">
           <div class="gh-head">
@@ -1517,9 +1516,9 @@ footer.site-footer a{color:var(--accent2);text-decoration:none;}
   <section id="producthunt" class="section">
     <div class="sec-title"><span class="emo">🚀</span><span>Product Hunt · 今日精选发布</span></div>
     <div class="two-col">
-      <div class="col-summary"><div class="col-title">📝 当日综述</div><p>PT=2026-11-09 批次（CST−1），取前 8。<span class="hl">Product Hunt MCP</span>（<span class="hl">344▲</span>）登顶：官方把社区数据接进 AI 助手。</p>
-<p><b>给 agent 与 AI 工作流卖配件</b>是最整齐的一条线：<span class="hl">Databox CLI</span>（269▲）终端里的 agentic 分析、<span class="hl">Arcjet</span>（207▲）为编码 agent 定制安全模型、<span class="hl">ProtoMap</span>（156▲）给 agent 省依赖探测 token、<span class="hl">MCP1</span>（120▲）一个 URL 接所有 MCP server、<span class="hl">GitHub New PR Overview</span>（122▲）——「AI 工作流的管道件」连续多日占据榜单主体。</p>
-<p><b>营销侧新物种：</b><span class="hl">Dageno AI 2.0</span>（301▲）做 GEO——监测并优化「AI 推荐竞品而不是你」的问题；媒体侧 <span class="hl">Higgsfield Miracle</span>（128▲）实现视频局部编辑不动其余。</p></div>
+      <div class="col-summary"><div class="col-title">📝 当日综述</div><p>PT=2026-11-09 批次前 8，<span class="hl">Product Hunt MCP 344▲</span> 登顶。</p>
+<p>榜单主体是「AI 工作流的管道件」：Databox CLI（269▲）、Arcjet（207▲）、ProtoMap 省依赖 token（156▲）、MCP1 一个 URL 接所有 MCP（120▲）——窄而可单人做完的工具仍是主流。</p>
+<p><b>可切入口：</b>Dageno AI 2.0（301▲）做 GEO「为什么 AI 推荐竞品而不是你」，是新出现的需求品类，值得连跟 3 天确认真伪。</p></div>
       <div class="col-right"><div class="gh-grid">
         <div class="ph-card">
           <div class="ph-top">
@@ -1593,8 +1592,9 @@ footer.site-footer a{color:var(--accent2);text-decoration:none;}
     <div class="sec-title"><span class="emo">📄</span><span>Hugging Face Daily Papers</span></div>
     <div class="note">注：2026-11-10 当日批次（date=2026-11-10）经两次直连重试均返回 200 + 空数组 []，官方当日尚未发布；本期不列条目，未沿用任何历史批次、未编造条数（最近可用 11-09 批次 34 篇仅作背景说明）。</div>
     <div class="two-col">
-      <div class="col-summary"><div class="col-title">📝 当日综述</div><p><span class="hl">2026-11-10 当日批次截至发稿尚未发布</span>：API 对 date=2026-11-10 两次直连均返回 200 + 空数组。早间 PT 批次通常于 UTC 下午上线，属正常节奏。</p>
-<p>最近一个可用批次为 <span class="hl">11-09（周一，34 篇，Top 票数 64）</span>——昨日发稿时尚未发布、今日已上线，可佐证批次节奏；按规范本期不列历史条目、不编造。建议明日窗口回看 11-10 新批次。</p></div>
+      <div class="col-summary"><div class="col-title">📝 当日综述</div><p><span class="hl">2026-11-10 当日批次截至发稿尚未发布</span>：API 两次直连均返回 200 + 空数组。</p>
+<p>最近可用批次为 11-09（34 篇，Top 64 票），而该批次在昨日发稿时同样未发布——批次通常在 UTC 下午上线，明日回看即可。</p>
+<p>按规范不列历史条目、不编造条数。</p></div>
       <div class="col-right"><div class="gh-grid">
         <div class="ph-card" style="grid-column:1/-1;">
           <div class="ph-desc">当日 Hugging Face Daily Papers 批次为空，无条目可列。原因见下方「注」。</div>
@@ -1606,16 +1606,16 @@ footer.site-footer a{color:var(--accent2);text-decoration:none;}
   <section id="insights" class="section">
     <div class="sec-title"><span class="emo">💡</span><span>趋势洞察 · 跨四源</span></div>
     <div class="insight">
-      <div class="insight-head"><span class="insight-dot"></span><h3>模型信任进入「体感审计」时代</h3><span class="insight-src">HN × GitHub</span></div>
-      <p>Fable 5.2 拿到历史最高 65 分，而热度第一却是「Opus 被削了」的体感质疑（758▲/482💬）——发布分数不再自动兑现信任。配套信号：苹果给工程师每日 AI 预算封顶 200 美元（112▲/121💬）、「强制 100% 用 AI 一年后没人看得懂代码」（136💬）；GitHub 上 anthropics/skills（+1,038★）、meta/astryx（+3,278★）、agent-browser（+916★）连续两日获加注——供需两端都在把「可信的 AI 使用」变成可管理的问题。</p>
+      <div class="insight-head"><span class="insight-dot"></span><h3>信任从「发布分数」转向「体感可审计」</h3><span class="insight-src">HN × GitHub × Product Hunt</span></div>
+      <p>Fable 5.2 拿下历史最高 65 分，热度第一却是「被削」质疑（758▲/482💬）；苹果给工程师 AI 日预算封顶 200 美元（121💬）、「强制 100% 用 AI 一年后没人看得懂代码」（136💬）同日出现；GitHub 上 skills（+1,038★）、astryx（+3,278★）、agent-browser（+916★）连续两日获加注，PH 上 Arcjet（207▲）卖 agent 安全模型——四源都在为「AI 使用可管理」付费。可验证假设：小团队愿意为「模型行为回归告警」每月付 5–15 美元。本周动作：机会卡 1 的落地页，收 20 个 waitlist。</p>
     </div>
     <div class="insight">
-      <div class="insight-head"><span class="insight-dot"></span><h3>算力定价黑箱被从两头撕开</h3><span class="insight-src">HN</span></div>
-      <p>同一块 H100 租金每小时 2.69 或 12.29 美元（167▲/84💬）暴露云 GPU 定价的地域黑箱；树莓派 5 16GB 卖到 385 美元（284▲/252💬）是内存涨价传导到桌面的痛感。供给侧则两头压价：Google 连发 TPU 8tx 与 8i Max，DeepX 宣称 5W 功耗跑 100B 推理，全球第一片 300mm 功率碳化硅晶圆下线——从云端到边缘，算力成本曲线在同一天被重画。</p>
+      <div class="insight-head"><span class="insight-dot"></span><h3>算力成本被两头挤压，归因工具出现空档</h3><span class="insight-src">HN × Product Hunt</span></div>
+      <p>H100 同卡租金 2.69 或 12.29 美元/小时（167▲/84💬）、树莓派 5 16GB 涨到 385 美元（284▲/252💬）；Google 连发 TPU 8tx/8i Max，DeepX 宣称 5W 跑 100B 推理；PH 上 ProtoMap（156▲）、MCP1（120▲）都在卖「少烧 token / 少接一次」的省法。可验证假设：跨供应商成本周报是单人一周能做完、且有人愿付的小工具。本周动作：机会卡 2 接两家账单 CSV，先给自己用一周。</p>
     </div>
     <div class="insight">
-      <div class="insight-head"><span class="insight-dot"></span><h3>隐私边界：从云端标注到本地 SSH 密钥</h3><span class="insight-src">HN × Product Hunt</span></div>
-      <p>Gemini 把个人 Drive 文件和邮件路由给人工标注员（450▲/104💬）与 ChatGPT Desktop 转发 SSH agent（206▲/71💬）一云一端；以太坊基金会「自杀保证书」诉讼（196▲/182💬）则提醒密码学信任的合同边界。反方向的产品开始出现：PH 榜上 Egoist AI Passport（88▲）卖「给 AI 工具的个人数据保险箱」、Arcjet（207▲）为编码 agent 定制安全模型——隐私与安全正在被产品化为 agent 时代的默认配件。</p>
+      <div class="insight-head"><span class="insight-dot"></span><h3>需求侧信号比新模型更值得跟</h3><span class="insight-src">HN × Product Hunt × GitHub</span></div>
+      <p>今天真正可复用的不是三个新模型，是三句公开抱怨：模型会悄悄变笨、AI 账算不清、agent 权限给多了。GitHub 上 daily_stock_analysis（+506★，总 68,999★）证明「垂直人群 + LLM + 自动推送」的单人产品仍供不应求；PH 上 Dageno AI 2.0（301▲）做 GEO 是新出现的需求品类。可验证假设：连续 3 天出现的抱怨才值得动手，单日热度是噪音。本周动作：从今天三张机会卡里挑 1 个，只做落地页，不写代码。</p>
     </div>
   </section>
 

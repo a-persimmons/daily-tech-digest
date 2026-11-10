@@ -1,85 +1,68 @@
 {
- "date": "2026-10-28",
+ "date": "2026-11-10",
  "hero": [
   {
-   "url": "https://news.ycombinator.com/item?id=50257325",
-   "meta": "HN 622▲/618💬 · 今日评论第一、热度第二 · Hacker News 讨论页",
-   "title": "AI promised less work. I've never worked more",
-   "zh": "「AI 承诺更少的工作。可我从来没有这么忙过」——618 条评论让它成为今天 HN 讨论量第一。它不是反 AI 宣言，而是一线工程师的体感记账：产出门槛降低之后，需要审、需要改、需要背的东西成倍增加，人被挪到了流水线的末端而不是上游。同一语境里还有《AI 时代的人月神话》（440▲/309💬）与《软件也许正在变糟，但它曾经糟得可怕》（302▲/317💬）。"
+   "url": "https://news.ycombinator.com/item?id=50422069",
+   "meta": "机会卡 1/3 · 人群：把 LLM 当生产依赖的 solo dev · 信号：HN 758▲ / 482💬",
+   "title": "模型会悄悄变笨，但没人给它做版本 diff",
+   "zh": "人群：把 LLM 接进产品的独立开发者与小团队。痛点：Fable 5.2 刚拿 Artificial Analysis 历史最高 65 分，热度第一却是「Opus 5.5 从 11 月 3 日起被削了」的 482 条体感抱怨——供应商改行为不通知、不提供回归基线。现有凑合：手动跑几个 prompt、翻论坛。缺口：没有轻量的「模型行为版本 diff + 变更告警」服务。最小验证动作：做一个 20 题固定评测集，每天跑一次、有漂移就发邮件，落地页收 20 个 waitlist。"
   },
   {
-   "url": "https://news.ycombinator.com/item?id=50261319",
-   "meta": "HN 765▲/463💬 · 今日热度第一 · DeepMind 官方博客",
-   "title": "Genie 4 — a new generation of world simulation",
-   "zh": "DeepMind 的 Genie 4 以 765▲/463💬 拿下今天的热度第一、评论第二：世界模拟从「生成一段视频」推进到「可交互、可推演的环境」。能力侧的峰值与体感侧的抱怨同一天登顶，是本期最刺眼的一组对照。学术侧的同频证据在 Hugging Face：《Rollback：世界模型中的经验回溯用于策略改进》（28▲）与《ThinkWorld：世界想象强化动力学链推理》（18▲）。"
+   "url": "https://news.ycombinator.com/item?id=50427085",
+   "meta": "机会卡 2/3 · 人群：用 API 做副业的单人开发者 · 信号：HN 167▲ / 84💬 + PH 156▲",
+   "title": "AI 成本正在变成一笔算不清的账",
+   "zh": "人群：同时用 2 家以上模型 API 做副业的 solo dev。痛点：同一块 H100 租金 2.69 或 12.29 美元一小时（价差 4.6 倍）、苹果给工程师 AI 日预算封顶 200 美元、PH 上 ProtoMap（156▲）专门卖「别浪费 token 重复发现依赖」——成本不可见已成公开抱怨。现有凑合：各家控制台分开看、Excel 手工记。缺口：跨供应商、按项目或按功能归一的 token 成本 + 预算阈值告警。最小验证动作：接两家账单 CSV 做一封周报邮件，定价假设 6 美元/月，落地页先测付费意愿。"
   },
   {
-   "url": "https://news.ycombinator.com/item?id=50260814",
-   "meta": "HN 483▲/266💬 · 今日分数前五 · 斯坦福日报",
-   "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
-   "zh": "《Anthropic 用非法获取的斯坦福教授著作训练了 Claude》：训练数据争议第一次落到一个有名有姓的机构与一批有名有姓的作者身上，而不是抽象的「互联网」。同栏《我的数据被用于模型训练了吗？》（215▲/99💬）是用户自己来找答案，《Roblox 未经询问下载了 145GB 模型》（460▲/268💬）说明不告而取已从模型公司扩散到平台公司。今天是「抓取者被追着要收据」的一天。"
+   "url": "https://news.ycombinator.com/item?id=50429426",
+   "meta": "机会卡 3/3 · 人群：在本机跑 coding agent 的开发者 · 信号：HN 450▲ / 206▲ + PH 207▲",
+   "title": "Agent 拿到的权限，比它的使用者以为的多",
+   "zh": "人群：在自己机器上跑 coding agent 的开发者。痛点：Gemini 把个人 Drive 文件和邮件路由给人工标注员（450▲），ChatGPT 桌面版把 SSH agent 转发到远程机器（206▲/71💬）；PH 上 Arcjet 已开始卖「为编码 agent 定制的安全模型」（207▲）——需求被验证，但只覆盖企业侧。现有凑合：靠沙箱、靠手工点权限弹窗。缺口：一个跨工具通用的「agent 能碰哪些本地凭据与文件」策略层。最小验证动作：先做 CLI 版，只管 SSH agent 与 .env 两类，发 Show HN 收反馈，不写 GUI。"
   }
  ],
  "insights": [
   {
-   "src": "兑现落差被同时量出来",
-   "title": "能力的峰值和体感的谷底同一天登顶：Genie 4 拿下热度，「我更忙了」拿下评论",
-   "text": "四个源给出的是同一条曲线的两端。HN 上 Genie 4（765▲/463💬）代表能力侧再破一层——世界模拟进入可交互阶段，Hugging Face 当日批次里《Rollback：世界模型中的经验回溯》（28▲）与《ThinkWorld》（18▲）在学术侧同频；另一端是《AI 承诺少干活。可我从来没有这么忙过》（622▲/618💬）以评论第一压过它，《AI 时代的人月神话》（440▲/309💬）给出理论解释。GitHub 侧的答案不再是更大的模型而是更规矩的接口：Nutlope/hallmark 以 +2,830★ 登顶，做的正是「反 AI 味」的设计语言约束。Product Hunt 当日榜首 TheySaid 4.0（329▲）卖的是「在你构建的地方就看见用户反应」——把验证前置，正是为体感落差买单。这条线的共同结论是：瓶颈已经不在生成，在确认。"
+   "title": "信任从「发布分数」转向「体感可审计」",
+   "src": "HN × GitHub × Product Hunt",
+   "text": "Fable 5.2 拿下历史最高 65 分，热度第一却是「被削」质疑（758▲/482💬）；苹果给工程师 AI 日预算封顶 200 美元（121💬）、「强制 100% 用 AI 一年后没人看得懂代码」（136💬）同日出现；GitHub 上 skills（+1,038★）、astryx（+3,278★）、agent-browser（+916★）连续两日获加注，PH 上 Arcjet（207▲）卖 agent 安全模型——四源都在为「AI 使用可管理」付费。可验证假设：小团队愿意为「模型行为回归告警」每月付 5–15 美元。本周动作：机会卡 1 的落地页，收 20 个 waitlist。"
   },
   {
-   "src": "默认许可正在失效",
-   "title": "抓取者第一次被逐个点名：训练数据、模型下载、公开消息三个口径同时收紧",
-   "text": "HN 今天把「不告而取」拆成了三个层次：训练数据层面《Anthropic 用非法获取的斯坦福教授著作训练了 Claude》（483▲/266💬）+《我的数据被用于模型训练了吗？》（215▲/99💬）；抓取行为层面《Roblox 未经询问下载了 145GB 模型（含成人内容）》（460▲/268💬）；公开性层面《维基百科对 AI 生成内容的清理》（460▲/211💬）与《Discord 将允许任何人通过谷歌搜到公开服务器的消息》（273▲/143💬）。治理侧的回应是《警方正用 AI 以「行为可疑」为由拦停司机》（347▲/277💬）。四源里唯一在补洞的是 Hugging Face 的《HABIT-Bench》（11▲）与《Memory Tax》（1▲）——开始量化 agent 记忆到底值多少。共同结论：默认许可正在失效，明示同意正在从道德要求变成工程要求。"
+   "title": "算力成本被两头挤压，归因工具出现空档",
+   "src": "HN × Product Hunt",
+   "text": "H100 同卡租金 2.69 或 12.29 美元/小时（167▲/84💬）、树莓派 5 16GB 涨到 385 美元（284▲/252💬）；Google 连发 TPU 8tx/8i Max，DeepX 宣称 5W 跑 100B 推理；PH 上 ProtoMap（156▲）、MCP1（120▲）都在卖「少烧 token / 少接一次」的省法。可验证假设：跨供应商成本周报是单人一周能做完、且有人愿付的小工具。本周动作：机会卡 2 接两家账单 CSV，先给自己用一周。"
   },
   {
-   "src": "可自己跑、自己验成为刚需",
-   "title": "手艺层与秘密层同时加厚：Ghostty 拿了分数第一，政府秘密裁决拿了分数第二",
-   "text": "今天的数字很整齐：Ghostty 1.4（815▲）是分数第一，《美国政府藏着一份关于它如何监视美国人的秘密法院裁决》（814▲）是分数第二，两者只差 1 分。手艺这条线今天格外厚实——Python 实验性 JIT 被移除（456▲/246💬）、有限单群分类在 Lean 中被形式化（178▲/45💬）、Gforth 1.0（159▲/17💬）、四个月的 Zig（81▲/49💬）、我还在教 OpenGL ES 3.0（138▲/86💬）、JetBrains IDE 转由 libghostty 驱动（65▲/10💬）；GitHub 侧 obra/superpowers（+617★）与 affaan-m/ECC（+1,165★）继续给 agent 加装方法论骨架。秘密这条线同样密集：DOGE 操盘手掏空 USAID（217▲/135💬）、据称的以色列间谍公司盯上 Starlink 用户（131▲/30💬）。Product Hunt 里 Off Grid AI（101▲，手机与电脑上的私有 AI）与 Survival LLM（211▲/108💬）是同一姿态的产品化版本。共同结论：当平台与机构都不再可信，可自己跑、自己验的东西就成了刚需。"
+   "title": "需求侧信号比新模型更值得跟",
+   "src": "HN × Product Hunt × GitHub",
+   "text": "今天真正可复用的不是三个新模型，是三句公开抱怨：模型会悄悄变笨、AI 账算不清、agent 权限给多了。GitHub 上 daily_stock_analysis（+506★，总 68,999★）证明「垂直人群 + LLM + 自动推送」的单人产品仍供不应求；PH 上 Dageno AI 2.0（301▲）做 GEO 是新出现的需求品类。可验证假设：连续 3 天出现的抱怨才值得动手，单日热度是噪音。本周动作：从今天三张机会卡里挑 1 个，只做落地页，不写代码。"
   }
  ],
  "gh_tr": {
-  "Nutlope/hallmark": "反 AI 味设计技能包，给 Claude Code、Cursor 与 Codex 用——用一套可被机器执行的审美约束，压掉 agent 生成界面里那种千篇一律的滑腻感。",
-  "HKUDS/DeepTutor": "DeepTutor：终身个性化辅导。把长期记忆与学习画像接进 AI 家教，让辅导跨会话累积而不是每次从零开始。",
-  "makecindy/cindy": "「想到，就能做到。」开箱即用的开源 AI Agent，主打不折腾配置就能跑起来。",
-  "pbakaus/impeccable": "给你的编码 agent 用的设计词汇表：用 polish 与 bolder 去引导，用 critique 与 audit 去评审，顺手把 AI 味拦下来。",
-  "elayadesign/ai-design-skills": "给 AI 编码助手用的设计技能集合，把设计规范打包成 agent 可直接调用的技能。",
-  "JetBrains/thinkrail": "在一款轻量、真实、会围绕你的工作方式自我定制的 IDE 里做 vibe coding。",
-  "affaan-m/ECC": "agent harness 性能优化体系：技能、直觉、记忆、安全与研究优先的开发流程，全部围绕把 harness 跑快。",
-  "gitroomhq/postiz-app": "终极 agentic 社媒排期工具，把发布流程交给 agent 自动排程。",
-  "togg53192-cmd/jailbreaks": "我收集的全部越狱提示词，一次列完。",
-  "nightly-labs/openbot": "本地优先的桌面工作区，用于常驻 AI 队友：让 Codex、Claude、Grok 各有独立工作区、任务与上下文。",
-  "obra/superpowers": "一套 agentic 技能框架与软件开发方法论，确实能跑通的那一种。"
+  "sherlock-project/sherlock": "跨社交网络按用户名搜人的老牌 OSINT 工具，连续两日登顶（+4,267★，总 107,313★）",
+  "meta/astryx": "Meta 开源的完全可定制、agent-ready 设计系统（TypeScript，+3,278★，总 20,381）",
+  "milind-soni/OpenMausBot": "开源 Grok Bot 替代品：给 bot 配一台真正可用的虚拟机（TypeScript，+1,587★，总 19,844）",
+  "anthropics/skills": "Anthropic 官方 Agent Skills 公共仓库，连续两日在榜（Python，+1,038★，总 191,139）",
+  "vercel-labs/agent-browser": "Vercel 的 AI agent 浏览器自动化 CLI，连续两日在榜（Rust，+916★，总 48,576）",
+  "google-deepmind/mujoco": "DeepMind 通用多体接触动力学物理仿真器（C++，+574★，总 16,965）",
+  "anthropics/claude-quickstarts": "Anthropic 官方 Claude API 快速上手项目集（Python，+551★，总 20,071）",
+  "ZhuLinsen/daily_stock_analysis": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，零成本定时运行（Python，+506★，总 68,999）",
+  "garrytan/gbrain": "Garry Tan 的 OpenClaw/Hermes Agent Brain 个人大脑方案（TypeScript，+216★，总 32,216）",
+  "ruvnet/RuView": "把普通 WiFi 信号变成实时空间感知的π系统（Rust，+172★，总 103,535）",
+  "homeassistant-ai/ha-mcp": "用 Claude/ChatGPT 等 AI 助手配置与自动化 Home Assistant（Python，+31★，总 6,059）"
  },
  "ph_tr": {
-  "TheySaid 4.0": "就在你构建的地方，看见用户会怎么反应。",
-  "Overmind": "面向持续学习的开源平台。",
-  "Orbit": "别再无休止刷屏了。每一次解锁应用都要先挣得。",
-  "Spacesheep": "未来的文档：由 AI 生成，给你的团队阅读。",
-  "SavorApp_AI": "记下真正重要的事，把你的意图往前推。",
-  "Notra": "Notra 是一款 GEO 工具，帮你在 AI 搜索里排上去。",
-  "Nuvio 5.0": "把你的财务杂务交给你的 AI agent。",
-  "iPad mini 8": "OLED、A20 Pro 与 IP67——苹果最小的那台 iPad。",
-  "PulseDev": "在 localhost 上点任意一个界面 bug，你的 AI agent 就去修好它。",
-  "Arcade Controller Pro": "一款没有摇杆、自带屏幕的格斗手柄。",
-  "NuPlay": "AI 转型，跑在同一个会自我改进的平台之上。",
-  "Off Grid AI": "跑在你手机与电脑上的私有 AI。"
+  "Product Hunt MCP": "官方 MCP：把你信任的社区接进你常用的 AI 助手（344▲/30💬 当日第一）",
+  "Dageno AI 2.0": "AI 搜索可见度优化（GEO）：看清为什么 AI 在推荐你的竞品而不是你（301▲/54💬）",
+  "Databox CLI": "把 agentic 分析平台装进终端（269▲/44💬）",
+  "Arcjet AI security models": "为编码 agent 定制训练的安全模型家族（207▲/34💬）",
+  "ProtoMap": "别再浪费 AI token 重复发现项目依赖（156▲/17💬）",
+  "Higgsfield Miracle": "只改视频的任意局部，其余画面原样不动（128▲/4💬）",
+  "GitHub New PR Overview": "往下滚动之前，先看清这个 PR 卡在哪（122▲/7💬）",
+  "MCP1": "Appwrite 出品：一个 URL 接入所有 MCP server（120▲/11💬）"
  },
- "hf_tr": {
-  "2610.34283": "ChronoReplay：流式空间智能只有一个问答接口是不够的（34▲，当日最高）",
-  "2610.36729": "Hy-Nomas：走向自由形式的交互式世界生成（29▲）",
-  "2610.36068": "Rollback：世界模型中的经验回溯用于策略改进（28▲）",
-  "2610.36456": "LociArt：自由风格局部视频风格化的统一范式（22▲）",
-  "2610.37666": "ThinkWorld：世界想象强化动力学链推理（18▲）",
-  "2610.24520": "HABIT-Bench：从纵向弱证据评估 agent 记忆中的习惯养成（11▲）",
-  "2610.33624": "RSI Arena：带人类反馈的递归自我改进（7▲）",
-  "2610.36269": "跨模态 steering vector 在图像与文本生成中同时存在（6▲）",
-  "2610.35724": "MatAnyone-E：用稀疏记忆传播做高效高分辨率视频抠像（5▲）",
-  "2610.35439": "Omni-InteractScope：连续全模态流中的主动式 agentic 交互基准（4▲）",
-  "2610.34491": "我该选哪一档努力程度？论 LLM agent 中推理努力的经济学（2▲）",
-  "2610.37341": "CodeCap-Bench：代码能当好视频字幕吗？（1▲）"
- },
- "gh_summary": "<p>今日 GitHub Trending 共 <span class=\"hl\">11 条</span>（按页面 <span class=\"hl\">&lt;article&gt;</span> 计数核对，周三短榜，如实呈现不补数）。榜首是 <span class=\"hl\">Nutlope/hallmark +2,830★</span>——一个<b>反 AI 味</b>的设计技能包，给 Claude Code、Cursor、Codex 用，把审美约束写成 agent 能执行的规则。这句话本身就是今天的总结：当生成变得无限便宜，稀缺的是「不像机器做的」。</p>\n<p>其余条目基本在做同一件事——<b>给 agent 装上规矩、记忆与工位</b>。<span class=\"hl\">affaan-m/ECC +1,165★</span>（harness 性能优化体系）、<span class=\"hl\">obra/superpowers +617★</span>（agentic 技能框架与方法论）、<span class=\"hl\">makecindy/cindy +1,465★</span>（开箱即用的开源 agent）、<span class=\"hl\">JetBrains/thinkrail +1,204★</span>（会自我定制的轻量 IDE）属于规矩层；<span class=\"hl\">nightly-labs/openbot +777★</span>（本地优先的常驻 AI 队友工作区）与 <span class=\"hl\">HKUDS/DeepTutor +1,598★</span>（终身个性化辅导）属于记忆层；<span class=\"hl\">gitroomhq/postiz-app +951★</span> 是把发布流程整条交给 agent。设计侧形成一个小集群：hallmark、<span class=\"hl\">pbakaus/impeccable +1,449★</span>（给编码 agent 的设计词汇表）、<span class=\"hl\">elayadesign/ai-design-skills +1,395★</span> 三条同日进榜。</p>\n<p>对照 HN 今天的《AI 承诺少干活。可我从来没有这么忙过》（622▲/618💬）：GitHub 上没有一个项目在宣称「更少的工作」，全在解决「更多产出之后怎么收口」——扫描、评审、约束、记忆、工位。<span class=\"hl\">togg53192-cmd/jailbreaks +902★</span> 把越狱提示词整包公开，是这条线另一端的注脚：能力开放之后，边界也得公开。</p>",
- "ph_summary": "<p>Product Hunt 当日（PT <span class=\"hl\">2026-10-27</span>）共 <span class=\"hl\">12+ 款</span>精选，此处列前 <span class=\"hl\">8</span>（按当日票数降序）。榜首是 <span class=\"hl\">TheySaid 4.0（329▲）</span>——「就在你构建的地方，看见用户会怎么反应」：把用户反馈的采集挪到开发流程内部，是今天最直白的一次<b>验证前置</b>。</p>\n<p>第二条线是<b>注意力与意图的自我管理</b>。<span class=\"hl\">Orbit（208▲）</span>要你「每一次解锁应用都先挣得」，<span class=\"hl\">SavorApp_AI（144▲）</span>做「记下真正重要的事」——两者都在对抗同一个东西：无限生成带来的无限分心。第三类是<b>文档与知识的机器化</b>：<span class=\"hl\">Spacesheep（196▲）</span>做「由 AI 生成、给团队阅读的未来文档」，<span class=\"hl\">Notra（140▲）</span>做 GEO——帮你在 AI 搜索结果里被排到前面。这一条与 HN 今天的《维基百科对 AI 生成内容的清理》（460▲/211💬）恰好构成一对：一边在往里灌，一边在往外清。</p>\n<p>第四类是<b>把具体岗位外包给 agent</b>：<span class=\"hl\">Nuvio 5.0（113▲）</span>把财务杂务交给 AI agent，<span class=\"hl\">PulseDev（112▲）</span>点一下 localhost 上的界面 bug 就让 agent 去修——后者是「agent 修 UI」这条线最落地的一次产品化。硬件侧今天有 <span class=\"hl\">iPad mini 8（112▲）</span>，与 HN 的 M6 iMac、M6 MacBook Pro 撞在同一天。开源侧 <span class=\"hl\">Off Grid AI（101▲）</span>做手机与电脑上的私有 AI，与 HN 的 Survival LLM（211▲/108💬）是同一个姿态。</p>",
- "papers_summary": "<p>Hugging Face Daily Papers <span class=\"hl\">2026-10-28 当日批次</span>共 <span class=\"hl\">20 篇</span>，此处按 upvotes 降序列前 <span class=\"hl\">12</span>。今天的主语只有一个：<b>世界模型</b>。榜首 <span class=\"hl\">ChronoReplay（34▲）</span>提出流式空间智能不该只有一个问答接口；<span class=\"hl\">Hy-Nomas（29▲）</span>做自由形式的交互式世界生成；<span class=\"hl\">Rollback（28▲）</span>把「经验回溯」引入世界模型以改进策略；<span class=\"hl\">ThinkWorld（18▲）</span>用世界想象强化动力学链推理。四篇连起来是一条完整链路：生成世界 → 在世界里回溯 → 用想象驱动推理。</p>\n<p>第二条线是<b>给 agent 的记忆与努力算账</b>，也是今天最值得注意的方法论转向。<span class=\"hl\">HABIT-Bench（11▲）</span>用纵向弱证据评估 agent 记忆能否养成习惯；同批的 <span class=\"hl\">Memory Tax（1▲）</span>直接解剖 agent 记忆的净价值；<span class=\"hl\">《我该选哪一档努力程度？》（2▲）</span>把推理努力当成一项经济决策来建模。这三条与 HN 今天的《AI 承诺少干活。可我从来没有这么忙过》（622▲/618💬）、《AI 时代的人月神话》（440▲/309💬）指向同一个问题：投入的算力与产出之间到底有没有正比。</p>\n<p>其余落在多模态与具身评测：<span class=\"hl\">LociArt（22▲）</span>做局部视频风格化，<span class=\"hl\">RSI Arena（7▲）</span>带人类反馈做递归自我改进，<span class=\"hl\">跨模态 steering vector（6▲）</span>证明图像与文本生成中共用同一类控制向量，<span class=\"hl\">MatAnyone-E（5▲）</span>做高效高分辨率抠像，<span class=\"hl\">Omni-InteractScope（4▲）</span>评测连续全模态流里的主动交互，<span class=\"hl\">CodeCap-Bench（1▲）</span>问代码能不能当好视频字幕。整体士气：世界模型进入可交互阶段，但评测侧已经在追问它值不值。</p>",
- "note_hf": "数据源：huggingface.co/api/daily_papers?date=2026-10-28（当日批次）。本机直连官方 API（清除所有 *PROXY* 环境变量 + 浏览器 UA）HTTP 200，返回 20 篇，按 paper.upvotes 降序取前 12 列示，未沿用任何历史批次。"
+ "hf_tr": {},
+ "gh_summary": "<p>本日 <span class=\"hl\">11 条</span>（周一缩量，如实呈现不补数）。<span class=\"hl\">sherlock +4,267★</span> 连续两日登顶，meta/astryx +3,278★、OpenMausBot +1,587★ 次之。</p>\n<p>Agent 基建连续两日五路在榜（skills / astryx / agent-browser / claude-quickstarts / gbrain）：「给 agent 造配件」仍是最拥挤、也最容易被单人验证的赛道。</p>\n<p><b>可切入口：</b>中文项目 daily_stock_analysis（+506★，总 68,999★）证明「垂直人群 + LLM + 自动推送」的单人产品需求远未被满足。</p>",
+ "ph_summary": "<p>PT=2026-11-09 批次前 8，<span class=\"hl\">Product Hunt MCP 344▲</span> 登顶。</p>\n<p>榜单主体是「AI 工作流的管道件」：Databox CLI（269▲）、Arcjet（207▲）、ProtoMap 省依赖 token（156▲）、MCP1 一个 URL 接所有 MCP（120▲）——窄而可单人做完的工具仍是主流。</p>\n<p><b>可切入口：</b>Dageno AI 2.0（301▲）做 GEO「为什么 AI 推荐竞品而不是你」，是新出现的需求品类，值得连跟 3 天确认真伪。</p>",
+ "papers_summary": "<p><span class=\"hl\">2026-11-10 当日批次截至发稿尚未发布</span>：API 两次直连均返回 200 + 空数组。</p>\n<p>最近可用批次为 11-09（34 篇，Top 64 票），而该批次在昨日发稿时同样未发布——批次通常在 UTC 下午上线，明日回看即可。</p>\n<p>按规范不列历史条目、不编造条数。</p>",
+ "note_hf": "注：2026-11-10 当日批次（date=2026-11-10）经两次直连重试均返回 200 + 空数组 []，官方当日尚未发布；本期不列条目，未沿用任何历史批次、未编造条数（最近可用 11-09 批次 34 篇仅作背景说明）。"
 }

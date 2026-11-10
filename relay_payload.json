@@ -3,8 +3,8 @@
  "date_label": "2026-11-10 · 星期二",
  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-11-10.html",
  "summary": [
-  "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2、Artificial Analysis 65 分历史最高，而 HN 热度第一却是「Opus 5.5 被削了」的体感质疑（758▲/482💬）——模型信任进入「体感审计」时代，苹果还给工程师的每日 AI 预算封顶 200 美元。",
-  "算力定价黑箱被两头撕开：同一块 H100 租金 2.69 或 12.29 美元一小时、树莓派 5 16GB 涨到 385 美元，Google 连发 TPU 8tx/8i Max、DeepX 宣称 5W 跑 100B 推理。",
-  "隐私边界同日两连破：谷歌 Gemini 把个人 Drive 文件和邮件路由给人工标注员（450▲）、ChatGPT 桌面版把 SSH agent 转发到远程机器（206▲）；GitHub 上 agent 基建连续两日获加注，HF 当日论文批次尚未发布（已如实标注）。"
+  "机会卡 1：模型会悄悄变笨却没人做版本 diff。Fable 5.2 刚拿 65 分历史最高，HN 热度第一却是「Opus 被削」的 482 条抱怨。可做 20 题固定评测集 + 漂移邮件，落地页先收 20 个 waitlist。",
+  "机会卡 2：AI 成本变成算不清的账。H100 同卡租金差 4.6 倍、苹果 AI 日预算封顶 200 美元、ProtoMap 靠「省 token」拿 156▲。可做跨供应商账单周报，试 6 美元/月定价。",
+  "机会卡 3：agent 拿到的权限比使用者以为的多。Gemini 把 Drive/邮件送人工标注（450▲）、ChatGPT 桌面版转发 SSH agent（206▲）、Arcjet 卖 agent 安全模型（207▲）。可先做只管 SSH agent 与 .env 的 CLI，发 Show HN 收反馈。"
  ]
 }
