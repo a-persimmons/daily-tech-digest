@@ -1590,15 +1590,84 @@ footer.site-footer a{color:var(--accent2);text-decoration:none;}
 
   <section id="papers" class="section">
     <div class="sec-title"><span class="emo">📄</span><span>Hugging Face Daily Papers</span></div>
-    <div class="note">注：2026-11-10 当日批次（date=2026-11-10）经两次直连重试均返回 200 + 空数组 []，官方当日尚未发布；本期不列条目，未沿用任何历史批次、未编造条数（最近可用 11-09 批次 34 篇仅作背景说明）。</div>
+    <div class="note">注：2026-11-10 当日批次（date=2026-11-10），<b>14:58 CST 补抓</b>，共 12 篇、最高 30 票。11:00 首次抓取时 API 返回 200 + 空数组，本期原按「尚未发布」标注，现按真实条目覆盖；按 paper.upvotes 降序全列（实际 12 篇，未触及 12 篇上限）。未沿用 11-09 历史批次、未编造条数；票数仍在实时累积，以本期发稿时刻为准。</div>
     <div class="two-col">
-      <div class="col-summary"><div class="col-title">📝 当日综述</div><p><span class="hl">2026-11-10 当日批次截至发稿尚未发布</span>：API 两次直连均返回 200 + 空数组。</p>
-<p>最近可用批次为 11-09（34 篇，Top 64 票），而该批次在昨日发稿时同样未发布——批次通常在 UTC 下午上线，明日回看即可。</p>
-<p>按规范不列历史条目、不编造条数。</p></div>
+      <div class="col-summary"><div class="col-title">📝 当日综述</div><p><span class="hl">2026-11-10 当日批次 12 篇</span>（14:58 CST 补抓，Top 30▲、总 67 票）。11:00 抓取时仍是空数组，批次在 UTC 白天逐步填充——不是故障，是抓早了。</p>
+<p>主题聚在<b>「给 agent 造地基」</b>：WorldFoundry 统一世界模型底座（30▲）、ReproBridge 把可复现性做进研究产物（16▲）、FlyHash 验证 agent 记忆（0▲），与 GitHub 上 agent 基建五路在榜是同一条线。</p>
+<p><b>可切入口：</b>ReproBridge（16▲）指向单人可做的窄工具——论文仓库一键跑通、输出可复现报告；Flide（8▲）同日登上 HN Show HN（50421155），跨源同现比单日票数更值得连跟。</p></div>
       <div class="col-right"><div class="gh-grid">
-        <div class="ph-card" style="grid-column:1/-1;">
-          <div class="ph-desc">当日 Hugging Face Daily Papers 批次为空，无条目可列。原因见下方「注」。</div>
-        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">30▲</span>
+            <a class="ph-name" href="https://huggingface.co/papers/2611.10771" target="_blank" rel="noopener">WorldFoundry: Towards Unified Infrastructure for World Intelligence</a>
+          </div>
+<div class="zh">世界智能的统一基础设施：给「世界模型」造一套通用底座（30▲，当日最高）</div>        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">16▲</span>
+            <a class="ph-name" href="https://huggingface.co/papers/2611.08452" target="_blank" rel="noopener">ReproBridge: Building Reproducibility into ML Research Artifacts</a>
+          </div>
+<div class="zh">ReproBridge：把可复现性直接做进机器学习研究产物（代码/数据/实验包，16▲）</div>        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">8▲</span>
+            <a class="ph-name" href="https://huggingface.co/papers/2610.42148" target="_blank" rel="noopener">Flide: Accelerating Decision Inference with Exact State Forking</a>
+          </div>
+<div class="zh">Flide：用精确状态分叉加速决策推理；同日登上 HN Show HN，属跨源同现（8▲）</div>        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">4▲</span>
+            <a class="ph-name" href="https://huggingface.co/papers/2611.10329" target="_blank" rel="noopener">SIRIS: Can LLMs Tell When Simulation Errors Matter in AI-Driven Systems Research</a>
+          </div>
+<div class="zh">SIRIS：LLM 能否判断仿真误差在 AI 驱动的系统研究里什么时候才真要紧（4▲）</div>        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">2▲</span>
+            <a class="ph-name" href="https://huggingface.co/papers/2611.02810" target="_blank" rel="noopener">TRIO: Task Refinement with Individual Optimization for Retrieval-Augmented Generation</a>
+          </div>
+<div class="zh">TRIO：面向检索增强生成的任务细化与个体化优化（2▲）</div>        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">2▲</span>
+            <a class="ph-name" href="https://huggingface.co/papers/2611.10690" target="_blank" rel="noopener">JoVox: Joint Hierarchical Flow Matching for Lightweight Voxel Generation</a>
+          </div>
+<div class="zh">JoVox：联合分层流匹配，做轻量级体素生成（2▲）</div>        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">1▲</span>
+            <a class="ph-name" href="https://huggingface.co/papers/2611.12762" target="_blank" rel="noopener">Sage-Taiyi: A Metacognitive Architecture for Scientific Discovery</a>
+          </div>
+<div class="zh">Sage-Taiyi：面向科学发现的元认知架构（1▲）</div>        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">1▲</span>
+            <a class="ph-name" href="https://huggingface.co/papers/2611.08240" target="_blank" rel="noopener">FewStepRL: Fine-tuning Few-step Diffusion Models with Reinforcement Learning</a>
+          </div>
+<div class="zh">FewStepRL：用强化学习微调少步扩散模型（1▲）</div>        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">1▲</span>
+            <a class="ph-name" href="https://huggingface.co/papers/2611.10987" target="_blank" rel="noopener">Horizon-Scalable Q-Learning</a>
+          </div>
+<div class="zh">Horizon-Scalable Q-Learning：可随视野长度扩展的 Q 学习（1▲）</div>        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">1▲</span>
+            <a class="ph-name" href="https://huggingface.co/papers/2611.08969" target="_blank" rel="noopener">PhysioWave-T: Token-Efficient Wavelet Foundation Models for Biosignals</a>
+          </div>
+<div class="zh">PhysioWave-T：面向生理信号的省 token 小波基础模型（1▲）</div>        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">1▲</span>
+            <a class="ph-name" href="https://huggingface.co/papers/2610.36980" target="_blank" rel="noopener">AutoVend: Benchmarking LLM Agents on Long-Horizon Autonomous Vending Operations</a>
+          </div>
+<div class="zh">AutoVend：用长时程自动售货运营给 LLM agent 做基准测试（1▲）</div>        </div>
+        <div class="ph-card">
+          <div class="ph-top">
+            <span class="ph-rank">0▲</span>
+            <a class="ph-name" href="https://huggingface.co/papers/2611.05791" target="_blank" rel="noopener">FlyHash for LLM Agent Memory: An Empirical Validation and a New Application</a>
+          </div>
+<div class="zh">FlyHash 用于 LLM agent 记忆：实证验证与一个新应用（0▲）</div>        </div>
       </div></div>
     </div>
   </section>
