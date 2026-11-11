@@ -1,10 +1,10 @@
 {
- "date": "2026-11-10",
- "date_label": "2026-11-10 · 星期二",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-11-10.html",
+ "date": "2026-11-11",
+ "date_label": "2026-11-11 · 星期三",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-11-11.html",
  "summary": [
-  "机会卡 1：模型会悄悄变笨却没人做版本 diff。Fable 5.2 刚拿 65 分历史最高，HN 热度第一却是「Opus 被削」的 482 条抱怨。可做 20 题固定评测集 + 漂移邮件，落地页先收 20 个 waitlist。",
-  "机会卡 2：AI 成本变成算不清的账。H100 同卡租金差 4.6 倍、苹果 AI 日预算封顶 200 美元、ProtoMap 靠「省 token」拿 156▲。可做跨供应商账单周报，试 6 美元/月定价。",
-  "机会卡 3：agent 拿到的权限比使用者以为的多。Gemini 把 Drive/邮件送人工标注（450▲）、ChatGPT 桌面版转发 SSH agent（206▲）、Arcjet 卖 agent 安全模型（207▲）。可先做只管 SSH agent 与 .env 的 CLI，发 Show HN 收反馈。"
+  "智能家居断网就变砖是今天 HN 第一（892▲/317💬）：整理 50 款热销设备的云端依赖做成可搜索表格页，收 waitlist，两周看能否 200 个邮箱。",
+  "AI 写代码会生成脆弱代码库拿下讨论第一（523▲/495💬）：写个扫描脚本算 agent 提交占比与重复模块，免费给 5 个开源项目出报告，试卖 200 美元完整版。",
+  "Val Town 关停（372▲/93💬）留下一批要搬家的小产品：只做 Val Town→Cloudflare Workers 的转换脚本＋迁移指南，一周内试收 30 个付费意向。"
  ]
 }
