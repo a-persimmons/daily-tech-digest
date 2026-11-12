@@ -1,10 +1,10 @@
 {
- "date": "2026-11-11",
- "date_label": "2026-11-11 · 星期三",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-11-11.html",
+ "date": "2026-11-12",
+ "date_label": "2026-11-12 · 星期四",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-11-12.html",
  "summary": [
-  "智能家居断网就变砖是今天 HN 第一（892▲/317💬）：整理 50 款热销设备的云端依赖做成可搜索表格页，收 waitlist，两周看能否 200 个邮箱。",
-  "AI 写代码会生成脆弱代码库拿下讨论第一（523▲/495💬）：写个扫描脚本算 agent 提交占比与重复模块，免费给 5 个开源项目出报告，试卖 200 美元完整版。",
-  "Val Town 关停（372▲/93💬）留下一批要搬家的小产品：只做 Val Town→Cloudflare Workers 的转换脚本＋迁移指南，一周内试收 30 个付费意向。"
+  "GitHub Actions 权限裸奔（今日「锁好你的 Actions」+ GitHub 自家 Webhooks/Actions 事故两连）：写一个权限扫描 CLI 跑 20 个热门仓库出报告，单人几天可发 Show HN。",
+  "美联航封杀 agent 代订机票（HN 532▲/519💬）：做「agent 预订授权」demo 接对 agent 友好的 OTA 公开接口，落地页收 waitlist。",
+  "广告反欺诈登上 PH 榜首（298▲）：接两家广告报表 CSV 写欺诈日报，给小预算投放者做轻量版，落地页收 20 个 waitlist。"
  ]
 }
