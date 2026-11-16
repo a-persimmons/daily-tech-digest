@@ -1,10 +1,10 @@
 {
- "date": "2026-11-13",
- "date_label": "2026-11-13 · 星期五",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-11-13.html",
+ "date": "2026-11-16",
+ "date_label": "2026-11-16 · 星期一",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-11-16.html",
  "summary": [
-  "机会卡①硬件反订阅：HN 绣花机反订阅 App 491▲ 验证痛点，选一类被订阅绑架的设备做替代 App 落地页收 waitlist，几天可做。",
-  "机会卡②苹果审核预检：AI 审核误拒淹没独立开发者（174💬），抓 Review Guidelines 做 checklist 校验器 MVP，免费给 20 人用收反馈。",
-  "机会卡③x402 agent 收费中间件：Brave API 接入验证 agent 付费落地，给一个公开 API 写 x402 收费示例发 Show HN。"
+  "屏幕频闪没人查得到：HN 430▲/241💬 的 OLED PWM 痛点，先做一张「按调光方式/PWM 频率筛选在售机型」的表 + waitlist 落地页，几天可验证。",
+  "一张 1,500 美元发票就被 Stripe 关户（165▲/72💬）：做交易证据自动归档 + 一键申诉包 + 备用支付商切换清单，先免费给 5 个人跑。",
+  "十年前的 bit.ly 短链已被劫持（198▲/105💬）：做全站外链/短链 302 目标巡检告警，出一份《链接腐化报告》换 10 个付费意向。"
  ]
 }
