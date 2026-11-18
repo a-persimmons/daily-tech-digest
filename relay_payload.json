@@ -1,10 +1,10 @@
 {
- "date": "2026-11-17",
- "date_label": "2026-11-17 · 星期二",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-11-17.html",
+ "date": "2026-11-18",
+ "date_label": "2026-11-18 · 星期三",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-11-18.html",
  "summary": [
-  "亚马逊黑五「折扣」实测一分没省（HN 887▲/524💬）→ 抓 200 个热门 SKU 90 天历史价，做「真降价榜」落地页收 waitlist，3 天可上线。",
-  "Windows 11 在采集你用了哪些编码 Agent（559▲/391💬）+ Optimizely 投毒 → 写条命令扫本机 AI 工具与出网域名的体检脚本，发 Show HN，一周内。",
-  "BugMeNot 关闭（501▲/225💬）+ Mem 关停 → 做 30 个高频服务的「导出路径表 + 一键下载脚本」，GitHub 仓库 + 静态页，一周内。"
+  "Java4Shell 漏洞（OpenJDK 处理 Base64 即 RCE，HN 870▲）引爆恐慌窗口——做一键 JDK 体检 CLI，Show HN 首发收 30 个 waitlist。",
+  "GPT-6.2 发布日大家最缺的是可比较：开源「模型×harness 基线表」（HN 368▲ 在问），一张静态对比页 + 收 PR 即可验证。",
+  "谷歌承认 AI 回答分流 40% 搜索流量、独立站主恐慌，PH 上同类付费产品扎堆——给独立站主做免费 AI 可见性体检，收 20 封邮件验证付费。"
  ]
 }
