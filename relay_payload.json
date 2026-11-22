@@ -1,10 +1,10 @@
 {
- "date": "2026-11-21",
- "date_label": "2026-11-21 · 星期六",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-11-21.html",
+ "date": "2026-11-22",
+ "date_label": "2026-11-22 · 星期日",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-11-22.html",
  "summary": [
-  "AI 敞口体检：纳指抹平 2026 全部涨幅（548💬 追问「我到底多少仓位押在 AI 上」）→ 建 30 只常见标的的 AI 敞口映射，上传持仓 CSV 出一页敞口报告，几天可上线。",
-  "笔记本售后对账：Framework 老用户「再也不买」787▲/576💬 → 6 品牌 20 机型的「配件价 + 返修天数 + 保修条款」对照页，只收邮箱订阅。",
-  "agent 技能包体检：Claude-BugHunter 一日 +1,622★（82 个 skill，装的人只看 star）→ 安装前扫描 CLI，输出命令/路径/域名三级风险清单，发 Show HN。"
+  "机会卡1：黎曼假设 Lean 验证刷屏（991▲/824💬），做一张「AI 抢发声明验证状态」追踪页，静态页+RSS 几天可上线收 waitlist。",
+  "机会卡2：推理供应商一天三起事故/泄漏（125▲ 事故专帖 + Together.ai 提示词泄漏 + GnuPG 公告），聚合 5 家 status 页做周报邮件，先免费给 20 人。",
+  "机会卡3：PH 第 3 名 Codemany（194▲）验证了 CI 提速付费意愿，反向做「GitHub Actions 用量审计 CLI」，输出成本排行发 Show HN。"
  ]
 }
