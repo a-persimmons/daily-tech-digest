@@ -1,10 +1,10 @@
 {
- "date": "2026-11-22",
- "date_label": "2026-11-22 · 星期日",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-11-22.html",
+ "date": "2026-11-23",
+ "date_label": "2026-11-23 · 星期一",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-11-23.html",
  "summary": [
-  "机会卡1：黎曼假设 Lean 验证刷屏（991▲/824💬），做一张「AI 抢发声明验证状态」追踪页，静态页+RSS 几天可上线收 waitlist。",
-  "机会卡2：推理供应商一天三起事故/泄漏（125▲ 事故专帖 + Together.ai 提示词泄漏 + GnuPG 公告），聚合 5 家 status 页做周报邮件，先免费给 20 人。",
-  "机会卡3：PH 第 3 名 Codemany（194▲）验证了 CI 提速付费意愿，反向做「GitHub Actions 用量审计 CLI」，输出成本排行发 Show HN。"
+  "AI 的「电账」成了全窗第一热门（Hacker News 959▲/943💬，Anthropic 2028 年 87% 电力来自天然气、11% 来自煤电），943 条评论都在问一次调用耗多少电——最小验证动作：用公开系数做个「token→kWh/gCO₂e」静态计算器，发 Show HN 收 waitlist。",
+  "挪威拟把 16 岁以下社媒禁令扩到游戏与消息应用（HN 93💬），叠上 GitHub 的 app-store-compliance +621★，做海外青少年向 App 的小团队最缺一份按国别拆的年龄门槛与家长同意清单——最小验证动作：先出挪威/澳洲/英国三页 + 代码片段，测 19 美元一次性付费。",
+  "Backblaze 改政策引发个人数据被卖担忧（HN 165▲/62💬）：供应商悄悄改条款没人盯——最小验证动作：监控 10 家存储/SaaS 的 ToS 与定价页做 diff，人工筛后每周一封邮件，免费跑 20 个订阅者看打开率。"
  ]
 }

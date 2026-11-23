@@ -1,81 +1,86 @@
 {
- "date": "2026-11-10",
+ "date": "2026-11-23",
  "hero": [
   {
-   "url": "https://news.ycombinator.com/item?id=50422069",
-   "meta": "机会卡 1/3 · 人群：把 LLM 当生产依赖的 solo dev · 信号：HN 758▲ / 482💬",
-   "title": "模型会悄悄变笨，但没人给它做版本 diff",
-   "zh": "人群：把 LLM 接进产品的独立开发者与小团队。痛点：Fable 5.2 刚拿 Artificial Analysis 历史最高 65 分，热度第一却是「Opus 5.5 从 11 月 3 日起被削了」的 482 条体感抱怨——供应商改行为不通知、不提供回归基线。现有凑合：手动跑几个 prompt、翻论坛。缺口：没有轻量的「模型行为版本 diff + 变更告警」服务。最小验证动作：做一个 20 题固定评测集，每天跑一次、有漂移就发邮件，落地页收 20 个 waitlist。"
+   "url": "https://news.ycombinator.com/item?id=50597612",
+   "meta": "机会卡 1/3 · 人群：要给客户解释 AI 电费与碳排的小团队 · 信号：HN 959▲ / 943💬（全窗第一）",
+   "title": "AI 的电从哪来已经有人问，但没人给一张「一次调用=多少电」的换算表",
+   "zh": "人群：需要向客户、投资方或 ESG 报告解释 AI 能耗与碳排的独立开发者、小团队与合规岗。痛点：今日全窗第一就是「Anthropic 2028 年 87% 电力来自天然气、11% 来自煤电」（959▲/943💬），943 条评论几乎都在追问一次对话到底耗多少电、碳排怎么算；同窗联合国气候谈判破裂（132💬）、欧洲放松化学品监管（144💬）把这条线继续拉长。现有凑合：各家报告口径不一，自己拍系数、拿 GPU 功率硬乘。缺口：按模型与任务类型换算 kWh / gCO₂e 的计算器 + 一页口径与误差说明。最小验证动作：用公开能耗系数做静态计算器（3 家模型 × 4 类任务），写一篇对比文发 Show HN 与对应帖评论区，落地页收 waitlist。"
   },
   {
-   "url": "https://news.ycombinator.com/item?id=50427085",
-   "meta": "机会卡 2/3 · 人群：用 API 做副业的单人开发者 · 信号：HN 167▲ / 84💬 + PH 156▲",
-   "title": "AI 成本正在变成一笔算不清的账",
-   "zh": "人群：同时用 2 家以上模型 API 做副业的 solo dev。痛点：同一块 H100 租金 2.69 或 12.29 美元一小时（价差 4.6 倍）、苹果给工程师 AI 日预算封顶 200 美元、PH 上 ProtoMap（156▲）专门卖「别浪费 token 重复发现依赖」——成本不可见已成公开抱怨。现有凑合：各家控制台分开看、Excel 手工记。缺口：跨供应商、按项目或按功能归一的 token 成本 + 预算阈值告警。最小验证动作：接两家账单 CSV 做一封周报邮件，定价假设 6 美元/月，落地页先测付费意愿。"
+   "url": "https://news.ycombinator.com/item?id=50600789",
+   "meta": "机会卡 2/3 · 人群：做海外青少年向 App 的独立开发者 · 信号：HN 58▲ / 93💬 + GitHub app-store-compliance +621★",
+   "title": "「年龄门槛」正在从社媒扩到游戏和聊天，小团队却还在靠一个勾选框过关",
+   "zh": "人群：做面向青少年、社交或游戏类海外 App 的独立开发者与小团队。痛点：挪威拟把 16 岁以下社媒禁令从社媒扩到游戏与消息应用（58▲/93💬，讨论密度远高于票数），同窗加拿大新闻资助、监狱干扰手机信号都指向同一件事——分发条件正在被监管重写；GitHub 上 app-store-compliance（+621★）卖的正是「别被拒审」。现有凑合：翻各国法条靠翻译软件，实现上只加一个「我已满 16 岁」勾选框。缺口：按国别与平台拆开的「年龄门槛 + 家长同意」实现清单，含可复制的校验代码与文案。最小验证动作：先出挪威/澳洲/英国三页清单 + 代码片段，免费放出，页尾收邮件列表。"
   },
   {
-   "url": "https://news.ycombinator.com/item?id=50429426",
-   "meta": "机会卡 3/3 · 人群：在本机跑 coding agent 的开发者 · 信号：HN 450▲ / 206▲ + PH 207▲",
-   "title": "Agent 拿到的权限，比它的使用者以为的多",
-   "zh": "人群：在自己机器上跑 coding agent 的开发者。痛点：Gemini 把个人 Drive 文件和邮件路由给人工标注员（450▲），ChatGPT 桌面版把 SSH agent 转发到远程机器（206▲/71💬）；PH 上 Arcjet 已开始卖「为编码 agent 定制的安全模型」（207▲）——需求被验证，但只覆盖企业侧。现有凑合：靠沙箱、靠手工点权限弹窗。缺口：一个跨工具通用的「agent 能碰哪些本地凭据与文件」策略层。最小验证动作：先做 CLI 版，只管 SSH agent 与 .env 两类，发 Show HN 收反馈，不写 GUI。"
+   "url": "https://news.ycombinator.com/item?id=50600435",
+   "meta": "机会卡 3/3 · 人群：把备份与存储托付给第三方的小团队 · 信号：HN 165▲ / 62💬 + GL.iNet 安全公告 184▲",
+   "title": "供应商悄悄改条款，用户事后才知道——「影响钱包和数据的那几行」没人盯",
+   "zh": "人群：把备份、存储、SaaS 当作基础设施的小团队与个人开发者。痛点：Backblaze 政策更新后用户担心个人数据被出售或共享（165▲/62💬），评论区反复问「现在还能不能信」；同窗 GL.iNet 安全公告（184▲）说明「供应商改规则不通知」已是常态。现有凑合：没人真读 ToS，出事才回去翻，翻也找不到改了哪行。缺口：条款与定价变更的 diff 告警，只报真正影响数据流向和钱包的改动——这正是「定价离谱」类需求侧的入口。最小验证动作：监控 10 家主流存储/SaaS 的 ToS 与 pricing 页做 diff，人工筛后每周一封邮件，先免费跑 20 个订阅者验证打开率。"
   }
  ],
  "insights": [
   {
-   "title": "信任从「发布分数」转向「体感可审计」",
-   "src": "HN × GitHub × Product Hunt",
-   "text": "Fable 5.2 拿下历史最高 65 分，热度第一却是「被削」质疑（758▲/482💬）；苹果给工程师 AI 日预算封顶 200 美元（121💬）、「强制 100% 用 AI 一年后没人看得懂代码」（136💬）同日出现；GitHub 上 skills（+1,038★）、astryx（+3,278★）、agent-browser（+916★）连续两日获加注，PH 上 Arcjet（207▲）卖 agent 安全模型——四源都在为「AI 使用可管理」付费。可验证假设：小团队愿意为「模型行为回归告警」每月付 5–15 美元。本周动作：机会卡 1 的落地页，收 20 个 waitlist。"
+   "title": "「AI 的物理账」压过能力叙事",
+   "src": "HN × HF × GitHub",
+   "text": "HN 全窗第一是 Anthropic 的电力结构（959▲/943💬），气候谈判破裂（132💬）、欧洲放松化学品监管（144💬）同期上榜；HF 侧主线同样是省：cmHC 用几何收缩约束流混合（50▲）、Clover 把激活参数压到 3B（32▲）；GitHub 上 minimind「两小时训 64M」（+473★）、openvino 端侧部署（+158★）同向。可验证假设：开发者会为「一次调用的电与碳」订阅结论，因为客户问卷已经在问。本周动作：机会卡 1 的计算器上线，并挂进该帖评论区。"
   },
   {
-   "title": "算力成本被两头挤压，归因工具出现空档",
-   "src": "HN × Product Hunt",
-   "text": "H100 同卡租金 2.69 或 12.29 美元/小时（167▲/84💬）、树莓派 5 16GB 涨到 385 美元（284▲/252💬）；Google 连发 TPU 8tx/8i Max，DeepX 宣称 5W 跑 100B 推理；PH 上 ProtoMap（156▲）、MCP1（120▲）都在卖「少烧 token / 少接一次」的省法。可验证假设：跨供应商成本周报是单人一周能做完、且有人愿付的小工具。本周动作：机会卡 2 接两家账单 CSV，先给自己用一周。"
+   "title": "skill 包成了新的软件发行渠道，也成了新的盲区",
+   "src": "GitHub × Product Hunt × HF",
+   "text": "GitHub 16 条里 8 条是 skill 包（Claude-BugHunter +1,716★ 连续第三日登顶、superpowers +788★、CLI-Anything +699★、app-store-compliance +621★、stitch-skills +494★、cursor/plugins +294★）；PH 同日 Omi CLI 97▲、Webless Agents 117▲ 也都在卖「把 agent 派出去干活」；HF 的 Intent Contracts 讨论的正是给 agent 收回工具权限。可验证假设：装机量上来后，「装之前先看它读什么、发什么」会被当成必需品。本周动作：写一版 skill 包权限速查表（读写路径、外发请求、可撤销方式），发 Show HN 试水。"
   },
   {
-   "title": "需求侧信号比新模型更值得跟",
-   "src": "HN × Product Hunt × GitHub",
-   "text": "今天真正可复用的不是三个新模型，是三句公开抱怨：模型会悄悄变笨、AI 账算不清、agent 权限给多了。GitHub 上 daily_stock_analysis（+506★，总 68,999★）证明「垂直人群 + LLM + 自动推送」的单人产品仍供不应求；PH 上 Dageno AI 2.0（301▲）做 GEO 是新出现的需求品类。可验证假设：连续 3 天出现的抱怨才值得动手，单日热度是噪音。本周动作：从今天三张机会卡里挑 1 个，只做落地页，不写代码。"
+   "title": "决定生死的是「门槛」，不是功能",
+   "src": "HN × GitHub × Product Hunt × HF",
+   "text": "挪威禁令扩到游戏（93💬）、App Store 合规 playbook +621★、PH 上 Rankhog 直接卖 Reddit 获客 322▲、HF 里 PURE 在做多粒度身份匹配基准——四源同日指向：能不能上架、能不能被推荐、能不能过审，比多写一个功能更影响生死。可验证假设：小团队愿意为「过审 + 合规清单」付一次性费用，而不是订阅一个工具。本周动作：机会卡 2 先出挪威/澳洲/英国三页，用一次性 19 美元定价测付费意愿。"
   }
  ],
  "gh_tr": {
-  "sherlock-project/sherlock": "跨社交网络按用户名搜人的老牌 OSINT 工具，连续两日登顶（+4,267★，总 107,313★）",
-  "meta/astryx": "Meta 开源的完全可定制、agent-ready 设计系统（TypeScript，+3,278★，总 20,381）",
-  "milind-soni/OpenMausBot": "开源 Grok Bot 替代品：给 bot 配一台真正可用的虚拟机（TypeScript，+1,587★，总 19,844）",
-  "anthropics/skills": "Anthropic 官方 Agent Skills 公共仓库，连续两日在榜（Python，+1,038★，总 191,139）",
-  "vercel-labs/agent-browser": "Vercel 的 AI agent 浏览器自动化 CLI，连续两日在榜（Rust，+916★，总 48,576）",
-  "google-deepmind/mujoco": "DeepMind 通用多体接触动力学物理仿真器（C++，+574★，总 16,965）",
-  "anthropics/claude-quickstarts": "Anthropic 官方 Claude API 快速上手项目集（Python，+551★，总 20,071）",
-  "ZhuLinsen/daily_stock_analysis": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，零成本定时运行（Python，+506★，总 68,999）",
-  "garrytan/gbrain": "Garry Tan 的 OpenClaw/Hermes Agent Brain 个人大脑方案（TypeScript，+216★，总 32,216）",
-  "ruvnet/RuView": "把普通 WiFi 信号变成实时空间感知的π系统（Rust，+172★，总 103,535）",
-  "homeassistant-ai/ha-mcp": "用 Claude/ChatGPT 等 AI 助手配置与自动化 Home Assistant（Python，+31★，总 6,059）"
+  "elementalsouls/Claude-BugHunter": "Claude Code 的漏洞挖掘与外部红队技能包：82 个 skill、批量出报告（Python，+1,716★，总 18,506★）",
+  "obra/superpowers": "agent 技能框架 + 软件开发方法论：装上就按固定流程干活（Shell，+788★，总 324,461★）",
+  "HKUDS/CLI-Anything": "让所有软件都能被 agent 调用：CLI-Hub 把工具收成命令行接口（Python，+699★，总 63,065★）",
+  "jingyaogong/minimind": "两小时从 0 训出你自己的 64M 小模型（Python，+473★，总 69,058★）",
+  "cursor/plugins": "Cursor 的插件规范与官方插件集（TypeScript，+294★，总 18,590★）",
+  "firecrawl/firecrawl": "给 agent 用的知识基础设施：一个 API 搜索、抓取、接 550+ 数据源（TypeScript，+915★，总 207,328★）",
+  "nginx/nginx": "NGINX 官方开源仓库，因新 CVE 回流榜单（C，+163★，总 32,941★）",
+  "openvinotoolkit/openvino": "开源推理优化与部署工具包，把模型压到端侧跑（C++，+158★，总 12,165★）",
+  "cathrynlavery/diagram-design": "给 Claude Code / Codex / Copilot 用的编辑级图表设计规范（HTML，+518★，总 70,548★）",
+  "mvanhorn/last30days-skill": "跨 Reddit、X、YouTube、HN、Polymarket 做任意主题调研的 agent skill（Python，+668★，总 73,005★）",
+  "google-labs-code/stitch-skills": "配合 Stitch MCP 使用的 agent skill 库，一个 skill 一件事（TypeScript，+494★，总 12,056★）",
+  "mjmirza/app-store-compliance": "避开 App Store / Google Play 常见拒审：开放 playbook 与提审前检查表（Shell，+621★，总 4,294★）",
+  "Tracer-Cloud/opensre": "面向 CI/CD 可靠性的开源运维 agent（Python，+399★，总 14,555★）",
+  "toeverything/AFFiNE": "Notion 与 Miro 之外的第三选择：文档、白板、表格一体的知识库（TypeScript，+542★，总 77,022★）",
+  "XiaoYouChR/Ghost-Downloader-3": "下载器的集大成者：多协议、多线程、跨平台（Python，+701★，总 15,686★）",
+  "zhouxiaoka/autoclip": "一个链接一键出片：开源 AI 视频剪辑，把播客/课程长视频切成短视频并生成字幕封面文案（Python，+641★，总 13,881★）"
  },
  "ph_tr": {
-  "Product Hunt MCP": "官方 MCP：把你信任的社区接进你常用的 AI 助手（344▲/30💬 当日第一）",
-  "Dageno AI 2.0": "AI 搜索可见度优化（GEO）：看清为什么 AI 在推荐你的竞品而不是你（301▲/54💬）",
-  "Databox CLI": "把 agentic 分析平台装进终端（269▲/44💬）",
-  "Arcjet AI security models": "为编码 agent 定制训练的安全模型家族（207▲/34💬）",
-  "ProtoMap": "别再浪费 AI token 重复发现项目依赖（156▲/17💬）",
-  "Higgsfield Miracle": "只改视频的任意局部，其余画面原样不动（128▲/4💬）",
-  "GitHub New PR Overview": "往下滚动之前，先看清这个 PR 卡在哪（122▲/7💬）",
-  "MCP1": "Appwrite 出品：一个 URL 接入所有 MCP server（120▲/11💬）"
+  "Yoroll": "不用游戏引擎也能做出可玩的故事（345▲，当日第 1）",
+  "Rankhog": "在 Reddit 上自动获客：替你去相关帖子里找客户（322▲，第 2）",
+  "Resurf": "Mac 上的个人知识库与书签管理器（179▲，第 3）",
+  "Daymaker": "礼物送到位，潜客才愿意见你（160▲，第 4）",
+  "oovi": "桌面上自带一队 AI 同事（132▲，第 5）",
+  "Creavit Studio 4.0": "Mac 录屏 + iPhone 当摄像头 + 电影感演示视频（120▲，第 6）",
+  "Webless Agents": "可以直接放到客户面前用的 agent（117▲，第 7）",
+  "Omi CLI": "你不在时也在干活的 AI 编码 agent（97▲，第 8）"
  },
  "hf_tr": {
-  "2611.10771": "世界智能的统一基础设施：给「世界模型」造一套通用底座（30▲，当日最高）",
-  "2611.08452": "ReproBridge：把可复现性直接做进机器学习研究产物（代码/数据/实验包，16▲）",
-  "2610.42148": "Flide：用精确状态分叉加速决策推理；同日登上 HN Show HN，属跨源同现（8▲）",
-  "2611.10329": "SIRIS：LLM 能否判断仿真误差在 AI 驱动的系统研究里什么时候才真要紧（4▲）",
-  "2611.02810": "TRIO：面向检索增强生成的任务细化与个体化优化（2▲）",
-  "2611.10690": "JoVox：联合分层流匹配，做轻量级体素生成（2▲）",
-  "2611.12762": "Sage-Taiyi：面向科学发现的元认知架构（1▲）",
-  "2611.08240": "FewStepRL：用强化学习微调少步扩散模型（1▲）",
-  "2611.10987": "Horizon-Scalable Q-Learning：可随视野长度扩展的 Q 学习（1▲）",
-  "2611.08969": "PhysioWave-T：面向生理信号的省 token 小波基础模型（1▲）",
-  "2610.36980": "AutoVend：用长时程自动售货运营给 LLM agent 做基准测试（1▲）",
-  "2611.05791": "FlyHash 用于 LLM agent 记忆：实证验证与一个新应用（0▲）"
+  "2611.27193": "把残差多流混合约束在 Birkhoff 多胞形上，稳定超连接的流混合（50▲，当日第 1）",
+  "2611.27963": "交互式视频世界模型的物体穿模问题，配套提出 NoPeBench 基准（38▲）",
+  "2611.24636": "35B 总参 / 3B 激活的 MoE 扩散语言模型，支持思考模式生成（32▲）",
+  "2611.15449": "文本感知图像超分：把文字恢复当推理任务，而不是视觉复原（17▲）",
+  "2611.27973": "给长程连续交互用的可扩展记忆架构 MemOnce（10▲）",
+  "2611.25773": "从全双工对话走向全双工能动性：边说边把事做完（10▲）",
+  "2611.27915": "双目视觉语言模型，做度量级 3D 空间推理（5▲）",
+  "2611.21485": "重复到访场景下的持久空间记忆基准（5▲）",
+  "2611.27229": "用更少的模仿数据训练提示词增强器（3▲）",
+  "2611.24077": "无人机视觉语言导航的递归自我改进（3▲）",
+  "2611.22343": "多粒度多模态身份匹配的诊断基准（3▲）",
+  "2611.26613": "前沿 agent 直接控制机器人的能力评测（2▲）"
  },
- "gh_summary": "<p>本日 <span class=\"hl\">11 条</span>（周一缩量，如实呈现不补数）。<span class=\"hl\">sherlock +4,267★</span> 连续两日登顶，meta/astryx +3,278★、OpenMausBot +1,587★ 次之。</p>\n<p>Agent 基建连续两日五路在榜（skills / astryx / agent-browser / claude-quickstarts / gbrain）：「给 agent 造配件」仍是最拥挤、也最容易被单人验证的赛道。</p>\n<p><b>可切入口：</b>中文项目 daily_stock_analysis（+506★，总 68,999★）证明「垂直人群 + LLM + 自动推送」的单人产品需求远未被满足。</p>",
- "ph_summary": "<p>PT=2026-11-09 批次前 8，<span class=\"hl\">Product Hunt MCP 344▲</span> 登顶。</p>\n<p>榜单主体是「AI 工作流的管道件」：Databox CLI（269▲）、Arcjet（207▲）、ProtoMap 省依赖 token（156▲）、MCP1 一个 URL 接所有 MCP（120▲）——窄而可单人做完的工具仍是主流。</p>\n<p><b>可切入口：</b>Dageno AI 2.0（301▲）做 GEO「为什么 AI 推荐竞品而不是你」，是新出现的需求品类，值得连跟 3 天确认真伪。</p>",
- "papers_summary": "<p><span class=\"hl\">2026-11-10 当日批次 12 篇</span>（14:58 CST 补抓，Top 30▲、总 67 票）。11:00 抓取时仍是空数组，批次在 UTC 白天逐步填充——不是故障，是抓早了。</p>\n<p>主题聚在<b>「给 agent 造地基」</b>：WorldFoundry 统一世界模型底座（30▲）、ReproBridge 把可复现性做进研究产物（16▲）、FlyHash 验证 agent 记忆（0▲），与 GitHub 上 agent 基建五路在榜是同一条线。</p>\n<p><b>可切入口：</b>ReproBridge（16▲）指向单人可做的窄工具——论文仓库一键跑通、输出可复现报告；Flide（8▲）同日登上 HN Show HN（50421155），跨源同现比单日票数更值得连跟。</p>",
- "note_hf": "注：2026-11-10 当日批次（date=2026-11-10），<b>14:58 CST 补抓</b>，共 12 篇、最高 30 票。11:00 首次抓取时 API 返回 200 + 空数组，本期原按「尚未发布」标注，现按真实条目覆盖；按 paper.upvotes 降序全列（实际 12 篇，未触及 12 篇上限）。未沿用 11-09 历史批次、未编造条数；票数仍在实时累积，以本期发稿时刻为准。"
+ "gh_summary": "<p>本日 <span class=\"hl\">16 条</span>，<span class=\"hl\">skill 包占 8 席</span>：Claude-BugHunter +1,716★ 连续第三日登顶（总 18,506★），superpowers +788★、CLI-Anything +699★、app-store-compliance +621★ 紧随。</p>\n<p>另一半在「给 agent 供料与收尾」：firecrawl +915★、Ghost-Downloader-3 +701★、autoclip +641★、AFFiNE +542★；nginx +163★ 因新 CVE 回流。中文项目仍占 3 席。</p>\n<p><b>可切入口：</b>skill 包已商品化到「装之前没人看权限」，一份安装前体检清单是空位（见洞察 2）。</p>",
+ "ph_summary": "<p>11-22 榜前 8 条。<span class=\"hl\">Yoroll 345▲ 第 1</span>（不用引擎做可玩故事），Rankhog 322▲ 第 2 直接卖「Reddit 自动获客」——两条都不是工具，是「把结果交付出去」。</p>\n<p>中段清一色「把 AI 塞进既有工作流」：Resurf 179▲（Mac 知识库）、Daymaker 160▲（销售送礼）、oovi 132▲（桌面 AI 团队）、Webless Agents 117▲、Omi CLI 97▲（离线也在干活的编码 agent）。</p>\n<p><b>可切入口：</b>获客类产品扎堆却没人证明效果，做「Reddit 获客效果核验」这条侧翼比再做一家的成本低（对应机会卡 3 的付费验证思路）。</p>",
+ "papers_summary": "<p>2026-11-23 批次共 <span class=\"hl\">16 篇、合计 181 票</span>，取前 12。<span class=\"hl\">cmHC 50▲</span> 用几何收缩约束残差多流混合，NoPeBench 38▲ 专治世界模型里的物体穿模，Clover-35B-A3B 32▲ 是激活仅 3B 的 MoE 扩散语言模型。</p>\n<p>第二簇是「记忆与空间」：MemOnce 10▲（可扩展记忆架构）、Lost in the Hallway 5▲（重复到访的持久空间记忆基准）、StereoVLM 5▲（度量级 3D 推理）；Duopra 10▲ 把全双工对话推向全双工能动性。</p>\n<p><b>可切入口：</b>世界模型开始拼「物理不穿模」，一个可复用的穿模/一致性检测脚本就能先吃到评测需求。</p>",
+ "note_hf": "注：2026-11-23 当日批次（date=2026-11-23），API 返回 16 篇、合计 181 票，按票数降序取前 12；票数为抓取时刻快照。"
 }
