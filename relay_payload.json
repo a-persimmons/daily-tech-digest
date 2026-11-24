@@ -1,10 +1,10 @@
 {
- "date": "2026-11-23",
- "date_label": "2026-11-23 · 星期一",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-11-23.html",
+ "date": "2026-11-24",
+ "date_label": "2026-11-24 · 星期二",
+ "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-11-24.html",
  "summary": [
-  "AI 的「电账」成了全窗第一热门（Hacker News 959▲/943💬，Anthropic 2028 年 87% 电力来自天然气、11% 来自煤电），943 条评论都在问一次调用耗多少电——最小验证动作：用公开系数做个「token→kWh/gCO₂e」静态计算器，发 Show HN 收 waitlist。",
-  "挪威拟把 16 岁以下社媒禁令扩到游戏与消息应用（HN 93💬），叠上 GitHub 的 app-store-compliance +621★，做海外青少年向 App 的小团队最缺一份按国别拆的年龄门槛与家长同意清单——最小验证动作：先出挪威/澳洲/英国三页 + 代码片段，测 19 美元一次性付费。",
-  "Backblaze 改政策引发个人数据被卖担忧（HN 165▲/62💬）：供应商悄悄改条款没人盯——最小验证动作：监控 10 家存储/SaaS 的 ToS 与定价页做 diff，人工筛后每周一封邮件，免费跑 20 个订阅者看打开率。"
+  "英伟达恢复黄仁勋 CEO、Arm 商标要求关站、苹果下架 9 年老应用——「平台即阀门」是今日主线：机会卡给出 App 下架风险自查页（HN 565▲/130💬 + app-store-compliance +761★ 二连榜）与被关停站点抢救归档服务（1005▲/230💬）两个单人几天可验证的动作。",
+  "agent 赛道从模型转向 harness 与接口：GitHub firecrawl +924★、Claude-BugHunter +2,029★ 四连顶，HF 当日批次四篇 harness 评测论文扎堆——最低成本动作是写一张 harness 四篇对比速查表。",
+  "邮件自托管迁移窗口打开：Stalwart 宣布无缝替换 Exchange（422▲/215💬）、Kagi Mail 开公测（413▲/327💬）——写一份带脚本的迁移 checklist，先在自己域名跑通再收 5 个测试用户。"
  ]
 }
