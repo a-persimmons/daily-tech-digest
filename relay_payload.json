@@ -1,10 +1,10 @@
 {
- "date": "2026-11-27",
- "date_label": "2026-11-27 · 星期五",
- "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-11-27.html",
- "summary": [
-  "机会卡 1：Notion 官方 MCP 往 agent 上下文注入推销指令（谷歌强制 MCP 322▲ 同窗）——最小验证动作：写个 MCP 上下文注入扫描 CLI，Show HN 发出去看反响。",
-  "机会卡 2：反数据中介脚本 232▲ 一发即热——最小验证动作：补 5 家中介 opt-out + 定时复查提醒，更新版收 issues 验证付费意愿。",
-  "机会卡 3：硬盘涨价 315▲ 但没人认真盯每 TB 价格——最小验证动作：爬 3 家零售商做静态每 TB 价格表 + waitlist，投进涨价帖评论区。"
- ]
+  "date": "2026-11-28",
+  "date_label": "2026-11-28 · 星期六",
+  "url": "http://blog.codingforjoy.com/daily-tech-digest/%E4%BB%8A%E6%97%A5%E6%8A%80%E6%9C%AF%E7%83%AD%E7%82%B9%E9%80%9F%E8%A7%88_2026-11-28.html",
+  "summary": [
+    "机会卡1｜独立站站长：热门购物站被植入 WebRTC 盗刷脚本（HN 511▲/266💬）+ 安全技能包 Claude-BugHunter 八连榜——做第三方脚本「每日 diff + 盗刷模式比对」CLI，几天能出 Show HN。",
+    "机会卡2｜AI 助手普通用户：租客被 AI 错误建议害到被驱逐（HN 163▲/120💬）——做「AI 建议附官方条款出处 + 时间戳」的单页存证工具，先覆盖延迟交租场景。",
+    "机会卡3｜全量用户：Passkey blues 抱怨绑死单设备换机即失联（HN 72▲/72💬）——做 passkey 清单 + 恢复演练清单 CLI，发帖评论区验证共鸣。"
+  ]
 }
